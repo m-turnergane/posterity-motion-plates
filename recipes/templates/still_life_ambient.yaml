@@ -1,0 +1,12 @@
+# TEMPLATE: low-risk ambient plate (no figures moving): gentle push + dust + one light. Good first step for 'most sequences'.
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}
+seed: 1
+layers: []
+effects:
+  - type: parallax_push
+    anchor: [540, 960]
+    end_scale: {bg: 1.012, mid: 1.012, fg: 1.012}      # one layer => pure eased push, zero disocclusion risk
+  - preset: dust_warm_sunlit
+    region: [[0,0],[1080,0],[1080,1700],[0,1700]]

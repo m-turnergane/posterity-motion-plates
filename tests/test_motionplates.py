@@ -193,3 +193,64 @@ def test_every_recipe_validates_structurally():
     for f in os.listdir(rdir):
         if f.endswith(".yaml"):
             assert V.validate_recipe(load_recipe(os.path.join(rdir, f)), None, check_assets=False) == [], f
+
+# ---------------- v0.3: petals, proxy, suggestions, packs, ground ramp ----------------
+from motionplates.core import proxy as PX
+from motionplates.effects import petal_fall as PF
+
+def _petal_effect(synth):
+    ctx = engine.prepare(RECIPE, plates_dir=synth, log=lambda *a: None); return ctx, [e for e in ctx.effects if e.type == "petal_fall"][0]
+
+def test_petal_sprites_distinct_and_not_mirrored_copies(synth):
+    ctx, pf = _petal_effect(synth)
+    ex = [i for i in pf.items if not i["original"]]; org = [i for i in pf.items if i["original"]]
+    assert ex, "recipe has extras"
+    for e in ex:
+        assert max(PF.sprite_similarity(e["spr"], o["spr"]) for o in org) < 0.985          # variants are not (mirrored/scaled) copies of a source
+    o = org[0]["spr"]; mir = dict(o, rgb=o["rgb"][:, ::-1].copy(), a=o["a"][:, ::-1].copy())
+    assert PF.sprite_similarity(o, mir) > 0.985                                               # the metric does catch a mirrored copy
+
+def test_petal_release_times_monotonic_and_bounded(synth):
+    ctx, pf = _petal_effect(synth); ex = sorted([i["t_rel"] for i in pf.items if not i["original"]])
+    assert ex == sorted(ex) and all(b - a >= 0.05 for a, b in zip(ex, ex[1:]))
+    t0 = pf.p["extras"]["t0"]; assert min(ex) >= t0 - 1e-9 and max(ex) <= pf.p["extras"]["t1"] + 1e-9
+
+def test_petals_land_on_plane_and_settle(synth):
+    ctx, pf = _petal_effect(synth); q = pf.quad; xs, ys = q[:, 0], q[:, 1]
+    for it in pf.items:
+        assert xs.min() - 5 <= it["L"][0] <= xs.max() + 5 and ys.min() - 5 <= it["L"][1] <= ys.max() + 5
+        late = pf._basis(it, it["tl"] + 1.5)
+        if late: assert late["landed"] and abs(late["R"][2, 2]) > 0.95                          # lying flat after settling
+
+def test_original_petals_present_before_release(rendered):
+    assert rendered[0]["frame0"]["max_abs_diff_vs_plate"] == 0
+
+def test_proxy_recipe_scaling_and_render(synth, tmp_path):
+    R = load_recipe(RECIPE); S = PX.scale_recipe(R, 0.5)
+    assert (S["output"]["width"], S["output"]["height"]) == (136, 240) and S["layers"][0]["polygons"][0][1] == [135.0, 150.0]
+    m = engine.render(RECIPE, str(tmp_path), plates_dir=synth, proxy=0.5, log=lambda *a: None)
+    assert m["qc"]["status"] == "PROXY_PREVIEW" and m["output"]["W"] == 136
+
+def test_suggest_regions_finds_block(tmp_path):
+    from motionplates.authoring import suggest as S
+    img = np.full((480, 270, 3), 120, np.uint8); img[:, :, 0] = np.linspace(100, 140, 270).astype(np.uint8)[None, :]; cv2.rectangle(img, (40, 200), (200, 400), (30, 40, 150), -1)
+    c = S.candidates(img, "regions", 6); tgt = np.zeros((480, 270), bool); tgt[200:401, 40:201] = True
+    assert S.best_match(c, tgt)["union_iou"] > 0.85
+    b = S.candidates(img, "box", 1, box=[20, 180, 220, 420]); assert S.iou(b[0]["mask"], tgt) > 0.85
+
+def test_petal_pack_roundtrip(synth, tmp_path):
+    ctx, pf = _petal_effect(synth); PF.export_pack(pf.sources, str(tmp_path / "pack")); back = PF.load_pack(str(tmp_path / "pack"))
+    assert len(back) == len(pf.sources) and all(v["a"].max() > 0.9 for v in back.values())
+
+def test_templates_are_valid_yaml_with_placeholders():
+    d = os.path.join(HERE, "..", "recipes", "templates")
+    for f in os.listdir(d):
+        txt = open(os.path.join(d, f)).read(); assert "__NAME__" in txt and "__PLATE__" in txt; yaml.safe_load(txt.replace("__NAME__", "t").replace("__PLATE__", "p.png"))
+
+def test_ground_ramp_is_continuous_and_identity_at_t0(synth):
+    from motionplates.effects.parallax_push import ParallaxPush
+    ctx = engine.prepare(RECIPE, plates_dir=synth, log=lambda *a: None)
+    pp = [e for e in ctx.effects if e.type == "parallax_push"][0]; pp.p["ground_ramp"] = {"y0": 200, "y1": 440, "end_scale": 1.03}; pp.setup(ctx)
+    mx, my = ctx.ground_warp(ctx, 0.0); H, W = mx.shape
+    assert np.abs(mx - np.arange(W)[None, :]).max() < 1e-3 and np.abs(my - np.arange(H)[:, None]).max() < 1e-3
+    mx, my = ctx.ground_warp(ctx, 1.0); assert np.all(np.diff(my[:, 0]) > 0)                    # monotonic: no folds => no disocclusion

@@ -56,9 +56,9 @@ effects:
       - {id: E,  cx: 730, cy: 850, ax: 24, ay: 26, method: luma, thr: 172}
       - {id: G,  cx: 711, cy: 887, ax: 26, ay: 28, method: luma, thr: 172}
       - {id: C1, cx: 735, cy: 802, ax: 11, ay: 14, method: luma, thr: 172}
-      - {id: C2, cx: 714, cy: 775, ax: 11, ay: 8,  method: luma, thr: 172}
-      - {id: C3, cx: 702, cy: 823, ax: 12, ay: 12, method: luma, thr: 172}
-      - {id: H,  cx: 607, cy: 897, ax: 18, ay: 13, method: luma, thr: 190}
+      - {id: C2, cx: 714, cy: 775, ax: 11, ay: 8,  method: ellipse}
+      - {id: C3, cx: 702, cy: 823, ax: 12, ay: 12, method: ellipse}
+      - {id: H,  cx: 607, cy: 897, ax: 17, ay: 11, method: luma, thr: 165, open: 3}
     release_s: {G: 0.85, F: 1.0, D: 1.15, E: 1.45, H: 1.9, Cp: 1.75, R1: 2.1, C3: 2.35, C1: 2.6, C2: 2.85}
     hand_occluder: [[640,772],[660,765],[690,770],[712,781],[717,790],[712,802],[702,814],[687,821],[665,820],[640,814]]
     surface:

@@ -12,10 +12,12 @@ from ..core.util import smoothstep, polygon_mask, Noise1D
 
 def cut_petal(base, spec):
     """Segment one petal by hand-authored ellipse + method. Returns (x0,y0,mask uint8)."""
-    cx, cy, ax, ay = spec["cx"], spec["cy"], spec["ax"], spec["ay"]; pad = 10
+    cx, cy, ax, ay = (int(round(spec[k])) for k in ("cx", "cy", "ax", "ay")); pad = 10
     x0, y0, x1, y1 = cx - ax - pad, cy - ay - pad, cx + ax + pad, cy + ay + pad
     sub = np.ascontiguousarray(base[y0:y1, x0:x1][..., ::-1]); h, w = sub.shape[:2]
-    if spec.get("method", "grabcut") == "luma":
+    if spec.get("method") == "ellipse":
+        fgm = np.zeros((h, w), np.uint8); cv2.ellipse(fgm, (cx - x0, cy - y0), (max(int(ax * 0.85), 1), max(int(ay * 0.85), 1)), spec.get("angle", 0), 0, 360, 1, -1)
+    elif spec.get("method", "grabcut") == "luma":
         g = cv2.cvtColor(sub, cv2.COLOR_BGR2GRAY); ee = np.zeros((h, w), np.uint8)
         cv2.ellipse(ee, (cx - x0, cy - y0), (int(ax * 1.25), int(ay * 1.25)), 0, 0, 360, 1, -1)
         fgm = ((g > spec.get("thr", 172)) & (ee > 0)).astype(np.uint8)
@@ -31,6 +33,8 @@ def cut_petal(base, spec):
         fgm = ((m == 1) | (m == 3)).astype(np.uint8)
     n, lab, st, _ = cv2.connectedComponentsWithStats(fgm)
     if n > 1: fgm = (lab == 1 + np.argmax(st[1:, 4])).astype(np.uint8)
+    if int(fgm.sum()) < 6:      # tiny petals (e.g. proxy renders): fall back to the authored ellipse
+        fgm = np.zeros_like(fgm); cv2.ellipse(fgm, (cx - x0, cy - y0), (max(int(ax * 0.9), 1), max(int(ay * 0.9), 1)), 0, 0, 360, 1, -1)
     return x0, y0, fgm
 
 def _depremult_edge(rgb, a):
@@ -73,6 +77,23 @@ def make_sprite(base, bg, c, x0, y0, m, ss=2):
     big = lambda z: cv2.resize(z, None, fx=ss, fy=ss, interpolation=cv2.INTER_CUBIC)
     rgb2, a2 = np.clip(big(rgb), 0, 255), np.clip(big(a), 0, 1)
     return dict(rgb=rgb2.astype(np.float32), a=a2.astype(np.float32), w=a2.shape[1], h=a2.shape[0], ox=x0 + (xa + xb) / 2.0, oy=y0 + (ya + yb) / 2.0, ss=ss)
+
+def load_pack(path):
+    """sprite pack = directory of RGBA PNGs (2x supersampled petal sprites) -> {id: sprite}. See tools/export_petal_pack.py."""
+    import os
+    if not path: return {}
+    out = {}
+    for fn in sorted(os.listdir(path)):
+        if fn.lower().endswith(".png"):
+            im = cv2.cvtColor(cv2.imread(os.path.join(path, fn), cv2.IMREAD_UNCHANGED), cv2.COLOR_BGRA2RGBA).astype(np.float32); a = im[..., 3] / 255.0
+            out["pack_" + fn[:-4]] = dict(rgb=im[..., :3], a=a, w=a.shape[1], h=a.shape[0], ox=0, oy=0, ss=2)
+    return out
+
+def export_pack(sources, path):
+    import os
+    os.makedirs(path, exist_ok=True)
+    for k, sp in sources.items():
+        rgba = np.dstack([sp["rgb"], sp["a"] * 255]).astype(np.uint8); cv2.imwrite(os.path.join(path, f"{k}.png"), cv2.cvtColor(rgba, cv2.COLOR_RGBA2BGRA))
 
 def _smooth_noise(rng, shape, sigma):
     g = cv2.GaussianBlur(rng.standard_normal(shape).astype(np.float32), (0, 0), sigma); return g / (g.std() + 1e-6)
@@ -135,6 +156,7 @@ class PetalFall(Effect):
         P = self.p; rng = ctx.rng("petals", self.idx); self.items = []; self.sources = {}; ss = 2; self.ss = ss
         base = ctx.base.astype(np.float32); bg = ctx.stack.clean_plate.astype(np.float32)
         for c, x0, y0, m in self.cuts: self.sources[c["id"]] = make_sprite(base, bg if c.get("remove", True) else base, c, x0, y0, m, ss)
+        for pid, spr in load_pack(P.get("source_pack")).items(): self.sources.setdefault(pid, spr)       # reusable petal source packs (RGBA sprites authored once)
         sf = P.get("surface", {}); q = np.array(sf["quad"], np.float32)       # back-left, back-right, front-right, front-left
         self.quad = q; self.Hm = cv2.getPerspectiveTransform(np.array([[0, 0], [1, 0], [1, 1], [0, 1]], np.float32), q)
         self.surf = polygon_mask((ctx.H, ctx.W), (q + np.array([[-6, -10], [6, -10], [6, 6], [-6, 6]], np.float32)).tolist(), feather=2.5)
@@ -152,8 +174,10 @@ class PetalFall(Effect):
             t0, t1, gap = ex.get("t0", 1.9), ex.get("t1", 3.3), ex.get("min_gap", 0.18)
             # strictly increasing release times in [t0,t1]: stratified jitter, then enforce min gap (never recycled into earlier windows)
             edges = np.linspace(t0, t1, n + 1); ts = [rng.uniform(edges[i] + 0.15 * (edges[i + 1] - edges[i]), edges[i + 1] - 0.15 * (edges[i + 1] - edges[i])) for i in range(n)]
+            gap = min(gap, 0.9 * (t1 - t0) / max(n - 1, 1))
             for i in range(1, n): ts[i] = max(ts[i], ts[i - 1] + gap)
-            pool = [i for i in (ex.get("sources") or ids) if i in self.sources]; used = {}
+            if ts[-1] > t1: ts = [t0 + (x - ts[0]) * (t1 - t0) / max(ts[-1] - ts[0], 1e-6) for x in ts]     # stay inside the release window (never wraps/recycles)
+            pool = [i for i in (ex.get("sources") or ids) if i in self.sources]; pool = pool or list(self.sources); used = {}
             for i in range(n):
                 pool_sorted = sorted(pool, key=lambda k: (used.get(k, 0), rng.random())); sid = pool_sorted[0]; used[sid] = used.get(sid, 0) + 1
                 other = self.sources[pool_sorted[1 + int(rng.integers(max(len(pool_sorted) - 1, 1)))]] if len(pool_sorted) > 1 else None

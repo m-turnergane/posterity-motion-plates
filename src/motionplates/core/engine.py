@@ -65,9 +65,12 @@ def _classify_diff(d, ctx, stack, holes):
     rest = sel & ~claimed; out["elsewhere"] = dict(pixels=int(rest.sum()), share_of_pixels=round(rest.sum() / tot, 3), share_of_mass=round(float(d[rest].sum()) / mass, 3))
     return out
 
-def prepare(recipe_path, plates_dir=None, seconds=None, frames=None, log=print, check_assets=True):
-    """Validate + build everything needed to render frames (authoring stage). Returns ctx."""
-    R = load_recipe(recipe_path); root = resolve_plates_root(plates_dir); check_recipe(R, root, check_assets)
+def prepare(recipe_path, plates_dir=None, seconds=None, frames=None, log=print, check_assets=True, proxy=None):
+    """Validate + build everything needed to render frames (authoring stage). Returns ctx. proxy: scale factor (e.g. 0.25) for fast preview renders."""
+    R = load_recipe(recipe_path)
+    if proxy:
+        from .proxy import scale_recipe; R = scale_recipe(R, proxy)
+    root = resolve_plates_root(plates_dir); check_recipe(R, root, check_assets)
     ctx = Ctx(); ctx.R = R; ctx.name = R["name"]; o = R.get("output", {}); ctx.W, ctx.H, ctx.fps = o.get("width", 1080), o.get("height", 1920), o.get("fps", 30)
     ctx.seconds = seconds or o.get("seconds", 5); ctx.N = frames or int(round(ctx.seconds * ctx.fps)); W, H = ctx.W, ctx.H
     ctx.plate_path = os.path.join(root, R["plate"]["file"]); base, ctx.pinfo = P.load_cover(ctx.plate_path, W, H); ctx.base = base
@@ -110,9 +113,9 @@ def _diag_frame0(ctx, dbg):
     return dict(pre_correction=dict(mean_abs=float(d.mean()), max_abs=int(d.max()), pixels_over_2=int((d > 2).sum()), pixels_over_8=int((d > 8).sum()), fraction_over_2=float((d > 2).mean()),
                 corrected_fraction=float((ctx.res_mask > 0.5).mean()) if ctx.res_mask is not None else 0.0), concentration=cls, mode=ctx.f0_mode, fade_s=ctx.f0_fade)
 
-def render(recipe_path, outdir, plates_dir=None, seconds=None, frames=None, keep_lossless=False, export_layers=None, final_crf=14, log=print, only_times=None, profile="direct", threads=0, expect_status=None):
+def render(recipe_path, outdir, plates_dir=None, seconds=None, frames=None, keep_lossless=False, export_layers=None, final_crf=14, log=print, only_times=None, profile="direct", threads=0, expect_status=None, proxy=None):
     """Render; raises RecipeError (invalid recipe), EncodeError (ffmpeg/verification), RenderRejected (QC FAIL). Returns the manifest dict (status in man['qc']['status'])."""
-    t_all = time.time(); ctx = prepare(recipe_path, plates_dir, seconds, frames, log); R = ctx.R; name, W, H, FPS, N = ctx.name, ctx.W, ctx.H, ctx.fps, ctx.N
+    t_all = time.time(); ctx = prepare(recipe_path, plates_dir, seconds, frames, log, proxy=proxy); R = ctx.R; name, W, H, FPS, N = ctx.name, ctx.W, ctx.H, ctx.fps, ctx.N
     os.makedirs(outdir, exist_ok=True)
     if export_layers: export_stack(ctx.stack, export_layers)
     still_dir = os.path.join(outdir, "stills_raw")
@@ -156,6 +159,7 @@ def render(recipe_path, outdir, plates_dir=None, seconds=None, frames=None, keep
     md = QCm.mask_diagnostics(ctx.stack, ctx.base, qc)
     # frame-to-frame determinism of the render hash is tested in CI; here the hash is recorded
     status, why = qc.final(R, frames_sha1, motion_plate=True)
+    if R.get("_proxy_scale"): status, why = "PROXY_PREVIEW", f"proxy render at {R['_proxy_scale']}x: QC findings are advisory; never deliverable"
     man = dict(name=name, version=__version__, recipe=os.path.abspath(recipe_path), recipe_md5=md5_file(recipe_path), plate=ctx.pinfo, seed=R.get("seed", 1),
                output=dict(W=W, H=H, fps=FPS, frames=N, seconds=N / FPS), engine=dict(python="numpy+OpenCV+Pillow", encode=f"ffmpeg libx264 {profile} crf{final_crf} (RGB->yuv420p once, bt709/tv tagged)"), verify=info,
                timings_s={k: round(v, 2) for k, v in ctx.timings.items()}, render_s=round(render_s, 2), render_fps=round(N / render_s, 2), verify_s=round(verify_s, 2), total_s=round(time.time() - t_all, 2),

@@ -32,7 +32,7 @@ parallax_few_percent:
 petal_physics_default:
   type: petal_fall
   physics:
-    elevation_deg: 27          # viewing elevation of the landing plane (flat petal ratio = sin(e))
+    elevation_deg: 36          # viewing elevation of the landing plane (flat petal ratio = sin(e))
     terminal_px_s: [88, 128]
     flutter_hz: [0.9, 1.6]
     sway_px: [4, 9]

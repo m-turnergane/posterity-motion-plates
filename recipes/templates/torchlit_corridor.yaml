@@ -1,0 +1,18 @@
+# TEMPLATE: torchlit hall / corridor (warm braziers, banners, dusty light). `motionplates new --template torchlit_corridor --plate FILE --name NAME`
+# Fill the TODO coordinates (flames/torches) and layers (use `motionplates suggest` for polygon candidates). Everything else is preset-driven.
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}
+seed: 1
+safe_zones:
+  - {name: caption_band, box: [0, 1500, 1080, 1860], max_mean_delta: 3.0}
+layers: []          # TODO: columns / stands (depth 0.3-0.5), foreground blur band (depth 1.0). Floor + rubble need NO layer: use ground_ramp below.
+elements: []        # TODO: banners (alpha elements, depth 0)
+effects:
+  - preset: parallax_few_percent
+    anchor: [540, 1050]
+    ground_ramp: {y0: 1100, y1: 1800, end_scale: 1.034}
+  - preset: flame_brazier_small       # TODO: set x, y (+rx, ry) per flame, layer, light_layers
+    flames: []
+  - preset: dust_warm_sunlit
+    region: [[0,0],[1080,0],[1080,1700],[0,1700]]
