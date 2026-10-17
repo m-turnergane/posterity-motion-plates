@@ -81,6 +81,52 @@ def push_pull_fill(img, hole, exclude=None, noise=1.2, seed=1, texture=1.0, ring
     res[h] = out[h]
     return res
 
+def smooth_quilt_fill(img, hole, exclude=None, luma_min=0, sigmas=(10, 30, 90), tile=20, seed=5, texture=1.0, mode='quilt', erode=None):
+    """Clean-plate fill for smoky/defocused areas: (1) smooth base from normalised Gaussian convolution of valid haze pixels only
+    (no facets, no skin/gold bleed), (2) real high-frequency haze texture quilted in from valid pixels near the hole (Hann-windowed tiles
+    chosen by matching local brightness). Deterministic (seeded)."""
+    f = img.astype(np.float32); h = hole > 0.5
+    valid = (~h)
+    if exclude is not None: valid &= exclude < 0.5
+    valid &= f.mean(2) >= luma_min
+    w0 = valid.astype(np.float32)
+    # ensure coarse fallback fills deep interior: iterate from coarse to fine
+    est_list = []
+    for sg in sigmas:
+        num = cv2.GaussianBlur(f * w0[..., None], (0, 0), sg); den = cv2.GaussianBlur(w0, (0, 0), sg)[..., None]
+        est_list.append((num / np.maximum(den, 1e-6), np.clip(den / 0.12, 0, 1)))
+    base = est_list[-1][0]
+    for est, a in reversed(est_list[:-1]): base = est * a + base * (1 - a)
+    out = f.copy()
+    if texture and mode == 'noise':
+        lp = cv2.GaussianBlur(f, (0, 0), 3.5); hp = f - lp; sd = float(hp[valid & (cv2.dilate(h.astype(np.uint8), np.ones((81, 81), np.uint8)) > 0)].std())
+        rng = np.random.default_rng(seed); n = np.zeros(h.shape, np.float32)
+        for sg, wt in ((1.5, 0.5), (4, 1.0), (10, 1.0), (24, 0.8)):
+            g = cv2.GaussianBlur(rng.standard_normal(h.shape).astype(np.float32), (0, 0), sg); n += wt * g / (g.std() + 1e-6)
+        base = base + (n / (n.std() + 1e-6) * sd * texture)[..., None] * np.array([1.0, 0.92, 0.8], np.float32)
+    elif texture:
+        lp = cv2.GaussianBlur(f, (0, 0), 3.5); hp = f - lp
+        rng = np.random.default_rng(seed); H, W = h.shape
+        near = cv2.dilate(h.astype(np.uint8), np.ones((121, 121), np.uint8)) > 0
+        vm = (cv2.erode(valid.astype(np.uint8), np.ones((erode or tile, erode or tile), np.uint8)) > 0) & near
+        ys, xs = np.where(vm); cand = np.stack([ys, xs], 1)
+        if len(cand) > 4000: cand = cand[rng.choice(len(cand), 4000, replace=False)]
+        cl = np.array([lp[y, x].mean() for y, x in cand]) if len(cand) else None
+        win = np.outer(np.hanning(tile + 2)[1:-1], np.hanning(tile + 2)[1:-1]).astype(np.float32)[..., None]
+        acc = np.zeros_like(f); wsum = np.zeros((H, W, 1), np.float32); hy, hx = np.where(h)
+        if len(hy) and cl is not None:
+            for ty in range(hy.min() - tile // 2, hy.max() + tile, tile // 2):
+                for tx in range(hx.min() - tile // 2, hx.max() + tile, tile // 2):
+                    y0, x0 = ty, tx; y1, x1 = y0 + tile, x0 + tile
+                    if y0 < 0 or x0 < 0 or y1 > H or x1 > W or not h[y0:y1, x0:x1].any(): continue
+                    tb = base[y0 + tile // 2, x0 + tile // 2].mean(); order = np.argsort(np.abs(cl - tb))[:25]
+                    sy, sx = cand[order[rng.integers(len(order))]]
+                    acc[y0:y1, x0:x1] += hp[sy:sy + tile, sx:sx + tile] * win; wsum[y0:y1, x0:x1] += win
+        base = base + texture * acc / np.maximum(wsum, 1e-3) * (wsum > 0.05)
+    m = cv2.GaussianBlur(h.astype(np.float32), (0, 0), 1.2)[..., None]
+    out = f * (1 - m) + base * m
+    return np.clip(out, 0, 255)
+
 def detect_specks(img_rgb, region_polys, delta=26, max_area=90, shape=None):
     """Small bright blobs (frozen sparkles / bokeh specks) inside region polygons -> uint8 mask (for clean-plate removal)."""
     H, W = img_rgb.shape[:2]; reg = np.zeros((H, W), np.uint8)
@@ -129,6 +175,11 @@ def build_stack(base_rgb, spec, extra_holes=None, log=print):
                     g = cv2.GaussianBlur(rng.standard_normal(holes.shape).astype(np.float32), (0, 0), sg); n += wt * g / (g.std() + 1e-6)
                 n /= n.std() + 1e-6; filled += (n * sd * tx)[..., None] * np.array([1.0, 0.92, 0.8], np.float32)
             clean = base_rgb.copy(); hm = holes > 0; clean[hm] = np.clip(filled[hm], 0, 255).astype(np.uint8)
+        elif cp.get("method") == "smooth_quilt":
+            ex = np.zeros(holes.shape, np.float32)
+            for pp in cp.get("exclude", []): cv2.fillPoly(ex, [np.array(pp, np.int32)], 1.0)
+            ex = cv2.dilate(ex, np.ones((7, 7), np.uint8))
+            clean = smooth_quilt_fill(base_rgb, holes, ex, **cp.get("fill_params", {})).astype(np.uint8)
         elif cp.get("method", "pushpull") == "pushpull":
             ex = np.zeros(holes.shape, np.float32)
             for pp in cp.get("exclude", []): cv2.fillPoly(ex, [np.array(pp, np.int32)], 1.0)

@@ -21,3 +21,9 @@ Outputs per recipe: `<name>_animated.mp4` (1080x1920, 30 fps, crf14 yuv420p), `<
 4. **Frame loop** (`core/engine.py`): stateless in `t`; per frame: effects edit layer pixels -> eased differential parallax composite -> particles -> fading residual so frame 0 == plate -> lossless pipe -> delivery encode.
 
 See `docs/ARCHITECTURE.md`, `docs/AUTHORING-EFFORT.md`, `AGENTS.md`, `docs/EXPERIMENT-C-grok-imagine.md` (skipped).
+
+## Previews
+`previews/*.gif` (216 px, 10 fps) and `previews/thumbs/*.jpg` are the only media committed. Full-resolution outputs live outside git (`out/`, or `/workspace/posterity/day20/motion-poc/v2/`).
+
+## Known limitations (v0.2)
+Petal 3-D flutter is an affine approximation (tilt = vertical squash + shading), extras are flipped/scaled copies of the 7–9 cut sprites; tiny bokeh specks near removed petals stay static; disocclusion fills are TELEA (small smears possible at layer edges if depth is pushed); render speed ~1–1.8 fps at 1080x1920 (unoptimised full-frame warps).

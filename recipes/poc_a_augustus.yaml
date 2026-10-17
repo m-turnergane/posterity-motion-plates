@@ -6,12 +6,10 @@ frame0_residual_fade_s: 0.7
 stills: [0.0, 1.0, 1.8, 2.6, 3.6, 4.97]
 
 clean_plate:                 # removal of the artwork's suspended petals (the hole masks come from petal_fall cuts)
-  method: telea_exclude
-  radius: 9
-  texture: 0.5
-  hole_grow: 3
-  fill_params: {ring_px: 24, luma_min: 135, texture: 0.8}
-  exclude: [[[640,772],[660,765],[690,770],[712,781],[717,790],[712,802],[702,814],[687,821],[665,820],[640,814]]]   # hand: never sample skin into the fill
+  method: smooth_quilt
+  hole_grow: 4
+  fill_params: {texture: 0.9, mode: noise}
+  exclude: [[[560,790],[646,790],[646,930],[560,930]], [[640,772],[660,765],[690,770],[712,781],[717,790],[712,802],[702,814],[687,821],[665,820],[640,814]]]   # hand: never sample skin into the fill
 
 # ---- authored depth layers (back -> front); coordinates are 1080x1920 cover-fit plate pixels ----
 layers:
