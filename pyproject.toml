@@ -1,0 +1,13 @@
+[project]
+name = "motionplates"
+version = "0.2.0"
+description = "Experimental restrained painterly motion plates (separate from the production editor)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "opencv-python-headless>=4.9", "Pillow>=10", "PyYAML>=6", "scipy>=1.11"]
+[project.optional-dependencies]
+dev = ["pytest"]
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,27 @@
+name: synth_test
+plate: {file: synth.png}
+output: {width: 270, height: 480, fps: 30, seconds: 1.0}
+seed: 3
+frame0_residual_fade_s: 0.3
+safe_zones:
+  - {name: caption, box: [0, 400, 270, 480], max_mean_delta: 1.5}
+layers:
+  - {name: subject, depth: 0.5, grow: 2, feather: 1.2, polygons: [[[0,300],[270,300],[270,480],[0,480]]]}
+  - {name: fg, depth: 1.0, grow: 2, feather: 1.2, polygons: [[[0,400],[70,400],[70,480],[0,480]]]}
+elements:
+  - {name: banner, depth: 0.0, grow: 1, feather: 1.0, polygons: [[[20,40],[60,40],[60,140],[20,140]]]}
+clean_plate: {method: telea_exclude, radius: 5, texture: 0.3, hole_grow: 2}
+effects:
+  - {type: parallax_push, anchor: [135, 300], end_scale: {bg: 1.01, mid: 1.02, fg: 1.03}, t0: 0, t1: 1.0}
+  - type: petal_fall
+    cuts:
+      - {id: a, cx: 120, cy: 200, ax: 10, ay: 8, method: grabcut}
+      - {id: b, cx: 140, cy: 220, ax: 10, ay: 8, method: grabcut}
+      - {id: c, cx: 110, cy: 235, ax: 10, ay: 8, method: grabcut}
+    release_s: {a: 0.15, b: 0.2, c: 0.25}
+    surface: {polygon: [[0,300],[270,300],[270,330],[0,330]], land_y: [315, 0, 0]}
+    extras: {count: 4, ids: [a, b, c], t0: 0.2, t1: 0.5}
+  - {type: flame_flicker, flames: [{x: 200, y: 150, rx: 12, ry: 16, layer: bg, lum_lo: 0.8, lum_hi: 0.95, light_R: 50, light_gain: 0.3, light_layers: [bg]}]}
+  - {type: banner_sway, elements: [banner], amp_px: 2.0}
+  - {type: fabric_ripple, layer: subject, region: [[0,300],[270,300],[270,380],[0,380]], amp_px: 0.5}
+  - {type: dust_motes, count: 20, size: [1.2, 2.5], depth: [0.1, 0.9]}

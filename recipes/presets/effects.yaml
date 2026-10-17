@@ -1,0 +1,47 @@
+# Reusable effect presets (merge order: preset <- recipe overrides). Tuned on PoC A/B; reuse = copy `preset:` and set positions only.
+dust_warm_sunlit:
+  type: dust_motes
+  count: 110
+  size: [1.8, 4.6]
+  speed: 9.0
+  rise: 2.0
+  depth: [0.1, 0.9]
+  intensity: 1.0
+  luma_bias: 1.5
+  fade_in: 0.8
+  color: [255, 226, 170]
+banner_sway_restrained:
+  type: banner_sway
+  amp_px: 4.0
+  freq_hz: 0.45
+  wave_k: 0.012
+  ramp_in: 0.8
+fabric_slight:
+  type: fabric_ripple
+  amp_px: 0.8
+  shade: 0.035
+  wavelength_px: 90
+  speed_px_s: 22
+  angle_deg: 20
+  feather: 12
+parallax_few_percent:
+  type: parallax_push
+  end_scale: {bg: 1.010, mid: 1.026, fg: 1.045}
+  t0: 0.0
+  t1: 5.0
+petal_physics_default:
+  type: petal_fall
+  physics:
+    terminal_px_s: [105, 165]
+    drift_px_s: [-6, 20]
+    sway_px: [5, 13]
+    sway_hz: [0.7, 1.5]
+    tumble_rad_s: [3.0, 6.5]
+    land_jitter: [0, 30]
+flame_brazier_small:
+  type: flame_flicker
+  flames:
+    - {x: 0, y: 0, rx: 22, ry: 30, layer: bg, lum_lo: 0.8, lum_hi: 0.93, warp_px: 2.0, rise_px: 2.0, light_R: 130, light_gain: 0.30, light_layers: [bg], color_shift: 0.2}
+torch_wall_warm:
+  type: torch_light
+  ramp_in: 0.6

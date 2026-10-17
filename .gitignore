@@ -1,0 +1,15 @@
+out/
+cache/
+*.npy
+*.mp4
+*.mov
+*.avi
+*.png
+!previews/*.gif
+!previews/thumbs/*.jpg
+!tests/data/*.png
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+scratch/

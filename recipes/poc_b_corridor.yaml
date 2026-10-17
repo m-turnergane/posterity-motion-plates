@@ -1,0 +1,59 @@
+name: poc_b_corridor
+plate: {file: seq08_empty_soma_lost_OWNER.png}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}
+seed: 11
+frame0_residual_fade_s: 0.7
+stills: [0.0, 1.0, 2.0, 3.0, 4.0, 4.97]
+
+layers:
+  - name: mid_column         # near left column (edge-refined with GrabCut) + two brazier stands
+    depth: 0.5
+    grow: 2
+    feather: 1.6
+    refine: {band: 7}
+    polygons:
+      - [[250,0],[395,0],[395,110],[380,130],[378,980],[395,985],[390,1030],[235,1040],[235,1000],[262,985],[258,700],[256,300],[268,130],[240,100]]
+  - name: mid_stands
+    depth: 0.3
+    grow: 3
+    feather: 2.0
+    refine: {band: 9}
+    polygons:
+      - [[0,670],[112,690],[115,745],[95,775],[88,1100],[40,1100],[55,780],[0,775]]
+      - [[100,845],[200,850],[210,880],[180,905],[205,940],[195,1090],[115,1090],[112,940],[130,905],[105,880]]
+  - name: fg_rubble
+    depth: 1.0
+    grow: 8
+    feather: 3.0
+    polygons:
+      - [[1080,1340],[1010,1345],[940,1370],[890,1410],[870,1460],[850,1500],[800,1530],[780,1570],[830,1610],[960,1640],[1080,1660]]
+  - name: fg_bottom
+    depth: 1.0
+    grow: 2
+    feather: 14.0
+    polygons:
+      - [[0,1740],[400,1760],[700,1790],[1080,1740],[1080,1920],[0,1920]]
+elements:
+  - {name: banner_right, depth: 0.0, grow: 2, feather: 1.2, polygons: [[[868,0],[1052,0],[1050,300],[1040,420],[1020,520],[985,640],[965,700],[950,640],[955,560],[930,500],[905,430],[890,380],[878,300],[870,150]]]}
+
+effects:
+  - preset: parallax_few_percent
+    anchor: [650, 1050]
+    end_scale: {bg: 1.008, mid: 1.022, fg: 1.038}
+  - preset: banner_sway_restrained
+    elements: [banner_right]
+    amp_px: 5.0
+  - type: flame_flicker
+    flames:
+      - {x: 649, y: 976, rx: 20, ry: 24, layer: bg, lum_lo: 0.62, lum_hi: 0.80, warp_px: 1.8, rise_px: 2.2, light_R: 150, light_gain: 0.46, light_layers: [bg, mid_column], color_shift: 0.22, soft: 1.5, aniso: [1.5, 1.0]}
+      - {x: 966, y: 970, rx: 22, ry: 28, layer: bg, lum_lo: 0.62, lum_hi: 0.80, warp_px: 1.8, rise_px: 2.2, light_R: 170, light_gain: 0.44, light_layers: [bg], color_shift: 0.22, soft: 1.5, aniso: [1.5, 1.0]}
+  - preset: torch_wall_warm
+    sources:
+      - {x: 649, y: 960, R: 330, gain: 0.28, aniso: [1.6, 1.2], layers: [bg, mid_column]}
+      - {x: 966, y: 955, R: 360, gain: 0.26, aniso: [1.5, 1.2], layers: [bg, banner_right]}
+    shadow: {amount: 0.09, light_mod: 0.55, keyframe_s: 1.1, layers: [bg], region: [[420,500],[1080,500],[1080,1350],[420,1350]], feather: 60}
+  - preset: dust_warm_sunlit
+    count: 150
+    luma_bias: 2.2
+    intensity: 1.15
+    region: [[0,0],[1080,0],[1080,1700],[0,1700]]
