@@ -80,9 +80,10 @@ def validate_recipe(R, plates_root=None, check_assets=True):
         for key in ("region", "polygon"):
             if e.get(key): P += _poly_problems(e[key], W, H, f"{w}.{key}")
         if t == "petal_fall":
-            sp = e.get("surface", {}).get("polygon")
-            if not sp: P.append(f"{w}: surface.polygon required")
-            else: P += _poly_problems(sp, W, H, f"{w}.surface.polygon")
+            sp = e.get("surface", {}).get("quad")
+            if not sp or len(sp) != 4: P.append(f"{w}: surface.quad (4 corners: back-left, back-right, front-right, front-left) required")
+            else: P += _poly_problems(sp, W, H, f"{w}.surface.quad")
+            if e.get("hand_occluder"): P += _poly_problems(e["hand_occluder"], W, H, f"{w}.hand_occluder")
             ids = [c.get("id") for c in e.get("cuts", [])]
             if len(ids) != len(set(ids)): P.append(f"{w}: duplicate cut ids")
             for c in e.get("cuts", []):

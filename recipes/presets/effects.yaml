@@ -32,12 +32,17 @@ parallax_few_percent:
 petal_physics_default:
   type: petal_fall
   physics:
-    terminal_px_s: [105, 165]
-    drift_px_s: [-6, 20]
-    sway_px: [5, 13]
-    sway_hz: [0.7, 1.5]
-    tumble_rad_s: [3.0, 6.5]
-    land_jitter: [0, 30]
+    elevation_deg: 27          # viewing elevation of the landing plane (flat petal ratio = sin(e))
+    terminal_px_s: [88, 128]
+    flutter_hz: [0.9, 1.6]
+    sway_px: [4, 9]
+    slide_px: [1.0, 6.0]
+    land_u: [0.15, 0.85]
+    land_v: [0.10, 0.90]
+    min_sep_px: 30
+    max_lateral_px: 70
+    motion_blur_samples: 4
+    shutter: 0.55
 flame_brazier_small:
   type: flame_flicker
   flames:

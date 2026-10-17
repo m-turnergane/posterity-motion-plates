@@ -1,6 +1,6 @@
 """Authoring helper: crop+zoom a region with a labelled coordinate grid so polygons can be read off. usage: grid_view.py img x0 y0 x1 y1 scale out.png"""
 import cv2,sys,numpy as np
-def gv(src,x0,y0,x1,y1,s,out,step=50):
+def gv(src,x0,y0,x1,y1,s,out,step=25):
     b=cv2.imread(src)[y0:y1,x0:x1]; c=cv2.resize(b,None,fx=s,fy=s,interpolation=cv2.INTER_AREA if s<1 else cv2.INTER_CUBIC)
     for x in range((x0//step+1)*step,x1,step):
         X=int((x-x0)*s); cv2.line(c,(X,0),(X,c.shape[0]),(255,255,255),1); cv2.putText(c,str(x),(X+2,12),0,0.4,(0,255,255),1)

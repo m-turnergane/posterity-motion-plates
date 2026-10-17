@@ -34,7 +34,10 @@ def compose(ctx, st):
         rgb = st._rgb.get(L.name, L.rgb); a = st._a.get(L.name, L.alpha)
         pm = np.dstack([rgb * a[..., None], a])
         M = ctx.camera_fn(L.depth, st.t)
-        if not (abs(M[0, 0] - 1) < 1e-9 and abs(M[0, 2]) < 1e-9 and abs(M[1, 2]) < 1e-9):
+        gw = getattr(ctx, "ground_warp", None)
+        if gw is not None and L.kind == "bg":
+            mx, my = gw(ctx, st.t); pm = cv2.remap(pm, mx, my, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+        elif not (abs(M[0, 0] - 1) < 1e-9 and abs(M[0, 2]) < 1e-9 and abs(M[1, 2]) < 1e-9):
             pm = cv2.warpAffine(pm, M, (ctx.W, ctx.H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE if L.kind == "bg" else cv2.BORDER_CONSTANT, borderValue=0)
         if out is None: out = pm[..., :3].copy()
         else: out = out * (1 - pm[..., 3:4]) + pm[..., :3]
