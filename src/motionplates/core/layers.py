@@ -232,8 +232,28 @@ def build_stack(base_rgb, spec, extra_holes=None, log=print):
         rgb = inpaint(clean, _grow(front.astype(np.uint8), 3)).astype(np.float32) if front.any() else cl.copy()
         st.layers.append(Layer(d["name"], rgb, d["alpha"], d["depth"], "layer")); st.masks[d["name"]] = d["alpha"]
         T["inpaint_" + d["name"] + "_s"] = time.time() - t1
+    if spec.get("solve_matte", True): solve_edge_colours(st, cl)
     st.timings = T
     return st
+
+WSPAN = 0.15
+def solve_edge_colours(st, target, a_min=0.04, max_dev=90.0):
+    """Start-composition fix: at layer rims (0<alpha<1) the layer colour is solved against everything below it so that the identity composite
+    equals `target` (the clean plate): rgb_k = (target - B_k*(1-a)) / a, where B_k is the composite of the layers beneath. This removes the
+    frame-0 mismatch at the source (instead of hiding it with a residual) and keeps rims halo-free when the layer moves. The deviation from the
+    original layer colour is bounded (max_dev) so a poor lower-layer inpaint can never create coloured fringes."""
+    out = None
+    for L in st.layers:
+        a = L.alpha
+        if out is None: out = L.rgb.copy(); continue
+        rim = (a > a_min) & (a < 0.999)
+        if rim.any():
+            sol = (target - out * (1 - a[..., None])) / np.maximum(a, 1e-3)[..., None]
+            dev = np.clip(sol - L.rgb, -max_dev, max_dev); fit = np.clip(L.rgb + dev, 0, 255)
+            w = np.clip((a - a_min) / WSPAN, 0, 1)[..., None]       # fade the correction in for very low alpha (division noise)
+            L.rgb = np.where(rim[..., None], L.rgb * (1 - w) + fit * w, L.rgb)
+        out = out * (1 - a[..., None]) + L.rgb * a[..., None]
+    return out
 
 def export_stack(st, outdir):
     os.makedirs(outdir, exist_ok=True)

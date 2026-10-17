@@ -19,8 +19,9 @@ effects:
       - {id: b, cx: 140, cy: 220, ax: 10, ay: 8, method: grabcut}
       - {id: c, cx: 110, cy: 235, ax: 10, ay: 8, method: grabcut}
     release_s: {a: 0.15, b: 0.2, c: 0.25}
-    surface: {polygon: [[0,300],[270,300],[270,330],[0,330]], land_y: [315, 0, 0]}
-    extras: {count: 4, ids: [a, b, c], t0: 0.2, t1: 0.5}
+    surface: {quad: [[10,300],[260,300],[265,330],[5,330]]}
+    physics: {elevation_deg: 36, land_u: [0.2, 0.8], land_v: [0.2, 0.8], min_sep_px: 10, max_lateral_px: 200, terminal_px_s: [60, 90]}
+    extras: {count: 3, t0: 0.35, t1: 0.7, min_gap: 0.12, sources: [a, b, c], x: [115, 135], y: [200, 215]}
   - {type: flame_flicker, flames: [{x: 200, y: 150, rx: 12, ry: 16, layer: bg, lum_lo: 0.8, lum_hi: 0.95, light_R: 50, light_gain: 0.3, light_layers: [bg]}]}
   - {type: banner_sway, elements: [banner], amp_px: 2.0}
   - {type: fabric_ripple, layer: subject, region: [[0,300],[270,300],[270,380],[0,380]], amp_px: 0.5}

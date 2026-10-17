@@ -1,0 +1,15 @@
+# TEMPLATE: hand releasing petals / flowers onto a covered surface (see poc_a_augustus.yaml for a fully worked example)
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}
+seed: 1
+clean_plate: {method: smooth_quilt, hole_grow: 1, fill_params: {texture: 0.9, mode: noise}, exclude: []}    # TODO: exclude = hand / skin polygons never sampled by the fill
+layers: []
+effects:
+  - preset: parallax_few_percent
+  - preset: petal_physics_default
+    cuts: []                      # TODO: one entry per suspended petal {id, cx, cy, ax, ay, method: grabcut|luma|ellipse}
+    surface: {quad: []}           # TODO: landing plane: back-left, back-right, front-right, front-left
+    extras: {count: 5, t0: 2.0, t1: 3.5}
+  - preset: banner_sway_restrained
+    elements: []
