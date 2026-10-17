@@ -71,7 +71,7 @@ def make_sprite(base, bg, c, x0, y0, m, ss=2):
     mm = cv2.dilate(m, np.ones((3, 3), np.uint8)).astype(np.float32); a = cv2.GaussianBlur(mm, (0, 0), 0.8)
     core = (a > 0.97); interior = _bleed(sub, core, 7)
     sol = np.clip((sub - sbg * (1 - a[..., None])) / np.maximum(a, 0.05)[..., None], 0, 255); rim = (a > 0.05) & (a < 0.97)
-    dev = np.clip(sol - interior, -22, 22); rgb = np.where(rim[..., None], interior + dev * 0.5, interior)
+    dev = np.clip(sol - interior, -22, 22); rgb = np.where(rim[..., None], interior + dev * 0.0, interior)    # rim colour = bled interior colour (no glow/dark fringes carried by the sprite)
     ys, xs = np.where(a > 0.02); xa, xb, ya, yb = xs.min() - 2, xs.max() + 3, ys.min() - 2, ys.max() + 3
     rgb, a = rgb[ya:yb, xa:xb], a[ya:yb, xa:xb]
     big = lambda z: cv2.resize(z, None, fx=ss, fy=ss, interpolation=cv2.INTER_CUBIC)
@@ -272,6 +272,7 @@ class PetalFall(Effect):
         U_, S_, Vt_ = np.linalg.svd(Md); S_ = np.maximum(S_, S_[0] * 0.36); Md = U_ @ np.diag(S_) @ Vt_      # never fully edge-on (no needle-thin slivers)
         if it["original"]: M = (1 - w) * np.eye(2) + w * Md; zc = zc * w
         else: M = Md
+        U_, S_, Vt_ = np.linalg.svd(M); S_ = np.maximum(S_, S_[0] * 0.36); M = U_ @ np.diag(S_) @ Vt_      # also after the identity->dynamic blend (a linear blend can pass through a singular matrix)
         n = B["R"][:, 2]; nl = abs(float(n @ self.L)); br = 0.76 + 0.40 * nl ** 0.85          # light-direction shading from the petal normal
         bright = 1 + (1 - w) * 0 + w * (br - 1) if it["original"] else br
         alpha = 1.0 if it["original"] else float(smoothstep(tau / 0.22))

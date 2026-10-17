@@ -8,9 +8,9 @@ import cv2, numpy as np
 def _lab_small(img, max_w=270):
     s = max_w / img.shape[1]; sm = cv2.resize(img, None, fx=s, fy=s, interpolation=cv2.INTER_AREA); return sm, cv2.cvtColor(sm, cv2.COLOR_RGB2LAB).astype(np.float32), s
 
-def superpixels(img, k=420, compact=0.35, seed=0):
+def superpixels(img, k=420, compact=3.5, seed=0):
     from sklearn.cluster import MiniBatchKMeans
-    sm, lab, s = _lab_small(img); h, w = lab.shape[:2]; yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    sm, lab, s = _lab_small(img); lab = cv2.GaussianBlur(lab, (0, 0), 1.6); h, w = lab.shape[:2]; yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
     feat = np.dstack([lab, compact * xx * (255 / w) * 0.5, compact * yy * (255 / h) * 0.5]).reshape(-1, 5)
     km = MiniBatchKMeans(n_clusters=k, random_state=seed, n_init=1, batch_size=4096, max_iter=30).fit(feat)
     lab_img = km.labels_.reshape(h, w); n, cc = cv2.connectedComponents((lab_img >= 0).astype(np.uint8))      # make labels spatially connected

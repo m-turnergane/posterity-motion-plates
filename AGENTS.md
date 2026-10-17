@@ -22,3 +22,10 @@ Subclass `Effect`, implement any of `authoring_holes / setup / layer_stage / pos
 
 ## Review checklist
 Seeds fixed? Frame 0 identical? Layer masks generous (never inside the subject), disocclusions inpainted? Motion numbers in manifest within caps? No plate/binary committed?
+
+
+## v0.2.1/v0.3 rules
+- Never hardcode a plates path; use --plates / $MOTIONPLATES_PLATES.
+- Never commit plates, MP4s or the PoC C base map (md5 in assets/basemaps/README.md).
+- Motion plates are at best REVIEW_REQUIRED until an editor sets qc.playback_approved for that exact frames_sha1. Original static plates stay the fallback.
+- No merge to master / production activation without owner approval.
