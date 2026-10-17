@@ -5,7 +5,8 @@ from PIL import Image
 from .util import md5_file
 
 def plates_root():
-    return os.environ.get("MOTIONPLATES_PLATES", "/workspace/posterity/day20/alexander-corpse/plates")
+    from .validate import resolve_plates_root
+    return resolve_plates_root()
 
 def detect_bars(arr, maxscan=40, margin=4):
     lum = arr.astype(np.float32).mean(2); res = {}
