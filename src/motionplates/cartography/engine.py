@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 class RecipeError(ValueError):
     pass
 
-PRIMS = {"camera_move", "route_reveal", "marker", "label", "compass", "focus", "vignette"}
+PRIMS = {"camera_move", "route_reveal", "marker", "label", "compass", "focus"}      # "vignette" events were validated but never rendered: removed in v0.3.1 (use the global recipe key `vignette`)
 FONT_DIRS = ["/usr/share/fonts/truetype/sand-box/google/IBM Plex Serif/", "/usr/share/fonts/truetype/dejavu/"]
 FONTS = {"bold": ["IBMPlexSerif-SemiBold.ttf", "DejaVuSerif-Bold.ttf"], "italic": ["IBMPlexSerif-MediumItalic.ttf", "DejaVuSerif-Italic.ttf"]}
 
@@ -90,7 +90,7 @@ class Recipe:
         self.timing = Timing(words, off); self.ev = []; ends = {}
         for e in R["events"]:
             t0 = self.timing.resolve(e.get("at"), ends, 0.0); d = float(e.get("dur", e.get("in", 0.5)))
-            if e["do"] in ("label", "marker", "compass", "vignette", "focus") and "until" in e: tend = self.timing.resolve(e["until"], ends)
+            if e["do"] in ("label", "marker", "compass", "focus") and "until" in e: tend = self.timing.resolve(e["until"], ends)
             else: tend = None
             e2 = dict(e); e2["t0"] = t0; e2["t1"] = t0 + d; e2["tend"] = tend
             self.ev.append(e2)
@@ -186,6 +186,11 @@ def compass_sprite(size, style):
     f = font("bold", size * 0.2 * SS); d.text((c, c - r - size * 0.01 * SS), "N", font=f, fill=(*iv, 255), anchor="mb")
     im = im.resize((size, size), Image.LANCZOS); a = np.asarray(im).astype(np.float32) / 255.0
     return np.dstack([a[..., 2::-1] * a[..., 3:4] * 255.0, a[..., 3:4]])
+
+def edge_fade(sp, W, H, margin=0.08):
+    """1 inside the safe interior, smoothly -> 0 as the anchor point (screen px) approaches/leaves the frame edge (margin = fraction of the short side)."""
+    m = margin * min(W, H); d = min(sp[0], W - sp[0], sp[1], H - sp[1])
+    return float(smoother(d / m)) if d < m else 1.0
 
 def paste(frame, spr, x, y, alpha):
     """subpixel paste of premultiplied BGRA float sprite with alpha factor"""
@@ -285,7 +290,9 @@ class Renderer:
             else:
                 sp = self.to_screen(rc.p(e["anchor"]), c, z); dx, dy = e.get("offset", [0, 60])
                 pos = sp + np.array([dx * W / 1080 - (w / 2 if e.get("center", True) else 0), dy * W / 1080 - h / 2 + (1 - inn) * 10])
-            pos[1] = float(np.clip(pos[1], 0.145 * H, 0.78 * H - h)) if "screen" not in e else pos[1]; pos[0] = float(np.clip(pos[0], 0.03 * W, 0.97 * W - w))
+            if "screen" not in e:       # anchored labels fade out near the screen edge when their anchor leaves the frame (no clamping to the edge)
+                a *= edge_fade(sp, W, H)
+                pos[1] = float(np.clip(pos[1], 0.145 * H, 0.78 * H - h)); pos[0] = float(np.clip(pos[0], 0.03 * W, 0.97 * W - w))
             paste(img, spr, pos[0], pos[1], a)
         return np.clip(img, 0, 255).astype(np.uint8)[..., ::-1].copy()      # BGR->RGB for the writer
 

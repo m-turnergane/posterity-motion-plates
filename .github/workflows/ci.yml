@@ -2,25 +2,39 @@ name: ci
 on:
   pull_request:
   push:
-    branches: [master, "dev/**"]
+    branches: [master, "dev/**", "hotfix/**"]
 jobs:
   test:
+    name: test (extras ${{ matrix.extras }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        extras: ["dev,masks", "dev"]     # "dev" proves the optional scikit-learn dependency is isolated (its test is skipped, everything else passes)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12", cache: pip}
       - name: system deps (ffmpeg)
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
-      - run: python -m pip install -r requirements.txt
+      - name: install ONLY declared dependencies
+        run: python -m pip install -e ".[${{ matrix.extras }}]"
       - name: unit + synthetic regression tests (synthetic plates only; no production plates exist in CI)
-        env: {PYTHONPATH: src}
-        run: python -m pytest -q tests
-      - name: validate every recipe structurally (no plates needed)
-        env: {PYTHONPATH: src}
+        run: python -m pytest -q tests -rs
+      - name: validate every recipe recursively (templates, nested, cartography; structure only, no plates)
+        run: python -m motionplates validate-all recipes
+      - name: approvals integrity + manifests must not claim approval without a human record
         run: |
-          for r in recipes/*.yaml; do MOTIONPLATES_PLATES=. python -m motionplates validate "$r" --no-assets; done
+          python -m motionplates check-manifests . --approvals approvals --require-committed
       - name: repo hygiene (no plates / large binaries)
         run: |
           ! git ls-files | grep -Ei '\.(mp4|mov|wav)$'
           test "$(git ls-files -z | xargs -0 du -c | tail -1 | cut -f1)" -lt 6000
+  ci-gate:
+    # single stable status-check name for branch protection: require "ci-gate"
+    name: ci-gate
+    needs: [test]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - run: test "${{ needs.test.result }}" = "success"

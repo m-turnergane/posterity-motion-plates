@@ -70,8 +70,12 @@ class FFmpegWriter:
         if os.path.exists(self.tmp): os.remove(self.tmp)
     def finalize(self, expect=None):
         """Verify the temp file (ffprobe + full decode) and atomically move it to dst. expect: dict(W,H,fps,frames)."""
-        info = verify_video(self.tmp, **(expect or dict(W=self.W, H=self.H, fps=self.fps, frames=self.n)))
-        os.replace(self.tmp, self.dst); return info
+        try:
+            info = verify_video(self.tmp, **(expect or dict(W=self.W, H=self.H, fps=self.fps, frames=self.n)))
+            os.replace(self.tmp, self.dst)
+        except BaseException:      # failed verification (or any error) must not leave an orphaned temp file, and must not leave a stale dst
+            self._cleanup(); raise
+        return info
 
 def ffprobe(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries",

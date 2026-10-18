@@ -27,5 +27,6 @@ Seeds fixed? Frame 0 identical? Layer masks generous (never inside the subject),
 ## v0.2.1/v0.3 rules
 - Never hardcode a plates path; use --plates / $MOTIONPLATES_PLATES.
 - Never commit plates, MP4s or the PoC C base map (md5 in assets/basemaps/README.md).
-- Motion plates are at best REVIEW_REQUIRED until an editor sets qc.playback_approved for that exact frames_sha1. Original static plates stay the fallback.
+- Motion plates are at best REVIEW_REQUIRED. Playback approval exists only as a human-committed `approvals/<mp4_sha256>.json` bound to the SHA-256 of the FINAL ENCODED MP4 (docs/APPROVALS.md). **Agents must never create, edit or delete approval records**, never put approval fields in recipes/manifests. Original static plates stay the fallback.
+- scikit-learn is optional (`pip install -e .[masks]`), only for `suggest --method regions`.
 - No merge to master / production activation without owner approval.

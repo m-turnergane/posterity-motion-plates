@@ -1,6 +1,6 @@
 """QC enforcement: individual checks -> overall status. Automated checks can FAIL a render or demand review; they can never approve it.
-Status values: FAIL (output rejected, nonzero exit) | REVIEW_REQUIRED (automated checks passed or have warnings; human playback QC pending) | PASS (only when
-the recipe carries qc.playback_approved: true bound to the exact render via qc.approved_frames_sha1)."""
+Status values: FAIL (output rejected, nonzero exit) | REVIEW_REQUIRED (automated checks passed or have warnings; human playback QC pending) | PASS (never set by the renderer: only
+core.approval.verify_approval may report it, from a human-committed approvals/<mp4_sha256>.json record bound to the final encoded MP4)."""
 import cv2, numpy as np
 
 PASS, REVIEW, FAIL = "PASS", "REVIEW_REQUIRED", "FAIL"
@@ -21,15 +21,13 @@ class QC:
         if fail is not None and value < fail: s = FAIL
         self.add(name, s, value, dict(review_below=review, fail_below=fail), note)
     def worst(self): return max((c["status"] for c in self.checks), key=lambda s: _ORDER[s], default=PASS)
-    def final(self, recipe, frames_sha1, motion_plate=True):
-        """Final status. motion plates are capped at REVIEW_REQUIRED until playback QC approval bound to this exact render."""
-        w = self.worst(); q = (recipe.get("qc") or {})
+    def final(self, recipe=None, frames_sha1=None, motion_plate=True):
+        """Final status as decided BY THE RENDERER: FAIL or REVIEW_REQUIRED only. The renderer can never produce PASS: playback approval is a
+        human record in approvals/<mp4_sha256>.json (see core/approval.py), checked by `motionplates verify-approval`, never by this code path."""
+        w = self.worst()
         if w == FAIL: return FAIL, "automated check failed"
-        approved = q.get("playback_approved") is True and q.get("approved_frames_sha1") == frames_sha1 and bool(q.get("approved_by"))
         warns = [c["name"] for c in self.checks if c["status"] == REVIEW]
-        if approved: return PASS, "playback QC approved for this exact render" + (f" (automated warnings acknowledged: {len(warns)})" if warns else "")
-        why = "no playback-QC approval" if not q.get("playback_approved") else "approval does not match this render (approved_frames_sha1 differs) or approved_by missing"
-        return REVIEW, why + (f"; {len(warns)} automated warning(s)" if warns else "") + " - automated metrics never count as visual approval"
+        return REVIEW, "no playback-QC approval record for this MP4" + (f"; {len(warns)} automated warning(s)" if warns else "") + " - automated metrics never count as visual approval"
 
 def mask_diagnostics(stack, base, qc):
     """Per layer/element: coverage, holes in the matte, edge-halo score (rim colour vs plate), overlap with other layers, disocclusion fill area."""

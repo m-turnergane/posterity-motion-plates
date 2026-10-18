@@ -96,7 +96,8 @@ def validate_recipe(R, plates_root=None, check_assets=True):
             a = e.get("anchor")
             if a is not None and not (len(a) == 2 and 0 <= a[0] <= W and 0 <= a[1] <= H): P.append(f"{w}: anchor outside frame")
     qc = R.get("qc", {}) or {}
-    if qc.get("playback_approved") not in (None, True, False): P.append("qc.playback_approved must be true/false")
+    for k in ("playback_approved", "approved_by", "approved_frames_sha1", "approved_mp4_sha256"):
+        if k in qc: P.append(f"qc.{k} is not allowed in recipes (agent-editable): playback approval lives in approvals/<mp4_sha256>.json, committed by a human")
     return P
 
 def check_recipe(R, plates_root=None, check_assets=True):

@@ -4,6 +4,7 @@ from . import plate as P
 from .layers import build_stack, export_stack, Layer, LayerStack
 from .recipe import load_recipe, make_rng_factory
 from .encode import FFmpegWriter, EncodeError, verify_video
+from .approval import sha256_file, assert_not_approvals_path
 from . import qc as QCm
 from .validate import check_recipe, resolve_plates_root, RecipeError
 from .metrics import MotionMeter
@@ -115,6 +116,7 @@ def _diag_frame0(ctx, dbg):
 
 def render(recipe_path, outdir, plates_dir=None, seconds=None, frames=None, keep_lossless=False, export_layers=None, final_crf=14, log=print, only_times=None, profile="direct", threads=0, expect_status=None, proxy=None):
     """Render; raises RecipeError (invalid recipe), EncodeError (ffmpeg/verification), RenderRejected (QC FAIL). Returns the manifest dict (status in man['qc']['status'])."""
+    assert_not_approvals_path(outdir)
     t_all = time.time(); ctx = prepare(recipe_path, plates_dir, seconds, frames, log, proxy=proxy); R = ctx.R; name, W, H, FPS, N = ctx.name, ctx.W, ctx.H, ctx.fps, ctx.N
     os.makedirs(outdir, exist_ok=True)
     if export_layers: export_stack(ctx.stack, export_layers)
@@ -165,13 +167,13 @@ def render(recipe_path, outdir, plates_dir=None, seconds=None, frames=None, keep
                timings_s={k: round(v, 2) for k, v in ctx.timings.items()}, render_s=round(render_s, 2), render_fps=round(N / render_s, 2), verify_s=round(verify_s, 2), total_s=round(time.time() - t_all, 2),
                frame0=f0, motion=ms, frames_sha1=frames_sha1, safe_zones=zs, mask_diagnostics=md,
                edge_bar_scan={"frames_checked": len(bar_hits), "any_bar_detected": bars}, effects=R["effects"],
-               qc=dict(status=status, reason=why, checks=qc.checks, playback_qc="REQUIRED: a human must watch the full-res MP4 on a phone-size player; set qc.playback_approved/approved_by/approved_frames_sha1 in the recipe"),
-               mp4=mp4, mp4_md5=md5_file(mp4))
+               qc=dict(status=status, reason=why, checks=qc.checks, playback_approved=False, playback_qc="REQUIRED: a human must watch the final encoded MP4 on a phone-size player, then commit approvals/<mp4_sha256>.json (agents must not); the renderer never sets approval"),
+               mp4=mp4, mp4_md5=md5_file(mp4), mp4_sha256=sha256_file(mp4))
     try: man["git"] = subprocess.check_output(["git", "-C", os.path.dirname(os.path.abspath(__file__)), "rev-parse", "--short", "HEAD"], stderr=subprocess.DEVNULL).decode().strip()
     except Exception: man["git"] = None
     cv2.imwrite(os.path.join(outdir, f"{name}_static_plate.png"), cv2.cvtColor(ctx.base, cv2.COLOR_RGB2BGR))
     if status == QCm.FAIL:
-        rej = os.path.join(outdir, f"{name}_REJECTED.mp4"); os.replace(mp4, rej); man["mp4"] = rej; man["mp4_md5"] = md5_file(rej)
+        rej = os.path.join(outdir, f"{name}_REJECTED.mp4"); os.replace(mp4, rej); man["mp4"] = rej; man["mp4_md5"] = md5_file(rej); man["mp4_sha256"] = sha256_file(rej)
     json.dump(man, open(os.path.join(outdir, f"{name}_manifest.json"), "w"), indent=1, default=str)
     if status == QCm.FAIL: raise RenderRejected("QC FAIL: " + "; ".join(f"{c['name']}={c['value']}" for c in qc.checks if c["status"] == QCm.FAIL))
     return man

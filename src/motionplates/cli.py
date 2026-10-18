@@ -6,6 +6,32 @@ from .core.recipe import load_recipe
 
 EXIT = dict(ok=0, rejected=2, invalid=3, encode=4, usage=64)
 
+def validate_tree(root):
+    """Recursively validate all recipes under root. Returns (count, problems). Synthetic/no assets: structure only."""
+    import yaml
+    bad = []; n = 0
+    for dp, dn, fs in os.walk(root):
+        dn.sort()
+        rel = os.path.relpath(dp, root).split(os.sep)
+        if "presets" in rel: continue
+        for f in sorted(fs):
+            if not f.endswith((".yaml", ".yml")): continue
+            p = os.path.join(dp, f); n += 1
+            try:
+                txt = open(p).read()
+                if "templates" in rel: txt = txt.replace("__NAME__", "tmpl").replace("__PLATE__", "plate.png")
+                R = yaml.safe_load(txt)
+                if not isinstance(R, dict): bad.append(f"{p}: not a mapping"); continue
+                if "events" in R and "locations" in R:
+                    from .cartography.engine import validate as cv; cv(R)
+                else:
+                    from .core.recipe import load_recipe_text
+                    pr = validate_recipe(load_recipe_text(txt, os.path.join(root, "presets")), None, check_assets=False)
+                    if "templates" in rel: pr = [x for x in pr if any(k in x for k in ("unknown type", "not defined", "missing required", "plate.file"))]   # templates carry TODO placeholders by design
+                    bad += [f"{p}: {x}" for x in pr]
+            except Exception as e: bad.append(f"{p}: {type(e).__name__}: {e}")
+    return n, bad
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="motionplates"); sub = ap.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("render", help="render a recipe"); r.add_argument("recipe"); r.add_argument("--out", default="out"); r.add_argument("--plates", default=None, help="plates dir (or $MOTIONPLATES_PLATES); no default")
@@ -15,6 +41,10 @@ def main(argv=None):
     v = sub.add_parser("validate", help="validate a recipe (structure, polygons, references, assets) without rendering"); v.add_argument("recipe"); v.add_argument("--plates", default=None); v.add_argument("--no-assets", action="store_true")
     g = sub.add_parser("suggest", help="propose mask/layer candidates for review (writes overlay PNG + YAML snippet)"); g.add_argument("recipe_or_plate"); g.add_argument("--plates", default=None)
     g.add_argument("--method", default="regions", choices=["regions", "saliency", "box"]); g.add_argument("-n", type=int, default=10); g.add_argument("--box", default=None, help="x0,y0,x1,y1 for method=box"); g.add_argument("--out", default="suggestions")
+    va = sub.add_parser("validate-all", help="validate every recipe under DIR recursively (templates with placeholders filled, presets skipped, cartography recipes via their own validator); no plates needed")
+    va.add_argument("dir", nargs="?", default="recipes")
+    ap_ = sub.add_parser("verify-approval", help="read-only: PASS only if approvals/<sha256 of this MP4>.json is a valid human record"); ap_.add_argument("mp4"); ap_.add_argument("--approvals", default="approvals")
+    cm = sub.add_parser("check-manifests", help="fail if any renderer manifest under DIR claims playback approval without a matching approval record (and validate approvals/ itself)"); cm.add_argument("dir"); cm.add_argument("--approvals", default="approvals"); cm.add_argument("--require-committed", action="store_true")
     nw = sub.add_parser("new", help="create a recipe from a template"); nw.add_argument("--template", required=True); nw.add_argument("--plate", required=True); nw.add_argument("--name", required=True); nw.add_argument("--out", default=None)
     a = ap.parse_args(argv)
     try:
@@ -22,6 +52,20 @@ def main(argv=None):
             tdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "recipes", "templates"); tp = os.path.join(tdir, a.template + ".yaml")
             if not os.path.isfile(tp): print("unknown template; available:", sorted(f[:-5] for f in os.listdir(tdir)), file=sys.stderr); return EXIT["usage"]
             txt = open(tp).read().replace("__NAME__", a.name).replace("__PLATE__", a.plate); out = a.out or f"recipes/{a.name}.yaml"; open(out, "w").write(txt); print("wrote", out); return 0
+        if a.cmd == "validate-all":
+            n, bad = validate_tree(a.dir)
+            print(f"{n} recipe(s) checked, {len(bad)} invalid"); [print("  -", b) for b in bad]; return 0 if not bad else EXIT["invalid"]
+        if a.cmd == "verify-approval":
+            from .core.approval import verify_approval
+            st, why = verify_approval(a.mp4, a.approvals); print(st, "-", why); return 0 if st == "PASS" else EXIT["rejected"]
+        if a.cmd == "check-manifests":
+            from .core.approval import check_manifest, check_approvals_dir
+            probs = check_approvals_dir(a.approvals, a.require_committed); n = 0
+            for dp, _, fs in os.walk(a.dir):
+                for f in fs:
+                    if f.endswith("_manifest.json"):
+                        n += 1; probs += [f"{os.path.join(dp, f)}: {x}" for x in check_manifest(json.load(open(os.path.join(dp, f))), a.approvals, a.require_committed)]
+            print(f"{n} manifest(s) checked, {len(probs)} problem(s)"); [print("  -", x) for x in probs]; return 0 if not probs else EXIT["invalid"]
         if a.cmd == "suggest":
             from .authoring import suggest as S
             from .core import plate as P

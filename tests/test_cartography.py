@@ -1,4 +1,4 @@
-import os, json, copy, numpy as np, cv2, pytest, yaml
+import os, json, copy, sys, numpy as np, cv2, pytest, yaml
 from motionplates.cartography.engine import Recipe, Renderer, RecipeError, load_words, camera_state, Route
 
 def mini(tmp_path, events=None):

@@ -92,13 +92,6 @@ def test_status_is_review_required_until_playback_approved(rendered):
     assert q["status"] == "REVIEW_REQUIRED" and "approval" in q["reason"]
     assert not [c for c in q["checks"] if c["status"] == "FAIL"]
 
-def test_playback_approval_bound_to_exact_render(synth, tmp_path, rendered):
-    m = rendered[0]
-    ok = _recipe(tmp_path, qc={"playback_approved": True, "approved_by": "editor", "approved_frames_sha1": m["frames_sha1"]})
-    assert engine.render(ok, str(tmp_path / "a"), plates_dir=synth, log=lambda *a: None)["qc"]["status"] == "PASS"
-    bad = _recipe(tmp_path, qc={"playback_approved": True, "approved_by": "editor", "approved_frames_sha1": "0" * 40})
-    assert engine.render(bad, str(tmp_path / "b"), plates_dir=synth, log=lambda *a: None)["qc"]["status"] == "REVIEW_REQUIRED"
-
 def test_qc_failure_rejects_output_and_exit_code(synth, tmp_path):
     r = yaml.safe_load(open(RECIPE)); r["safe_zones"] = [{"name": "tight", "box": [0, 0, 270, 480], "max_mean_delta": 0.0001}]
     p = tmp_path / "r.yaml"; p.write_text(yaml.safe_dump(r)); out = tmp_path / "o"
@@ -232,6 +225,7 @@ def test_proxy_recipe_scaling_and_render(synth, tmp_path):
     assert m["qc"]["status"] == "PROXY_PREVIEW" and m["output"]["W"] == 136
 
 def test_suggest_regions_finds_block(tmp_path):
+    pytest.importorskip("sklearn", reason="optional extra: pip install .[masks]")
     from motionplates.authoring import suggest as S
     img = np.full((480, 270, 3), 120, np.uint8); img[:, :, 0] = np.linspace(100, 140, 270).astype(np.uint8)[None, :]; cv2.rectangle(img, (40, 200), (200, 400), (30, 40, 150), -1)
     c = S.candidates(img, "regions", 6); tgt = np.zeros((480, 270), bool); tgt[200:401, 40:201] = True

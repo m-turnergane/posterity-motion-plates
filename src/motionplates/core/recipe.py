@@ -2,7 +2,10 @@ import os, yaml, zlib, json
 import numpy as np
 
 def load_recipe(path, presets_dir=None):
-    r = yaml.safe_load(open(path)); presets_dir = presets_dir or os.path.join(os.path.dirname(os.path.abspath(path)), "presets")
+    return load_recipe_text(open(path).read(), presets_dir or os.path.join(os.path.dirname(os.path.abspath(path)), "presets"))
+
+def load_recipe_text(txt, presets_dir):
+    r = yaml.safe_load(txt)
     presets = {}
     if os.path.isdir(presets_dir):
         for fn in sorted(os.listdir(presets_dir)):

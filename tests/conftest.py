@@ -1,6 +1,6 @@
 import os, sys, numpy as np, cv2, pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-HERE = os.path.dirname(__file__)
+HERE = os.path.dirname(__file__); sys.path.insert(0, HERE)
 
 def make_synth_plate(path, W=270, H=480):
     """Small synthetic painted-ish plate: warm gradient, 'pall' band, bright flame, dark banner, 3 red petals. Generated, never committed."""
