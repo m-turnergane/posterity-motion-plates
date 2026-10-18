@@ -13,3 +13,6 @@ __pycache__/
 .venv/
 .pytest_cache/
 scratch/
+
+# PoC C base map (owner-supplied, large): record md5 in assets/basemaps/README.md
+assets/basemaps/*.png

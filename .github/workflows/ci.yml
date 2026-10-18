@@ -1,0 +1,26 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [master, "dev/**"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - name: system deps (ffmpeg)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+      - run: python -m pip install -r requirements.txt
+      - name: unit + synthetic regression tests (synthetic plates only; no production plates exist in CI)
+        env: {PYTHONPATH: src}
+        run: python -m pytest -q tests
+      - name: validate every recipe structurally (no plates needed)
+        env: {PYTHONPATH: src}
+        run: |
+          for r in recipes/*.yaml; do MOTIONPLATES_PLATES=. python -m motionplates validate "$r" --no-assets; done
+      - name: repo hygiene (no plates / large binaries)
+        run: |
+          ! git ls-files | grep -Ei '\.(mp4|mov|wav)$'
+          test "$(git ls-files -z | xargs -0 du -c | tail -1 | cut -f1)" -lt 6000

@@ -21,12 +21,6 @@ layers:
     polygons:
       - [[0,670],[112,690],[115,745],[95,775],[88,1100],[40,1100],[55,780],[0,775]]
       - [[100,845],[200,850],[210,880],[180,905],[205,940],[195,1090],[115,1090],[112,940],[130,905],[105,880]]
-  - name: fg_rubble
-    depth: 1.0
-    grow: 8
-    feather: 3.0
-    polygons:
-      - [[1080,1340],[1010,1345],[940,1370],[890,1410],[870,1460],[850,1500],[800,1530],[780,1570],[830,1610],[960,1640],[1080,1660]]
   - name: fg_bottom
     depth: 1.0
     grow: 2
@@ -40,6 +34,7 @@ effects:
   - preset: parallax_few_percent
     anchor: [650, 1050]
     end_scale: {bg: 1.008, mid: 1.022, fg: 1.038}
+    ground_ramp: {y0: 1100, y1: 1800, end_scale: 1.034}      # floor + rubble move as ONE continuous ground plane (no rubble layer -> no disocclusion smear)
   - preset: banner_sway_restrained
     elements: [banner_right]
     amp_px: 5.0

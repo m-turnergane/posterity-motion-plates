@@ -1,11 +1,18 @@
 import os, subprocess, glob, cv2, numpy as np
+from .encode import reencode_atomic, TAGS, tmp_path, EncodeError
 
 def make_compare(man, outdir):
     name = man["name"]; mp4 = man["mp4"]; static = os.path.join(outdir, f"{name}_static_plate.png")
     cmpf = os.path.join(outdir, f"{name}_compare_sidebyside.mp4"); fps = man["output"]["fps"]
-    subprocess.check_call(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(fps), "-i", static, "-i", mp4,
-        "-filter_complex", "[0:v]format=yuv420p[a];[1:v]format=yuv420p[b];[a][b]hstack=inputs=2,scale=1280:-2:flags=lanczos[v]", "-map", "[v]", "-frames:v", str(man["output"]["frames"]),
-        "-c:v", "libx264", "-crf", "17", "-preset", "slow", "-pix_fmt", "yuv420p", "-movflags", "+faststart", cmpf])
+    tmp = tmp_path(cmpf)
+    try:
+        subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-framerate", str(fps), "-i", static, "-i", mp4,
+            "-filter_complex", "[0:v]format=yuv420p[a];[1:v]format=yuv420p[b];[a][b]hstack=inputs=2,scale=1280:-2:flags=lanczos[v]", "-map", "[v]", "-frames:v", str(man["output"]["frames"]),
+            "-c:v", "libx264", "-crf", "17", "-preset", "slow", "-pix_fmt", "yuv420p", *TAGS, "-movflags", "+faststart", "-f", "mp4", tmp], check=True, capture_output=True)
+        os.replace(tmp, cmpf)
+    except subprocess.CalledProcessError as e:
+        if os.path.exists(tmp): os.remove(tmp)
+        raise EncodeError("compare encode failed: " + e.stderr.decode(errors="replace")[-400:])
     base = cv2.imread(static)
     for p in sorted(glob.glob(os.path.join(outdir, "stills_raw", f"{name}_t*.png"))):
         t = os.path.basename(p).split("_t")[-1][:-4]; im = cv2.imread(p)

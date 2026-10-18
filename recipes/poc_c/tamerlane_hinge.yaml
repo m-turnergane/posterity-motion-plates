@@ -1,0 +1,38 @@
+# PoC C spike, Deliverable A: Tamerlane map hinge (INTERNAL, never posted). Everything is config: timing keys to VO words.
+name: poc_c_tamerlane_hinge
+output: {size: [1080, 1920], fps: 30, duration: 12.0}
+base: {file: assets/basemaps/tamerlane_eurasia_painted.png}      # owner's painted map, used as-is (baked pins/labels stay)
+vo: {alignment: vo_alignment_tamerlane_rev6.json, offset_s: 7.9}   # clip t = VO t - 7.9 ("That man was Timur ..." -> "Samarkand lay in Soviet Uzbekistan")
+style: {ink: "#24160c", ivory: "#f4e8cb", plate: "#1d130b"}
+vignette: 1.0
+locations:                    # source-map pixels (941x1672), found from the baked pins
+  samarkand: [583, 672]
+  baghdad: [284.5, 776.5]
+  delhi: [724, 894]
+  constantinople: [82, 591]
+camera: {center: [470, 836], zoom: 1.0}
+events:
+  - {id: tag,  do: label, at: 0.0, text: "INTERNAL PoC", size: 22, screen: [0.5, 0.155], until: 3.0}
+  - {id: nrth, do: compass, at: 0.3, screen: [0.115, 0.215], size: 118}
+  # beat 1: "That man was TIMUR" -> locate him: marker + push-in on Samarkand
+  - {id: m_sam, do: marker, at: {word: "Timur,", offset: -0.1}, at_loc: samarkand, r: 15, pulse_s: 1.4}
+  - {id: push,  do: camera_move, at: {word: "Timur,", offset: -0.25}, dur: 2.5, to: {center: samarkand, zoom: 1.6}}
+  - {id: l_tim, do: label, at: {word: "Timur,", offset: 0.15}, anchor: samarkand, offset: [0, -130], text: "TIMUR", size: 50, until: {word: "Tamerlane.", edge: end, offset: 0.4}}
+  # beat 2: "the CENTRAL ASIAN CONQUEROR" -> focus ring
+  - {id: foc,   do: focus, at: {word: "Central"}, dur: 1.2, center: samarkand, radius: 190, strength: 0.38, until: {word: "Tamerlane.", edge: end}}
+  - {id: l_con, do: label, at: {word: "conqueror"}, anchor: samarkand, offset: [0, 135], text: "CONQUEROR", size: 34, until: {word: "Tamerlane.", edge: end}}
+  # beat 3: "Europe called TAMERLANE" -> caption in the safe area
+  - {id: cap,   do: label, at: {word: "Tamerlane."}, text: "TAMERLANE", size: 74, screen: [0.5, 0.235], until: {word: "Tamerlane.", edge: end, offset: 0.7}}
+  # silence after the name: the routes (dashed ink) spread out, camera follows
+  - {id: pull1, do: camera_move, at: 4.7, dur: 1.0, to: {center: [650, 790], zoom: 1.4}}
+  - {id: r_del, do: route_reveal, at: {after: pull1, gap: 0.0}, from: samarkand, to: delhi, bow: 0.13, dur: 1.8, head: true, rest_opacity: 0.9}
+  - {id: m_del, do: marker, at: {after: r_del, gap: 0.0}, at_loc: delhi, r: 14}
+  - {id: l_del, do: label, at: {after: r_del, gap: 0.0}, anchor: delhi, offset: [20, 95], text: "DELHI", size: 38}
+  - {id: pull2, do: camera_move, at: {after: r_del, gap: -0.4}, dur: 1.0, to: {center: [430, 760], zoom: 1.4}}
+  - {id: r_bag, do: route_reveal, at: {after: pull2, gap: 0.0}, from: samarkand, to: baghdad, bow: -0.10, dur: 1.7, head: true, rest_opacity: 0.9}
+  - {id: m_bag, do: marker, at: {after: r_bag, gap: 0.0}, at_loc: baghdad, r: 14}
+  - {id: l_bag, do: label, at: {after: r_bag, gap: 0.0}, anchor: baghdad, offset: [0, 95], text: "BAGHDAD", size: 38}
+  # beat 4: "SAMARKAND lay in ..." -> settle back on the capital: final composition
+  - {id: home,  do: camera_move, at: {word: "Samarkand", offset: -0.1}, dur: 1.7, to: {center: [504, 770], zoom: 1.42}}
+  - {id: m_sam2, do: marker, at: {word: "Samarkand"}, at_loc: samarkand, r: 15, pulse_s: 1.4}
+  - {id: l_sam, do: label, at: {word: "Samarkand", offset: 0.2}, anchor: samarkand, offset: [0, -110], text: "THE CAPITAL", size: 40}

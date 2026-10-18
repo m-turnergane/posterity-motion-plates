@@ -29,3 +29,8 @@ Frame 0 = effects at zero + layers composed at identity + petals at their origin
 
 ## Why not Remotion
 Layered numpy compositing already gives per-pixel control, determinism and the same ffmpeg encode path as the editor. Remotion adds a browser runtime, lossy colour-matrix drift and a second engine for effects that are simple here; revisit only for shader-like effects (volumetric light, smoke).
+
+
+## v0.3 additions
+core/encode.py (FFmpegWriter, verify, atomic), core/validate.py (schema + plates root), core/qc.py (status model, mask diagnostics), core/proxy.py (scale_recipe), authoring/suggest.py (superpixel/saliency/GrabCut proposals), effects/petal_fall.py (sprites -> variants -> 3D kinematics -> landing homography -> blur), effects/smoke_drift.py, parallax_push ground_ramp.
+Frame 0: composite is solved against the clean plate (layer-rim colour solve) and a targeted, feathered residual correction fades out over frame0.fade_s; diagnostics (residual map, correction mask, concentration by class) go to debug/.
