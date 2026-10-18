@@ -1,0 +1,40 @@
+# C1 (INTERNAL PoC, DRAFT claims, not for publication): restrained 10.4 s Samarkand hinge, Cartography v0.2 / schema 2.
+# One dominant geographic action at a time: [wide establishing] -> push to Samarkand -> pull out -> one line pointing toward Berlin (off the map).
+# No Delhi/Baghdad routes: the narration in this window says nothing about them.  Clip t = VO t - 13.3 s.
+schema: 2
+name: c1_samarkand_hinge
+status: INTERNAL_POC_DRAFT
+output: {size: [1080, 1920], fps: 30, duration: 10.4}
+base: {file: assets/basemaps/tamerlane_eurasia_clean.png}              # CLEAN base (baked pins/labels removed); original painted map stays the fallback
+georef: {file: assets/georef/tamerlane_eurasia.georef.json}           # lcc + poly2 fitted to 9 landmarks; markers are placed by real lon/lat
+vo: {alignment: vo_alignment_tamerlane_rev6.json, offset_s: 13.3}
+style: {ink: "#24160c", ivory: "#f4e8cb", plate: "#1d130b"}
+vignette: 1.0
+limits: {max_labels: 2, max_annotations: 3, max_titles: 1, tail_margin_s: 0.25, tail_fade_s: 0.35}
+
+sources:
+  - {id: s_wp_coords_samarkand, title: "Wikipedia coordinates API, Samarkand (39.65472 N, 66.97583 E)", url: "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&format=json&titles=Samarkand", retrieved: "2026-10-17", license: "CC BY-SA 4.0"}
+  - {id: s_wp_coords_berlin, title: "Wikipedia coordinates, Berlin (52.5200 N, 13.4050 E)", url: "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&format=json&titles=Berlin", retrieved: "2026-10-17", license: "CC BY-SA 4.0"}
+  - {id: s_wp_uzbek_ssr, title: "Wikipedia, Uzbek Soviet Socialist Republic (capture wp_Uzbek_SSR.txt)", url: "https://en.wikipedia.org/wiki/Uzbek_Soviet_Socialist_Republic", retrieved: "2026-10-17", license: "CC BY-SA 4.0"}
+  - {id: s_archivist_geo, title: "Archivist brief: cartography/ARCHIVIST-tamerlane-geography.md (sections 1 and 3)", ref: "/workspace/posterity/cartography/ARCHIVIST-tamerlane-geography.md", retrieved: "2026-10-17", license: "internal"}
+  - {id: s_naturalearth, title: "Natural Earth 1:50m physical/cultural vectors (georeferencing check only)", url: "https://www.naturalearthdata.com", retrieved: "2026-10-18", license: "public domain"}
+claims:
+  - {id: c_where, text: "Samarkand lies in Central Asia at 39.65 N, 66.98 E; on the painted map its position comes from a fitted projection and is approximate (about 100 km deviation at this point).", band: DOCUMENTED, confidence: high, approximate: true, sources: [s_wp_coords_samarkand, s_naturalearth], status: DRAFT}
+  - {id: c_uzbek, text: "In 1941 Samarkand lay in the Uzbek SSR, a republic of the Soviet Union (label 'Uzbek SSR', never 'Uzbekistan'; no border drawn).", band: DOCUMENTED, confidence: high, approximate: false, sources: [s_wp_uzbek_ssr, s_archivist_geo], status: DRAFT}
+  - {id: c_berlin, text: "Berlin lies west-northwest of Samarkand, off this map's edge, over four thousand km away by straight line (computed great-circle about 4,260 km; not a route).", band: QUALIFIED, confidence: high, approximate: true, sources: [s_wp_coords_samarkand, s_wp_coords_berlin, s_archivist_geo], status: DRAFT}
+
+locations:
+  samarkand: {lonlat: [66.97583, 39.65472]}
+  berlin: {lonlat: [13.4050, 52.5200]}
+camera: {center: [470, 836], zoom: 1.0}
+events:
+  # "Samarkand" (VO 17.88 = clip 4.58): the first geographic fact; marker + push-in are the only things that happen
+  - {id: m_sam, do: marker, at: {word: "Samarkand", offset: -0.05}, claim: c_where, purpose: "locate the city the sentence names", at_loc: samarkand, r: 17, pulse_s: 1.4}
+  - {id: push, do: camera_move, at: {word: "Samarkand", offset: 0.0}, dur: 1.8, claim: c_where, purpose: "frame Samarkand and its surroundings (Aral Sea, Pamir ranges) while it is named", to: {center: samarkand, zoom: 1.35}}
+  - {id: l_sam, do: label, kind: geo, at: {word: "Samarkand", offset: 0.2}, until: {word: "over", offset: 0.0}, claim: c_where, purpose: "name the located point", anchor: samarkand, center: false, offset: [30, -26], text: "SAMARKAND"}
+  # "Soviet Uzbekistan": the political frame of 1941 (label only, no border: the painted map cannot carry a 1941 border)
+  - {id: l_uzb, do: label, kind: event, at: {word: "Uzbekistan,", offset: -0.1}, until: {word: "over", offset: -0.05}, claim: c_uzbek, purpose: "say which state Samarkand belonged to in 1941", anchor: samarkand, offset: [-60, -150], text: "UZBEK SSR", sub: "Soviet Union, 1941"}
+  # "over four thousand kilometers east of Berlin": pull back to the wide view, then ONE line pointing toward Berlin, stopping short of the map edge
+  - {id: pull, do: camera_move, at: {word: "over", offset: 0.0}, dur: 0.95, claim: c_berlin, purpose: "widen the view so the direction toward Berlin is readable", to: {center: [470, 836], zoom: 1.0}}
+  - {id: r_ber, do: route_reveal, at: {word: "kilometers", offset: 0.0}, claim: c_berlin, purpose: "show the direction (not a route) from Samarkand toward Berlin", geodesic: [samarkand, berlin], edge_margin: 96, arrow: true, dur: 1.5, ease: inout, width: 4.2, dash: 22, gap: 14}
+  - {id: l_ber, do: label, kind: event, at: {word: "Berlin.", offset: 0.0}, until: 10.4, claim: c_berlin, purpose: "name where the line points; Berlin is off this map", anchor: r_ber_end, center: false, offset: [24, 62], text: "TO BERLIN", sub: "off the map · 4,000+ km, straight line"}

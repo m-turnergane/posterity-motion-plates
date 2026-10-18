@@ -7,6 +7,7 @@ dependencies = ["numpy>=1.26", "opencv-python-headless>=4.9", "Pillow>=10", "PyY
 [project.optional-dependencies]
 dev = ["pytest"]
 masks = ["scikit-learn>=1.3"]     # only for `motionplates suggest --method regions` (authoring aid); pip install -e .[masks]
+geo = ["pyshp>=2.3"]               # only for tools/georef_overlay.py + tools/georef_fit_report.py (Natural Earth shapefiles); not needed to render
 [build-system]
 requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"

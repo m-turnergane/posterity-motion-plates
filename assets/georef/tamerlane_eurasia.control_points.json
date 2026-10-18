@@ -1,0 +1,22 @@
+{
+ "map": "assets/basemaps/tamerlane_eurasia_painted.png",
+ "map_md5": "1004379863d6234fce808a05654cd055",
+ "size": [941, 1672],
+ "note": "Control points read by eye from 100%+ crops of the owner's PAINTED concept map (not an atlas). 'landmark' = a real physical feature (coast/island/lake) identified on the painting; 'pin' = a city pin the painter placed (used only as an independent test of the fit). Real lon/lat: Natural Earth / Wikipedia coordinates. Read-off precision about +-6 px.",
+ "projection": {"kind": "equirect", "lat0": 40.0, "lon0": 60.0},
+ "points": [
+  {"id": "cape_comorin",    "type": "landmark", "lon": 77.55, "lat": 8.08,  "px": [745, 1286], "note": "southern tip of India"},
+  {"id": "sri_lanka_centre","type": "landmark", "lon": 80.70, "lat": 7.65,  "px": [818, 1267], "note": "island centroid"},
+  {"id": "cyprus_centre",   "type": "landmark", "lon": 33.00, "lat": 35.00, "px": [121, 712],  "note": "island centroid"},
+  {"id": "aral_centre",     "type": "landmark", "lon": 59.60, "lat": 45.00, "px": [503, 583],  "note": "painted lake with river leaving its south end; most uncertain landmark"},
+  {"id": "suez_tip",        "type": "landmark", "lon": 32.55, "lat": 29.95, "px": [82, 806],   "note": "head of the Gulf of Suez"},
+  {"id": "bab_el_mandeb",   "type": "landmark", "lon": 43.40, "lat": 12.60, "px": [176, 1076], "note": "southern end of the Red Sea"},
+  {"id": "cape_guardafui",  "type": "landmark", "lon": 51.27, "lat": 11.80, "px": [309, 1086], "note": "tip of the Horn of Africa"},
+  {"id": "gulf_head",       "type": "landmark", "lon": 48.60, "lat": 29.95, "px": [294, 803],  "note": "head of the Persian Gulf (Shatt al-Arab)"},
+  {"id": "crimea_centre",   "type": "landmark", "lon": 34.30, "lat": 45.30, "px": [166, 535],  "note": "peninsula centroid"},
+  {"id": "samarkand_pin",   "type": "pin", "lon": 66.9758, "lat": 39.6547, "px": [583, 672],   "note": "painter's pin"},
+  {"id": "baghdad_pin",     "type": "pin", "lon": 44.3661, "lat": 33.3152, "px": [284.5, 776.5], "note": "painter's pin"},
+  {"id": "delhi_pin",       "type": "pin", "lon": 77.2090, "lat": 28.6139, "px": [724, 894],   "note": "painter's pin"},
+  {"id": "istanbul_pin",    "type": "pin", "lon": 28.9784, "lat": 41.0082, "px": [82, 591],    "note": "painter's pin (Constantinople)"}
+ ]
+}

@@ -61,25 +61,43 @@ class Timing:
 def validate(R):
     for k in ("output", "base", "locations", "events"):
         if k not in R: raise RecipeError(f"missing '{k}'")
+    if R.get("schema", 1) not in (1, 2): raise RecipeError(f"unsupported schema {R.get('schema')!r}")
     ids = set()
     for e in R["events"]:
         if e.get("do") not in PRIMS: raise RecipeError(f"unknown primitive {e.get('do')!r}")
         if "id" in e:
             if e["id"] in ids: raise RecipeError(f"duplicate id {e['id']}")
             ids.add(e["id"])
+    route_ends = {e["id"] + "_end" for e in R["events"] if e.get("do") == "route_reveal" and "id" in e}
     def loc(x, where):
-        if isinstance(x, str) and x not in R["locations"]: raise RecipeError(f"{where}: unknown location '{x}'")
+        if isinstance(x, str) and x not in R["locations"] and x not in route_ends: raise RecipeError(f"{where}: unknown location '{x}'")
     for e in R["events"]:
         for k in ("from", "to", "at_loc", "center", "anchor"):
             if k in e and isinstance(e[k], str): loc(e[k], e.get("id", e["do"]))
         if e["do"] == "camera_move" and isinstance(e.get("to"), dict) and isinstance(e["to"].get("center"), str): loc(e["to"]["center"], "camera_move")
+    if R.get("schema", 1) == 2:
+        from .storyboard import static_issues
+        errs = [i for i in static_issues(R) if i.level == "error"]
+        if errs: raise RecipeError("schema-2 storyboard invalid:\n  - " + "\n  - ".join(f"[{i.code}] {i.msg}" for i in errs))
     return R
 
 class Recipe:
-    def __init__(self, R, root, vo_dir=None):
-        self.R = validate(R); self.root = root
+    def __init__(self, R, root, vo_dir=None, assets_root=None):
+        self.R = validate(R); self.root = root; self.assets_root = assets_root or root
         o = R["output"]; self.W, self.H = o["size"]; self.fps = o.get("fps", 30); self.dur = o["duration"]
-        self.loc = {k: np.array(v, np.float64) for k, v in R["locations"].items()}
+        self.georef = None
+        if "georef" in R:
+            from . import georef as G
+            gp = R["georef"]["file"]; gp = gp if os.path.isabs(gp) else os.path.join(self.assets_root, gp)
+            if not os.path.exists(gp): raise RecipeError(f"georef file not found: {gp}")
+            self.georef = G.load(gp)
+        self.loc = {}; self.lonlat = {}
+        for k, v in R["locations"].items():
+            if isinstance(v, dict) and "lonlat" in v:
+                if self.georef is None: raise RecipeError(f"location '{k}' uses lonlat but the recipe has no 'georef'")
+                self.lonlat[k] = tuple(v["lonlat"]); self.loc[k] = np.array(self.georef.to_px(v["lonlat"]), np.float64)
+            elif isinstance(v, dict): raise RecipeError(f"location '{k}': expected [x, y] pixels or {{lonlat: [lon, lat]}}")
+            else: self.loc[k] = np.array(v, np.float64)
         self.S = {"ink": hexbgr(R.get("style", {}).get("ink", "#24160c")), "ivory": hexbgr(R.get("style", {}).get("ivory", "#f4e8cb")),
                   "plate": hexbgr(R.get("style", {}).get("plate", "#1d130b"))}
         words = []; off = 0.0
@@ -132,6 +150,15 @@ def catmull(pts, n=240):
 
 class Route:
     def __init__(self, rc, e, seed):
+        if "geodesic" in e:      # great-circle between two lon/lat locations through the georef, clipped where it leaves the map (no route endpoint off the map)
+            from . import georef as G
+            na, nb = e["geodesic"]
+            if na not in rc.lonlat or nb not in rc.lonlat: raise RecipeError(f"geodesic route needs lonlat locations ({na}, {nb})")
+            ll = G.geodesic(rc.lonlat[na], rc.lonlat[nb], 200); px = rc.georef.to_px(ll)
+            px = G.clip_polyline_to_rect(px, rc.R.get("map_size", rc.georef.size)[0], rc.R.get("map_size", rc.georef.size)[1], e.get("edge_margin", 14.0))
+            self.pts = px; w = 0.0
+            seg = np.linalg.norm(np.diff(self.pts, axis=0), axis=1); self.s = np.concatenate([[0], np.cumsum(seg)]); self.L = self.s[-1]
+            self.dash, self.gap = float(e.get("dash", 24)), float(e.get("gap", 15)); self.width = float(e.get("width", 5.0)); self.seed = seed; self.end = self.pts[-1].copy(); return
         a, b = rc.p(e["from"]), rc.p(e["to"]); via = [rc.p(v) for v in e.get("via", [])]
         pts = [a] + via + [b]
         if not via and e.get("bow", 0):                      # simple bow: perpendicular offset of the midpoint
@@ -145,7 +172,7 @@ class Route:
             self.pts = self.pts + nm * off[:, None]
         seg = np.linalg.norm(np.diff(self.pts, axis=0), axis=1); self.s = np.concatenate([[0], np.cumsum(seg)]); self.L = self.s[-1]
         self.dash, self.gap = float(e.get("dash", 24)), float(e.get("gap", 15)); self.width = float(e.get("width", 5.0))
-        self.seed = seed
+        self.seed = seed; self.end = self.pts[-1].copy()
     def at(self, s):
         return np.array([np.interp(s, self.s, self.pts[:, 0]), np.interp(s, self.s, self.pts[:, 1])])
     def dashes(self, s_head):
@@ -177,6 +204,29 @@ def text_plate(lines, scale, style):
     im = im.resize((w, h), Image.LANCZOS); a = np.asarray(im).astype(np.float32) / 255.0
     return np.dstack([a[..., 2::-1] * a[..., 3:4] * 255.0, a[..., 3:4]])
 
+def text_halo(lines, scale, style, kind="geo"):
+    """premultiplied BGRA float sprite WITHOUT a box. kind: geo (small ivory letters, soft dark halo), event (ivory text + thin rule under it),
+    title (large, soft vertical scrim fading to nothing; no edges). Halo = blurred dilated glyph mask, so text stays readable on any painted ground at phone size."""
+    SS = 3; pad = int(18 * scale); gap = int(6 * scale); fs = [(t, k, sz * scale) for t, k, sz in lines]
+    d0 = ImageDraw.Draw(Image.new("L", (4, 4))); bx = [d0.textbbox((0, 0), t, font=font(k, sz)) for t, k, sz in fs]
+    w = max(b[2] for b in bx) + 2 * pad; h = sum(b[3] - b[1] for b in bx) + pad * 2 + gap * (len(fs) - 1) + (int(8 * scale) if kind == "event" else 0)
+    tm = Image.new("L", (w * SS, h * SS), 0); d = ImageDraw.Draw(tm); y = pad
+    for (t, k, sz), b in zip(fs, bx): d.text((pad * SS, (y - b[1]) * SS), t, font=font(k, sz * SS), fill=255); y += b[3] - b[1] + gap
+    tmask = np.asarray(tm).astype(np.float32) / 255.0
+    if kind == "event":
+        ry = int((h - pad * 0.75) * SS); x0, x1 = pad * SS, (w - pad) * SS; cv2.line(tmask, (x0, ry), (x1, ry), 1.0, max(1, int(1.6 * SS)), cv2.LINE_AA)
+    r = {"geo": 5.5, "event": 6.5, "title": 14.0}[kind] * scale * SS
+    ink = cv2.GaussianBlur(cv2.dilate(tmask, np.ones((int(2 * SS) | 1, int(2 * SS) | 1), np.uint8)), (0, 0), r)
+    ha = np.clip(ink * {"geo": 2.2, "event": 2.2, "title": 1.6}[kind], 0, 0.88)
+    if kind == "title":
+        yy = np.linspace(0, 1, h * SS, dtype=np.float32)[:, None]; sc = np.clip(1.0 - np.abs(yy - 0.5) * 2.0, 0, 1) ** 0.6 * 0.42; sc = np.broadcast_to(sc, tmask.shape)
+        xx = np.linspace(0, 1, w * SS, dtype=np.float32)[None, :]; sc = sc * np.clip(np.minimum(xx, 1 - xx) * 6, 0, 1); ha = np.maximum(ha, sc)
+    iv = style["ivory"]; pl = style["plate"]                     # BGR 0..255 (see hexbgr)
+    A = np.clip(ha + tmask * (1 - ha), 0, 1)
+    prem = iv[None, None, :] * tmask[..., None] + pl[None, None, :] * (ha * (1 - tmask))[..., None]   # premultiplied BGR
+    pm = cv2.resize(np.dstack([prem, A]).astype(np.float32), (w, h), interpolation=cv2.INTER_AREA)
+    return pm
+
 def compass_sprite(size, style):
     SS = 4; n = size * SS; im = Image.new("RGBA", (n, n), (0, 0, 0, 0)); d = ImageDraw.Draw(im); c = n // 2
     iv = tuple(int(v) for v in style["ivory"][::-1]); pl = tuple(int(v) for v in style["plate"][::-1])
@@ -206,17 +256,20 @@ def paste(frame, spr, x, y, alpha):
 class Renderer:
     SS = 3
     def __init__(self, rc, base_path):
-        self.rc = rc; R = rc.R
+        self.rc = rc; R = rc.R; self.base_path = base_path
         if not os.path.exists(base_path): raise RecipeError(f"base map not found: {base_path} (owner-supplied, gitignored; see assets/basemaps/README.md)")
         src = cv2.imread(base_path); rc.base_h, rc.base_w = src.shape[:2]; rc.cover = max(rc.W / rc.base_w, rc.H / rc.base_h)
         self.U = 2.0 * rc.cover                                        # base cached at 2x of the 1.0-zoom output scale; sampling is then a mild downscale (no upscale seams while zooming)
         self.base = cv2.resize(src, None, fx=self.U, fy=self.U, interpolation=cv2.INTER_LANCZOS4).astype(np.float32)
         self.routes = {}; self.sprites = {}; self.rseed = 0
         for e in rc.ev:
-            if e["do"] == "route_reveal": self.rseed += 1; self.routes[e["id"]] = Route(rc, e, self.rseed * 7.31)
+            if e["do"] == "route_reveal":
+                self.rseed += 1; self.routes[e["id"]] = Route(rc, e, self.rseed * 7.31); rc.loc[e["id"] + "_end"] = np.array(self.routes[e["id"]].end, np.float64)
             if e["do"] == "label":
-                lines = [(e["text"], "bold", e.get("size", 40))] + ([(e["sub"], "italic", e.get("sub_size", 28))] if "sub" in e else [])
-                self.sprites[id(e)] = text_plate(lines, rc.W / 1080.0, rc.S)
+                kind = e.get("kind")
+                dsz = {"geo": 36, "event": 40, "title": 66}.get(kind, 40)
+                lines = [(e["text"], "bold", e.get("size", dsz))] + ([(e["sub"], "italic", e.get("sub_size", 26))] if "sub" in e else [])
+                self.sprites[id(e)] = text_halo(lines, rc.W / 1080.0, rc.S, kind) if kind else text_plate(lines, rc.W / 1080.0, rc.S)
             if e["do"] == "compass": self.sprites[id(e)] = compass_sprite(int(e.get("size", 120) * rc.W / 1080), rc.S)
         vg = R.get("vignette_default", 0.0)
         yy, xx = np.mgrid[0:rc.H, 0:rc.W].astype(np.float32); r = np.sqrt(((xx / rc.W - .5) * 1.0) ** 2 + ((yy / rc.H - .5) * 0.56) ** 2) / 0.5
@@ -247,6 +300,12 @@ class Renderer:
                     P = np.array([ss(self.to_screen(p, c, z)) for p in seg], np.int32).reshape(-1, 1, 2)
                     cv2.polylines(under, [P], False, int(255 * fade), max(1, int(round(lw * f + 5.5 * SS * z ** 0.5))), cv2.LINE_AA, 4)
                     cv2.polylines(ink, [P], False, int(255 * fade), max(1, int(round(lw * f))), cv2.LINE_AA, 4)
+                if e.get("arrow") and u > 0.985:                  # open chevron at the end: the line points on, off the map edge
+                    tip = R_.at(R_.L); back = R_.at(max(R_.L - 16, 0)); dv = tip - back; dv = dv / (np.linalg.norm(dv) + 1e-9); al = float(smoother((t - e["t1"] + 0.05) / 0.3))
+                    for sgn in (-1, 1):
+                        ca, sa = math.cos(math.radians(150 * sgn)), math.sin(math.radians(150 * sgn)); wv = np.array([dv[0] * ca - dv[1] * sa, dv[0] * sa + dv[1] * ca]) * 22
+                        P2 = np.array([ss(self.to_screen(tip, c, z)), ss(self.to_screen(tip + wv, c, z))], np.int32).reshape(-1, 1, 2)
+                        cv2.polylines(under, [P2], False, int(255 * fade * al), max(1, int(round(lw + 5.5 * SS * z ** 0.5))), cv2.LINE_AA, 4); cv2.polylines(ink, [P2], False, int(255 * fade * al), max(1, int(round(lw))), cv2.LINE_AA, 4)
                 if u < 1 and e.get("head"):                     # moving marker at the head (army token)
                     hp = ss(self.to_screen(R_.at(sh), c, z)); r = 9.5 * k * SS
                     cv2.circle(under, hp, int(r * 16 + 3.4 * SS * 16), 255, -1, cv2.LINE_AA, 4); cv2.circle(ink, hp, int(r * 16), 255, -1, cv2.LINE_AA, 4)

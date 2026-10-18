@@ -1,0 +1,119 @@
+{
+ "size": [
+  941,
+  1672
+ ],
+ "proj": {
+  "kind": "lcc",
+  "lat0": 40.0,
+  "lon0": 60.0,
+  "p1": 30.0,
+  "p2": 55.0
+ },
+ "warp": "poly2",
+ "smooth": 0.0,
+ "control_points": [
+  {
+   "id": "cape_comorin",
+   "type": "landmark",
+   "lon": 77.55,
+   "lat": 8.08,
+   "px": [
+    745,
+    1286
+   ],
+   "note": "southern tip of India"
+  },
+  {
+   "id": "sri_lanka_centre",
+   "type": "landmark",
+   "lon": 80.7,
+   "lat": 7.65,
+   "px": [
+    818,
+    1267
+   ],
+   "note": "island centroid"
+  },
+  {
+   "id": "cyprus_centre",
+   "type": "landmark",
+   "lon": 33.0,
+   "lat": 35.0,
+   "px": [
+    121,
+    712
+   ],
+   "note": "island centroid"
+  },
+  {
+   "id": "aral_centre",
+   "type": "landmark",
+   "lon": 59.6,
+   "lat": 45.0,
+   "px": [
+    503,
+    583
+   ],
+   "note": "painted lake with river leaving its south end; most uncertain landmark"
+  },
+  {
+   "id": "suez_tip",
+   "type": "landmark",
+   "lon": 32.55,
+   "lat": 29.95,
+   "px": [
+    82,
+    806
+   ],
+   "note": "head of the Gulf of Suez"
+  },
+  {
+   "id": "bab_el_mandeb",
+   "type": "landmark",
+   "lon": 43.4,
+   "lat": 12.6,
+   "px": [
+    176,
+    1076
+   ],
+   "note": "southern end of the Red Sea"
+  },
+  {
+   "id": "cape_guardafui",
+   "type": "landmark",
+   "lon": 51.27,
+   "lat": 11.8,
+   "px": [
+    309,
+    1086
+   ],
+   "note": "tip of the Horn of Africa"
+  },
+  {
+   "id": "gulf_head",
+   "type": "landmark",
+   "lon": 48.6,
+   "lat": 29.95,
+   "px": [
+    294,
+    803
+   ],
+   "note": "head of the Persian Gulf (Shatt al-Arab)"
+  },
+  {
+   "id": "crimea_centre",
+   "type": "landmark",
+   "lon": 34.3,
+   "lat": 45.3,
+   "px": [
+    166,
+    535
+   ],
+   "note": "peninsula centroid"
+  }
+ ],
+ "map": "assets/basemaps/tamerlane_eurasia_painted.png",
+ "map_md5": "1004379863d6234fce808a05654cd055",
+ "chosen_because": "lowest pin-test error (Samarkand 17 px ~100 km) with fit RMS 14.6 px on 9 landmarks; see docs/CARTOGRAPHY-GEOREF-REPORT.md"
+}
