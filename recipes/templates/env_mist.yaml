@@ -1,0 +1,20 @@
+# ENVIRONMENT TEMPLATE: mist / ground fog / haze drift (soft low-frequency drift of a fog band, no new pixels)
+# `motionplates new --template env_mist --plate FILE --name NAME`  then edit only the marked PARAMS (seconds, positions, region). Mask-light: no layers/GrabCut; one coarse feathered polygon at most.
+# No camera push is baked (editor applies its own push-in). Static plate stays the fallback. Frame 0 == plate. Status is always REVIEW_REQUIRED (owner playback QC).
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}    # PARAM: seconds = slot duration + ~0.5 s handles
+seed: 1
+safe_zones:
+  - {name: caption_band, box: [0, 1500, 1080, 1860], max_mean_delta: 3.0}
+qc:
+  motion: {floor: 0.01, fail_floor: 0.0005, cap: 1.0}     # whole-frame metric: local ambient motion is small by design; the owner's playback QC is what decides
+layers: []
+elements: []
+effects:
+  - type: smoke_drift
+    layer: bg
+    seconds_hint: 6
+    ramp_in: 1.2
+    regions:                           # PARAM: fog band polygon (e.g. river/ground fog or sky haze); large scale_px = slow broad drift
+      - {polygon: [[0,1000],[1080,1000],[1080,1500],[0,1500]], amp_px: 1.4, rise_px_s: 4, wisp_opacity: 0.07, feather: 90, scale_px: 60, color: [214, 208, 196]}

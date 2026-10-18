@@ -1,0 +1,18 @@
+# ENVIRONMENT TEMPLATE: dust motes in a light shaft / hall air
+# `motionplates new --template env_dust --plate FILE --name NAME`  then edit only the marked PARAMS (seconds, positions, region). Mask-light: no layers/GrabCut; one coarse feathered polygon at most.
+# No camera push is baked (editor applies its own push-in). Static plate stays the fallback. Frame 0 == plate. Status is always REVIEW_REQUIRED (owner playback QC).
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}    # PARAM: seconds = slot duration + ~0.5 s handles
+seed: 1
+safe_zones:
+  - {name: caption_band, box: [0, 1500, 1080, 1860], max_mean_delta: 3.0}
+qc:
+  motion: {floor: 0.01, fail_floor: 0.0005, cap: 1.0}     # whole-frame metric: local ambient motion is small by design; the owner's playback QC is what decides
+layers: []
+elements: []
+effects:
+  - preset: dust_warm_sunlit
+    count: 70                          # PARAM: 40-110; restrained = fewer, smaller
+    intensity: 0.9
+    region: [[0,0],[1080,0],[1080,1700],[0,1700]]     # PARAM: polygon where motes may appear (keep out of the caption band)

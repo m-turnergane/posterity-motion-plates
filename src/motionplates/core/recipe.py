@@ -2,7 +2,9 @@ import os, yaml, zlib, json
 import numpy as np
 
 def load_recipe(path, presets_dir=None):
-    return load_recipe_text(open(path).read(), presets_dir or os.path.join(os.path.dirname(os.path.abspath(path)), "presets"))
+    pd = presets_dir or os.path.join(os.path.dirname(os.path.abspath(path)), "presets")
+    if not os.path.isdir(pd): pd = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "recipes", "presets")   # recipes kept outside the repo use the repo presets
+    return load_recipe_text(open(path).read(), pd)
 
 def load_recipe_text(txt, presets_dir):
     r = yaml.safe_load(txt)

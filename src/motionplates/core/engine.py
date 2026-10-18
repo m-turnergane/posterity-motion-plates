@@ -149,7 +149,7 @@ def render(recipe_path, outdir, plates_dir=None, seconds=None, frames=None, keep
     qc.check_max("frame0:max_diff_vs_plate", f0["max_abs_diff_vs_plate"], review=0, fail=2, note="frame 0 must equal the plate (lossless RGB)")
     qc.check_max("frame0:correction_fraction", f0["pre_correction"]["corrected_fraction"], review=0.02, fail=0.10, note="share of the frame the frame-0 correction has to touch; large = start composition wrong")
     mo = R.get("qc", {}).get("motion", {}) or {}
-    qc.check_min("motion:mean_frame_delta_floor", ms["mean_abs_frame_delta"], review=mo.get("floor", 0.12), fail=0.02, note="too static is not an animation")
+    qc.check_min("motion:mean_frame_delta_floor", ms["mean_abs_frame_delta"], review=mo.get("floor", 0.12), fail=mo.get("fail_floor", 0.02), note="too static is not an animation")
     qc.check_max("motion:mean_frame_delta_cap", ms["mean_abs_frame_delta"], review=mo.get("cap", 1.6), fail=mo.get("fail_cap", 3.0), note="restraint cap")
     qc.check_max("motion:max_frame_delta", ms["max_mean_abs_frame_delta"], review=mo.get("max_frame", 3.0), fail=6.0, note="single-frame jumps")
     zs = {}

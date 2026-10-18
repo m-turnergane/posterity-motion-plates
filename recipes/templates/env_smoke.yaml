@@ -1,0 +1,20 @@
+# ENVIRONMENT TEMPLATE: smoke / chimney / campfire smoke (region warp of the plate's own smoke pixels + faint wisps)
+# `motionplates new --template env_smoke --plate FILE --name NAME`  then edit only the marked PARAMS (seconds, positions, region). Mask-light: no layers/GrabCut; one coarse feathered polygon at most.
+# No camera push is baked (editor applies its own push-in). Static plate stays the fallback. Frame 0 == plate. Status is always REVIEW_REQUIRED (owner playback QC).
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}    # PARAM: seconds = slot duration + ~0.5 s handles
+seed: 1
+safe_zones:
+  - {name: caption_band, box: [0, 1500, 1080, 1860], max_mean_delta: 3.0}
+qc:
+  motion: {floor: 0.01, fail_floor: 0.0005, cap: 1.0}     # whole-frame metric: local ambient motion is small by design; the owner's playback QC is what decides
+layers: []
+elements: []
+effects:
+  - type: smoke_drift
+    layer: bg
+    seconds_hint: 6
+    ramp_in: 1.0
+    regions:                           # PARAM: one coarse polygon around the smoke plume (feathered, no precise mask needed)
+      - {polygon: [[380,300],[700,300],[720,900],[360,900]], amp_px: 1.6, rise_px_s: 8, wisp_opacity: 0.10, feather: 40, scale_px: 28}

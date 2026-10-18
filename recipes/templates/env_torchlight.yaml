@@ -1,0 +1,20 @@
+# ENVIRONMENT TEMPLATE: torchlight flicker (torches/braziers/lanterns/fire in a dark interior)
+# `motionplates new --template env_torchlight --plate FILE --name NAME`  then edit only the marked PARAMS (seconds, positions, region). Mask-light: no layers/GrabCut; one coarse feathered polygon at most.
+# No camera push is baked (editor applies its own push-in). Static plate stays the fallback. Frame 0 == plate. Status is always REVIEW_REQUIRED (owner playback QC).
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}    # PARAM: seconds = slot duration + ~0.5 s handles
+seed: 1
+safe_zones:
+  - {name: caption_band, box: [0, 1500, 1080, 1860], max_mean_delta: 3.0}
+qc:
+  motion: {floor: 0.01, fail_floor: 0.0005, cap: 1.0}     # whole-frame metric: local ambient motion is small by design; the owner's playback QC is what decides
+layers: []
+elements: []
+effects:
+  - preset: flame_brazier_small       # PARAM: one entry per visible flame (x, y in 1080x1920 cover-fit plate coords; rx, ry = flame core size)
+    flames:
+      - {x: 540, y: 900, rx: 20, ry: 28, layer: bg, light_R: 150, light_gain: 0.26, light_layers: [bg]}
+  - preset: torch_wall_warm           # PARAM: broad warm wall light around the same flames, keep gain <= 0.3
+    sources:
+      - {x: 540, y: 890, R: 330, gain: 0.22, aniso: [1.5, 1.2], layers: [bg]}

@@ -1,0 +1,23 @@
+# ENVIRONMENT TEMPLATE: water shimmer (calm water surface: very small ripple + light modulation inside a water polygon)
+# `motionplates new --template env_water --plate FILE --name NAME`  then edit only the marked PARAMS (seconds, positions, region). Mask-light: no layers/GrabCut; one coarse feathered polygon at most.
+# No camera push is baked (editor applies its own push-in). Static plate stays the fallback. Frame 0 == plate. Status is always REVIEW_REQUIRED (owner playback QC).
+name: __NAME__
+plate: {file: __PLATE__}
+output: {width: 1080, height: 1920, fps: 30, seconds: 5}    # PARAM: seconds = slot duration + ~0.5 s handles
+seed: 1
+safe_zones:
+  - {name: caption_band, box: [0, 1500, 1080, 1860], max_mean_delta: 3.0}
+qc:
+  motion: {floor: 0.01, fail_floor: 0.0005, cap: 1.0}     # whole-frame metric: local ambient motion is small by design; the owner's playback QC is what decides
+layers: []
+elements: []
+effects:
+  - type: fabric_ripple
+    layer: bg
+    region: [[0,1050],[1080,1050],[1080,1450],[0,1450]]   # PARAM: water polygon, feathered; keep shoreline / hull edges OUTSIDE or the edge will wobble
+    amp_px: 0.9
+    shade: 0.045
+    wavelength_px: 70
+    speed_px_s: 18
+    angle_deg: 80
+    feather: 30

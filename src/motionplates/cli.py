@@ -45,6 +45,7 @@ def main(argv=None):
     va.add_argument("dir", nargs="?", default="recipes")
     ap_ = sub.add_parser("verify-approval", help="read-only: PASS only if approvals/<sha256 of this MP4>.json is a valid human record"); ap_.add_argument("mp4"); ap_.add_argument("--approvals", default="approvals")
     cm = sub.add_parser("check-manifests", help="fail if any renderer manifest under DIR claims playback approval without a matching approval record (and validate approvals/ itself)"); cm.add_argument("dir"); cm.add_argument("--approvals", default="approvals"); cm.add_argument("--require-committed", action="store_true")
+    rs = sub.add_parser("resolve", help="editor helper: print the clip or static plate to use (JSON); always falls back to the static PNG"); rs.add_argument("plate"); rs.add_argument("clip_dir"); rs.add_argument("name"); rs.add_argument("--slot-seconds", type=float); rs.add_argument("--approvals", default="approvals"); rs.add_argument("--allow-unapproved", action="store_true", help="PREVIEW builds only")
     nw = sub.add_parser("new", help="create a recipe from a template"); nw.add_argument("--template", required=True); nw.add_argument("--plate", required=True); nw.add_argument("--name", required=True); nw.add_argument("--out", default=None)
     a = ap.parse_args(argv)
     try:
@@ -55,6 +56,9 @@ def main(argv=None):
         if a.cmd == "validate-all":
             n, bad = validate_tree(a.dir)
             print(f"{n} recipe(s) checked, {len(bad)} invalid"); [print("  -", b) for b in bad]; return 0 if not bad else EXIT["invalid"]
+        if a.cmd == "resolve":
+            from .fallback import resolve
+            r = resolve(a.plate, a.clip_dir, a.name, a.slot_seconds, not a.allow_unapproved, a.approvals); print(json.dumps(r)); return 0 if r["kind"] != "MISSING" else EXIT["invalid"]
         if a.cmd == "verify-approval":
             from .core.approval import verify_approval
             st, why = verify_approval(a.mp4, a.approvals); print(st, "-", why); return 0 if st == "PASS" else EXIT["rejected"]
