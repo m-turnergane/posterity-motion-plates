@@ -232,6 +232,7 @@ def test_proxy_recipe_scaling_and_render(synth, tmp_path):
     assert m["qc"]["status"] == "PROXY_PREVIEW" and m["output"]["W"] == 136
 
 def test_suggest_regions_finds_block(tmp_path):
+    sklearn = pytest.importorskip("sklearn", reason="sklearn is optional for the suggest module")
     from motionplates.authoring import suggest as S
     img = np.full((480, 270, 3), 120, np.uint8); img[:, :, 0] = np.linspace(100, 140, 270).astype(np.uint8)[None, :]; cv2.rectangle(img, (40, 200), (200, 400), (30, 40, 150), -1)
     c = S.candidates(img, "regions", 6); tgt = np.zeros((480, 270), bool); tgt[200:401, 40:201] = True
