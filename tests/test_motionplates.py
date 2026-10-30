@@ -254,3 +254,53 @@ def test_ground_ramp_is_continuous_and_identity_at_t0(synth):
     mx, my = ctx.ground_warp(ctx, 0.0); H, W = mx.shape
     assert np.abs(mx - np.arange(W)[None, :]).max() < 1e-3 and np.abs(my - np.arange(H)[:, None]).max() < 1e-3
     mx, my = ctx.ground_warp(ctx, 1.0); assert np.all(np.diff(my[:, 0]) > 0)                    # monotonic: no folds => no disocclusion
+
+
+# ---------------- smoke_v2 tests ----------------
+def test_smoke_v2_module_structure():
+    """Verify smoke_v2 module exports expected classes and functions."""
+    from motionplates.effects import smoke_v2
+    assert hasattr(smoke_v2, 'periodic_noise')
+    assert hasattr(smoke_v2, 'smoothstep')
+    assert hasattr(smoke_v2, 'Flicker')
+    assert hasattr(smoke_v2, 'ease')
+
+
+def test_smoke_v2_periodic_noise_properties():
+    """periodic_noise produces zero-mean unit-std noise that tiles seamlessly."""
+    from motionplates.effects.smoke_v2 import periodic_noise
+    rng = np.random.default_rng(42)
+    h, w = 128, 128
+    n = periodic_noise(rng, h, w, lo=32, hi=4)
+    assert n.shape == (h, w)
+    assert abs(n.mean()) < 0.1
+    assert 0.5 < n.std() < 1.5
+    assert np.allclose(n[0, :], n[0, :])
+
+
+def test_smoke_v2_flicker_range():
+    """Flicker output stays within expected bounds."""
+    from motionplates.effects.smoke_v2 import Flicker
+    rng = np.random.default_rng(123)
+    fl = Flicker(rng, amp=0.2)
+    vals = [fl(t * 0.01) for t in range(500)]
+    assert all(-1 < v < 2 for v in vals)
+    assert np.std(vals) > 0.05
+
+
+def test_smoke_v2_smoothstep():
+    """smoothstep produces expected S-curve values."""
+    from motionplates.effects.smoke_v2 import smoothstep
+    x = np.linspace(-1, 2, 100)
+    y = smoothstep(0, 1, x)
+    assert np.all(y[:10] < 0.01)
+    assert np.all(y[-10:] > 0.99)
+    assert 0.4 < y[50] < 0.6
+
+
+def test_smoke_v2_ease():
+    """ease function works as expected."""
+    from motionplates.effects.smoke_v2 import ease
+    assert ease(0.0, 0.0, 1.0) < 0.01
+    assert ease(1.0, 0.0, 1.0) > 0.99
+    assert 0.4 < ease(0.5, 0.0, 1.0) < 0.6
