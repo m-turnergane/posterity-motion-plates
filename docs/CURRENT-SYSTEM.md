@@ -25,7 +25,9 @@ motionplates/
 │   ├── parallax_push.py    # Eased 2.5D camera push
 │   └── ...                 # petal_fall, banner_sway, dust_motes, etc.
 ├── standalone/              # Production-ready standalone modules
-│   └── fx_candle.py        # Candle/fire light spill (LOCKED params)
+│   ├── fx_candle.py        # Candle/fire light spill (LOCKED params)
+│   └── fx_water.py         # Light-on-water effects (LOCKED 2026-10-30)
+├── guardrails.py            # Shared crop/fire guardrails
 └── rnd/                     # Research modules (not production)
     ├── natural_fire.py     # Procedural flame tongues (R&D)
     └── flame.py            # Flame simulation primitives
@@ -42,7 +44,7 @@ motionplates/
 
 ## Locked Presets
 
-Two presets are **APPROVED-DEFAULT** for production use:
+Three presets are **APPROVED-DEFAULT** for production use:
 
 ### `house-candle-lightspill-v1`
 
@@ -65,6 +67,24 @@ Animated map with:
 
 **Config:** `recipes/presets/locked/house-map-inknib-dashed-v1.json`
 **Reference md5:** `b8aa9ceb7cae2757a44d9919eb8ddd9f`
+
+### `water_v1` (LOCKED 2026-10-30 4:53pm ET)
+
+Light-on-water effects for still water. **The sea never moves** — no displacement,
+ripple or coastline warp. Only light changes:
+
+- **Glints**: Fixed-point sparkles that twinkle in place (0.35–2.4 Hz)
+- **Breathe**: Static sun/moon path with slow scalar breathing (≤0.3 Hz)
+- **Fire reflections**: Columns synced to torch_v1c's per-frame flick curve
+
+Three modes: moon path, sun glitter, fire reflections.
+
+**Module:** `src/motionplates/standalone/fx_water.py`
+**Example configs:** `examples/water_v1/`
+**Documentation:** `docs/WATER-V1.md`
+
+See also `docs/GUARDRAILS.md` for crop/fire sharpness guardrails that apply to all
+motion presets.
 
 ### Applying Locked Presets
 
@@ -146,6 +166,24 @@ python -m motionplates.effects.smoke_v2 \
     --proof-report qc/smoke_proof.json
 ```
 
+## Guardrails
+
+Shared guardrails (`src/motionplates/guardrails.py`) prevent common failure modes:
+
+### Crop/Zoom Limit
+
+Never crop or zoom past **1.5× of native fill**. Beyond 1.5×, plates go visibly soft
+on a phone (>1.7 output px per plate px).
+
+### Fire Sharpness
+
+torch_v1c and water fire reflections run only on sharp, native-resolution fire:
+- Laplacian variance of fire rects ≥ 100 at native plate res
+- Shot zoom ≤ 1.5×
+
+See `docs/GUARDRAILS.md` for API details and `docs/K11-FIRE-DIAGNOSIS.md` for the
+failure case that motivated these checks.
+
 ## R&D Modules (Not Production)
 
 ### Natural Fire (`src/motionplates/rnd/natural_fire.py`)
@@ -216,11 +254,15 @@ See `examples/edward-ii/` for a complete production build:
 | 2026-10-22 | batch 1-4 | Engine iterations, locked presets approved |
 | 2026-10-23 | naturalfire | Natural-fire R&D (P05 forge) |
 | 2026-10-30 | current | Smoke v2, full system integration |
+| 2026-10-30 | water_v1 | water_v1 LOCKED; crop/fire guardrails added |
 
 ## See Also
 
 - `AGENTS.md` - Repository conventions and hard rules
 - `docs/ARCHITECTURE.md` - Detailed architecture
 - `docs/SMOKE-V2.md` - Smoke v2 documentation
+- `docs/WATER-V1.md` - Water light effects documentation
+- `docs/GUARDRAILS.md` - Crop/fire guardrails documentation
+- `docs/K11-FIRE-DIAGNOSIS.md` - K11 fire failure diagnosis
 - `docs/NATURAL-FIRE-RND.md` - Natural fire R&D notes
 - `recipes/PRESETS.md` - Full preset documentation (from production)
