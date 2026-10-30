@@ -2,6 +2,19 @@
 
 Restrained painterly motion for *selected* Posterity plates: petals that fall and settle, flickering braziers/torches with localized light, swaying banners, drifting dust and a small eased 2.5D push with real layer parallax. Python-first (NumPy + OpenCV + Pillow + FFmpeg); no second compositing engine. Separate from the production editor: the ordinary stills pipeline is unchanged and the original plate stays the fallback.
 
+## Current System (2026-10-30)
+
+This repository now contains the complete production animation system including:
+
+- **Smoke v2**: Procedural smoke overlay with curl-field domain warping and FFT noise
+- **Candle/Fire light spill**: Production module with locked flicker curves and facing heuristics
+- **Locked presets**: `house-candle-lightspill-v1` and `house-map-inknib-dashed-v1` (APPROVED-DEFAULT)
+- **QC tools**: Layer isolation, spill sync, phone preview checks
+- **R&D modules**: Natural-fire flame tongues (experimental, not production)
+- **Engine snapshots**: Archived versions b3-b9 for regression testing
+
+See `docs/CURRENT-SYSTEM.md` for the full overview.
+
 ## Quick start
 ```bash
 python -m venv .venv && . .venv/bin/activate
