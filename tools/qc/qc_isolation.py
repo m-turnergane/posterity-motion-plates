@@ -2,8 +2,8 @@
 outside that layer's own allow mask (must be 0) + its own mask coverage.  Needed because full-frame layers
 (cloud shadows, light-shift) make the union-mask check vacuous.  Usage: qc_isolation.py configs/x.json"""
 import json, sys, os, numpy as np
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import animate
+from engine_loader import load_animate
+animate = load_animate()
 cfg = json.load(open(sys.argv[1])); fps = cfg.get("fps", 30); N = int(round(cfg.get("half_seconds", 4.0) * fps)); res = {}
 full = animate.Engine(cfg)
 for j, L in enumerate(cfg["layers"]):

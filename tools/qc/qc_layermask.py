@@ -1,7 +1,8 @@
 """Strict per-layer containment QC (batch 3): render each layer alone and measure the max change OUTSIDE the layer's declared
 mask PNG (not its allow-region). Catches overlays whose bounding box leaks past the mask (e.g. flames over a foreground jamb)."""
 import json, sys, numpy as np, cv2
-sys.path.insert(0, '/workspace/posterity/motion/iterations-2026-10-22'); import animate
+from engine_loader import load_animate
+animate = load_animate()
 cfg = json.load(open(sys.argv[1])); ts = [0.5, 1.3, 2.0, 2.7, 3.5]; res = {}
 for j, L in enumerate(cfg["layers"]):
     E = animate.Engine(cfg); E.layers = [E.layers[j]]; P = E.layers[0][1]

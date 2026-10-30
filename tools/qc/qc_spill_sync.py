@@ -2,8 +2,8 @@
 flame's brightness -> proves flame and spill breathe in sync, and quantifies 'visible but subtle'.
 Usage: qc_spill_sync.py configs/x.json '{"face":[x0,y0,x1,y1],...}' flame_box"""
 import json, sys, os, numpy as np
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import animate
+from engine_loader import load_animate
+animate = load_animate()
 cfg = json.load(open(sys.argv[1])); boxes = json.loads(sys.argv[2]); fb = json.loads(sys.argv[3])
 E = animate.Engine(cfg); fps = cfg.get("fps", 30); N = int(round(cfg.get("half_seconds", 4.0) * fps))
 L0 = {k: animate.lum(E.plate[y0:y1, x0:x1]).mean() for k, (x0, y0, x1, y1) in boxes.items()}

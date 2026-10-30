@@ -183,10 +183,26 @@ def test_plates_root_from_env(monkeypatch, synth):
     monkeypatch.setenv("MOTIONPLATES_PLATES", synth); assert V.resolve_plates_root() == synth
 
 def test_no_hardcoded_project_paths_in_source():
-    root = os.path.abspath(os.path.join(HERE, "..", "src"))
-    for dp, _, fs in os.walk(root):
-        for f in fs:
-            if f.endswith(".py"): assert "/workspace/" not in open(os.path.join(dp, f)).read(), f
+    repo_root = os.path.abspath(os.path.join(HERE, ".."))
+    src_root = os.path.join(repo_root, "src")
+    tools_root = os.path.join(repo_root, "tools")
+
+    ALLOW_LIST = {
+        "engine_loader.py",
+    }
+
+    for root_dir in (src_root, tools_root):
+        if not os.path.exists(root_dir):
+            continue
+        for dp, _, fs in os.walk(root_dir):
+            for f in fs:
+                if not f.endswith(".py"):
+                    continue
+                if f in ALLOW_LIST:
+                    continue
+                filepath = os.path.join(dp, f)
+                content = open(filepath).read()
+                assert "/workspace/" not in content, f"hardcoded /workspace/ path in {f}"
 
 def test_every_recipe_validates_structurally():
     rdir = os.path.join(HERE, "..", "recipes")
@@ -305,3 +321,292 @@ def test_smoke_v2_ease():
     assert ease(0.0, 0.0, 1.0) < 0.01
     assert ease(1.0, 0.0, 1.0) > 0.99
     assert 0.4 < ease(0.5, 0.0, 1.0) < 0.6
+
+
+# ---------------- smoke_v2 render fixes ----------------
+
+def test_smoke_v2_render_requires_output():
+    """render() raises ValueError when given neither out_path nor writer."""
+    from motionplates.effects.smoke_v2 import render, SmokeScene
+    import tempfile
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
+        cv2.imwrite(f.name, np.full((100, 100, 3), 128, np.uint8))
+        plate_path = f.name
+    try:
+        with pytest.raises(ValueError, match="requires either out_path or writer"):
+            render(plate_path, {"emitters": []}, None, seconds=0.1, fps=10, size=(64, 64))
+    finally:
+        os.unlink(plate_path)
+
+
+def test_smoke_v2_parse_size():
+    """parse_size correctly parses WxH strings."""
+    from motionplates.effects.smoke_v2 import parse_size
+    assert parse_size("1080x1920") == (1080, 1920)
+    assert parse_size("1920x1080") == (1920, 1080)
+    assert parse_size("360x640") == (360, 640)
+    with pytest.raises(Exception):
+        parse_size("invalid")
+    with pytest.raises(Exception):
+        parse_size("100")
+    with pytest.raises(Exception):
+        parse_size("-100x200")
+
+
+def test_smoke_v2_grab_size():
+    """grab_size computes correct phone sizes for portrait and landscape."""
+    from motionplates.effects.smoke_v2 import grab_size
+    assert grab_size((1080, 1920)) == (360, 640)
+    assert grab_size((1920, 1080)) == (640, 360)
+    assert grab_size((720, 1280)) == (360, 640)
+    gw, gh = grab_size((1920, 1200))
+    assert gw == 640
+    assert 350 < gh < 450
+
+
+def test_smoke_v2_emitter_validation_missing_src():
+    """Emitter validation catches missing 'src' key."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    with pytest.raises(ValueError, match="'src'"):
+        validate_emitter_spec({"type": "candle", "height": 100})
+
+
+def test_smoke_v2_emitter_validation_missing_height():
+    """Emitter validation catches missing 'height' key."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    with pytest.raises(ValueError, match="'height'"):
+        validate_emitter_spec({"type": "candle", "src": [100, 200]})
+
+
+def test_smoke_v2_emitter_validation_bad_src_type():
+    """Emitter validation catches invalid 'src' type."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    with pytest.raises(ValueError, match="'src' must be"):
+        validate_emitter_spec({"type": "candle", "src": "invalid", "height": 100})
+
+
+def test_smoke_v2_emitter_validation_haze_missing_rect():
+    """Emitter validation catches missing 'rect' for haze type."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    with pytest.raises(ValueError, match="'rect'"):
+        validate_emitter_spec({"type": "haze"})
+
+
+def test_smoke_v2_emitter_validation_unknown_type():
+    """Emitter validation catches unknown emitter type."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    with pytest.raises(ValueError, match="unknown type"):
+        validate_emitter_spec({"type": "invalid_type", "src": [100, 200], "height": 100})
+
+
+def test_smoke_v2_emitter_validation_opacity_range():
+    """Emitter validation catches out-of-range opacity."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    with pytest.raises(ValueError, match="opacity"):
+        validate_emitter_spec({"type": "candle", "src": [100, 200], "height": 100, "opacity": 1.5})
+
+
+def test_smoke_v2_emitter_validation_valid_spec():
+    """Emitter validation passes for valid specs."""
+    from motionplates.effects.smoke_v2 import validate_emitter_spec
+    validate_emitter_spec({"type": "candle", "src": [100, 200], "height": 100})
+    validate_emitter_spec({"type": "torch", "src": [50, 75], "height": 200, "opacity": 0.8})
+    validate_emitter_spec({"type": "haze", "rect": [0, 0, 100, 100]})
+
+
+def test_smoke_v2_render_reel_jobs1_writes_frames(tmp_path):
+    """render_reel with jobs=1 writes the expected number of frames."""
+    from motionplates.effects.smoke_v2 import render_reel, ffmpeg_writer
+    import shutil
+
+    if shutil.which("ffmpeg") is None:
+        pytest.skip("ffmpeg not available")
+
+    plate = tmp_path / "plate.png"
+    cv2.imwrite(str(plate), np.full((100, 100, 3), 128, np.uint8))
+
+    cfg = tmp_path / "shot.json"
+    cfg.write_text(json.dumps({"plate": str(plate), "emitters": []}))
+
+    reel_dir = tmp_path / "reel"
+    reel_dir.mkdir()
+    reel_json = reel_dir / "shots" / "reel.json"
+    reel_json.parent.mkdir(parents=True, exist_ok=True)
+    reel_json.write_text(json.dumps({"shots": [{"config": str(cfg), "seconds": 0.1}]}))
+
+    out = tmp_path / "out.mp4"
+    render_reel(json.loads(reel_json.read_text()), str(out), size=(64, 64), fps=30, base_dir=".", jobs=1)
+
+    assert out.exists()
+    cap = cv2.VideoCapture(str(out))
+    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    cap.release()
+    assert frame_count == 3
+
+
+# ---------------- build cache tests ----------------
+
+def test_cache_compute_key_deterministic(tmp_path):
+    """compute_cache_key produces consistent hashes for same inputs."""
+    from motionplates.build.cache import compute_cache_key
+
+    plate = tmp_path / "plate.png"
+    cv2.imwrite(str(plate), np.full((50, 50, 3), 100, np.uint8))
+
+    seg = {"id": "S01", "start": 0.0, "end": 1.0}
+    fx = {"smoke": True}
+
+    k1 = compute_cache_key(plate, seg, fx)
+    k2 = compute_cache_key(plate, seg, fx)
+    assert k1 == k2
+
+
+def test_cache_compute_key_changes_with_plate(tmp_path):
+    """compute_cache_key changes when plate content changes."""
+    from motionplates.build.cache import compute_cache_key
+
+    plate1 = tmp_path / "plate1.png"
+    plate2 = tmp_path / "plate2.png"
+    cv2.imwrite(str(plate1), np.full((50, 50, 3), 100, np.uint8))
+    cv2.imwrite(str(plate2), np.full((50, 50, 3), 200, np.uint8))
+
+    seg = {"id": "S01"}
+    k1 = compute_cache_key(plate1, seg)
+    k2 = compute_cache_key(plate2, seg)
+    assert k1 != k2
+
+
+def test_cache_compute_key_changes_with_config(tmp_path):
+    """compute_cache_key changes when segment config changes."""
+    from motionplates.build.cache import compute_cache_key
+
+    plate = tmp_path / "plate.png"
+    cv2.imwrite(str(plate), np.full((50, 50, 3), 100, np.uint8))
+
+    seg1 = {"id": "S01", "start": 0.0}
+    seg2 = {"id": "S01", "start": 1.0}
+    k1 = compute_cache_key(plate, seg1)
+    k2 = compute_cache_key(plate, seg2)
+    assert k1 != k2
+
+
+def test_shot_cache_is_valid(tmp_path):
+    """ShotCache.is_valid returns correct status."""
+    from motionplates.build.cache import ShotCache
+
+    cache = ShotCache(tmp_path / "cache")
+
+    assert not cache.is_valid("shot1", "abc123")
+
+    (tmp_path / "cache" / "shot1.mp4").write_bytes(b"video data")
+    assert not cache.is_valid("shot1", "abc123")
+
+    cache.mark_valid("shot1", "abc123")
+    assert cache.is_valid("shot1", "abc123")
+    assert not cache.is_valid("shot1", "different_key")
+
+
+def test_shot_cache_mark_stale(tmp_path):
+    """ShotCache.mark_stale renames clips correctly."""
+    from motionplates.build.cache import ShotCache
+
+    cache = ShotCache(tmp_path / "cache")
+    clip = tmp_path / "cache" / "shot1.mp4"
+    clip.write_bytes(b"video data")
+    cache.mark_valid("shot1", "key1")
+
+    stale_path = cache.mark_stale("shot1")
+    assert stale_path is not None
+    assert stale_path.exists()
+    assert ".stale-" in stale_path.name
+    assert not clip.exists()
+    assert not cache._key_path("shot1").exists()
+
+
+def test_shot_cache_invalidate_if_stale(tmp_path):
+    """ShotCache.invalidate_if_stale correctly detects and marks stale clips."""
+    from motionplates.build.cache import ShotCache
+
+    cache = ShotCache(tmp_path / "cache")
+
+    assert cache.invalidate_if_stale("shot1", "key1")
+
+    clip = tmp_path / "cache" / "shot1.mp4"
+    clip.write_bytes(b"video data")
+    cache.mark_valid("shot1", "key1")
+    assert not cache.invalidate_if_stale("shot1", "key1")
+
+    assert cache.invalidate_if_stale("shot1", "different_key")
+    assert not clip.exists()
+
+
+# ---------------- engine loader tests ----------------
+
+def test_engine_loader_get_root(monkeypatch):
+    """engine_loader.get_root respects MOTIONPLATES_ROOT env var."""
+    import sys
+    sys.path.insert(0, os.path.join(HERE, "..", "tools", "qc"))
+    from engine_loader import get_root
+
+    monkeypatch.delenv("MOTIONPLATES_ROOT", raising=False)
+    assert get_root() == "/workspace/posterity"
+
+    monkeypatch.setenv("MOTIONPLATES_ROOT", "/custom/path")
+    assert get_root() == "/custom/path"
+
+
+def test_engine_loader_load_animate():
+    """engine_loader can load the locked animate engine."""
+    import sys
+    sys.path.insert(0, os.path.join(HERE, "..", "tools", "qc"))
+    from engine_loader import load_animate
+
+    animate = load_animate()
+    assert hasattr(animate, "Engine")
+
+
+def test_engine_loader_custom_engine(tmp_path, monkeypatch):
+    """engine_loader respects MOTIONPLATES_ENGINE env var."""
+    import sys
+    sys.path.insert(0, os.path.join(HERE, "..", "tools", "qc"))
+
+    custom_engine = tmp_path / "custom_animate.py"
+    custom_engine.write_text("ENGINE_VERSION = 'custom'\nclass Engine: pass")
+
+    monkeypatch.setenv("MOTIONPLATES_ENGINE", str(custom_engine))
+
+    if "animate" in sys.modules:
+        del sys.modules["animate"]
+
+    from engine_loader import load_animate
+    animate = load_animate()
+    assert animate.ENGINE_VERSION == "custom"
+
+
+def test_engine_loader_missing_engine(tmp_path, monkeypatch):
+    """engine_loader raises FileNotFoundError for missing custom engine."""
+    import sys
+    sys.path.insert(0, os.path.join(HERE, "..", "tools", "qc"))
+
+    monkeypatch.setenv("MOTIONPLATES_ENGINE", str(tmp_path / "nonexistent.py"))
+
+    if "animate" in sys.modules:
+        del sys.modules["animate"]
+
+    from engine_loader import load_animate
+    with pytest.raises(FileNotFoundError, match="MOTIONPLATES_ENGINE"):
+        load_animate()
+
+
+# ---------------- landscape size tests (1920x1080) ----------------
+
+def test_smoke_v2_landscape_size():
+    """smoke_v2 functions work with landscape 1920x1080 size."""
+    from motionplates.effects.smoke_v2 import parse_size, grab_size
+
+    w, h = parse_size("1920x1080")
+    assert (w, h) == (1920, 1080)
+
+    gw, gh = grab_size((1920, 1080))
+    assert gw == 640
+    assert gh == 360

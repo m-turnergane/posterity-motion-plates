@@ -1,8 +1,8 @@
 """Readable mask-overlay QC still: per-layer masks tinted + outlined; full-frame layers (>=95 % coverage) are only listed.
 Protect masks = white hatch.  Usage: qc_overlay.py configs/x.json out.png"""
 import json, sys, os, numpy as np, cv2
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import animate
+from engine_loader import load_animate
+animate = load_animate()
 cfg = json.load(open(sys.argv[1])); out = sys.argv[2]
 if os.path.exists(out): raise SystemExit("exists: " + out)
 E = animate.Engine(cfg); ov = E.plate.copy()

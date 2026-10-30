@@ -162,6 +162,55 @@ def keepout_fade(protect_bin: np.ndarray, feather: float) -> np.ndarray:
     return smoothstep(2.0, max(3.0, feather), d).astype(np.float32)
 
 
+def validate_emitter_spec(spec: Dict[str, Any]) -> None:
+    """Validate smoke emitter spec, raising ValueError with the bad key on failure."""
+    kind = spec.get("type", "candle")
+    if kind not in PRESETS and kind != "haze":
+        raise ValueError(f"emitter spec: unknown type '{kind}'; expected one of {list(PRESETS.keys())} or 'haze'")
+
+    if kind == "haze":
+        if "rect" not in spec:
+            raise ValueError("emitter spec: haze type requires 'rect' key [x0, y0, x1, y1]")
+        rect = spec["rect"]
+        if rect is not None:
+            if not isinstance(rect, (list, tuple)) or len(rect) != 4:
+                raise ValueError(f"emitter spec: 'rect' must be [x0, y0, x1, y1], got {rect!r}")
+            if not all(isinstance(v, (int, float)) for v in rect):
+                raise ValueError(f"emitter spec: 'rect' values must be numeric, got {rect!r}")
+    else:
+        if "src" not in spec:
+            raise ValueError(f"emitter spec: type '{kind}' requires 'src' key [x, y]")
+        src = spec["src"]
+        if not isinstance(src, (list, tuple)) or len(src) != 2:
+            raise ValueError(f"emitter spec: 'src' must be [x, y], got {src!r}")
+        if not all(isinstance(v, (int, float)) for v in src):
+            raise ValueError(f"emitter spec: 'src' values must be numeric, got {src!r}")
+
+        if "height" not in spec:
+            raise ValueError(f"emitter spec: type '{kind}' requires 'height' key (plume height in pixels)")
+        height = spec["height"]
+        if not isinstance(height, (int, float)):
+            raise ValueError(f"emitter spec: 'height' must be numeric, got {type(height).__name__}")
+        if height <= 0:
+            raise ValueError(f"emitter spec: 'height' must be positive, got {height}")
+
+    for key in ("opacity", "rise", "swirl", "lo", "hi", "res"):
+        if key in spec:
+            val = spec[key]
+            if not isinstance(val, (int, float)):
+                raise ValueError(f"emitter spec: '{key}' must be numeric, got {type(val).__name__}")
+
+    if "opacity" in spec:
+        op = spec["opacity"]
+        if not (0 <= op <= 1):
+            raise ValueError(f"emitter spec: 'opacity' must be in [0, 1], got {op}")
+
+    if "res" in spec:
+        res = spec["res"]
+        if not (0.01 <= res <= 2.0):
+            raise ValueError(f"emitter spec: 'res' (resolution scale) should be in [0.01, 2.0], got {res}")
+
+
 class Emitter:
     """One smoke source in plate pixel space. Precomputes its footprint, textures and envelopes."""
 
@@ -174,6 +223,7 @@ class Emitter:
         keep: np.ndarray,
         rng: np.random.Generator,
     ):
+        validate_emitter_spec(spec)
         self.kind = spec.get("type", "candle")
         q = {**PRESETS[self.kind], **spec}
         self.q = q
@@ -804,16 +854,20 @@ def render(
     scene = SmokeScene(load_plate(plate_path), config)
     n = int(round(seconds * fps))
     w, h = size
-    p = writer or ffmpeg_writer(out_path, w, h, fps) if out_path else None
+    if writer is not None:
+        p = writer
+    elif out_path:
+        p = ffmpeg_writer(out_path, w, h, fps)
+    else:
+        raise ValueError("render() requires either out_path or writer; got neither")
     for i in range(n):
         t = i / fps
         frame_data = push_frame(
             scene.frame(t), i / max(n - 1, 1), w, h, *push,
             center=tuple(config.get("push_center", (0.5, 0.5)))
         ).tobytes()
-        if p:
-            p.stdin.write(frame_data)
-    if writer is None and p:
+        p.stdin.write(frame_data)
+    if writer is None:
         p.stdin.close()
         p.wait()
     return scene
@@ -826,6 +880,27 @@ def _render_shot_job(args: Tuple) -> str:
     return out
 
 
+def _cleanup_reel_tmp(tmp: Path, segs: List[str]) -> None:
+    """Clean up temporary reel directory, ignoring errors."""
+    for x in segs:
+        try:
+            if os.path.exists(x):
+                os.remove(x)
+        except OSError:
+            pass
+    lst = tmp / "list.txt"
+    try:
+        if lst.exists():
+            lst.unlink()
+    except OSError:
+        pass
+    try:
+        if tmp.exists():
+            tmp.rmdir()
+    except OSError:
+        pass
+
+
 def render_reel(
     reel: Dict[str, Any],
     out_path: str,
@@ -834,7 +909,13 @@ def render_reel(
     base_dir: str = ".",
     jobs: int = 1,
 ) -> None:
-    """Reel = {"shots": [{"config": path, "seconds": s}, ...]} -> one mp4 with hard cuts."""
+    """Reel = {"shots": [{"config": path, "seconds": s}, ...]} -> one mp4 with hard cuts.
+
+    When jobs > 1, uses a spawn multiprocessing Pool. This requires the calling
+    module to be importable (i.e., called from an if __name__ == '__main__' guard
+    or from an installed module). The temporary directory is cleaned up even on
+    failure.
+    """
     w, h = size
     shots = reel["shots"]
     if jobs <= 1:
@@ -846,24 +927,72 @@ def render_reel(
         p.stdin.close()
         p.wait()
         return
+
     import multiprocessing as mp
     import tempfile
+
+    if hasattr(sys.modules.get("__main__", None), "__file__"):
+        main_file = getattr(sys.modules["__main__"], "__file__", None)
+        if main_file and not os.path.exists(main_file):
+            raise RuntimeError(
+                f"render_reel(jobs={jobs}) requires the calling module to be importable. "
+                f"The __main__ file '{main_file}' does not exist. "
+                "Run from an installed module or use jobs=1."
+            )
+    else:
+        raise RuntimeError(
+            f"render_reel(jobs={jobs}) requires the calling module to be importable "
+            "(spawn Pool needs to import the worker function). "
+            "Ensure the code runs under an 'if __name__ == \"__main__\":' guard, "
+            "or use jobs=1."
+        )
+
     tmp = Path(tempfile.mkdtemp(prefix=".reel_", dir=str(Path(out_path).resolve().parent)))
     segs = [str(tmp / f"shot{i:02d}.mp4") for i in range(len(shots))]
     work = [(str(Path(base_dir) / s["config"]), s["seconds"], fps, size, segs[i]) for i, s in enumerate(shots)]
-    with mp.get_context("spawn").Pool(min(jobs, len(work))) as pool:
-        for o in pool.imap_unordered(_render_shot_job, work):
-            print("done", o, file=sys.stderr, flush=True)
-    lst = tmp / "list.txt"
-    lst.write_text("".join(f"file '{x}'\n" for x in segs))
-    subprocess.run(
-        ["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
-         "-c", "copy", "-movflags", "+faststart", str(out_path)],
-        check=True,
-    )
-    for x in segs + [str(lst)]:
-        os.remove(x)
-    tmp.rmdir()
+    try:
+        with mp.get_context("spawn").Pool(min(jobs, len(work))) as pool:
+            for o in pool.imap_unordered(_render_shot_job, work):
+                print("done", o, file=sys.stderr, flush=True)
+        lst = tmp / "list.txt"
+        lst.write_text("".join(f"file '{x}'\n" for x in segs))
+        subprocess.run(
+            ["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
+             "-c", "copy", "-movflags", "+faststart", str(out_path)],
+            check=True,
+        )
+    finally:
+        _cleanup_reel_tmp(tmp, segs)
+
+
+def parse_size(s: str) -> Tuple[int, int]:
+    """Parse WxH string to (width, height) tuple."""
+    parts = s.lower().split("x")
+    if len(parts) != 2:
+        raise argparse.ArgumentTypeError(f"invalid size '{s}': expected WxH format (e.g., 1080x1920)")
+    try:
+        w, h = int(parts[0]), int(parts[1])
+        if w <= 0 or h <= 0:
+            raise ValueError
+        return (w, h)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"invalid size '{s}': width and height must be positive integers")
+
+
+def grab_size(output_size: Tuple[int, int], target_short: int = 360) -> Tuple[int, int]:
+    """Calculate phone QC grab size preserving aspect ratio.
+
+    For portrait (h > w): target_short-wide, scaled height.
+    For landscape (w >= h): target equivalent 640-wide, scaled height.
+    """
+    w, h = output_size
+    if h > w:
+        gw = target_short
+        gh = int(round(target_short * h / w))
+    else:
+        gw = 640
+        gh = int(round(640 * h / w))
+    return (gw, gh)
 
 
 def main(argv: Optional[List[str]] = None) -> None:
@@ -874,29 +1003,37 @@ def main(argv: Optional[List[str]] = None) -> None:
     ap.add_argument("--out", required=True)
     ap.add_argument("--seconds", type=float, default=8.0)
     ap.add_argument("--fps", type=int, default=30)
+    ap.add_argument("--size", type=parse_size, default=(1080, 1920),
+                    help="output size as WxH (default: 1080x1920 portrait)")
     ap.add_argument("--preview", type=int, default=0, help="output width for a quick low-res preview (e.g. 360)")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--proof", action="store_true",
                     help="also print the zero-motion report (frame diff vs still outside the smoke footprint)")
-    ap.add_argument("--grab", default=None, help="also save a 360x640 PNG frame grab at --grab-t seconds")
+    ap.add_argument("--grab", default=None, help="also save a phone-size PNG frame grab at --grab-t seconds")
     ap.add_argument("--grab-t", type=float, default=3.0)
     ap.add_argument("--jobs", type=int, default=1, help="reel only: render shots in N parallel processes")
     a = ap.parse_args(argv)
+
+    base_w, base_h = a.size
+    if a.preview:
+        w = a.preview
+        h = int(round(a.preview * base_h / base_w))
+    else:
+        w, h = base_w, base_h
+
     if a.reel:
-        w = a.preview or 1080
-        render_reel(json.load(open(a.reel)), a.out, (w, int(round(w * 16 / 9))), a.fps, Path(a.reel).parent.parent, a.jobs)
+        render_reel(json.load(open(a.reel)), a.out, (w, h), a.fps, Path(a.reel).parent.parent, a.jobs)
         return
     cfg = json.load(open(a.config))
     plate_path = a.plate or cfg["plate"]
-    w = a.preview or 1080
-    h = int(round(w * 16 / 9))
     push_vals = (1.0, 1.0) if a.no_push else tuple(cfg.get("push", (1.0, 1.06)))
     scene = render(plate_path, cfg, a.out, a.seconds, a.fps, (w, h), push_vals)
     if a.grab:
         u = min(a.grab_t / max(a.seconds, 1e-6), 1.0)
         z = (1.0, 1.0) if a.no_push else tuple(cfg.get("push", (1.0, 1.06)))
-        g = push_frame(scene.frame(a.grab_t), u, 1080, 1920, *z, center=tuple(cfg.get("push_center", (0.5, 0.5))))
-        g = cv2.resize(g, (360, 640), interpolation=cv2.INTER_AREA)
+        g = push_frame(scene.frame(a.grab_t), u, base_w, base_h, *z, center=tuple(cfg.get("push_center", (0.5, 0.5))))
+        gw, gh = grab_size((base_w, base_h))
+        g = cv2.resize(g, (gw, gh), interpolation=cv2.INTER_AREA)
         cv2.imwrite(a.grab, cv2.cvtColor(g, cv2.COLOR_RGB2BGR))
     if a.proof:
         print(json.dumps(zero_motion_report(scene, list(np.arange(0, a.seconds, 0.5)), cfg.get("guards")), indent=1))
