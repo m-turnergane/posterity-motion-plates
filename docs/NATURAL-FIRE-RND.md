@@ -1,5 +1,14 @@
 # Natural-fire R&D — P05 forge (day21/atahualpa) — 2026-10-23
 
+> **STATUS: R&D ONLY — SUPERSEDED FOR PRODUCTION (2026-10-30)**
+>
+> This natural-fire R&D work (and the flames_v1–v3 experiments) has been superseded by
+> **torch_v1c**, which is LOCKED as the house torch standard. The owner verdict was that
+> v3 "was distorting the things around it" while v1c is "more like a pulsing effect".
+>
+> For production torch/cresset/brazier/larger-fire work, use `src/motionplates/standalone/fx_torch.py`.
+> See `docs/TORCH-V1C.md` for the production preset documentation.
+
 Scope: one POC, 6 s, 1080x1920@30, no audio. Nothing in prod touched (renders/, configs, masks, PRESETS.md, presets/locked read-only).
 Engine: locked `animate_b3_cb9e2b88.py` (the md5 prod v2c asserts; brief said "b9" — b3/cb9e2b88 is the one that reproduces prod bit-exactly).
 Repro check: `qc/verify_static_vs_prod.json` — our pipeline reproduces prod `P05_static.mp4` frames 0/1/76/152 bit-identically.
