@@ -6,13 +6,9 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 
 | Gap | Blocks |
 | --- | --- |
-| Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the test line. Feature VO still waits for the sample task and the 30,000-credit ask |
-| Yes/no on the recommended plan in `DECISION-BUNDLE.md`: Penumbra versus Anabasis I for Act I, and the opening sample as specified | Starting the sample. The pack recommends Penumbra |
-| Feature title. The pack offers three, and recommends "The Letter for a Buried King" | The pen-stroke title in the intro |
-| Whether the tagline is also written on screen. Default in the pack is narrated only | The outro type |
-| POSTERITY wordmark master, vector or at least 4K with alpha | Exact-geometry stroke reveal. The sample intro needs it or an approved trace |
+| Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the opening lines. The nine lines were 1,013 characters. The 30,000-credit ask still applies before a full-film pass |
 | Explorer's Chart as the Edward map class. depth_v1 stays off unless the owner says otherwise | The map class only |
-| Drive media parts 01–09. Each zip is 13–25 MB and the connector stops at 10 MB | The 40 atlas guides and 21 Short plates. Scores and the three tomb photos were retrieved another way |
+| Two coordinate files still only inside the oversized media zips: `waypoint_coords_wikidata_2026-10-30.json` and `wikipedia_coords_2026-10-30.json` | Map registration. Not needed for the opening sample |
 
 ## Desk / next pack
 

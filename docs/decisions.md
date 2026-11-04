@@ -4,7 +4,7 @@ Dates are America/Toronto. Status is one of: approved, episode, provisional, sup
 
 | Date | Decision | Scope | Status | Source |
 | --- | --- | --- | --- | --- |
-| 2026-09-27 | Outro is the POSTERITY wordmark plus the narrated tagline "History remembers the victors. We remember the rest." over a background unique to the episode | Channel | approved | `00-index-and-current-status.md` |
+| 2026-09-27 | Outro is the POSTERITY wordmark plus the tagline "History remembers the victors. We remember the rest." over a background unique to the episode. On 4 Nov 2026 at 1:44 PM the owner added that the tagline is also written on screen | Channel | approved | `00-index-and-current-status.md`; owner message |
 | 2026-09-27 | Chronicle Reveal title, later pinned as v3.2b | Shorts title tool | approved | index; engine notes §7 |
 | 2026-10-22 to 2026-10-30 | Locked motion presets: torch_v1c, fx_candle (`house-candle-lightspill-v1`), smoke_v2, water_v1, dust_v1. Push is scale-only 1.00→1.06 | Motion | approved | engine notes §6 |
 | 2026-10-27 | No on-screen status labels and no "ILLUSTRATIVE RECONSTRUCTION" text | Channel | approved | index corrections |
@@ -30,4 +30,5 @@ Dates are America/Toronto. Status is one of: approved, episode, provisional, sup
 | 2026-11-04 12:35 PM | Sample phase has no numeric cap. Ask before a plan upgrade or any spend that would exhaust the account. Full-film budget is set at the go-ahead after the sample | This pilot | approved | `inbox/VIDEO-PACK-v2/PILOT-OVERRIDE-v1.md` |
 | 2026-11-04 12:44 PM | Maps stay on the engine. I2V never draws routes, labels, or markers. An atmosphere layer under the engine overlays is an optional test | Edward maps | approved | `inbox/VIDEO-PACK-v2/MAP-PACK.md` |
 | 2026-11-04 12:50 PM | Script v3.2 is locked. 101 lines, 1,884 words, md5 `11f4e6f9ac7d640d006dac33533472f6`. Archivist countersigned. v2 and v3 are superseded | Edward narration | approved | `sources/raw/script-vo-v3.2-LOCKED.txt` |
-| 2026-11-04 | Higgsfield spending cap for the full film | This experiment | unknown until the sample go-ahead. Sample spend is on hold for missing reference media | `PILOT-OVERRIDE-v1.md`; Drive parts 01–09 not retrieved |
+| 2026-11-04 1:44 PM | Title is "The Letter for a Buried King". Act I score is Anabasis I. The rest of the v2.1 yes/no plan is approved as recommended. The wordmark is generated, not supplied | Edward feature | approved | owner message |
+| 2026-11-04 | Higgsfield spending cap for the full film | This experiment | unknown until the sample go-ahead. Opening sample spent 62 credits and left 48 | `PILOT-OVERRIDE-v1.md`; `OPENING-SAMPLE.md` |

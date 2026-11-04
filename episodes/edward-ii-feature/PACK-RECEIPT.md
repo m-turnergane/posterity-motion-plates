@@ -17,10 +17,10 @@ Drive folder `post-1-edward pack`, id `1mXJMAlaffw-n0UYBfnboj5xE_ZYEMRzG`. Twelv
 | Tomb photos 01, 03, 04 | sha1 matches `commons_imageinfo_T01_2026-11-04.json`. Sizes 5,093,908 / 5,288,271 / 1,881,548. Fetched from Wikimedia Commons because their Drive zips are over 10 MB. CC0 |
 | Anabasis I, Katabasis I, Penumbra, Unraveling, Memories Of Stone | md5 matches `SCORE-PLAN.md`. Fetched from the Scott Buckley URLs saved in the pack's licence pages. CC BY 4.0 |
 
-## Not retrieved
+## Retrieved later, not in git
 
-Drive media parts 01–09. Sizes 13.8–24.8 MB. The connector stops at 10 MB (`provider_response_too_large`). Those zips hold the 40 atlas guide images, the 21 Edward Short plates, most of the geodata, and two small required coordinate files (`waypoint_coords_wikidata_2026-10-30.json`, `wikipedia_coords_2026-10-30.json`).
+`EDWARD-II-IMAGES-part01` through `part10`, each under 9 MB, from the same Drive folder. Extracted under `var/edward-ii-feature/images/`. 21 Short plates and 40 atlas guides. Key plate md5s match the part manifests, including b20, b01, b12, b07, b04, and the Gloucester dusk outro.
 
-Still missing from the pack's own index: the POSTERITY wordmark master, and Short plate b06.
+Still only inside the oversized media zips: `waypoint_coords_wikidata_2026-10-30.json` and `wikipedia_coords_2026-10-30.json`. Short plate b06 is not in this pack.
 
-Nothing was generated.
+There is no supplied wordmark file. The master used in the opening sample was isolated from the dusk outro and stays in `var/`. The opening sample itself is recorded in `OPENING-SAMPLE.md`.

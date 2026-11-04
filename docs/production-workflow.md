@@ -63,11 +63,11 @@ Chronicle Reveal v3.2b is Remotion composition `ChronicleHookV3-2b` in `titles/r
 
 ## Narration (desk settings; call only after the secret exists)
 
-Environment name: `ELEVENLABS_API_KEY`. Do not print it. One synthetic verification line is allowed during setup. The locked spoken script is `episodes/edward-ii-feature/inbox/VIDEO-PACK-v2/sources/raw/script-vo-v3.2-LOCKED.txt`. Do not render feature lines until the sample is the active task. Stop and ask before about 30,000 credits on this draft.
+Environment name: `ELEVENLABS_API_KEY`. Do not print it. The locked spoken script is `episodes/edward-ii-feature/inbox/VIDEO-PACK-v2/sources/raw/script-vo-v3.2-LOCKED.txt`. The opening lines are already rendered. Do not render the rest until the full film is the active task. Stop and ask before about 30,000 credits on this draft.
 
 ## Higgsfield
 
-MCP is connected for account and model queries. The sample phase has no numeric cap. `config/budget.yaml` still has `hold: reference-media`, so do not generate while that hold is set. Name `nano_banana_pro` for stills. Do not switch to the developer API. Ask before a plan upgrade or any spend that would exhaust the account.
+MCP is connected for account and model queries. The sample phase has no numeric cap. The reference hold is cleared. Name `nano_banana_pro` for stills. Do not switch to the developer API. Ask before a plan upgrade or any spend that would exhaust the account. The opening pass left 48 credits.
 
 ## Assembly checks
 

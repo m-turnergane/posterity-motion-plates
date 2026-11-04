@@ -6,8 +6,8 @@ Discover ids and prices at call time. Do not hardcode a credit price from the No
 
 | Job | Route | Status |
 | --- | --- | --- |
-| Plate stills for this long-form experiment | Higgsfield MCP, model `nano_banana_pro` | Sample phase is authorized. `hold: reference-media` until the atlas guides and Short plates are on disk. Name `nano_banana_pro` on the call. The MCP general default is `gpt_image_2_5` |
-| Generative motion (cloth, water that must move, gesture, weather) | Higgsfield video, after the still is accepted | Same hold. I2V prompts come from each shot's intent, invariants, and permitted action |
+| Plate stills for this long-form experiment | Higgsfield MCP, model `nano_banana_pro` | Sample phase is authorized and the reference hold is cleared. Name `nano_banana_pro` on the call. The MCP general default is `gpt_image_2_5` |
+| Generative motion (cloth, water that must move, gesture, weather) | Higgsfield video, after the still is accepted | One Seedance 2.5 clip was spent on the accepted H06 still. I2V prompts come from each shot's intent, invariants, and permitted action |
 | Held paintings, push, titles, document reveals | Deterministic engine. depth_v1 off | Allowed without Higgsfield |
 | Maps | Engine routes, labels, and markers on a registered plate | Owner rule, 12:44 PM America/Toronto. I2V never draws routes, labels, or markers. An atmosphere layer under those engine layers is an optional test |
 | Narration | ElevenLabs `eleven_multilingual_v2`, Oliver Silk | Allowed inside the 30,000 credit ask-first cap once the secret is set |
@@ -16,7 +16,7 @@ Discover ids and prices at call time. Do not hardcode a credit price from the No
 
 ## Spend rules
 
-- Higgsfield balance is not a cap. While `hold` is set, generation count is zero. The sample phase has no numeric cap. Ask before a plan upgrade or any spend that would exhaust the account.
+- Higgsfield balance is not a cap. The sample phase has no numeric cap. Ask before a plan upgrade or any spend that would exhaust the account. The opening pass left 48 credits.
 - ElevenLabs: record characters per call. Stop and ask before the running draft total would pass about 30,000 credits. One short setup line does not need a fresh ask.
 - Do not buy a plan, add credits, or turn on auto top-up.
 - Cache by input hash. A timeout resumes the saved job id. It does not submit a second job.

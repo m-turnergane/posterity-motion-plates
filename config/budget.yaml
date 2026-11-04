@@ -9,23 +9,23 @@ elevenlabs:
   ask_before_credits: 30000
   scope: this Edward draft
   spent_credits: 0
-  characters_sent: 70
-  character_cost_header: null
-  note: Screenshot totals are a record, not a live balance. One technical line was synthesized once. The subscription endpoint returned 401, so credits were not re-read and spent_credits stays 0.
+  characters_sent: 1083
+  character_cost_header: 446
+  note: Screenshot totals are a record, not a live balance. characters_sent is the 70-character test line plus 1,013 characters of opening VO. The character-cost header on those nine lines summed to 446. The subscription endpoint returned 401, so spent_credits stays 0.
 
 higgsfield:
   status: sample-authorized
-  hold: reference-media
-  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. No numeric cap on the sample phase. Ask before a plan upgrade or any spend that would exhaust the account. Full-film budget waits for the go-ahead. Hold stays until the atlas guides and Short plates from Drive media parts 01-09 are on disk.
+  hold:
+  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. No numeric cap on the sample phase. Ask before a plan upgrade or any spend that would exhaust the account. Full-film budget waits for the go-ahead. The reference hold was cleared once the image parts were on disk.
   plan_observed: plus
-  credits_observed: 110
-  observed_at: 2026-11-04T17:30:00Z
+  credits_observed: 48
+  observed_at: 2026-11-04T19:10:00Z
   image_model: nano_banana_pro
   image_model_status: pack-confirmed
   mcp_general_default: gpt_image_2_5
   unlim_available: false
-  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. The same-hour account read is Plus, 110 credits, and free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. nano_banana_pro accepts 16:9, defaults to 2k, and is marked supports_unlim. Generation stays blocked until the cap arrives.
-  spent_credits: 0
+  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. Free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. Calls name nano_banana_pro. The opening pass spent 20 credits on ten stills.
+  spent_credits: 62
   queued_credits: 0
 
 rendering:
