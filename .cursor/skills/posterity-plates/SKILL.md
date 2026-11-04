@@ -5,7 +5,7 @@ description: Plan and review Posterity plates against Recovered Chronicle rules,
 
 # Plates
 
-1. Confirm `config/budget.yaml` `higgsfield.status` is not `blocked`, `image_model` is set, and `hold` is empty. If status is blocked, the model is empty, or `hold` names missing media or an owner pick, write what is missing and stop. Do not call Higgsfield.
+1. Confirm `config/budget.yaml` `higgsfield.status` is not `blocked`, `image_model` is set, and `hold` is empty. If status is blocked, the model is empty, or `hold` is set, write what is missing and stop. Do not call Higgsfield in that case. A remaining balance is not a cap. Quote with `get_cost` before a batch. `supports_unlim` and a website Unlimited label do not make the call free when unlimited is unavailable.
 2. Read template v2 in `intake/atelier-jr-2026-11-04/02-reference-paintings-and-prompts/prompts/HOUSE__PLATE-PROMPT-TEMPLATE-v2.md`. Scene first, one to four constraints.
 3. Masters are unlettered 16:9. Do not crop a 9:16 Short plate into 1920×1080.
 4. Generate only inside the approved cap, in batches of 4–6, after gate 4. Save job ids before polling.

@@ -23,7 +23,7 @@ Names only.
 | Name | State |
 | --- | --- |
 | `ELEVENLABS_API_KEY` | Set. The value starts with `sk_` and is not in the repo. One 70-character Oliver line succeeded at about 12:13 PM America/Toronto. `GET /v1/user/subscription` returned 401, so the live balance was not re-read. |
-| Higgsfield | MCP session is signed in. No API key is stored in the repo. Re-read at 12:30 PM America/Toronto on 4 Nov 2026: Plus, 110 credits. Registration grant 10 at 2:24 PM on 3 Nov; subscription grant 100 at 10:52 AM on 4 Nov. No spend. Free-trial unlimited is not spendable. |
+| Higgsfield | MCP session is signed in. No API key is stored in the repo. Re-read at 12:30 PM America/Toronto on 4 Nov 2026: Plus, 110 credits. Registration grant 10 at 2:24 PM on 3 Nov; subscription grant 100 at 10:52 AM on 4 Nov. Free-trial unlimited is not spendable. A later read the same day, 3:49 PM America/Toronto, was still Plus and 48 credits after the opening sample. |
 
 ## Providers
 

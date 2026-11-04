@@ -1,10 +1,10 @@
 # Edward II / Kent feature
 
-status: OPENING_SAMPLE_CUT
+status: OPENING_TEST_TWO_LOCAL
 updated: 2026-11-04
 timezone: America/Toronto
 
-Current handoff: [`CHECKPOINT.md`](CHECKPOINT.md). Pending second pass, not started: [`OPENING-TEST-TWO.md`](OPENING-TEST-TWO.md). The first cut in [`OPENING-SAMPLE.md`](OPENING-SAMPLE.md) stays the comparison copy.
+Current handoff: [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). The brief is [`OPENING-TEST-TWO.md`](OPENING-TEST-TWO.md). The first-cut record is [`CHECKPOINT.md`](CHECKPOINT.md) and [`OPENING-SAMPLE.md`](OPENING-SAMPLE.md). The comparison film is unchanged.
 
 ## What this slot is
 
@@ -32,10 +32,10 @@ The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The re
 | --- | --- |
 | Delivery config | `config/delivery.yaml` approved |
 | Voice config | `config/narration.yaml` approved, speed unknown. Opening lines L01–L05, L07, L07a, L08, L09 rendered once |
-| Higgsfield | Sample phase authorized. Hold cleared. Model `nano_banana_pro`. 62 credits spent, 48 remaining. See `OPENING-SAMPLE.md` |
+| Higgsfield | Sample phase authorized. 62 credits spent, 48 remaining at 3:49 PM America/Toronto. Test-two stills are quoted and not submitted. See `TEST-TWO-RECORD.md` |
 | Engine branch | PR #5, not merged |
 | Technical test film | `pipeline-test/README.md`. Picture and one Oliver line verified. Not the episode |
 
 ## Next action
 
-The first opening sample is cut and checkpointed. Test two is pending in `OPENING-TEST-TWO.md` and is not authorized. There is no numeric spending cap for that pass. Ask once, with one aggregate plan, before any paid submission. The full film, the outro, and any plan upgrade wait. Explorer's Chart is still a proposal. PR #5 stays unmerged.
+The local test-two renderer is in. `opening-sample-test-two.mp4` is not encoded. Five plates are still the wrong picture, and the 23.50-credit ask in `TEST-TWO-RECORD.md` has no answer yet. Do not submit a generation before that cap is a number. The full film, the outro, and any plan upgrade wait. Explorer's Chart is still a proposal. PR #5 stays unmerged.

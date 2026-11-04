@@ -2,6 +2,8 @@
 
 Handoff record for the first opening sample. Written 4 Nov 2026, America/Toronto. This pass generated nothing, spent nothing, merged nothing, and did not start test two or the full film.
 
+A later session the same day, still on this branch, recovered the zip below, built the test-two picture path, and stopped before any paid generation. That note is [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). The first cut described here is unchanged.
+
 The first cut stays the comparison copy. Its production note is `OPENING-SAMPLE.md`. The pending second-pass brief is `OPENING-TEST-TWO.md`. Per-file sums for the recovery zip are `checkpoint/SHA256SUMS`. The shot clock is `checkpoint/timeline.json`.
 
 ## 1. What is accepted
@@ -262,11 +264,11 @@ These are in `tools/assemble_opening_sample.py` as committed. Test two is the pl
 | Numeric cap for test two | None. A $49 / 1,000-credit plan was being considered and is not in effect |
 | ElevenLabs live balance | Unknown. Subscription endpoint returned 401 |
 
-### Pending, not started
+### Paid work still waiting
 
-`OPENING-TEST-TWO.md` is the brief. Preserve this cut and write a separate `opening-sample-test-two.mp4` only after a numeric cap exists and the pass is authorized. Before any paid test-two submission, prepare one aggregate plan and ask once. Website "unlimited" does not apply to MCP. The help page checked 4 Nov 2026 is https://higgsfield.ai/creator-hub/help-center/credits/how-credits-work. If a replacement Seedance clip is even a candidate, compare the raw 6 s 720p clip with the assembly first, then quote settings and cost. The owner is open to `gpt_image_2_5` for a future anchor. Verify the catalog id at call time. One native-resolution anchor first. Seedance 2.5 stays the video model. Do not re-synthesize the nine Oliver takes to change pictures.
+`OPENING-TEST-TWO.md` is the brief. The local renderer and the costed ask are in [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). Preserve this cut. Write `opening-sample-test-two.mp4` only after a numeric cap exists and the five replacement plates pass review. Website "unlimited" does not apply to MCP. The H06 clip was compared with the assembly and is kept. A Seedance reshoot is not in the ask. `gpt_image_2_5` is the quoted still candidate for the five replacements. Do not re-synthesize the nine Oliver takes to change pictures.
 
-Corrections waiting in that brief: locked camera on S001 unless a quoted replacement is approved; a crisp S002 insert with local flame, smoke, and candle spill; S003 without the lateral pan and without the extra crown, the effigy reading as a crafted figure; S004 restored to a pre-strike Kent-at-the-block tableau from the rain-swept reference, no impact and no new narration; S005 warmth limited to paper and desk; the brand passage rebuilt as wet black ink along the existing POSTERITY letterforms, then a separate solid-black ACT I card in cream type; S007 through S009 covered by visually distinct pictures rather than repeated enlargements of N01. Keep N21 if it still meets the Gascony beat. N22 is not an asset and is not automatically required.
+Already in the renderer: locked cameras, the S002 insert with local flame and smoke, S005 spill on the paper and desk, black ink on the CB1 interior, and a black centred ACT I card. S008 is the one N01 wide. N21 stays. N22 is not required. Still waiting on paid plates: S003 without the extra crown, S004 as the pre-strike tableau, and distinct pictures for S007, S007a, and S009.
 
 ### Secrets for a new session
 
@@ -275,7 +277,7 @@ Corrections waiting in that brief: locked camera on S001 unless a quoted replace
 ### What a fresh session still needs
 
 1. This branch, and the recovery zip (media id or the CDN URL above). Confirm the zip sha256 before using it.
-2. A font path that exists. The assembler still points at `/tmp/engine-wt/...`.
+2. The test-two intro reads `assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`. The first-cut assembler still points at `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`.
 3. The ElevenLabs secret, only if a new line is actually authorized. The nine takes are in the zip. Do not re-render them.
 4. The Drive connection, for image parts and the two reference paintings.
 5. A numeric spending cap, asked once, before any test-two generation.

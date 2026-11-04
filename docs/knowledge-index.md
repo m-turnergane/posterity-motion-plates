@@ -5,7 +5,7 @@ Read this before a production task. Load only the row you need. Desk originals l
 | Topic | Read | Depth |
 | --- | --- | --- |
 | What to do this session | [`episodes/edward-ii-feature/STATUS.md`](../episodes/edward-ii-feature/STATUS.md) | Always |
-| Opening checkpoint and the pending second pass | [`episodes/edward-ii-feature/CHECKPOINT.md`](../episodes/edward-ii-feature/CHECKPOINT.md), [`OPENING-TEST-TWO.md`](../episodes/edward-ii-feature/OPENING-TEST-TWO.md) | Before a new session or a second pass of the opening |
+| Opening checkpoint and the second pass | [`episodes/edward-ii-feature/CHECKPOINT.md`](../episodes/edward-ii-feature/CHECKPOINT.md), [`TEST-TWO-RECORD.md`](../episodes/edward-ii-feature/TEST-TWO-RECORD.md), [`OPENING-TEST-TWO.md`](../episodes/edward-ii-feature/OPENING-TEST-TWO.md) | Before a new session or a second pass of the opening |
 | Standing decisions and their status | [`decisions.md`](decisions.md) | Always for a choice that might already be settled |
 | Channel, story, evidence, art, maps, voice | [`posterity-playbook.md`](posterity-playbook.md) | The section the task touches |
 | Commands that have been run here | [`production-workflow.md`](production-workflow.md) | Before rendering or pushing |

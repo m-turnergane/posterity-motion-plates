@@ -11,3 +11,6 @@ description: Choose deterministic or generative motion for one Posterity shot, r
 4. Poll the saved job id after a timeout. Do not submit a second paid job for the same shot.
 5. Inspect the first, middle, and last frames. Reject face or costume drift, invented text, rubber motion, and glossy surfaces. If QC fails, the still plate is the fallback.
 6. `src/motionplates` on this branch remains the experimental plate engine. Frame 0 must match the plate.
+7. On the Edward opening test, keep the camera fixed. Sample with the float warp in `src/motionplates/opening/camera.py`. Do not integer-slice the window and then resize.
+8. Run house flame, smoke, and spill on the frame after that one resample. Branding is a separate local pass. One plate is one shot. A crop of the same wide is not a new angle.
+9. Judge motion from the moving export, or from the proof frames when the encode is refused. A still model change does not repair a clip.

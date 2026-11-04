@@ -15,18 +15,19 @@ elevenlabs:
 
 higgsfield:
   status: sample-authorized
-  hold:
-  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. No numeric cap on the sample phase. Ask before a plan upgrade or any spend that would exhaust the account. Full-film budget waits for the go-ahead. The reference hold was cleared once the image parts were on disk.
+  hold: test-two numeric cap not authorized
+  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. No numeric cap on the sample phase. The opening test-two ask is 23.50 credits and 8 submissions, recorded in episodes/edward-ii-feature/TEST-TWO-RECORD.md, and it is not authorized. Ask before a plan upgrade or any spend that would exhaust the account. Full-film budget waits for the go-ahead. The reference hold was cleared once the image parts were on disk.
   plan_observed: plus
   credits_observed: 48
-  observed_at: 2026-11-04T20:04:00Z
+  observed_at: 2026-11-04T20:49:12Z
   image_model: nano_banana_pro
   image_model_status: pack-confirmed
   mcp_general_default: gpt_image_2_5
   unlim_available: false
-  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. Free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. Calls name nano_banana_pro. The opening pass spent 20 credits on ten stills.
+  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. Free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. Calls name nano_banana_pro. The opening pass spent 20 credits on ten stills. Test-two replacement stills, if a cap is authorized, name gpt_image_2_5. A high 2k 16:9 quote at 20:49 UTC was 2.75 credits. This session spent 0.
   spent_credits: 62
   queued_credits: 0
+  test_two_spent_credits: 0
 
 rendering:
   status: local

@@ -163,14 +163,16 @@ def build_timeline() -> tuple[list[dict], list[dict], float]:
 
 
 def sample(plate: np.ndarray, z: float, cx: float, cy: float) -> np.ndarray:
-    h, w = plate.shape[:2]
-    cw, ch = w / z, h / z
-    x0 = min(max(cx * w - cw / 2.0, 0.0), w - cw)
-    y0 = min(max(cy * h - ch / 2.0, 0.0), h - ch)
-    crop = plate[int(y0):int(y0 + ch), int(x0):int(x0 + cw)]
-    if crop.size == 0:
-        crop = plate
-    return cv2.resize(crop, (W, H), interpolation=cv2.INTER_LINEAR)
+    """Float resample of this cut's window. The integer snap lived here before test two.
+
+    Framing is unchanged: the window is still ``(w/z, h/z)`` around the same
+    centre. Only the sampling changed. Test two does not use this function.
+    """
+    src = str(ROOT / "src")
+    if src not in sys.path:
+        sys.path.insert(0, src)
+    from motionplates.opening.camera import legacy_window_sample
+    return legacy_window_sample(plate, z, cx, cy, W, H)
 
 
 def cool(frame: np.ndarray) -> np.ndarray:
@@ -535,6 +537,12 @@ def encode(pictures, plates, intro, duration: float, audio: Path, dest: Path) ->
 
 
 def main() -> None:
+    if "--rebuild-first-cut" not in sys.argv:
+        raise SystemExit(
+            "This assembler rebuilds the frozen first cut and would overwrite "
+            "opening-sample.mp4. Test two is tools/assemble_opening_test_two.py. "
+            "Pass --rebuild-first-cut to rebuild the comparison cut on purpose."
+        )
     if not FONT.exists():
         raise SystemExit(f"missing title font {FONT}")
     audio, pictures, duration = build_timeline()
