@@ -22,7 +22,7 @@ Names only.
 
 | Name | State |
 | --- | --- |
-| `ELEVENLABS_API_KEY` | A value is present. ElevenLabs returned 400 `api_key_id_used_as_api_key` on 4 Nov 2026. The stored value is a key ID. A replacement `sk_` key was requested through the secret input. The value is not in the repo. |
+| `ELEVENLABS_API_KEY` | A value is present. It is 64 hexadecimal characters and does not start with `sk_`. ElevenLabs returned 400 `api_key_id_used_as_api_key` on the first try and again at 12:07 PM America/Toronto on 4 Nov 2026, after the secret form was resubmitted. The stored value is a key ID. The `sk_` secret is still required. The value is not in the repo. |
 | Higgsfield | MCP session is signed in. No API key is stored in the repo. Re-read during this session: Plus, 110 credits. No generation. |
 
 ## Providers
