@@ -22,8 +22,8 @@ Names only.
 
 | Name | State |
 | --- | --- |
-| `ELEVENLABS_API_KEY` | Not set at the start of this session. Requested through the cloud secret input. Never written to the repo. |
-| Higgsfield | MCP session is signed in. No API key is stored in the repo. Plan: Plus. Balance at planning time: 110 credits. Re-read before any generation. |
+| `ELEVENLABS_API_KEY` | A value is present. ElevenLabs returned 400 `api_key_id_used_as_api_key` on 4 Nov 2026. The stored value is a key ID. A replacement `sk_` key was requested through the secret input. The value is not in the repo. |
+| Higgsfield | MCP session is signed in. No API key is stored in the repo. Re-read during this session: Plus, 110 credits. No generation. |
 
 ## Providers
 

@@ -6,7 +6,7 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 
 | Gap | Blocks |
 | --- | --- |
-| `ELEVENLABS_API_KEY` in the cloud secret store | The Oliver verification line and any narration. Picture assembly does not wait on it |
+| `ELEVENLABS_API_KEY` must be the `sk_` key, not the key ID. The first stored value was rejected | The Oliver line and any narration. The picture test did not wait |
 | Higgsfield credit cap, and the image model to use | Any Higgsfield generation, including the style sample |
 | Edward feature prep pack: script, spoken script, claim ledger, eight movements, shot list | The feature film. Not this setup pass |
 | Packet (i): treatment and whether 03:05–04:55 is still the sample; approval of the 33–34 master budget; Gregorian Chant as a feature section | Feature spend and score |

@@ -43,11 +43,11 @@ pip install -r requirements.txt
 pytest -q
 ```
 
-`pytest` is the synthetic-plate check for `src/motionplates`. It does not render the feature.
+`pytest -q` was run on this branch on 4 Nov 2026: 50 passed, 1 skipped. It does not render the feature. `test_plate_never_in_repo` allows `OWNER` in filenames under `intake/` only.
 
 ## House build template (desk, not verified as a feature render)
 
-On the engine branch the template is `templates/build_template_v1.py`. It defaults to 1080×1920 and takes `--size 1920x1080`. `--check` plans and runs guardrails without rendering. Its guardrails import still points at `<repo>/guardrails.py`, which is not where this repo stores `engine/motion/guardrails.py`. Do not treat a failed import as a passed check, and do not retarget it without an approved commit.
+On the engine branch the template is `templates/build_template_v1.py`. It defaults to 1080×1920 and takes `--size 1920x1080`. `--check` plans and runs guardrails without rendering. Its guardrails import still points at `<repo>/guardrails.py`, which is not where this repo stores `engine/motion/guardrails.py`. On 4 Nov 2026 `--check --size 1920x1080` raised `FileNotFoundError` for that path. Do not treat the failure as a passed check, and do not retarget it without an approved commit.
 
 Desk shape:
 
