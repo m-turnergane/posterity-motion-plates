@@ -1,0 +1,698 @@
+{
+ "name": "control_points_refpack_bathory_v2",
+ "px_space": "out px (plate px = 2x, also given)",
+ "frame": "bathory_b03v2_9x16",
+ "thresholds": {
+  "pass_px": 4,
+  "flag_px": 8,
+  "pass_km": 0.315,
+  "flag_km": 0.63,
+  "scaled_from": "Edward v2 px gates (4/8 px); km = px x 0.07870 km/px"
+ },
+ "warp_limit_frac_of_min_side": 0.025,
+ "counts": {
+  "primary": 29,
+  "primary_vah": 13,
+  "secondary": 6
+ },
+ "control_points": [
+  {
+   "type": "confluence",
+   "name": "Horný Dudváh into Váh",
+   "lon": 17.7553,
+   "lat": 48.3594,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    122.5,
+    1581.3
+   ],
+   "role": "primary",
+   "id": "CP01",
+   "plate_px": [
+    245.0,
+    3162.6
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Rajčanka into Váh",
+   "lon": 18.7084,
+   "lat": 49.2363,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    1009.0,
+    342.0
+   ],
+   "role": "primary",
+   "id": "CP02",
+   "plate_px": [
+    2018.0,
+    684.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Papradnianka into Váh",
+   "lon": 18.4719,
+   "lat": 49.163,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    791.2,
+    446.7
+   ],
+   "role": "primary",
+   "id": "CP03",
+   "plate_px": [
+    1582.4,
+    893.4
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Teplička into Váh",
+   "lon": 18.0546,
+   "lat": 48.9059,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    405.0,
+    810.3
+   ],
+   "role": "primary",
+   "id": "CP04",
+   "plate_px": [
+    810.0,
+    1620.6
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Biela voda into Váh",
+   "lon": 18.3131,
+   "lat": 49.1116,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    644.6,
+    519.7
+   ],
+   "role": "primary",
+   "id": "CP05",
+   "plate_px": [
+    1289.2,
+    1039.4
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Lednica into Váh",
+   "lon": 18.2464,
+   "lat": 49.0174,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    583.0,
+    652.8
+   ],
+   "role": "primary",
+   "id": "CP06",
+   "plate_px": [
+    1166.0,
+    1305.6
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Domanižanka into Váh",
+   "lon": 18.4465,
+   "lat": 49.1221,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    767.9,
+    504.6
+   ],
+   "role": "primary",
+   "id": "CP07",
+   "plate_px": [
+    1535.8,
+    1009.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Malá Nitra into Nitra",
+   "lon": 18.1058,
+   "lat": 48.274,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    451.4,
+    1703.1
+   ],
+   "role": "primary",
+   "id": "CP08",
+   "plate_px": [
+    902.8,
+    3406.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Handlovka into Nitra",
+   "lon": 18.5589,
+   "lat": 48.7463,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    874.4,
+    1035.1
+   ],
+   "role": "primary",
+   "id": "CP09",
+   "plate_px": [
+    1748.8,
+    2070.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Bojnianka into Nitra",
+   "lon": 18.1564,
+   "lat": 48.5169,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    499.2,
+    1360.0
+   ],
+   "role": "primary",
+   "id": "CP10",
+   "plate_px": [
+    998.4,
+    2720.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Šťávnice into Olšava",
+   "lon": 17.6891,
+   "lat": 49.0338,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    66.8,
+    628.1
+   ],
+   "role": "primary",
+   "id": "CP11",
+   "plate_px": [
+    133.6,
+    1256.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Nitrica into Nitra",
+   "lon": 18.3517,
+   "lat": 48.6205,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    681.7,
+    1213.5
+   ],
+   "role": "primary",
+   "id": "CP12",
+   "plate_px": [
+    1363.4,
+    2427.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Bebrava into Nitra",
+   "lon": 18.2093,
+   "lat": 48.5703,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    548.7,
+    1284.5
+   ],
+   "role": "primary",
+   "id": "CP13",
+   "plate_px": [
+    1097.4,
+    2569.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "confluence",
+   "name": "Senice into Vsetínská Bečva",
+   "lon": 18.0014,
+   "lat": 49.3127,
+   "source": "OSM waterway=river centerlines (ODbL): end of the tributary within 400 m of the main river",
+   "px": [
+    357.1,
+    235.4
+   ],
+   "role": "primary",
+   "id": "CP14",
+   "plate_px": [
+    714.2,
+    470.8
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Váh bend 107 deg",
+   "lon": 18.3772,
+   "lat": 49.1247,
+   "turn_deg": 106.6,
+   "source": "OSM Váh centerline vertex (1.3 km simplification), turn > 35 deg",
+   "weight": "high (spine)",
+   "px": [
+    703.8,
+    501.1
+   ],
+   "role": "primary",
+   "id": "CP15",
+   "plate_px": [
+    1407.6,
+    1002.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Váh bend 87 deg",
+   "lon": 17.7427,
+   "lat": 48.2793,
+   "turn_deg": 86.8,
+   "source": "OSM Váh centerline vertex (1.3 km simplification), turn > 35 deg",
+   "weight": "high (spine)",
+   "px": [
+    110.0,
+    1694.4
+   ],
+   "role": "primary",
+   "id": "CP16",
+   "plate_px": [
+    220.0,
+    3388.8
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Váh bend 63 deg",
+   "lon": 18.6612,
+   "lat": 49.2609,
+   "turn_deg": 62.8,
+   "source": "OSM Váh centerline vertex (1.3 km simplification), turn > 35 deg",
+   "weight": "high (spine)",
+   "px": [
+    965.2,
+    307.5
+   ],
+   "role": "primary",
+   "id": "CP17",
+   "plate_px": [
+    1930.4,
+    615.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Váh bend 54 deg",
+   "lon": 17.8502,
+   "lat": 48.7671,
+   "turn_deg": 54.3,
+   "source": "OSM Váh centerline vertex (1.3 km simplification), turn > 35 deg",
+   "weight": "high (spine)",
+   "px": [
+    214.3,
+    1005.7
+   ],
+   "role": "primary",
+   "id": "CP18",
+   "plate_px": [
+    428.6,
+    2011.4
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Váh bend 54 deg",
+   "lon": 17.976,
+   "lat": 48.8713,
+   "turn_deg": 54.1,
+   "source": "OSM Váh centerline vertex (1.3 km simplification), turn > 35 deg",
+   "weight": "high (spine)",
+   "px": [
+    331.8,
+    859.0
+   ],
+   "role": "primary",
+   "id": "CP19",
+   "plate_px": [
+    663.6,
+    1718.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Váh bend 42 deg",
+   "lon": 18.0894,
+   "lat": 48.9429,
+   "turn_deg": 41.9,
+   "source": "OSM Váh centerline vertex (1.3 km simplification), turn > 35 deg",
+   "weight": "high (spine)",
+   "px": [
+    437.4,
+    758.0
+   ],
+   "role": "primary",
+   "id": "CP20",
+   "plate_px": [
+    874.8,
+    1516.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Senice bend 111 deg",
+   "lon": 18.0582,
+   "lat": 49.1819,
+   "turn_deg": 110.7,
+   "source": "OSM Senice centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    409.0,
+    420.3
+   ],
+   "role": "primary",
+   "id": "CP21",
+   "plate_px": [
+    818.0,
+    840.6
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Nitra bend 88 deg",
+   "lon": 18.0896,
+   "lat": 48.3222,
+   "turn_deg": 88.4,
+   "source": "OSM Nitra centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    436.3,
+    1635.0
+   ],
+   "role": "primary",
+   "id": "CP22",
+   "plate_px": [
+    872.6,
+    3270.0
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Dřevnice bend 80 deg",
+   "lon": 17.7784,
+   "lat": 49.2182,
+   "turn_deg": 80.1,
+   "source": "OSM Dřevnice centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    150.9,
+    368.1
+   ],
+   "role": "primary",
+   "id": "CP23",
+   "plate_px": [
+    301.8,
+    736.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Lednica bend 80 deg",
+   "lon": 18.2919,
+   "lat": 49.0657,
+   "turn_deg": 80.1,
+   "source": "OSM Lednica centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    625.1,
+    584.6
+   ],
+   "role": "primary",
+   "id": "CP24",
+   "plate_px": [
+    1250.2,
+    1169.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Nitrica bend 69 deg",
+   "lon": 18.5003,
+   "lat": 48.7348,
+   "turn_deg": 69.2,
+   "source": "OSM Nitrica centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    819.8,
+    1051.6
+   ],
+   "role": "primary",
+   "id": "CP25",
+   "plate_px": [
+    1639.6,
+    2103.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Hron bend 66 deg",
+   "lon": 18.5254,
+   "lat": 48.191,
+   "turn_deg": 66.3,
+   "source": "OSM Hron centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    846.5,
+    1819.8
+   ],
+   "role": "primary",
+   "id": "CP26",
+   "plate_px": [
+    1693.0,
+    3639.6
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Vsetínská Bečva bend 65 deg",
+   "lon": 17.9399,
+   "lat": 49.3726,
+   "turn_deg": 65.2,
+   "source": "OSM Vsetínská Bečva centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    300.7,
+    150.6
+   ],
+   "role": "primary",
+   "id": "CP27",
+   "plate_px": [
+    601.4,
+    301.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Hron bend 65 deg",
+   "lon": 18.6999,
+   "lat": 48.4389,
+   "turn_deg": 65.0,
+   "source": "OSM Hron centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    1008.6,
+    1468.6
+   ],
+   "role": "primary",
+   "id": "CP28",
+   "plate_px": [
+    2017.2,
+    2937.2
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "river_bend",
+   "name": "Nitra bend 59 deg",
+   "lon": 18.0319,
+   "lat": 48.3516,
+   "turn_deg": 59.1,
+   "source": "OSM Nitra centerline vertex (1.3 km simplification), turn > 55 deg",
+   "weight": "low (minor river)",
+   "px": [
+    382.2,
+    1593.3
+   ],
+   "role": "primary",
+   "id": "CP29",
+   "plate_px": [
+    764.4,
+    3186.6
+   ],
+   "search_px_out": 40
+  },
+  {
+   "type": "settlement",
+   "name": "Csejte",
+   "key": "csejte",
+   "qid": "Q612364",
+   "lon": 17.76083333,
+   "lat": 48.72472222,
+   "px": [
+    130.7,
+    1065.2
+   ],
+   "role": "secondary",
+   "band": "VERIFIED",
+   "source": "Wikidata P625 (live) = MAP-PLACES-bathory-v1",
+   "id": "CP30",
+   "plate_px": [
+    261.4,
+    2130.4
+   ],
+   "search_px_out": 60
+  },
+  {
+   "type": "settlement",
+   "name": "Csejte manor (village)",
+   "key": "csejte_manor",
+   "qid": "Q337440",
+   "lon": 17.787222222222223,
+   "lat": 48.71222222222222,
+   "px": [
+    155.2,
+    1083.0
+   ],
+   "role": "secondary",
+   "band": "COARSE",
+   "source": "Wikidata P625 (live) = MAP-PLACES-bathory-v1",
+   "id": "CP31",
+   "plate_px": [
+    310.4,
+    2166.0
+   ],
+   "search_px_out": 60
+  },
+  {
+   "type": "settlement",
+   "name": "Bytča",
+   "key": "bytca",
+   "qid": "Q1968071",
+   "lon": 18.559166666667,
+   "lat": 49.22,
+   "px": [
+    871.4,
+    365.8
+   ],
+   "role": "secondary",
+   "band": "VERIFIED",
+   "source": "Wikidata P625 (live) = MAP-PLACES-bathory-v1",
+   "id": "CP32",
+   "plate_px": [
+    1742.8,
+    731.6
+   ],
+   "search_px_out": 60
+  },
+  {
+   "type": "settlement",
+   "name": "Vágújhely",
+   "key": "vagujhely",
+   "qid": "Q376987",
+   "lon": 17.833333333333,
+   "lat": 48.783333333333,
+   "px": [
+    198.7,
+    982.7
+   ],
+   "role": "secondary",
+   "band": "optional",
+   "source": "Wikidata P625 (live) = MAP-PLACES-bathory-v1",
+   "id": "CP33",
+   "plate_px": [
+    397.4,
+    1965.4
+   ],
+   "search_px_out": 60
+  },
+  {
+   "type": "settlement",
+   "name": "Trencsén",
+   "key": "trencsen",
+   "qid": "Q145002",
+   "lon": 18.040555555556,
+   "lat": 48.894166666667,
+   "px": [
+    391.9,
+    826.8
+   ],
+   "role": "secondary",
+   "band": "optional",
+   "source": "Wikidata P625 (live) = MAP-PLACES-bathory-v1",
+   "id": "CP34",
+   "plate_px": [
+    783.8,
+    1653.6
+   ],
+   "search_px_out": 60
+  },
+  {
+   "type": "settlement",
+   "name": "Zsolna",
+   "key": "zsolna",
+   "qid": "Q25797",
+   "lon": 18.733333333333,
+   "lat": 49.216666666667,
+   "px": [
+    1032.2,
+    369.6
+   ],
+   "role": "secondary",
+   "band": "optional",
+   "source": "Wikidata P625 (live) = MAP-PLACES-bathory-v1",
+   "id": "CP35",
+   "plate_px": [
+    2064.4,
+    739.2
+   ],
+   "search_px_out": 60
+  }
+ ]
+}

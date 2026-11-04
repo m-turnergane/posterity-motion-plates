@@ -1,0 +1,91 @@
+{
+ "method": "median Rec.601 luma of the delivered 1920x1080 PNG where a realm family weight > 0.5, on land, > 6 plate px from the coast, bright vermilion ink pixels excluded",
+ "pigment_luma_r2": {
+  "england": 57.8,
+  "england_light": 115.2,
+  "scotland": 136.5,
+  "france": 117.3,
+  "france_fam": 147.4,
+  "empire": 175.8,
+  "castile": 75.5,
+  "aragon": 158.3,
+  "portugal": 112.6
+ },
+ "pigment_luma_r1": {
+  "england": 86.5,
+  "england_light": 108.4,
+  "scotland": 94.6,
+  "france": 99.5,
+  "france_fam": 133.0,
+  "empire": 112.4,
+  "castile": 105.7,
+  "aragon": 139.3,
+  "portugal": 119.5
+ },
+ "values": {
+  "map2a_A_worn_house_r1": {
+   "flanders": 111.8,
+   "england": 107.7,
+   "england_light": 127.4,
+   "empire": 112.0,
+   "france": 114.6
+  },
+  "map2a_A_worn_house_r2": {
+   "flanders": 113.4,
+   "england": 85.2,
+   "england_light": 123.2,
+   "empire": 128.8,
+   "france": 111.6
+  },
+  "map2a_B_campaign_atlas_r1": {
+   "flanders": 118.2,
+   "england": 107.8,
+   "england_light": 122.3,
+   "empire": 131.8,
+   "france": 112.0
+  },
+  "map2a_B_campaign_atlas_r2": {
+   "flanders": 118.0,
+   "england": 108.1,
+   "england_light": 122.3,
+   "empire": 131.8,
+   "france": 112.0
+  },
+  "map2b_A_worn_house_r1": {
+   "france": 114.8,
+   "empire": 119.4,
+   "flanders": 109.8,
+   "france_fam": 130.5,
+   "england": 107.9,
+   "castile": 120.8,
+   "england_light": 122.1
+  },
+  "map2b_A_worn_house_r2": {
+   "france": 110.8,
+   "empire": 135.4,
+   "flanders": 111.1,
+   "france_fam": 128.2,
+   "england": 85.8,
+   "castile": 109.6,
+   "england_light": 118.9
+  },
+  "map2b_B_campaign_atlas_r1": {
+   "france": 114.0,
+   "empire": 136.3,
+   "flanders": 118.8,
+   "france_fam": 128.8,
+   "england": 111.0,
+   "castile": 116.0,
+   "england_light": 127.2
+  },
+  "map2b_B_campaign_atlas_r2": {
+   "france": 113.7,
+   "empire": 136.3,
+   "flanders": 117.2,
+   "france_fam": 128.5,
+   "england": 110.7,
+   "castile": 116.0,
+   "england_light": 127.3
+  }
+ }
+}

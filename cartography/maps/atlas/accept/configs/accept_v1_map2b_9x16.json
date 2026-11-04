@@ -1,0 +1,226 @@
+{
+ "name": "accept_v1_map2b_9x16",
+ "about": "Acceptance test v1 (step 2). Native 9:16 portrait plate for Part 2 (map 2b): own framing (1500 km wide), own marker and label scale.",
+ "seed": 1328,
+ "map": {
+  "center_lonlat": [
+   1.6,
+   48.7
+  ],
+  "width_km": 1500
+ },
+ "basemap": {
+  "river_rank": 4,
+  "river_px": 1.3,
+  "shallow_px": 26,
+  "rim_px": 3.5
+ },
+ "control_points": [
+  {
+   "ref": "Land's End",
+   "dir": "W",
+   "search_px": 32
+  },
+  {
+   "ref": "Pointe du Raz",
+   "dir": "W",
+   "search_px": 32
+  },
+  {
+   "ref": "Cap de la Hague",
+   "dir": "NW",
+   "search_px": 32
+  },
+  {
+   "ref": "Cap Gris-Nez",
+   "dir": "W",
+   "search_px": 32
+  },
+  {
+   "ref": "Den Helder",
+   "dir": "N",
+   "search_px": 32
+  },
+  {
+   "ref": "Portofino",
+   "dir": "S",
+   "search_px": 32
+  }
+ ],
+ "out_wh": [
+  1080,
+  1920
+ ],
+ "plate_wh": [
+  2160,
+  3840
+ ],
+ "push": [
+  1.0,
+  2.95
+ ],
+ "label_px": 45,
+ "mode": "realms_worn",
+ "style_A": {
+  "edge_age": 0.0,
+  "paint": 0.78
+ },
+ "style_B": {},
+ "chains": [
+  {
+   "id": "britain_documented",
+   "style": "documented",
+   "width": 4.6,
+   "ring_r": 14.0,
+   "ring_w": 3.6,
+   "stops": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187"
+    },
+    {
+     "row": "2-02",
+     "qid": "Q870815",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "leg": "land"
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "leg": "land"
+    }
+   ]
+  },
+  {
+   "id": "britain_fieschi",
+   "style": "claimed",
+   "width": 4.6,
+   "ring_r": 14.0,
+   "ring_w": 3.6,
+   "stops": [
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "no_stamp": true
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "leg": "land",
+     "label": "Corfe",
+     "label_px": 36
+    },
+    {
+     "row": "2-06",
+     "qid": "Q22890",
+     "pin": false,
+     "leg": "sea",
+     "anchor_lonlat": [
+      -6.12,
+      52.45
+     ],
+     "anchor_note": "illustrative region touch ~8 km off the Wexford coast (MAP-PLACES 2-06 is OMIT: region, not a port); the Wikidata P625 of Q22890 is inland and is NOT used for the line",
+     "label": "Ireland",
+     "label_note": "MAP-PLACES 2-06: OMIT, do not pin, tint or label only: Ireland",
+     "label_px": 34
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "leg": "sea",
+     "label": "Sandwich",
+     "label_px": 36
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "label": "Sluis",
+     "leg": "sea",
+     "ring_r": 17.0,
+     "ring_w": 4.4,
+     "ring_note": "Sluis is the continent chain's start: continent ring size",
+     "label_px": 36
+    }
+   ],
+   "dash": [
+    22.0,
+    15.0
+   ]
+  },
+  {
+   "id": "continent",
+   "style": "claimed",
+   "width": 8.0,
+   "ring_r": 22.0,
+   "ring_w": 5.2,
+   "stops": [
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "no_stamp": true
+    },
+    {
+     "row": "2-09",
+     "qid": "Q15878",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-10",
+     "qid": "Q206221",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-11",
+     "qid": "Q6397",
+     "label": "Avignon",
+     "leg": "land",
+     "label_px": 60
+    },
+    {
+     "row": "2-12",
+     "qid": "Q90",
+     "label": "Paris",
+     "leg": "land",
+     "label_px": 60
+    },
+    {
+     "row": "2-13",
+     "qid": "Q159856",
+     "pin": false,
+     "leg": "land",
+     "label": "Brabant",
+     "label_note": "MAP-PLACES 2-13: OMIT, tint or label only: Brabant",
+     "label_px": 54
+    },
+    {
+     "row": "2-14",
+     "qid": "Q365",
+     "label": "Cologne",
+     "leg": "land",
+     "label_px": 60
+    },
+    {
+     "row": "2-15",
+     "qid": "Q490",
+     "label": "Milan",
+     "leg": "land",
+     "label_px": 60
+    }
+   ],
+   "dash": [
+    36.0,
+    24.0
+   ]
+  }
+ ],
+ "region_label_px": 42,
+ "approx_areas": [],
+ "label_note": "Normandy (2-09) and Languedoc (2-10) stay unlabelled: MAP-PLACES allows no on-screen text for them."
+}

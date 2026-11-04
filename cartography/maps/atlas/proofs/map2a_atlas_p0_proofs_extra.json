@@ -1,0 +1,491 @@
+{
+ "authority_refusal": [
+  {
+   "test": "UNCERTAIN hermitage",
+   "row": "2-16",
+   "refused": true,
+   "error": "2-16 is UNCERTAIN, cannot pin"
+  },
+  {
+   "test": "unlisted row",
+   "row": "9-99",
+   "refused": true,
+   "error": "row 9-99 not in MAP-PLACES-v1"
+  }
+ ],
+ "phone_scale_contrast": {
+  "political": [
+   {
+    "leg": "2-01->2-03",
+    "style": "documented",
+    "stroke_px_on_phone": 3.33,
+    "contrast": {
+     "n": 76,
+     "core_vs_raw_under": {
+      "min": 1.04,
+      "p5": 1.05,
+      "median": 1.34,
+      "min_at_plate_px": [
+       521.1,
+       359.9
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.19,
+      "p5": 1.31,
+      "median": 2.1,
+      "min_at_plate_px": [
+       521.1,
+       359.9
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.16,
+      "p5": 1.17,
+      "median": 1.35
+     }
+    }
+   },
+   {
+    "leg": "2-03->2-04",
+    "style": "documented",
+    "stroke_px_on_phone": 3.33,
+    "contrast": {
+     "n": 50,
+     "core_vs_raw_under": {
+      "min": 1.31,
+      "p5": 1.35,
+      "median": 1.84,
+      "min_at_plate_px": [
+       564.4,
+       348.5
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 2.51,
+      "p5": 2.69,
+      "median": 2.89,
+      "min_at_plate_px": [
+       564.4,
+       348.5
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.51,
+      "p5": 1.51,
+      "median": 1.65
+     }
+    }
+   },
+   {
+    "leg": "2-04->2-05",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 69,
+     "core_vs_raw_under": {
+      "min": 1.01,
+      "p5": 1.18,
+      "median": 1.61,
+      "min_at_plate_px": [
+       562.5,
+       382.4
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.69,
+      "p5": 1.77,
+      "median": 2.06,
+      "min_at_plate_px": [
+       562.1,
+       380.9
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.65,
+      "p5": 1.67,
+      "median": 1.78
+     }
+    }
+   },
+   {
+    "leg": "2-05->2-07",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 317,
+     "core_vs_raw_under": {
+      "min": 1.33,
+      "p5": 1.5,
+      "median": 1.88,
+      "min_at_plate_px": [
+       541.2,
+       595.5
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.55,
+      "p5": 1.68,
+      "median": 2.08,
+      "min_at_plate_px": [
+       541.2,
+       595.5
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.44,
+      "p5": 1.58,
+      "median": 1.94
+     }
+    }
+   },
+   {
+    "leg": "2-07->2-08",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 18,
+     "core_vs_raw_under": {
+      "min": 1.77,
+      "p5": 1.78,
+      "median": 1.95,
+      "min_at_plate_px": [
+       865.8,
+       394.7
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.9,
+      "p5": 1.91,
+      "median": 2.2,
+      "min_at_plate_px": [
+       867.3,
+       394.4
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.84,
+      "p5": 1.84,
+      "median": 2.02
+     }
+    }
+   }
+  ],
+  "terrain": [
+   {
+    "leg": "2-01->2-03",
+    "style": "documented",
+    "stroke_px_on_phone": 3.33,
+    "contrast": {
+     "n": 76,
+     "core_vs_raw_under": {
+      "min": 1.14,
+      "p5": 1.2,
+      "median": 1.39,
+      "min_at_plate_px": [
+       532.9,
+       301.7
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.0,
+      "p5": 1.04,
+      "median": 1.47,
+      "min_at_plate_px": [
+       521.2,
+       368.7
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.0,
+      "p5": 1.09,
+      "median": 1.27
+     }
+    }
+   },
+   {
+    "leg": "2-03->2-04",
+    "style": "documented",
+    "stroke_px_on_phone": 3.33,
+    "contrast": {
+     "n": 50,
+     "core_vs_raw_under": {
+      "min": 1.09,
+      "p5": 1.11,
+      "median": 1.2,
+      "min_at_plate_px": [
+       600.0,
+       310.8
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.96,
+      "p5": 2.19,
+      "median": 2.37,
+      "min_at_plate_px": [
+       613.6,
+       292.6
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.01,
+      "p5": 1.06,
+      "median": 1.24
+     }
+    }
+   },
+   {
+    "leg": "2-04->2-05",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 69,
+     "core_vs_raw_under": {
+      "min": 1.01,
+      "p5": 1.02,
+      "median": 1.16,
+      "min_at_plate_px": [
+       560.1,
+       372.1
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.03,
+      "p5": 1.06,
+      "median": 1.23,
+      "min_at_plate_px": [
+       562.1,
+       380.9
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.0,
+      "p5": 1.01,
+      "median": 1.06
+     }
+    }
+   },
+   {
+    "leg": "2-05->2-07",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 317,
+     "core_vs_raw_under": {
+      "min": 1.33,
+      "p5": 1.5,
+      "median": 1.88,
+      "min_at_plate_px": [
+       541.2,
+       595.5
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.55,
+      "p5": 1.68,
+      "median": 2.08,
+      "min_at_plate_px": [
+       541.2,
+       595.5
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.44,
+      "p5": 1.58,
+      "median": 1.94
+     }
+    }
+   },
+   {
+    "leg": "2-07->2-08",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 18,
+     "core_vs_raw_under": {
+      "min": 1.77,
+      "p5": 1.78,
+      "median": 1.95,
+      "min_at_plate_px": [
+       865.8,
+       394.7
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.9,
+      "p5": 1.91,
+      "median": 2.2,
+      "min_at_plate_px": [
+       867.3,
+       394.4
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.84,
+      "p5": 1.84,
+      "median": 2.02
+     }
+    }
+   }
+  ],
+  "hybrid": [
+   {
+    "leg": "2-01->2-03",
+    "style": "documented",
+    "stroke_px_on_phone": 3.33,
+    "contrast": {
+     "n": 76,
+     "core_vs_raw_under": {
+      "min": 1.0,
+      "p5": 1.01,
+      "median": 1.12,
+      "min_at_plate_px": [
+       560.6,
+       294.0
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.02,
+      "p5": 1.06,
+      "median": 1.79,
+      "min_at_plate_px": [
+       521.1,
+       364.4
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.0,
+      "p5": 1.02,
+      "median": 1.1
+     }
+    }
+   },
+   {
+    "leg": "2-03->2-04",
+    "style": "documented",
+    "stroke_px_on_phone": 3.33,
+    "contrast": {
+     "n": 50,
+     "core_vs_raw_under": {
+      "min": 1.01,
+      "p5": 1.02,
+      "median": 1.32,
+      "min_at_plate_px": [
+       564.4,
+       348.5
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 2.24,
+      "p5": 2.48,
+      "median": 2.67,
+      "min_at_plate_px": [
+       613.6,
+       292.6
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.1,
+      "p5": 1.1,
+      "median": 1.21
+     }
+    }
+   },
+   {
+    "leg": "2-04->2-05",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 69,
+     "core_vs_raw_under": {
+      "min": 1.01,
+      "p5": 1.02,
+      "median": 1.21,
+      "min_at_plate_px": [
+       562.8,
+       383.8
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.33,
+      "p5": 1.38,
+      "median": 1.6,
+      "min_at_plate_px": [
+       562.1,
+       380.9
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.22,
+      "p5": 1.25,
+      "median": 1.38
+     }
+    }
+   },
+   {
+    "leg": "2-05->2-07",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 317,
+     "core_vs_raw_under": {
+      "min": 1.33,
+      "p5": 1.5,
+      "median": 1.88,
+      "min_at_plate_px": [
+       541.2,
+       595.5
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.55,
+      "p5": 1.68,
+      "median": 2.08,
+      "min_at_plate_px": [
+       541.2,
+       595.5
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.44,
+      "p5": 1.58,
+      "median": 1.94
+     }
+    }
+   },
+   {
+    "leg": "2-07->2-08",
+    "style": "claimed",
+    "stroke_px_on_phone": 2.44,
+    "contrast": {
+     "n": 18,
+     "core_vs_raw_under": {
+      "min": 1.77,
+      "p5": 1.78,
+      "median": 1.95,
+      "min_at_plate_px": [
+       865.8,
+       394.7
+      ]
+     },
+     "core_vs_edge_rendered": {
+      "min": 1.9,
+      "p5": 1.91,
+      "median": 2.2,
+      "min_at_plate_px": [
+       867.3,
+       394.4
+      ]
+     },
+     "core_vs_map_beyond_halo": {
+      "min": 1.84,
+      "p5": 1.84,
+      "median": 2.02
+     }
+    }
+   }
+  ]
+ },
+ "labels_identical_across_states": true,
+ "route_identical_across_states": true
+}

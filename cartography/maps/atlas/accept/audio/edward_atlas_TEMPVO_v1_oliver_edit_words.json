@@ -1,0 +1,390 @@
+{
+ "temp_vo": true,
+ "source": "edward_atlas_TEMPVO_v1_oliver.wav",
+ "edits": [
+  {
+   "at_s": 3.357,
+   "inserted_silence_s": 0.5,
+   "pause_rms_dbfs": -97.7
+  },
+  {
+   "at_s": 9.489,
+   "inserted_silence_s": 1.2,
+   "pause_rms_dbfs": -88.0
+  }
+ ],
+ "words": [
+  {
+   "word": "According",
+   "start": 0.0,
+   "end": 0.418,
+   "line": "T1"
+  },
+  {
+   "word": "to",
+   "start": 0.464,
+   "end": 0.522,
+   "line": "T1"
+  },
+  {
+   "word": "Fieschi's",
+   "start": 0.58,
+   "end": 1.045,
+   "line": "T1"
+  },
+  {
+   "word": "letter,",
+   "start": 1.103,
+   "end": 1.521,
+   "line": "T1"
+  },
+  {
+   "word": "Edward",
+   "start": 1.672,
+   "end": 1.985,
+   "line": "T1"
+  },
+  {
+   "word": "then",
+   "start": 2.02,
+   "end": 2.171,
+   "line": "T1"
+  },
+  {
+   "word": "crossed",
+   "start": 2.287,
+   "end": 2.647,
+   "line": "T1"
+  },
+  {
+   "word": "to",
+   "start": 2.67,
+   "end": 2.728,
+   "line": "T1"
+  },
+  {
+   "word": "Ireland,",
+   "start": 2.844,
+   "end": 3.297,
+   "line": "T1"
+  },
+  {
+   "word": "and",
+   "start": 3.867,
+   "end": 4.006,
+   "line": "T1"
+  },
+  {
+   "word": "came",
+   "start": 4.076,
+   "end": 4.273,
+   "line": "T1"
+  },
+  {
+   "word": "back",
+   "start": 4.32,
+   "end": 4.482,
+   "line": "T1"
+  },
+  {
+   "word": "to",
+   "start": 4.529,
+   "end": 4.587,
+   "line": "T1"
+  },
+  {
+   "word": "England",
+   "start": 4.68,
+   "end": 4.981,
+   "line": "T1"
+  },
+  {
+   "word": "as",
+   "start": 5.028,
+   "end": 5.121,
+   "line": "T1"
+  },
+  {
+   "word": "a",
+   "start": 5.167,
+   "end": 5.202,
+   "line": "T1"
+  },
+  {
+   "word": "hermit,",
+   "start": 5.272,
+   "end": 5.748,
+   "line": "T1"
+  },
+  {
+   "word": "landing",
+   "start": 5.899,
+   "end": 6.282,
+   "line": "T1"
+  },
+  {
+   "word": "at",
+   "start": 6.328,
+   "end": 6.398,
+   "line": "T1"
+  },
+  {
+   "word": "Sandwich.",
+   "start": 6.468,
+   "end": 7.083,
+   "line": "T1"
+  },
+  {
+   "word": "The",
+   "start": 7.524,
+   "end": 7.64,
+   "line": "T2"
+  },
+  {
+   "word": "letter",
+   "start": 7.698,
+   "end": 7.988,
+   "line": "T2"
+  },
+  {
+   "word": "says",
+   "start": 8.07,
+   "end": 8.255,
+   "line": "T2"
+  },
+  {
+   "word": "he",
+   "start": 8.314,
+   "end": 8.36,
+   "line": "T2"
+  },
+  {
+   "word": "crossed",
+   "start": 8.43,
+   "end": 8.731,
+   "line": "T2"
+  },
+  {
+   "word": "the",
+   "start": 8.755,
+   "end": 8.824,
+   "line": "T2"
+  },
+  {
+   "word": "sea",
+   "start": 8.882,
+   "end": 9.115,
+   "line": "T2"
+  },
+  {
+   "word": "at",
+   "start": 9.161,
+   "end": 9.254,
+   "line": "T2"
+  },
+  {
+   "word": "Sluys,",
+   "start": 9.324,
+   "end": 9.881,
+   "line": "T2"
+  },
+  {
+   "word": "then",
+   "start": 11.232,
+   "end": 11.371,
+   "line": "T2"
+  },
+  {
+   "word": "went",
+   "start": 11.429,
+   "end": 11.58,
+   "line": "T2"
+  },
+  {
+   "word": "through",
+   "start": 11.615,
+   "end": 11.824,
+   "line": "T2"
+  },
+  {
+   "word": "Normandy",
+   "start": 11.882,
+   "end": 12.346,
+   "line": "T2"
+  },
+  {
+   "word": "and",
+   "start": 12.404,
+   "end": 12.497,
+   "line": "T2"
+  },
+  {
+   "word": "Languedoc",
+   "start": 12.579,
+   "end": 13.066,
+   "line": "T2"
+  },
+  {
+   "word": "to",
+   "start": 13.124,
+   "end": 13.194,
+   "line": "T2"
+  },
+  {
+   "word": "Avignon,",
+   "start": 13.287,
+   "end": 13.891,
+   "line": "T2"
+  },
+  {
+   "word": "where",
+   "start": 14.042,
+   "end": 14.216,
+   "line": "T2"
+  },
+  {
+   "word": "the",
+   "start": 14.25,
+   "end": 14.32,
+   "line": "T2"
+  },
+  {
+   "word": "pope",
+   "start": 14.378,
+   "end": 14.634,
+   "line": "T2"
+  },
+  {
+   "word": "kept",
+   "start": 14.668,
+   "end": 14.901,
+   "line": "T2"
+  },
+  {
+   "word": "him",
+   "start": 14.947,
+   "end": 15.063,
+   "line": "T2"
+  },
+  {
+   "word": "more",
+   "start": 15.144,
+   "end": 15.319,
+   "line": "T2"
+  },
+  {
+   "word": "than",
+   "start": 15.353,
+   "end": 15.493,
+   "line": "T2"
+  },
+  {
+   "word": "fifteen",
+   "start": 15.586,
+   "end": 16.015,
+   "line": "T2"
+  },
+  {
+   "word": "days.",
+   "start": 16.073,
+   "end": 16.549,
+   "line": "T2"
+  },
+  {
+   "word": "From",
+   "start": 16.874,
+   "end": 17.037,
+   "line": "T3"
+  },
+  {
+   "word": "there,",
+   "start": 17.095,
+   "end": 17.432,
+   "line": "T3"
+  },
+  {
+   "word": "it",
+   "start": 17.466,
+   "end": 17.548,
+   "line": "T3"
+  },
+  {
+   "word": "claims,",
+   "start": 17.594,
+   "end": 18.07,
+   "line": "T3"
+  },
+  {
+   "word": "he",
+   "start": 18.221,
+   "end": 18.291,
+   "line": "T3"
+  },
+  {
+   "word": "went",
+   "start": 18.349,
+   "end": 18.523,
+   "line": "T3"
+  },
+  {
+   "word": "by",
+   "start": 18.569,
+   "end": 18.697,
+   "line": "T3"
+  },
+  {
+   "word": "Paris,",
+   "start": 18.79,
+   "end": 19.347,
+   "line": "T3"
+  },
+  {
+   "word": "Brabant",
+   "start": 19.463,
+   "end": 20.079,
+   "line": "T3"
+  },
+  {
+   "word": "and",
+   "start": 20.125,
+   "end": 20.288,
+   "line": "T3"
+  },
+  {
+   "word": "Cologne,",
+   "start": 20.357,
+   "end": 20.903,
+   "line": "T3"
+  },
+  {
+   "word": "and",
+   "start": 21.031,
+   "end": 21.17,
+   "line": "T3"
+  },
+  {
+   "word": "across",
+   "start": 21.216,
+   "end": 21.507,
+   "line": "T3"
+  },
+  {
+   "word": "Germany",
+   "start": 21.553,
+   "end": 21.983,
+   "line": "T3"
+  },
+  {
+   "word": "to",
+   "start": 22.099,
+   "end": 22.215,
+   "line": "T3"
+  },
+  {
+   "word": "Milan.",
+   "start": 22.273,
+   "end": 23.48,
+   "line": "T3"
+  }
+ ]
+}

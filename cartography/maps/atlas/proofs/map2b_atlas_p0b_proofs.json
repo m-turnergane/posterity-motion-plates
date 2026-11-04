@@ -1,0 +1,904 @@
+{
+ "shot": "edward_map2b_atlas_p0b",
+ "config": "atlas/configs/edward_map2b_atlas_p0b_w50.json",
+ "density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   2048,
+   1152
+  ],
+  "out_wh": [
+   1920,
+   1080
+  ],
+  "push_max": 1.06,
+  "crop_zoom": 1.0,
+  "cover_scale": 0.9375,
+  "visible_src_wh": [
+   1932.1,
+   1086.8
+  ],
+  "ratio": 0.994,
+  "ratio_x": 0.994,
+  "ratio_y": 0.994,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "authority": [
+  {
+   "row": "2-01",
+   "qid": "Q1070187",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Chepstow Castle"
+  },
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Glamorgan (region)"
+  },
+  {
+   "row": "2-03",
+   "qid": "Q1738764",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Kenilworth Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-05",
+   "qid": "Q1236511",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Corfe Castle"
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "kind": "via",
+   "status": "OMIT",
+   "label": "Ireland",
+   "site": "Ireland (island)"
+  },
+  {
+   "row": "2-07",
+   "qid": "Q26163",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Sandwich, Kent"
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Sluis",
+   "site": "Sluis, Zeeland"
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Sluis, Zeeland"
+  },
+  {
+   "row": "2-09",
+   "qid": "Q15878",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Normandy (region)"
+  },
+  {
+   "row": "2-10",
+   "qid": "Q206221",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Languedoc (historical province)"
+  },
+  {
+   "row": "2-11",
+   "qid": "Q6397",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Avignon",
+   "site": "Avignon"
+  },
+  {
+   "row": "2-12",
+   "qid": "Q90",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Paris",
+   "site": "Paris"
+  },
+  {
+   "row": "2-13",
+   "qid": "Q159856",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Duchy of Brabant (region)"
+  },
+  {
+   "row": "2-14",
+   "qid": "Q365",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Cologne",
+   "site": "Cologne"
+  },
+  {
+   "row": "2-15",
+   "qid": "Q490",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Milan",
+   "site": "Milan"
+  }
+ ],
+ "approx_areas": [],
+ "route_ink_p0b": {
+  "documented": {
+   "col": [
+    58,
+    18,
+    16
+   ],
+   "pool": [
+    36,
+    10,
+    9
+   ],
+   "strength": 0.97,
+   "halo_col": [
+    16,
+    8,
+    8
+   ],
+   "halo_opacity": 0.85,
+   "halo_dilate": 4,
+   "grain": 0.06,
+   "sea_casing": [
+    238,
+    226,
+    194
+   ],
+   "sea_casing_opacity": 0.92,
+   "col_stats": {
+    "rgb": [
+     58,
+     18,
+     16
+    ],
+    "hsv_s": 0.724,
+    "chroma_rgb": 42,
+    "lab_chroma": 22.0,
+    "rel_lum": 0.0137
+   },
+   "pool_stats": {
+    "rgb": [
+     36,
+     10,
+     9
+    ],
+    "hsv_s": 0.75,
+    "chroma_rgb": 27,
+    "lab_chroma": 13.6,
+    "rel_lum": 0.0061
+   }
+  },
+  "claimed": {
+   "col": [
+    92,
+    32,
+    26
+   ],
+   "pool": [
+    60,
+    20,
+    16
+   ],
+   "strength": 0.97,
+   "halo_col": [
+    16,
+    8,
+    8
+   ],
+   "halo_opacity": 0.78,
+   "halo_dilate": 3,
+   "grain": 0.08,
+   "sea_casing": [
+    238,
+    226,
+    194
+   ],
+   "sea_casing_opacity": 0.9,
+   "col_stats": {
+    "rgb": [
+     92,
+     32,
+     26
+    ],
+    "hsv_s": 0.717,
+    "chroma_rgb": 66,
+    "lab_chroma": 33.0,
+    "rel_lum": 0.0338
+   },
+   "pool_stats": {
+    "rgb": [
+     60,
+     20,
+     16
+    ],
+    "hsv_s": 0.733,
+    "chroma_rgb": 44,
+    "lab_chroma": 22.8,
+    "rel_lum": 0.015
+   }
+  }
+ },
+ "route_ink_p0": {
+  "documented": {
+   "col_stats": {
+    "rgb": [
+     206,
+     78,
+     54
+    ],
+    "hsv_s": 0.738,
+    "chroma_rgb": 152,
+    "lab_chroma": 63.3,
+    "rel_lum": 0.1884
+   },
+   "pool_stats": {
+    "rgb": [
+     128,
+     36,
+     28
+    ],
+    "hsv_s": 0.781,
+    "chroma_rgb": 100,
+    "lab_chroma": 47.4,
+    "rel_lum": 0.0593
+   }
+  },
+  "claimed": {
+   "col_stats": {
+    "rgb": [
+     222,
+     138,
+     108
+    ],
+    "hsv_s": 0.514,
+    "chroma_rgb": 114,
+    "lab_chroma": 41.0,
+    "rel_lum": 0.3479
+   },
+   "pool_stats": {
+    "rgb": [
+     150,
+     72,
+     54
+    ],
+    "hsv_s": 0.64,
+    "chroma_rgb": 96,
+    "lab_chroma": 40.5,
+    "rel_lum": 0.1139
+   }
+  }
+ },
+ "emphasis_p0b": {
+  "hybrid": {
+   "pigment_alpha": 0.64,
+   "pigment_chroma": 0.92,
+   "pigment_glaze": 0.62,
+   "relief_shade": 0.3,
+   "relief_tint": 0.85,
+   "relief_ridge": 0.2,
+   "rivers": 0.7,
+   "border_alpha": 0.42,
+   "border_width": 1.3,
+   "label_region_alpha": 0.88,
+   "label_place_alpha": 1.0,
+   "label_halo": 0.8
+  },
+  "terrain": {
+   "pigment_alpha": 0.0,
+   "pigment_chroma": 0.0,
+   "pigment_glaze": 0.85,
+   "relief_shade": 0.5,
+   "relief_tint": 1.3,
+   "relief_ridge": 0.34,
+   "rivers": 0.95,
+   "border_alpha": 0.16,
+   "border_width": 1.0,
+   "label_region_alpha": 1.0,
+   "label_place_alpha": 1.0,
+   "label_halo": 0.9
+  }
+ },
+ "states": {
+  "hybrid": {
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2b_atlas_p0b_chronicle_hybrid_16x9.png",
+   "md5": "95ccfb53e559b3879d335f8e1f50228e",
+   "phone_contrast_dash_only": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 88,
+      "core_vs_map_median": 2.97,
+      "core_vs_map_p10": 2.77,
+      "core_vs_adjacent_median": 1.59,
+      "core_vs_adjacent_p10": 1.18,
+      "core_rel_lum_median": 0.0093
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 31,
+      "core_vs_map_median": 3.3,
+      "core_vs_map_p10": 3.2,
+      "core_vs_adjacent_median": 1.41,
+      "core_vs_adjacent_p10": 1.05,
+      "core_rel_lum_median": 0.0097
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "line_w_phone_px": 2.56,
+     "gap_samples_excluded": 18,
+     "land": {
+      "n": 27,
+      "core_vs_map_median": 2.88,
+      "core_vs_map_p10": 2.69,
+      "core_vs_adjacent_median": 2.63,
+      "core_vs_adjacent_p10": 1.48,
+      "core_rel_lum_median": 0.0183
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "line_w_phone_px": 2.56,
+     "gap_samples_excluded": 309,
+     "land": {
+      "n": 1,
+      "core_vs_map_median": 2.02,
+      "core_vs_map_p10": 2.02,
+      "core_vs_adjacent_median": 3.94,
+      "core_vs_adjacent_p10": 3.94,
+      "core_rel_lum_median": 0.032
+     },
+     "sea": {
+      "n": 375,
+      "core_vs_map_median": 1.12,
+      "core_vs_map_p10": 1.03,
+      "core_vs_adjacent_median": 2.82,
+      "core_vs_adjacent_p10": 1.71,
+      "core_rel_lum_median": 0.0682
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "line_w_phone_px": 2.56,
+     "gap_samples_excluded": 19,
+     "sea": {
+      "n": 30,
+      "core_vs_map_median": 1.58,
+      "core_vs_map_p10": 1.4,
+      "core_vs_adjacent_median": 4.59,
+      "core_vs_adjacent_p10": 4.12,
+      "core_rel_lum_median": 0.0399
+     }
+    },
+    {
+     "leg": "2-08->2-11",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 249,
+     "land": {
+      "n": 308,
+      "core_vs_map_median": 3.47,
+      "core_vs_map_p10": 2.97,
+      "core_vs_adjacent_median": 3.31,
+      "core_vs_adjacent_p10": 2.7,
+      "core_rel_lum_median": 0.0209
+     }
+    },
+    {
+     "leg": "2-11->2-12",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 108,
+     "land": {
+      "n": 141,
+      "core_vs_map_median": 4.48,
+      "core_vs_map_p10": 3.64,
+      "core_vs_adjacent_median": 3.66,
+      "core_vs_adjacent_p10": 3.23,
+      "core_rel_lum_median": 0.0224
+     }
+    },
+    {
+     "leg": "2-12->2-14",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 78,
+     "land": {
+      "n": 98,
+      "core_vs_map_median": 4.59,
+      "core_vs_map_p10": 3.68,
+      "core_vs_adjacent_median": 4.19,
+      "core_vs_adjacent_p10": 3.55,
+      "core_rel_lum_median": 0.0231
+     }
+    },
+    {
+     "leg": "2-14->2-15",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 119,
+     "land": {
+      "n": 163,
+      "core_vs_map_median": 4.62,
+      "core_vs_map_p10": 3.44,
+      "core_vs_adjacent_median": 3.89,
+      "core_vs_adjacent_p10": 3.39,
+      "core_rel_lum_median": 0.023
+     }
+    }
+   ],
+   "label_readability": [
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 9.1
+    },
+    {
+     "text": "Avignon",
+     "tier": "city",
+     "glyph_vs_surround": 9.12
+    },
+    {
+     "text": "Paris",
+     "tier": "city",
+     "glyph_vs_surround": 8.78
+    },
+    {
+     "text": "Cologne",
+     "tier": "city",
+     "glyph_vs_surround": 9.37
+    },
+    {
+     "text": "Milan",
+     "tier": "city",
+     "glyph_vs_surround": 9.0
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 3.57
+    }
+   ]
+  },
+  "terrain": {
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2b_atlas_p0b_terrain_forward_16x9.png",
+   "md5": "2a564d8997c8878b5fac8018e3516d81",
+   "phone_contrast_dash_only": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 88,
+      "core_vs_map_median": 5.42,
+      "core_vs_map_p10": 5.08,
+      "core_vs_adjacent_median": 2.55,
+      "core_vs_adjacent_p10": 1.37,
+      "core_rel_lum_median": 0.0106
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 31,
+      "core_vs_map_median": 5.09,
+      "core_vs_map_p10": 4.85,
+      "core_vs_adjacent_median": 1.91,
+      "core_vs_adjacent_p10": 1.09,
+      "core_rel_lum_median": 0.0106
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "line_w_phone_px": 2.56,
+     "gap_samples_excluded": 18,
+     "land": {
+      "n": 27,
+      "core_vs_map_median": 4.92,
+      "core_vs_map_p10": 4.11,
+      "core_vs_adjacent_median": 4.23,
+      "core_vs_adjacent_p10": 1.63,
+      "core_rel_lum_median": 0.0229
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "line_w_phone_px": 2.56,
+     "gap_samples_excluded": 309,
+     "land": {
+      "n": 1,
+      "core_vs_map_median": 2.02,
+      "core_vs_map_p10": 2.02,
+      "core_vs_adjacent_median": 3.94,
+      "core_vs_adjacent_p10": 3.94,
+      "core_rel_lum_median": 0.032
+     },
+     "sea": {
+      "n": 375,
+      "core_vs_map_median": 1.12,
+      "core_vs_map_p10": 1.03,
+      "core_vs_adjacent_median": 2.82,
+      "core_vs_adjacent_p10": 1.71,
+      "core_rel_lum_median": 0.0682
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "line_w_phone_px": 2.56,
+     "gap_samples_excluded": 19,
+     "sea": {
+      "n": 30,
+      "core_vs_map_median": 1.58,
+      "core_vs_map_p10": 1.4,
+      "core_vs_adjacent_median": 4.59,
+      "core_vs_adjacent_p10": 4.12,
+      "core_rel_lum_median": 0.0399
+     }
+    },
+    {
+     "leg": "2-08->2-11",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 249,
+     "land": {
+      "n": 308,
+      "core_vs_map_median": 4.84,
+      "core_vs_map_p10": 4.04,
+      "core_vs_adjacent_median": 4.67,
+      "core_vs_adjacent_p10": 3.71,
+      "core_rel_lum_median": 0.0239
+     }
+    },
+    {
+     "leg": "2-11->2-12",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 108,
+     "land": {
+      "n": 141,
+      "core_vs_map_median": 5.1,
+      "core_vs_map_p10": 4.47,
+      "core_vs_adjacent_median": 4.64,
+      "core_vs_adjacent_p10": 3.37,
+      "core_rel_lum_median": 0.0242
+     }
+    },
+    {
+     "leg": "2-12->2-14",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 78,
+     "land": {
+      "n": 98,
+      "core_vs_map_median": 5.24,
+      "core_vs_map_p10": 4.94,
+      "core_vs_adjacent_median": 4.79,
+      "core_vs_adjacent_p10": 4.31,
+      "core_rel_lum_median": 0.0246
+     }
+    },
+    {
+     "leg": "2-14->2-15",
+     "style": "claimed",
+     "line_w_phone_px": 2.78,
+     "gap_samples_excluded": 119,
+     "land": {
+      "n": 163,
+      "core_vs_map_median": 4.98,
+      "core_vs_map_p10": 3.29,
+      "core_vs_adjacent_median": 4.15,
+      "core_vs_adjacent_p10": 3.24,
+      "core_rel_lum_median": 0.0235
+     }
+    }
+   ],
+   "label_readability": [
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 10.05
+    },
+    {
+     "text": "Avignon",
+     "tier": "city",
+     "glyph_vs_surround": 10.0
+    },
+    {
+     "text": "Paris",
+     "tier": "city",
+     "glyph_vs_surround": 10.21
+    },
+    {
+     "text": "Cologne",
+     "tier": "city",
+     "glyph_vs_surround": 10.3
+    },
+    {
+     "text": "Milan",
+     "tier": "city",
+     "glyph_vs_surround": 9.89
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 5.44
+    }
+   ]
+  }
+ },
+ "rust": {
+  "terrain_p0": {
+   "n_px": 106951,
+   "england_land_mean_a": 12.1,
+   "england_land_mean_b": 29.05,
+   "england_land_mean_chroma": 31.51
+  },
+  "terrain_p0b": {
+   "n_px": 106951,
+   "england_land_mean_a": 9.46,
+   "england_land_mean_b": 31.64,
+   "england_land_mean_chroma": 33.06
+  },
+  "hybrid": {
+   "n_px": 106951,
+   "england_land_mean_a": 17.15,
+   "england_land_mean_b": 26.21,
+   "england_land_mean_chroma": 31.42
+  }
+ },
+ "phone": {
+  "x0": 896,
+  "crop_w": 608,
+  "labels_whole": [
+   "Sluis",
+   "Avignon",
+   "Paris",
+   "Cologne"
+  ],
+  "labels_cut": [],
+  "files": {
+   "hybrid": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2b_atlas_p0b_chronicle_hybrid_phone360x640.png",
+    "md5": "8565e28bb3f1d73f38b496f3b3998871"
+   },
+   "terrain": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2b_atlas_p0b_terrain_forward_phone360x640.png",
+    "md5": "ffb2ba3ec93345fd2425f80339ae5b67"
+   }
+  }
+ },
+ "realms_raster": [
+  {
+   "check": "raster Avignon: not_fams",
+   "dominant": "empire",
+   "weights": {
+    "france": 0.034,
+    "empire": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Avignon: fam",
+   "dominant": "empire",
+   "weights": {
+    "france": 0.034,
+    "empire": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Dole (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.66,
+    "france_fam": 0.119
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Chambery (Savoy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Aix (Provence): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.62
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Lyon: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 0.748,
+    "empire": 0.071
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Paris: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Montpellier: not_fams",
+   "dominant": "aragon",
+   "weights": {
+    "france": 0.143,
+    "aragon": 0.404
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Agen (Agenais): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Saintes (Saintonge): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Galway: no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster Brussels (Brabant): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.969,
+    "flanders": 0.011
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Cologne: fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Milan (no polygon): no_fill",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.297
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Bologna (Papal States neutral): no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster: no realm names/legend/dates on plate",
+   "labels": [
+    "Sluis",
+    "Avignon",
+    "Paris",
+    "Cologne",
+    "Milan",
+    "Ireland"
+   ],
+   "ok": true
+  }
+ ]
+}

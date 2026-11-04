@@ -1,0 +1,244 @@
+{
+ "name": "edward_map2b_fieschi_claimed_continent",
+ "about": "MAP 2 of MAP-PLACES-v1.md (C03a order), part 2: the Britain leg (2-01..2-08) is shown already inked; the nib continues Sluis -> Normandy (tint) -> Languedoc (tint) -> Avignon -> Paris -> Brabant (tint) -> Cologne -> Milan, the last pin. Hermitages (2-16..2-18, UNCERTAIN): no pin, no text, no tint.",
+ "seed": 1328,
+ "out_wh": [
+  1920,
+  1080
+ ],
+ "plate_wh": [
+  2048,
+  1152
+ ],
+ "duration": 9.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "map": {
+  "center_lonlat": [
+   0.9,
+   48.7
+  ],
+  "width_km": 2300
+ },
+ "basemap": {
+  "river_rank": 4,
+  "river_px": 1.3,
+  "shallow_px": 26,
+  "rim_px": 3.5
+ },
+ "label_px": 30,
+ "control_points": [
+  {
+   "ref": "Land's End",
+   "dir": "W",
+   "search_px": 20
+  },
+  {
+   "ref": "Pointe du Raz",
+   "dir": "W",
+   "search_px": 20
+  },
+  {
+   "ref": "Cap de la Hague",
+   "dir": "NW",
+   "search_px": 20
+  },
+  {
+   "ref": "Cap Gris-Nez",
+   "dir": "W",
+   "search_px": 20
+  },
+  {
+   "ref": "Mizen Head",
+   "dir": "SW",
+   "search_px": 20
+  },
+  {
+   "ref": "Den Helder",
+   "dir": "N",
+   "search_px": 20
+  },
+  {
+   "ref": "Portofino",
+   "dir": "S",
+   "search_px": 20
+  },
+  {
+   "ref": "Cape Finisterre",
+   "dir": "W",
+   "search_px": 20
+  }
+ ],
+ "tints": [
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "radius_km": 26,
+   "aspect": 1.5,
+   "strength": 0.38
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "radius_km": 150,
+   "aspect": 0.85,
+   "strength": 0.38
+  },
+  {
+   "row": "2-09",
+   "qid": "Q15878",
+   "radius_km": 85,
+   "aspect": 1.6,
+   "strength": 0.38
+  },
+  {
+   "row": "2-10",
+   "qid": "Q206221",
+   "radius_km": 95,
+   "aspect": 1.4,
+   "strength": 0.38
+  },
+  {
+   "row": "2-13",
+   "qid": "Q159856",
+   "radius_km": 55,
+   "aspect": 1.2,
+   "strength": 0.38
+  }
+ ],
+ "chains": [
+  {
+   "style": "claimed",
+   "ink": "house",
+   "t0": -6.0,
+   "t1": -3.0,
+   "bow": 0.04,
+   "scale": 0.7,
+   "stops": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187",
+     "pin": true,
+     "stamp_scale": 0.8
+    },
+    {
+     "row": "2-02",
+     "qid": "Q870815",
+     "pin": false,
+     "bow": -0.05
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "pin": true,
+     "stamp_scale": 0.8,
+     "bow": 0.06
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "pin": true,
+     "stamp_scale": 0.8,
+     "bow": 0.08
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "pin": true,
+     "stamp_scale": 0.8,
+     "bow": 0.06
+    },
+    {
+     "row": "2-06",
+     "qid": "Q22890",
+     "pin": false,
+     "bow": 0.08,
+     "round": 0.12
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "pin": true,
+     "stamp_scale": 0.8,
+     "bow": 0.06
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "pin": true,
+     "label": "Sluis",
+     "side": "E",
+     "bow": 0.1
+    }
+   ]
+  },
+  {
+   "style": "claimed",
+   "ink": "house",
+   "t0": 0.3,
+   "t1": 7.4,
+   "bow": 0.04,
+   "scale": 0.8,
+   "stops": [
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "pin": true,
+     "no_stamp": true
+    },
+    {
+     "row": "2-09",
+     "qid": "Q15878",
+     "pin": false,
+     "bow": 0.05
+    },
+    {
+     "row": "2-10",
+     "qid": "Q206221",
+     "pin": false,
+     "bow": 0.04
+    },
+    {
+     "row": "2-11",
+     "qid": "Q6397",
+     "pin": true,
+     "label": "Avignon",
+     "side": "SE",
+     "bow": 0.05
+    },
+    {
+     "row": "2-12",
+     "qid": "Q90",
+     "pin": true,
+     "label": "Paris",
+     "side": "W",
+     "bow": 0.06
+    },
+    {
+     "row": "2-13",
+     "qid": "Q159856",
+     "pin": false,
+     "bow": 0.04
+    },
+    {
+     "row": "2-14",
+     "qid": "Q365",
+     "pin": true,
+     "label": "Cologne",
+     "side": "E",
+     "bow": 0.05
+    },
+    {
+     "row": "2-15",
+     "qid": "Q490",
+     "pin": true,
+     "label": "Milan",
+     "side": "E",
+     "bow": 0.06
+    }
+   ]
+  }
+ ]
+}

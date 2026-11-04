@@ -1,0 +1,69 @@
+{
+ "csejte": {
+  "bbox": [
+   115.0,
+   1086.0,
+   832.0,
+   1153.0
+  ],
+  "side": "S",
+  "align": "L",
+  "gap": 20,
+  "vah_px": 491,
+  "origin": [
+   113,
+   1085
+  ]
+ },
+ "bytca": {
+  "bbox": [
+   717.0,
+   303.0,
+   851.0,
+   345.0
+  ],
+  "side": "NW",
+  "align": "R",
+  "gap": 28,
+  "vah_px": 0,
+  "origin": [
+   714,
+   302
+  ]
+ },
+ "vah": {
+  "bbox": [
+   506.0,
+   709.0,
+   575.0,
+   749.0
+  ],
+  "angle": 7.0,
+  "vah_px": 0,
+  "river_pt": [
+   536,
+   694
+  ]
+ },
+ "sizes_1080": {
+  "csejte": 51,
+  "csejte_lines": 1,
+  "bytca": 51,
+  "vah": 38
+ },
+ "bytca_NW_fit": true,
+ "bytca_rejects": {
+  "bytca_NW": [
+   "medallion"
+  ]
+ },
+ "cap_x_heights_at_360": {
+  "Csejte SC cap": 11.666666666666666,
+  "Csejte SC small-cap x": 7.666666666666667,
+  "Bytca SC cap": 11.666666666666666,
+  "Vah it x": 6.0
+ },
+ "dist_to_compass": {
+  "csejte": 605.0
+ }
+}

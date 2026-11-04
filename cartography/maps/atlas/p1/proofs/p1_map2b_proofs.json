@@ -1,0 +1,3627 @@
+{
+ "generated_et": "2026-10-31 10:03 ET",
+ "config": "/workspace/posterity/engine-rnd/maps/atlas/p1/configs/edward_map2b_atlas_p1.json",
+ "shot": "edward_map2b_atlas_p1",
+ "realm_verifier_geometry": {
+  "n": 40,
+  "n_ok": 40,
+  "fails": []
+ },
+ "realm_raster_soft": [
+  {
+   "check": "raster Avignon: not_fams",
+   "dominant": "empire",
+   "weights": {
+    "france": 0.034,
+    "empire": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Avignon: fam",
+   "dominant": "empire",
+   "weights": {
+    "france": 0.034,
+    "empire": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Dole (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.66,
+    "france_fam": 0.119
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Chambery (Savoy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Aix (Provence): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.62
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Lyon: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 0.748,
+    "empire": 0.071
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Paris: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Montpellier: not_fams",
+   "dominant": "aragon",
+   "weights": {
+    "france": 0.143,
+    "aragon": 0.404
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Agen (Agenais): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Saintes (Saintonge): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Galway: no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster Brussels (Brabant): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.969,
+    "flanders": 0.011
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Cologne: fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Milan (no polygon): no_fill",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.297
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Bologna (Papal States neutral): no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster: no realm names/legend/dates on plate",
+   "labels": [
+    "Sluis",
+    "Avignon",
+    "Paris",
+    "Cologne",
+    "Milan",
+    "Ireland"
+   ],
+   "ok": true
+  }
+ ],
+ "realm_raster_painted": [
+  {
+   "check": "raster Avignon: not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Avignon: fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Dole (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Chambery (Savoy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Aix (Provence): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Lyon: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Paris: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Montpellier: not_fams",
+   "dominant": "aragon",
+   "weights": {
+    "aragon": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Agen (Agenais): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Saintes (Saintonge): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Galway: no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster Brussels (Brabant): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Cologne: fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Milan (no polygon): no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster Bologna (Papal States neutral): no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster: no realm names/legend/dates on plate",
+   "labels": [
+    "Sluis",
+    "Avignon",
+    "Paris",
+    "Cologne",
+    "Milan",
+    "Ireland"
+   ],
+   "ok": true
+  }
+ ],
+ "authority_refusal": [
+  {
+   "test": "UNCERTAIN hermitage",
+   "row": "2-16",
+   "refused": true,
+   "error": "2-16 is UNCERTAIN, cannot pin"
+  },
+  {
+   "test": "unlisted row",
+   "row": "9-99",
+   "refused": true,
+   "error": "row 9-99 not in MAP-PLACES-v1"
+  }
+ ],
+ "text_on_screen": {
+  "labels": [
+   "Sluis",
+   "Avignon",
+   "Paris",
+   "Cologne",
+   "Milan",
+   "Ireland"
+  ],
+  "allowed_place_labels": [
+   "Ireland",
+   "Sluis",
+   "Avignon",
+   "Paris",
+   "Cologne",
+   "Milan",
+   "Ireland"
+  ],
+  "realm_words_found": [],
+  "other_text": "none (no legend, title, date, realm name, watermark, vignette, letterbox drawn)"
+ },
+ "pins": [
+  "2-01",
+  "2-03",
+  "2-04",
+  "2-05",
+  "2-07",
+  "2-08",
+  "2-11",
+  "2-12",
+  "2-14",
+  "2-15"
+ ],
+ "phone": {
+  "x0": 921,
+  "crop_w": 608,
+  "labels_whole": [
+   "Sluis",
+   "Avignon",
+   "Paris",
+   "Cologne"
+  ],
+  "labels_cut": [],
+  "pins_whole": [
+   "2-07",
+   "2-08",
+   "2-11",
+   "2-12",
+   "2-14",
+   "2-15"
+  ],
+  "continental_centre_x": 1194.3
+ },
+ "route_ink": {
+  "documented": {
+   "col": [
+    70,
+    10,
+    14
+   ],
+   "pool": [
+    44,
+    6,
+    8
+   ],
+   "strength": 0.97,
+   "grain": 0.05,
+   "key_r": 4.0,
+   "key_col": [
+    244,
+    236,
+    210
+   ]
+  },
+  "claimed": {
+   "col": [
+    94,
+    22,
+    22
+   ],
+   "pool": [
+    70,
+    14,
+    14
+   ],
+   "strength": 0.96,
+   "grain": 0.07,
+   "key_r": 3.2,
+   "key_col": [
+    244,
+    236,
+    210
+   ]
+  }
+ },
+ "treatments": {
+  "heraldic": {
+   "concept": "Royal Heraldic: flat armorial tinctures (gules, azure, or, purpure, tenne) laid edge-to-edge like a roll of arms; clean pale parchment, crisp sepia ink.",
+   "palette_rgb": {
+    "england": [
+     176,
+     30,
+     40
+    ],
+    "england_light": [
+     208,
+     112,
+     104
+    ],
+    "france": [
+     32,
+     66,
+     158
+    ],
+    "france_fam": [
+     126,
+     154,
+     206
+    ],
+    "empire": [
+     208,
+     154,
+     42
+    ],
+    "castile": [
+     114,
+     44,
+     106
+    ],
+    "aragon": [
+     206,
+     108,
+     40
+    ],
+    "scotland": [
+     38,
+     104,
+     86
+    ],
+    "portugal": [
+     50,
+     118,
+     60
+    ]
+   },
+   "sea_rgb": [
+    62,
+    92,
+    108
+   ],
+   "paper_rgb": [
+    218,
+    198,
+    156
+   ],
+   "ink_rgb": [
+    44,
+    30,
+    24
+   ],
+   "flanders_rgb": [
+    147,
+    148,
+    157
+   ],
+   "files": {
+    "noroute": {
+     "path": "atlas/p1/stills/p1_map2b_heraldic_noroute_1920x1080.png",
+     "md5": "e4921689231984ad08ef67f9c9d336e3"
+    },
+    "route": {
+     "path": "atlas/p1/stills/p1_map2b_heraldic_route_1920x1080.png",
+     "md5": "c08b347af1d8830ca3f1af5038963474"
+    },
+    "phone": {
+     "path": "atlas/p1/phone/p1_map2b_heraldic_route_phone360x640.png",
+     "md5": "5c150b09fac3169040da28263b710446"
+    },
+    "full640": {
+     "path": "atlas/p1/phone/p1_map2b_heraldic_route_640x360.png",
+     "md5": "63d8c6cb5e641c9e18274c5c05194d5c"
+    }
+   },
+   "phone_contrast_full_frame": [
+    {
+     "style": "claimed",
+     "realm": "empire",
+     "n": 239,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.31,
+      "p10": 6.32,
+      "min": 4.94
+     },
+     "core_vs_pigment": {
+      "median": 4.36,
+      "p10": 3.49,
+      "min": 2.35
+     },
+     "keyline_vs_pigment": {
+      "median": 1.71,
+      "p10": 1.52,
+      "min": 1.39
+     },
+     "line_vs_pigment": {
+      "median": 4.36,
+      "p10": 3.49,
+      "min": 2.77
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "england",
+     "n": 26,
+     "legs": [
+      "2-04->2-05",
+      "2-05->2-07"
+     ],
+     "core_vs_keyline": {
+      "median": 5.75,
+      "p10": 4.68,
+      "min": 4.04
+     },
+     "core_vs_pigment": {
+      "median": 1.27,
+      "p10": 1.13,
+      "min": 1.11
+     },
+     "keyline_vs_pigment": {
+      "median": 4.54,
+      "p10": 4.1,
+      "min": 3.64
+     },
+     "line_vs_pigment": {
+      "median": 4.54,
+      "p10": 4.1,
+      "min": 3.64
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "flanders",
+     "n": 16,
+     "legs": [
+      "2-08->2-11"
+     ],
+     "core_vs_keyline": {
+      "median": 5.77,
+      "p10": 5.58,
+      "min": 5.54
+     },
+     "core_vs_pigment": {
+      "median": 3.4,
+      "p10": 3.19,
+      "min": 3.16
+     },
+     "keyline_vs_pigment": {
+      "median": 1.7,
+      "p10": 1.67,
+      "min": 1.66
+     },
+     "line_vs_pigment": {
+      "median": 3.4,
+      "p10": 3.19,
+      "min": 3.16
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france",
+     "n": 371,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14"
+     ],
+     "core_vs_keyline": {
+      "median": 6.46,
+      "p10": 4.67,
+      "min": 4.03
+     },
+     "core_vs_pigment": {
+      "median": 1.17,
+      "p10": 1.04,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 5.34,
+      "p10": 4.19,
+      "min": 2.02
+     },
+     "line_vs_pigment": {
+      "median": 5.34,
+      "p10": 4.19,
+      "min": 3.05
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france_fam",
+     "n": 44,
+     "legs": [
+      "2-11->2-12"
+     ],
+     "core_vs_keyline": {
+      "median": 7.06,
+      "p10": 6.88,
+      "min": 6.86
+     },
+     "core_vs_pigment": {
+      "median": 4.02,
+      "p10": 3.63,
+      "min": 2.71
+     },
+     "keyline_vs_pigment": {
+      "median": 1.76,
+      "p10": 1.73,
+      "min": 1.71
+     },
+     "line_vs_pigment": {
+      "median": 4.02,
+      "p10": 3.63,
+      "min": 2.71
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "parchment(unpainted)",
+     "n": 40,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.61,
+      "p10": 6.89,
+      "min": 5.65
+     },
+     "core_vs_pigment": {
+      "median": 4.99,
+      "p10": 1.88,
+      "min": 1.17
+     },
+     "keyline_vs_pigment": {
+      "median": 1.55,
+      "p10": 1.26,
+      "min": 1.18
+     },
+     "line_vs_pigment": {
+      "median": 5.19,
+      "p10": 4.45,
+      "min": 2.95
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "sea",
+     "n": 387,
+     "legs": [
+      "2-05->2-07",
+      "2-07->2-08"
+     ],
+     "core_vs_keyline": {
+      "median": 5.17,
+      "p10": 3.77,
+      "min": 2.41
+     },
+     "core_vs_pigment": {
+      "median": 1.21,
+      "p10": 1.03,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 4.32,
+      "p10": 3.7,
+      "min": 2.44
+     },
+     "line_vs_pigment": {
+      "median": 4.32,
+      "p10": 3.7,
+      "min": 2.44
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "documented",
+     "realm": "england",
+     "n": 119,
+     "legs": [
+      "2-01->2-03",
+      "2-03->2-04"
+     ],
+     "core_vs_keyline": {
+      "median": 9.44,
+      "p10": 8.93,
+      "min": 8.42
+     },
+     "core_vs_pigment": {
+      "median": 1.91,
+      "p10": 1.7,
+      "min": 1.59
+     },
+     "keyline_vs_pigment": {
+      "median": 4.95,
+      "p10": 4.4,
+      "min": 4.06
+     },
+     "line_vs_pigment": {
+      "median": 4.95,
+      "p10": 4.4,
+      "min": 4.06
+     },
+     "pass_3to1_p10": true
+    }
+   ],
+   "phone_contrast_in_phone_crop": [
+    {
+     "style": "claimed",
+     "realm": "empire",
+     "n": 239,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.31,
+      "p10": 6.32,
+      "min": 4.94
+     },
+     "core_vs_pigment": {
+      "median": 4.36,
+      "p10": 3.49,
+      "min": 2.35
+     },
+     "keyline_vs_pigment": {
+      "median": 1.71,
+      "p10": 1.52,
+      "min": 1.39
+     },
+     "line_vs_pigment": {
+      "median": 4.36,
+      "p10": 3.49,
+      "min": 2.77
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "england",
+     "n": 1,
+     "legs": [
+      "2-05->2-07"
+     ],
+     "core_vs_keyline": {
+      "median": 6.63,
+      "p10": 6.63,
+      "min": 6.63
+     },
+     "core_vs_pigment": {
+      "median": 1.47,
+      "p10": 1.47,
+      "min": 1.47
+     },
+     "keyline_vs_pigment": {
+      "median": 4.52,
+      "p10": 4.52,
+      "min": 4.52
+     },
+     "line_vs_pigment": {
+      "median": 4.52,
+      "p10": 4.52,
+      "min": 4.52
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "flanders",
+     "n": 16,
+     "legs": [
+      "2-08->2-11"
+     ],
+     "core_vs_keyline": {
+      "median": 5.77,
+      "p10": 5.58,
+      "min": 5.54
+     },
+     "core_vs_pigment": {
+      "median": 3.4,
+      "p10": 3.19,
+      "min": 3.16
+     },
+     "keyline_vs_pigment": {
+      "median": 1.7,
+      "p10": 1.67,
+      "min": 1.66
+     },
+     "line_vs_pigment": {
+      "median": 3.4,
+      "p10": 3.19,
+      "min": 3.16
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france",
+     "n": 288,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14"
+     ],
+     "core_vs_keyline": {
+      "median": 6.08,
+      "p10": 4.54,
+      "min": 4.03
+     },
+     "core_vs_pigment": {
+      "median": 1.15,
+      "p10": 1.04,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 5.27,
+      "p10": 4.08,
+      "min": 2.02
+     },
+     "line_vs_pigment": {
+      "median": 5.27,
+      "p10": 4.08,
+      "min": 3.05
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france_fam",
+     "n": 44,
+     "legs": [
+      "2-11->2-12"
+     ],
+     "core_vs_keyline": {
+      "median": 7.06,
+      "p10": 6.88,
+      "min": 6.86
+     },
+     "core_vs_pigment": {
+      "median": 4.02,
+      "p10": 3.63,
+      "min": 2.71
+     },
+     "keyline_vs_pigment": {
+      "median": 1.76,
+      "p10": 1.73,
+      "min": 1.71
+     },
+     "line_vs_pigment": {
+      "median": 4.02,
+      "p10": 3.63,
+      "min": 2.71
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "parchment(unpainted)",
+     "n": 40,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.61,
+      "p10": 6.89,
+      "min": 5.65
+     },
+     "core_vs_pigment": {
+      "median": 4.99,
+      "p10": 1.88,
+      "min": 1.17
+     },
+     "keyline_vs_pigment": {
+      "median": 1.55,
+      "p10": 1.26,
+      "min": 1.18
+     },
+     "line_vs_pigment": {
+      "median": 5.19,
+      "p10": 4.45,
+      "min": 2.95
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "sea",
+     "n": 57,
+     "legs": [
+      "2-05->2-07",
+      "2-07->2-08"
+     ],
+     "core_vs_keyline": {
+      "median": 5.77,
+      "p10": 3.03,
+      "min": 2.41
+     },
+     "core_vs_pigment": {
+      "median": 1.45,
+      "p10": 1.01,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 3.92,
+      "p10": 3.17,
+      "min": 2.44
+     },
+     "line_vs_pigment": {
+      "median": 3.92,
+      "p10": 3.17,
+      "min": 2.44
+     },
+     "pass_3to1_p10": true
+    }
+   ],
+   "deltaE00_neighbours": [
+    {
+     "a": "england",
+     "b": "france",
+     "shared_boundary_px": 192,
+     "ink_line": true,
+     "dE00": 40.0,
+     "lab_a": [
+      42.9,
+      51.4,
+      28.6
+     ],
+     "lab_b": [
+      30.7,
+      23.2,
+      -54.3
+     ]
+    },
+    {
+     "a": "england",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 317,
+     "ink_line": false,
+     "dE00": 40.8,
+     "lab_a": [
+      43.0,
+      51.5,
+      28.7
+     ],
+     "lab_b": [
+      74.6,
+      0.7,
+      23.1
+     ]
+    },
+    {
+     "a": "england",
+     "b": "sea",
+     "shared_boundary_px": 4062,
+     "ink_line": false,
+     "dE00": 41.2,
+     "lab_a": [
+      39.6,
+      56.0,
+      33.1
+     ],
+     "lab_b": [
+      39.7,
+      -6.8,
+      -11.0
+     ]
+    },
+    {
+     "a": "england_light",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 556,
+     "ink_line": false,
+     "dE00": 23.8,
+     "lab_a": [
+      61.8,
+      30.2,
+      21.6
+     ],
+     "lab_b": [
+      72.0,
+      0.6,
+      23.8
+     ]
+    },
+    {
+     "a": "england_light",
+     "b": "sea",
+     "shared_boundary_px": 335,
+     "ink_line": false,
+     "dE00": 41.7,
+     "lab_a": [
+      61.7,
+      30.2,
+      21.5
+     ],
+     "lab_b": [
+      40.9,
+      -7.0,
+      -11.3
+     ]
+    },
+    {
+     "a": "france",
+     "b": "france_fam",
+     "shared_boundary_px": 854,
+     "ink_line": true,
+     "dE00": 33.5,
+     "lab_a": [
+      30.6,
+      23.2,
+      -54.0
+     ],
+     "lab_b": [
+      63.9,
+      2.1,
+      -24.2
+     ]
+    },
+    {
+     "a": "france",
+     "b": "flanders",
+     "shared_boundary_px": 99,
+     "ink_line": false,
+     "dE00": 40.0,
+     "lab_a": [
+      29.2,
+      23.2,
+      -54.2
+     ],
+     "lab_b": [
+      62.4,
+      1.3,
+      -2.2
+     ]
+    },
+    {
+     "a": "france",
+     "b": "empire",
+     "shared_boundary_px": 585,
+     "ink_line": false,
+     "dE00": 65.5,
+     "lab_a": [
+      29.9,
+      23.2,
+      -53.9
+     ],
+     "lab_b": [
+      65.1,
+      10.2,
+      61.7
+     ]
+    },
+    {
+     "a": "france",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 1174,
+     "ink_line": false,
+     "dE00": 62.7,
+     "lab_a": [
+      30.2,
+      23.2,
+      -54.0
+     ],
+     "lab_b": [
+      75.2,
+      0.6,
+      23.4
+     ]
+    },
+    {
+     "a": "france",
+     "b": "sea",
+     "shared_boundary_px": 1648,
+     "ink_line": false,
+     "dE00": 14.0,
+     "lab_a": [
+      31.9,
+      22.8,
+      -53.4
+     ],
+     "lab_b": [
+      40.5,
+      -6.9,
+      -11.3
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "empire",
+     "shared_boundary_px": 149,
+     "ink_line": false,
+     "dE00": 43.5,
+     "lab_a": [
+      62.6,
+      2.1,
+      -24.5
+     ],
+     "lab_b": [
+      65.6,
+      10.4,
+      62.9
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 613,
+     "ink_line": false,
+     "dE00": 33.1,
+     "lab_a": [
+      64.2,
+      2.1,
+      -24.1
+     ],
+     "lab_b": [
+      74.1,
+      0.7,
+      22.7
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "sea",
+     "shared_boundary_px": 1241,
+     "ink_line": false,
+     "dE00": 27.7,
+     "lab_a": [
+      65.9,
+      2.1,
+      -24.0
+     ],
+     "lab_b": [
+      39.9,
+      -6.9,
+      -11.0
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "empire",
+     "shared_boundary_px": 153,
+     "ink_line": false,
+     "dE00": 29.0,
+     "lab_a": [
+      64.7,
+      1.5,
+      -2.0
+     ],
+     "lab_b": [
+      67.5,
+      10.4,
+      62.9
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 286,
+     "ink_line": false,
+     "dE00": 22.8,
+     "lab_a": [
+      64.2,
+      1.3,
+      -2.2
+     ],
+     "lab_b": [
+      78.5,
+      0.5,
+      27.5
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "sea",
+     "shared_boundary_px": 204,
+     "ink_line": false,
+     "dE00": 26.6,
+     "lab_a": [
+      64.9,
+      1.3,
+      -2.2
+     ],
+     "lab_b": [
+      40.7,
+      -6.9,
+      -11.3
+     ]
+    },
+    {
+     "a": "empire",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 3512,
+     "ink_line": false,
+     "dE00": 14.5,
+     "lab_a": [
+      66.2,
+      10.2,
+      61.0
+     ],
+     "lab_b": [
+      72.2,
+      1.4,
+      22.9
+     ]
+    },
+    {
+     "a": "empire",
+     "b": "sea",
+     "shared_boundary_px": 3387,
+     "ink_line": false,
+     "dE00": 45.6,
+     "lab_a": [
+      67.8,
+      10.1,
+      61.1
+     ],
+     "lab_b": [
+      40.3,
+      -6.9,
+      -11.0
+     ]
+    },
+    {
+     "a": "castile",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 894,
+     "ink_line": false,
+     "dE00": 46.5,
+     "lab_a": [
+      40.9,
+      29.8,
+      -10.4
+     ],
+     "lab_b": [
+      76.3,
+      1.1,
+      23.1
+     ]
+    },
+    {
+     "a": "castile",
+     "b": "sea",
+     "shared_boundary_px": 945,
+     "ink_line": false,
+     "dE00": 28.8,
+     "lab_a": [
+      40.4,
+      29.8,
+      -10.4
+     ],
+     "lab_b": [
+      39.9,
+      -6.9,
+      -11.0
+     ]
+    },
+    {
+     "a": "parchment(unpainted)",
+     "b": "sea",
+     "shared_boundary_px": 6744,
+     "ink_line": false,
+     "dE00": 42.6,
+     "lab_a": [
+      77.2,
+      0.7,
+      24.7
+     ],
+     "lab_b": [
+      40.1,
+      -6.9,
+      -11.0
+     ]
+    }
+   ],
+   "within_realm_spread": {
+    "england": {
+     "n_px": 106124,
+     "dE00_p50": 2.5,
+     "dE00_p90": 6.2,
+     "median_rgb": [
+      179,
+      35,
+      43
+     ]
+    },
+    "england_light": {
+     "n_px": 8242,
+     "dE00_p50": 2.4,
+     "dE00_p90": 6.1,
+     "median_rgb": [
+      210,
+      128,
+      113
+     ]
+    },
+    "france": {
+     "n_px": 262580,
+     "dE00_p50": 2.1,
+     "dE00_p90": 5.6,
+     "median_rgb": [
+      36,
+      67,
+      159
+     ]
+    },
+    "france_fam": {
+     "n_px": 49747,
+     "dE00_p50": 2.6,
+     "dE00_p90": 7.0,
+     "median_rgb": [
+      137,
+      159,
+      200
+     ]
+    },
+    "flanders": {
+     "n_px": 7701,
+     "dE00_p50": 3.2,
+     "dE00_p90": 28.9,
+     "median_rgb": [
+      157,
+      156,
+      160
+     ]
+    },
+    "empire": {
+     "n_px": 603504,
+     "dE00_p50": 2.8,
+     "dE00_p90": 8.5,
+     "median_rgb": [
+      209,
+      155,
+      44
+     ]
+    },
+    "castile": {
+     "n_px": 36171,
+     "dE00_p50": 4.5,
+     "dE00_p90": 11.3,
+     "median_rgb": [
+      139,
+      81,
+      118
+     ]
+    }
+   },
+   "label_collisions": {
+    "pairs": [],
+    "under_glyph": [
+     {
+      "text": "Sluis",
+      "glyph_px": 861,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Avignon",
+      "glyph_px": 1441,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Paris",
+      "glyph_px": 948,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Cologne",
+      "glyph_px": 1479,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Milan",
+      "glyph_px": 1150,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Ireland",
+      "glyph_px": 1051,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     }
+    ],
+    "n_collisions": 0
+   },
+   "label_readability": [
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 9.89
+    },
+    {
+     "text": "Avignon",
+     "tier": "city",
+     "glyph_vs_surround": 10.05
+    },
+    {
+     "text": "Paris",
+     "tier": "city",
+     "glyph_vs_surround": 8.57
+    },
+    {
+     "text": "Cologne",
+     "tier": "city",
+     "glyph_vs_surround": 10.08
+    },
+    {
+     "text": "Milan",
+     "tier": "city",
+     "glyph_vs_surround": 10.06
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 5.61
+    }
+   ]
+  },
+  "illuminated": {
+   "concept": "Illuminated Manuscript: ground mineral pigments on vellum -- cinnabar/vermilion, lapis ultramarine, gold ochre, folium purple, minium -- with gilt hairlines tracing every inked frontier and coast.",
+   "palette_rgb": {
+    "england": [
+     200,
+     56,
+     36
+    ],
+    "england_light": [
+     220,
+     134,
+     116
+    ],
+    "france": [
+     34,
+     50,
+     134
+    ],
+    "france_fam": [
+     122,
+     136,
+     194
+    ],
+    "empire": [
+     204,
+     154,
+     58
+    ],
+    "castile": [
+     126,
+     60,
+     112
+    ],
+    "aragon": [
+     218,
+     118,
+     58
+    ],
+    "scotland": [
+     60,
+     126,
+     106
+    ],
+    "portugal": [
+     68,
+     128,
+     70
+    ]
+   },
+   "sea_rgb": [
+    48,
+    96,
+    82
+   ],
+   "paper_rgb": [
+    232,
+    216,
+    178
+   ],
+   "ink_rgb": [
+    60,
+    38,
+    28
+   ],
+   "flanders_rgb": [
+    157,
+    153,
+    161
+   ],
+   "files": {
+    "noroute": {
+     "path": "atlas/p1/stills/p1_map2b_illuminated_noroute_1920x1080.png",
+     "md5": "f0a2972c3468eb8f82d2e8e4287745f6"
+    },
+    "route": {
+     "path": "atlas/p1/stills/p1_map2b_illuminated_route_1920x1080.png",
+     "md5": "87460f6ff8b4c17c87ec7a6466d3d162"
+    },
+    "phone": {
+     "path": "atlas/p1/phone/p1_map2b_illuminated_route_phone360x640.png",
+     "md5": "6aa457fbf7eba49b5d29fdbe616f20db"
+    },
+    "full640": {
+     "path": "atlas/p1/phone/p1_map2b_illuminated_route_640x360.png",
+     "md5": "8cddb2af68ea1cf20c92f7251f246ff3"
+    }
+   },
+   "phone_contrast_full_frame": [
+    {
+     "style": "claimed",
+     "realm": "empire",
+     "n": 239,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.31,
+      "p10": 6.32,
+      "min": 4.92
+     },
+     "core_vs_pigment": {
+      "median": 4.37,
+      "p10": 3.43,
+      "min": 2.3
+     },
+     "keyline_vs_pigment": {
+      "median": 1.7,
+      "p10": 1.51,
+      "min": 1.33
+     },
+     "line_vs_pigment": {
+      "median": 4.37,
+      "p10": 3.43,
+      "min": 2.8
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "england",
+     "n": 26,
+     "legs": [
+      "2-04->2-05",
+      "2-05->2-07"
+     ],
+     "core_vs_keyline": {
+      "median": 5.94,
+      "p10": 5.31,
+      "min": 4.38
+     },
+     "core_vs_pigment": {
+      "median": 1.65,
+      "p10": 1.49,
+      "min": 1.45
+     },
+     "keyline_vs_pigment": {
+      "median": 3.6,
+      "p10": 3.25,
+      "min": 3.02
+     },
+     "line_vs_pigment": {
+      "median": 3.6,
+      "p10": 3.25,
+      "min": 3.02
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "flanders",
+     "n": 16,
+     "legs": [
+      "2-08->2-11"
+     ],
+     "core_vs_keyline": {
+      "median": 5.89,
+      "p10": 5.72,
+      "min": 5.67
+     },
+     "core_vs_pigment": {
+      "median": 3.72,
+      "p10": 3.49,
+      "min": 3.46
+     },
+     "keyline_vs_pigment": {
+      "median": 1.59,
+      "p10": 1.55,
+      "min": 1.54
+     },
+     "line_vs_pigment": {
+      "median": 3.72,
+      "p10": 3.49,
+      "min": 3.46
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france",
+     "n": 371,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14"
+     ],
+     "core_vs_keyline": {
+      "median": 6.56,
+      "p10": 5.07,
+      "min": 4.04
+     },
+     "core_vs_pigment": {
+      "median": 1.05,
+      "p10": 1.01,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 6.5,
+      "p10": 4.88,
+      "min": 2.01
+     },
+     "line_vs_pigment": {
+      "median": 6.5,
+      "p10": 4.88,
+      "min": 3.09
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france_fam",
+     "n": 44,
+     "legs": [
+      "2-11->2-12"
+     ],
+     "core_vs_keyline": {
+      "median": 7.22,
+      "p10": 6.79,
+      "min": 6.78
+     },
+     "core_vs_pigment": {
+      "median": 3.63,
+      "p10": 3.31,
+      "min": 3.27
+     },
+     "keyline_vs_pigment": {
+      "median": 1.96,
+      "p10": 1.93,
+      "min": 1.89
+     },
+     "line_vs_pigment": {
+      "median": 3.63,
+      "p10": 3.31,
+      "min": 3.27
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "parchment(unpainted)",
+     "n": 40,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.63,
+      "p10": 7.17,
+      "min": 5.65
+     },
+     "core_vs_pigment": {
+      "median": 5.89,
+      "p10": 1.86,
+      "min": 1.02
+     },
+     "keyline_vs_pigment": {
+      "median": 1.3,
+      "p10": 1.07,
+      "min": 1.03
+     },
+     "line_vs_pigment": {
+      "median": 6.01,
+      "p10": 4.89,
+      "min": 2.96
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "sea",
+     "n": 387,
+     "legs": [
+      "2-05->2-07",
+      "2-07->2-08"
+     ],
+     "core_vs_keyline": {
+      "median": 5.17,
+      "p10": 3.77,
+      "min": 2.41
+     },
+     "core_vs_pigment": {
+      "median": 1.21,
+      "p10": 1.03,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 4.34,
+      "p10": 3.73,
+      "min": 2.45
+     },
+     "line_vs_pigment": {
+      "median": 4.34,
+      "p10": 3.73,
+      "min": 2.45
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "documented",
+     "realm": "england",
+     "n": 119,
+     "legs": [
+      "2-01->2-03",
+      "2-03->2-04"
+     ],
+     "core_vs_keyline": {
+      "median": 9.57,
+      "p10": 9.13,
+      "min": 8.43
+     },
+     "core_vs_pigment": {
+      "median": 2.51,
+      "p10": 2.17,
+      "min": 2.02
+     },
+     "keyline_vs_pigment": {
+      "median": 3.83,
+      "p10": 3.34,
+      "min": 3.09
+     },
+     "line_vs_pigment": {
+      "median": 3.83,
+      "p10": 3.43,
+      "min": 3.09
+     },
+     "pass_3to1_p10": true
+    }
+   ],
+   "phone_contrast_in_phone_crop": [
+    {
+     "style": "claimed",
+     "realm": "empire",
+     "n": 239,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.31,
+      "p10": 6.32,
+      "min": 4.92
+     },
+     "core_vs_pigment": {
+      "median": 4.37,
+      "p10": 3.43,
+      "min": 2.3
+     },
+     "keyline_vs_pigment": {
+      "median": 1.7,
+      "p10": 1.51,
+      "min": 1.33
+     },
+     "line_vs_pigment": {
+      "median": 4.37,
+      "p10": 3.43,
+      "min": 2.8
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "england",
+     "n": 1,
+     "legs": [
+      "2-05->2-07"
+     ],
+     "core_vs_keyline": {
+      "median": 6.63,
+      "p10": 6.63,
+      "min": 6.63
+     },
+     "core_vs_pigment": {
+      "median": 1.67,
+      "p10": 1.67,
+      "min": 1.67
+     },
+     "keyline_vs_pigment": {
+      "median": 3.96,
+      "p10": 3.96,
+      "min": 3.96
+     },
+     "line_vs_pigment": {
+      "median": 3.96,
+      "p10": 3.96,
+      "min": 3.96
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "flanders",
+     "n": 16,
+     "legs": [
+      "2-08->2-11"
+     ],
+     "core_vs_keyline": {
+      "median": 5.89,
+      "p10": 5.72,
+      "min": 5.67
+     },
+     "core_vs_pigment": {
+      "median": 3.72,
+      "p10": 3.49,
+      "min": 3.46
+     },
+     "keyline_vs_pigment": {
+      "median": 1.59,
+      "p10": 1.55,
+      "min": 1.54
+     },
+     "line_vs_pigment": {
+      "median": 3.72,
+      "p10": 3.49,
+      "min": 3.46
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france",
+     "n": 288,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14"
+     ],
+     "core_vs_keyline": {
+      "median": 6.25,
+      "p10": 4.91,
+      "min": 4.04
+     },
+     "core_vs_pigment": {
+      "median": 1.05,
+      "p10": 1.01,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 6.28,
+      "p10": 4.86,
+      "min": 2.01
+     },
+     "line_vs_pigment": {
+      "median": 6.28,
+      "p10": 4.86,
+      "min": 3.09
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france_fam",
+     "n": 44,
+     "legs": [
+      "2-11->2-12"
+     ],
+     "core_vs_keyline": {
+      "median": 7.22,
+      "p10": 6.79,
+      "min": 6.78
+     },
+     "core_vs_pigment": {
+      "median": 3.63,
+      "p10": 3.31,
+      "min": 3.27
+     },
+     "keyline_vs_pigment": {
+      "median": 1.96,
+      "p10": 1.93,
+      "min": 1.89
+     },
+     "line_vs_pigment": {
+      "median": 3.63,
+      "p10": 3.31,
+      "min": 3.27
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "parchment(unpainted)",
+     "n": 40,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.63,
+      "p10": 7.17,
+      "min": 5.65
+     },
+     "core_vs_pigment": {
+      "median": 5.89,
+      "p10": 1.86,
+      "min": 1.02
+     },
+     "keyline_vs_pigment": {
+      "median": 1.3,
+      "p10": 1.07,
+      "min": 1.03
+     },
+     "line_vs_pigment": {
+      "median": 6.01,
+      "p10": 4.89,
+      "min": 2.96
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "sea",
+     "n": 57,
+     "legs": [
+      "2-05->2-07",
+      "2-07->2-08"
+     ],
+     "core_vs_keyline": {
+      "median": 5.74,
+      "p10": 3.05,
+      "min": 2.41
+     },
+     "core_vs_pigment": {
+      "median": 1.43,
+      "p10": 1.02,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 3.96,
+      "p10": 3.21,
+      "min": 2.45
+     },
+     "line_vs_pigment": {
+      "median": 3.96,
+      "p10": 3.21,
+      "min": 2.45
+     },
+     "pass_3to1_p10": true
+    }
+   ],
+   "deltaE00_neighbours": [
+    {
+     "a": "england",
+     "b": "france",
+     "shared_boundary_px": 192,
+     "ink_line": true,
+     "dE00": 46.0,
+     "lab_a": [
+      52.0,
+      48.1,
+      39.0
+     ],
+     "lab_b": [
+      26.3,
+      24.6,
+      -49.0
+     ]
+    },
+    {
+     "a": "england",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 317,
+     "ink_line": false,
+     "dE00": 34.8,
+     "lab_a": [
+      52.0,
+      48.0,
+      39.0
+     ],
+     "lab_b": [
+      78.2,
+      -0.2,
+      23.4
+     ]
+    },
+    {
+     "a": "england",
+     "b": "sea",
+     "shared_boundary_px": 4062,
+     "ink_line": false,
+     "dE00": 49.3,
+     "lab_a": [
+      47.8,
+      54.5,
+      44.3
+     ],
+     "lab_b": [
+      39.3,
+      -21.1,
+      4.7
+     ]
+    },
+    {
+     "a": "england_light",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 556,
+     "ink_line": false,
+     "dE00": 21.2,
+     "lab_a": [
+      68.9,
+      25.2,
+      22.9
+     ],
+     "lab_b": [
+      77.5,
+      -0.5,
+      21.4
+     ]
+    },
+    {
+     "a": "england_light",
+     "b": "sea",
+     "shared_boundary_px": 335,
+     "ink_line": false,
+     "dE00": 47.5,
+     "lab_a": [
+      68.8,
+      25.0,
+      23.0
+     ],
+     "lab_b": [
+      40.6,
+      -21.7,
+      4.9
+     ]
+    },
+    {
+     "a": "france",
+     "b": "france_fam",
+     "shared_boundary_px": 854,
+     "ink_line": true,
+     "dE00": 34.2,
+     "lab_a": [
+      25.7,
+      24.7,
+      -49.0
+     ],
+     "lab_b": [
+      61.6,
+      7.2,
+      -25.5
+     ]
+    },
+    {
+     "a": "france",
+     "b": "flanders",
+     "shared_boundary_px": 99,
+     "ink_line": false,
+     "dE00": 46.1,
+     "lab_a": [
+      23.5,
+      25.0,
+      -49.6
+     ],
+     "lab_b": [
+      65.6,
+      2.7,
+      -1.7
+     ]
+    },
+    {
+     "a": "france",
+     "b": "empire",
+     "shared_boundary_px": 585,
+     "ink_line": false,
+     "dE00": 66.1,
+     "lab_a": [
+      24.2,
+      24.9,
+      -49.3
+     ],
+     "lab_b": [
+      65.3,
+      9.1,
+      55.0
+     ]
+    },
+    {
+     "a": "france",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 1174,
+     "ink_line": false,
+     "dE00": 69.5,
+     "lab_a": [
+      24.9,
+      24.7,
+      -49.1
+     ],
+     "lab_b": [
+      80.7,
+      -0.4,
+      20.7
+     ]
+    },
+    {
+     "a": "france",
+     "b": "sea",
+     "shared_boundary_px": 1648,
+     "ink_line": false,
+     "dE00": 36.1,
+     "lab_a": [
+      26.7,
+      24.2,
+      -48.2
+     ],
+     "lab_b": [
+      40.1,
+      -21.4,
+      4.9
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "empire",
+     "shared_boundary_px": 149,
+     "ink_line": false,
+     "dE00": 44.4,
+     "lab_a": [
+      58.8,
+      7.5,
+      -26.5
+     ],
+     "lab_b": [
+      65.6,
+      9.4,
+      56.2
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 613,
+     "ink_line": false,
+     "dE00": 35.8,
+     "lab_a": [
+      61.3,
+      7.2,
+      -25.6
+     ],
+     "lab_b": [
+      78.9,
+      -0.3,
+      20.4
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "sea",
+     "shared_boundary_px": 1241,
+     "ink_line": false,
+     "dE00": 36.1,
+     "lab_a": [
+      62.4,
+      7.3,
+      -25.7
+     ],
+     "lab_b": [
+      39.7,
+      -21.2,
+      4.8
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "empire",
+     "shared_boundary_px": 153,
+     "ink_line": false,
+     "dE00": 27.8,
+     "lab_a": [
+      67.3,
+      2.9,
+      -1.4
+     ],
+     "lab_b": [
+      68.2,
+      9.3,
+      56.1
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 286,
+     "ink_line": false,
+     "dE00": 23.2,
+     "lab_a": [
+      67.0,
+      2.8,
+      -1.6
+     ],
+     "lab_b": [
+      84.5,
+      -0.7,
+      24.9
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "sea",
+     "shared_boundary_px": 204,
+     "ink_line": false,
+     "dE00": 35.9,
+     "lab_a": [
+      67.5,
+      2.7,
+      -1.5
+     ],
+     "lab_b": [
+      40.4,
+      -21.5,
+      5.0
+     ]
+    },
+    {
+     "a": "empire",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 3512,
+     "ink_line": false,
+     "dE00": 15.9,
+     "lab_a": [
+      66.6,
+      9.1,
+      54.9
+     ],
+     "lab_b": [
+      77.3,
+      0.3,
+      20.1
+     ]
+    },
+    {
+     "a": "empire",
+     "b": "sea",
+     "shared_boundary_px": 3387,
+     "ink_line": false,
+     "dE00": 41.1,
+     "lab_a": [
+      68.1,
+      9.0,
+      54.6
+     ],
+     "lab_b": [
+      40.0,
+      -21.4,
+      5.0
+     ]
+    },
+    {
+     "a": "castile",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 894,
+     "ink_line": false,
+     "dE00": 42.3,
+     "lab_a": [
+      47.7,
+      26.2,
+      -7.4
+     ],
+     "lab_b": [
+      81.9,
+      0.0,
+      20.3
+     ]
+    },
+    {
+     "a": "castile",
+     "b": "sea",
+     "shared_boundary_px": 945,
+     "ink_line": false,
+     "dE00": 37.3,
+     "lab_a": [
+      47.9,
+      26.1,
+      -7.4
+     ],
+     "lab_b": [
+      39.7,
+      -21.2,
+      4.8
+     ]
+    },
+    {
+     "a": "parchment(unpainted)",
+     "b": "sea",
+     "shared_boundary_px": 6744,
+     "ink_line": false,
+     "dE00": 42.7,
+     "lab_a": [
+      82.9,
+      -0.5,
+      21.8
+     ],
+     "lab_b": [
+      39.7,
+      -21.2,
+      4.9
+     ]
+    }
+   ],
+   "within_realm_spread": {
+    "england": {
+     "n_px": 106124,
+     "dE00_p50": 3.3,
+     "dE00_p90": 8.0,
+     "median_rgb": [
+      203,
+      60,
+      39
+     ]
+    },
+    "england_light": {
+     "n_px": 8242,
+     "dE00_p50": 2.5,
+     "dE00_p90": 6.2,
+     "median_rgb": [
+      224,
+      150,
+      128
+     ]
+    },
+    "france": {
+     "n_px": 262580,
+     "dE00_p50": 2.4,
+     "dE00_p90": 6.5,
+     "median_rgb": [
+      38,
+      52,
+      136
+     ]
+    },
+    "france_fam": {
+     "n_px": 49747,
+     "dE00_p50": 3.2,
+     "dE00_p90": 9.7,
+     "median_rgb": [
+      136,
+      146,
+      193
+     ]
+    },
+    "flanders": {
+     "n_px": 7701,
+     "dE00_p50": 3.5,
+     "dE00_p90": 27.7,
+     "median_rgb": [
+      168,
+      162,
+      167
+     ]
+    },
+    "empire": {
+     "n_px": 603504,
+     "dE00_p50": 3.1,
+     "dE00_p90": 9.3,
+     "median_rgb": [
+      205,
+      155,
+      60
+     ]
+    },
+    "castile": {
+     "n_px": 36171,
+     "dE00_p50": 5.1,
+     "dE00_p90": 12.2,
+     "median_rgb": [
+      153,
+      99,
+      129
+     ]
+    }
+   },
+   "label_collisions": {
+    "pairs": [],
+    "under_glyph": [
+     {
+      "text": "Sluis",
+      "glyph_px": 861,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Avignon",
+      "glyph_px": 1441,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Paris",
+      "glyph_px": 948,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Cologne",
+      "glyph_px": 1479,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Milan",
+      "glyph_px": 1150,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Ireland",
+      "glyph_px": 1051,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     }
+    ],
+    "n_collisions": 0
+   },
+   "label_readability": [
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 10.0
+    },
+    {
+     "text": "Avignon",
+     "tier": "city",
+     "glyph_vs_surround": 10.18
+    },
+    {
+     "text": "Paris",
+     "tier": "city",
+     "glyph_vs_surround": 8.39
+    },
+    {
+     "text": "Cologne",
+     "tier": "city",
+     "glyph_vs_surround": 10.09
+    },
+    {
+     "text": "Milan",
+     "tier": "city",
+     "glyph_vs_surround": 10.34
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 5.83
+    }
+   ]
+  },
+  "campaign": {
+   "concept": "Campaign Chronicle: deep earth-weight grand-strategy colours -- oxblood, slate royal blue, antique gold, plum, sienna -- on darker worn parchment with heavy umber frontiers.",
+   "palette_rgb": {
+    "england": [
+     126,
+     26,
+     30
+    ],
+    "england_light": [
+     166,
+     96,
+     86
+    ],
+    "france": [
+     50,
+     74,
+     124
+    ],
+    "france_fam": [
+     148,
+     162,
+     184
+    ],
+    "empire": [
+     130,
+     92,
+     30
+    ],
+    "castile": [
+     98,
+     48,
+     66
+    ],
+    "aragon": [
+     164,
+     92,
+     44
+    ],
+    "scotland": [
+     70,
+     88,
+     58
+    ],
+    "portugal": [
+     48,
+     96,
+     92
+    ],
+    "flanders": [
+     180,
+     172,
+     186
+    ]
+   },
+   "sea_rgb": [
+    24,
+    42,
+    58
+   ],
+   "paper_rgb": [
+    204,
+    174,
+    126
+   ],
+   "ink_rgb": [
+    30,
+    20,
+    14
+   ],
+   "flanders_rgb": [
+    180,
+    172,
+    186
+   ],
+   "files": {
+    "noroute": {
+     "path": "atlas/p1/stills/p1_map2b_campaign_noroute_1920x1080.png",
+     "md5": "01c6bf00c5f3d1a24513cd03f0e713ca"
+    },
+    "route": {
+     "path": "atlas/p1/stills/p1_map2b_campaign_route_1920x1080.png",
+     "md5": "0a31fa1baa7f6c4584e4b2d162804255"
+    },
+    "phone": {
+     "path": "atlas/p1/phone/p1_map2b_campaign_route_phone360x640.png",
+     "md5": "82add40e8fd91aac84343e78eba79c3c"
+    },
+    "full640": {
+     "path": "atlas/p1/phone/p1_map2b_campaign_route_640x360.png",
+     "md5": "2b2563432eadcabac196c2206270dc54"
+    }
+   },
+   "phone_contrast_full_frame": [
+    {
+     "style": "claimed",
+     "realm": "empire",
+     "n": 239,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 6.85,
+      "p10": 5.67,
+      "min": 4.42
+     },
+     "core_vs_pigment": {
+      "median": 1.86,
+      "p10": 1.46,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 3.66,
+      "p10": 3.26,
+      "min": 2.56
+     },
+     "line_vs_pigment": {
+      "median": 3.66,
+      "p10": 3.26,
+      "min": 2.56
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "england",
+     "n": 26,
+     "legs": [
+      "2-04->2-05",
+      "2-05->2-07"
+     ],
+     "core_vs_keyline": {
+      "median": 5.8,
+      "p10": 4.76,
+      "min": 4.27
+     },
+     "core_vs_pigment": {
+      "median": 1.19,
+      "p10": 1.08,
+      "min": 1.03
+     },
+     "keyline_vs_pigment": {
+      "median": 6.79,
+      "p10": 5.98,
+      "min": 5.18
+     },
+     "line_vs_pigment": {
+      "median": 6.79,
+      "p10": 5.98,
+      "min": 5.18
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "flanders",
+     "n": 16,
+     "legs": [
+      "2-08->2-11"
+     ],
+     "core_vs_keyline": {
+      "median": 6.1,
+      "p10": 5.92,
+      "min": 5.87
+     },
+     "core_vs_pigment": {
+      "median": 4.21,
+      "p10": 4.03,
+      "min": 3.99
+     },
+     "keyline_vs_pigment": {
+      "median": 1.45,
+      "p10": 1.44,
+      "min": 1.43
+     },
+     "line_vs_pigment": {
+      "median": 4.21,
+      "p10": 4.03,
+      "min": 3.99
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france",
+     "n": 371,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14"
+     ],
+     "core_vs_keyline": {
+      "median": 6.52,
+      "p10": 4.64,
+      "min": 4.1
+     },
+     "core_vs_pigment": {
+      "median": 1.19,
+      "p10": 1.06,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 5.31,
+      "p10": 4.26,
+      "min": 3.48
+     },
+     "line_vs_pigment": {
+      "median": 5.31,
+      "p10": 4.26,
+      "min": 3.48
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france_fam",
+     "n": 44,
+     "legs": [
+      "2-11->2-12"
+     ],
+     "core_vs_keyline": {
+      "median": 7.09,
+      "p10": 6.88,
+      "min": 6.64
+     },
+     "core_vs_pigment": {
+      "median": 4.17,
+      "p10": 3.65,
+      "min": 1.93
+     },
+     "keyline_vs_pigment": {
+      "median": 1.67,
+      "p10": 1.64,
+      "min": 1.63
+     },
+     "line_vs_pigment": {
+      "median": 4.17,
+      "p10": 3.65,
+      "min": 3.38
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "parchment(unpainted)",
+     "n": 40,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.47,
+      "p10": 7.01,
+      "min": 5.66
+     },
+     "core_vs_pigment": {
+      "median": 3.98,
+      "p10": 1.9,
+      "min": 1.09
+     },
+     "keyline_vs_pigment": {
+      "median": 1.93,
+      "p10": 1.58,
+      "min": 1.51
+     },
+     "line_vs_pigment": {
+      "median": 4.04,
+      "p10": 3.35,
+      "min": 2.5
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "sea",
+     "n": 387,
+     "legs": [
+      "2-05->2-07",
+      "2-07->2-08"
+     ],
+     "core_vs_keyline": {
+      "median": 5.36,
+      "p10": 4.04,
+      "min": 2.44
+     },
+     "core_vs_pigment": {
+      "median": 1.51,
+      "p10": 1.34,
+      "min": 1.24
+     },
+     "keyline_vs_pigment": {
+      "median": 8.43,
+      "p10": 7.04,
+      "min": 5.15
+     },
+     "line_vs_pigment": {
+      "median": 8.43,
+      "p10": 7.04,
+      "min": 5.15
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "documented",
+     "realm": "england",
+     "n": 119,
+     "legs": [
+      "2-01->2-03",
+      "2-03->2-04"
+     ],
+     "core_vs_keyline": {
+      "median": 9.39,
+      "p10": 8.88,
+      "min": 8.42
+     },
+     "core_vs_pigment": {
+      "median": 1.27,
+      "p10": 1.1,
+      "min": 1.03
+     },
+     "keyline_vs_pigment": {
+      "median": 7.42,
+      "p10": 6.38,
+      "min": 6.01
+     },
+     "line_vs_pigment": {
+      "median": 7.42,
+      "p10": 6.38,
+      "min": 6.01
+     },
+     "pass_3to1_p10": true
+    }
+   ],
+   "phone_contrast_in_phone_crop": [
+    {
+     "style": "claimed",
+     "realm": "empire",
+     "n": 239,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 6.85,
+      "p10": 5.67,
+      "min": 4.42
+     },
+     "core_vs_pigment": {
+      "median": 1.86,
+      "p10": 1.46,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 3.66,
+      "p10": 3.26,
+      "min": 2.56
+     },
+     "line_vs_pigment": {
+      "median": 3.66,
+      "p10": 3.26,
+      "min": 2.56
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "england",
+     "n": 1,
+     "legs": [
+      "2-05->2-07"
+     ],
+     "core_vs_keyline": {
+      "median": 6.6,
+      "p10": 6.6,
+      "min": 6.6
+     },
+     "core_vs_pigment": {
+      "median": 1.29,
+      "p10": 1.29,
+      "min": 1.29
+     },
+     "keyline_vs_pigment": {
+      "median": 8.54,
+      "p10": 8.54,
+      "min": 8.54
+     },
+     "line_vs_pigment": {
+      "median": 8.54,
+      "p10": 8.54,
+      "min": 8.54
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "flanders",
+     "n": 16,
+     "legs": [
+      "2-08->2-11"
+     ],
+     "core_vs_keyline": {
+      "median": 6.1,
+      "p10": 5.92,
+      "min": 5.87
+     },
+     "core_vs_pigment": {
+      "median": 4.21,
+      "p10": 4.03,
+      "min": 3.99
+     },
+     "keyline_vs_pigment": {
+      "median": 1.45,
+      "p10": 1.44,
+      "min": 1.43
+     },
+     "line_vs_pigment": {
+      "median": 4.21,
+      "p10": 4.03,
+      "min": 3.99
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france",
+     "n": 288,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-12->2-14"
+     ],
+     "core_vs_keyline": {
+      "median": 6.12,
+      "p10": 4.58,
+      "min": 4.1
+     },
+     "core_vs_pigment": {
+      "median": 1.16,
+      "p10": 1.06,
+      "min": 1.0
+     },
+     "keyline_vs_pigment": {
+      "median": 5.31,
+      "p10": 4.15,
+      "min": 3.48
+     },
+     "line_vs_pigment": {
+      "median": 5.31,
+      "p10": 4.15,
+      "min": 3.48
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "france_fam",
+     "n": 44,
+     "legs": [
+      "2-11->2-12"
+     ],
+     "core_vs_keyline": {
+      "median": 7.09,
+      "p10": 6.88,
+      "min": 6.64
+     },
+     "core_vs_pigment": {
+      "median": 4.17,
+      "p10": 3.65,
+      "min": 1.93
+     },
+     "keyline_vs_pigment": {
+      "median": 1.67,
+      "p10": 1.64,
+      "min": 1.63
+     },
+     "line_vs_pigment": {
+      "median": 4.17,
+      "p10": 3.65,
+      "min": 3.38
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "parchment(unpainted)",
+     "n": 40,
+     "legs": [
+      "2-08->2-11",
+      "2-11->2-12",
+      "2-14->2-15"
+     ],
+     "core_vs_keyline": {
+      "median": 7.47,
+      "p10": 7.01,
+      "min": 5.66
+     },
+     "core_vs_pigment": {
+      "median": 3.98,
+      "p10": 1.9,
+      "min": 1.09
+     },
+     "keyline_vs_pigment": {
+      "median": 1.93,
+      "p10": 1.58,
+      "min": 1.51
+     },
+     "line_vs_pigment": {
+      "median": 4.04,
+      "p10": 3.35,
+      "min": 2.5
+     },
+     "pass_3to1_p10": true
+    },
+    {
+     "style": "claimed",
+     "realm": "sea",
+     "n": 57,
+     "legs": [
+      "2-05->2-07",
+      "2-07->2-08"
+     ],
+     "core_vs_keyline": {
+      "median": 5.4,
+      "p10": 3.1,
+      "min": 2.44
+     },
+     "core_vs_pigment": {
+      "median": 1.37,
+      "p10": 1.28,
+      "min": 1.24
+     },
+     "keyline_vs_pigment": {
+      "median": 7.45,
+      "p10": 6.55,
+      "min": 5.15
+     },
+     "line_vs_pigment": {
+      "median": 7.45,
+      "p10": 6.55,
+      "min": 5.15
+     },
+     "pass_3to1_p10": true
+    }
+   ],
+   "deltaE00_neighbours": [
+    {
+     "a": "england",
+     "b": "france",
+     "shared_boundary_px": 192,
+     "ink_line": true,
+     "dE00": 34.4,
+     "lab_a": [
+      31.6,
+      37.8,
+      23.2
+     ],
+     "lab_b": [
+      29.4,
+      7.3,
+      -31.5
+     ]
+    },
+    {
+     "a": "england",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 317,
+     "ink_line": false,
+     "dE00": 42.2,
+     "lab_a": [
+      31.9,
+      38.0,
+      23.3
+     ],
+     "lab_b": [
+      67.0,
+      4.0,
+      27.9
+     ]
+    },
+    {
+     "a": "england",
+     "b": "sea",
+     "shared_boundary_px": 4062,
+     "ink_line": false,
+     "dE00": 34.0,
+     "lab_a": [
+      28.7,
+      41.7,
+      24.3
+     ],
+     "lab_b": [
+      17.4,
+      -2.2,
+      -11.8
+     ]
+    },
+    {
+     "a": "england_light",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 556,
+     "ink_line": false,
+     "dE00": 21.0,
+     "lab_a": [
+      51.1,
+      23.0,
+      20.3
+     ],
+     "lab_b": [
+      64.9,
+      3.9,
+      27.9
+     ]
+    },
+    {
+     "a": "england_light",
+     "b": "sea",
+     "shared_boundary_px": 335,
+     "ink_line": false,
+     "dE00": 40.2,
+     "lab_a": [
+      51.4,
+      22.9,
+      20.3
+     ],
+     "lab_b": [
+      18.0,
+      -2.2,
+      -12.2
+     ]
+    },
+    {
+     "a": "france",
+     "b": "france_fam",
+     "shared_boundary_px": 854,
+     "ink_line": true,
+     "dE00": 34.7,
+     "lab_a": [
+      29.4,
+      7.3,
+      -31.4
+     ],
+     "lab_b": [
+      63.3,
+      -0.2,
+      -8.6
+     ]
+    },
+    {
+     "a": "france",
+     "b": "flanders",
+     "shared_boundary_px": 99,
+     "ink_line": false,
+     "dE00": 43.3,
+     "lab_a": [
+      27.8,
+      7.3,
+      -31.5
+     ],
+     "lab_b": [
+      68.0,
+      5.3,
+      -3.3
+     ]
+    },
+    {
+     "a": "france",
+     "b": "empire",
+     "shared_boundary_px": 585,
+     "ink_line": false,
+     "dE00": 41.9,
+     "lab_a": [
+      28.4,
+      7.3,
+      -31.4
+     ],
+     "lab_b": [
+      38.5,
+      9.6,
+      39.8
+     ]
+    },
+    {
+     "a": "france",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 1174,
+     "ink_line": false,
+     "dE00": 53.8,
+     "lab_a": [
+      28.8,
+      7.3,
+      -31.4
+     ],
+     "lab_b": [
+      67.7,
+      4.0,
+      27.9
+     ]
+    },
+    {
+     "a": "france",
+     "b": "sea",
+     "shared_boundary_px": 1648,
+     "ink_line": false,
+     "dE00": 14.2,
+     "lab_a": [
+      32.4,
+      7.2,
+      -31.0
+     ],
+     "lab_b": [
+      17.8,
+      -2.2,
+      -12.1
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "empire",
+     "shared_boundary_px": 149,
+     "ink_line": false,
+     "dE00": 37.2,
+     "lab_a": [
+      61.4,
+      -0.2,
+      -8.7
+     ],
+     "lab_b": [
+      38.2,
+      9.8,
+      40.5
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 613,
+     "ink_line": false,
+     "dE00": 24.7,
+     "lab_a": [
+      63.7,
+      -0.2,
+      -8.6
+     ],
+     "lab_b": [
+      66.8,
+      4.0,
+      27.2
+     ]
+    },
+    {
+     "a": "france_fam",
+     "b": "sea",
+     "shared_boundary_px": 1241,
+     "ink_line": false,
+     "dE00": 45.0,
+     "lab_a": [
+      66.9,
+      -0.2,
+      -8.5
+     ],
+     "lab_b": [
+      17.6,
+      -2.2,
+      -12.0
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "empire",
+     "shared_boundary_px": 153,
+     "ink_line": false,
+     "dE00": 33.4,
+     "lab_a": [
+      62.1,
+      5.5,
+      -3.1
+     ],
+     "lab_b": [
+      41.0,
+      9.8,
+      40.5
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 286,
+     "ink_line": false,
+     "dE00": 24.0,
+     "lab_a": [
+      66.5,
+      5.5,
+      -3.2
+     ],
+     "lab_b": [
+      70.6,
+      4.2,
+      31.4
+     ]
+    },
+    {
+     "a": "flanders",
+     "b": "sea",
+     "shared_boundary_px": 204,
+     "ink_line": false,
+     "dE00": 48.8,
+     "lab_a": [
+      68.8,
+      5.3,
+      -3.2
+     ],
+     "lab_b": [
+      18.0,
+      -2.2,
+      -12.1
+     ]
+    },
+    {
+     "a": "empire",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 3512,
+     "ink_line": false,
+     "dE00": 25.8,
+     "lab_a": [
+      39.9,
+      9.6,
+      39.6
+     ],
+     "lab_b": [
+      65.7,
+      4.5,
+      27.2
+     ]
+    },
+    {
+     "a": "empire",
+     "b": "sea",
+     "shared_boundary_px": 3387,
+     "ink_line": false,
+     "dE00": 36.8,
+     "lab_a": [
+      43.0,
+      9.5,
+      39.5
+     ],
+     "lab_b": [
+      17.8,
+      -2.2,
+      -11.9
+     ]
+    },
+    {
+     "a": "castile",
+     "b": "parchment(unpainted)",
+     "shared_boundary_px": 894,
+     "ink_line": false,
+     "dE00": 39.4,
+     "lab_a": [
+      35.3,
+      19.3,
+      7.1
+     ],
+     "lab_b": [
+      68.9,
+      4.3,
+      27.7
+     ]
+    },
+    {
+     "a": "castile",
+     "b": "sea",
+     "shared_boundary_px": 945,
+     "ink_line": false,
+     "dE00": 29.4,
+     "lab_a": [
+      34.9,
+      19.3,
+      7.1
+     ],
+     "lab_b": [
+      17.6,
+      -2.2,
+      -12.0
+     ]
+    },
+    {
+     "a": "parchment(unpainted)",
+     "b": "sea",
+     "shared_boundary_px": 6744,
+     "ink_line": false,
+     "dE00": 56.7,
+     "lab_a": [
+      69.9,
+      4.1,
+      29.1
+     ],
+     "lab_b": [
+      17.6,
+      -2.2,
+      -11.8
+     ]
+    }
+   ],
+   "within_realm_spread": {
+    "england": {
+     "n_px": 106124,
+     "dE00_p50": 2.4,
+     "dE00_p90": 6.2,
+     "median_rgb": [
+      129,
+      30,
+      32
+     ]
+    },
+    "england_light": {
+     "n_px": 8242,
+     "dE00_p50": 3.2,
+     "dE00_p90": 7.8,
+     "median_rgb": [
+      170,
+      108,
+      90
+     ]
+    },
+    "france": {
+     "n_px": 262580,
+     "dE00_p50": 2.6,
+     "dE00_p90": 6.8,
+     "median_rgb": [
+      51,
+      74,
+      124
+     ]
+    },
+    "france_fam": {
+     "n_px": 49747,
+     "dE00_p50": 3.1,
+     "dE00_p90": 8.7,
+     "median_rgb": [
+      152,
+      161,
+      175
+     ]
+    },
+    "flanders": {
+     "n_px": 7701,
+     "dE00_p50": 4.2,
+     "dE00_p90": 33.9,
+     "median_rgb": [
+      175,
+      165,
+      174
+     ]
+    },
+    "empire": {
+     "n_px": 603504,
+     "dE00_p50": 3.3,
+     "dE00_p90": 10.3,
+     "median_rgb": [
+      131,
+      93,
+      31
+     ]
+    },
+    "castile": {
+     "n_px": 36171,
+     "dE00_p50": 4.7,
+     "dE00_p90": 11.3,
+     "median_rgb": [
+      122,
+      77,
+      78
+     ]
+    }
+   },
+   "label_collisions": {
+    "pairs": [],
+    "under_glyph": [
+     {
+      "text": "Sluis",
+      "glyph_px": 861,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Avignon",
+      "glyph_px": 1441,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Paris",
+      "glyph_px": 948,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Cologne",
+      "glyph_px": 1479,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Milan",
+      "glyph_px": 1150,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     },
+     {
+      "text": "Ireland",
+      "glyph_px": 1051,
+      "route_ink_px": 0,
+      "keyline_px": 0,
+      "border_ink_px": 0
+     }
+    ],
+    "n_collisions": 0
+   },
+   "label_readability": [
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 9.05
+    },
+    {
+     "text": "Avignon",
+     "tier": "city",
+     "glyph_vs_surround": 9.22
+    },
+    {
+     "text": "Paris",
+     "tier": "city",
+     "glyph_vs_surround": 8.72
+    },
+    {
+     "text": "Cologne",
+     "tier": "city",
+     "glyph_vs_surround": 9.05
+    },
+    {
+     "text": "Milan",
+     "tier": "city",
+     "glyph_vs_surround": 9.71
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 5.3
+    }
+   ]
+  }
+ },
+ "sheet": {
+  "path": "atlas/p1/sheets/p1_map2b_compare.png",
+  "md5": "9da51ffd471b614b206f9b30d0774eac",
+  "layout": "rows heraldic/illuminated/campaign; cols no-route 960x540, route 960x540, phone 304x540"
+ }
+}

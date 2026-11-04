@@ -1,0 +1,148 @@
+{
+ "name": "edward_map1_stations",
+ "about": "MAP 1 of MAP-PLACES-v1.md: Edward's documented 1326-27 sequence (C25, C26, C06) as a solid house nib; the 1330 places as separate slate-ink pins with no route. Coordinates: Wikidata P625 from longform/edward-ii-feature/raw/wikidata/<QID>.json only.",
+ "seed": 1326,
+ "out_wh": [
+  1920,
+  1080
+ ],
+ "plate_wh": [
+  2048,
+  1152
+ ],
+ "duration": 8.5,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "map": {
+  "center_lonlat": [
+   -2.25,
+   51.55
+  ],
+  "width_km": 470
+ },
+ "basemap": {
+  "river_rank": 6,
+  "river_px": 1.8,
+  "shallow_px": 46
+ },
+ "label_px": 31,
+ "control_points": [
+  {
+   "ref": "Portland Bill",
+   "dir": "S",
+   "search_px": 30
+  },
+  {
+   "ref": "Selsey Bill",
+   "dir": "S",
+   "search_px": 30
+  },
+  {
+   "ref": "The Needles",
+   "dir": "W",
+   "search_px": 30
+  },
+  {
+   "ref": "Hartland Point",
+   "dir": "NW",
+   "search_px": 30
+  },
+  {
+   "ref": "Brean Down",
+   "dir": "W",
+   "search_px": 30
+  }
+ ],
+ "tints": [
+  {
+   "row": "1-02",
+   "qid": "Q870815",
+   "radius_km": 26,
+   "aspect": 1.5,
+   "strength": 0.3
+  }
+ ],
+ "chains": [
+  {
+   "style": "documented",
+   "ink": "house",
+   "t0": 0.3,
+   "t1": 5.0,
+   "bow": 0.04,
+   "scale": 1.0,
+   "stops": [
+    {
+     "row": "1-01",
+     "qid": "Q1070187",
+     "pin": true,
+     "label": "Chepstow",
+     "side": "S"
+    },
+    {
+     "row": "1-02",
+     "qid": "Q870815",
+     "pin": false,
+     "label": "Glamorgan",
+     "side": "SW",
+     "bow": -0.05,
+     "round": 0.3
+    },
+    {
+     "row": "1-03",
+     "qid": "Q1738764",
+     "pin": true,
+     "label": "Kenilworth",
+     "side": "E",
+     "bow": -0.09
+    },
+    {
+     "row": "1-04",
+     "qid": "Q4891993",
+     "pin": true,
+     "label": "Berkeley",
+     "side": "E",
+     "bow": 0.16
+    },
+    {
+     "row": "1-05",
+     "qid": "Q262500",
+     "pin": true,
+     "label": "Gloucester",
+     "side": "W",
+     "bow": 0.26
+    }
+   ]
+  }
+ ],
+ "pins": [
+  {
+   "style": "documented",
+   "ink": "slate",
+   "t0": 5.5,
+   "step": 0.5,
+   "scale": 1.0,
+   "items": [
+    {
+     "row": "1-08",
+     "qid": "Q1236511",
+     "label": "Corfe",
+     "side": "E"
+    },
+    {
+     "row": "1-09",
+     "qid": "Q172157",
+     "label": "Winchester",
+     "side": "E"
+    },
+    {
+     "row": "1-10",
+     "qid": "Q62408",
+     "label": "Westminster",
+     "side": "N"
+    }
+   ]
+  }
+ ]
+}

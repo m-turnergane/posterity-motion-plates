@@ -1,0 +1,883 @@
+{
+ "shot": "edward_map2a_v2",
+ "density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   2048,
+   1152
+  ],
+  "out_wh": [
+   1920,
+   1080
+  ],
+  "push_max": 1.06,
+  "crop_zoom": 1.0,
+  "cover_scale": 0.9375,
+  "visible_src_wh": [
+   1932.1,
+   1086.8
+  ],
+  "ratio": 0.994,
+  "ratio_x": 0.994,
+  "ratio_y": 0.994,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "authority": [
+  {
+   "row": "2-01",
+   "qid": "Q1070187",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Chepstow",
+   "site": "Chepstow Castle"
+  },
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Glamorgan (region)"
+  },
+  {
+   "row": "2-03",
+   "qid": "Q1738764",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Kenilworth",
+   "site": "Kenilworth Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Berkeley",
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-05",
+   "qid": "Q1236511",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Corfe",
+   "site": "Corfe Castle"
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Ireland (island)"
+  },
+  {
+   "row": "2-07",
+   "qid": "Q26163",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Sandwich",
+   "site": "Sandwich, Kent"
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Sluis",
+   "site": "Sluis, Zeeland"
+  }
+ ],
+ "control_points": {
+  "method": "extreme coastline pixel in `dir` within search window; LSQ affine (6 dof) analytic->measured",
+  "n": 7,
+  "rms_px": 2.18,
+  "max_px": 3.33,
+  "rms_km": 1.13,
+  "max_km": 1.72,
+  "rms_px_unfitted": 2.57,
+  "km_per_plate_px": 0.5176,
+  "affine": [
+   [
+    0.999697,
+    0.003877,
+    -3.305013
+   ],
+   [
+    0.000942,
+    0.999964,
+    -1.708253
+   ]
+  ]
+ },
+ "modes": {
+  "realms_worn": {
+   "legs": [
+    {
+     "leg": "2-01->2-03",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-01->2-02",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 158
+      },
+      {
+       "sub": "2-02->2-03",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 323
+      },
+      {
+       "max_turn_deg_per_6px": 16.03,
+       "min_clear_of_other_pins_px": 20.54
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.057,
+      "ink_vs_edge_px": -0.043
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.751,
+      "ink_vs_edge_px": -0.349
+     },
+     "ink_sea_px_outside_pin_ring": 0
+    },
+    {
+     "leg": "2-03->2-04",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-03->2-04",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 187
+      },
+      {
+       "max_turn_deg_per_6px": 3.09,
+       "min_clear_of_other_pins_px": 20.54
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.04,
+      "ink_vs_edge_px": -0.06
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.976,
+      "ink_vs_edge_px": -0.124
+     },
+     "ink_sea_px_outside_pin_ring": 19
+    },
+    {
+     "leg": "2-04->2-05",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-04->2-05",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 233
+      },
+      {
+       "max_turn_deg_per_6px": 0.9,
+       "min_clear_of_other_pins_px": 20.41
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.787,
+      "ink_vs_edge_px": -0.313
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.693,
+      "ink_vs_edge_px": -0.407
+     },
+     "ink_sea_px_outside_pin_ring": 2
+    },
+    {
+     "leg": "2-05->2-07",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "adaptive sigma 24..6",
+     "checks": [
+      {
+       "sub": "2-05->2-06",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 13.0,
+       "n": 1112,
+       "harbour_r_px": [
+        17.67
+       ]
+      },
+      {
+       "sub": "2-06->2-07",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 3.6,
+       "n": 1826,
+       "harbour_r_px": [
+        14.44
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 38.9,
+       "min_clear_of_other_pins_px": 221.41
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.219,
+      "ink_vs_edge_px": 0.119
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.065,
+      "ink_vs_edge_px": -0.035
+     },
+     "ink_land_px_outside_pin_ring": 30,
+     "ink_land_px_outside_harbour_disc": 14
+    },
+    {
+     "leg": "2-07->2-08",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-07->2-08",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 8.79,
+       "n": 293,
+       "harbour_r_px": [
+        14.44,
+        20.07
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 9.38,
+       "min_clear_of_other_pins_px": 442.88
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.728,
+      "ink_vs_edge_px": -0.372
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.739,
+      "ink_vs_edge_px": -0.361
+     },
+     "ink_land_px_outside_pin_ring": 44,
+     "ink_land_px_outside_harbour_disc": 1
+    }
+   ],
+   "pins": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187",
+     "label": "Chepstow",
+     "xy": [
+      972.84,
+      651.56
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "label": "Kenilworth",
+     "xy": [
+      1115.33,
+      500.32
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "label": "Berkeley",
+     "xy": [
+      1001.98,
+      642.09
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "label": "Corfe",
+     "xy": [
+      1056.59,
+      867.39
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "label": "Sandwich",
+     "xy": [
+      1511.87,
+      719.3
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "label": "Sluis",
+     "xy": [
+      1785.9,
+      694.62
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    }
+   ],
+   "labels": [
+    {
+     "text": "Chepstow",
+     "side": "SW",
+     "gap_px": 56.1,
+     "bbox": [
+      804,
+      688,
+      937,
+      716
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Kenilworth",
+     "side": "E",
+     "gap_px": 16.1,
+     "bbox": [
+      1129,
+      486,
+      1288,
+      514
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Berkeley",
+     "side": "E",
+     "gap_px": 30.1,
+     "bbox": [
+      1029,
+      628,
+      1153,
+      656
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Corfe",
+     "side": "E",
+     "gap_px": 22.1,
+     "bbox": [
+      1076,
+      853,
+      1159,
+      881
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Sandwich",
+     "side": "W",
+     "gap_px": 16.1,
+     "bbox": [
+      1373,
+      705,
+      1497,
+      733
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Sluis",
+     "side": "E",
+     "gap_px": 16.1,
+     "bbox": [
+      1800,
+      681,
+      1869,
+      708
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    }
+   ],
+   "realms_raster": [
+    {
+     "check": "raster Galway: no_fill",
+     "dominant": null,
+     "weights": {},
+     "ok": true
+    },
+    {
+     "check": "raster Brussels (Brabant): fam",
+     "dominant": "empire",
+     "weights": {
+      "flanders": 0.012,
+      "empire": 0.962
+     },
+     "ok": true
+    },
+    {
+     "check": "raster: no realm names/legend/dates on plate",
+     "labels": [
+      "Chepstow",
+      "Kenilworth",
+      "Berkeley",
+      "Corfe",
+      "Sandwich",
+      "Sluis"
+     ],
+     "ok": true
+    }
+   ],
+   "png": "/workspace/posterity/engine-rnd/maps/style/map2a_style_A_worn_house_16x9.png",
+   "md5": "3707c8ca34f28250bdd30045cb59f5bf"
+  },
+  "campaign_atlas": {
+   "legs": [
+    {
+     "leg": "2-01->2-03",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-01->2-02",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 158
+      },
+      {
+       "sub": "2-02->2-03",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 323
+      },
+      {
+       "max_turn_deg_per_6px": 16.03,
+       "min_clear_of_other_pins_px": 20.54
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.057,
+      "ink_vs_edge_px": -0.043
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.751,
+      "ink_vs_edge_px": -0.349
+     },
+     "ink_sea_px_outside_pin_ring": 0
+    },
+    {
+     "leg": "2-03->2-04",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-03->2-04",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 187
+      },
+      {
+       "max_turn_deg_per_6px": 3.09,
+       "min_clear_of_other_pins_px": 20.54
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.04,
+      "ink_vs_edge_px": -0.06
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.976,
+      "ink_vs_edge_px": -0.124
+     },
+     "ink_sea_px_outside_pin_ring": 19
+    },
+    {
+     "leg": "2-04->2-05",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-04->2-05",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 233
+      },
+      {
+       "max_turn_deg_per_6px": 0.9,
+       "min_clear_of_other_pins_px": 20.41
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.787,
+      "ink_vs_edge_px": -0.313
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.693,
+      "ink_vs_edge_px": -0.407
+     },
+     "ink_sea_px_outside_pin_ring": 2
+    },
+    {
+     "leg": "2-05->2-07",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "adaptive sigma 24..6",
+     "checks": [
+      {
+       "sub": "2-05->2-06",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 13.0,
+       "n": 1112,
+       "harbour_r_px": [
+        17.67
+       ]
+      },
+      {
+       "sub": "2-06->2-07",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 3.6,
+       "n": 1826,
+       "harbour_r_px": [
+        14.44
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 38.9,
+       "min_clear_of_other_pins_px": 221.41
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.219,
+      "ink_vs_edge_px": 0.119
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 10.065,
+      "ink_vs_edge_px": -0.035
+     },
+     "ink_land_px_outside_pin_ring": 30,
+     "ink_land_px_outside_harbour_disc": 14
+    },
+    {
+     "leg": "2-07->2-08",
+     "chain": "britain",
+     "style": "claimed",
+     "sigma_px": 24.0,
+     "fit": "smooth",
+     "checks": [
+      {
+       "sub": "2-07->2-08",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 8.79,
+       "n": 293,
+       "harbour_r_px": [
+        14.44,
+        20.07
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 9.38,
+       "min_clear_of_other_pins_px": 442.88
+      }
+     ],
+     "start": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.728,
+      "ink_vs_edge_px": -0.372
+     },
+     "end": {
+      "r_edge_px": 10.1,
+      "centreline_gap_px": 0.0,
+      "ink_min_dist_from_centre_px": 9.739,
+      "ink_vs_edge_px": -0.361
+     },
+     "ink_land_px_outside_pin_ring": 44,
+     "ink_land_px_outside_harbour_disc": 1
+    }
+   ],
+   "pins": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187",
+     "label": "Chepstow",
+     "xy": [
+      972.84,
+      651.56
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "label": "Kenilworth",
+     "xy": [
+      1115.33,
+      500.32
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "label": "Berkeley",
+     "xy": [
+      1001.98,
+      642.09
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "label": "Corfe",
+     "xy": [
+      1056.59,
+      867.39
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "label": "Sandwich",
+     "xy": [
+      1511.87,
+      719.3
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "label": "Sluis",
+     "xy": [
+      1785.9,
+      694.62
+     ],
+     "ring_r": 9.0,
+     "ring_w": 2.2,
+     "r_edge": 10.1
+    }
+   ],
+   "labels": [
+    {
+     "text": "Chepstow",
+     "side": "SW",
+     "gap_px": 56.1,
+     "bbox": [
+      804,
+      688,
+      937,
+      716
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Kenilworth",
+     "side": "E",
+     "gap_px": 16.1,
+     "bbox": [
+      1129,
+      486,
+      1288,
+      514
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Berkeley",
+     "side": "E",
+     "gap_px": 30.1,
+     "bbox": [
+      1029,
+      628,
+      1153,
+      656
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Corfe",
+     "side": "E",
+     "gap_px": 22.1,
+     "bbox": [
+      1076,
+      853,
+      1159,
+      881
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Sandwich",
+     "side": "W",
+     "gap_px": 16.1,
+     "bbox": [
+      1373,
+      705,
+      1497,
+      733
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    },
+    {
+     "text": "Sluis",
+     "side": "E",
+     "gap_px": 16.1,
+     "bbox": [
+      1800,
+      681,
+      1869,
+      708
+     ],
+     "ink_px_in_bbox": 0,
+     "in_frame": true,
+     "final_ink_px_gt0.02_in_bbox": 0
+    }
+   ],
+   "realms_raster": [
+    {
+     "check": "raster Galway: no_fill",
+     "dominant": null,
+     "weights": {},
+     "ok": true
+    },
+    {
+     "check": "raster Brussels (Brabant): fam",
+     "dominant": "empire",
+     "weights": {
+      "flanders": 0.012,
+      "empire": 0.962
+     },
+     "ok": true
+    },
+    {
+     "check": "raster: no realm names/legend/dates on plate",
+     "labels": [
+      "Chepstow",
+      "Kenilworth",
+      "Berkeley",
+      "Corfe",
+      "Sandwich",
+      "Sluis"
+     ],
+     "ok": true
+    }
+   ],
+   "png": "/workspace/posterity/engine-rnd/maps/style/map2a_style_B_campaign_atlas_16x9.png",
+   "md5": "03e623350680ac983021b2e698f8df6c"
+  }
+ }
+}

@@ -1,0 +1,588 @@
+{
+ "name": "framing_refpack_bathory_v1",
+ "created": "2026-10-31 12:02 ET",
+ "authority": "standalones/bathory/v2/MAP-PLACES-bathory-v1.md (Archivist 2026-10-31 ~11:55 ET)",
+ "projection": {
+  "name": "Lambert azimuthal equal-area, spherical (engine map_route_v1.LAEA), centred on the frame centre, north up",
+  "sphere_radius_m": 6371000,
+  "note": "engine LAEA (forward map_route_v1.LAEA, inverse map_modes_v2.inverse_laea); proj4 is the exact equivalent (+R sphere). x_px = (X_m - xmin)/m_per_px, y_px = (ymax - Y_m)/m_per_px."
+ },
+ "frames": {
+  "bathory_b03_9x16": {
+   "aspect": "9:16",
+   "size_px": [
+    1080,
+    1920
+   ],
+   "use": "B03 Upper Hungary / Vah valley map beat",
+   "justification": "Width set by the MAP-PLACES suggested span (16.3-19.0E): Vienna near the west edge, Bytca/Zsolna inside the east pin-safe band. The south edge is held just north of the Danube's Komarom-Esztergom reach (about 47.85-47.9N) so the Ottoman-held Esztergom/Parkany bend stays out of frame (MAP-PLACES: frontier out of frame). Native 9:16 then needs ~356 km of height, which goes NORTH (White Carpathians, Javorniky, Beskids, Moravian gate, upper Oder): calm ground for the medallion and label margins.",
+   "center_lonlat": [
+    17.55,
+    49.5
+   ],
+   "width_km": 200.0,
+   "height_km": 355.56,
+   "m_per_px": 185.185,
+   "km_per_px": 0.18519,
+   "proj4": "+proj=laea +lat_0=49.5 +lon_0=17.55 +x_0=0 +y_0=0 +R=6371000 +units=m +no_defs",
+   "projected_bounds_m": {
+    "xmin": -100000.0,
+    "xmax": 100000.0,
+    "ymin": -177777.8,
+    "ymax": 177777.8
+   },
+   "lonlat_bounds": {
+    "lon_min": 16.1182,
+    "lon_max": 18.9818,
+    "lat_min": 47.8932,
+    "lat_max": 51.0988,
+    "corners": {
+     "top_left": [
+      16.1182,
+      51.0902
+     ],
+     "top_right": [
+      18.9818,
+      51.0902
+     ],
+     "bottom_left": [
+      16.2088,
+      47.8932
+     ],
+     "bottom_right": [
+      18.8912,
+      47.8932
+     ]
+    },
+    "note": "envelope of the frame edge; the frame is a rectangle in LAEA metres, so meridians/parallels are curved inside it"
+   },
+   "pin_inset": [
+    0.06,
+    0.05
+   ],
+   "pin_safe_px": [
+    64,
+    96,
+    1015,
+    1824
+   ],
+   "title_safe_px": [
+    54,
+    96,
+    1026,
+    1824
+   ],
+   "safe_area_check": {
+    "all_story_pins_in_pin_safe": true,
+    "places": [
+     {
+      "key": "csejte",
+      "text": "Csejte",
+      "qid": "Q612364",
+      "kind": "pin",
+      "band": "VERIFIED",
+      "lonlat": [
+       17.76083,
+       48.72472
+      ],
+      "map_places_latlon": [
+       48.7247,
+       17.7608
+      ],
+      "map_places_delta_km": 0.003,
+      "px": [
+       623.5,
+       1425.4
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": {
+       "text": "Csejte",
+       "bbox": [
+        515,
+        1405,
+        614,
+        1446
+       ],
+       "side": "W"
+      },
+      "note": "Csejte fortress (Cachtice Castle). The pin."
+     },
+     {
+      "key": "csejte_manor",
+      "text": null,
+      "qid": "Q337440",
+      "kind": "pin_coarse",
+      "band": "COARSE",
+      "lonlat": [
+       17.78722,
+       48.71222
+      ],
+      "map_places_latlon": [
+       48.7122,
+       17.7872
+      ],
+      "map_places_delta_km": 0.003,
+      "px": [
+       634.0,
+       1432.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": null,
+      "note": "manor = village coordinate stand-in (no own Wikidata point); one 'Csejte' label only; castle/manor split is for the inset"
+     },
+     {
+      "key": "bytca",
+      "text": "Bytča",
+      "qid": "Q1968071",
+      "kind": "pin",
+      "band": "VERIFIED",
+      "lonlat": [
+       18.55917,
+       49.22
+      ],
+      "map_places_latlon": [
+       49.22,
+       18.5592
+      ],
+      "map_places_delta_km": 0.002,
+      "px": [
+       935.8,
+       1125.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": {
+       "text": "Bytča",
+       "bbox": [
+        834,
+        1085,
+        925,
+        1116
+       ],
+       "side": "NW"
+      },
+      "note": "Bytca Castle, Thurzo's seat (trial Jan 1611). Town Q27907 49.2228,18.5581"
+     },
+     {
+      "key": "vienna",
+      "text": "Vienna",
+      "qid": "Q1741",
+      "kind": "anchor",
+      "band": "anchor",
+      "lonlat": [
+       16.3725,
+       48.20833
+      ],
+      "map_places_latlon": [
+       48.2083,
+       16.3725
+      ],
+      "map_places_delta_km": 0.004,
+      "px": [
+       68.8,
+       1731.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "austria",
+      "ref_label": {
+       "text": "Vienna",
+       "bbox": [
+        92,
+        1676,
+        198,
+        1708
+       ],
+       "side": "NE"
+      },
+      "note": "west edge anchor; label only if owner wants"
+     },
+     {
+      "key": "pozsony",
+      "text": "Pozsony",
+      "qid": "Q1780",
+      "kind": "anchor",
+      "band": "anchor",
+      "lonlat": [
+       17.10931,
+       48.1517
+      ],
+      "map_places_latlon": [
+       48.1517,
+       17.1093
+      ],
+      "map_places_delta_km": 0.0,
+      "px": [
+       363.4,
+       1769.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": {
+       "text": "Pozsony",
+       "bbox": [
+        374,
+        1729,
+        497,
+        1759
+       ],
+       "side": "NE"
+      },
+      "note": "never 'Bratislava'; label only if owner wants"
+     },
+     {
+      "key": "vagujhely",
+      "text": "Vágújhely",
+      "qid": "Q376987",
+      "kind": "anchor_optional",
+      "band": "optional",
+      "lonlat": [
+       17.83333,
+       48.78333
+      ],
+      "map_places_latlon": [
+       48.7833,
+       17.8333
+      ],
+      "map_places_delta_km": 0.004,
+      "px": [
+       652.1,
+       1390.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": null,
+      "note": "optional, unlabelled here"
+     },
+     {
+      "key": "trencsen",
+      "text": "Trencsén",
+      "qid": "Q145002",
+      "kind": "anchor_optional",
+      "band": "optional",
+      "lonlat": [
+       18.04056,
+       48.89417
+      ],
+      "map_places_latlon": [
+       48.8942,
+       18.0406
+      ],
+      "map_places_delta_km": 0.005,
+      "px": [
+       733.7,
+       1323.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": null,
+      "note": "optional, unlabelled here"
+     },
+     {
+      "key": "zsolna",
+      "text": "Zsolna",
+      "qid": "Q25797",
+      "kind": "anchor_optional",
+      "band": "optional",
+      "lonlat": [
+       18.73333,
+       49.21667
+      ],
+      "map_places_latlon": [
+       49.2167,
+       18.7333
+      ],
+      "map_places_delta_km": 0.004,
+      "px": [
+       1004.1,
+       1126.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "realm": "hungary",
+      "ref_label": null,
+      "note": "optional, unlabelled here"
+     }
+    ]
+   },
+   "label_zones": [
+    {
+     "key": "csejte",
+     "text": "Csejte",
+     "rect_px": [
+      515,
+      1405,
+      614,
+      1446
+     ],
+     "pad_px": 10
+    },
+    {
+     "key": "bytca",
+     "text": "Bytča",
+     "rect_px": [
+      834,
+      1085,
+      925,
+      1116
+     ],
+     "pad_px": 10
+    },
+    {
+     "key": "pozsony",
+     "text": "Pozsony",
+     "rect_px": [
+      374,
+      1729,
+      497,
+      1759
+     ],
+     "pad_px": 10
+    },
+    {
+     "key": "vienna",
+     "text": "Vienna",
+     "rect_px": [
+      92,
+      1676,
+      198,
+      1708
+     ],
+     "pad_px": 10
+    }
+   ],
+   "labels_not_placed": [],
+   "label_zone_rule": "keep these rects (+10 px) low-detail on the plate: no settlement vignette, no dense forest/hatching under a label",
+   "label_text_rule": "MAP-PLACES names only (Csejte, Bytca, Pozsony, Vienna). Vienna/Pozsony are frame anchors: on-screen only if the owner wants. No river, range, realm, date or status text.",
+   "zones": {
+    "medallion": {
+     "rect_px": [
+      789,
+      54,
+      1026,
+      291
+     ],
+     "lonlat_corners": [
+      [
+       18.209,
+       51.007
+      ],
+      [
+       18.836,
+       51.002
+      ],
+      [
+       18.825,
+       50.607
+      ],
+      [
+       18.203,
+       50.612
+      ]
+     ],
+     "calm_score": 0.9541,
+     "position": "upper-right",
+     "use": "parking/hold position for the portrait medallion at wide zoom; the marker must never cover a label zone"
+    },
+    "ornament_reserved": {
+     "rect_px": [
+      832,
+      384,
+      1026,
+      578
+     ],
+     "lonlat_corners": [
+      [
+       18.314,
+       50.457
+      ],
+      [
+       18.821,
+       50.452
+      ],
+      [
+       18.813,
+       50.129
+      ],
+      [
+       18.309,
+       50.134
+      ]
+     ],
+     "calm_score": 0.9512,
+     "position": "upper-right",
+     "use": "the ONLY place a small static compass rose may be painted"
+    }
+   },
+   "realms": {
+    "status": "COARSE - reference masks for engine pigment only, never painted from the reference; never shown as borders on the guide",
+    "source": "OpenHistoricalMap (CC0), relations fetched 2026-10-31 via overpass-api.openhistoricalmap.org; 'Kingdom of Hungary' rel 2750054 has no geometry, so Hungary = union of its county relations (dated 1050/1350-1850, i.e. not 1610-specific)",
+    "ohm_relations": {
+     "2830015": {
+      "name": "Pozsony county",
+      "start": "1050",
+      "end": "1850-09-13"
+     },
+     "2830018": {
+      "name": "Nyitra county",
+      "start": "1050",
+      "end": "1850-09-13"
+     },
+     "2829775": {
+      "name": "Trencsén county",
+      "start": "1050",
+      "end": "1850-09-13"
+     },
+     "2829772": {
+      "name": "Bars county",
+      "start": "1050",
+      "end": "1850-09-13"
+     },
+     "2829771": {
+      "name": "Turóc county",
+      "start": "1370",
+      "end": "1850-09-13"
+     },
+     "2829458": {
+      "name": "Árva county",
+      "start": "1370",
+      "end": "1850-09-13"
+     },
+     "2829427": {
+      "name": "Zólyom county",
+      "start": "1350",
+      "end": "1850-09-13"
+     },
+     "2829455": {
+      "name": "Liptó county",
+      "start": "1400",
+      "end": "1850-09-13"
+     },
+     "2829043": {
+      "name": "Sopron county",
+      "start": "1050",
+      "end": "1850-09-13"
+     },
+     "2829044": {
+      "name": "Moson county",
+      "start": "1050",
+      "end": "1850-09-13"
+     },
+     "2830626": {
+      "name": "Austrian Circle",
+      "start": "1565",
+      "end": "1618"
+     },
+     "2830504": {
+      "name": "Moravia",
+      "start": "1182",
+      "end": "1742-07-28"
+     },
+     "2830430": {
+      "name": "Lands of the Bohemian Crown",
+      "start": "1557",
+      "end": "1635-05-30"
+     },
+     "2696433": {
+      "name": "Kraków Voivodeship",
+      "start": "1400",
+      "end": "1773-09-18"
+     }
+    },
+    "coverage": {
+     "hungary": {
+      "px": 523024,
+      "frac": 0.2522
+     },
+     "austria": {
+      "px": 143840,
+      "frac": 0.0694
+     },
+     "moravia": {
+      "px": 523602,
+      "frac": 0.2525
+     },
+     "bohemian_crown_other": {
+      "px": 804046,
+      "frac": 0.3878
+     },
+     "poland": {
+      "px": 29352,
+      "frac": 0.0142
+     },
+     "unassigned": {
+      "px": 49736,
+      "frac": 0.024
+     }
+    },
+    "legend": {
+     "128,128,128": "unassigned land (no OHM polygon for 1610 here; do not tint)",
+     "37,91,157": "hungary: Kingdom of Hungary (Royal Hungary) - union of OHM county relations [COARSE]",
+     "180,40,40": "austria: Archduchy of Austria - OHM 'Austrian Circle' 1565-1618 (Reichskreis, contains the archduchy) [COARSE]",
+     "60,160,70": "moravia: Margraviate of Moravia (Bohemian Crown) - OHM Moravia 1182-1742 [COARSE]",
+     "200,160,40": "bohemian_crown_other: Lands of the Bohemian Crown minus Moravia (Silesian duchies) - OHM 1557-1635 [COARSE]",
+     "140,70,170": "poland: Crown of Poland, Krakow Voivodeship - OHM 1400-1773 [COARSE]"
+    },
+    "ottoman_conflict": {
+     "ohm_relation": 2860343,
+     "ohm_dates": "1540-10-01..1669",
+     "px_in_frame": 18940,
+     "bounds_in_frame": [
+      18.316,
+      47.843,
+      19.032,
+      48.274
+     ],
+     "note": "OHM's single 1540-1669 Ottoman polygon reaches into this frame (SE). It is a whole-period envelope, not 1610; MAP-PLACES puts the 1610 frontier out of frame, so it is NOT masked or tinted. Flagged to the Archivist."
+    }
+   },
+   "renderer": {
+    "map": {
+     "center_lonlat": [
+      17.55,
+      49.5
+     ],
+     "width_km": 200.0
+    },
+    "out_wh": [
+     1080,
+     1920
+    ],
+    "plate_wh": [
+     2160,
+     3840
+    ],
+    "px_scale_out_to_plate": 2.0
+   },
+   "sources": {
+    "land": "Natural Earth 10m land + lakes (engine sources/naturalearth)",
+    "rivers": "NE10m rivers_lake_centerlines (Danube, Morava, Oder, Vistula) + NE10m rivers_europe supplement (Vah, Hron, Nitra, Dyje...) - downloaded to scratch, naciscdn.org",
+    "relief": "ETOPO1 1-arc-min (NOAA NCEI) via coastwatch.pfeg.noaa.gov ERDDAP etopo180, 45-52N 13-23E (engine subset etopo1_eu.nc ends at 20E)",
+    "places": "Wikidata P625 live 2026-10-31 (entity JSON), equal to MAP-PLACES-bathory-v1"
+   },
+   "files": {
+    "ref_notext": "img_v1/bathory_b03_9x16_ref_notext.png",
+    "ref_labels": "img_v1/bathory_b03_9x16_ref_labels.png",
+    "ref_graticule": "img_v1/bathory_b03_9x16_ref_graticule.png",
+    "zones_overlay": "img_v1/bathory_b03_9x16_zones_overlay.png",
+    "realm_ids": "img_v1/bathory_b03_9x16_realm_ids.png"
+   }
+  }
+ }
+}

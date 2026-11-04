@@ -1,0 +1,169 @@
+{
+ "name": "edward_map2a_atlas_p0",
+ "about": "Chronicle Atlas P0 (owner brief 2026-10-31). Same framing/stops as edward_map2a_v2_r2. Evidence grammar: 2-01..2-04 documented (MAP-PLACES Map 1 line suggestion, C25/C26; solid oxblood ink); 2-04..2-08 the route only Fieschi's letter claims (broken, lighter). No approximate areas: no MAP-PLACES row on Map 2 is marked approximate/area.",
+ "seed": 1327,
+ "map": {
+  "center_lonlat": [
+   -2.3,
+   52.0
+  ],
+  "width_km": 1060
+ },
+ "basemap": {
+  "river_rank": 5,
+  "river_px": 1.5,
+  "shallow_px": 34
+ },
+ "control_points": [
+  {
+   "ref": "Land's End",
+   "dir": "W",
+   "search_px": 25
+  },
+  {
+   "ref": "Lizard Point, Cornwall",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Portland Bill",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Selsey Bill",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Hartland Point",
+   "dir": "NW",
+   "search_px": 25
+  },
+  {
+   "ref": "Cap Gris-Nez",
+   "dir": "W",
+   "search_px": 25
+  },
+  {
+   "ref": "Great Orme",
+   "dir": "N",
+   "search_px": 25
+  }
+ ],
+ "out_wh": [
+  1920,
+  1080
+ ],
+ "plate_wh": [
+  2048,
+  1152
+ ],
+ "push": [
+  1.0,
+  1.06
+ ],
+ "label_px": 45,
+ "mode": "realms_worn",
+ "style_A": {
+  "edge_age": 0.0,
+  "paint": 0.78
+ },
+ "style_B": {},
+ "chains": [
+  {
+   "id": "britain_documented",
+   "style": "documented",
+   "width": 6.0,
+   "ring_r": 18.0,
+   "ring_w": 4.4,
+   "stops": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187",
+     "label": "Chepstow",
+     "ring_r": 10.4,
+     "ring_w": 3.6,
+     "ring_note": "capped: Chepstow-Berkeley pin centres are 30.6 plate px apart; 2x rings would overlap"
+    },
+    {
+     "row": "2-02",
+     "qid": "Q870815",
+     "pin": false,
+     "leg": "land",
+     "label": "Glamorgan",
+     "label_note": "MAP-PLACES 2-02: OMIT, Glamorgan (region), do not pin, label only: Glamorgan"
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "label": "Kenilworth",
+     "leg": "land"
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "label": "Berkeley",
+     "leg": "land",
+     "ring_r": 10.4,
+     "ring_w": 3.6,
+     "ring_note": "capped: Chepstow-Berkeley pin centres are 30.6 plate px apart; 2x rings would overlap"
+    }
+   ]
+  },
+  {
+   "id": "britain_fieschi",
+   "style": "claimed",
+   "width": 4.4,
+   "ring_r": 18.0,
+   "ring_w": 3.4,
+   "stops": [
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "no_stamp": true
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "label": "Corfe",
+     "leg": "land",
+     "ring_w": 3.4
+    },
+    {
+     "row": "2-06",
+     "qid": "Q22890",
+     "pin": false,
+     "leg": "sea",
+     "anchor_lonlat": [
+      -6.12,
+      52.45
+     ],
+     "anchor_note": "illustrative region touch ~8 km off the Wexford coast (MAP-PLACES 2-06 is OMIT: region, not a port); the Wikidata P625 of Q22890 is inland and is NOT used for the line",
+     "label": "Ireland",
+     "label_note": "MAP-PLACES 2-06: OMIT, do not pin, tint or label only: Ireland. Label sits on land at the Q22890 P625; the route's sea via stays the illustrative offshore anchor"
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "label": "Sandwich",
+     "leg": "sea",
+     "ring_w": 3.4
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "label": "Sluis",
+     "leg": "sea",
+     "ring_w": 3.4
+    }
+   ],
+   "dash": [
+    22.0,
+    15.0
+   ]
+  }
+ ],
+ "region_label_px": 42,
+ "approx_areas": []
+}

@@ -1,0 +1,222 @@
+{
+ "name": "edward_map2b_atlas_p0",
+ "about": "Chronicle Atlas P0. Same framing/stops as edward_map2b_v2_r2. Britain 2-01..2-04 documented (solid, small); 2-04..2-08 and the whole continent 2-08..2-15 Fieschi-claimed (broken, lighter). Hermitages 2-16..2-18 UNCERTAIN: nothing drawn, no area.",
+ "seed": 1328,
+ "map": {
+  "center_lonlat": [
+   0.9,
+   48.7
+  ],
+  "width_km": 2300
+ },
+ "basemap": {
+  "river_rank": 4,
+  "river_px": 1.3,
+  "shallow_px": 26,
+  "rim_px": 3.5
+ },
+ "control_points": [
+  {
+   "ref": "Land's End",
+   "dir": "W",
+   "search_px": 20
+  },
+  {
+   "ref": "Pointe du Raz",
+   "dir": "W",
+   "search_px": 20
+  },
+  {
+   "ref": "Cap de la Hague",
+   "dir": "NW",
+   "search_px": 20
+  },
+  {
+   "ref": "Cap Gris-Nez",
+   "dir": "W",
+   "search_px": 20
+  },
+  {
+   "ref": "Mizen Head",
+   "dir": "SW",
+   "search_px": 20
+  },
+  {
+   "ref": "Den Helder",
+   "dir": "N",
+   "search_px": 20
+  },
+  {
+   "ref": "Portofino",
+   "dir": "S",
+   "search_px": 20
+  },
+  {
+   "ref": "Cape Finisterre",
+   "dir": "W",
+   "search_px": 20
+  }
+ ],
+ "out_wh": [
+  1920,
+  1080
+ ],
+ "plate_wh": [
+  2048,
+  1152
+ ],
+ "push": [
+  1.0,
+  1.06
+ ],
+ "label_px": 45,
+ "mode": "realms_worn",
+ "style_A": {
+  "edge_age": 0.0,
+  "paint": 0.78
+ },
+ "style_B": {},
+ "chains": [
+  {
+   "id": "britain_documented",
+   "style": "documented",
+   "width": 3.0,
+   "ring_r": 4.6,
+   "ring_w": 2.0,
+   "stops": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187"
+    },
+    {
+     "row": "2-02",
+     "qid": "Q870815",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "leg": "land"
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "leg": "land"
+    }
+   ]
+  },
+  {
+   "id": "britain_fieschi",
+   "style": "claimed",
+   "width": 2.6,
+   "ring_r": 4.6,
+   "ring_w": 1.6,
+   "stops": [
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "no_stamp": true
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "leg": "land"
+    },
+    {
+     "row": "2-06",
+     "qid": "Q22890",
+     "pin": false,
+     "leg": "sea",
+     "anchor_lonlat": [
+      -6.12,
+      52.45
+     ],
+     "anchor_note": "illustrative region touch ~8 km off the Wexford coast (MAP-PLACES 2-06 is OMIT: region, not a port); the Wikidata P625 of Q22890 is inland and is NOT used for the line",
+     "label": "Ireland",
+     "label_note": "MAP-PLACES 2-06: OMIT, do not pin, tint or label only: Ireland"
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "leg": "sea"
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "label": "Sluis",
+     "leg": "sea",
+     "ring_r": 14.0,
+     "ring_w": 3.8,
+     "ring_note": "Sluis is the continent chain's start: continent ring size"
+    }
+   ],
+   "dash": [
+    13.0,
+    10.0
+   ]
+  },
+  {
+   "id": "continent",
+   "style": "claimed",
+   "width": 5.0,
+   "ring_r": 14.0,
+   "ring_w": 3.0,
+   "stops": [
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "no_stamp": true
+    },
+    {
+     "row": "2-09",
+     "qid": "Q15878",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-10",
+     "qid": "Q206221",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-11",
+     "qid": "Q6397",
+     "label": "Avignon",
+     "leg": "land"
+    },
+    {
+     "row": "2-12",
+     "qid": "Q90",
+     "label": "Paris",
+     "leg": "land"
+    },
+    {
+     "row": "2-13",
+     "qid": "Q159856",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-14",
+     "qid": "Q365",
+     "label": "Cologne",
+     "leg": "land"
+    },
+    {
+     "row": "2-15",
+     "qid": "Q490",
+     "label": "Milan",
+     "leg": "land"
+    }
+   ],
+   "dash": [
+    20.0,
+    14.0
+   ]
+  }
+ ],
+ "region_label_px": 42,
+ "approx_areas": []
+}

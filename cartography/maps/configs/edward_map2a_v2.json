@@ -1,0 +1,135 @@
+{
+ "name": "edward_map2a_v2",
+ "about": "Map 2a v2 stills: Chepstow..Sluis (claimed/Fieschi, dashed vermilion). Vias are regions (no pin, no text). No v1 region tints: REALMS-1327 carries the colour.",
+ "seed": 1327,
+ "map": {
+  "center_lonlat": [
+   -2.3,
+   52.0
+  ],
+  "width_km": 1060
+ },
+ "basemap": {
+  "river_rank": 5,
+  "river_px": 1.5,
+  "shallow_px": 34
+ },
+ "control_points": [
+  {
+   "ref": "Land's End",
+   "dir": "W",
+   "search_px": 25
+  },
+  {
+   "ref": "Lizard Point, Cornwall",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Portland Bill",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Selsey Bill",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Hartland Point",
+   "dir": "NW",
+   "search_px": 25
+  },
+  {
+   "ref": "Cap Gris-Nez",
+   "dir": "W",
+   "search_px": 25
+  },
+  {
+   "ref": "Great Orme",
+   "dir": "N",
+   "search_px": 25
+  }
+ ],
+ "out_wh": [
+  1920,
+  1080
+ ],
+ "plate_wh": [
+  2048,
+  1152
+ ],
+ "push": [
+  1.0,
+  1.06
+ ],
+ "label_px": 30,
+ "mode": "realms_worn",
+ "style_A": {
+  "edge_age": 0.0
+ },
+ "style_B": {},
+ "chains": [
+  {
+   "id": "britain",
+   "style": "claimed",
+   "width": 3.0,
+   "ring_r": 9.0,
+   "ring_w": 2.2,
+   "stops": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187",
+     "label": "Chepstow"
+    },
+    {
+     "row": "2-02",
+     "qid": "Q870815",
+     "pin": false,
+     "leg": "land"
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "label": "Kenilworth",
+     "leg": "land"
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "label": "Berkeley",
+     "leg": "land"
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "label": "Corfe",
+     "leg": "land"
+    },
+    {
+     "row": "2-06",
+     "qid": "Q22890",
+     "pin": false,
+     "leg": "sea",
+     "anchor_lonlat": [
+      -6.12,
+      52.45
+     ],
+     "anchor_note": "illustrative region touch ~8 km off the Wexford coast (MAP-PLACES 2-06 is OMIT: region, not a port); the Wikidata P625 of Q22890 is inland and is NOT used for the line"
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "label": "Sandwich",
+     "leg": "sea"
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "label": "Sluis",
+     "leg": "sea"
+    }
+   ]
+  }
+ ]
+}

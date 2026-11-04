@@ -1,0 +1,4681 @@
+{
+ "name": "control_points_refpack_v2",
+ "px_space": "out px of the frame (plate px = 2x, also given)",
+ "thresholds": {
+  "euro": {
+   "pass_px": 4,
+   "flag_px": 8,
+   "pass_km": 7,
+   "flag_km": 13
+  },
+  "britain": {
+   "pass_px": 4,
+   "flag_px": 8,
+   "pass_km": 1.6,
+   "flag_km": 3.0
+  }
+ },
+ "warp_limit_frac_of_min_side": 0.025,
+ "frames": {
+  "euro_16x9": {
+   "control_points": [
+    {
+     "type": "headland",
+     "name": "Land's End",
+     "lon": -5.71522,
+     "lat": 50.0677,
+     "qid": "Q169532",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      680.2,
+      418.5
+     ],
+     "role": "primary",
+     "id": "CP01",
+     "plate_px": [
+      1360.4,
+      837.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Po mouth",
+     "lon": 12.5338,
+     "lat": 44.97,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      1555.3,
+      741.5
+     ],
+     "role": "primary",
+     "id": "CP02",
+     "plate_px": [
+      3110.6,
+      1483.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Elbe mouth",
+     "lon": 9.819,
+     "lat": 53.5404,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      1348.1,
+      162.0
+     ],
+     "role": "primary",
+     "id": "CP03",
+     "plate_px": [
+      2696.2,
+      324.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cape Finisterre",
+     "lon": -9.27222,
+     "lat": 42.8825,
+     "qid": "Q1136198",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      458.1,
+      902.9
+     ],
+     "role": "primary",
+     "id": "CP04",
+     "plate_px": [
+      916.2,
+      1805.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap de Creus",
+     "lon": 3.3171,
+     "lat": 42.322,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1106.5,
+      971.0
+     ],
+     "role": "primary",
+     "id": "CP05",
+     "plate_px": [
+      2213.0,
+      1942.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Seine-Marne (Charenton)",
+     "lon": 2.4069,
+     "lat": 48.8143,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      1048.2,
+      516.8
+     ],
+     "role": "primary",
+     "id": "CP06",
+     "plate_px": [
+      2096.4,
+      1033.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Spurn",
+     "lon": 0.13981,
+     "lat": 53.59383,
+     "qid": "Q542839",
+     "dir": "SE",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      945.0,
+      182.4
+     ],
+     "role": "primary",
+     "id": "CP07",
+     "plate_px": [
+      1890.0,
+      364.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Pointe de Grave",
+     "lon": -1.06,
+     "lat": 45.5701,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      883.3,
+      745.0
+     ],
+     "role": "primary",
+     "id": "CP08",
+     "plate_px": [
+      1766.6,
+      1490.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Rhine-Mosel (Koblenz)",
+     "lon": 7.6057,
+     "lat": 50.364,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      1277.8,
+      394.2
+     ],
+     "role": "primary",
+     "id": "CP09",
+     "plate_px": [
+      2555.6,
+      788.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Shannon mouth",
+     "lon": -8.7385,
+     "lat": 52.6728,
+     "source": "NE10m centerline end nearest coast (1.4 km)",
+     "px": [
+      567.5,
+      222.9
+     ],
+     "role": "primary",
+     "id": "CP10",
+     "plate_px": [
+      1135.0,
+      445.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Corse",
+     "lon": 9.41666,
+     "lat": 42.83398,
+     "qid": "Q858102",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      1418.6,
+      911.6
+     ],
+     "role": "primary",
+     "id": "CP11",
+     "plate_px": [
+      2837.2,
+      1823.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Mull of Galloway",
+     "lon": -4.8629,
+     "lat": 54.6377,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      741.9,
+      101.3
+     ],
+     "role": "primary",
+     "id": "CP12",
+     "plate_px": [
+      1483.8,
+      202.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Den Helder",
+     "lon": 4.75889,
+     "lat": 52.95833,
+     "qid": "Q9911",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      1140.2,
+      221.9
+     ],
+     "role": "primary",
+     "id": "CP13",
+     "plate_px": [
+      2280.4,
+      443.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Selsey Bill",
+     "lon": -0.78799,
+     "lat": 50.7227,
+     "qid": "Q3025853",
+     "dir": "S",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      902.7,
+      383.4
+     ],
+     "role": "primary",
+     "id": "CP14",
+     "plate_px": [
+      1805.4,
+      766.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cabo de Penas",
+     "lon": -5.8499,
+     "lat": 43.6628,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      637.5,
+      866.5
+     ],
+     "role": "primary",
+     "id": "CP15",
+     "plate_px": [
+      1275.0,
+      1733.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Po-Ticino (Pavia)",
+     "lon": 9.2241,
+     "lat": 45.1405,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      1391.3,
+      751.6
+     ],
+     "role": "primary",
+     "id": "CP16",
+     "plate_px": [
+      2782.6,
+      1503.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Frehel",
+     "lon": -2.3265,
+     "lat": 48.685,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      829.0,
+      524.6
+     ],
+     "role": "primary",
+     "id": "CP17",
+     "plate_px": [
+      1658.0,
+      1049.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Sicie",
+     "lon": 5.8604,
+     "lat": 43.0497,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1235.2,
+      913.2
+     ],
+     "role": "primary",
+     "id": "CP18",
+     "plate_px": [
+      2470.4,
+      1826.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Braich y Pwll (Lleyn tip)",
+     "lon": -4.7616,
+     "lat": 52.7906,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      736.6,
+      230.9
+     ],
+     "role": "primary",
+     "id": "CP19",
+     "plate_px": [
+      1473.2,
+      461.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Loire-Vienne (Candes)",
+     "lon": 0.0754,
+     "lat": 47.2182,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      939.7,
+      630.0
+     ],
+     "role": "primary",
+     "id": "CP20",
+     "plate_px": [
+      1879.4,
+      1260.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Orford Ness",
+     "lon": 1.5798,
+     "lat": 52.0808,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1006.6,
+      288.2
+     ],
+     "role": "primary",
+     "id": "CP21",
+     "plate_px": [
+      2013.2,
+      576.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Pointe du Raz",
+     "lon": -4.74111,
+     "lat": 48.04028,
+     "qid": "Q1500472",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      714.1,
+      563.9
+     ],
+     "role": "primary",
+     "id": "CP22",
+     "plate_px": [
+      1428.2,
+      1127.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Schelde mouth",
+     "lon": 4.3083,
+     "lat": 51.2686,
+     "source": "NE10m centerline end nearest coast (0.3 km)",
+     "px": [
+      1127.3,
+      341.4
+     ],
+     "role": "primary",
+     "id": "CP23",
+     "plate_px": [
+      2254.6,
+      682.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Brean Down",
+     "lon": -3.029,
+     "lat": 51.3256,
+     "qid": "Q3403788",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      805.1,
+      338.0
+     ],
+     "role": "primary",
+     "id": "CP24",
+     "plate_px": [
+      1610.2,
+      676.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Seine mouth",
+     "lon": 0.4932,
+     "lat": 49.4936,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      959.7,
+      470.2
+     ],
+     "role": "primary",
+     "id": "CP25",
+     "plate_px": [
+      1919.4,
+      940.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Mizen Head",
+     "lon": -9.81944,
+     "lat": 51.45028,
+     "qid": "Q674377",
+     "dir": "SW",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      509.9,
+      302.0
+     ],
+     "role": "primary",
+     "id": "CP26",
+     "plate_px": [
+      1019.8,
+      604.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cabo Ortegal",
+     "lon": -7.8798,
+     "lat": 43.762,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      535.6,
+      849.8
+     ],
+     "role": "primary",
+     "id": "CP27",
+     "plate_px": [
+      1071.2,
+      1699.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Loire mouth",
+     "lon": -1.7345,
+     "lat": 47.2108,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      853.4,
+      629.0
+     ],
+     "role": "primary",
+     "id": "CP28",
+     "plate_px": [
+      1706.8,
+      1258.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "settlement",
+     "name": "Chepstow",
+     "lon": -2.6757,
+     "lat": 51.6439,
+     "qid": "Q1070187",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      821.6,
+      316.3
+     ],
+     "role": "secondary",
+     "id": "CP29",
+     "plate_px": [
+      1643.2,
+      632.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Kenilworth",
+     "lon": -1.59111,
+     "lat": 52.347,
+     "qid": "Q1738764",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      870.3,
+      268.6
+     ],
+     "role": "secondary",
+     "id": "CP30",
+     "plate_px": [
+      1740.6,
+      537.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Berkeley",
+     "lon": -2.4569444444444444,
+     "lat": 51.68861111111111,
+     "qid": "Q4891993",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      831.3,
+      313.6
+     ],
+     "role": "secondary",
+     "id": "CP31",
+     "plate_px": [
+      1662.6,
+      627.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Gloucester",
+     "lon": -2.24654,
+     "lat": 51.8673,
+     "qid": "Q262500",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      840.9,
+      301.4
+     ],
+     "role": "secondary",
+     "id": "CP32",
+     "plate_px": [
+      1681.8,
+      602.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Bristol",
+     "lon": -2.5975,
+     "lat": 51.45361111111111,
+     "qid": "Q23154",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      824.4,
+      329.8
+     ],
+     "role": "secondary",
+     "id": "CP33",
+     "plate_px": [
+      1648.8,
+      659.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Lincoln",
+     "lon": -0.55,
+     "lat": 53.25,
+     "qid": "Q180057",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      915.8,
+      206.2
+     ],
+     "role": "secondary",
+     "id": "CP34",
+     "plate_px": [
+      1831.6,
+      412.4
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Corfe",
+     "lon": -2.0589,
+     "lat": 50.6399,
+     "qid": "Q1236511",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      846.0,
+      387.8
+     ],
+     "role": "secondary",
+     "id": "CP35",
+     "plate_px": [
+      1692.0,
+      775.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Winchester",
+     "lon": -1.3086111111111,
+     "lat": 51.063333333333,
+     "qid": "Q172157",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      880.2,
+      359.0
+     ],
+     "role": "secondary",
+     "id": "CP36",
+     "plate_px": [
+      1760.4,
+      718.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Westminster",
+     "lon": -0.12416666666667,
+     "lat": 51.499444444444,
+     "qid": "Q62408",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      932.7,
+      329.3
+     ],
+     "role": "secondary",
+     "id": "CP37",
+     "plate_px": [
+      1865.4,
+      658.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Tyburn",
+     "lon": -0.164,
+     "lat": 51.512861111111,
+     "qid": "Q1362341",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      931.0,
+      328.3
+     ],
+     "role": "secondary",
+     "id": "CP38",
+     "plate_px": [
+      1862.0,
+      656.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Nottingham",
+     "lon": -1.1547222222222222,
+     "lat": 52.94916666666667,
+     "qid": "Q17642916",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      889.9,
+      226.8
+     ],
+     "role": "secondary",
+     "id": "CP39",
+     "plate_px": [
+      1779.8,
+      453.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Sandwich",
+     "lon": 1.3388888888889,
+     "lat": 51.274722222222,
+     "qid": "Q26163",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      996.9,
+      345.0
+     ],
+     "role": "secondary",
+     "id": "CP40",
+     "plate_px": [
+      1993.8,
+      690.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Sluis",
+     "lon": 3.3883,
+     "lat": 51.3089,
+     "qid": "Q2065987",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1086.8,
+      340.3
+     ],
+     "role": "secondary",
+     "id": "CP41",
+     "plate_px": [
+      2173.6,
+      680.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Avignon",
+     "lon": 4.8083333333333,
+     "lat": 43.948611111111,
+     "qid": "Q6397",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1177.9,
+      853.5
+     ],
+     "role": "secondary",
+     "id": "CP42",
+     "plate_px": [
+      2355.8,
+      1707.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Paris",
+     "lon": 2.352222222222222,
+     "lat": 48.85666666666667,
+     "qid": "Q90",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1045.6,
+      513.9
+     ],
+     "role": "secondary",
+     "id": "CP43",
+     "plate_px": [
+      2091.2,
+      1027.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Cologne",
+     "lon": 6.9577777777778,
+     "lat": 50.942222222222,
+     "qid": "Q365",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1245.4,
+      356.3
+     ],
+     "role": "secondary",
+     "id": "CP44",
+     "plate_px": [
+      2490.8,
+      712.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Milan",
+     "lon": 9.19,
+     "lat": 45.466944444444,
+     "qid": "Q490",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1387.1,
+      729.0
+     ],
+     "role": "secondary",
+     "id": "CP45",
+     "plate_px": [
+      2774.2,
+      1458.0
+     ],
+     "search_px_out": 60
+    }
+   ],
+   "prototype": {
+    "synthetic_warp": "affine (scale 1.025, rot 0.9 deg, shift 14,-9 px) + smooth random field (max 13 px) + one local bulge at Land's End (24,13 px)",
+    "orb_matches": 4020,
+    "orb_inliers": 3041,
+    "matched": 27,
+    "unmatched": [
+     "CP01"
+    ],
+    "loo_rms_px": 1.11,
+    "loo_max_px": 2.37,
+    "loo_rms_km": 1.75,
+    "loo_max_km": 3.75,
+    "affine_only_rms_px": 3.87,
+    "match_err_vs_truth_rms_px": 0.38,
+    "coast_true_error_px": {
+     "tps_median": 0.61,
+     "tps_p95": 3.65,
+     "tps_max": 26.16,
+     "affine_median": 3.39,
+     "affine_p95": 7.0,
+     "n": 4954,
+     "note": "synthetic truth known: |registered - true| at every 7th NE coastline pixel inside the frame"
+    },
+    "counts": {
+     "pass": 27,
+     "flag": 0,
+     "fail": 0
+    },
+    "rejected_from_fit": [],
+    "robust": {
+     "smoothing": 5.0,
+     "reject_loo_px": 12.0,
+     "min_points": 12
+    },
+    "warp_limit_exceeded": [],
+    "points": [
+     {
+      "id": "CP02",
+      "name": "Po mouth",
+      "ncc": 0.888,
+      "match_err_vs_truth_px": 0.39,
+      "loo_residual_px": 1.78,
+      "loo_residual_km": 2.81,
+      "nonaffine_px": 5.15,
+      "affine_only_residual_px": 5.15,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP03",
+      "name": "Elbe mouth",
+      "ncc": 0.946,
+      "match_err_vs_truth_px": 0.18,
+      "loo_residual_px": 2.37,
+      "loo_residual_km": 3.75,
+      "nonaffine_px": 1.22,
+      "affine_only_residual_px": 1.22,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP04",
+      "name": "Cape Finisterre",
+      "ncc": 0.924,
+      "match_err_vs_truth_px": 0.31,
+      "loo_residual_px": 0.47,
+      "loo_residual_km": 0.75,
+      "nonaffine_px": 1.11,
+      "affine_only_residual_px": 1.11,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP05",
+      "name": "Cap de Creus",
+      "ncc": 0.937,
+      "match_err_vs_truth_px": 0.22,
+      "loo_residual_px": 1.61,
+      "loo_residual_km": 2.55,
+      "nonaffine_px": 5.56,
+      "affine_only_residual_px": 5.56,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP06",
+      "name": "Seine-Marne (Charenton)",
+      "ncc": 0.93,
+      "match_err_vs_truth_px": 0.13,
+      "loo_residual_px": 1.29,
+      "loo_residual_km": 2.05,
+      "nonaffine_px": 0.98,
+      "affine_only_residual_px": 0.98,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP07",
+      "name": "Spurn",
+      "ncc": 0.866,
+      "match_err_vs_truth_px": 0.55,
+      "loo_residual_px": 1.47,
+      "loo_residual_km": 2.32,
+      "nonaffine_px": 7.47,
+      "affine_only_residual_px": 7.47,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP08",
+      "name": "Pointe de Grave",
+      "ncc": 0.945,
+      "match_err_vs_truth_px": 0.11,
+      "loo_residual_px": 0.53,
+      "loo_residual_km": 0.84,
+      "nonaffine_px": 0.93,
+      "affine_only_residual_px": 0.93,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP09",
+      "name": "Rhine-Mosel (Koblenz)",
+      "ncc": 0.908,
+      "match_err_vs_truth_px": 0.05,
+      "loo_residual_px": 1.67,
+      "loo_residual_km": 2.65,
+      "nonaffine_px": 0.62,
+      "affine_only_residual_px": 0.62,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP10",
+      "name": "Shannon mouth",
+      "ncc": 0.865,
+      "match_err_vs_truth_px": 0.37,
+      "loo_residual_px": 1.43,
+      "loo_residual_km": 2.27,
+      "nonaffine_px": 1.87,
+      "affine_only_residual_px": 1.87,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP11",
+      "name": "Cap Corse",
+      "ncc": 0.937,
+      "match_err_vs_truth_px": 0.22,
+      "loo_residual_px": 0.45,
+      "loo_residual_km": 0.72,
+      "nonaffine_px": 0.94,
+      "affine_only_residual_px": 0.94,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP12",
+      "name": "Mull of Galloway",
+      "ncc": 0.786,
+      "match_err_vs_truth_px": 0.9,
+      "loo_residual_px": 1.46,
+      "loo_residual_km": 2.32,
+      "nonaffine_px": 5.66,
+      "affine_only_residual_px": 5.66,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP13",
+      "name": "Den Helder",
+      "ncc": 0.868,
+      "match_err_vs_truth_px": 0.27,
+      "loo_residual_px": 1.57,
+      "loo_residual_km": 2.49,
+      "nonaffine_px": 3.55,
+      "affine_only_residual_px": 3.55,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP14",
+      "name": "Selsey Bill",
+      "ncc": 0.938,
+      "match_err_vs_truth_px": 0.06,
+      "loo_residual_px": 0.45,
+      "loo_residual_km": 0.72,
+      "nonaffine_px": 6.01,
+      "affine_only_residual_px": 6.01,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP15",
+      "name": "Cabo de Penas",
+      "ncc": 0.888,
+      "match_err_vs_truth_px": 0.29,
+      "loo_residual_px": 0.86,
+      "loo_residual_km": 1.37,
+      "nonaffine_px": 0.51,
+      "affine_only_residual_px": 0.51,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP16",
+      "name": "Po-Ticino (Pavia)",
+      "ncc": 0.926,
+      "match_err_vs_truth_px": 0.17,
+      "loo_residual_px": 1.64,
+      "loo_residual_km": 2.6,
+      "nonaffine_px": 3.83,
+      "affine_only_residual_px": 3.83,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP17",
+      "name": "Cap Frehel",
+      "ncc": 0.911,
+      "match_err_vs_truth_px": 0.15,
+      "loo_residual_px": 0.31,
+      "loo_residual_km": 0.49,
+      "nonaffine_px": 4.52,
+      "affine_only_residual_px": 4.52,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP18",
+      "name": "Cap Sicie",
+      "ncc": 0.953,
+      "match_err_vs_truth_px": 0.34,
+      "loo_residual_px": 0.46,
+      "loo_residual_km": 0.72,
+      "nonaffine_px": 3.39,
+      "affine_only_residual_px": 3.39,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP19",
+      "name": "Braich y Pwll (Lleyn tip)",
+      "ncc": 0.883,
+      "match_err_vs_truth_px": 0.83,
+      "loo_residual_px": 0.58,
+      "loo_residual_km": 0.91,
+      "nonaffine_px": 4.88,
+      "affine_only_residual_px": 4.88,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP20",
+      "name": "Loire-Vienne (Candes)",
+      "ncc": 0.976,
+      "match_err_vs_truth_px": 0.14,
+      "loo_residual_px": 0.55,
+      "loo_residual_km": 0.87,
+      "nonaffine_px": 0.99,
+      "affine_only_residual_px": 0.99,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP21",
+      "name": "Orford Ness",
+      "ncc": 0.935,
+      "match_err_vs_truth_px": 0.24,
+      "loo_residual_px": 0.48,
+      "loo_residual_km": 0.76,
+      "nonaffine_px": 6.18,
+      "affine_only_residual_px": 6.18,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP22",
+      "name": "Pointe du Raz",
+      "ncc": 0.91,
+      "match_err_vs_truth_px": 0.48,
+      "loo_residual_px": 1.45,
+      "loo_residual_km": 2.3,
+      "nonaffine_px": 4.9,
+      "affine_only_residual_px": 4.9,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP23",
+      "name": "Schelde mouth",
+      "ncc": 0.859,
+      "match_err_vs_truth_px": 0.21,
+      "loo_residual_px": 0.04,
+      "loo_residual_km": 0.06,
+      "nonaffine_px": 3.14,
+      "affine_only_residual_px": 3.14,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP24",
+      "name": "Brean Down",
+      "ncc": 0.914,
+      "match_err_vs_truth_px": 0.51,
+      "loo_residual_px": 0.25,
+      "loo_residual_km": 0.4,
+      "nonaffine_px": 5.57,
+      "affine_only_residual_px": 5.57,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP25",
+      "name": "Seine mouth",
+      "ncc": 0.933,
+      "match_err_vs_truth_px": 0.3,
+      "loo_residual_px": 0.56,
+      "loo_residual_km": 0.89,
+      "nonaffine_px": 3.63,
+      "affine_only_residual_px": 3.63,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP26",
+      "name": "Mizen Head",
+      "ncc": 0.879,
+      "match_err_vs_truth_px": 0.57,
+      "loo_residual_px": 0.47,
+      "loo_residual_km": 0.75,
+      "nonaffine_px": 2.45,
+      "affine_only_residual_px": 2.45,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP27",
+      "name": "Cabo Ortegal",
+      "ncc": 0.892,
+      "match_err_vs_truth_px": 0.35,
+      "loo_residual_px": 0.25,
+      "loo_residual_km": 0.4,
+      "nonaffine_px": 0.73,
+      "affine_only_residual_px": 0.73,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP28",
+      "name": "Loire mouth",
+      "ncc": 0.893,
+      "match_err_vs_truth_px": 0.18,
+      "loo_residual_px": 0.35,
+      "loo_residual_km": 0.55,
+      "nonaffine_px": 2.69,
+      "affine_only_residual_px": 2.69,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     }
+    ],
+    "files": {
+     "synthetic_plate": "img_v2/euro_16x9_regproto_synthetic_plate.png",
+     "qa_overlay": "img_v2/euro_16x9_regproto_qa_overlay.png"
+    }
+   }
+  },
+  "britain_16x9": {
+   "control_points": [
+    {
+     "type": "headland",
+     "name": "Cap Gris-Nez",
+     "lon": 1.58361,
+     "lat": 50.87083,
+     "qid": "Q531030",
+     "dir": "NW",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      1749.5,
+      844.4
+     ],
+     "role": "primary",
+     "id": "CP01",
+     "plate_px": [
+      3499.0,
+      1688.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Portland Bill",
+     "lon": -2.45722,
+     "lat": 50.51444,
+     "qid": "Q1309953",
+     "dir": "S",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      977.9,
+      974.7
+     ],
+     "role": "primary",
+     "id": "CP02",
+     "plate_px": [
+      1955.8,
+      1949.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Great Orme",
+     "lon": -3.85556,
+     "lat": 53.33333,
+     "qid": "Q3395318",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      723.9,
+      119.0
+     ],
+     "role": "primary",
+     "id": "CP03",
+     "plate_px": [
+      1447.8,
+      238.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Hartland Point",
+     "lon": -4.52528,
+     "lat": 51.0219,
+     "qid": "Q907467",
+     "dir": "NW",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      583.8,
+      816.0
+     ],
+     "role": "primary",
+     "id": "CP04",
+     "plate_px": [
+      1167.6,
+      1632.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Selsey Bill",
+     "lon": -0.78799,
+     "lat": 50.7227,
+     "qid": "Q3025853",
+     "dir": "S",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      1297.8,
+      907.6
+     ],
+     "role": "primary",
+     "id": "CP05",
+     "plate_px": [
+      2595.6,
+      1815.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "The Needles",
+     "lon": -1.58933,
+     "lat": 50.6627,
+     "qid": "Q2281259",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      1144.4,
+      928.6
+     ],
+     "role": "primary",
+     "id": "CP06",
+     "plate_px": [
+      2288.8,
+      1857.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Brean Down",
+     "lon": -3.029,
+     "lat": 51.3256,
+     "qid": "Q3403788",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      869.4,
+      728.8
+     ],
+     "role": "primary",
+     "id": "CP07",
+     "plate_px": [
+      1738.8,
+      1457.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "St David's Head",
+     "lon": -5.3002,
+     "lat": 51.8883,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      446.1,
+      549.0
+     ],
+     "role": "primary",
+     "id": "CP08",
+     "plate_px": [
+      892.2,
+      1098.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Strumble Head",
+     "lon": -5.0695,
+     "lat": 52.0264,
+     "dir": "NW",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      490.6,
+      508.7
+     ],
+     "role": "primary",
+     "id": "CP09",
+     "plate_px": [
+      981.2,
+      1017.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Braich y Pwll (Lleyn tip)",
+     "lon": -4.7616,
+     "lat": 52.7906,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      555.1,
+      279.3
+     ],
+     "role": "primary",
+     "id": "CP10",
+     "plate_px": [
+      1110.2,
+      558.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Holy Head (Anglesey)",
+     "lon": -4.6907,
+     "lat": 53.3114,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      572.7,
+      122.0
+     ],
+     "role": "primary",
+     "id": "CP11",
+     "plate_px": [
+      1145.4,
+      244.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Worms Head (Gower)",
+     "lon": -4.2974,
+     "lat": 51.5692,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      631.1,
+      651.4
+     ],
+     "role": "primary",
+     "id": "CP12",
+     "plate_px": [
+      1262.2,
+      1302.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "North Foreland",
+     "lon": 1.4476,
+     "lat": 51.3807,
+     "dir": "NE",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1715.2,
+      691.7
+     ],
+     "role": "primary",
+     "id": "CP13",
+     "plate_px": [
+      3430.4,
+      1383.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "South Foreland",
+     "lon": 1.3697,
+     "lat": 51.1405,
+     "dir": "SE",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1704.3,
+      765.1
+     ],
+     "role": "primary",
+     "id": "CP14",
+     "plate_px": [
+      3408.6,
+      1530.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Dungeness",
+     "lon": 0.9687,
+     "lat": 50.9153,
+     "dir": "SE",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1631.5,
+      837.1
+     ],
+     "role": "primary",
+     "id": "CP15",
+     "plate_px": [
+      3263.0,
+      1674.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Beachy Head",
+     "lon": 0.2399,
+     "lat": 50.7471,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1494.5,
+      894.1
+     ],
+     "role": "primary",
+     "id": "CP16",
+     "plate_px": [
+      2989.0,
+      1788.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Orford Ness",
+     "lon": 1.5798,
+     "lat": 52.0808,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1728.1,
+      478.6
+     ],
+     "role": "primary",
+     "id": "CP17",
+     "plate_px": [
+      3456.2,
+      957.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Lowestoft Ness",
+     "lon": 1.764,
+     "lat": 52.4746,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      1755.2,
+      357.5
+     ],
+     "role": "primary",
+     "id": "CP18",
+     "plate_px": [
+      3510.4,
+      715.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Carnsore Point",
+     "lon": -6.3672,
+     "lat": 52.1816,
+     "dir": "SE",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      251.6,
+      451.3
+     ],
+     "role": "primary",
+     "id": "CP19",
+     "plate_px": [
+      503.2,
+      902.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Wicklow Head",
+     "lon": -5.9939,
+     "lat": 52.9584,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      332.0,
+      219.7
+     ],
+     "role": "primary",
+     "id": "CP20",
+     "plate_px": [
+      664.0,
+      439.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Howth Head",
+     "lon": -6.0575,
+     "lat": 53.3746,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      326.6,
+      93.3
+     ],
+     "role": "primary",
+     "id": "CP21",
+     "plate_px": [
+      653.2,
+      186.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Hook Head",
+     "lon": -6.9321,
+     "lat": 52.1247,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      145.8,
+      462.6
+     ],
+     "role": "primary",
+     "id": "CP22",
+     "plate_px": [
+      291.6,
+      925.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "St Ann's Head",
+     "lon": -5.1698,
+     "lat": 51.6889,
+     "dir": "SW",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      468.3,
+      610.2
+     ],
+     "role": "primary",
+     "id": "CP23",
+     "plate_px": [
+      936.6,
+      1220.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Thames mouth",
+     "lon": 0.3845,
+     "lat": 51.4531,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      1513.6,
+      679.3
+     ],
+     "role": "primary",
+     "id": "CP24",
+     "plate_px": [
+      3027.2,
+      1358.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Severn mouth",
+     "lon": -2.3914,
+     "lat": 51.7778,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      989.7,
+      592.1
+     ],
+     "role": "primary",
+     "id": "CP25",
+     "plate_px": [
+      1979.4,
+      1184.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "settlement",
+     "name": "Chepstow",
+     "lon": -2.6757,
+     "lat": 51.6439,
+     "qid": "Q1070187",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      936.4,
+      632.7
+     ],
+     "role": "secondary",
+     "id": "CP26",
+     "plate_px": [
+      1872.8,
+      1265.4
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Kenilworth",
+     "lon": -1.59111,
+     "lat": 52.347,
+     "qid": "Q1738764",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1137.4,
+      418.6
+     ],
+     "role": "secondary",
+     "id": "CP27",
+     "plate_px": [
+      2274.8,
+      837.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Berkeley",
+     "lon": -2.4569444444444444,
+     "lat": 51.68861111111111,
+     "qid": "Q4891993",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      977.5,
+      619.1
+     ],
+     "role": "secondary",
+     "id": "CP28",
+     "plate_px": [
+      1955.0,
+      1238.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Gloucester",
+     "lon": -2.24654,
+     "lat": 51.8673,
+     "qid": "Q262500",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1016.7,
+      564.9
+     ],
+     "role": "secondary",
+     "id": "CP29",
+     "plate_px": [
+      2033.4,
+      1129.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Bristol",
+     "lon": -2.5975,
+     "lat": 51.45361111111111,
+     "qid": "Q23154",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      951.0,
+      690.3
+     ],
+     "role": "secondary",
+     "id": "CP30",
+     "plate_px": [
+      1902.0,
+      1380.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Lincoln",
+     "lon": -0.55,
+     "lat": 53.25,
+     "qid": "Q180057",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1322.3,
+      141.3
+     ],
+     "role": "secondary",
+     "id": "CP31",
+     "plate_px": [
+      2644.6,
+      282.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Corfe",
+     "lon": -2.0589,
+     "lat": 50.6399,
+     "qid": "Q1236511",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1054.3,
+      936.4
+     ],
+     "role": "secondary",
+     "id": "CP32",
+     "plate_px": [
+      2108.6,
+      1872.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Winchester",
+     "lon": -1.3086111111111,
+     "lat": 51.063333333333,
+     "qid": "Q172157",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1196.3,
+      806.5
+     ],
+     "role": "secondary",
+     "id": "CP33",
+     "plate_px": [
+      2392.6,
+      1613.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Westminster",
+     "lon": -0.12416666666667,
+     "lat": 51.499444444444,
+     "qid": "Q62408",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1417.2,
+      668.8
+     ],
+     "role": "secondary",
+     "id": "CP34",
+     "plate_px": [
+      2834.4,
+      1337.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Tyburn",
+     "lon": -0.164,
+     "lat": 51.512861111111,
+     "qid": "Q1362341",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1409.6,
+      665.0
+     ],
+     "role": "secondary",
+     "id": "CP35",
+     "plate_px": [
+      2819.2,
+      1330.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Nottingham",
+     "lon": -1.1547222222222222,
+     "lat": 52.94916666666667,
+     "qid": "Q17642916",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1214.6,
+      235.0
+     ],
+     "role": "secondary",
+     "id": "CP36",
+     "plate_px": [
+      2429.2,
+      470.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Sandwich",
+     "lon": 1.3388888888889,
+     "lat": 51.274722222222,
+     "qid": "Q26163",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      1696.3,
+      724.9
+     ],
+     "role": "secondary",
+     "id": "CP37",
+     "plate_px": [
+      3392.6,
+      1449.8
+     ],
+     "search_px_out": 60
+    }
+   ],
+   "prototype": {
+    "synthetic_warp": "affine (scale 1.025, rot 0.9 deg, shift 14,-9 px) + smooth random field (max 13 px) + one local bulge at Portland Bill (24,13 px)",
+    "orb_matches": 3349,
+    "orb_inliers": 2216,
+    "matched": 24,
+    "unmatched": [],
+    "loo_rms_px": 1.76,
+    "loo_max_px": 3.66,
+    "loo_rms_km": 0.64,
+    "loo_max_km": 1.34,
+    "affine_only_rms_px": 5.21,
+    "match_err_vs_truth_rms_px": 0.55,
+    "coast_true_error_px": {
+     "tps_median": 0.72,
+     "tps_p95": 5.37,
+     "tps_max": 25.85,
+     "affine_median": 3.14,
+     "affine_p95": 10.62,
+     "n": 3482,
+     "note": "synthetic truth known: |registered - true| at every 7th NE coastline pixel inside the frame"
+    },
+    "counts": {
+     "pass": 24,
+     "flag": 0,
+     "fail": 0
+    },
+    "rejected_from_fit": [
+     {
+      "id": "CP02",
+      "name": "Portland Bill",
+      "ncc": 0.797,
+      "match_err_vs_truth_px": 1.09,
+      "residual_vs_final_fit_px": 25.27,
+      "residual_vs_final_fit_km": 9.28,
+      "nonaffine_px": 29.6,
+      "qa": "fail",
+      "warp_limit_exceeded": true,
+      "action": "local correction: the plate disagrees with the geodata here (or the match is wrong) - inspect overlay"
+     }
+    ],
+    "robust": {
+     "smoothing": 5.0,
+     "reject_loo_px": 12.0,
+     "min_points": 12
+    },
+    "warp_limit_exceeded": [
+     "CP02"
+    ],
+    "points": [
+     {
+      "id": "CP01",
+      "name": "Cap Gris-Nez",
+      "ncc": 0.879,
+      "match_err_vs_truth_px": 0.57,
+      "loo_residual_px": 1.07,
+      "loo_residual_km": 0.39,
+      "nonaffine_px": 4.17,
+      "affine_only_residual_px": 4.17,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP03",
+      "name": "Great Orme",
+      "ncc": 0.898,
+      "match_err_vs_truth_px": 0.26,
+      "loo_residual_px": 3.66,
+      "loo_residual_km": 1.34,
+      "nonaffine_px": 3.47,
+      "affine_only_residual_px": 3.47,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP04",
+      "name": "Hartland Point",
+      "ncc": 0.984,
+      "match_err_vs_truth_px": 0.26,
+      "loo_residual_px": 3.53,
+      "loo_residual_km": 1.3,
+      "nonaffine_px": 0.73,
+      "affine_only_residual_px": 0.73,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP05",
+      "name": "Selsey Bill",
+      "ncc": 0.928,
+      "match_err_vs_truth_px": 0.79,
+      "loo_residual_px": 0.42,
+      "loo_residual_km": 0.16,
+      "nonaffine_px": 3.04,
+      "affine_only_residual_px": 3.04,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP06",
+      "name": "The Needles",
+      "ncc": 0.834,
+      "match_err_vs_truth_px": 0.65,
+      "loo_residual_px": 2.13,
+      "loo_residual_km": 0.78,
+      "nonaffine_px": 4.98,
+      "affine_only_residual_px": 4.98,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP07",
+      "name": "Brean Down",
+      "ncc": 0.958,
+      "match_err_vs_truth_px": 0.29,
+      "loo_residual_px": 1.14,
+      "loo_residual_km": 0.42,
+      "nonaffine_px": 0.85,
+      "affine_only_residual_px": 0.85,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP08",
+      "name": "St David's Head",
+      "ncc": 0.917,
+      "match_err_vs_truth_px": 0.37,
+      "loo_residual_px": 0.68,
+      "loo_residual_km": 0.25,
+      "nonaffine_px": 7.81,
+      "affine_only_residual_px": 7.81,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP09",
+      "name": "Strumble Head",
+      "ncc": 0.926,
+      "match_err_vs_truth_px": 0.06,
+      "loo_residual_px": 0.38,
+      "loo_residual_km": 0.14,
+      "nonaffine_px": 6.72,
+      "affine_only_residual_px": 6.72,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP10",
+      "name": "Braich y Pwll (Lleyn tip)",
+      "ncc": 0.934,
+      "match_err_vs_truth_px": 0.17,
+      "loo_residual_px": 1.55,
+      "loo_residual_km": 0.57,
+      "nonaffine_px": 2.36,
+      "affine_only_residual_px": 2.36,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP11",
+      "name": "Holy Head (Anglesey)",
+      "ncc": 0.902,
+      "match_err_vs_truth_px": 0.67,
+      "loo_residual_px": 2.65,
+      "loo_residual_km": 0.97,
+      "nonaffine_px": 1.96,
+      "affine_only_residual_px": 1.96,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP12",
+      "name": "Worms Head (Gower)",
+      "ncc": 0.886,
+      "match_err_vs_truth_px": 0.16,
+      "loo_residual_px": 2.32,
+      "loo_residual_km": 0.85,
+      "nonaffine_px": 4.36,
+      "affine_only_residual_px": 4.36,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP13",
+      "name": "North Foreland",
+      "ncc": 0.915,
+      "match_err_vs_truth_px": 0.54,
+      "loo_residual_px": 1.33,
+      "loo_residual_km": 0.49,
+      "nonaffine_px": 2.62,
+      "affine_only_residual_px": 2.62,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP14",
+      "name": "South Foreland",
+      "ncc": 0.949,
+      "match_err_vs_truth_px": 1.04,
+      "loo_residual_px": 1.1,
+      "loo_residual_km": 0.4,
+      "nonaffine_px": 3.32,
+      "affine_only_residual_px": 3.32,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP15",
+      "name": "Dungeness",
+      "ncc": 0.9,
+      "match_err_vs_truth_px": 0.15,
+      "loo_residual_px": 1.18,
+      "loo_residual_km": 0.43,
+      "nonaffine_px": 4.15,
+      "affine_only_residual_px": 4.15,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP16",
+      "name": "Beachy Head",
+      "ncc": 0.952,
+      "match_err_vs_truth_px": 0.18,
+      "loo_residual_px": 1.05,
+      "loo_residual_km": 0.38,
+      "nonaffine_px": 1.43,
+      "affine_only_residual_px": 1.43,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP17",
+      "name": "Orford Ness",
+      "ncc": 0.806,
+      "match_err_vs_truth_px": 0.8,
+      "loo_residual_px": 1.93,
+      "loo_residual_km": 0.71,
+      "nonaffine_px": 5.58,
+      "affine_only_residual_px": 5.58,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP18",
+      "name": "Lowestoft Ness",
+      "ncc": 0.968,
+      "match_err_vs_truth_px": 0.5,
+      "loo_residual_px": 1.39,
+      "loo_residual_km": 0.51,
+      "nonaffine_px": 7.91,
+      "affine_only_residual_px": 7.91,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP19",
+      "name": "Carnsore Point",
+      "ncc": 0.906,
+      "match_err_vs_truth_px": 1.02,
+      "loo_residual_px": 1.48,
+      "loo_residual_km": 0.54,
+      "nonaffine_px": 10.56,
+      "affine_only_residual_px": 10.56,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP20",
+      "name": "Wicklow Head",
+      "ncc": 0.901,
+      "match_err_vs_truth_px": 0.67,
+      "loo_residual_px": 1.46,
+      "loo_residual_km": 0.54,
+      "nonaffine_px": 4.38,
+      "affine_only_residual_px": 4.38,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP21",
+      "name": "Howth Head",
+      "ncc": 0.869,
+      "match_err_vs_truth_px": 0.36,
+      "loo_residual_px": 0.85,
+      "loo_residual_km": 0.31,
+      "nonaffine_px": 5.3,
+      "affine_only_residual_px": 5.3,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP22",
+      "name": "Hook Head",
+      "ncc": 0.866,
+      "match_err_vs_truth_px": 0.78,
+      "loo_residual_px": 1.04,
+      "loo_residual_km": 0.38,
+      "nonaffine_px": 10.93,
+      "affine_only_residual_px": 10.93,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP23",
+      "name": "St Ann's Head",
+      "ncc": 0.81,
+      "match_err_vs_truth_px": 0.21,
+      "loo_residual_px": 1.07,
+      "loo_residual_km": 0.39,
+      "nonaffine_px": 6.0,
+      "affine_only_residual_px": 6.0,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP24",
+      "name": "Thames mouth",
+      "ncc": 0.93,
+      "match_err_vs_truth_px": 0.39,
+      "loo_residual_px": 1.95,
+      "loo_residual_km": 0.72,
+      "nonaffine_px": 2.61,
+      "affine_only_residual_px": 2.61,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP25",
+      "name": "Severn mouth",
+      "ncc": 0.943,
+      "match_err_vs_truth_px": 0.63,
+      "loo_residual_px": 1.83,
+      "loo_residual_km": 0.67,
+      "nonaffine_px": 0.5,
+      "affine_only_residual_px": 0.5,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     }
+    ],
+    "files": {
+     "synthetic_plate": "img_v2/britain_16x9_regproto_synthetic_plate.png",
+     "qa_overlay": "img_v2/britain_16x9_regproto_qa_overlay.png"
+    }
+   }
+  },
+  "euro_9x16": {
+   "control_points": [
+    {
+     "type": "headland",
+     "name": "Land's End",
+     "lon": -5.71522,
+     "lat": 50.0677,
+     "qid": "Q169532",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      181.8,
+      782.9
+     ],
+     "role": "primary",
+     "id": "CP01",
+     "plate_px": [
+      363.6,
+      1565.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Corse",
+     "lon": 9.41666,
+     "lat": 42.83398,
+     "qid": "Q858102",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      989.3,
+      1337.5
+     ],
+     "role": "primary",
+     "id": "CP02",
+     "plate_px": [
+      1978.6,
+      2675.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Grenen",
+     "lon": 10.6469,
+     "lat": 57.7456,
+     "qid": "Q1537592",
+     "dir": "NE",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      918.4,
+      182.5
+     ],
+     "role": "primary",
+     "id": "CP03",
+     "plate_px": [
+      1836.8,
+      365.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Rhine-Mosel (Koblenz)",
+     "lon": 7.6057,
+     "lat": 50.364,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      841.4,
+      764.8
+     ],
+     "role": "primary",
+     "id": "CP04",
+     "plate_px": [
+      1682.8,
+      1529.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Dunnet Head",
+     "lon": -3.37565,
+     "lat": 58.64475,
+     "qid": "Q1260729",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      342.8,
+      130.0
+     ],
+     "role": "primary",
+     "id": "CP05",
+     "plate_px": [
+      685.6,
+      260.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Ebro mouth",
+     "lon": 0.8972,
+     "lat": 40.7252,
+     "source": "NE10m centerline end nearest coast (2.6 km)",
+     "px": [
+      504.5,
+      1523.1
+     ],
+     "role": "primary",
+     "id": "CP06",
+     "plate_px": [
+      1009.0,
+      3046.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cabo de Penas",
+     "lon": -5.8499,
+     "lat": 43.6628,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      128.5,
+      1276.6
+     ],
+     "role": "primary",
+     "id": "CP07",
+     "plate_px": [
+      257.0,
+      2553.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Spurn",
+     "lon": 0.13981,
+     "lat": 53.59383,
+     "qid": "Q542839",
+     "dir": "SE",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      477.4,
+      526.2
+     ],
+     "role": "primary",
+     "id": "CP08",
+     "plate_px": [
+      954.8,
+      1052.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Loire-Vienne (Candes)",
+     "lon": 0.0754,
+     "lat": 47.2182,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      465.0,
+      1019.9
+     ],
+     "role": "primary",
+     "id": "CP09",
+     "plate_px": [
+      930.0,
+      2039.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Rh\u00f4ne mouth",
+     "lon": 4.6946,
+     "lat": 43.5791,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      719.4,
+      1298.8
+     ],
+     "role": "primary",
+     "id": "CP10",
+     "plate_px": [
+      1438.8,
+      2597.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Elbe mouth",
+     "lon": 9.819,
+     "lat": 53.5404,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      922.5,
+      509.8
+     ],
+     "role": "primary",
+     "id": "CP11",
+     "plate_px": [
+      1845.0,
+      1019.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Shannon mouth",
+     "lon": -8.7385,
+     "lat": 52.6728,
+     "source": "NE10m centerline end nearest coast (1.4 km)",
+     "px": [
+      60.4,
+      565.5
+     ],
+     "role": "primary",
+     "id": "CP12",
+     "plate_px": [
+      120.8,
+      1131.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Mull of Galloway",
+     "lon": -4.8629,
+     "lat": 54.6377,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      254.6,
+      433.9
+     ],
+     "role": "primary",
+     "id": "CP13",
+     "plate_px": [
+      509.2,
+      867.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Selsey Bill",
+     "lon": -0.78799,
+     "lat": 50.7227,
+     "qid": "Q3025853",
+     "dir": "S",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      427.8,
+      747.4
+     ],
+     "role": "primary",
+     "id": "CP14",
+     "plate_px": [
+      855.6,
+      1494.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Den Helder",
+     "lon": 4.75889,
+     "lat": 52.95833,
+     "qid": "Q9911",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      692.2,
+      572.7
+     ],
+     "role": "primary",
+     "id": "CP15",
+     "plate_px": [
+      1384.4,
+      1145.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Garonne mouth",
+     "lon": -0.5417,
+     "lat": 44.898,
+     "source": "NE10m centerline end nearest coast (0.1 km)",
+     "px": [
+      427.9,
+      1198.8
+     ],
+     "role": "primary",
+     "id": "CP16",
+     "plate_px": [
+      855.8,
+      2397.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Po-Ticino (Pavia)",
+     "lon": 9.2241,
+     "lat": 45.1405,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      961.4,
+      1160.6
+     ],
+     "role": "primary",
+     "id": "CP17",
+     "plate_px": [
+      1922.8,
+      2321.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Seine-Marne (Charenton)",
+     "lon": 2.4069,
+     "lat": 48.8143,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      586.3,
+      896.6
+     ],
+     "role": "primary",
+     "id": "CP18",
+     "plate_px": [
+      1172.6,
+      1793.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Frehel",
+     "lon": -2.3265,
+     "lat": 48.685,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      344.4,
+      902.1
+     ],
+     "role": "primary",
+     "id": "CP19",
+     "plate_px": [
+      688.8,
+      1804.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Braich y Pwll (Lleyn tip)",
+     "lon": -4.7616,
+     "lat": 52.7906,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      246.8,
+      576.8
+     ],
+     "role": "primary",
+     "id": "CP20",
+     "plate_px": [
+      493.6,
+      1153.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Orford Ness",
+     "lon": 1.5798,
+     "lat": 52.0808,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      543.8,
+      643.9
+     ],
+     "role": "primary",
+     "id": "CP21",
+     "plate_px": [
+      1087.6,
+      1287.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Pointe du Raz",
+     "lon": -4.74111,
+     "lat": 48.04028,
+     "qid": "Q1500472",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      217.1,
+      943.8
+     ],
+     "role": "primary",
+     "id": "CP22",
+     "plate_px": [
+      434.2,
+      1887.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Schelde mouth",
+     "lon": 4.3083,
+     "lat": 51.2686,
+     "source": "NE10m centerline end nearest coast (0.3 km)",
+     "px": [
+      676.2,
+      704.3
+     ],
+     "role": "primary",
+     "id": "CP23",
+     "plate_px": [
+      1352.4,
+      1408.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap de Creus",
+     "lon": 3.3171,
+     "lat": 42.322,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      644.2,
+      1398.5
+     ],
+     "role": "primary",
+     "id": "CP24",
+     "plate_px": [
+      1288.4,
+      2797.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Brean Down",
+     "lon": -3.029,
+     "lat": 51.3256,
+     "qid": "Q3403788",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      320.8,
+      695.9
+     ],
+     "role": "primary",
+     "id": "CP25",
+     "plate_px": [
+      641.6,
+      1391.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Ile de Re west tip",
+     "lon": -1.5558,
+     "lat": 46.2456,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      376.3,
+      1092.7
+     ],
+     "role": "primary",
+     "id": "CP26",
+     "plate_px": [
+      752.6,
+      2185.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Seine mouth",
+     "lon": 0.4932,
+     "lat": 49.4936,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      489.3,
+      843.9
+     ],
+     "role": "primary",
+     "id": "CP27",
+     "plate_px": [
+      978.6,
+      1687.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Gris-Nez",
+     "lon": 1.58361,
+     "lat": 50.87083,
+     "qid": "Q531030",
+     "dir": "NW",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      544.1,
+      737.6
+     ],
+     "role": "primary",
+     "id": "CP28",
+     "plate_px": [
+      1088.2,
+      1475.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "settlement",
+     "name": "Chepstow",
+     "lon": -2.6757,
+     "lat": 51.6439,
+     "qid": "Q1070187",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      339.3,
+      672.2
+     ],
+     "role": "secondary",
+     "id": "CP29",
+     "plate_px": [
+      678.6,
+      1344.4
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Kenilworth",
+     "lon": -1.59111,
+     "lat": 52.347,
+     "qid": "Q1738764",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      393.6,
+      620.3
+     ],
+     "role": "secondary",
+     "id": "CP30",
+     "plate_px": [
+      787.2,
+      1240.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Berkeley",
+     "lon": -2.4569444444444444,
+     "lat": 51.68861111111111,
+     "qid": "Q4891993",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      349.9,
+      669.3
+     ],
+     "role": "secondary",
+     "id": "CP31",
+     "plate_px": [
+      699.8,
+      1338.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Gloucester",
+     "lon": -2.24654,
+     "lat": 51.8673,
+     "qid": "Q262500",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      360.7,
+      656.0
+     ],
+     "role": "secondary",
+     "id": "CP32",
+     "plate_px": [
+      721.4,
+      1312.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Bristol",
+     "lon": -2.5975,
+     "lat": 51.45361111111111,
+     "qid": "Q23154",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      342.2,
+      687.1
+     ],
+     "role": "secondary",
+     "id": "CP33",
+     "plate_px": [
+      684.4,
+      1374.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Lincoln",
+     "lon": -0.55,
+     "lat": 53.25,
+     "qid": "Q180057",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      444.9,
+      552.1
+     ],
+     "role": "secondary",
+     "id": "CP34",
+     "plate_px": [
+      889.8,
+      1104.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Corfe",
+     "lon": -2.0589,
+     "lat": 50.6399,
+     "qid": "Q1236511",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      365.2,
+      751.4
+     ],
+     "role": "secondary",
+     "id": "CP35",
+     "plate_px": [
+      730.4,
+      1502.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Winchester",
+     "lon": -1.3086111111111,
+     "lat": 51.063333333333,
+     "qid": "Q172157",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      403.2,
+      720.2
+     ],
+     "role": "secondary",
+     "id": "CP36",
+     "plate_px": [
+      806.4,
+      1440.4
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Westminster",
+     "lon": -0.12416666666667,
+     "lat": 51.499444444444,
+     "qid": "Q62408",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      461.6,
+      688.1
+     ],
+     "role": "secondary",
+     "id": "CP37",
+     "plate_px": [
+      923.2,
+      1376.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Tyburn",
+     "lon": -0.164,
+     "lat": 51.512861111111,
+     "qid": "Q1362341",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      459.7,
+      687.0
+     ],
+     "role": "secondary",
+     "id": "CP38",
+     "plate_px": [
+      919.4,
+      1374.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Nottingham",
+     "lon": -1.1547222222222222,
+     "lat": 52.94916666666667,
+     "qid": "Q17642916",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      416.0,
+      574.5
+     ],
+     "role": "secondary",
+     "id": "CP39",
+     "plate_px": [
+      832.0,
+      1149.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Sandwich",
+     "lon": 1.3388888888889,
+     "lat": 51.274722222222,
+     "qid": "Q26163",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      532.2,
+      706.3
+     ],
+     "role": "secondary",
+     "id": "CP40",
+     "plate_px": [
+      1064.4,
+      1412.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Sluis",
+     "lon": 3.3883,
+     "lat": 51.3089,
+     "qid": "Q2065987",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      631.5,
+      702.5
+     ],
+     "role": "secondary",
+     "id": "CP41",
+     "plate_px": [
+      1263.0,
+      1405.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Avignon",
+     "lon": 4.8083333333333,
+     "lat": 43.948611111111,
+     "qid": "Q6397",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      724.6,
+      1269.9
+     ],
+     "role": "secondary",
+     "id": "CP42",
+     "plate_px": [
+      1449.2,
+      2539.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Paris",
+     "lon": 2.352222222222222,
+     "lat": 48.85666666666667,
+     "qid": "Q90",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      583.4,
+      893.4
+     ],
+     "role": "secondary",
+     "id": "CP43",
+     "plate_px": [
+      1166.8,
+      1786.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Cologne",
+     "lon": 6.9577777777778,
+     "lat": 50.942222222222,
+     "qid": "Q365",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      806.3,
+      722.5
+     ],
+     "role": "secondary",
+     "id": "CP44",
+     "plate_px": [
+      1612.6,
+      1445.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Milan",
+     "lon": 9.19,
+     "lat": 45.466944444444,
+     "qid": "Q490",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      957.1,
+      1135.6
+     ],
+     "role": "secondary",
+     "id": "CP45",
+     "plate_px": [
+      1914.2,
+      2271.2
+     ],
+     "search_px_out": 60
+    }
+   ],
+   "prototype": {
+    "synthetic_warp": "affine (scale 1.025, rot 0.9 deg, shift 14,-9 px) + smooth random field (max 13 px) + one local bulge at Dunnet Head (24,13 px)",
+    "orb_matches": 3789,
+    "orb_inliers": 2464,
+    "matched": 27,
+    "unmatched": [],
+    "loo_rms_px": 3.16,
+    "loo_max_px": 11.76,
+    "loo_rms_km": 4.53,
+    "loo_max_km": 16.87,
+    "affine_only_rms_px": 3.92,
+    "match_err_vs_truth_rms_px": 0.49,
+    "coast_true_error_px": {
+     "tps_median": 1.18,
+     "tps_p95": 8.04,
+     "tps_max": 29.59,
+     "affine_median": 3.28,
+     "affine_p95": 10.28,
+     "n": 7006,
+     "note": "synthetic truth known: |registered - true| at every 7th NE coastline pixel inside the frame"
+    },
+    "counts": {
+     "pass": 25,
+     "flag": 1,
+     "fail": 1
+    },
+    "rejected_from_fit": [
+     {
+      "id": "CP05",
+      "name": "Dunnet Head",
+      "ncc": 0.666,
+      "match_err_vs_truth_px": 2.63,
+      "residual_vs_final_fit_px": 27.08,
+      "residual_vs_final_fit_km": 38.87,
+      "nonaffine_px": 23.88,
+      "qa": "fail",
+      "warp_limit_exceeded": false,
+      "action": "local correction: the plate disagrees with the geodata here (or the match is wrong) - inspect overlay"
+     }
+    ],
+    "robust": {
+     "smoothing": 5.0,
+     "reject_loo_px": 12.0,
+     "min_points": 12
+    },
+    "warp_limit_exceeded": [],
+    "points": [
+     {
+      "id": "CP01",
+      "name": "Land's End",
+      "ncc": 0.916,
+      "match_err_vs_truth_px": 0.34,
+      "loo_residual_px": 0.71,
+      "loo_residual_km": 1.01,
+      "nonaffine_px": 2.65,
+      "affine_only_residual_px": 2.65,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP02",
+      "name": "Cap Corse",
+      "ncc": 0.89,
+      "match_err_vs_truth_px": 0.1,
+      "loo_residual_px": 2.38,
+      "loo_residual_km": 3.41,
+      "nonaffine_px": 0.69,
+      "affine_only_residual_px": 0.69,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP03",
+      "name": "Grenen",
+      "ncc": 0.934,
+      "match_err_vs_truth_px": 0.46,
+      "loo_residual_px": 11.76,
+      "loo_residual_km": 16.87,
+      "nonaffine_px": 3.83,
+      "affine_only_residual_px": 3.83,
+      "qa": "fail",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP04",
+      "name": "Rhine-Mosel (Koblenz)",
+      "ncc": 0.902,
+      "match_err_vs_truth_px": 0.2,
+      "loo_residual_px": 2.75,
+      "loo_residual_km": 3.95,
+      "nonaffine_px": 6.49,
+      "affine_only_residual_px": 6.49,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP06",
+      "name": "Ebro mouth",
+      "ncc": 0.882,
+      "match_err_vs_truth_px": 0.57,
+      "loo_residual_px": 3.74,
+      "loo_residual_km": 5.37,
+      "nonaffine_px": 5.45,
+      "affine_only_residual_px": 5.45,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP07",
+      "name": "Cabo de Penas",
+      "ncc": 0.84,
+      "match_err_vs_truth_px": 0.48,
+      "loo_residual_px": 6.91,
+      "loo_residual_km": 9.91,
+      "nonaffine_px": 6.71,
+      "affine_only_residual_px": 6.71,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP08",
+      "name": "Spurn",
+      "ncc": 0.923,
+      "match_err_vs_truth_px": 0.54,
+      "loo_residual_px": 2.29,
+      "loo_residual_km": 3.29,
+      "nonaffine_px": 3.75,
+      "affine_only_residual_px": 3.75,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP09",
+      "name": "Loire-Vienne (Candes)",
+      "ncc": 0.894,
+      "match_err_vs_truth_px": 0.48,
+      "loo_residual_px": 1.6,
+      "loo_residual_km": 2.3,
+      "nonaffine_px": 1.9,
+      "affine_only_residual_px": 1.9,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP10",
+      "name": "Rh\u00f4ne mouth",
+      "ncc": 0.914,
+      "match_err_vs_truth_px": 0.16,
+      "loo_residual_px": 2.29,
+      "loo_residual_km": 3.29,
+      "nonaffine_px": 5.78,
+      "affine_only_residual_px": 5.78,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP11",
+      "name": "Elbe mouth",
+      "ncc": 0.892,
+      "match_err_vs_truth_px": 0.84,
+      "loo_residual_px": 2.75,
+      "loo_residual_km": 3.95,
+      "nonaffine_px": 8.03,
+      "affine_only_residual_px": 8.03,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP12",
+      "name": "Shannon mouth",
+      "ncc": 0.926,
+      "match_err_vs_truth_px": 0.21,
+      "loo_residual_px": 2.93,
+      "loo_residual_km": 4.21,
+      "nonaffine_px": 2.4,
+      "affine_only_residual_px": 2.4,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP13",
+      "name": "Mull of Galloway",
+      "ncc": 0.903,
+      "match_err_vs_truth_px": 0.29,
+      "loo_residual_px": 0.48,
+      "loo_residual_km": 0.69,
+      "nonaffine_px": 2.36,
+      "affine_only_residual_px": 2.36,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP14",
+      "name": "Selsey Bill",
+      "ncc": 0.949,
+      "match_err_vs_truth_px": 0.26,
+      "loo_residual_px": 0.77,
+      "loo_residual_km": 1.1,
+      "nonaffine_px": 2.96,
+      "affine_only_residual_px": 2.96,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP15",
+      "name": "Den Helder",
+      "ncc": 0.858,
+      "match_err_vs_truth_px": 1.07,
+      "loo_residual_px": 3.51,
+      "loo_residual_km": 5.04,
+      "nonaffine_px": 6.31,
+      "affine_only_residual_px": 6.31,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP16",
+      "name": "Garonne mouth",
+      "ncc": 0.892,
+      "match_err_vs_truth_px": 0.28,
+      "loo_residual_px": 0.19,
+      "loo_residual_km": 0.27,
+      "nonaffine_px": 1.48,
+      "affine_only_residual_px": 1.48,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP17",
+      "name": "Po-Ticino (Pavia)",
+      "ncc": 0.805,
+      "match_err_vs_truth_px": 0.26,
+      "loo_residual_px": 2.9,
+      "loo_residual_km": 4.16,
+      "nonaffine_px": 4.12,
+      "affine_only_residual_px": 4.12,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP18",
+      "name": "Seine-Marne (Charenton)",
+      "ncc": 0.899,
+      "match_err_vs_truth_px": 0.34,
+      "loo_residual_px": 0.71,
+      "loo_residual_km": 1.02,
+      "nonaffine_px": 1.4,
+      "affine_only_residual_px": 1.4,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP19",
+      "name": "Cap Frehel",
+      "ncc": 0.88,
+      "match_err_vs_truth_px": 0.17,
+      "loo_residual_px": 0.34,
+      "loo_residual_km": 0.49,
+      "nonaffine_px": 1.85,
+      "affine_only_residual_px": 1.85,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP20",
+      "name": "Braich y Pwll (Lleyn tip)",
+      "ncc": 0.919,
+      "match_err_vs_truth_px": 0.57,
+      "loo_residual_px": 0.52,
+      "loo_residual_km": 0.74,
+      "nonaffine_px": 1.89,
+      "affine_only_residual_px": 1.89,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP21",
+      "name": "Orford Ness",
+      "ncc": 0.86,
+      "match_err_vs_truth_px": 0.16,
+      "loo_residual_px": 0.58,
+      "loo_residual_km": 0.83,
+      "nonaffine_px": 1.45,
+      "affine_only_residual_px": 1.45,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP22",
+      "name": "Pointe du Raz",
+      "ncc": 0.91,
+      "match_err_vs_truth_px": 0.8,
+      "loo_residual_px": 0.22,
+      "loo_residual_km": 0.31,
+      "nonaffine_px": 2.55,
+      "affine_only_residual_px": 2.55,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP23",
+      "name": "Schelde mouth",
+      "ncc": 0.82,
+      "match_err_vs_truth_px": 0.62,
+      "loo_residual_px": 1.19,
+      "loo_residual_km": 1.7,
+      "nonaffine_px": 2.97,
+      "affine_only_residual_px": 2.97,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP24",
+      "name": "Cap de Creus",
+      "ncc": 0.91,
+      "match_err_vs_truth_px": 0.39,
+      "loo_residual_px": 0.75,
+      "loo_residual_km": 1.07,
+      "nonaffine_px": 5.63,
+      "affine_only_residual_px": 5.63,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP25",
+      "name": "Brean Down",
+      "ncc": 0.872,
+      "match_err_vs_truth_px": 0.49,
+      "loo_residual_px": 0.88,
+      "loo_residual_km": 1.26,
+      "nonaffine_px": 3.61,
+      "affine_only_residual_px": 3.61,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP26",
+      "name": "Ile de Re west tip",
+      "ncc": 0.872,
+      "match_err_vs_truth_px": 0.16,
+      "loo_residual_px": 0.7,
+      "loo_residual_km": 1.0,
+      "nonaffine_px": 0.76,
+      "affine_only_residual_px": 0.76,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP27",
+      "name": "Seine mouth",
+      "ncc": 0.866,
+      "match_err_vs_truth_px": 0.87,
+      "loo_residual_px": 0.6,
+      "loo_residual_km": 0.86,
+      "nonaffine_px": 2.22,
+      "affine_only_residual_px": 2.22,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP28",
+      "name": "Cap Gris-Nez",
+      "ncc": 0.853,
+      "match_err_vs_truth_px": 0.37,
+      "loo_residual_px": 0.4,
+      "loo_residual_km": 0.58,
+      "nonaffine_px": 1.96,
+      "affine_only_residual_px": 1.96,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     }
+    ],
+    "files": {
+     "synthetic_plate": "img_v2/euro_9x16_regproto_synthetic_plate.png",
+     "qa_overlay": "img_v2/euro_9x16_regproto_qa_overlay.png"
+    }
+   }
+  },
+  "britain_9x16": {
+   "control_points": [
+    {
+     "type": "headland",
+     "name": "Land's End",
+     "lon": -5.71522,
+     "lat": 50.0677,
+     "qid": "Q169532",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      197.0,
+      1275.6
+     ],
+     "role": "primary",
+     "id": "CP01",
+     "plate_px": [
+      394.0,
+      2551.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Flamborough Head",
+     "lon": -0.0823,
+     "lat": 54.1158,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      793.2,
+      584.0
+     ],
+     "role": "primary",
+     "id": "CP02",
+     "plate_px": [
+      1586.4,
+      1168.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "confluence",
+     "name": "Loire-Vienne (Candes)",
+     "lon": 0.0754,
+     "lat": 47.2182,
+     "source": "NE10m centerlines, nearest approach < 3 km",
+     "px": [
+      851.9,
+      1765.9
+     ],
+     "role": "primary",
+     "id": "CP03",
+     "plate_px": [
+      1703.8,
+      3531.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Gris-Nez",
+     "lon": 1.58361,
+     "lat": 50.87083,
+     "qid": "Q531030",
+     "dir": "NW",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      992.7,
+      1132.2
+     ],
+     "role": "primary",
+     "id": "CP04",
+     "plate_px": [
+      1985.4,
+      2264.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Howth Head",
+     "lon": -6.0575,
+     "lat": 53.3746,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      186.3,
+      707.2
+     ],
+     "role": "primary",
+     "id": "CP05",
+     "plate_px": [
+      372.6,
+      1414.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Severn mouth",
+     "lon": -2.3914,
+     "lat": 51.7778,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      562.1,
+      989.5
+     ],
+     "role": "primary",
+     "id": "CP06",
+     "plate_px": [
+      1124.2,
+      1979.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Pointe de Penmarch",
+     "lon": -4.3698,
+     "lat": 47.8071,
+     "dir": "SW",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      336.0,
+      1668.1
+     ],
+     "role": "primary",
+     "id": "CP07",
+     "plate_px": [
+      672.0,
+      3336.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Pointe de Barfleur",
+     "lon": -1.2706,
+     "lat": 49.6982,
+     "dir": "NE",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      687.5,
+      1345.0
+     ],
+     "role": "primary",
+     "id": "CP08",
+     "plate_px": [
+      1375.0,
+      2690.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "St Bees Head",
+     "lon": -3.6342,
+     "lat": 54.5129,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      437.0,
+      519.6
+     ],
+     "role": "primary",
+     "id": "CP09",
+     "plate_px": [
+      874.0,
+      1039.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Lowestoft Ness",
+     "lon": 1.764,
+     "lat": 52.4746,
+     "dir": "E",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      995.7,
+      856.3
+     ],
+     "role": "primary",
+     "id": "CP10",
+     "plate_px": [
+      1991.4,
+      1712.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "St David's Head",
+     "lon": -5.3002,
+     "lat": 51.8883,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      254.2,
+      965.3
+     ],
+     "role": "primary",
+     "id": "CP11",
+     "plate_px": [
+      508.4,
+      1930.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Start Point",
+     "lon": -3.6456,
+     "lat": 50.226,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      425.2,
+      1254.9
+     ],
+     "role": "primary",
+     "id": "CP12",
+     "plate_px": [
+      850.4,
+      2509.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Loire mouth",
+     "lon": -1.7345,
+     "lat": 47.2108,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      640.9,
+      1772.2
+     ],
+     "role": "primary",
+     "id": "CP13",
+     "plate_px": [
+      1281.8,
+      3544.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Cap Frehel",
+     "lon": -2.3265,
+     "lat": 48.685,
+     "dir": "N",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      571.0,
+      1520.0
+     ],
+     "role": "primary",
+     "id": "CP14",
+     "plate_px": [
+      1142.0,
+      3040.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Great Orme",
+     "lon": -3.85556,
+     "lat": 53.33333,
+     "qid": "Q3395318",
+     "dir": "N",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      411.4,
+      721.6
+     ],
+     "role": "primary",
+     "id": "CP15",
+     "plate_px": [
+      822.8,
+      1443.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Seine mouth",
+     "lon": 0.4932,
+     "lat": 49.4936,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      884.6,
+      1374.1
+     ],
+     "role": "primary",
+     "id": "CP16",
+     "plate_px": [
+      1769.2,
+      2748.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Selsey Bill",
+     "lon": -0.78799,
+     "lat": 50.7227,
+     "qid": "Q3025853",
+     "dir": "S",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      736.8,
+      1168.1
+     ],
+     "role": "primary",
+     "id": "CP17",
+     "plate_px": [
+      1473.6,
+      2336.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Hook Head",
+     "lon": -6.9321,
+     "lat": 52.1247,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      84.0,
+      916.4
+     ],
+     "role": "primary",
+     "id": "CP18",
+     "plate_px": [
+      168.0,
+      1832.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Hartland Point",
+     "lon": -4.52528,
+     "lat": 51.0219,
+     "qid": "Q907467",
+     "dir": "NW",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      332.3,
+      1116.5
+     ],
+     "role": "primary",
+     "id": "CP19",
+     "plate_px": [
+      664.6,
+      2233.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "river_mouth",
+     "name": "Thames mouth",
+     "lon": 0.3845,
+     "lat": 51.4531,
+     "source": "NE10m centerline end nearest coast (0.0 km)",
+     "px": [
+      859.0,
+      1038.7
+     ],
+     "role": "primary",
+     "id": "CP20",
+     "plate_px": [
+      1718.0,
+      2077.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Portland Bill",
+     "lon": -2.45722,
+     "lat": 50.51444,
+     "qid": "Q1309953",
+     "dir": "S",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      555.6,
+      1206.3
+     ],
+     "role": "primary",
+     "id": "CP21",
+     "plate_px": [
+      1111.2,
+      2412.6
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Braich y Pwll (Lleyn tip)",
+     "lon": -4.7616,
+     "lat": 52.7906,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      315.8,
+      812.4
+     ],
+     "role": "primary",
+     "id": "CP22",
+     "plate_px": [
+      631.6,
+      1624.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Mull of Galloway",
+     "lon": -4.8629,
+     "lat": 54.6377,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      315.3,
+      495.4
+     ],
+     "role": "primary",
+     "id": "CP23",
+     "plate_px": [
+      630.6,
+      990.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Beachy Head",
+     "lon": 0.2399,
+     "lat": 50.7471,
+     "dir": "S",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      848.2,
+      1160.4
+     ],
+     "role": "primary",
+     "id": "CP24",
+     "plate_px": [
+      1696.4,
+      2320.8
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Brean Down",
+     "lon": -3.029,
+     "lat": 51.3256,
+     "qid": "Q3403788",
+     "dir": "W",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      494.0,
+      1067.0
+     ],
+     "role": "primary",
+     "id": "CP25",
+     "plate_px": [
+      988.0,
+      2134.0
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Worms Head (Gower)",
+     "lon": -4.2974,
+     "lat": 51.5692,
+     "dir": "W",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      359.0,
+      1023.2
+     ],
+     "role": "primary",
+     "id": "CP26",
+     "plate_px": [
+      718.0,
+      2046.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "Spurn",
+     "lon": 0.13981,
+     "lat": 53.59383,
+     "qid": "Q542839",
+     "dir": "SE",
+     "source": "engine gazetteer (Wikidata P625)",
+     "px": [
+      818.9,
+      672.7
+     ],
+     "role": "primary",
+     "id": "CP27",
+     "plate_px": [
+      1637.8,
+      1345.4
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "headland",
+     "name": "North Foreland",
+     "lon": 1.4476,
+     "lat": 51.3807,
+     "dir": "NE",
+     "source": "NE10m coast vertex nearest an approximate position (no Wikidata P625; geodata is the truth)",
+     "px": [
+      973.2,
+      1045.6
+     ],
+     "role": "primary",
+     "id": "CP28",
+     "plate_px": [
+      1946.4,
+      2091.2
+     ],
+     "search_px_out": 40
+    },
+    {
+     "type": "settlement",
+     "name": "Chepstow",
+     "lon": -2.6757,
+     "lat": 51.6439,
+     "qid": "Q1070187",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      531.9,
+      1012.5
+     ],
+     "role": "secondary",
+     "id": "CP29",
+     "plate_px": [
+      1063.8,
+      2025.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Kenilworth",
+     "lon": -1.59111,
+     "lat": 52.347,
+     "qid": "Q1738764",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      645.7,
+      891.2
+     ],
+     "role": "secondary",
+     "id": "CP30",
+     "plate_px": [
+      1291.4,
+      1782.4
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Berkeley",
+     "lon": -2.4569444444444444,
+     "lat": 51.68861111111111,
+     "qid": "Q4891993",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      555.2,
+      1004.8
+     ],
+     "role": "secondary",
+     "id": "CP31",
+     "plate_px": [
+      1110.4,
+      2009.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Gloucester",
+     "lon": -2.24654,
+     "lat": 51.8673,
+     "qid": "Q262500",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      577.4,
+      974.1
+     ],
+     "role": "secondary",
+     "id": "CP32",
+     "plate_px": [
+      1154.8,
+      1948.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Bristol",
+     "lon": -2.5975,
+     "lat": 51.45361111111111,
+     "qid": "Q23154",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      540.3,
+      1045.2
+     ],
+     "role": "secondary",
+     "id": "CP33",
+     "plate_px": [
+      1080.6,
+      2090.4
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Lincoln",
+     "lon": -0.55,
+     "lat": 53.25,
+     "qid": "Q180057",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      750.4,
+      734.0
+     ],
+     "role": "secondary",
+     "id": "CP34",
+     "plate_px": [
+      1500.8,
+      1468.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Corfe",
+     "lon": -2.0589,
+     "lat": 50.6399,
+     "qid": "Q1236511",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      598.9,
+      1184.5
+     ],
+     "role": "secondary",
+     "id": "CP35",
+     "plate_px": [
+      1197.8,
+      2369.0
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Winchester",
+     "lon": -1.3086111111111,
+     "lat": 51.063333333333,
+     "qid": "Q172157",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      679.2,
+      1110.9
+     ],
+     "role": "secondary",
+     "id": "CP36",
+     "plate_px": [
+      1358.4,
+      2221.8
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Westminster",
+     "lon": -0.12416666666667,
+     "lat": 51.499444444444,
+     "qid": "Q62408",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      804.4,
+      1032.8
+     ],
+     "role": "secondary",
+     "id": "CP37",
+     "plate_px": [
+      1608.8,
+      2065.6
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Tyburn",
+     "lon": -0.164,
+     "lat": 51.512861111111,
+     "qid": "Q1362341",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      800.0,
+      1030.6
+     ],
+     "role": "secondary",
+     "id": "CP38",
+     "plate_px": [
+      1600.0,
+      2061.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Nottingham",
+     "lon": -1.1547222222222222,
+     "lat": 52.94916666666667,
+     "qid": "Q17642916",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      689.4,
+      787.1
+     ],
+     "role": "secondary",
+     "id": "CP39",
+     "plate_px": [
+      1378.8,
+      1574.2
+     ],
+     "search_px_out": 60
+    },
+    {
+     "type": "settlement",
+     "name": "Sandwich",
+     "lon": 1.3388888888889,
+     "lat": 51.274722222222,
+     "qid": "Q26163",
+     "source": "MAP-PLACES-v1 P625 (pin)",
+     "px": [
+      962.5,
+      1064.4
+     ],
+     "role": "secondary",
+     "id": "CP40",
+     "plate_px": [
+      1925.0,
+      2128.8
+     ],
+     "search_px_out": 60
+    }
+   ],
+   "prototype": {
+    "synthetic_warp": "affine (scale 1.025, rot 0.9 deg, shift 14,-9 px) + smooth random field (max 13 px) + one local bulge at Flamborough Head (24,13 px)",
+    "orb_matches": 4087,
+    "orb_inliers": 3182,
+    "matched": 27,
+    "unmatched": [],
+    "loo_rms_px": 2.42,
+    "loo_max_px": 7.11,
+    "loo_rms_km": 1.57,
+    "loo_max_km": 4.61,
+    "affine_only_rms_px": 4.78,
+    "match_err_vs_truth_rms_px": 0.55,
+    "coast_true_error_px": {
+     "tps_median": 0.75,
+     "tps_p95": 7.94,
+     "tps_max": 27.09,
+     "affine_median": 3.0,
+     "affine_p95": 7.79,
+     "n": 5742,
+     "note": "synthetic truth known: |registered - true| at every 7th NE coastline pixel inside the frame"
+    },
+    "counts": {
+     "pass": 19,
+     "flag": 7,
+     "fail": 1
+    },
+    "rejected_from_fit": [
+     {
+      "id": "CP02",
+      "name": "Flamborough Head",
+      "ncc": 0.652,
+      "match_err_vs_truth_px": 3.25,
+      "residual_vs_final_fit_px": 23.88,
+      "residual_vs_final_fit_km": 15.48,
+      "nonaffine_px": 28.8,
+      "qa": "fail",
+      "warp_limit_exceeded": true,
+      "action": "local correction: the plate disagrees with the geodata here (or the match is wrong) - inspect overlay"
+     }
+    ],
+    "robust": {
+     "smoothing": 5.0,
+     "reject_loo_px": 12.0,
+     "min_points": 12
+    },
+    "warp_limit_exceeded": [
+     "CP02"
+    ],
+    "points": [
+     {
+      "id": "CP01",
+      "name": "Land's End",
+      "ncc": 0.853,
+      "match_err_vs_truth_px": 0.48,
+      "loo_residual_px": 3.57,
+      "loo_residual_km": 2.31,
+      "nonaffine_px": 7.38,
+      "affine_only_residual_px": 7.38,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP03",
+      "name": "Loire-Vienne (Candes)",
+      "ncc": 0.889,
+      "match_err_vs_truth_px": 0.74,
+      "loo_residual_px": 3.46,
+      "loo_residual_km": 2.24,
+      "nonaffine_px": 7.43,
+      "affine_only_residual_px": 7.43,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP04",
+      "name": "Cap Gris-Nez",
+      "ncc": 0.942,
+      "match_err_vs_truth_px": 0.32,
+      "loo_residual_px": 2.1,
+      "loo_residual_km": 1.36,
+      "nonaffine_px": 8.05,
+      "affine_only_residual_px": 8.05,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP05",
+      "name": "Howth Head",
+      "ncc": 0.897,
+      "match_err_vs_truth_px": 0.15,
+      "loo_residual_px": 2.25,
+      "loo_residual_km": 1.46,
+      "nonaffine_px": 3.41,
+      "affine_only_residual_px": 3.41,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP06",
+      "name": "Severn mouth",
+      "ncc": 0.947,
+      "match_err_vs_truth_px": 0.5,
+      "loo_residual_px": 1.18,
+      "loo_residual_km": 0.77,
+      "nonaffine_px": 1.68,
+      "affine_only_residual_px": 1.68,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP07",
+      "name": "Pointe de Penmarch",
+      "ncc": 0.865,
+      "match_err_vs_truth_px": 0.48,
+      "loo_residual_px": 3.94,
+      "loo_residual_km": 2.56,
+      "nonaffine_px": 3.12,
+      "affine_only_residual_px": 3.12,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP08",
+      "name": "Pointe de Barfleur",
+      "ncc": 0.879,
+      "match_err_vs_truth_px": 0.38,
+      "loo_residual_px": 1.07,
+      "loo_residual_km": 0.69,
+      "nonaffine_px": 2.88,
+      "affine_only_residual_px": 2.88,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP09",
+      "name": "St Bees Head",
+      "ncc": 0.95,
+      "match_err_vs_truth_px": 0.73,
+      "loo_residual_px": 1.02,
+      "loo_residual_km": 0.66,
+      "nonaffine_px": 3.11,
+      "affine_only_residual_px": 3.11,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP10",
+      "name": "Lowestoft Ness",
+      "ncc": 0.881,
+      "match_err_vs_truth_px": 1.56,
+      "loo_residual_px": 3.75,
+      "loo_residual_km": 2.43,
+      "nonaffine_px": 6.92,
+      "affine_only_residual_px": 6.92,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP11",
+      "name": "St David's Head",
+      "ncc": 0.891,
+      "match_err_vs_truth_px": 0.45,
+      "loo_residual_px": 0.21,
+      "loo_residual_km": 0.14,
+      "nonaffine_px": 4.72,
+      "affine_only_residual_px": 4.72,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP12",
+      "name": "Start Point",
+      "ncc": 0.879,
+      "match_err_vs_truth_px": 0.28,
+      "loo_residual_px": 0.5,
+      "loo_residual_km": 0.32,
+      "nonaffine_px": 1.96,
+      "affine_only_residual_px": 1.96,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP13",
+      "name": "Loire mouth",
+      "ncc": 0.931,
+      "match_err_vs_truth_px": 0.2,
+      "loo_residual_px": 3.34,
+      "loo_residual_km": 2.17,
+      "nonaffine_px": 7.18,
+      "affine_only_residual_px": 7.18,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP14",
+      "name": "Cap Frehel",
+      "ncc": 0.865,
+      "match_err_vs_truth_px": 0.28,
+      "loo_residual_px": 3.02,
+      "loo_residual_km": 1.96,
+      "nonaffine_px": 1.69,
+      "affine_only_residual_px": 1.69,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP15",
+      "name": "Great Orme",
+      "ncc": 0.914,
+      "match_err_vs_truth_px": 0.22,
+      "loo_residual_px": 1.53,
+      "loo_residual_km": 0.99,
+      "nonaffine_px": 3.69,
+      "affine_only_residual_px": 3.69,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP16",
+      "name": "Seine mouth",
+      "ncc": 0.894,
+      "match_err_vs_truth_px": 0.66,
+      "loo_residual_px": 2.63,
+      "loo_residual_km": 1.71,
+      "nonaffine_px": 0.71,
+      "affine_only_residual_px": 0.71,
+      "qa": "flag",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP17",
+      "name": "Selsey Bill",
+      "ncc": 0.857,
+      "match_err_vs_truth_px": 0.17,
+      "loo_residual_px": 0.35,
+      "loo_residual_km": 0.23,
+      "nonaffine_px": 1.08,
+      "affine_only_residual_px": 1.08,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP18",
+      "name": "Hook Head",
+      "ncc": 0.904,
+      "match_err_vs_truth_px": 0.23,
+      "loo_residual_px": 0.2,
+      "loo_residual_km": 0.13,
+      "nonaffine_px": 5.87,
+      "affine_only_residual_px": 5.87,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP19",
+      "name": "Hartland Point",
+      "ncc": 0.858,
+      "match_err_vs_truth_px": 0.31,
+      "loo_residual_px": 0.97,
+      "loo_residual_km": 0.63,
+      "nonaffine_px": 4.58,
+      "affine_only_residual_px": 4.58,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP20",
+      "name": "Thames mouth",
+      "ncc": 0.864,
+      "match_err_vs_truth_px": 0.69,
+      "loo_residual_px": 0.91,
+      "loo_residual_km": 0.59,
+      "nonaffine_px": 4.64,
+      "affine_only_residual_px": 4.64,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP21",
+      "name": "Portland Bill",
+      "ncc": 0.957,
+      "match_err_vs_truth_px": 0.19,
+      "loo_residual_px": 0.97,
+      "loo_residual_km": 0.63,
+      "nonaffine_px": 1.03,
+      "affine_only_residual_px": 1.03,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP22",
+      "name": "Braich y Pwll (Lleyn tip)",
+      "ncc": 0.927,
+      "match_err_vs_truth_px": 0.16,
+      "loo_residual_px": 0.09,
+      "loo_residual_km": 0.06,
+      "nonaffine_px": 3.73,
+      "affine_only_residual_px": 3.73,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP23",
+      "name": "Mull of Galloway",
+      "ncc": 0.926,
+      "match_err_vs_truth_px": 0.63,
+      "loo_residual_px": 1.78,
+      "loo_residual_km": 1.16,
+      "nonaffine_px": 3.67,
+      "affine_only_residual_px": 3.67,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP24",
+      "name": "Beachy Head",
+      "ncc": 0.829,
+      "match_err_vs_truth_px": 0.9,
+      "loo_residual_px": 1.1,
+      "loo_residual_km": 0.71,
+      "nonaffine_px": 2.22,
+      "affine_only_residual_px": 2.22,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP25",
+      "name": "Brean Down",
+      "ncc": 0.887,
+      "match_err_vs_truth_px": 0.33,
+      "loo_residual_px": 1.15,
+      "loo_residual_km": 0.75,
+      "nonaffine_px": 2.42,
+      "affine_only_residual_px": 2.42,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP26",
+      "name": "Worms Head (Gower)",
+      "ncc": 0.862,
+      "match_err_vs_truth_px": 0.4,
+      "loo_residual_px": 0.88,
+      "loo_residual_km": 0.57,
+      "nonaffine_px": 3.28,
+      "affine_only_residual_px": 3.28,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP27",
+      "name": "Spurn",
+      "ncc": 0.757,
+      "match_err_vs_truth_px": 0.53,
+      "loo_residual_px": 7.11,
+      "loo_residual_km": 4.61,
+      "nonaffine_px": 8.86,
+      "affine_only_residual_px": 8.86,
+      "qa": "fail",
+      "warp_limit_exceeded": false
+     },
+     {
+      "id": "CP28",
+      "name": "North Foreland",
+      "ncc": 0.885,
+      "match_err_vs_truth_px": 0.57,
+      "loo_residual_px": 0.56,
+      "loo_residual_km": 0.36,
+      "nonaffine_px": 7.13,
+      "affine_only_residual_px": 7.13,
+      "qa": "pass",
+      "warp_limit_exceeded": false
+     }
+    ],
+    "files": {
+     "synthetic_plate": "img_v2/britain_9x16_regproto_synthetic_plate.png",
+     "qa_overlay": "img_v2/britain_9x16_regproto_qa_overlay.png"
+    }
+   }
+  }
+ }
+}

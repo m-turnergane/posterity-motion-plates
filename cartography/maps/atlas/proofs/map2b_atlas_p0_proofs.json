@@ -1,0 +1,2334 @@
+{
+ "shot": "edward_map2b_atlas_p0",
+ "config": "atlas/configs/edward_map2b_atlas_p0.json",
+ "density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   2048,
+   1152
+  ],
+  "out_wh": [
+   1920,
+   1080
+  ],
+  "push_max": 1.06,
+  "crop_zoom": 1.0,
+  "cover_scale": 0.9375,
+  "visible_src_wh": [
+   1932.1,
+   1086.8
+  ],
+  "ratio": 0.994,
+  "ratio_x": 0.994,
+  "ratio_y": 0.994,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "authority": [
+  {
+   "row": "2-01",
+   "qid": "Q1070187",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Chepstow Castle"
+  },
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Glamorgan (region)"
+  },
+  {
+   "row": "2-03",
+   "qid": "Q1738764",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Kenilworth Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-05",
+   "qid": "Q1236511",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Corfe Castle"
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "kind": "via",
+   "status": "OMIT",
+   "label": "Ireland",
+   "site": "Ireland (island)"
+  },
+  {
+   "row": "2-07",
+   "qid": "Q26163",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Sandwich, Kent"
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Sluis",
+   "site": "Sluis, Zeeland"
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Sluis, Zeeland"
+  },
+  {
+   "row": "2-09",
+   "qid": "Q15878",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Normandy (region)"
+  },
+  {
+   "row": "2-10",
+   "qid": "Q206221",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Languedoc (historical province)"
+  },
+  {
+   "row": "2-11",
+   "qid": "Q6397",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Avignon",
+   "site": "Avignon"
+  },
+  {
+   "row": "2-12",
+   "qid": "Q90",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Paris",
+   "site": "Paris"
+  },
+  {
+   "row": "2-13",
+   "qid": "Q159856",
+   "kind": "via",
+   "status": "OMIT",
+   "label": null,
+   "site": "Duchy of Brabant (region)"
+  },
+  {
+   "row": "2-14",
+   "qid": "Q365",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Cologne",
+   "site": "Cologne"
+  },
+  {
+   "row": "2-15",
+   "qid": "Q490",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Milan",
+   "site": "Milan"
+  }
+ ],
+ "approx_areas": [],
+ "control_points": {
+  "method": "extreme coastline pixel in `dir` within search window; LSQ affine (6 dof) analytic->measured",
+  "n": 8,
+  "rms_px": 12.2,
+  "max_px": 20.85,
+  "rms_km": 13.7,
+  "max_km": 23.41,
+  "rms_px_unfitted": 16.08,
+  "km_per_plate_px": 1.123,
+  "affine": [
+   [
+    1.016845,
+    0.01656,
+    -25.236894
+   ],
+   [
+    0.006885,
+    1.011654,
+    -14.771046
+   ]
+  ]
+ },
+ "route_ink": {
+  "documented": {
+   "col": [
+    206,
+    78,
+    54
+   ],
+   "pool": [
+    128,
+    36,
+    28
+   ],
+   "strength": 0.97,
+   "halo_col": [
+    16,
+    8,
+    8
+   ],
+   "halo_opacity": 0.8,
+   "halo_dilate": 4,
+   "grain": 0.12,
+   "col_stats": {
+    "rgb": [
+     206,
+     78,
+     54
+    ],
+    "hsv_s": 0.738,
+    "chroma_rgb": 152,
+    "lab_chroma": 63.3,
+    "rel_lum": 0.1884
+   }
+  },
+  "claimed": {
+   "col": [
+    222,
+    138,
+    108
+   ],
+   "pool": [
+    150,
+    72,
+    54
+   ],
+   "strength": 0.9,
+   "halo_col": [
+    16,
+    8,
+    8
+   ],
+   "halo_opacity": 0.64,
+   "halo_dilate": 3,
+   "grain": 0.16,
+   "col_stats": {
+    "rgb": [
+     222,
+     138,
+     108
+    ],
+    "hsv_s": 0.514,
+    "chroma_rgb": 114,
+    "lab_chroma": 41.0,
+    "rel_lum": 0.3479
+   }
+  }
+ },
+ "r2_vermilion": {
+  "rgb": [
+   252,
+   102,
+   46
+  ],
+  "hsv_s": 0.817,
+  "chroma_rgb": 206,
+  "lab_chroma": 79.9,
+  "rel_lum": 0.304
+ },
+ "states": {
+  "political": {
+   "params": {
+    "pigment_alpha": 0.88,
+    "pigment_chroma": 1.08,
+    "pigment_glaze": 0.3,
+    "relief_shade": 0.12,
+    "relief_tint": 0.4,
+    "relief_ridge": 0.08,
+    "rivers": 0.45,
+    "border_alpha": 0.7,
+    "border_width": 1.7,
+    "label_region_alpha": 1.0,
+    "label_place_alpha": 1.0,
+    "label_halo": 0.8
+   },
+   "legs": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "w0": 3.0,
+     "dash": null,
+     "fit": "smooth",
+     "sigma": 14.0,
+     "checks": [
+      {
+       "sub": "2-01->2-02",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 57
+      },
+      {
+       "sub": "2-02->2-03",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 143
+      },
+      {
+       "max_turn_deg_per_6px": 30.22,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 59,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.18,
+       "min_at_plate_px": [
+        816.0,
+        213.7
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 2.1,
+       "p5": 2.19,
+       "median": 2.36,
+       "min_at_plate_px": [
+        854.7,
+        207.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.16
+      }
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "w0": 3.0,
+     "dash": null,
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-03->2-04",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 87
+      },
+      {
+       "max_turn_deg_per_6px": 3.02,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 21,
+      "core_vs_raw_under": {
+       "min": 1.01,
+       "p5": 1.02,
+       "median": 1.13,
+       "min_at_plate_px": [
+        840.8,
+        243.9
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.89,
+       "p5": 1.98,
+       "median": 2.42,
+       "min_at_plate_px": [
+        820.6,
+        262.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.04
+      }
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-04->2-05",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 129
+      },
+      {
+       "max_turn_deg_per_6px": 14.8,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 30,
+      "core_vs_raw_under": {
+       "min": 1.02,
+       "p5": 1.05,
+       "median": 1.2,
+       "min_at_plate_px": [
+        825.2,
+        288.0
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.39,
+       "p5": 1.46,
+       "median": 1.87,
+       "min_at_plate_px": [
+        830.1,
+        327.5
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.04,
+       "p5": 1.07,
+       "median": 1.21
+      }
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "adaptive sigma 18..8",
+     "sigma": 18.0,
+     "checks": [
+      {
+       "sub": "2-05->2-06",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 7.59,
+       "n": 497,
+       "harbour_r_px": [
+        13.28
+       ]
+      },
+      {
+       "sub": "2-06->2-07",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 4.39,
+       "n": 897,
+       "harbour_r_px": [
+        12.06
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 32.19,
+       "min_clear_of_other_pins_px": 102.86
+      }
+     ],
+     "contrast": {
+      "n": 457,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.05,
+       "median": 1.39,
+       "min_at_plate_px": [
+        609.5,
+        439.4
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.35,
+       "p5": 1.56,
+       "median": 2.03,
+       "min_at_plate_px": [
+        838.4,
+        460.3
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.01,
+       "p5": 1.13,
+       "median": 1.39
+      }
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-07->2-08",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 9.39,
+       "n": 134,
+       "harbour_r_px": [
+        12.06,
+        15.9
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 3.69,
+       "min_clear_of_other_pins_px": 208.2
+      }
+     ],
+     "contrast": {
+      "n": 33,
+      "core_vs_raw_under": {
+       "min": 1.06,
+       "p5": 1.09,
+       "median": 1.4,
+       "min_at_plate_px": [
+        1147.4,
+        306.6
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.44,
+       "p5": 1.63,
+       "median": 2.31,
+       "min_at_plate_px": [
+        1147.4,
+        306.6
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.25,
+       "p5": 1.27,
+       "median": 1.48
+      }
+     }
+    },
+    {
+     "leg": "2-08->2-11",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-08->2-09",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 334
+      },
+      {
+       "sub": "2-09->2-10",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 733
+      },
+      {
+       "sub": "2-10->2-11",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 121
+      },
+      {
+       "max_turn_deg_per_6px": 11.48,
+       "min_clear_of_other_pins_px": 94.52
+      }
+     ],
+     "contrast": {
+      "n": 371,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.04,
+       "median": 1.28,
+       "min_at_plate_px": [
+        1036.8,
+        1027.9
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.01,
+       "p5": 1.2,
+       "median": 2.15,
+       "min_at_plate_px": [
+        990.6,
+        836.3
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.03,
+       "p5": 1.11,
+       "median": 1.33
+      }
+     }
+    },
+    {
+     "leg": "2-11->2-12",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-11->2-12",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 545
+      },
+      {
+       "max_turn_deg_per_6px": 4.33,
+       "min_clear_of_other_pins_px": 237.31
+      }
+     ],
+     "contrast": {
+      "n": 166,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.12,
+       "min_at_plate_px": [
+        1201.3,
+        711.5
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.07,
+       "median": 2.23,
+       "min_at_plate_px": [
+        1298.5,
+        893.4
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.12
+      }
+     }
+    },
+    {
+     "leg": "2-12->2-14",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-12->2-13",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 231
+      },
+      {
+       "sub": "2-13->2-14",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 168
+      },
+      {
+       "max_turn_deg_per_6px": 6.03,
+       "min_clear_of_other_pins_px": 68.67
+      }
+     ],
+     "contrast": {
+      "n": 117,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.2,
+       "min_at_plate_px": [
+        1203.1,
+        420.9
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.07,
+       "median": 1.75,
+       "min_at_plate_px": [
+        1261.9,
+        359.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.15
+      }
+     }
+    },
+    {
+     "leg": "2-14->2-15",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-14->2-15",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 624
+      },
+      {
+       "max_turn_deg_per_6px": 8.25,
+       "min_clear_of_other_pins_px": 213.18
+      }
+     ],
+     "contrast": {
+      "n": 188,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.12,
+       "min_at_plate_px": [
+        1483.9,
+        553.5
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.01,
+       "p5": 1.03,
+       "median": 1.89,
+       "min_at_plate_px": [
+        1447.1,
+        400.8
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.09
+      }
+     }
+    }
+   ],
+   "labels": [
+    {
+     "text": "Sluis",
+     "row": "2-08",
+     "tier": "city",
+     "px": 47,
+     "side": "E",
+     "bbox": [
+      1204,
+      292,
+      1309,
+      333
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Avignon",
+     "row": "2-11",
+     "tier": "city",
+     "px": 47,
+     "side": "NE",
+     "bbox": [
+      1333,
+      988,
+      1505,
+      1029
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Paris",
+     "row": "2-12",
+     "tier": "city",
+     "px": 47,
+     "side": "W",
+     "bbox": [
+      992,
+      539,
+      1096,
+      579
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Cologne",
+     "row": "2-14",
+     "tier": "city",
+     "px": 47,
+     "side": "N",
+     "bbox": [
+      1316,
+      272,
+      1495,
+      313
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Milan",
+     "row": "2-15",
+     "tier": "city",
+     "px": 47,
+     "side": "E",
+     "bbox": [
+      1640,
+      852,
+      1769,
+      891
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Ireland",
+     "row": "2-06",
+     "tier": "region",
+     "px": 40,
+     "side": "C",
+     "bbox": [
+      421,
+      57,
+      555,
+      93
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    }
+   ],
+   "label_pair_overlaps": 0,
+   "border_px_gt0.05": 3441,
+   "border_pairs": {
+    "aragon|france": {
+     "conf": 0.45,
+     "boundary_px": 52
+    },
+    "castile|france_fam": {
+     "conf": 0.6,
+     "boundary_px": 81
+    },
+    "england|france": {
+     "conf": 0.4,
+     "boundary_px": 358
+    },
+    "france|france_fam": {
+     "conf": 0.4,
+     "boundary_px": 1201
+    }
+   },
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2b_atlas_p0_political_forward_16x9.png",
+   "md5": "76d1bab8310e1760dffed894736e3d99"
+  },
+  "terrain": {
+   "params": {
+    "pigment_alpha": 0.3,
+    "pigment_chroma": 0.7,
+    "pigment_glaze": 0.85,
+    "relief_shade": 0.5,
+    "relief_tint": 1.3,
+    "relief_ridge": 0.34,
+    "rivers": 0.95,
+    "border_alpha": 0.16,
+    "border_width": 1.0,
+    "label_region_alpha": 0.78,
+    "label_place_alpha": 1.0,
+    "label_halo": 0.8
+   },
+   "legs": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "w0": 3.0,
+     "dash": null,
+     "fit": "smooth",
+     "sigma": 14.0,
+     "checks": [
+      {
+       "sub": "2-01->2-02",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 57
+      },
+      {
+       "sub": "2-02->2-03",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 143
+      },
+      {
+       "max_turn_deg_per_6px": 30.22,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 59,
+      "core_vs_raw_under": {
+       "min": 1.29,
+       "p5": 1.39,
+       "median": 1.65,
+       "min_at_plate_px": [
+        785.6,
+        272.8
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.93,
+       "p5": 2.01,
+       "median": 2.12,
+       "min_at_plate_px": [
+        854.7,
+        207.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.13,
+       "p5": 1.32,
+       "median": 1.74
+      }
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "w0": 3.0,
+     "dash": null,
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-03->2-04",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 87
+      },
+      {
+       "max_turn_deg_per_6px": 3.02,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 21,
+      "core_vs_raw_under": {
+       "min": 1.23,
+       "p5": 1.24,
+       "median": 1.57,
+       "min_at_plate_px": [
+        834.5,
+        250.7
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.81,
+       "p5": 1.84,
+       "median": 2.18,
+       "min_at_plate_px": [
+        860.2,
+        216.2
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.04,
+       "p5": 1.1,
+       "median": 1.5
+      }
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-04->2-05",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 129
+      },
+      {
+       "max_turn_deg_per_6px": 14.8,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 30,
+      "core_vs_raw_under": {
+       "min": 1.06,
+       "p5": 1.13,
+       "median": 1.4,
+       "min_at_plate_px": [
+        832.4,
+        361.2
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.06,
+       "p5": 1.08,
+       "median": 1.52,
+       "min_at_plate_px": [
+        825.2,
+        288.0
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.03,
+       "p5": 1.21,
+       "median": 1.37
+      }
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "adaptive sigma 18..8",
+     "sigma": 18.0,
+     "checks": [
+      {
+       "sub": "2-05->2-06",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 7.59,
+       "n": 497,
+       "harbour_r_px": [
+        13.28
+       ]
+      },
+      {
+       "sub": "2-06->2-07",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 4.39,
+       "n": 897,
+       "harbour_r_px": [
+        12.06
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 32.19,
+       "min_clear_of_other_pins_px": 102.86
+      }
+     ],
+     "contrast": {
+      "n": 457,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.04,
+       "median": 1.39,
+       "min_at_plate_px": [
+        609.5,
+        439.4
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.35,
+       "p5": 1.56,
+       "median": 2.03,
+       "min_at_plate_px": [
+        838.4,
+        460.3
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.01,
+       "p5": 1.13,
+       "median": 1.39
+      }
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-07->2-08",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 9.39,
+       "n": 134,
+       "harbour_r_px": [
+        12.06,
+        15.9
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 3.69,
+       "min_clear_of_other_pins_px": 208.2
+      }
+     ],
+     "contrast": {
+      "n": 33,
+      "core_vs_raw_under": {
+       "min": 1.06,
+       "p5": 1.09,
+       "median": 1.4,
+       "min_at_plate_px": [
+        1147.4,
+        306.6
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.44,
+       "p5": 1.63,
+       "median": 2.31,
+       "min_at_plate_px": [
+        1147.4,
+        306.6
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.25,
+       "p5": 1.27,
+       "median": 1.48
+      }
+     }
+    },
+    {
+     "leg": "2-08->2-11",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-08->2-09",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 334
+      },
+      {
+       "sub": "2-09->2-10",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 733
+      },
+      {
+       "sub": "2-10->2-11",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 121
+      },
+      {
+       "max_turn_deg_per_6px": 11.48,
+       "min_clear_of_other_pins_px": 94.52
+      }
+     ],
+     "contrast": {
+      "n": 371,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.15,
+       "min_at_plate_px": [
+        1013.2,
+        963.7
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.69,
+       "min_at_plate_px": [
+        1062.2,
+        1057.6
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.12
+      }
+     }
+    },
+    {
+     "leg": "2-11->2-12",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-11->2-12",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 545
+      },
+      {
+       "max_turn_deg_per_6px": 4.33,
+       "min_clear_of_other_pins_px": 237.31
+      }
+     ],
+     "contrast": {
+      "n": 166,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.2,
+       "min_at_plate_px": [
+        1300.2,
+        920.5
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.04,
+       "median": 1.87,
+       "min_at_plate_px": [
+        1291.1,
+        833.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.22
+      }
+     }
+    },
+    {
+     "leg": "2-12->2-14",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-12->2-13",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 231
+      },
+      {
+       "sub": "2-13->2-14",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 168
+      },
+      {
+       "max_turn_deg_per_6px": 6.03,
+       "min_clear_of_other_pins_px": 68.67
+      }
+     ],
+     "contrast": {
+      "n": 117,
+      "core_vs_raw_under": {
+       "min": 1.1,
+       "p5": 1.13,
+       "median": 1.3,
+       "min_at_plate_px": [
+        1245.3,
+        366.7
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.01,
+       "p5": 1.03,
+       "median": 1.57,
+       "min_at_plate_px": [
+        1231.4,
+        378.2
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.01,
+       "p5": 1.11,
+       "median": 1.26
+      }
+     }
+    },
+    {
+     "leg": "2-14->2-15",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-14->2-15",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 624
+      },
+      {
+       "max_turn_deg_per_6px": 8.25,
+       "min_clear_of_other_pins_px": 213.18
+      }
+     ],
+     "contrast": {
+      "n": 188,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.29,
+       "min_at_plate_px": [
+        1526.3,
+        699.5
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.84,
+       "min_at_plate_px": [
+        1474.8,
+        603.8
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.05,
+       "median": 1.25
+      }
+     }
+    }
+   ],
+   "labels": [
+    {
+     "text": "Sluis",
+     "row": "2-08",
+     "tier": "city",
+     "px": 47,
+     "side": "E",
+     "bbox": [
+      1204,
+      292,
+      1309,
+      333
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Avignon",
+     "row": "2-11",
+     "tier": "city",
+     "px": 47,
+     "side": "NE",
+     "bbox": [
+      1333,
+      988,
+      1505,
+      1029
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Paris",
+     "row": "2-12",
+     "tier": "city",
+     "px": 47,
+     "side": "W",
+     "bbox": [
+      992,
+      539,
+      1096,
+      579
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Cologne",
+     "row": "2-14",
+     "tier": "city",
+     "px": 47,
+     "side": "N",
+     "bbox": [
+      1316,
+      272,
+      1495,
+      313
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Milan",
+     "row": "2-15",
+     "tier": "city",
+     "px": 47,
+     "side": "E",
+     "bbox": [
+      1640,
+      852,
+      1769,
+      891
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Ireland",
+     "row": "2-06",
+     "tier": "region",
+     "px": 40,
+     "side": "C",
+     "bbox": [
+      421,
+      57,
+      555,
+      93
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    }
+   ],
+   "label_pair_overlaps": 0,
+   "border_px_gt0.05": 923,
+   "border_pairs": {
+    "aragon|france": {
+     "conf": 0.45,
+     "boundary_px": 52
+    },
+    "castile|france_fam": {
+     "conf": 0.6,
+     "boundary_px": 81
+    },
+    "england|france": {
+     "conf": 0.4,
+     "boundary_px": 358
+    },
+    "france|france_fam": {
+     "conf": 0.4,
+     "boundary_px": 1201
+    }
+   },
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2b_atlas_p0_terrain_forward_16x9.png",
+   "md5": "bfac9eeefd89bfc7d5d7ff5625e0c188"
+  },
+  "hybrid": {
+   "params": {
+    "pigment_alpha": 0.64,
+    "pigment_chroma": 0.92,
+    "pigment_glaze": 0.62,
+    "relief_shade": 0.3,
+    "relief_tint": 0.85,
+    "relief_ridge": 0.2,
+    "rivers": 0.7,
+    "border_alpha": 0.42,
+    "border_width": 1.3,
+    "label_region_alpha": 0.88,
+    "label_place_alpha": 1.0,
+    "label_halo": 0.8
+   },
+   "legs": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "w0": 3.0,
+     "dash": null,
+     "fit": "smooth",
+     "sigma": 14.0,
+     "checks": [
+      {
+       "sub": "2-01->2-02",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 57
+      },
+      {
+       "sub": "2-02->2-03",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 143
+      },
+      {
+       "max_turn_deg_per_6px": 30.22,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 59,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.16,
+       "min_at_plate_px": [
+        789.1,
+        227.0
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 2.01,
+       "p5": 2.12,
+       "median": 2.28,
+       "min_at_plate_px": [
+        854.7,
+        207.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.2
+      }
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "w0": 3.0,
+     "dash": null,
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-03->2-04",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 87
+      },
+      {
+       "max_turn_deg_per_6px": 3.02,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 21,
+      "core_vs_raw_under": {
+       "min": 1.12,
+       "p5": 1.13,
+       "median": 1.18,
+       "min_at_plate_px": [
+        834.5,
+        250.7
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.86,
+       "p5": 1.89,
+       "median": 2.33,
+       "min_at_plate_px": [
+        820.6,
+        262.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.01,
+       "p5": 1.02,
+       "median": 1.2
+      }
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-04->2-05",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 129
+      },
+      {
+       "max_turn_deg_per_6px": 14.8,
+       "min_clear_of_other_pins_px": 8.7
+      }
+     ],
+     "contrast": {
+      "n": 30,
+      "core_vs_raw_under": {
+       "min": 1.03,
+       "p5": 1.03,
+       "median": 1.12,
+       "min_at_plate_px": [
+        832.0,
+        355.1
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.21,
+       "p5": 1.26,
+       "median": 1.71,
+       "min_at_plate_px": [
+        830.1,
+        327.5
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.02,
+       "p5": 1.03,
+       "median": 1.08
+      }
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "adaptive sigma 18..8",
+     "sigma": 18.0,
+     "checks": [
+      {
+       "sub": "2-05->2-06",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 7.59,
+       "n": 497,
+       "harbour_r_px": [
+        13.28
+       ]
+      },
+      {
+       "sub": "2-06->2-07",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 4.39,
+       "n": 897,
+       "harbour_r_px": [
+        12.06
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 32.19,
+       "min_clear_of_other_pins_px": 102.86
+      }
+     ],
+     "contrast": {
+      "n": 457,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.04,
+       "median": 1.39,
+       "min_at_plate_px": [
+        609.5,
+        439.4
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.35,
+       "p5": 1.56,
+       "median": 2.03,
+       "min_at_plate_px": [
+        838.4,
+        460.3
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.01,
+       "p5": 1.13,
+       "median": 1.39
+      }
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "w0": 2.6,
+     "dash": [
+      13.0,
+      10.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-07->2-08",
+       "kind": "sea",
+       "land_samples_outside_harbour": 0,
+       "min_coast_clear_px": 9.39,
+       "n": 134,
+       "harbour_r_px": [
+        12.06,
+        15.9
+       ]
+      },
+      {
+       "max_turn_deg_per_6px": 3.69,
+       "min_clear_of_other_pins_px": 208.2
+      }
+     ],
+     "contrast": {
+      "n": 33,
+      "core_vs_raw_under": {
+       "min": 1.06,
+       "p5": 1.09,
+       "median": 1.4,
+       "min_at_plate_px": [
+        1147.4,
+        306.6
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.44,
+       "p5": 1.63,
+       "median": 2.31,
+       "min_at_plate_px": [
+        1147.4,
+        306.6
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.25,
+       "p5": 1.27,
+       "median": 1.48
+      }
+     }
+    },
+    {
+     "leg": "2-08->2-11",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-08->2-09",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 334
+      },
+      {
+       "sub": "2-09->2-10",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 733
+      },
+      {
+       "sub": "2-10->2-11",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 121
+      },
+      {
+       "max_turn_deg_per_6px": 11.48,
+       "min_clear_of_other_pins_px": 94.52
+      }
+     ],
+     "contrast": {
+      "n": 371,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.12,
+       "min_at_plate_px": [
+        1246.6,
+        1064.8
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.07,
+       "median": 1.91,
+       "min_at_plate_px": [
+        1023.6,
+        1004.4
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.12
+      }
+     }
+    },
+    {
+     "leg": "2-11->2-12",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-11->2-12",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 545
+      },
+      {
+       "max_turn_deg_per_6px": 4.33,
+       "min_clear_of_other_pins_px": 237.31
+      }
+     ],
+     "contrast": {
+      "n": 166,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.16,
+       "min_at_plate_px": [
+        1296.4,
+        872.5
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.01,
+       "p5": 1.07,
+       "median": 2.0,
+       "min_at_plate_px": [
+        1192.4,
+        695.7
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.14
+      }
+     }
+    },
+    {
+     "leg": "2-12->2-14",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-12->2-13",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 231
+      },
+      {
+       "sub": "2-13->2-14",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 168
+      },
+      {
+       "max_turn_deg_per_6px": 6.03,
+       "min_clear_of_other_pins_px": 68.67
+      }
+     ],
+     "contrast": {
+      "n": 117,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.15,
+       "min_at_plate_px": [
+        1180.0,
+        459.9
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.67,
+       "min_at_plate_px": [
+        1259.0,
+        360.6
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.01,
+       "median": 1.12
+      }
+     }
+    },
+    {
+     "leg": "2-14->2-15",
+     "style": "claimed",
+     "w0": 5.0,
+     "dash": [
+      20.0,
+      14.0
+     ],
+     "fit": "smooth",
+     "sigma": 24.0,
+     "checks": [
+      {
+       "sub": "2-14->2-15",
+       "kind": "land",
+       "water_samples": 0,
+       "n": 624
+      },
+      {
+       "max_turn_deg_per_6px": 8.25,
+       "min_clear_of_other_pins_px": 213.18
+      }
+     ],
+     "contrast": {
+      "n": 188,
+      "core_vs_raw_under": {
+       "min": 1.0,
+       "p5": 1.03,
+       "median": 1.19,
+       "min_at_plate_px": [
+        1450.4,
+        405.9
+       ]
+      },
+      "core_vs_edge_rendered": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.86,
+       "min_at_plate_px": [
+        1492.4,
+        497.1
+       ]
+      },
+      "core_vs_map_beyond_halo": {
+       "min": 1.0,
+       "p5": 1.02,
+       "median": 1.17
+      }
+     }
+    }
+   ],
+   "labels": [
+    {
+     "text": "Sluis",
+     "row": "2-08",
+     "tier": "city",
+     "px": 47,
+     "side": "E",
+     "bbox": [
+      1204,
+      292,
+      1309,
+      333
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Avignon",
+     "row": "2-11",
+     "tier": "city",
+     "px": 47,
+     "side": "NE",
+     "bbox": [
+      1333,
+      988,
+      1505,
+      1029
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Paris",
+     "row": "2-12",
+     "tier": "city",
+     "px": 47,
+     "side": "W",
+     "bbox": [
+      992,
+      539,
+      1096,
+      579
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Cologne",
+     "row": "2-14",
+     "tier": "city",
+     "px": 47,
+     "side": "N",
+     "bbox": [
+      1316,
+      272,
+      1495,
+      313
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Milan",
+     "row": "2-15",
+     "tier": "city",
+     "px": 47,
+     "side": "E",
+     "bbox": [
+      1640,
+      852,
+      1769,
+      891
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    },
+    {
+     "text": "Ireland",
+     "row": "2-06",
+     "tier": "region",
+     "px": 40,
+     "side": "C",
+     "bbox": [
+      421,
+      57,
+      555,
+      93
+     ],
+     "placement_hits": 0,
+     "route_ink_px_in_bbox": 0,
+     "route_halo_px_in_bbox": 0,
+     "border_ink_px_in_bbox": 0
+    }
+   ],
+   "label_pair_overlaps": 0,
+   "border_px_gt0.05": 1699,
+   "border_pairs": {
+    "aragon|france": {
+     "conf": 0.45,
+     "boundary_px": 52
+    },
+    "castile|france_fam": {
+     "conf": 0.6,
+     "boundary_px": 81
+    },
+    "england|france": {
+     "conf": 0.4,
+     "boundary_px": 358
+    },
+    "france|france_fam": {
+     "conf": 0.4,
+     "boundary_px": 1201
+    }
+   },
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2b_atlas_p0_chronicle_hybrid_16x9.png",
+   "md5": "52de18ed1ac4969b0dd2851b107e7947"
+  }
+ },
+ "phone": {
+  "x0": 804,
+  "crop_w": 608,
+  "labels_whole": [
+   "Sluis",
+   "Avignon",
+   "Paris",
+   "Cologne"
+  ],
+  "labels_cut": [],
+  "files": {
+   "political": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2b_atlas_p0_political_forward_phone360x640.png",
+    "md5": "cb80d72af836a6e98319c572927156ae"
+   },
+   "terrain": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2b_atlas_p0_terrain_forward_phone360x640.png",
+    "md5": "4231d4c9fd65323b00656d5b7cdc7b4e"
+   },
+   "hybrid": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2b_atlas_p0_chronicle_hybrid_phone360x640.png",
+    "md5": "4b8d7226de455a67165da9cb943bbcd0"
+   }
+  }
+ },
+ "sheet": {
+  "path": "/workspace/posterity/engine-rnd/maps/atlas/sheets/map2b_atlas_p0_sheet_political_terrain_hybrid.png",
+  "md5": "d10614cf99ea29231ed55de4c9cf14f0",
+  "order": "political | terrain | hybrid; phone crops beneath"
+ },
+ "realms_raster": [
+  {
+   "check": "raster Avignon: not_fams",
+   "dominant": "empire",
+   "weights": {
+    "france": 0.034,
+    "empire": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Avignon: fam",
+   "dominant": "empire",
+   "weights": {
+    "france": 0.034,
+    "empire": 0.52
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Grenoble (Dauphine): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Besancon (County of Burgundy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Dole (County of Burgundy): not_fams",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.66,
+    "france_fam": 0.119
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Chambery (Savoy): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Aix (Provence): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.62
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Lyon: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 0.748,
+    "empire": 0.071
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Paris: fam",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Montpellier: not_fams",
+   "dominant": "aragon",
+   "weights": {
+    "france": 0.143,
+    "aragon": 0.404
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Agen (Agenais): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Saintes (Saintonge): not_fams",
+   "dominant": "france",
+   "weights": {
+    "france": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Galway: no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster Brussels (Brabant): fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.969,
+    "flanders": 0.011
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Cologne: fam",
+   "dominant": "empire",
+   "weights": {
+    "empire": 1.0
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Milan (no polygon): no_fill",
+   "dominant": "empire",
+   "weights": {
+    "empire": 0.297
+   },
+   "ok": true
+  },
+  {
+   "check": "raster Bologna (Papal States neutral): no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster: no realm names/legend/dates on plate",
+   "labels": [
+    "Sluis",
+    "Avignon",
+    "Paris",
+    "Cologne",
+    "Milan",
+    "Ireland"
+   ],
+   "ok": true
+  }
+ ]
+}

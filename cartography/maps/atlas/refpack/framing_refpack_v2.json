@@ -1,0 +1,4488 @@
+{
+ "name": "framing_refpack_v2",
+ "created": "2026-10-31 11:22 ET",
+ "projection": {
+  "name": "Lambert azimuthal equal-area, spherical (engine map_route_v1.LAEA), centred on each frame centre, north up",
+  "sphere_radius_m": 6371000,
+  "note": "pyproj not installed; the engine's own LAEA formulas are used (forward map_route_v1.LAEA, inverse map_modes_v2.inverse_laea). The proj strings are exact equivalents (+R sphere, not WGS84 ellipsoid). Pixel mapping: x_px = (X_m - xmin) / m_per_px, y_px = (ymax - Y_m) / m_per_px."
+ },
+ "verifier": {
+  "script": "verify_realms_1327.check_geometry",
+  "passed": 40,
+  "total": 40
+ },
+ "safe_area_definitions": {
+  "title_safe": "5% inset each side (labels must stay inside)",
+  "pin_safe": "per frame pin_inset (fraction of W, H): every pinned stop and region label point must be inside"
+ },
+ "frames": {
+  "euro_16x9": {
+   "aspect": "16:9",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "use": "Map 2 whole route (2a+2b) + Map 1 stations for context",
+   "justification": "Whole Fieschi route on one plate: Ireland complete, Britain, Sluis, Paris, Cologne, Milan, Avignon with the Gulf of Lion and the whole Pyrenees chain below it; frame height is set by Malin Head (55.4N) to the Pyrenees (42.4N) plus margins, the 16:9 width then gives open Atlantic to the west (medallion/label calm zone) and the Alps-Po basin to the east.",
+   "center_lonlat": [
+    0.5,
+    48.5
+   ],
+   "width_km": 3040,
+   "height_km": 1710.0,
+   "m_per_px": 1583.333,
+   "km_per_px": 1.58333,
+   "proj4": "+proj=laea +lat_0=48.5 +lon_0=0.5 +x_0=0 +y_0=0 +R=6371000 +units=m +no_defs",
+   "projected_bounds_m": {
+    "xmin": -1520000.0,
+    "xmax": 1520000.0,
+    "ymin": -855000.0,
+    "ymax": 855000.0
+   },
+   "lonlat_bounds": {
+    "lon_min": -23.2062,
+    "lon_max": 24.2062,
+    "lat_min": 39.2576,
+    "lat_max": 56.195,
+    "corners": {
+     "top_left": [
+      -23.2062,
+      53.9968
+     ],
+     "top_right": [
+      24.2062,
+      53.9968
+     ],
+     "bottom_left": [
+      -17.2715,
+      39.2576
+     ],
+     "bottom_right": [
+      18.2715,
+      39.2576
+     ]
+    },
+    "note": "envelope of the frame edge; the frame is a rectangle in LAEA metres, so meridians/parallels are curved inside it"
+   },
+   "solver": {
+    "min_width_km": 2988.3,
+    "note": "minimum width satisfying every pin-safe/geography inset; final = rounded up for comfort, centre = content-centred"
+   },
+   "pin_inset": [
+    0.08,
+    0.1
+   ],
+   "pin_safe_px": [
+    153,
+    108,
+    1766,
+    972
+   ],
+   "title_safe_px": [
+    96,
+    54,
+    1824,
+    1026
+   ],
+   "safe_area_check": {
+    "all_stops_in_pin_safe": true,
+    "labels_dropped": [
+     "Gloucester",
+     "Bristol",
+     "Winchester",
+     "Tyburn"
+    ],
+    "stops": [
+     {
+      "row": "1-01",
+      "name": "Chepstow",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "lonlat": [
+       -2.6757,
+       51.6439
+      ],
+      "px": [
+       821.6,
+       316.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       724,
+       325,
+       813,
+       347
+      ],
+      "label_side": "SW",
+      "label_note": null
+     },
+     {
+      "row": "1-03",
+      "name": "Kenilworth",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "lonlat": [
+       -1.59111,
+       52.347
+      ],
+      "px": [
+       870.3,
+       268.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       885,
+       257,
+       1025,
+       281
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-04",
+      "name": "Berkeley",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "lonlat": [
+       -2.45694,
+       51.68861
+      ],
+      "px": [
+       831.3,
+       313.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       738,
+       284,
+       822,
+       305
+      ],
+      "label_side": "NW",
+      "label_note": null
+     },
+     {
+      "row": "1-05",
+      "name": "Gloucester",
+      "qid": "Q262500",
+      "kind": "pin",
+      "lonlat": [
+       -2.24654,
+       51.8673
+      ],
+      "px": [
+       840.9,
+       301.4
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-06",
+      "name": "Bristol",
+      "qid": "Q23154",
+      "kind": "pin",
+      "lonlat": [
+       -2.5975,
+       51.45361
+      ],
+      "px": [
+       824.4,
+       329.8
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-07",
+      "name": "Lincoln",
+      "qid": "Q180057",
+      "kind": "pin",
+      "lonlat": [
+       -0.55,
+       53.25
+      ],
+      "px": [
+       915.8,
+       206.2
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       930,
+       195,
+       1029,
+       218
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-08",
+      "name": "Corfe",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "lonlat": [
+       -2.0589,
+       50.6399
+      ],
+      "px": [
+       846.0,
+       387.8
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       764,
+       375,
+       837,
+       400
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-09",
+      "name": "Winchester",
+      "qid": "Q172157",
+      "kind": "pin",
+      "lonlat": [
+       -1.30861,
+       51.06333
+      ],
+      "px": [
+       880.2,
+       359.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-10",
+      "name": "Westminster",
+      "qid": "Q62408",
+      "kind": "pin",
+      "lonlat": [
+       -0.12417,
+       51.49944
+      ],
+      "px": [
+       932.7,
+       329.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       868,
+       297,
+       997,
+       321
+      ],
+      "label_side": "N",
+      "label_note": null
+     },
+     {
+      "row": "1-11",
+      "name": "Tyburn",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "lonlat": [
+       -0.164,
+       51.51286
+      ],
+      "px": [
+       931.0,
+       328.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-12",
+      "name": "Nottingham",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "lonlat": [
+       -1.15472,
+       52.94917
+      ],
+      "px": [
+       889.9,
+       226.8
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       731,
+       214,
+       881,
+       240
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-07",
+      "name": "Sandwich",
+      "qid": "Q26163",
+      "kind": "pin",
+      "lonlat": [
+       1.33889,
+       51.27472
+      ],
+      "px": [
+       996.9,
+       345.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       942,
+       359,
+       1052,
+       384
+      ],
+      "label_side": "S",
+      "label_note": null
+     },
+     {
+      "row": "2-08",
+      "name": "Sluis",
+      "qid": "Q2065987",
+      "kind": "pin",
+      "lonlat": [
+       3.3883,
+       51.3089
+      ],
+      "px": [
+       1086.8,
+       340.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1018,
+       328,
+       1078,
+       352
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-11",
+      "name": "Avignon",
+      "qid": "Q6397",
+      "kind": "pin",
+      "lonlat": [
+       4.80833,
+       43.94861
+      ],
+      "px": [
+       1177.9,
+       853.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1070,
+       842,
+       1169,
+       866
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-12",
+      "name": "Paris",
+      "qid": "Q90",
+      "kind": "pin",
+      "lonlat": [
+       2.35222,
+       48.85667
+      ],
+      "px": [
+       1045.6,
+       513.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       977,
+       502,
+       1037,
+       526
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-14",
+      "name": "Cologne",
+      "qid": "Q365",
+      "kind": "pin",
+      "lonlat": [
+       6.95778,
+       50.94222
+      ],
+      "px": [
+       1245.4,
+       356.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1134,
+       344,
+       1236,
+       369
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-15",
+      "name": "Milan",
+      "qid": "Q490",
+      "kind": "pin",
+      "lonlat": [
+       9.19,
+       45.46694
+      ],
+      "px": [
+       1387.1,
+       729.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1304,
+       717,
+       1378,
+       741
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-02",
+      "name": "Glamorgan",
+      "qid": "Q870815",
+      "kind": "region_label_only",
+      "lonlat": [
+       -3.55,
+       51.62
+      ],
+      "px": [
+       783.4,
+       316.2
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       599,
+       302,
+       715,
+       330
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-06",
+      "name": "Ireland",
+      "qid": "Q22890",
+      "kind": "region_label_only",
+      "lonlat": [
+       -7.6,
+       53.15
+      ],
+      "px": [
+       619.4,
+       195.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       578,
+       184,
+       661,
+       206
+      ],
+      "label_side": "C",
+      "label_note": null
+     },
+     {
+      "row": "2-13",
+      "name": "Brabant",
+      "qid": "Q159856",
+      "kind": "region_label_only",
+      "lonlat": [
+       4.75,
+       50.75
+      ],
+      "px": [
+       1148.8,
+       376.7
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1102,
+       386,
+       1195,
+       409
+      ],
+      "label_side": "S",
+      "label_note": null
+     }
+    ]
+   },
+   "label_zones": [
+    {
+     "row": "1-04",
+     "text": "Berkeley",
+     "rect_px": [
+      738,
+      284,
+      822,
+      305
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-08",
+     "text": "Corfe",
+     "rect_px": [
+      764,
+      375,
+      837,
+      400
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-07",
+     "text": "Sandwich",
+     "rect_px": [
+      942,
+      359,
+      1052,
+      384
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-08",
+     "text": "Sluis",
+     "rect_px": [
+      1018,
+      328,
+      1078,
+      352
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-12",
+     "text": "Paris",
+     "rect_px": [
+      977,
+      502,
+      1037,
+      526
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-11",
+     "text": "Avignon",
+     "rect_px": [
+      1070,
+      842,
+      1169,
+      866
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-14",
+     "text": "Cologne",
+     "rect_px": [
+      1134,
+      344,
+      1236,
+      369
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-15",
+     "text": "Milan",
+     "rect_px": [
+      1304,
+      717,
+      1378,
+      741
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-01",
+     "text": "Chepstow",
+     "rect_px": [
+      724,
+      325,
+      813,
+      347
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-03",
+     "text": "Kenilworth",
+     "rect_px": [
+      885,
+      257,
+      1025,
+      281
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-10",
+     "text": "Westminster",
+     "rect_px": [
+      868,
+      297,
+      997,
+      321
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-07",
+     "text": "Lincoln",
+     "rect_px": [
+      930,
+      195,
+      1029,
+      218
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-12",
+     "text": "Nottingham",
+     "rect_px": [
+      731,
+      214,
+      881,
+      240
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-02",
+     "text": "Glamorgan",
+     "rect_px": [
+      599,
+      302,
+      715,
+      330
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-06",
+     "text": "Ireland",
+     "rect_px": [
+      578,
+      184,
+      661,
+      206
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-13",
+     "text": "Brabant",
+     "rect_px": [
+      1102,
+      386,
+      1195,
+      409
+     ],
+     "pad_px": 10
+    }
+   ],
+   "label_zone_rule": "keep these rects (+10 px) low-detail on the plate: no settlement vignette, no dense forest/hatching under a label",
+   "zones": {
+    "medallion": {
+     "rect_px": [
+      54,
+      54,
+      291,
+      291
+     ],
+     "lonlat_corners": [
+      [
+       -21.552,
+       53.503
+      ],
+      [
+       -15.991,
+       54.365
+      ],
+      [
+       -14.784,
+       51.079
+      ],
+      [
+       -19.987,
+       50.288
+      ]
+     ],
+     "sea_fraction": 1.0,
+     "position": "upper-left",
+     "use": "parking/hold position for the portrait medallion at wide zoom; the travelling marker itself follows the route and must never cover a label zone"
+    },
+    "ornament_reserved": {
+     "rect_px": [
+      54,
+      443,
+      248,
+      637
+     ],
+     "lonlat_corners": [
+      [
+       -19.116,
+       48.213
+      ],
+      [
+       -15.033,
+       48.844
+      ],
+      [
+       -14.237,
+       46.146
+      ],
+      [
+       -18.131,
+       45.552
+      ]
+     ],
+     "sea_fraction": 1.0,
+     "position": "middle-left",
+     "use": "the ONLY place a static compass rose may be painted; nothing else ornamental anywhere on the plate"
+    }
+   },
+   "realm_labels_reference_only": [
+    {
+     "group": "empire",
+     "text": "HOLY ROMAN EMPIRE",
+     "placed": true,
+     "xy": [
+      1667,
+      182
+     ],
+     "px": 34,
+     "bbox": [
+      1413,
+      157,
+      1920,
+      206
+     ]
+    },
+    {
+     "group": "france",
+     "text": "FRANCE",
+     "placed": true,
+     "xy": [
+      980,
+      668
+     ],
+     "px": 34,
+     "bbox": [
+      885,
+      643,
+      1074,
+      692
+     ]
+    },
+    {
+     "group": "castile",
+     "text": "CASTILE",
+     "placed": true,
+     "xy": [
+      528,
+      895
+     ],
+     "px": 16,
+     "bbox": [
+      477,
+      881,
+      578,
+      908
+     ]
+    },
+    {
+     "group": "england",
+     "text": "ENGLAND",
+     "placed": true,
+     "xy": [
+      876,
+      158
+     ],
+     "px": 15,
+     "bbox": [
+      821,
+      145,
+      930,
+      171
+     ]
+    },
+    {
+     "group": "aragon",
+     "text": "ARAGON",
+     "placed": true,
+     "xy": [
+      910,
+      1019
+     ],
+     "px": 19,
+     "bbox": [
+      851,
+      1003,
+      968,
+      1034
+     ]
+    },
+    {
+     "group": "brittany",
+     "text": "BRITTANY",
+     "placed": true,
+     "xy": [
+      816,
+      561
+     ],
+     "px": 19,
+     "bbox": [
+      745,
+      545,
+      886,
+      576
+     ]
+    },
+    {
+     "group": "burgundy_duchy",
+     "text": "BURGUNDY",
+     "placed": true,
+     "xy": [
+      1133,
+      611
+     ],
+     "px": 14,
+     "bbox": [
+      1074,
+      598,
+      1191,
+      623
+     ]
+    },
+    {
+     "group": "portugal",
+     "text": "PORTUGAL",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "scotland",
+     "text": "SCOTLAND",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "ireland_eng",
+     "text": "IRELAND (ENG.)",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "navarre",
+     "text": "NAVARRE",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "gascony",
+     "text": "GASCONY",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "flanders",
+     "text": "FLANDERS",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    }
+   ],
+   "renderer": {
+    "note": "drop-in for the engine/accept configs: replace their 'map', 'out_wh', 'plate_wh' (plate = 2x out) and 'control_points'",
+    "map": {
+     "center_lonlat": [
+      0.5,
+      48.5
+     ],
+     "width_km": 3040
+    },
+    "out_wh": [
+     1920,
+     1080
+    ],
+    "plate_wh": [
+     3840,
+     2160
+    ],
+    "px_scale_out_to_plate": 2.0,
+    "register_plate_to": "this frame at out_wh (homography/TPS output in out px, scale x2 for plate px)"
+   },
+   "authority": {
+    "engine_check": "map_route_v1.check_against_authority",
+    "rows": [
+     {
+      "row": "1-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle, Monmouthshire"
+     },
+     {
+      "row": "1-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan, historic county"
+     },
+     {
+      "row": "1-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle, Warwickshire"
+     },
+     {
+      "row": "1-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle, Gloucestershire"
+     },
+     {
+      "row": "1-05",
+      "qid": "Q262500",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Gloucester",
+      "site": "Gloucester Cathedral"
+     },
+     {
+      "row": "1-06",
+      "qid": "Q23154",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Bristol",
+      "site": "Bristol"
+     },
+     {
+      "row": "1-07",
+      "qid": "Q180057",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Lincoln",
+      "site": "Lincoln"
+     },
+     {
+      "row": "1-08",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle, Dorset"
+     },
+     {
+      "row": "1-09",
+      "qid": "Q172157",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Winchester",
+      "site": "Winchester, Hampshire"
+     },
+     {
+      "row": "1-10",
+      "qid": "Q62408",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Westminster",
+      "site": "Palace of Westminster, London"
+     },
+     {
+      "row": "1-11",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Tyburn",
+      "site": "Tyburn, former village near Marble Arch, London"
+     },
+     {
+      "row": "1-12",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Nottingham",
+      "site": "Nottingham Castle"
+     },
+     {
+      "row": "2-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle"
+     },
+     {
+      "row": "2-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan (region)"
+     },
+     {
+      "row": "2-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle"
+     },
+     {
+      "row": "2-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle"
+     },
+     {
+      "row": "2-05",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle"
+     },
+     {
+      "row": "2-06",
+      "qid": "Q22890",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Ireland",
+      "site": "Ireland (island)"
+     },
+     {
+      "row": "2-07",
+      "qid": "Q26163",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Sandwich",
+      "site": "Sandwich, Kent"
+     },
+     {
+      "row": "2-08",
+      "qid": "Q2065987",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Sluis",
+      "site": "Sluis, Zeeland"
+     },
+     {
+      "row": "2-09",
+      "qid": "Q15878",
+      "kind": "via",
+      "status": "OMIT",
+      "label": null,
+      "site": "Normandy (region)"
+     },
+     {
+      "row": "2-10",
+      "qid": "Q206221",
+      "kind": "via",
+      "status": "OMIT",
+      "label": null,
+      "site": "Languedoc (historical province)"
+     },
+     {
+      "row": "2-11",
+      "qid": "Q6397",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Avignon",
+      "site": "Avignon"
+     },
+     {
+      "row": "2-12",
+      "qid": "Q90",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Paris",
+      "site": "Paris"
+     },
+     {
+      "row": "2-13",
+      "qid": "Q159856",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Brabant",
+      "site": "Duchy of Brabant (region)"
+     },
+     {
+      "row": "2-14",
+      "qid": "Q365",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Cologne",
+      "site": "Cologne"
+     },
+     {
+      "row": "2-15",
+      "qid": "Q490",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Milan",
+      "site": "Milan"
+     }
+    ],
+    "refusal_tests": [
+     {
+      "test": "UNCERTAIN hermitage pinned",
+      "row": "2-16",
+      "refused": true,
+      "error": "2-16 is UNCERTAIN, cannot pin"
+     },
+     {
+      "test": "unlisted row",
+      "row": "9-99",
+      "refused": true,
+      "error": "row 9-99 not in MAP-PLACES-v1"
+     },
+     {
+      "test": "text on a no-text region",
+      "row": "2-09",
+      "refused": true,
+      "error": "2-09: label 'Normandy' not allowed (tint or label only)"
+     }
+    ]
+   },
+   "realm_raster_check": {
+    "passed": 20,
+    "total": 20,
+    "failed": []
+   },
+   "realm_id_legend": {
+    "0": "sea",
+    "128,128,128": "neutral land",
+    "37,91,157": "england (england)",
+    "74,182,58": "gascony (gascony)",
+    "111,17,215": "ireland_eng (ireland_eng)",
+    "148,108,116": "scotland (scotland)",
+    "185,199,17": "france (france+france_lyon)",
+    "222,34,174": "brittany (brittany)",
+    "3,125,75": "burgundy_duchy (burgundy_duchy)",
+    "40,216,232": "flanders (flanders)",
+    "77,51,133": "navarre (navarre)",
+    "114,142,34": "empire (empire_low+empire_arles+empire_provence)",
+    "151,233,191": "castile (castile)",
+    "188,68,92": "aragon (aragon)",
+    "225,159,249": "portugal (portugal)"
+   },
+   "crop_from_16x9": null,
+   "files": {
+    "bare": "img_v2/euro_16x9_ref_bare.png",
+    "notext": "img_v2/euro_16x9_ref_notext.png",
+    "labels": "img_v2/euro_16x9_ref_labels.png",
+    "graticule": "img_v2/euro_16x9_ref_graticule.png",
+    "tinted_notext": "img_v2/euro_16x9_ref_tinted_notext.png",
+    "tinted_labels": "img_v2/euro_16x9_ref_tinted_labels.png",
+    "realm_ids": "img_v2/euro_16x9_realm_ids.png",
+    "zones_overlay": "img_v2/euro_16x9_zones_overlay.png"
+   },
+   "crop_to_9x16_test": {
+    "crop_w_px": 608,
+    "crop_h_px": 1080,
+    "best_x0": 700,
+    "stops_in_safe": 18,
+    "stops_total": 20,
+    "upscale_to_1080x1920": 1.778,
+    "passes": false
+   }
+  },
+  "britain_16x9": {
+   "aspect": "16:9",
+   "size_px": [
+    1920,
+    1080
+   ],
+   "use": "Map 1 + Map 2a (Britain)",
+   "justification": "Map 1 / Map 2a stations (Severn cluster: Chepstow, Berkeley, Gloucester, Bristol within 45 km; Westminster-Tyburn 2.9 km) need ~3.5x the euro scale; frame spans Irish east coast (Ireland touch) to Kent/Sandwich and Lincoln to Corfe with the Channel below.",
+   "center_lonlat": [
+    -2.55,
+    51.95
+   ],
+   "width_km": 705,
+   "height_km": 396.56,
+   "m_per_px": 367.188,
+   "km_per_px": 0.36719,
+   "proj4": "+proj=laea +lat_0=51.95 +lon_0=-2.55 +x_0=0 +y_0=0 +R=6371000 +units=m +no_defs",
+   "projected_bounds_m": {
+    "xmin": -352500.0,
+    "xmax": 352500.0,
+    "ymin": -198281.2,
+    "ymax": 198281.2
+   },
+   "lonlat_bounds": {
+    "lon_min": -7.8992,
+    "lon_max": 2.7992,
+    "lat_min": 50.0597,
+    "lat_max": 53.7333,
+    "corners": {
+     "top_left": [
+      -7.8992,
+      53.616
+     ],
+     "top_right": [
+      2.7992,
+      53.616
+     ],
+     "bottom_left": [
+      -7.4916,
+      50.0597
+     ],
+     "bottom_right": [
+      2.3916,
+      50.0597
+     ]
+    },
+    "note": "envelope of the frame edge; the frame is a rectangle in LAEA metres, so meridians/parallels are curved inside it"
+   },
+   "solver": {
+    "min_width_km": 686.2,
+    "note": "minimum width satisfying every pin-safe/geography inset; final = rounded up for comfort, centre = content-centred"
+   },
+   "pin_inset": [
+    0.08,
+    0.12
+   ],
+   "pin_safe_px": [
+    153,
+    129,
+    1766,
+    950
+   ],
+   "title_safe_px": [
+    96,
+    54,
+    1824,
+    1026
+   ],
+   "safe_area_check": {
+    "all_stops_in_pin_safe": true,
+    "labels_dropped": [],
+    "stops": [
+     {
+      "row": "1-01",
+      "name": "Chepstow",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "lonlat": [
+       -2.6757,
+       51.6439
+      ],
+      "px": [
+       936.4,
+       632.7
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       788,
+       619,
+       921,
+       647
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-03",
+      "name": "Kenilworth",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "lonlat": [
+       -1.59111,
+       52.347
+      ],
+      "px": [
+       1137.4,
+       418.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       967,
+       405,
+       1126,
+       433
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-04",
+      "name": "Berkeley",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "lonlat": [
+       -2.45694,
+       51.68861
+      ],
+      "px": [
+       977.5,
+       619.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       992,
+       605,
+       1116,
+       633
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-05",
+      "name": "Gloucester",
+      "qid": "Q262500",
+      "kind": "pin",
+      "lonlat": [
+       -2.24654,
+       51.8673
+      ],
+      "px": [
+       1016.7,
+       564.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1033,
+       551,
+       1191,
+       579
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-06",
+      "name": "Bristol",
+      "qid": "Q23154",
+      "kind": "pin",
+      "lonlat": [
+       -2.5975,
+       51.45361
+      ],
+      "px": [
+       951.0,
+       690.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       966,
+       676,
+       1070,
+       704
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-07",
+      "name": "Lincoln",
+      "qid": "Q180057",
+      "kind": "pin",
+      "lonlat": [
+       -0.55,
+       53.25
+      ],
+      "px": [
+       1322.3,
+       141.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1199,
+       128,
+       1312,
+       155
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-08",
+      "name": "Corfe",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "lonlat": [
+       -2.0589,
+       50.6399
+      ],
+      "px": [
+       1054.3,
+       936.4
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       961,
+       922,
+       1044,
+       950
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-09",
+      "name": "Winchester",
+      "qid": "Q172157",
+      "kind": "pin",
+      "lonlat": [
+       -1.30861,
+       51.06333
+      ],
+      "px": [
+       1196.3,
+       806.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1211,
+       792,
+       1371,
+       821
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-10",
+      "name": "Westminster",
+      "qid": "Q62408",
+      "kind": "pin",
+      "lonlat": [
+       -0.12417,
+       51.49944
+      ],
+      "px": [
+       1417.2,
+       668.8
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1432,
+       654,
+       1606,
+       683
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-11",
+      "name": "Tyburn",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "lonlat": [
+       -0.164,
+       51.51286
+      ],
+      "px": [
+       1409.6,
+       665.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1301,
+       651,
+       1400,
+       679
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-12",
+      "name": "Nottingham",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "lonlat": [
+       -1.15472,
+       52.94917
+      ],
+      "px": [
+       1214.6,
+       235.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1230,
+       220,
+       1402,
+       249
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "2-07",
+      "name": "Sandwich",
+      "qid": "Q26163",
+      "kind": "pin",
+      "lonlat": [
+       1.33889,
+       51.27472
+      ],
+      "px": [
+       1696.3,
+       724.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       1561,
+       711,
+       1685,
+       739
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-02",
+      "name": "Glamorgan",
+      "qid": "Q870815",
+      "kind": "region_label_only",
+      "lonlat": [
+       -3.55,
+       51.62
+      ],
+      "px": [
+       772.0,
+       638.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       628,
+       623,
+       763,
+       655
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-06",
+      "name": "Ireland",
+      "qid": "Q22890",
+      "kind": "region_label_only",
+      "lonlat": [
+       -7.6,
+       53.15
+      ],
+      "px": [
+       227.2,
+       277.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       179,
+       265,
+       276,
+       290
+      ],
+      "label_side": "C",
+      "label_note": null
+     }
+    ]
+   },
+   "label_zones": [
+    {
+     "row": "1-04",
+     "text": "Berkeley",
+     "rect_px": [
+      992,
+      605,
+      1116,
+      633
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-08",
+     "text": "Corfe",
+     "rect_px": [
+      961,
+      922,
+      1044,
+      950
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-07",
+     "text": "Sandwich",
+     "rect_px": [
+      1561,
+      711,
+      1685,
+      739
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-01",
+     "text": "Chepstow",
+     "rect_px": [
+      788,
+      619,
+      921,
+      647
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-03",
+     "text": "Kenilworth",
+     "rect_px": [
+      967,
+      405,
+      1126,
+      433
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-10",
+     "text": "Westminster",
+     "rect_px": [
+      1432,
+      654,
+      1606,
+      683
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-05",
+     "text": "Gloucester",
+     "rect_px": [
+      1033,
+      551,
+      1191,
+      579
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-06",
+     "text": "Bristol",
+     "rect_px": [
+      966,
+      676,
+      1070,
+      704
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-07",
+     "text": "Lincoln",
+     "rect_px": [
+      1199,
+      128,
+      1312,
+      155
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-09",
+     "text": "Winchester",
+     "rect_px": [
+      1211,
+      792,
+      1371,
+      821
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-11",
+     "text": "Tyburn",
+     "rect_px": [
+      1301,
+      651,
+      1400,
+      679
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-12",
+     "text": "Nottingham",
+     "rect_px": [
+      1230,
+      220,
+      1402,
+      249
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-02",
+     "text": "Glamorgan",
+     "rect_px": [
+      628,
+      623,
+      763,
+      655
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-06",
+     "text": "Ireland",
+     "rect_px": [
+      179,
+      265,
+      276,
+      290
+     ],
+     "pad_px": 10
+    }
+   ],
+   "label_zone_rule": "keep these rects (+10 px) low-detail on the plate: no settlement vignette, no dense forest/hatching under a label",
+   "zones": {
+    "medallion": {
+     "rect_px": [
+      54,
+      789,
+      291,
+      1026
+     ],
+     "lonlat_corners": [
+      [
+       -7.311,
+       51.03
+      ],
+      [
+       -6.068,
+       51.074
+      ],
+      [
+       -6.009,
+       50.293
+      ],
+      [
+       -7.232,
+       50.249
+      ]
+     ],
+     "sea_fraction": 1.0,
+     "position": "lower-left",
+     "use": "parking/hold position for the portrait medallion at wide zoom; the travelling marker itself follows the route and must never cover a label zone"
+    },
+    "ornament_reserved": {
+     "rect_px": [
+      383,
+      54,
+      577,
+      248
+     ],
+     "lonlat_corners": [
+      [
+       -5.755,
+       53.513
+      ],
+      [
+       -4.678,
+       53.536
+      ],
+      [
+       -4.647,
+       52.896
+      ],
+      [
+       -5.708,
+       52.873
+      ]
+     ],
+     "sea_fraction": 0.999,
+     "position": "upper-left",
+     "use": "the ONLY place a static compass rose may be painted; nothing else ornamental anywhere on the plate"
+    }
+   },
+   "realm_labels_reference_only": [
+    {
+     "group": "england",
+     "text": "KINGDOM OF ENGLAND",
+     "placed": true,
+     "xy": [
+      1405,
+      454
+     ],
+     "px": 34,
+     "bbox": [
+      1131,
+      429,
+      1678,
+      478
+     ]
+    },
+    {
+     "group": "ireland_eng",
+     "text": "IRELAND (ENG.)",
+     "placed": true,
+     "xy": [
+      205,
+      155
+     ],
+     "px": 20,
+     "bbox": [
+      93,
+      139,
+      316,
+      171
+     ]
+    },
+    {
+     "group": "france",
+     "text": "FRANCE",
+     "placed": true,
+     "xy": [
+      1838,
+      965
+     ],
+     "px": 29,
+     "bbox": [
+      1756,
+      943,
+      1919,
+      986
+     ]
+    },
+    {
+     "group": "flanders",
+     "text": "FLANDERS",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    }
+   ],
+   "renderer": {
+    "note": "drop-in for the engine/accept configs: replace their 'map', 'out_wh', 'plate_wh' (plate = 2x out) and 'control_points'",
+    "map": {
+     "center_lonlat": [
+      -2.55,
+      51.95
+     ],
+     "width_km": 705
+    },
+    "out_wh": [
+     1920,
+     1080
+    ],
+    "plate_wh": [
+     3840,
+     2160
+    ],
+    "px_scale_out_to_plate": 2.0,
+    "register_plate_to": "this frame at out_wh (homography/TPS output in out px, scale x2 for plate px)"
+   },
+   "authority": {
+    "engine_check": "map_route_v1.check_against_authority",
+    "rows": [
+     {
+      "row": "1-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle, Monmouthshire"
+     },
+     {
+      "row": "1-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan, historic county"
+     },
+     {
+      "row": "1-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle, Warwickshire"
+     },
+     {
+      "row": "1-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle, Gloucestershire"
+     },
+     {
+      "row": "1-05",
+      "qid": "Q262500",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Gloucester",
+      "site": "Gloucester Cathedral"
+     },
+     {
+      "row": "1-06",
+      "qid": "Q23154",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Bristol",
+      "site": "Bristol"
+     },
+     {
+      "row": "1-07",
+      "qid": "Q180057",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Lincoln",
+      "site": "Lincoln"
+     },
+     {
+      "row": "1-08",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle, Dorset"
+     },
+     {
+      "row": "1-09",
+      "qid": "Q172157",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Winchester",
+      "site": "Winchester, Hampshire"
+     },
+     {
+      "row": "1-10",
+      "qid": "Q62408",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Westminster",
+      "site": "Palace of Westminster, London"
+     },
+     {
+      "row": "1-11",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Tyburn",
+      "site": "Tyburn, former village near Marble Arch, London"
+     },
+     {
+      "row": "1-12",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Nottingham",
+      "site": "Nottingham Castle"
+     },
+     {
+      "row": "2-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle"
+     },
+     {
+      "row": "2-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan (region)"
+     },
+     {
+      "row": "2-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle"
+     },
+     {
+      "row": "2-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle"
+     },
+     {
+      "row": "2-05",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle"
+     },
+     {
+      "row": "2-06",
+      "qid": "Q22890",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Ireland",
+      "site": "Ireland (island)"
+     },
+     {
+      "row": "2-07",
+      "qid": "Q26163",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Sandwich",
+      "site": "Sandwich, Kent"
+     }
+    ],
+    "refusal_tests": [
+     {
+      "test": "UNCERTAIN hermitage pinned",
+      "row": "2-16",
+      "refused": true,
+      "error": "2-16 is UNCERTAIN, cannot pin"
+     },
+     {
+      "test": "unlisted row",
+      "row": "9-99",
+      "refused": true,
+      "error": "row 9-99 not in MAP-PLACES-v1"
+     },
+     {
+      "test": "text on a no-text region",
+      "row": "2-09",
+      "refused": true,
+      "error": "2-09 is OMIT, cannot pin"
+     }
+    ]
+   },
+   "realm_raster_check": {
+    "passed": 0,
+    "total": 0,
+    "failed": []
+   },
+   "realm_id_legend": {
+    "0": "sea",
+    "128,128,128": "neutral land",
+    "37,91,157": "england (england)",
+    "74,182,58": "gascony (gascony)",
+    "111,17,215": "ireland_eng (ireland_eng)",
+    "148,108,116": "scotland (scotland)",
+    "185,199,17": "france (france+france_lyon)",
+    "222,34,174": "brittany (brittany)",
+    "3,125,75": "burgundy_duchy (burgundy_duchy)",
+    "40,216,232": "flanders (flanders)",
+    "77,51,133": "navarre (navarre)",
+    "114,142,34": "empire (empire_low+empire_arles+empire_provence)",
+    "151,233,191": "castile (castile)",
+    "188,68,92": "aragon (aragon)",
+    "225,159,249": "portugal (portugal)"
+   },
+   "crop_from_16x9": null,
+   "files": {
+    "bare": "img_v2/britain_16x9_ref_bare.png",
+    "notext": "img_v2/britain_16x9_ref_notext.png",
+    "labels": "img_v2/britain_16x9_ref_labels.png",
+    "graticule": "img_v2/britain_16x9_ref_graticule.png",
+    "tinted_notext": "img_v2/britain_16x9_ref_tinted_notext.png",
+    "tinted_labels": "img_v2/britain_16x9_ref_tinted_labels.png",
+    "realm_ids": "img_v2/britain_16x9_realm_ids.png",
+    "zones_overlay": "img_v2/britain_16x9_zones_overlay.png"
+   },
+   "crop_to_9x16_test": {
+    "crop_w_px": 608,
+    "crop_h_px": 1080,
+    "best_x0": 872,
+    "stops_in_safe": 11,
+    "stops_total": 14,
+    "upscale_to_1080x1920": 1.778,
+    "passes": false
+   }
+  },
+  "euro_9x16": {
+   "aspect": "9:16",
+   "size_px": [
+    1080,
+    1920
+   ],
+   "use": "Map 2 whole route (2a+2b) + Map 1 stations for context",
+   "justification": "Native portrait: width is set by the Irish east coast (route's Ireland touch) to Milan with label room; Ireland is partial (east half) by design. The extra height is used north (Scotland, North Sea) and south (Gulf of Lion, Pyrenees, Corsica) so the route sits in the middle band and the medallion has calm sea above and below.",
+   "center_lonlat": [
+    1.5,
+    48.0
+   ],
+   "width_km": 1550,
+   "height_km": 2755.56,
+   "m_per_px": 1435.185,
+   "km_per_px": 1.43519,
+   "proj4": "+proj=laea +lat_0=48.0 +lon_0=1.5 +x_0=0 +y_0=0 +R=6371000 +units=m +no_defs",
+   "projected_bounds_m": {
+    "xmin": -775000.0,
+    "xmax": 775000.0,
+    "ymin": -1377777.8,
+    "ymax": 1377777.8
+   },
+   "lonlat_bounds": {
+    "lon_min": -12.364,
+    "lon_max": 15.364,
+    "lat_min": 35.2175,
+    "lat_max": 60.4149,
+    "corners": {
+     "top_left": [
+      -12.364,
+      59.7523
+     ],
+     "top_right": [
+      15.364,
+      59.7523
+     ],
+     "bottom_left": [
+      -6.9964,
+      35.2175
+     ],
+     "bottom_right": [
+      9.9964,
+      35.2175
+     ]
+    },
+    "note": "envelope of the frame edge; the frame is a rectangle in LAEA metres, so meridians/parallels are curved inside it"
+   },
+   "solver": {
+    "min_width_km": 1507.5,
+    "note": "minimum width satisfying every pin-safe/geography inset; final = rounded up for comfort, centre = content-centred"
+   },
+   "pin_inset": [
+    0.1,
+    0.08
+   ],
+   "pin_safe_px": [
+    108,
+    153,
+    972,
+    1766
+   ],
+   "title_safe_px": [
+    54,
+    96,
+    1026,
+    1824
+   ],
+   "safe_area_check": {
+    "all_stops_in_pin_safe": true,
+    "labels_dropped": [
+     "Gloucester",
+     "Winchester",
+     "Tyburn"
+    ],
+    "stops": [
+     {
+      "row": "1-01",
+      "name": "Chepstow",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "lonlat": [
+       -2.6757,
+       51.6439
+      ],
+      "px": [
+       339.3,
+       672.2
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       178,
+       602,
+       294,
+       627
+      ],
+      "label_side": "NW",
+      "label_note": null
+     },
+     {
+      "row": "1-03",
+      "name": "Kenilworth",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "lonlat": [
+       -1.59111,
+       52.347
+      ],
+      "px": [
+       393.6,
+       620.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       409,
+       609,
+       549,
+       633
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-04",
+      "name": "Berkeley",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "lonlat": [
+       -2.45694,
+       51.68861
+      ],
+      "px": [
+       349.9,
+       669.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       257,
+       639,
+       341,
+       660
+      ],
+      "label_side": "NW",
+      "label_note": null
+     },
+     {
+      "row": "1-05",
+      "name": "Gloucester",
+      "qid": "Q262500",
+      "kind": "pin",
+      "lonlat": [
+       -2.24654,
+       51.8673
+      ],
+      "px": [
+       360.7,
+       656.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-06",
+      "name": "Bristol",
+      "qid": "Q23154",
+      "kind": "pin",
+      "lonlat": [
+       -2.5975,
+       51.45361
+      ],
+      "px": [
+       342.2,
+       687.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       242,
+       697,
+       333,
+       721
+      ],
+      "label_side": "SW",
+      "label_note": null
+     },
+     {
+      "row": "1-07",
+      "name": "Lincoln",
+      "qid": "Q180057",
+      "kind": "pin",
+      "lonlat": [
+       -0.55,
+       53.25
+      ],
+      "px": [
+       444.9,
+       552.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       459,
+       541,
+       558,
+       564
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-08",
+      "name": "Corfe",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "lonlat": [
+       -2.0589,
+       50.6399
+      ],
+      "px": [
+       365.2,
+       751.4
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       283,
+       739,
+       356,
+       764
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-09",
+      "name": "Winchester",
+      "qid": "Q172157",
+      "kind": "pin",
+      "lonlat": [
+       -1.30861,
+       51.06333
+      ],
+      "px": [
+       403.2,
+       720.2
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-10",
+      "name": "Westminster",
+      "qid": "Q62408",
+      "kind": "pin",
+      "lonlat": [
+       -0.12417,
+       51.49944
+      ],
+      "px": [
+       461.6,
+       688.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       397,
+       656,
+       526,
+       680
+      ],
+      "label_side": "N",
+      "label_note": null
+     },
+     {
+      "row": "1-11",
+      "name": "Tyburn",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "lonlat": [
+       -0.164,
+       51.51286
+      ],
+      "px": [
+       459.7,
+       687.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-12",
+      "name": "Nottingham",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "lonlat": [
+       -1.15472,
+       52.94917
+      ],
+      "px": [
+       416.0,
+       574.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       257,
+       561,
+       407,
+       587
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-07",
+      "name": "Sandwich",
+      "qid": "Q26163",
+      "kind": "pin",
+      "lonlat": [
+       1.33889,
+       51.27472
+      ],
+      "px": [
+       532.2,
+       706.3
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       478,
+       720,
+       588,
+       745
+      ],
+      "label_side": "S",
+      "label_note": null
+     },
+     {
+      "row": "2-08",
+      "name": "Sluis",
+      "qid": "Q2065987",
+      "kind": "pin",
+      "lonlat": [
+       3.3883,
+       51.3089
+      ],
+      "px": [
+       631.5,
+       702.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       562,
+       691,
+       622,
+       715
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-11",
+      "name": "Avignon",
+      "qid": "Q6397",
+      "kind": "pin",
+      "lonlat": [
+       4.80833,
+       43.94861
+      ],
+      "px": [
+       724.6,
+       1269.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       617,
+       1258,
+       716,
+       1282
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-12",
+      "name": "Paris",
+      "qid": "Q90",
+      "kind": "pin",
+      "lonlat": [
+       2.35222,
+       48.85667
+      ],
+      "px": [
+       583.4,
+       893.4
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       514,
+       881,
+       574,
+       905
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-14",
+      "name": "Cologne",
+      "qid": "Q365",
+      "kind": "pin",
+      "lonlat": [
+       6.95778,
+       50.94222
+      ],
+      "px": [
+       806.3,
+       722.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       695,
+       710,
+       797,
+       735
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-15",
+      "name": "Milan",
+      "qid": "Q490",
+      "kind": "pin",
+      "lonlat": [
+       9.19,
+       45.46694
+      ],
+      "px": [
+       957.1,
+       1135.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       874,
+       1124,
+       948,
+       1148
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-02",
+      "name": "Glamorgan",
+      "qid": "Q870815",
+      "kind": "region_label_only",
+      "lonlat": [
+       -3.55,
+       51.62
+      ],
+      "px": [
+       297.2,
+       671.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       131,
+       658,
+       247,
+       686
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "2-06",
+      "name": "Ireland",
+      "qid": "Q22890",
+      "kind": "region_label_only",
+      "lonlat": [
+       -7.6,
+       53.15
+      ],
+      "px": [
+       118.0,
+       535.7
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       76,
+       525,
+       159,
+       547
+      ],
+      "label_side": "C",
+      "label_note": null
+     },
+     {
+      "row": "2-13",
+      "name": "Brabant",
+      "qid": "Q159856",
+      "kind": "region_label_only",
+      "lonlat": [
+       4.75,
+       50.75
+      ],
+      "px": [
+       699.3,
+       743.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       597,
+       732,
+       690,
+       755
+      ],
+      "label_side": "W",
+      "label_note": null
+     }
+    ]
+   },
+   "label_zones": [
+    {
+     "row": "1-04",
+     "text": "Berkeley",
+     "rect_px": [
+      257,
+      639,
+      341,
+      660
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-08",
+     "text": "Corfe",
+     "rect_px": [
+      283,
+      739,
+      356,
+      764
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-07",
+     "text": "Sandwich",
+     "rect_px": [
+      478,
+      720,
+      588,
+      745
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-08",
+     "text": "Sluis",
+     "rect_px": [
+      562,
+      691,
+      622,
+      715
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-12",
+     "text": "Paris",
+     "rect_px": [
+      514,
+      881,
+      574,
+      905
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-11",
+     "text": "Avignon",
+     "rect_px": [
+      617,
+      1258,
+      716,
+      1282
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-14",
+     "text": "Cologne",
+     "rect_px": [
+      695,
+      710,
+      797,
+      735
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-15",
+     "text": "Milan",
+     "rect_px": [
+      874,
+      1124,
+      948,
+      1148
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-01",
+     "text": "Chepstow",
+     "rect_px": [
+      178,
+      602,
+      294,
+      627
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-03",
+     "text": "Kenilworth",
+     "rect_px": [
+      409,
+      609,
+      549,
+      633
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-10",
+     "text": "Westminster",
+     "rect_px": [
+      397,
+      656,
+      526,
+      680
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-06",
+     "text": "Bristol",
+     "rect_px": [
+      242,
+      697,
+      333,
+      721
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-07",
+     "text": "Lincoln",
+     "rect_px": [
+      459,
+      541,
+      558,
+      564
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-12",
+     "text": "Nottingham",
+     "rect_px": [
+      257,
+      561,
+      407,
+      587
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-02",
+     "text": "Glamorgan",
+     "rect_px": [
+      131,
+      658,
+      247,
+      686
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-06",
+     "text": "Ireland",
+     "rect_px": [
+      76,
+      525,
+      159,
+      547
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-13",
+     "text": "Brabant",
+     "rect_px": [
+      597,
+      732,
+      690,
+      755
+     ],
+     "pad_px": 10
+    }
+   ],
+   "label_zone_rule": "keep these rects (+10 px) low-detail on the plate: no settlement vignette, no dense forest/hatching under a label",
+   "zones": {
+    "medallion": {
+     "rect_px": [
+      421,
+      54,
+      658,
+      291
+     ],
+     "lonlat_corners": [
+      [
+       -1.528,
+       59.682
+      ],
+      [
+       4.503,
+       59.683
+      ],
+      [
+       4.261,
+       56.615
+      ],
+      [
+       -1.284,
+       56.614
+      ]
+     ],
+     "sea_fraction": 1.0,
+     "position": "upper-centre",
+     "use": "parking/hold position for the portrait medallion at wide zoom; the travelling marker itself follows the route and must never cover a label zone"
+    },
+    "ornament_reserved": {
+     "rect_px": [
+      54,
+      863,
+      248,
+      1057
+     ],
+     "lonlat_corners": [
+      [
+       -8.064,
+       48.861
+      ],
+      [
+       -4.264,
+       49.11
+      ],
+      [
+       -3.992,
+       46.614
+      ],
+      [
+       -7.617,
+       46.379
+      ]
+     ],
+     "sea_fraction": 0.967,
+     "position": "middle-left",
+     "use": "the ONLY place a static compass rose may be painted; nothing else ornamental anywhere on the plate"
+    }
+   },
+   "realm_labels_reference_only": [
+    {
+     "group": "empire",
+     "text": "HOLY ROMAN EMPIRE",
+     "placed": true,
+     "xy": [
+      871,
+      781
+     ],
+     "px": 28,
+     "bbox": [
+      661,
+      760,
+      1080,
+      801
+     ]
+    },
+    {
+     "group": "castile",
+     "text": "CASTILE",
+     "placed": true,
+     "xy": [
+      100,
+      1727
+     ],
+     "px": 30,
+     "bbox": [
+      10,
+      1705,
+      189,
+      1749
+     ]
+    },
+    {
+     "group": "france",
+     "text": "KINGDOM OF FRANCE",
+     "placed": true,
+     "xy": [
+      583,
+      933
+     ],
+     "px": 22,
+     "bbox": [
+      417,
+      915,
+      748,
+      950
+     ]
+    },
+    {
+     "group": "england",
+     "text": "ENGLAND",
+     "placed": true,
+     "xy": [
+      401,
+      490
+     ],
+     "px": 16,
+     "bbox": [
+      343,
+      476,
+      458,
+      503
+     ]
+    },
+    {
+     "group": "aragon",
+     "text": "ARAGON",
+     "placed": true,
+     "xy": [
+      429,
+      1447
+     ],
+     "px": 22,
+     "bbox": [
+      362,
+      1429,
+      495,
+      1464
+     ]
+    },
+    {
+     "group": "scotland",
+     "text": "SCOTLAND",
+     "placed": true,
+     "xy": [
+      313,
+      278
+     ],
+     "px": 14,
+     "bbox": [
+      257,
+      265,
+      368,
+      290
+     ]
+    },
+    {
+     "group": "brittany",
+     "text": "BRITTANY",
+     "placed": true,
+     "xy": [
+      329,
+      941
+     ],
+     "px": 21,
+     "bbox": [
+      251,
+      924,
+      406,
+      957
+     ]
+    },
+    {
+     "group": "burgundy_duchy",
+     "text": "BURGUNDY",
+     "placed": true,
+     "xy": [
+      682,
+      1014
+     ],
+     "px": 15,
+     "bbox": [
+      619,
+      1001,
+      744,
+      1027
+     ]
+    },
+    {
+     "group": "portugal",
+     "text": "PORTUGAL",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "ireland_eng",
+     "text": "IRELAND (ENG.)",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "navarre",
+     "text": "NAVARRE",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "gascony",
+     "text": "GASCONY",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "flanders",
+     "text": "FLANDERS",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    }
+   ],
+   "renderer": {
+    "note": "drop-in for the engine/accept configs: replace their 'map', 'out_wh', 'plate_wh' (plate = 2x out) and 'control_points'",
+    "map": {
+     "center_lonlat": [
+      1.5,
+      48.0
+     ],
+     "width_km": 1550
+    },
+    "out_wh": [
+     1080,
+     1920
+    ],
+    "plate_wh": [
+     2160,
+     3840
+    ],
+    "px_scale_out_to_plate": 2.0,
+    "register_plate_to": "this frame at out_wh (homography/TPS output in out px, scale x2 for plate px)"
+   },
+   "authority": {
+    "engine_check": "map_route_v1.check_against_authority",
+    "rows": [
+     {
+      "row": "1-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle, Monmouthshire"
+     },
+     {
+      "row": "1-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan, historic county"
+     },
+     {
+      "row": "1-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle, Warwickshire"
+     },
+     {
+      "row": "1-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle, Gloucestershire"
+     },
+     {
+      "row": "1-05",
+      "qid": "Q262500",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Gloucester",
+      "site": "Gloucester Cathedral"
+     },
+     {
+      "row": "1-06",
+      "qid": "Q23154",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Bristol",
+      "site": "Bristol"
+     },
+     {
+      "row": "1-07",
+      "qid": "Q180057",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Lincoln",
+      "site": "Lincoln"
+     },
+     {
+      "row": "1-08",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle, Dorset"
+     },
+     {
+      "row": "1-09",
+      "qid": "Q172157",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Winchester",
+      "site": "Winchester, Hampshire"
+     },
+     {
+      "row": "1-10",
+      "qid": "Q62408",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Westminster",
+      "site": "Palace of Westminster, London"
+     },
+     {
+      "row": "1-11",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Tyburn",
+      "site": "Tyburn, former village near Marble Arch, London"
+     },
+     {
+      "row": "1-12",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Nottingham",
+      "site": "Nottingham Castle"
+     },
+     {
+      "row": "2-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle"
+     },
+     {
+      "row": "2-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan (region)"
+     },
+     {
+      "row": "2-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle"
+     },
+     {
+      "row": "2-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle"
+     },
+     {
+      "row": "2-05",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle"
+     },
+     {
+      "row": "2-06",
+      "qid": "Q22890",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Ireland",
+      "site": "Ireland (island)"
+     },
+     {
+      "row": "2-07",
+      "qid": "Q26163",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Sandwich",
+      "site": "Sandwich, Kent"
+     },
+     {
+      "row": "2-08",
+      "qid": "Q2065987",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Sluis",
+      "site": "Sluis, Zeeland"
+     },
+     {
+      "row": "2-09",
+      "qid": "Q15878",
+      "kind": "via",
+      "status": "OMIT",
+      "label": null,
+      "site": "Normandy (region)"
+     },
+     {
+      "row": "2-10",
+      "qid": "Q206221",
+      "kind": "via",
+      "status": "OMIT",
+      "label": null,
+      "site": "Languedoc (historical province)"
+     },
+     {
+      "row": "2-11",
+      "qid": "Q6397",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Avignon",
+      "site": "Avignon"
+     },
+     {
+      "row": "2-12",
+      "qid": "Q90",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Paris",
+      "site": "Paris"
+     },
+     {
+      "row": "2-13",
+      "qid": "Q159856",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Brabant",
+      "site": "Duchy of Brabant (region)"
+     },
+     {
+      "row": "2-14",
+      "qid": "Q365",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Cologne",
+      "site": "Cologne"
+     },
+     {
+      "row": "2-15",
+      "qid": "Q490",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Milan",
+      "site": "Milan"
+     }
+    ],
+    "refusal_tests": [
+     {
+      "test": "UNCERTAIN hermitage pinned",
+      "row": "2-16",
+      "refused": true,
+      "error": "2-16 is UNCERTAIN, cannot pin"
+     },
+     {
+      "test": "unlisted row",
+      "row": "9-99",
+      "refused": true,
+      "error": "row 9-99 not in MAP-PLACES-v1"
+     },
+     {
+      "test": "text on a no-text region",
+      "row": "2-09",
+      "refused": true,
+      "error": "2-09: label 'Normandy' not allowed (tint or label only)"
+     }
+    ]
+   },
+   "realm_raster_check": {
+    "passed": 20,
+    "total": 20,
+    "failed": []
+   },
+   "realm_id_legend": {
+    "0": "sea",
+    "128,128,128": "neutral land",
+    "37,91,157": "england (england)",
+    "74,182,58": "gascony (gascony)",
+    "111,17,215": "ireland_eng (ireland_eng)",
+    "148,108,116": "scotland (scotland)",
+    "185,199,17": "france (france+france_lyon)",
+    "222,34,174": "brittany (brittany)",
+    "3,125,75": "burgundy_duchy (burgundy_duchy)",
+    "40,216,232": "flanders (flanders)",
+    "77,51,133": "navarre (navarre)",
+    "114,142,34": "empire (empire_low+empire_arles+empire_provence)",
+    "151,233,191": "castile (castile)",
+    "188,68,92": "aragon (aragon)",
+    "225,159,249": "portugal (portugal)"
+   },
+   "crop_from_16x9": null,
+   "files": {
+    "bare": "img_v2/euro_9x16_ref_bare.png",
+    "notext": "img_v2/euro_9x16_ref_notext.png",
+    "labels": "img_v2/euro_9x16_ref_labels.png",
+    "graticule": "img_v2/euro_9x16_ref_graticule.png",
+    "tinted_notext": "img_v2/euro_9x16_ref_tinted_notext.png",
+    "tinted_labels": "img_v2/euro_9x16_ref_tinted_labels.png",
+    "realm_ids": "img_v2/euro_9x16_realm_ids.png",
+    "zones_overlay": "img_v2/euro_9x16_zones_overlay.png"
+   }
+  },
+  "britain_9x16": {
+   "aspect": "9:16",
+   "size_px": [
+    1080,
+    1920
+   ],
+   "use": "Map 1 + Map 2a (Britain)",
+   "justification": "Native portrait of England and Wales: width is set by Glamorgan/Chepstow to Sandwich with label room; the Irish coast at the left edge carries the Ireland touch; the height shows the Channel and Normandy coast below and northern England/Irish Sea above.",
+   "center_lonlat": [
+    -2.6,
+    51.95
+   ],
+   "width_km": 700,
+   "height_km": 1244.44,
+   "m_per_px": 648.148,
+   "km_per_px": 0.64815,
+   "proj4": "+proj=laea +lat_0=51.95 +lon_0=-2.6 +x_0=0 +y_0=0 +R=6371000 +units=m +no_defs",
+   "projected_bounds_m": {
+    "xmin": -350000.0,
+    "xmax": 350000.0,
+    "ymin": -622222.2,
+    "ymax": 622222.2
+   },
+   "lonlat_bounds": {
+    "lon_min": -8.4462,
+    "lon_max": 3.2462,
+    "lat_min": 46.2553,
+    "lat_max": 57.548,
+    "corners": {
+     "top_left": [
+      -8.4462,
+      57.4189
+     ],
+     "top_right": [
+      3.2462,
+      57.4189
+     ],
+     "bottom_left": [
+      -7.1499,
+      46.2553
+     ],
+     "bottom_right": [
+      1.9499,
+      46.2553
+     ]
+    },
+    "note": "envelope of the frame edge; the frame is a rectangle in LAEA metres, so meridians/parallels are curved inside it"
+   },
+   "solver": {
+    "min_width_km": 612.3,
+    "note": "minimum width satisfying every pin-safe/geography inset; final = rounded up for comfort, centre = content-centred"
+   },
+   "pin_inset": [
+    0.1,
+    0.1
+   ],
+   "pin_safe_px": [
+    108,
+    192,
+    972,
+    1728
+   ],
+   "title_safe_px": [
+    54,
+    96,
+    1026,
+    1824
+   ],
+   "safe_area_check": {
+    "all_stops_in_pin_safe": true,
+    "labels_dropped": [
+     "Tyburn"
+    ],
+    "stops": [
+     {
+      "row": "1-01",
+      "name": "Chepstow",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "lonlat": [
+       -2.6757,
+       51.6439
+      ],
+      "px": [
+       531.9,
+       1012.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       384,
+       999,
+       517,
+       1027
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-03",
+      "name": "Kenilworth",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "lonlat": [
+       -1.59111,
+       52.347
+      ],
+      "px": [
+       645.7,
+       891.2
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       476,
+       877,
+       635,
+       905
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-04",
+      "name": "Berkeley",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "lonlat": [
+       -2.45694,
+       51.68861
+      ],
+      "px": [
+       555.2,
+       1004.8
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       565,
+       1014,
+       689,
+       1042
+      ],
+      "label_side": "SE",
+      "label_note": null
+     },
+     {
+      "row": "1-05",
+      "name": "Gloucester",
+      "qid": "Q262500",
+      "kind": "pin",
+      "lonlat": [
+       -2.24654,
+       51.8673
+      ],
+      "px": [
+       577.4,
+       974.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       593,
+       960,
+       751,
+       988
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-06",
+      "name": "Bristol",
+      "qid": "Q23154",
+      "kind": "pin",
+      "lonlat": [
+       -2.5975,
+       51.45361
+      ],
+      "px": [
+       540.3,
+       1045.2
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       488,
+       1060,
+       592,
+       1088
+      ],
+      "label_side": "S",
+      "label_note": null
+     },
+     {
+      "row": "1-07",
+      "name": "Lincoln",
+      "qid": "Q180057",
+      "kind": "pin",
+      "lonlat": [
+       -0.55,
+       53.25
+      ],
+      "px": [
+       750.4,
+       734.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       627,
+       721,
+       740,
+       748
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-08",
+      "name": "Corfe",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "lonlat": [
+       -2.0589,
+       50.6399
+      ],
+      "px": [
+       598.9,
+       1184.5
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       506,
+       1171,
+       589,
+       1199
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-09",
+      "name": "Winchester",
+      "qid": "Q172157",
+      "kind": "pin",
+      "lonlat": [
+       -1.30861,
+       51.06333
+      ],
+      "px": [
+       679.2,
+       1110.9
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       694,
+       1096,
+       854,
+       1125
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "1-10",
+      "name": "Westminster",
+      "qid": "Q62408",
+      "kind": "pin",
+      "lonlat": [
+       -0.12417,
+       51.49944
+      ],
+      "px": [
+       804.4,
+       1032.8
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       729,
+       998,
+       880,
+       1024
+      ],
+      "label_side": "N",
+      "label_note": null
+     },
+     {
+      "row": "1-11",
+      "name": "Tyburn",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "lonlat": [
+       -0.164,
+       51.51286
+      ],
+      "px": [
+       800.0,
+       1030.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": false,
+      "label_bbox": null,
+      "label_side": null,
+      "label_note": "no collision-free spot at this scale (see Britain frame)"
+     },
+     {
+      "row": "1-12",
+      "name": "Nottingham",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "lonlat": [
+       -1.15472,
+       52.94917
+      ],
+      "px": [
+       689.4,
+       787.1
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       704,
+       773,
+       876,
+       802
+      ],
+      "label_side": "E",
+      "label_note": null
+     },
+     {
+      "row": "2-07",
+      "name": "Sandwich",
+      "qid": "Q26163",
+      "kind": "pin",
+      "lonlat": [
+       1.33889,
+       51.27472
+      ],
+      "px": [
+       962.5,
+       1064.4
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       828,
+       1050,
+       952,
+       1078
+      ],
+      "label_side": "W",
+      "label_note": null
+     },
+     {
+      "row": "1-02",
+      "name": "Glamorgan",
+      "qid": "Q870815",
+      "kind": "region_label_only",
+      "lonlat": [
+       -3.55,
+       51.62
+      ],
+      "px": [
+       438.8,
+       1016.0
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       372,
+       961,
+       507,
+       993
+      ],
+      "label_side": "N",
+      "label_note": null
+     },
+     {
+      "row": "2-06",
+      "name": "Ireland",
+      "qid": "Q22890",
+      "kind": "region_label_only",
+      "lonlat": [
+       -7.6,
+       53.15
+      ],
+      "px": [
+       130.0,
+       811.6
+      ],
+      "in_frame": true,
+      "in_pin_safe": true,
+      "in_title_safe": true,
+      "label_placed": true,
+      "label_bbox": [
+       82,
+       799,
+       179,
+       824
+      ],
+      "label_side": "C",
+      "label_note": null
+     }
+    ]
+   },
+   "label_zones": [
+    {
+     "row": "1-04",
+     "text": "Berkeley",
+     "rect_px": [
+      565,
+      1014,
+      689,
+      1042
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-08",
+     "text": "Corfe",
+     "rect_px": [
+      506,
+      1171,
+      589,
+      1199
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-07",
+     "text": "Sandwich",
+     "rect_px": [
+      828,
+      1050,
+      952,
+      1078
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-01",
+     "text": "Chepstow",
+     "rect_px": [
+      384,
+      999,
+      517,
+      1027
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-03",
+     "text": "Kenilworth",
+     "rect_px": [
+      476,
+      877,
+      635,
+      905
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-10",
+     "text": "Westminster",
+     "rect_px": [
+      729,
+      998,
+      880,
+      1024
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-05",
+     "text": "Gloucester",
+     "rect_px": [
+      593,
+      960,
+      751,
+      988
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-06",
+     "text": "Bristol",
+     "rect_px": [
+      488,
+      1060,
+      592,
+      1088
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-07",
+     "text": "Lincoln",
+     "rect_px": [
+      627,
+      721,
+      740,
+      748
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-09",
+     "text": "Winchester",
+     "rect_px": [
+      694,
+      1096,
+      854,
+      1125
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-12",
+     "text": "Nottingham",
+     "rect_px": [
+      704,
+      773,
+      876,
+      802
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "1-02",
+     "text": "Glamorgan",
+     "rect_px": [
+      372,
+      961,
+      507,
+      993
+     ],
+     "pad_px": 10
+    },
+    {
+     "row": "2-06",
+     "text": "Ireland",
+     "rect_px": [
+      82,
+      799,
+      179,
+      824
+     ],
+     "pad_px": 10
+    }
+   ],
+   "label_zone_rule": "keep these rects (+10 px) low-detail on the plate: no settlement vignette, no dense forest/hatching under a label",
+   "zones": {
+    "medallion": {
+     "rect_px": [
+      54,
+      1629,
+      291,
+      1866
+     ],
+     "lonlat_corners": [
+      [
+       -6.831,
+       47.968
+      ],
+      [
+       -4.769,
+       48.028
+      ],
+      [
+       -4.712,
+       46.646
+      ],
+      [
+       -6.72,
+       46.588
+      ]
+     ],
+     "sea_fraction": 1.0,
+     "position": "lower-left",
+     "use": "parking/hold position for the portrait medallion at wide zoom; the travelling marker itself follows the route and must never cover a label zone"
+    },
+    "ornament_reserved": {
+     "rect_px": [
+      54,
+      1305,
+      248,
+      1499
+     ],
+     "lonlat_corners": [
+      [
+       -6.996,
+       49.854
+      ],
+      [
+       -5.243,
+       49.908
+      ],
+      [
+       -5.182,
+       48.778
+      ],
+      [
+       -6.895,
+       48.725
+      ]
+     ],
+     "sea_fraction": 1.0,
+     "position": "lower-left",
+     "use": "the ONLY place a static compass rose may be painted; nothing else ornamental anywhere on the plate"
+    }
+   },
+   "realm_labels_reference_only": [
+    {
+     "group": "england",
+     "text": "KINGDOM OF ENGLAND",
+     "placed": true,
+     "xy": [
+      689,
+      851
+     ],
+     "px": 30,
+     "bbox": [
+      446,
+      829,
+      931,
+      873
+     ]
+    },
+    {
+     "group": "france",
+     "text": "KINGDOM OF FRANCE",
+     "placed": true,
+     "xy": [
+      851,
+      1852
+     ],
+     "px": 30,
+     "bbox": [
+      627,
+      1830,
+      1074,
+      1874
+     ]
+    },
+    {
+     "group": "scotland",
+     "text": "SCOTLAND",
+     "placed": true,
+     "xy": [
+      456,
+      346
+     ],
+     "px": 30,
+     "bbox": [
+      343,
+      324,
+      568,
+      368
+     ]
+    },
+    {
+     "group": "brittany",
+     "text": "DUCHY OF BRITTANY",
+     "placed": true,
+     "xy": [
+      532,
+      1625
+     ],
+     "px": 24,
+     "bbox": [
+      355,
+      1606,
+      708,
+      1643
+     ]
+    },
+    {
+     "group": "ireland_eng",
+     "text": "IRELAND (ENG.)",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    },
+    {
+     "group": "flanders",
+     "text": "FLANDERS",
+     "placed": false,
+     "why": "no room inside the realm for the name at >=12 px"
+    }
+   ],
+   "renderer": {
+    "note": "drop-in for the engine/accept configs: replace their 'map', 'out_wh', 'plate_wh' (plate = 2x out) and 'control_points'",
+    "map": {
+     "center_lonlat": [
+      -2.6,
+      51.95
+     ],
+     "width_km": 700
+    },
+    "out_wh": [
+     1080,
+     1920
+    ],
+    "plate_wh": [
+     2160,
+     3840
+    ],
+    "px_scale_out_to_plate": 2.0,
+    "register_plate_to": "this frame at out_wh (homography/TPS output in out px, scale x2 for plate px)"
+   },
+   "authority": {
+    "engine_check": "map_route_v1.check_against_authority",
+    "rows": [
+     {
+      "row": "1-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle, Monmouthshire"
+     },
+     {
+      "row": "1-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan, historic county"
+     },
+     {
+      "row": "1-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle, Warwickshire"
+     },
+     {
+      "row": "1-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle, Gloucestershire"
+     },
+     {
+      "row": "1-05",
+      "qid": "Q262500",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Gloucester",
+      "site": "Gloucester Cathedral"
+     },
+     {
+      "row": "1-06",
+      "qid": "Q23154",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Bristol",
+      "site": "Bristol"
+     },
+     {
+      "row": "1-07",
+      "qid": "Q180057",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Lincoln",
+      "site": "Lincoln"
+     },
+     {
+      "row": "1-08",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle, Dorset"
+     },
+     {
+      "row": "1-09",
+      "qid": "Q172157",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Winchester",
+      "site": "Winchester, Hampshire"
+     },
+     {
+      "row": "1-10",
+      "qid": "Q62408",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Westminster",
+      "site": "Palace of Westminster, London"
+     },
+     {
+      "row": "1-11",
+      "qid": "Q1362341",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Tyburn",
+      "site": "Tyburn, former village near Marble Arch, London"
+     },
+     {
+      "row": "1-12",
+      "qid": "Q17642916",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Nottingham",
+      "site": "Nottingham Castle"
+     },
+     {
+      "row": "2-01",
+      "qid": "Q1070187",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Chepstow",
+      "site": "Chepstow Castle"
+     },
+     {
+      "row": "2-02",
+      "qid": "Q870815",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Glamorgan",
+      "site": "Glamorgan (region)"
+     },
+     {
+      "row": "2-03",
+      "qid": "Q1738764",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Kenilworth",
+      "site": "Kenilworth Castle"
+     },
+     {
+      "row": "2-04",
+      "qid": "Q4891993",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Berkeley",
+      "site": "Berkeley Castle"
+     },
+     {
+      "row": "2-05",
+      "qid": "Q1236511",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Corfe",
+      "site": "Corfe Castle"
+     },
+     {
+      "row": "2-06",
+      "qid": "Q22890",
+      "kind": "via",
+      "status": "OMIT",
+      "label": "Ireland",
+      "site": "Ireland (island)"
+     },
+     {
+      "row": "2-07",
+      "qid": "Q26163",
+      "kind": "pin",
+      "status": "VERIFIED",
+      "label": "Sandwich",
+      "site": "Sandwich, Kent"
+     }
+    ],
+    "refusal_tests": [
+     {
+      "test": "UNCERTAIN hermitage pinned",
+      "row": "2-16",
+      "refused": true,
+      "error": "2-16 is UNCERTAIN, cannot pin"
+     },
+     {
+      "test": "unlisted row",
+      "row": "9-99",
+      "refused": true,
+      "error": "row 9-99 not in MAP-PLACES-v1"
+     },
+     {
+      "test": "text on a no-text region",
+      "row": "2-09",
+      "refused": true,
+      "error": "2-09 is OMIT, cannot pin"
+     }
+    ]
+   },
+   "realm_raster_check": {
+    "passed": 0,
+    "total": 0,
+    "failed": []
+   },
+   "realm_id_legend": {
+    "0": "sea",
+    "128,128,128": "neutral land",
+    "37,91,157": "england (england)",
+    "74,182,58": "gascony (gascony)",
+    "111,17,215": "ireland_eng (ireland_eng)",
+    "148,108,116": "scotland (scotland)",
+    "185,199,17": "france (france+france_lyon)",
+    "222,34,174": "brittany (brittany)",
+    "3,125,75": "burgundy_duchy (burgundy_duchy)",
+    "40,216,232": "flanders (flanders)",
+    "77,51,133": "navarre (navarre)",
+    "114,142,34": "empire (empire_low+empire_arles+empire_provence)",
+    "151,233,191": "castile (castile)",
+    "188,68,92": "aragon (aragon)",
+    "225,159,249": "portugal (portugal)"
+   },
+   "crop_from_16x9": null,
+   "files": {
+    "bare": "img_v2/britain_9x16_ref_bare.png",
+    "notext": "img_v2/britain_9x16_ref_notext.png",
+    "labels": "img_v2/britain_9x16_ref_labels.png",
+    "graticule": "img_v2/britain_9x16_ref_graticule.png",
+    "tinted_notext": "img_v2/britain_9x16_ref_tinted_notext.png",
+    "tinted_labels": "img_v2/britain_9x16_ref_tinted_labels.png",
+    "realm_ids": "img_v2/britain_9x16_realm_ids.png",
+    "zones_overlay": "img_v2/britain_9x16_zones_overlay.png"
+   }
+  }
+ },
+ "nine_sixteen_decision": {
+  "own_plate": true,
+  "why": [
+   "euro_16x9: best full-height 9:16 crop holds 18/20 stops in its safe area and needs a 1.778x upscale",
+   "britain_16x9: best full-height 9:16 crop holds 11/14 stops in its safe area and needs a 1.778x upscale"
+  ]
+ }
+}

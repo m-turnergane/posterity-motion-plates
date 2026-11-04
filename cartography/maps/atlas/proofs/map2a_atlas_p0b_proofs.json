@@ -1,0 +1,595 @@
+{
+ "shot": "edward_map2a_atlas_p0b",
+ "config": "atlas/configs/edward_map2a_atlas_p0b.json",
+ "density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   2048,
+   1152
+  ],
+  "out_wh": [
+   1920,
+   1080
+  ],
+  "push_max": 1.06,
+  "crop_zoom": 1.0,
+  "cover_scale": 0.9375,
+  "visible_src_wh": [
+   1932.1,
+   1086.8
+  ],
+  "ratio": 0.994,
+  "ratio_x": 0.994,
+  "ratio_y": 0.994,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "authority": [
+  {
+   "row": "2-01",
+   "qid": "Q1070187",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Chepstow",
+   "site": "Chepstow Castle"
+  },
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "kind": "via",
+   "status": "OMIT",
+   "label": "Glamorgan",
+   "site": "Glamorgan (region)"
+  },
+  {
+   "row": "2-03",
+   "qid": "Q1738764",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Kenilworth",
+   "site": "Kenilworth Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Berkeley",
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": null,
+   "site": "Berkeley Castle"
+  },
+  {
+   "row": "2-05",
+   "qid": "Q1236511",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Corfe",
+   "site": "Corfe Castle"
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "kind": "via",
+   "status": "OMIT",
+   "label": "Ireland",
+   "site": "Ireland (island)"
+  },
+  {
+   "row": "2-07",
+   "qid": "Q26163",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Sandwich",
+   "site": "Sandwich, Kent"
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "status": "VERIFIED",
+   "label": "Sluis",
+   "site": "Sluis, Zeeland"
+  }
+ ],
+ "approx_areas": [],
+ "route_ink_p0b": {
+  "documented": {
+   "col": [
+    58,
+    18,
+    16
+   ],
+   "pool": [
+    36,
+    10,
+    9
+   ],
+   "strength": 0.97,
+   "halo_col": [
+    16,
+    8,
+    8
+   ],
+   "halo_opacity": 0.85,
+   "halo_dilate": 4,
+   "grain": 0.06,
+   "sea_casing": [
+    238,
+    226,
+    194
+   ],
+   "sea_casing_opacity": 0.92,
+   "col_stats": {
+    "rgb": [
+     58,
+     18,
+     16
+    ],
+    "hsv_s": 0.724,
+    "chroma_rgb": 42,
+    "lab_chroma": 22.0,
+    "rel_lum": 0.0137
+   },
+   "pool_stats": {
+    "rgb": [
+     36,
+     10,
+     9
+    ],
+    "hsv_s": 0.75,
+    "chroma_rgb": 27,
+    "lab_chroma": 13.6,
+    "rel_lum": 0.0061
+   }
+  },
+  "claimed": {
+   "col": [
+    92,
+    32,
+    26
+   ],
+   "pool": [
+    60,
+    20,
+    16
+   ],
+   "strength": 0.97,
+   "halo_col": [
+    16,
+    8,
+    8
+   ],
+   "halo_opacity": 0.78,
+   "halo_dilate": 3,
+   "grain": 0.08,
+   "sea_casing": [
+    238,
+    226,
+    194
+   ],
+   "sea_casing_opacity": 0.9,
+   "col_stats": {
+    "rgb": [
+     92,
+     32,
+     26
+    ],
+    "hsv_s": 0.717,
+    "chroma_rgb": 66,
+    "lab_chroma": 33.0,
+    "rel_lum": 0.0338
+   },
+   "pool_stats": {
+    "rgb": [
+     60,
+     20,
+     16
+    ],
+    "hsv_s": 0.733,
+    "chroma_rgb": 44,
+    "lab_chroma": 22.8,
+    "rel_lum": 0.015
+   }
+  }
+ },
+ "route_ink_p0": {
+  "documented": {
+   "col_stats": {
+    "rgb": [
+     206,
+     78,
+     54
+    ],
+    "hsv_s": 0.738,
+    "chroma_rgb": 152,
+    "lab_chroma": 63.3,
+    "rel_lum": 0.1884
+   },
+   "pool_stats": {
+    "rgb": [
+     128,
+     36,
+     28
+    ],
+    "hsv_s": 0.781,
+    "chroma_rgb": 100,
+    "lab_chroma": 47.4,
+    "rel_lum": 0.0593
+   }
+  },
+  "claimed": {
+   "col_stats": {
+    "rgb": [
+     222,
+     138,
+     108
+    ],
+    "hsv_s": 0.514,
+    "chroma_rgb": 114,
+    "lab_chroma": 41.0,
+    "rel_lum": 0.3479
+   },
+   "pool_stats": {
+    "rgb": [
+     150,
+     72,
+     54
+    ],
+    "hsv_s": 0.64,
+    "chroma_rgb": 96,
+    "lab_chroma": 40.5,
+    "rel_lum": 0.1139
+   }
+  }
+ },
+ "emphasis_p0b": {
+  "hybrid": {
+   "pigment_alpha": 0.64,
+   "pigment_chroma": 0.92,
+   "pigment_glaze": 0.62,
+   "relief_shade": 0.3,
+   "relief_tint": 0.85,
+   "relief_ridge": 0.2,
+   "rivers": 0.7,
+   "border_alpha": 0.42,
+   "border_width": 1.3,
+   "label_region_alpha": 0.88,
+   "label_place_alpha": 1.0,
+   "label_halo": 0.8
+  },
+  "terrain": {
+   "pigment_alpha": 0.0,
+   "pigment_chroma": 0.0,
+   "pigment_glaze": 0.85,
+   "relief_shade": 0.5,
+   "relief_tint": 1.3,
+   "relief_ridge": 0.34,
+   "rivers": 0.95,
+   "border_alpha": 0.16,
+   "border_width": 1.0,
+   "label_region_alpha": 1.0,
+   "label_place_alpha": 1.0,
+   "label_halo": 0.9
+  }
+ },
+ "states": {
+  "hybrid": {
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2a_atlas_p0b_chronicle_hybrid_16x9.png",
+   "md5": "1288d4314666a34d7249db512de8126b",
+   "phone_contrast_dash_only": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "line_w_phone_px": 3.33,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 208,
+      "core_vs_map_median": 2.86,
+      "core_vs_map_p10": 2.37,
+      "core_vs_adjacent_median": 2.07,
+      "core_vs_adjacent_p10": 1.59,
+      "core_rel_lum_median": 0.0098
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "line_w_phone_px": 3.33,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 70,
+      "core_vs_map_median": 2.62,
+      "core_vs_map_p10": 2.43,
+      "core_vs_adjacent_median": 1.64,
+      "core_vs_adjacent_p10": 1.15,
+      "core_rel_lum_median": 0.0096
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "line_w_phone_px": 2.44,
+     "gap_samples_excluded": 38,
+     "land": {
+      "n": 56,
+      "core_vs_map_median": 2.97,
+      "core_vs_map_p10": 2.68,
+      "core_vs_adjacent_median": 2.75,
+      "core_vs_adjacent_p10": 2.05,
+      "core_rel_lum_median": 0.0204
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "line_w_phone_px": 2.44,
+     "gap_samples_excluded": 637,
+     "sea": {
+      "n": 800,
+      "core_vs_map_median": 1.08,
+      "core_vs_map_p10": 1.02,
+      "core_vs_adjacent_median": 3.12,
+      "core_vs_adjacent_p10": 2.05,
+      "core_rel_lum_median": 0.0529
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "line_w_phone_px": 2.44,
+     "gap_samples_excluded": 50,
+     "sea": {
+      "n": 66,
+      "core_vs_map_median": 1.25,
+      "core_vs_map_p10": 1.17,
+      "core_vs_adjacent_median": 4.39,
+      "core_vs_adjacent_p10": 3.74,
+      "core_rel_lum_median": 0.0444
+     }
+    }
+   ],
+   "label_readability": [
+    {
+     "text": "Chepstow",
+     "tier": "castle",
+     "glyph_vs_surround": 7.03
+    },
+    {
+     "text": "Kenilworth",
+     "tier": "castle",
+     "glyph_vs_surround": 7.22
+    },
+    {
+     "text": "Berkeley",
+     "tier": "castle",
+     "glyph_vs_surround": 7.26
+    },
+    {
+     "text": "Corfe",
+     "tier": "castle",
+     "glyph_vs_surround": 6.82
+    },
+    {
+     "text": "Sandwich",
+     "tier": "city",
+     "glyph_vs_surround": 8.52
+    },
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 8.95
+    },
+    {
+     "text": "Glamorgan",
+     "tier": "region",
+     "glyph_vs_surround": 3.41
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 3.87
+    }
+   ]
+  },
+  "terrain": {
+   "png": "/workspace/posterity/engine-rnd/maps/atlas/stills/map2a_atlas_p0b_terrain_forward_16x9.png",
+   "md5": "6c80b006efd540a09aa3cc8bfa69dcda",
+   "phone_contrast_dash_only": [
+    {
+     "leg": "2-01->2-03",
+     "style": "documented",
+     "line_w_phone_px": 3.33,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 208,
+      "core_vs_map_median": 5.26,
+      "core_vs_map_p10": 4.15,
+      "core_vs_adjacent_median": 3.37,
+      "core_vs_adjacent_p10": 2.61,
+      "core_rel_lum_median": 0.0109
+     }
+    },
+    {
+     "leg": "2-03->2-04",
+     "style": "documented",
+     "line_w_phone_px": 3.33,
+     "gap_samples_excluded": 0,
+     "land": {
+      "n": 70,
+      "core_vs_map_median": 5.41,
+      "core_vs_map_p10": 4.82,
+      "core_vs_adjacent_median": 2.55,
+      "core_vs_adjacent_p10": 1.2,
+      "core_rel_lum_median": 0.011
+     }
+    },
+    {
+     "leg": "2-04->2-05",
+     "style": "claimed",
+     "line_w_phone_px": 2.44,
+     "gap_samples_excluded": 38,
+     "land": {
+      "n": 56,
+      "core_vs_map_median": 5.04,
+      "core_vs_map_p10": 4.9,
+      "core_vs_adjacent_median": 4.9,
+      "core_vs_adjacent_p10": 3.1,
+      "core_rel_lum_median": 0.0242
+     }
+    },
+    {
+     "leg": "2-05->2-07",
+     "style": "claimed",
+     "line_w_phone_px": 2.44,
+     "gap_samples_excluded": 637,
+     "sea": {
+      "n": 800,
+      "core_vs_map_median": 1.08,
+      "core_vs_map_p10": 1.02,
+      "core_vs_adjacent_median": 3.12,
+      "core_vs_adjacent_p10": 2.05,
+      "core_rel_lum_median": 0.0529
+     }
+    },
+    {
+     "leg": "2-07->2-08",
+     "style": "claimed",
+     "line_w_phone_px": 2.44,
+     "gap_samples_excluded": 50,
+     "sea": {
+      "n": 66,
+      "core_vs_map_median": 1.25,
+      "core_vs_map_p10": 1.17,
+      "core_vs_adjacent_median": 4.39,
+      "core_vs_adjacent_p10": 3.74,
+      "core_rel_lum_median": 0.0444
+     }
+    }
+   ],
+   "label_readability": [
+    {
+     "text": "Chepstow",
+     "tier": "castle",
+     "glyph_vs_surround": 8.08
+    },
+    {
+     "text": "Kenilworth",
+     "tier": "castle",
+     "glyph_vs_surround": 8.79
+    },
+    {
+     "text": "Berkeley",
+     "tier": "castle",
+     "glyph_vs_surround": 8.67
+    },
+    {
+     "text": "Corfe",
+     "tier": "castle",
+     "glyph_vs_surround": 8.23
+    },
+    {
+     "text": "Sandwich",
+     "tier": "city",
+     "glyph_vs_surround": 10.25
+    },
+    {
+     "text": "Sluis",
+     "tier": "city",
+     "glyph_vs_surround": 10.03
+    },
+    {
+     "text": "Glamorgan",
+     "tier": "region",
+     "glyph_vs_surround": 5.63
+    },
+    {
+     "text": "Ireland",
+     "tier": "region",
+     "glyph_vs_surround": 5.68
+    }
+   ]
+  }
+ },
+ "rust": {
+  "terrain_p0": {
+   "n_px": 521601,
+   "england_land_mean_a": 12.53,
+   "england_land_mean_b": 29.72,
+   "england_land_mean_chroma": 32.29
+  },
+  "terrain_p0b": {
+   "n_px": 521601,
+   "england_land_mean_a": 9.48,
+   "england_land_mean_b": 32.4,
+   "england_land_mean_chroma": 33.81
+  },
+  "hybrid": {
+   "n_px": 521601,
+   "england_land_mean_a": 17.99,
+   "england_land_mean_b": 26.71,
+   "england_land_mean_chroma": 32.29
+  }
+ },
+ "phone": {
+  "x0": 880,
+  "crop_w": 608,
+  "labels_whole": [
+   "Kenilworth",
+   "Berkeley",
+   "Corfe",
+   "Sandwich"
+  ],
+  "labels_cut": [],
+  "files": {
+   "hybrid": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2a_atlas_p0b_chronicle_hybrid_phone360x640.png",
+    "md5": "3956e961b2fd99074ce343b1dc7620d8"
+   },
+   "terrain": {
+    "path": "/workspace/posterity/engine-rnd/maps/atlas/phone/map2a_atlas_p0b_terrain_forward_phone360x640.png",
+    "md5": "ea837839b933866dde7c5ec9da8f7605"
+   }
+  }
+ },
+ "realms_raster": [
+  {
+   "check": "raster Galway: no_fill",
+   "dominant": null,
+   "weights": {},
+   "ok": true
+  },
+  {
+   "check": "raster Brussels (Brabant): fam",
+   "dominant": "empire",
+   "weights": {
+    "flanders": 0.012,
+    "empire": 0.962
+   },
+   "ok": true
+  },
+  {
+   "check": "raster: no realm names/legend/dates on plate",
+   "labels": [
+    "Chepstow",
+    "Kenilworth",
+    "Berkeley",
+    "Corfe",
+    "Sandwich",
+    "Sluis",
+    "Glamorgan",
+    "Ireland"
+   ],
+   "ok": true
+  }
+ ]
+}

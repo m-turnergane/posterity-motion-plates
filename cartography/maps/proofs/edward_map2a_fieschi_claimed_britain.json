@@ -1,0 +1,470 @@
+{
+ "shot": "edward_map2a_fieschi_claimed_britain",
+ "pixel_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   2048,
+   1152
+  ],
+  "out_wh": [
+   1920,
+   1080
+  ],
+  "push_max": 1.06,
+  "crop_zoom": 1.0,
+  "cover_scale": 0.9375,
+  "visible_src_wh": [
+   1932.1,
+   1086.8
+  ],
+  "ratio": 0.994,
+  "ratio_x": 0.994,
+  "ratio_y": 0.994,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "basemap": {
+  "plate_wh": [
+   2048,
+   1152
+  ],
+  "native": true,
+  "upscaled": false,
+  "camera": "single affine, INTER_AREA, scale<=1 asserted",
+  "source": "Natural Earth 10m land/lakes/rivers v5.1.1 (public domain)",
+  "tints": [
+   {
+    "row": "2-02",
+    "qid": "Q870815",
+    "radius_km": 26,
+    "aspect": 1.5,
+    "strength": 0.38
+   },
+   {
+    "row": "2-06",
+    "qid": "Q22890",
+    "radius_km": 150,
+    "aspect": 0.85,
+    "strength": 0.38
+   },
+   {
+    "row": "2-09",
+    "qid": "Q15878",
+    "radius_km": 85,
+    "aspect": 1.6,
+    "strength": 0.38
+   }
+  ]
+ },
+ "authority": {
+  "file": "/workspace/posterity/longform/edward-ii-feature/MAP-PLACES-v1.md",
+  "coords": "/workspace/posterity/longform/edward-ii-feature/raw/wikidata/<QID>.json (Wikidata P625, CC0)",
+  "rows": [
+   {
+    "row": "2-01",
+    "qid": "Q1070187",
+    "kind": "pin",
+    "status": "VERIFIED",
+    "label": "Chepstow",
+    "site": "Chepstow Castle"
+   },
+   {
+    "row": "2-02",
+    "qid": "Q870815",
+    "kind": "via",
+    "status": "OMIT",
+    "label": null,
+    "site": "Glamorgan (region)"
+   },
+   {
+    "row": "2-03",
+    "qid": "Q1738764",
+    "kind": "pin",
+    "status": "VERIFIED",
+    "label": "Kenilworth",
+    "site": "Kenilworth Castle"
+   },
+   {
+    "row": "2-04",
+    "qid": "Q4891993",
+    "kind": "pin",
+    "status": "VERIFIED",
+    "label": "Berkeley",
+    "site": "Berkeley Castle"
+   },
+   {
+    "row": "2-05",
+    "qid": "Q1236511",
+    "kind": "pin",
+    "status": "VERIFIED",
+    "label": "Corfe",
+    "site": "Corfe Castle"
+   },
+   {
+    "row": "2-06",
+    "qid": "Q22890",
+    "kind": "via",
+    "status": "OMIT",
+    "label": null,
+    "site": "Ireland (island)"
+   },
+   {
+    "row": "2-07",
+    "qid": "Q26163",
+    "kind": "pin",
+    "status": "VERIFIED",
+    "label": "Sandwich",
+    "site": "Sandwich, Kent"
+   },
+   {
+    "row": "2-08",
+    "qid": "Q2065987",
+    "kind": "pin",
+    "status": "VERIFIED",
+    "label": "Sluis",
+    "site": "Sluis, Zeeland"
+   },
+   {
+    "row": "2-02",
+    "qid": "Q870815",
+    "kind": "via",
+    "status": "OMIT",
+    "label": null,
+    "site": "Glamorgan (region)"
+   },
+   {
+    "row": "2-06",
+    "qid": "Q22890",
+    "kind": "via",
+    "status": "OMIT",
+    "label": null,
+    "site": "Ireland (island)"
+   },
+   {
+    "row": "2-09",
+    "qid": "Q15878",
+    "kind": "via",
+    "status": "OMIT",
+    "label": null,
+    "site": "Normandy (region)"
+   }
+  ]
+ },
+ "protected_pixels": {
+  "note": "plate space, every frame; changed px OUTSIDE the ink/stamp/label allow-mask, split by class",
+  "changed_outside_allow": 0,
+  "by_class": {
+   "land": 0,
+   "water": 0,
+   "coast": 0
+  },
+  "allow_mask_frac": 0.0767,
+  "pass_": true
+ },
+ "control_points": {
+  "method": "extreme coastline pixel in `dir` within search window; LSQ affine (6 dof) analytic->measured",
+  "n": 7,
+  "rms_px": 1.89,
+  "max_px": 3.29,
+  "rms_km": 0.98,
+  "max_km": 1.7,
+  "rms_px_unfitted": 2.88,
+  "km_per_plate_px": 0.5176,
+  "affine": [
+   [
+    0.999959,
+    0.002395,
+    -3.077358
+   ],
+   [
+    0.002098,
+    1.007184,
+    -7.346384
+   ]
+  ],
+  "points": [
+   {
+    "name": "Land's End",
+    "qid": "Q169532",
+    "lonlat": [
+     -5.71522,
+     50.0677
+    ],
+    "dir": "W",
+    "analytic_px": [
+     553.17,
+     980.12
+    ],
+    "measured_px": [
+     551.0,
+     979.0
+    ],
+    "err_px_unfitted": 2.44,
+    "err_px_fitted": 2.43
+   },
+   {
+    "name": "Lizard Point, Cornwall",
+    "qid": "Q1808092",
+    "lonlat": [
+     -5.20194,
+     49.96611
+    ],
+    "dir": "S",
+    "analytic_px": [
+     623.03,
+     1004.98
+    ],
+    "measured_px": [
+     624.0,
+     1009.0
+    ],
+    "err_px_unfitted": 4.14,
+    "err_px_fitted": 3.29
+   },
+   {
+    "name": "Portland Bill",
+    "qid": "Q1309953",
+    "lonlat": [
+     -2.45722,
+     50.51444
+    ],
+    "dir": "S",
+    "analytic_px": [
+     1002.52,
+     895.12
+    ],
+    "measured_px": [
+     1002.5,
+     895.0
+    ],
+    "err_px_unfitted": 0.12,
+    "err_px_fitted": 1.62
+   },
+   {
+    "name": "Selsey Bill",
+    "qid": "Q3025853",
+    "lonlat": [
+     -0.78799,
+     50.7227
+    ],
+    "dir": "S",
+    "analytic_px": [
+     1229.64,
+     848.28
+    ],
+    "measured_px": [
+     1229.5,
+     849.0
+    ],
+    "err_px_unfitted": 0.73,
+    "err_px_fitted": 1.13
+   },
+   {
+    "name": "Hartland Point",
+    "qid": "Q907467",
+    "lonlat": [
+     -4.52528,
+     51.0219
+    ],
+    "dir": "NW",
+    "analytic_px": [
+     723.32,
+     781.54
+    ],
+    "measured_px": [
+     720.5,
+     781.5
+    ],
+    "err_px_unfitted": 2.82,
+    "err_px_fitted": 1.59
+   },
+   {
+    "name": "Cap Gris-Nez",
+    "qid": "Q531030",
+    "lonlat": [
+     1.58361,
+     50.87083
+    ],
+    "dir": "W",
+    "analytic_px": [
+     1550.27,
+     804.58
+    ],
+    "measured_px": [
+     1548.0,
+     807.0
+    ],
+    "err_px_unfitted": 3.32,
+    "err_px_fitted": 1.29
+   },
+   {
+    "name": "Great Orme",
+    "qid": "Q3395318",
+    "lonlat": [
+     -3.85556,
+     53.33333
+    ],
+    "dir": "N",
+    "analytic_px": [
+     824.44,
+     287.41
+    ],
+    "measured_px": [
+     822.5,
+     284.0
+    ],
+    "err_px_unfitted": 3.92,
+    "err_px_fitted": 0.5
+   }
+  ]
+ },
+ "places": [
+  {
+   "row": "2-01",
+   "qid": "Q1070187",
+   "kind": "pin",
+   "label": "Chepstow",
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    -2.6757,
+    51.6439
+   ],
+   "xy": [
+    972.4,
+    651.8
+   ],
+   "t": 0.3
+  },
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "kind": "via",
+   "label": null,
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    -3.6666666666667,
+    51.666666666667
+   ],
+   "xy": [
+    840.3,
+    645.0
+   ],
+   "t": 0.919
+  },
+  {
+   "row": "2-03",
+   "qid": "Q1738764",
+   "kind": "pin",
+   "label": "Kenilworth",
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    -1.59111,
+    52.347
+   ],
+   "xy": [
+    1115.1,
+    499.6
+   ],
+   "t": 1.486
+  },
+  {
+   "row": "2-04",
+   "qid": "Q4891993",
+   "kind": "pin",
+   "label": "Berkeley",
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    -2.4569444444444444,
+    51.68861111111111
+   ],
+   "xy": [
+    1001.5,
+    642.3
+   ],
+   "t": 1.79
+  },
+  {
+   "row": "2-05",
+   "qid": "Q1236511",
+   "kind": "pin",
+   "label": "Corfe",
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    -2.0589,
+    50.6399
+   ],
+   "xy": [
+    1055.8,
+    869.2
+   ],
+   "t": 2.322
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "kind": "via",
+   "label": null,
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    -7.921,
+    53.351
+   ],
+   "xy": [
+    301.5,
+    252.9
+   ],
+   "t": 3.471
+  },
+  {
+   "row": "2-07",
+   "qid": "Q26163",
+   "kind": "pin",
+   "label": "Sandwich",
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    1.3388888888889,
+    51.274722222222
+   ],
+   "xy": [
+    1511.4,
+    720.6
+   ],
+   "t": 5.218
+  },
+  {
+   "row": "2-08",
+   "qid": "Q2065987",
+   "kind": "pin",
+   "label": "Sluis",
+   "style": "claimed",
+   "ink": "house",
+   "lonlat": [
+    3.3883,
+    51.3089
+   ],
+   "xy": [
+    1785.6,
+    696.1
+   ],
+   "t": 6.238
+  }
+ ],
+ "phone_640x360": {
+  "first_second_visible_px_gt12": 349,
+  "first_second_pass": true,
+  "hf_energy_frac_gt5hz_full": 0.00949,
+  "hf_energy_frac_gt5hz_ink": 0.00858,
+  "max_1s_full_frame_swing": 0.0015,
+  "pass_": true
+ }
+}

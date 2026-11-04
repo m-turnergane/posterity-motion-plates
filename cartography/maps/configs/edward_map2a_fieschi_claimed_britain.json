@@ -1,0 +1,163 @@
+{
+ "name": "edward_map2a_fieschi_claimed_britain",
+ "about": "MAP 2 of MAP-PLACES-v1.md (C03a order), part 1: Chepstow to Sluis, in the claimed (dashed, fainter, open-ring) style. Glamorgan and Ireland are OMIT rows: soft unlabelled tints, the line sweeps through them with no pin. Gloucester and Kent are not on Map 2.",
+ "seed": 1327,
+ "out_wh": [
+  1920,
+  1080
+ ],
+ "plate_wh": [
+  2048,
+  1152
+ ],
+ "duration": 7.5,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "map": {
+  "center_lonlat": [
+   -2.3,
+   52.0
+  ],
+  "width_km": 1060
+ },
+ "basemap": {
+  "river_rank": 5,
+  "river_px": 1.5,
+  "shallow_px": 34
+ },
+ "label_px": 30,
+ "control_points": [
+  {
+   "ref": "Land's End",
+   "dir": "W",
+   "search_px": 25
+  },
+  {
+   "ref": "Lizard Point, Cornwall",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Portland Bill",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Selsey Bill",
+   "dir": "S",
+   "search_px": 25
+  },
+  {
+   "ref": "Hartland Point",
+   "dir": "NW",
+   "search_px": 25
+  },
+  {
+   "ref": "Cap Gris-Nez",
+   "dir": "W",
+   "search_px": 25
+  },
+  {
+   "ref": "Great Orme",
+   "dir": "N",
+   "search_px": 25
+  }
+ ],
+ "tints": [
+  {
+   "row": "2-02",
+   "qid": "Q870815",
+   "radius_km": 26,
+   "aspect": 1.5,
+   "strength": 0.38
+  },
+  {
+   "row": "2-06",
+   "qid": "Q22890",
+   "radius_km": 150,
+   "aspect": 0.85,
+   "strength": 0.38
+  },
+  {
+   "row": "2-09",
+   "qid": "Q15878",
+   "radius_km": 85,
+   "aspect": 1.6,
+   "strength": 0.38
+  }
+ ],
+ "chains": [
+  {
+   "style": "claimed",
+   "ink": "house",
+   "t0": 0.3,
+   "t1": 6.3,
+   "bow": 0.04,
+   "scale": 0.85,
+   "stops": [
+    {
+     "row": "2-01",
+     "qid": "Q1070187",
+     "pin": true,
+     "label": "Chepstow",
+     "side": "SW"
+    },
+    {
+     "row": "2-02",
+     "qid": "Q870815",
+     "pin": false,
+     "bow": -0.05
+    },
+    {
+     "row": "2-03",
+     "qid": "Q1738764",
+     "pin": true,
+     "label": "Kenilworth",
+     "side": "E",
+     "bow": 0.06
+    },
+    {
+     "row": "2-04",
+     "qid": "Q4891993",
+     "pin": true,
+     "label": "Berkeley",
+     "side": "E",
+     "bow": 0.08
+    },
+    {
+     "row": "2-05",
+     "qid": "Q1236511",
+     "pin": true,
+     "label": "Corfe",
+     "side": "S",
+     "bow": 0.06
+    },
+    {
+     "row": "2-06",
+     "qid": "Q22890",
+     "pin": false,
+     "bow": 0.08,
+     "round": 0.12
+    },
+    {
+     "row": "2-07",
+     "qid": "Q26163",
+     "pin": true,
+     "label": "Sandwich",
+     "side": "N",
+     "bow": 0.06
+    },
+    {
+     "row": "2-08",
+     "qid": "Q2065987",
+     "pin": true,
+     "label": "Sluis",
+     "side": "NE",
+     "bow": 0.1
+    }
+   ]
+  }
+ ]
+}
