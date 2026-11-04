@@ -24,6 +24,7 @@ VO = VAR / "vo"
 PLATES = VAR / "plates"
 WORDMARK = ROOT / "var/edward-ii-feature/wordmark/posterity-master.png"
 SCORE = ROOT / "var/edward-ii-feature/retrieved/score/Anabasis_I.mp3"
+SCORE_START = 0.0
 I2V = VAR / "plates/H06-i2v.mp4"
 FONT = Path("/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf")
 
@@ -404,7 +405,7 @@ def mix(voice: Path, duration: float, dest: Path) -> dict:
     # 12 LU under the processed voice, before the sidechain. Measured and trimmed below.
     run([
         "ffmpeg", "-y", "-i", str(SCORE), "-af",
-        f"atrim=0:{duration:.3f},asetpts=PTS-STARTPTS,volume=-16dB,aformat=channel_layouts=stereo",
+        f"atrim={SCORE_START:.3f}:{SCORE_START + duration:.3f},asetpts=PTS-STARTPTS,volume=-16dB,aformat=channel_layouts=stereo",
         "-ar", "48000", "-ac", "2", str(bed),
     ])
     vo_i, _vo_p = ebur(voiced)
@@ -483,7 +484,12 @@ def write_captions(audio: list[dict], srt: Path, vtt: Path) -> int:
             cues.append(chunk)
     merged: list[list[tuple[float, float, str]]] = []
     for cue in cues:
-        if merged and len(cue) == 1 and len(cue[0][2]) < 12:
+        if (
+            merged
+            and len(cue) == 1
+            and len(cue[0][2]) < 12
+            and cue[0][0] >= merged[-1][0][0]
+        ):
             merged[-1].extend(cue)
         else:
             merged.append(cue)

@@ -266,7 +266,7 @@ These are in `tools/assemble_opening_sample.py` as committed. Test two is the pl
 
 ### Later, the same day
 
-At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions. The review film was encoded the same evening. Spend, sources, and the export check are in [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). This checkpoint's first-cut file was not rebuilt. A fresh session should read that record before treating the paragraphs above as the current spend state. The balance in the table in this section is the 3:04 PM read.
+At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions. Later the same evening the second cut switched its bed to Penumbra, added the spoken title, and replaced two plates. Spend, sources, and the export check are in [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). This checkpoint's first-cut file was not rebuilt. A fresh session should read that record before treating the paragraphs above as the current spend state. The balance in the table in this section is the 3:04 PM read.
 
 ### Secrets for a new session
 

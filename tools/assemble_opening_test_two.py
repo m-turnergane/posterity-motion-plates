@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Second pass of the Edward II opening.
 
-Same Oliver takes, same Anabasis I, same line timing as the first cut.
+Same Oliver takes and the same line timing as the first cut.
+The Act I bed is Penumbra from 0:30, and the intro gap carries one new line.
 The picture path is different: a locked camera, one float resample, the
 house flame and smoke on the shots that have a flame, a black-ink
 wordmark, and a black ACT I card.
@@ -82,22 +83,22 @@ FX = {
     "S003": {
         "native": True,
         "torches": [
-            (2628, 260, 2680, 400),
-            (2465, 250, 2560, 360),
-            (1016, 320, 1090, 430),
-            (1230, 445, 1300, 550),
-            (1905, 340, 1985, 440),
-            (2020, 450, 2095, 560),
-            (2545, 390, 2620, 500),
-            (2128, 400, 2195, 500),
+            (2399, 304, 2470, 480),
+            (2060, 400, 2110, 470),
+            (1960, 590, 2020, 680),
+            (1440, 350, 1500, 470),
+            (840, 270, 900, 390),
+            (510, 300, 640, 380),
+            (60, 920, 180, 1070),
+            (230, 1040, 320, 1220),
         ],
         "smoke": [
-            {"type": "candle", "src": (2000, 400), "height": 90, "w1": 16, "w0": 3,
-             "opacity": 0.2, "rise": 24, "lean": 4},
-            {"type": "candle", "src": (2520, 280), "height": 80, "w1": 14, "w0": 3,
+            {"type": "candle", "src": (2430, 340), "height": 80, "w1": 14, "w0": 3,
              "opacity": 0.16, "rise": 22, "lean": -4},
+            {"type": "candle", "src": (120, 960), "height": 70, "w1": 12, "w0": 3,
+             "opacity": 0.14, "rise": 20, "lean": 4},
         ],
-        "protect": [[(40, 160), (1080, 160), (1080, 1480), (40, 1480)]],
+        "protect": [[(60, 40), (820, 40), (820, 780), (60, 780)]],
         "spill_amp": 0.42,
         "radius_mult": 0.45,
     },
@@ -121,16 +122,16 @@ FX = {
     },
     "S009": {
         "native": True,
-        "torches": [(440, 430, 560, 580), (1540, 590, 1640, 720)],
+        "torches": [(790, 180, 870, 300), (1960, 390, 2030, 480)],
         "smoke": [
-            {"type": "torch", "src": (500, 470), "height": 80, "w1": 12, "w0": 3,
-             "opacity": 0.16, "rise": 22},
-            {"type": "torch", "src": (1585, 620), "height": 70, "w1": 12, "w0": 3,
-             "opacity": 0.14, "rise": 20},
+            {"type": "torch", "src": (825, 210), "height": 70, "w1": 12, "w0": 3,
+             "opacity": 0.16, "rise": 20},
+            {"type": "torch", "src": (1990, 420), "height": 60, "w1": 10, "w0": 3,
+             "opacity": 0.14, "rise": 18},
         ],
         "protect": [
-            [(200, 200), (1100, 200), (1100, 1100), (200, 1100)],
-            [(1500, 180), (2500, 180), (2500, 900), (1500, 900)],
+            [(40, 150), (720, 150), (720, 1450), (40, 1450)],
+            [(1400, 500), (2400, 500), (2400, 1450), (1400, 1450)],
         ],
         "spill_amp": 0.35,
         "radius_mult": 0.4,
@@ -392,6 +393,46 @@ def picture_at(t, pictures, views, lights, intro, clip):
     return cover_sample(view["plate"], view["cam"].z, view["cam"].cx, view["cam"].cy)
 
 
+def prepare_vo() -> Path:
+    """Nine locked takes, plus the title line that speaks only over the intro."""
+    dest = OUT / "vo"
+    dest.mkdir(parents=True, exist_ok=True)
+    for src in (CUT1 / "vo").iterdir():
+        link = dest / src.name
+        if link.exists() or link.is_symlink():
+            continue
+        link.symlink_to(src)
+    return dest
+
+
+def attach_title_line(mod, audio: list, pictures: list) -> list:
+    """Speak the brand and the title inside the existing intro gap.
+
+    The nine locked lines stay where they are. The new line starts with the
+    ink and ends before the act card. A hyphen in the owner's wording is a
+    pause, so the spoken text is two sentences.
+    """
+    title = OUT / "vo" / "TITLE.mp3"
+    if not title.exists() or not (OUT / "vo" / "TITLE.alignment.json").exists():
+        raise SystemExit("missing the title line in opening-sample-test-two/vo")
+    intro = next(shot for shot in pictures if shot.get("intro"))
+    words = mod.words_of("TITLE")
+    first = words[0][0]
+    spoken = words[-1][1] - first
+    start = intro["start"] + 0.45
+    end = start + spoken
+    if end > intro["start"] + 5.05:
+        raise SystemExit(f"title line runs to {end:.2f}s, into the act card")
+    audio.append({
+        "id": "TITLE",
+        "path": title,
+        "file_at": start - first,
+        "speech_start": start,
+        "speech_end": end,
+    })
+    return audio
+
+
 def encode_full(mod) -> None:
     missing = missing_plates()
     if missing:
@@ -399,10 +440,14 @@ def encode_full(mod) -> None:
             "Not encoding opening-sample-test-two.mp4. These plates are still the wrong picture: "
             + ", ".join(f"{name} ({REQUIRED[name]})" for name in missing)
         )
-    mod.VO = CUT1 / "vo"
+    mod.VO = prepare_vo()
     mod.VAR = OUT
-    mod.SCORE = VAR / "retrieved/score/Anabasis_I.mp3"
+    # Penumbra, the Act I alternate. The first 30 s is a near-silent entry, so
+    # the bed starts at the point named in SCORE-PLAN.
+    mod.SCORE = VAR / "retrieved/score/Penumbra.mp3"
+    mod.SCORE_START = 30.0
     audio, pictures, duration = mod.build_timeline()
+    audio = attach_title_line(mod, audio, pictures)
     names = set()
     for shot in pictures:
         if shot.get("intro") or shot["shot"] == "S001":

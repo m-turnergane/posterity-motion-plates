@@ -22,7 +22,7 @@ The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The re
 | Claim ledger | `sources/CLAIM-LEDGER-v3.2.md`, md5 prefix `8e824c98` |
 | OPEN claims, keep out of narration | C02e, C11-b, C14b-b, C15, C16e-b, C17-b. C20 is disputed |
 | Sample | Cut. 69.733 s, retimed to the Oliver recording. See `OPENING-SAMPLE.md`. Act II and the map test were not in this pass |
-| Score | Act I is Anabasis I, overriding Penumbra. The other four candidates stay on disk. Gregorian Chant is not in the plan |
+| Score | The opening sample's second cut uses Penumbra from 0:30. The first cut still uses Anabasis I. Gregorian Chant is not in the plan |
 | Maps | Engine only for routes, labels, and markers. Explorer's Chart is still a proposal |
 | Feature plates | Opening set generated: H06, H01, N14, DK1, CB1, N01, N21. N22 not generated. Files stay in `var/` |
 
@@ -32,7 +32,7 @@ The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The re
 | --- | --- |
 | Delivery config | `config/delivery.yaml` approved |
 | Voice config | `config/narration.yaml` approved, speed unknown. Opening lines L01–L05, L07, L07a, L08, L09 rendered once |
-| Higgsfield | Sample phase authorized. Test two spent 16.50 of an authorized 23.50. Balance 31.5 at 6:01 PM America/Toronto. Further generation is on hold for the owner's review. See `TEST-TWO-RECORD.md` |
+| Higgsfield | Test two spent 22.00 of an authorized 23.50, all 8 submissions. Balance 26 at about 6:30 PM America/Toronto. No submission slot remains. See `TEST-TWO-RECORD.md` |
 | Engine branch | PR #5, not merged |
 | Technical test film | `pipeline-test/README.md`. Picture and one Oliver line verified. Not the episode |
 

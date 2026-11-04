@@ -9,29 +9,29 @@ elevenlabs:
   ask_before_credits: 30000
   scope: this Edward draft
   spent_credits: 0
-  characters_sent: 1083
-  character_cost_header: 446
-  note: Screenshot totals are a record, not a live balance. characters_sent is the 70-character test line plus 1,013 characters of opening VO. The character-cost header on those nine lines summed to 446. The subscription endpoint returned 401, so spent_credits stays 0.
+  characters_sent: 1101
+  character_cost_header: 464
+  note: Screenshot totals are a record, not a live balance. characters_sent is the 70-character test line, 1,013 characters of opening VO, and the 18-character title line. The character-cost header sums to 464. The subscription endpoint returned 401, so spent_credits stays 0.
 
 higgsfield:
   status: sample-authorized
   hold: owner-review
-  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. That pass is encoded. Spent 16.50 across 6 submissions. The unused 7.00 credits and 2 submissions are not a new budget. Further generation waits on the owner's review of opening-sample-test-two.mp4. No plan purchase. Full-film budget still waits.
+  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. The 6:20 PM review notes used the last two submissions, 5.50 credits. Spent 22.00 across 8 submissions. 1.50 credits are left and there are no submissions left. That remainder is not a new budget. No plan purchase. Full-film budget still waits.
   plan_observed: plus
-  credits_observed: 31.5
-  observed_at: 2026-11-04T23:01:00Z
+  credits_observed: 26
+  observed_at: 2026-11-04T23:30:00Z
   image_model: nano_banana_pro
   image_model_status: pack-confirmed
   mcp_general_default: gpt_image_2_5
   unlim_available: false
-  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. Free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. Calls name nano_banana_pro. The opening pass spent 20 credits on ten stills. Test-two replacements named gpt_image_2_5. Six high 2k 16:9 stills posted at 2.75 each. The quoted 4k high still, 4.25, was not used.
-  spent_credits: 78.5
+  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. Free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. Calls name nano_banana_pro. The opening pass spent 20 credits on ten stills. Test-two replacements named gpt_image_2_5. Eight high 2k 16:9 stills posted at 2.75 each. The quoted 4k high still, 4.25, was not used.
+  spent_credits: 84
   queued_credits: 0
   test_two_cap_credits: 23.50
   test_two_cap_submissions: 8
   test_two_cap_authorized_at: 2026-11-04T22:39:00Z
-  test_two_spent_credits: 16.50
-  test_two_submissions: 6
+  test_two_spent_credits: 22.00
+  test_two_submissions: 8
 
 rendering:
   status: local

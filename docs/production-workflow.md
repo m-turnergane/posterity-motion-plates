@@ -77,7 +77,7 @@ Environment name: `ELEVENLABS_API_KEY`. Do not print it. The locked spoken scrip
 
 ## Higgsfield
 
-MCP is connected. The test-two cap is spent and the hold is `owner-review`. Name `nano_banana_pro` for stills, except the opening test-two replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. Ask before a plan upgrade, the full film, or any spend that would exhaust the account. Balance at 6:01 PM America/Toronto was 31.5.
+MCP is connected. The test-two cap has used all 8 submissions and the hold is `owner-review`. Name `nano_banana_pro` for stills, except the opening test-two replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. Ask before a plan upgrade, the full film, or any spend that would exhaust the account. Balance at about 6:30 PM America/Toronto was 26.
 
 ## Assembly checks
 
