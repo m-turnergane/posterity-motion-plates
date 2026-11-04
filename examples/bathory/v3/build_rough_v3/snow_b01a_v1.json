@@ -1,0 +1,56 @@
+{
+ "base": "b12",
+ "name": "b01a_v1_snow_v3",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b01a_bytca_led_away_v1.png",
+ "plate_md5": "4bd2d0dffe4e3e740619dcaeb5aa81e4",
+ "seed": 1101,
+ "color_gain": 1.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.5,
+  0.5
+ ],
+ "wind": -3.0,
+ "tiers": {
+  "far": {
+   "n": 200,
+   "depth": 0.3
+  },
+  "mid": {
+   "n": 110,
+   "depth": 0.55
+  },
+  "near": {
+   "n": 36
+  }
+ },
+ "faces": [],
+ "subjects": [],
+ "keepout": [],
+ "interior": [],
+ "land": [
+  [
+   [
+    0,
+    1180
+   ],
+   [
+    941,
+    1120
+   ],
+   [
+    941,
+    1672
+   ],
+   [
+    0,
+    1672
+   ]
+  ]
+ ],
+ "land_gain": 0.0,
+ "land_feather": 70
+}

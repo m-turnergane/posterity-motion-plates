@@ -1,0 +1,33 @@
+{
+ "slot": "S09",
+ "plate": "k01_night_burial_as_emperor.png",
+ "smoke": "on",
+ "why": "",
+ "every": 15,
+ "frames": 5,
+ "max_outside_allow": 0,
+ "max_in_protect": 0,
+ "max_changed": 93,
+ "guards": {
+  "faces_0": 0,
+  "faces_1": 0,
+  "faces_2": 0,
+  "faces_3": 0,
+  "faces_4": 0,
+  "faces_5": 0,
+  "faces_6": 0,
+  "faces_7": 0,
+  "faces_8": 0,
+  "faces_9": 0,
+  "faces_10": 0,
+  "flames_0": 0,
+  "flames_1": 0,
+  "flames_2": 0,
+  "flames_3": 0,
+  "flames_4": 0,
+  "water_0": 0,
+  "land_0": 0
+ },
+ "zero_motion_ok": true,
+ "emitter_layers": 5
+}

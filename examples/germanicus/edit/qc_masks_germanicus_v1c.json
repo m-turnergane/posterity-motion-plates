@@ -1,0 +1,104 @@
+{
+ "G7c": {
+  "times": [
+   {
+    "t": 0.0,
+    "outside_max": 0.0,
+    "disp_max": 16.96230125427246,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 91.76
+   },
+   {
+    "t": 0.5,
+    "outside_max": 0.0,
+    "disp_max": 0.48116475343704224,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 97.36
+   },
+   {
+    "t": 1.0,
+    "outside_max": 0.0,
+    "disp_max": 14.335531234741211,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 99.79
+   },
+   {
+    "t": 1.5,
+    "outside_max": 0.0,
+    "disp_max": 7.677395343780518,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 91.0
+   },
+   {
+    "t": 2.0,
+    "outside_max": 0.0,
+    "disp_max": 4.7742767333984375,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 90.75
+   },
+   {
+    "t": 2.5,
+    "outside_max": 0.0,
+    "disp_max": 6.356812000274658,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 99.69
+   },
+   {
+    "t": 3.0,
+    "outside_max": 0.0,
+    "disp_max": 19.792125701904297,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 99.84
+   },
+   {
+    "t": 3.5,
+    "outside_max": 0.0,
+    "disp_max": 24.89543342590332,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 94.59
+   },
+   {
+    "t": 4.0,
+    "outside_max": 0.0,
+    "disp_max": 16.288171768188477,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 99.83
+   },
+   {
+    "t": 4.5,
+    "outside_max": 0.0,
+    "disp_max": 2.3466739654541016,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 93.64
+   },
+   {
+    "t": 5.0,
+    "outside_max": 0.0,
+    "disp_max": 11.779974937438965,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 92.19
+   },
+   {
+    "t": 5.5,
+    "outside_max": 0.0,
+    "disp_max": 7.375971794128418,
+    "protect_disp_max": 0.0,
+    "person_disp_max": 0.0,
+    "changed_pct": 90.52
+   }
+  ],
+  "allow_pct": 100.0,
+  "ok": true
+ }
+}

@@ -1,0 +1,574 @@
+{
+ "method": "house 1 s RMS (0.25 s hop) on the post-limiter bed stem, live span [3, tail-dip start]; BS.1770 400 ms / 3 s ST; word margin = VO peak in word - max(|L|,|R|) bed peak in word +-0.3 s",
+ "bed_window": [
+  120.0,
+  243.96666666666667
+ ],
+ "bed_loop": "none: one continuous window of the cue (no loop, no splice)",
+ "live_span_s": [
+  3,
+  111.431
+ ],
+ "tail_dip": {
+  "db": 3.0,
+  "t0": 111.431,
+  "t1": 113.441,
+  "max_slope_db_s": 2.34
+ },
+ "fade": [
+  119.937,
+  123.93666666666667
+ ],
+ "mono": {
+  "live": {
+   "spread_maxmin_db": 10.77,
+   "p95_p5_db": 4.4,
+   "sd_db": 1.42,
+   "max_dev_db": 6.72,
+   "max_dev_at_s": 33.5,
+   "pct_within_0p75_db": 49.3
+  },
+  "3-30": {
+   "spread_maxmin_db": 6.41,
+   "p95_p5_db": 4.29,
+   "sd_db": 1.37,
+   "max_dev_db": 3.39,
+   "max_dev_at_s": 20.0,
+   "pct_within_0p75_db": 37.1
+  },
+  "30-TD0": {
+   "spread_maxmin_db": 10.77,
+   "p95_p5_db": 4.25,
+   "sd_db": 1.42,
+   "max_dev_db": 6.64,
+   "max_dev_at_s": 33.5,
+   "pct_within_0p75_db": 52.8
+  }
+ },
+ "L": {
+  "live": {
+   "spread_maxmin_db": 11.36,
+   "p95_p5_db": 6.81,
+   "sd_db": 1.99,
+   "max_dev_db": 6.54,
+   "max_dev_at_s": 33.5,
+   "pct_within_0p75_db": 33.0
+  },
+  "3-30": {
+   "spread_maxmin_db": 9.11,
+   "p95_p5_db": 6.33,
+   "sd_db": 2.03,
+   "max_dev_db": 4.74,
+   "max_dev_at_s": 17.75,
+   "pct_within_0p75_db": 23.8
+  },
+  "30-TD0": {
+   "spread_maxmin_db": 11.36,
+   "p95_p5_db": 5.9,
+   "sd_db": 1.82,
+   "max_dev_db": 6.72,
+   "max_dev_at_s": 33.5,
+   "pct_within_0p75_db": 34.5
+  }
+ },
+ "R": {
+  "live": {
+   "spread_maxmin_db": 13.88,
+   "p95_p5_db": 6.22,
+   "sd_db": 2.09,
+   "max_dev_db": 7.9,
+   "max_dev_at_s": 33.0,
+   "pct_within_0p75_db": 31.6
+  },
+  "3-30": {
+   "spread_maxmin_db": 9.19,
+   "p95_p5_db": 6.07,
+   "sd_db": 1.99,
+   "max_dev_db": 4.89,
+   "max_dev_at_s": 17.25,
+   "pct_within_0p75_db": 22.9
+  },
+  "30-TD0": {
+   "spread_maxmin_db": 12.5,
+   "p95_p5_db": 5.65,
+   "sd_db": 1.91,
+   "max_dev_db": 7.57,
+   "max_dev_at_s": 33.0,
+   "pct_within_0p75_db": 34.5
+  }
+ },
+ "st3s": {
+  "range_db": 6.41,
+  "p95_p5_db": 2.08,
+  "source_range_db": 11.1,
+  "median_lufs": -28.85
+ },
+ "st400_1s_swing": {
+  "max_db": 6.93,
+  "at_s": 38.5,
+  "source_max_db": 8.51,
+  "median_db": 2.38,
+  "max_added_over_source_db": 3.07,
+  "added_at_s": 76.5
+ },
+ "source_dip_5_15s": {
+  "source_1s_rms_range_db": 9.62,
+  "bed_1s_rms": {
+   "spread_maxmin_db": 5.65,
+   "p95_p5_db": 4.52,
+   "sd_db": 1.25,
+   "max_dev_db": 3.36,
+   "max_dev_at_s": 14.5,
+   "pct_within_0p75_db": 50.9
+  }
+ },
+ "word_margin": {
+  "min": [
+   80,
+   "a",
+   32.26,
+   8.05
+  ],
+  "n_under_12": 12,
+  "n_under_9": 4,
+  "lowest5": [
+   [
+    80,
+    "a",
+    32.26,
+    8.05
+   ],
+   [
+    46,
+    "of",
+    18.49,
+    8.16
+   ],
+   [
+    258,
+    "at",
+    106.28,
+    8.23
+   ],
+   [
+    245,
+    "in",
+    100.09,
+    8.48
+   ],
+   [
+    195,
+    "it.",
+    79.26,
+    10.12
+   ]
+  ],
+  "L22_L23": [
+   [
+    271,
+    "The",
+    112.94,
+    17.52
+   ],
+   [
+    272,
+    "man",
+    113.12,
+    19.68
+   ],
+   [
+    273,
+    "Germanicus",
+    113.45,
+    17.94
+   ],
+   [
+    274,
+    "saved",
+    114.09,
+    16.67
+   ],
+   [
+    275,
+    "was",
+    114.64,
+    15.37
+   ],
+   [
+    276,
+    "condemned",
+    114.88,
+    17.14
+   ],
+   [
+    277,
+    "as",
+    115.47,
+    12.54
+   ],
+   [
+    278,
+    "a",
+    115.61,
+    11.11
+   ],
+   [
+    279,
+    "rebel.",
+    115.72,
+    15.9
+   ],
+   [
+    280,
+    "Whether",
+    116.67,
+    19.05
+   ],
+   [
+    281,
+    "he",
+    117.03,
+    17.05
+   ],
+   [
+    282,
+    "had",
+    117.17,
+    20.94
+   ],
+   [
+    283,
+    "also",
+    117.31,
+    16.13
+   ],
+   [
+    284,
+    "been",
+    117.68,
+    18.24
+   ],
+   [
+    285,
+    "his",
+    117.88,
+    16.2
+   ],
+   [
+    286,
+    "killer",
+    118.05,
+    15.8
+   ],
+   [
+    287,
+    "remained",
+    118.49,
+    18.9
+   ],
+   [
+    288,
+    "unproved.",
+    118.97,
+    16.02
+   ]
+  ]
+ },
+ "rider": {
+  "max_slope_db_per_s": 3.0,
+  "range_db": [
+   -5.58,
+   6.0
+  ],
+  "max_total_gain_slope_incl_taildip_db_per_s": 3.0
+ },
+ "LR_correlation_live": 0.282,
+ "pumping": {
+  "vo_onsets": 37,
+  "bed_change_at_vo_onsets": {
+   "n": 37,
+   "mean_db": -0.411,
+   "sd_db": 1.722
+  },
+  "bed_change_at_vo_offsets": {
+   "n": 36,
+   "mean_db": -0.67,
+   "sd_db": 1.613
+  },
+  "source_at_onsets": {
+   "n": 37,
+   "mean_db": 0.069,
+   "sd_db": 1.922
+  },
+  "source_at_offsets": {
+   "n": 36,
+   "mean_db": -0.608,
+   "sd_db": 2.092
+  },
+  "env_mod_1_4Hz_rms_db": {
+   "postlim": 0.528,
+   "source": 0.445
+  },
+  "rider_corr_with_vo_gate": 0.035,
+  "verdict": "likely clean; processing adds >2 dB 1 s swing at 76.5 s"
+ },
+ "last_two_lines": {
+  "master": {
+   "body_I": -13.8,
+   "last2_I": -16.1,
+   "delta_db": -2.3
+  },
+  "vo_stem": {
+   "body_I": -16.9,
+   "last2_I": -19.1,
+   "delta_db": -2.2
+  },
+  "bed_stem": {
+   "body_I": -28.8,
+   "last2_I": -31.7,
+   "delta_db": -2.9
+  },
+  "vo_source_and_staged": {
+   "source": [
+    -2.700000000000003,
+    -30.9,
+    -33.6
+   ],
+   "after_comp": [
+    -1.3999999999999986,
+    -19.6,
+    -21.0
+   ],
+   "restore_db": -1.3000000000000043,
+   "staged": [
+    -2.700000000000001,
+    -15.9,
+    -18.6
+   ],
+   "vo_postlim": [
+    -2.200000000000003,
+    -16.9,
+    -19.1
+   ],
+   "mix": [
+    -2.3000000000000007,
+    -13.8,
+    -16.1
+   ],
+   "ranges": {
+    "body": [
+     0.0,
+     112.481
+    ],
+    "end": [
+     112.891,
+     119.487
+    ]
+   }
+  },
+  "ranges_s": {
+   "body": [
+    0,
+    112.481
+   ],
+   "last2": [
+    112.891,
+    119.487
+   ]
+  },
+  "verdict": "drop survives"
+ },
+ "master": {
+  "I": -13.9,
+  "TP": -3.7
+ },
+ "sfx_seqC": {
+  "segC_s": [
+   60.9,
+   65.6
+  ],
+  "nonzero_span_s": [
+   60.905,
+   65.601
+  ],
+  "inside_segC": false,
+  "sfx_rms_db": -33.99,
+  "bed_rms_db": -29.99,
+  "vo_rms_db": -17.87,
+  "master_I_segC": -14.8,
+  "master_I_prev_5s": -13.6,
+  "master_I_next_5s": -14.0,
+  "sources": {
+   "shouts": {
+    "file": "/workspace/posterity/standalones/germanicus/sfx/oga_starninjas_crowd_shouting_CC0.ogg",
+    "md5": "8ed53bd014f92a59eb4a93467df3a059",
+    "page": "https://opengameart.org/content/crowd-shoutingspeaking-ambience",
+    "author": "StarNinjas",
+    "licence": "CC0 1.0"
+   },
+   "clashes": {
+    "file": "/workspace/posterity/standalones/germanicus/sfx/oga_starninjas_sword_clash_CC0.zip -> sfx/sword_clash/*.ogg",
+    "md5": "3b82c7072f96dcec53d24072bf74a7b9",
+    "page": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes",
+    "author": "StarNinjas",
+    "licence": "CC0 1.0"
+   }
+  }
+ },
+ "dip_window_29p5_38p8": {
+  "st3_at_31": -28.24,
+  "st3_at_34": -33.33,
+  "st3_31_to_34_db": -5.09,
+  "st3_min": -33.33,
+  "st3_min_at": 34.0,
+  "st3_max": -27.97,
+  "st3_window_range": 5.35,
+  "st3_whole_median": -28.85,
+  "mono1s_min": -38.85,
+  "mono1s_min_at": 34.0,
+  "mono1s_median_live": -32.13,
+  "mono1s_dip_below_median": 6.72,
+  "L1s_min": -36.18,
+  "R1s_min": -39.25,
+  "words": [
+   [
+    72,
+    "son",
+    29.13,
+    16.68
+   ],
+   [
+    73,
+    "held",
+    29.48,
+    16.55
+   ],
+   [
+    74,
+    "the",
+    29.69,
+    16.29
+   ],
+   [
+    75,
+    "higher",
+    29.81,
+    16.43
+   ],
+   [
+    76,
+    "command.",
+    30.08,
+    16.49
+   ],
+   [
+    77,
+    "Piso",
+    31.27,
+    17.33
+   ],
+   [
+    78,
+    "was",
+    31.74,
+    16.36
+   ],
+   [
+    79,
+    "building",
+    31.91,
+    17.66
+   ],
+   [
+    80,
+    "a",
+    32.26,
+    8.05
+   ],
+   [
+    81,
+    "following",
+    32.37,
+    17.7
+   ],
+   [
+    82,
+    "of",
+    32.81,
+    14.95
+   ],
+   [
+    83,
+    "his",
+    32.91,
+    20.2
+   ],
+   [
+    84,
+    "own.",
+    33.09,
+    19.54
+   ],
+   [
+    85,
+    "Then",
+    34.18,
+    20.82
+   ],
+   [
+    86,
+    "Germanicus",
+    34.56,
+    17.64
+   ],
+   [
+    87,
+    "fell",
+    35.27,
+    17.59
+   ],
+   [
+    88,
+    "ill",
+    35.54,
+    17.16
+   ],
+   [
+    89,
+    "near",
+    35.84,
+    17.22
+   ],
+   [
+    90,
+    "Antioch.",
+    36.06,
+    17.92
+   ],
+   [
+    91,
+    "Tacitus",
+    37.09,
+    17.13
+   ],
+   [
+    92,
+    "says",
+    37.69,
+    15.58
+   ],
+   [
+    93,
+    "human",
+    38.06,
+    13.55
+   ],
+   [
+    94,
+    "remains,",
+    38.51,
+    13.41
+   ]
+  ]
+ }
+}

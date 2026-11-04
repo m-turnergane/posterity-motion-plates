@@ -1,0 +1,101 @@
+{
+ "beat": "h02",
+ "kind": "h02",
+ "frames": [
+  119,
+  190
+ ],
+ "t": [
+  3.967,
+  6.333
+ ],
+ "seconds": 2.367,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+ "plate_md5": "20bfe504bea71d1eef4644012fdbadde",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "water": {
+  "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+  "water_px": 77140,
+  "allow_px": 77140,
+  "protect_px": 1496212,
+  "glint_sites": [
+   140
+  ]
+ },
+ "steam": [
+  {
+   "name": "steam_a",
+   "opacity": 0.3
+  },
+  {
+   "name": "steam_b",
+   "opacity": 0.28
+  }
+ ],
+ "water_guard": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok"
+  },
+  {
+   "check": "pixel_density",
+   "plate": null,
+   "plate_wh": [
+    941,
+    1672
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1483,
+   "visible_src_wh": [
+    887.3,
+    1577.4
+   ],
+   "ratio": 1.217,
+   "ratio_x": 1.217,
+   "ratio_y": 1.217,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

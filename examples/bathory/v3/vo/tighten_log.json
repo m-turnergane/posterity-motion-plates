@@ -1,0 +1,198 @@
+{
+ "cap": 0.47,
+ "special": [
+  [
+   "tried.",
+   "Nothing",
+   0.62
+  ],
+  [
+   "infamous.",
+   "A",
+   0.7
+  ],
+  [
+   "Countess.",
+   "History",
+   0.8
+  ],
+  [
+   "victors.",
+   "We",
+   0.7
+  ],
+  [
+   "monster:",
+   "the",
+   0.48
+  ]
+ ],
+ "raw_s": 98.128,
+ "tight_s": 94.846,
+ "removed_s": 3.282,
+ "n_cuts": 18,
+ "cuts": [
+  {
+   "after": "investigate.",
+   "before": "One",
+   "at": 15.441,
+   "gap": 0.696,
+   "new_gap": 0.47,
+   "removed": 0.226,
+   "rms_dBFS": -91.0
+  },
+  {
+   "after": "supper.",
+   "before": "Thurz\u00f3",
+   "at": 21.548,
+   "gap": 0.603,
+   "new_gap": 0.47,
+   "removed": 0.133,
+   "rms_dBFS": -91.5
+  },
+  {
+   "after": "dying.",
+   "before": "B\u00e1thory",
+   "at": 26.273,
+   "gap": 0.696,
+   "new_gap": 0.47,
+   "removed": 0.226,
+   "rms_dBFS": -91.2
+  },
+  {
+   "after": "days.",
+   "before": "But",
+   "at": 41.935,
+   "gap": 0.604,
+   "new_gap": 0.47,
+   "removed": 0.134,
+   "rms_dBFS": -91.0
+  },
+  {
+   "after": "court.",
+   "before": "The",
+   "at": 47.02,
+   "gap": 0.697,
+   "new_gap": 0.47,
+   "removed": 0.227,
+   "rms_dBFS": -91.0
+  },
+  {
+   "after": "hearsay.",
+   "before": "The",
+   "at": 51.943,
+   "gap": 0.952,
+   "new_gap": 0.47,
+   "removed": 0.482,
+   "rms_dBFS": -90.8
+  },
+  {
+   "after": "trial.",
+   "before": "Thurz\u00f3",
+   "at": 54.544,
+   "gap": 0.603,
+   "new_gap": 0.47,
+   "removed": 0.133,
+   "rms_dBFS": -91.1
+  },
+  {
+   "after": "it.",
+   "before": "Thurz\u00f3",
+   "at": 56.587,
+   "gap": 0.511,
+   "new_gap": 0.47,
+   "removed": 0.041,
+   "rms_dBFS": -91.1
+  },
+  {
+   "after": "husband.",
+   "before": "Ferenc's",
+   "at": 60.024,
+   "gap": 0.51,
+   "new_gap": 0.47,
+   "removed": 0.04,
+   "rms_dBFS": -91.3
+  },
+  {
+   "after": "her.",
+   "before": "Many",
+   "at": 63.808,
+   "gap": 0.511,
+   "new_gap": 0.47,
+   "removed": 0.041,
+   "rms_dBFS": -91.5
+  },
+  {
+   "after": "lands.",
+   "before": "She",
+   "at": 70.438,
+   "gap": 0.603,
+   "new_gap": 0.47,
+   "removed": 0.133,
+   "rms_dBFS": -91.7
+  },
+  {
+   "after": "confinement.",
+   "before": "Then",
+   "at": 72.632,
+   "gap": 0.697,
+   "new_gap": 0.47,
+   "removed": 0.227,
+   "rms_dBFS": -91.1
+  },
+  {
+   "after": "infamous.",
+   "before": "A",
+   "at": 76.649,
+   "gap": 1.115,
+   "new_gap": 0.7,
+   "removed": 0.415,
+   "rms_dBFS": -90.9
+  },
+  {
+   "after": "that.",
+   "before": "No",
+   "at": 85.902,
+   "gap": 0.511,
+   "new_gap": 0.47,
+   "removed": 0.041,
+   "rms_dBFS": -92.6
+  },
+  {
+   "after": "her.",
+   "before": "But",
+   "at": 87.992,
+   "gap": 0.511,
+   "new_gap": 0.47,
+   "removed": 0.041,
+   "rms_dBFS": -91.6
+  },
+  {
+   "after": "monster:",
+   "before": "the",
+   "at": 90.349,
+   "gap": 0.604,
+   "new_gap": 0.48,
+   "removed": 0.124,
+   "rms_dBFS": -91.5
+  },
+  {
+   "after": "Countess.",
+   "before": "History",
+   "at": 92.195,
+   "gap": 0.859,
+   "new_gap": 0.8,
+   "removed": 0.059,
+   "rms_dBFS": -91.6
+  },
+  {
+   "after": "victors.",
+   "before": "We",
+   "at": 95.132,
+   "gap": 1.115,
+   "new_gap": 0.7,
+   "removed": 0.415,
+   "rms_dBFS": -91.0
+  }
+ ]
+}

@@ -1,0 +1,668 @@
+{
+ "version": "v1b",
+ "fps": 30,
+ "vo": "/workspace/posterity/standalones/jianwen/vo/final-vo-oliver-jianwen-v1.wav",
+ "vo_md5": "6bd7b1c33777fc8ffff6be6ac9610d6a",
+ "words": "/workspace/posterity/standalones/jianwen/vo/final-vo-oliver-jianwen-v1_words.json",
+ "words_md5": "32b2c98515e0018f3406c257cd091dc1",
+ "speech_end": 91.5,
+ "tail": 0.5,
+ "total_f": 2760,
+ "total_s": 92.0,
+ "plates_dir": "/workspace/posterity/standalones/jianwen/plates-v1",
+ "title": {
+  "text": "THE EMPEROR WHO\nWALKED OUT OF THE FIRE",
+  "slots": [
+   "S01A",
+   "S01B"
+  ],
+  "start_f": 0,
+  "clean_by_f": 118,
+  "topPercent": 32.5,
+  "fontSize": 74,
+  "carries_cut_f": 78,
+  "note": "lock v3.2b 4.0 s across S01A+S01B (cut f78 lands in the hold f42-88, as Edward v3 carried the title across its opening cuts); fontSize 74 (house 88) because line 2 is 1151 px at 88 > 92% width; bandHeightPercent 14 kept; check height vs faces on J01 with --test-frames"
+ },
+ "opening_fallback": {
+  "trigger": "S01B crop frac < 0.70 of the J01 frame (would go soft at 1080x1920)",
+  "slot": "S01",
+  "plate": "j01_body_from_burning_palace.png",
+  "f0": 0,
+  "f1": 148,
+  "start": 0.0,
+  "end": 4.933,
+  "dur": 4.933,
+  "z_start": 1.0,
+  "z_end": 1.14,
+  "motion": "single WIDE shot with a faster push 1.00->1.14 (v1 was 1.06) so the opening still moves; title unchanged; FLAG it in the report"
+ },
+ "outro": {
+  "approved": "Vellum 2026-10-30",
+  "dur": 4.967,
+  "motion": "light lantern sway + mist + few embers, all kept off the lettering"
+ },
+ "slots": [
+  {
+   "slot": "S01A",
+   "plate": "j01_body_from_burning_palace.png",
+   "framing": "wide",
+   "crop": null,
+   "f0": 0,
+   "f1": 78,
+   "start": 0.0,
+   "end": 2.6,
+   "dur": 2.6,
+   "first_word": "They",
+   "first_word_t": 0.0,
+   "vo": "They pulled a burned body from the palace",
+   "motion": "WIDE: Chronicle Reveal title manifests (lock v3.2b, f0-118, carries across the cut); push 1.00->1.04 toward the litter; burning roof = BIG FIRE glow pulse + spill on bearers/robes (static flame shapes); soldiers' torches flicker+spill; embers rise off the roof; warm haze",
+   "note": "opening cut 1 of 2: wide",
+   "under3": false
+  },
+  {
+   "slot": "S01B",
+   "plate": "j01_body_from_burning_palace.png",
+   "framing": "tight",
+   "crop": {
+    "frac": 0.75,
+    "center": [
+     0.5,
+     0.55
+    ],
+    "min_frac": 0.7,
+    "note": "placeholder: set center/frac on the real J01 plate; frac = crop width/plate width (= height fraction, 9:16 kept)"
+   },
+   "f0": 78,
+   "f1": 148,
+   "start": 2.6,
+   "end": 4.933,
+   "dur": 2.333,
+   "first_word": "and",
+   "first_word_t": 2.624,
+   "vo": "and called it the emperor.",
+   "motion": "TIGHT: reframe/crop of the SAME J01 plate on the shrouded litter (crop >= 70 % of frame, else fallback); push 1.00->1.04; same fx seed + global clock as S01A so fire/embers continue through the cut; title still holding, exits f88-108, clean f118",
+   "note": "opening cut 2 of 2: tight; cut on 'and' (0.21 s gap -> word-start frame)",
+   "under3": false
+  },
+  {
+   "slot": "S02",
+   "plate": "j02_yongle_searching_candle.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 148,
+   "f1": 253,
+   "start": 4.933,
+   "end": 8.433,
+   "dur": 3.5,
+   "first_word": "So",
+   "first_word_t": 5.016,
+   "vo": "So why did his uncle keep searching for him?",
+   "motion": "push to his face; single tall candle: flame-shape sway + flicker + spill across face/robe; warm haze + lit motes",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S03",
+   "plate": "j03_founder_and_grandson.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 253,
+   "f1": 437,
+   "start": 8.433,
+   "end": 14.567,
+   "dur": 6.133,
+   "first_word": "The",
+   "first_word_t": 8.533,
+   "vo": "The emperor was Jianwen, the young grandson of the man who founded China's Ming dynasty.",
+   "motion": "slow drift founder->grandson; rows of candles on bronze stands: shape motion + grouped spill; haze",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S04",
+   "plate": "j04_zhu_di_northern_wall_torches.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 437,
+   "f1": 631,
+   "start": 14.567,
+   "end": 21.033,
+   "dur": 6.467,
+   "first_word": "His",
+   "first_word_t": 14.663,
+   "vo": "His uncles were powerful princes, and the strongest, Zhu Di, guarded the north.",
+   "motion": "push up to Zhu Di; wall torches: glow pulse + spill on armour/brick (torch shapes static); light snow-mist drift optional (no land warp)",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S05",
+   "plate": "j05_jianwen_seals_edicts.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 631,
+   "f1": 788,
+   "start": 21.033,
+   "end": 26.267,
+   "dur": 5.233,
+   "first_word": "When",
+   "first_word_t": 21.119,
+   "vo": "When Jianwen began stripping his uncles of their power, Zhu Di rebelled.",
+   "motion": "push to edicts + courier; desk candles shape motion + spill; paper lantern flicker + gentle sway (pivot at cord)",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S06",
+   "plate": "j06_nanjing_gate_opened_night.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 788,
+   "f1": 996,
+   "start": 26.267,
+   "end": 33.2,
+   "dur": 6.933,
+   "first_word": "After",
+   "first_word_t": 26.355,
+   "vo": "After three years of war, his army reached Nanjing, the capital, and a general opened a gate to him.",
+   "motion": "push through the gate; massed army torches glow pulse + spill on gate leaves/brick; faint smoke haze; NO war SFX (not a battle plate)",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S07",
+   "plate": "j07_palace_roofs_aflame_wide.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 996,
+   "f1": 1136,
+   "start": 33.2,
+   "end": 37.867,
+   "dur": 4.667,
+   "first_word": "Then",
+   "first_word_t": 33.309,
+   "vo": "Then the palace caught fire. Zhu Di's men brought a body out of the flames,",
+   "motion": "push toward the hall; BIG FIRE: static flame shapes, pulsing glow + spill on courtyard/roof edges; dense embers + smoke drift above roofline",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S08",
+   "plate": "j08_night_burial_torches.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1136,
+   "f1": 1235,
+   "start": 37.867,
+   "end": 41.167,
+   "dur": 3.3,
+   "first_word": "and",
+   "first_word_t": 37.883,
+   "vo": "and he buried it as the emperor. Jianwen's eldest",
+   "motion": "very slow push; pole torches glow pulse + spill on mourners/coffin (static torch shapes); faint smoke",
+   "note": "cut at L07b 'and he buried' (Edward rule); S09 cut moved to 'son,' so S08 >= 3 s",
+   "under3": false
+  },
+  {
+   "slot": "S09",
+   "plate": "j09_empty_childs_room.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1235,
+   "f1": 1335,
+   "start": 41.167,
+   "end": 44.5,
+   "dur": 3.333,
+   "first_word": "son,",
+   "first_word_t": 41.18,
+   "vo": "son, a small boy, was never seen again.",
+   "motion": "very slow push to the small shoes; single low candle shape motion + spill on floor/bedding; lit motes",
+   "note": "cut on 'son,' (override; 0.03 s word gap) so the empty room lands on the word 'son'",
+   "under3": false
+  },
+  {
+   "slot": "S10",
+   "plate": "j10_yongle_enthroned_calendar.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1335,
+   "f1": 1500,
+   "start": 44.5,
+   "end": 50.0,
+   "dur": 5.5,
+   "first_word": "Zhu",
+   "first_word_t": 44.605,
+   "vo": "Zhu Di took the throne as the Yongle Emperor, and wiped his nephew's reign from the calendar.",
+   "motion": "push brazier->Yongle; candle rows shape motion; brazier = big-fire glow pulse + spill (static flame)",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S11",
+   "plate": "j11_rumour_whispered_lantern.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1500,
+   "f1": 1595,
+   "start": 50.0,
+   "end": 53.167,
+   "dur": 3.167,
+   "first_word": "But",
+   "first_word_t": 50.108,
+   "vo": "But a rumour spread that Jianwen had escaped.",
+   "motion": "push to the two faces; hanging paper lantern flicker + spill on faces + gentle sway",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S12",
+   "plate": "j12_hu_ying_search_campfire.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1595,
+   "f1": 1735,
+   "start": 53.167,
+   "end": 57.833,
+   "dur": 4.667,
+   "first_word": "Yongle",
+   "first_word_t": 53.266,
+   "vo": "Yongle sent an official to search the empire for him, year after year.",
+   "motion": "push to Hu Ying; campfire glow pulse + spill (static flame) + REAL embers + smoke; temple lantern flicker + sway; valley mist drift",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S13",
+   "plate": "j13_treasure_fleet_lanterns.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1735,
+   "f1": 1942,
+   "start": 57.833,
+   "end": 64.733,
+   "dur": 6.9,
+   "first_word": "The",
+   "first_word_t": 57.945,
+   "vo": "The official History of Ming says the treasure fleets sailed partly to find him. Most historians doubt it.",
+   "motion": "push across the junks; deck lanterns flicker + small sway; quay torches glow + spill; water and its reflections held STATIC (masked out of spill/mist)",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S14",
+   "plate": "j14_hu_ying_returns_night.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 1942,
+   "f1": 2067,
+   "start": 64.733,
+   "end": 68.9,
+   "dur": 4.167,
+   "first_word": "More",
+   "first_word_t": 64.841,
+   "vo": "More than twenty years after the fire, that official came back,",
+   "motion": "push to Hu Ying at the gate; guards' torches glow pulse + spill on him/gate; dust haze",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S15",
+   "plate": "j15_midnight_talk_one_candle.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 2067,
+   "f1": 2185,
+   "start": 68.9,
+   "end": 72.833,
+   "dur": 3.933,
+   "first_word": "and",
+   "first_word_t": 68.928,
+   "vo": "and Yongle rose from bed to talk with him deep into the night.",
+   "motion": "push between the two faces; single low candle: shape motion + strong local spill on both faces",
+   "note": "cut at L13b 'and Yongle rose' (0.15 s gap -> word-start frame)",
+   "under3": false
+  },
+  {
+   "slot": "S16",
+   "plate": "j16_closed_door_light_beneath.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 2185,
+   "f1": 2411,
+   "start": 72.833,
+   "end": 80.367,
+   "dur": 7.533,
+   "first_word": "Only",
+   "first_word_t": 72.933,
+   "vo": "Only then, the history says, was Yongle's suspicion laid to rest. It never says what he was told.",
+   "motion": "very slow push to the door gap; light under the door flicker + spill on floor only; small candle by blank page shape motion",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "S17",
+   "plate": "j17_figure_walking_from_fire.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 2411,
+   "f1": 2611,
+   "start": 80.367,
+   "end": 87.033,
+   "dur": 6.667,
+   "first_word": "Whether",
+   "first_word_t": 80.479,
+   "vo": "Whether Jianwen died in that fire, or walked out of it, no one has ever proved.",
+   "motion": "push following the figure; distant city = big-fire glow pulse (static); paper lantern flicker + sway; REAL embers drifting + smoke + ground mist",
+   "note": "",
+   "under3": false
+  },
+  {
+   "slot": "OUTRO",
+   "plate": "jianwen_outro_mountain_temple_lantern.png",
+   "framing": "full",
+   "crop": null,
+   "f0": 2611,
+   "f1": 2760,
+   "start": 87.033,
+   "end": 92.0,
+   "dur": 4.967,
+   "first_word": "History",
+   "first_word_t": 87.12,
+   "vo": "History remembers the victors. We remember the rest.",
+   "motion": "OutroHold (no text overlay, baked lettering untouched): temple lantern flicker + sway, mist + a few embers kept OUT of the lettering box; slow push only if lettering stays inside frame; music fades",
+   "note": "baked owner outro, used as-is",
+   "under3": false
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "start": 0.0,
+   "end": 1.582,
+   "text": "They pulled a burned body"
+  },
+  {
+   "line": 1,
+   "start": 1.602,
+   "end": 2.604,
+   "text": "from the palace"
+  },
+  {
+   "line": 1,
+   "start": 2.624,
+   "end": 4.662,
+   "text": "and called it the emperor."
+  },
+  {
+   "line": 1,
+   "start": 5.016,
+   "end": 6.458,
+   "text": "So why did his uncle"
+  },
+  {
+   "line": 1,
+   "start": 6.478,
+   "end": 8.087,
+   "text": "keep searching for him?"
+  },
+  {
+   "line": 2,
+   "start": 8.533,
+   "end": 10.371,
+   "text": "The emperor was Jianwen,"
+  },
+  {
+   "line": 2,
+   "start": 10.391,
+   "end": 12.02,
+   "text": "the young grandson of the man"
+  },
+  {
+   "line": 2,
+   "start": 12.04,
+   "end": 14.403,
+   "text": "who founded China's Ming dynasty."
+  },
+  {
+   "line": 3,
+   "start": 14.663,
+   "end": 17.023,
+   "text": "His uncles were powerful princes,"
+  },
+  {
+   "line": 3,
+   "start": 17.043,
+   "end": 18.15,
+   "text": "and the strongest,"
+  },
+  {
+   "line": 3,
+   "start": 18.17,
+   "end": 20.254,
+   "text": "Zhu Di, guarded the north."
+  },
+  {
+   "line": 4,
+   "start": 21.119,
+   "end": 23.537,
+   "text": "When Jianwen began stripping his uncles"
+  },
+  {
+   "line": 4,
+   "start": 23.557,
+   "end": 24.666,
+   "text": "of their power,"
+  },
+  {
+   "line": 4,
+   "start": 24.741,
+   "end": 26.094,
+   "text": "Zhu Di rebelled."
+  },
+  {
+   "line": 5,
+   "start": 26.355,
+   "end": 28.111,
+   "text": "After three years of war,"
+  },
+  {
+   "line": 5,
+   "start": 28.131,
+   "end": 29.76,
+   "text": "his army reached Nanjing,"
+  },
+  {
+   "line": 5,
+   "start": 29.78,
+   "end": 30.677,
+   "text": "the capital,"
+  },
+  {
+   "line": 5,
+   "start": 30.697,
+   "end": 32.14,
+   "text": "and a general opened a gate"
+  },
+  {
+   "line": 5,
+   "start": 32.16,
+   "end": 32.862,
+   "text": "to him."
+  },
+  {
+   "line": 6,
+   "start": 33.309,
+   "end": 35.265,
+   "text": "Then the palace caught fire."
+  },
+  {
+   "line": 7,
+   "start": 35.399,
+   "end": 37.074,
+   "text": "Zhu Di's men brought a body out"
+  },
+  {
+   "line": 7,
+   "start": 37.094,
+   "end": 37.863,
+   "text": "of the flames,"
+  },
+  {
+   "line": 7,
+   "start": 37.883,
+   "end": 39.991,
+   "text": "and he buried it as the emperor."
+  },
+  {
+   "line": 8,
+   "start": 40.252,
+   "end": 41.16,
+   "text": "Jianwen's eldest"
+  },
+  {
+   "line": 8,
+   "start": 41.18,
+   "end": 42.704,
+   "text": "son, a small boy,"
+  },
+  {
+   "line": 8,
+   "start": 42.724,
+   "end": 44.252,
+   "text": "was never seen again."
+  },
+  {
+   "line": 9,
+   "start": 44.605,
+   "end": 45.816,
+   "text": "Zhu Di took the throne"
+  },
+  {
+   "line": 9,
+   "start": 45.836,
+   "end": 47.047,
+   "text": "as the Yongle Emperor,"
+  },
+  {
+   "line": 9,
+   "start": 47.067,
+   "end": 48.602,
+   "text": "and wiped his nephew's reign"
+  },
+  {
+   "line": 9,
+   "start": 48.622,
+   "end": 49.754,
+   "text": "from the calendar."
+  },
+  {
+   "line": 10,
+   "start": 50.108,
+   "end": 51.284,
+   "text": "But a rumour spread"
+  },
+  {
+   "line": 10,
+   "start": 51.304,
+   "end": 53.005,
+   "text": "that Jianwen had escaped."
+  },
+  {
+   "line": 11,
+   "start": 53.266,
+   "end": 54.523,
+   "text": "Yongle sent an official"
+  },
+  {
+   "line": 11,
+   "start": 54.543,
+   "end": 56.392,
+   "text": "to search the empire for him,"
+  },
+  {
+   "line": 11,
+   "start": 56.412,
+   "end": 57.811,
+   "text": "year after year."
+  },
+  {
+   "line": 12,
+   "start": 57.945,
+   "end": 60.049,
+   "text": "The official History of Ming says the"
+  },
+  {
+   "line": 12,
+   "start": 60.069,
+   "end": 62.583,
+   "text": "treasure fleets sailed partly to find him."
+  },
+  {
+   "line": 12,
+   "start": 62.844,
+   "end": 64.58,
+   "text": "Most historians doubt it."
+  },
+  {
+   "line": 13,
+   "start": 64.841,
+   "end": 67.282,
+   "text": "More than twenty years after the fire,"
+  },
+  {
+   "line": 13,
+   "start": 67.302,
+   "end": 68.908,
+   "text": "that official came back,"
+  },
+  {
+   "line": 13,
+   "start": 68.928,
+   "end": 70.788,
+   "text": "and Yongle rose from bed to talk"
+  },
+  {
+   "line": 13,
+   "start": 70.808,
+   "end": 72.579,
+   "text": "with him deep into the night."
+  },
+  {
+   "line": 14,
+   "start": 72.933,
+   "end": 75.212,
+   "text": "Only then, the history says,"
+  },
+  {
+   "line": 14,
+   "start": 75.232,
+   "end": 77.92,
+   "text": "was Yongle's suspicion laid to rest."
+  },
+  {
+   "line": 14,
+   "start": 78.111,
+   "end": 80.125,
+   "text": "It never says what he was told."
+  },
+  {
+   "line": 15,
+   "start": 80.479,
+   "end": 83.016,
+   "text": "Whether Jianwen died in that fire,"
+  },
+  {
+   "line": 15,
+   "start": 83.045,
+   "end": 84.444,
+   "text": "or walked out of it,"
+  },
+  {
+   "line": 15,
+   "start": 84.891,
+   "end": 86.284,
+   "text": "no one has ever proved."
+  }
+ ],
+ "flags": []
+}

@@ -1,0 +1,180 @@
+{
+ "beat": "b12",
+ "kind": "flat",
+ "frames": [
+  806,
+  901
+ ],
+ "t": [
+  26.867,
+  30.033
+ ],
+ "seconds": 3.167,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b12_taken_up_to_fortress.png",
+ "plate_md5": "78699fc77cbbba1365ced9f37d8569ae",
+ "plate_wh": [
+  942,
+  1670
+ ],
+ "snow_cfg": "b12",
+ "snow_face_boxes": [],
+ "b12_torch_pts": [
+  [
+   381,
+   691
+  ],
+  [
+   462,
+   664
+  ],
+  [
+   522,
+   637
+  ],
+  [
+   590,
+   599
+  ]
+ ],
+ "fx": [
+  {
+   "kind": "torch",
+   "info": {
+    "plate": "b12#0",
+    "sources": {
+     "torch": 4,
+     "window": 1
+    },
+    "warped_candles": 0,
+    "spill_groups": 5,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "torch": [
+     [
+      359,
+      661,
+      403,
+      713
+     ],
+     [
+      440,
+      634,
+      484,
+      686
+     ],
+     [
+      500,
+      607,
+      544,
+      659
+     ],
+     [
+      568,
+      569,
+      612,
+      621
+     ]
+    ],
+    "window": [
+     [
+      365,
+      225,
+      395,
+      270
+     ]
+    ],
+    "window_amp": 0.7,
+    "radius_mult": 0.5,
+    "spill_amp": 1.4
+   },
+   "fire_sharpness": {
+    "check": "fire_sharpness",
+    "zoom": 1.0600000104556482,
+    "lapvar": [
+     514.6,
+     584.0,
+     521.2,
+     535.9
+    ],
+    "min_lapvar": 100.0,
+    "soft_rects": [],
+    "max_zoom": 1.5,
+    "ok": true,
+    "msg": "ok"
+   },
+   "pulse": 0.2759,
+   "metrics_at_pulse1": {
+    "whole": 8.775530815124512,
+    "local": 52.617919921875,
+    "step": 9.725531578063965
+   },
+   "metrics": {
+    "whole": 1.8771804571151733,
+    "local": 15.553085327148438,
+    "step": 2.9732470512390137
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "t0",
+   "type": "torch",
+   "opacity": 0.35
+  },
+  {
+   "name": "t1",
+   "type": "torch",
+   "opacity": 0.35
+  },
+  {
+   "name": "t2",
+   "type": "torch",
+   "opacity": 0.35
+  },
+  {
+   "name": "t3",
+   "type": "torch",
+   "opacity": 0.35
+  }
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   942,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "snow_visible_flakes_per_frame": {
+  "min": 145,
+  "mean": 154.1,
+  "max": 160
+ }
+}

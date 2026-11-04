@@ -1,0 +1,15 @@
+{
+ "script": "sword_static_check_7B_v5final.py",
+ "frames": "7B k=0..170 every 5 + k76-89 (54 frames)",
+ "sword_bbox_pad20_phasecorr_max_abs_px": 0.089,
+ "wide_band_y700_1300_phasecorr_max_abs_px": 0.035,
+ "sword_absdiff_mean_range": [
+  3.43,
+  4.43
+ ],
+ "sword_mean_signed_range": [
+  -1.68,
+  -0.65
+ ],
+ "note": "QC master persons_phasecorr 0.5 px (k0-75) came from the tight unpadded bbox; padded bbox / per-frame re-run shows <=0.09 px with no step, i.e. sword static; residual = codec noise"
+}

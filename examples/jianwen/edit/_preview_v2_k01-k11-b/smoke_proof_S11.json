@@ -1,0 +1,20 @@
+{
+ "slot": "S11",
+ "plate": "k10_yongle_enthroned_calendar.png",
+ "smoke": "on",
+ "why": "",
+ "every": 15,
+ "frames": 9,
+ "max_outside_allow": 0,
+ "max_in_protect": 0,
+ "max_changed": 82,
+ "guards": {
+  "faces_0": 0,
+  "faces_1": 0,
+  "faces_2": 0,
+  "faces_3": 0,
+  "land_0": 0
+ },
+ "zero_motion_ok": true,
+ "emitter_layers": 2
+}

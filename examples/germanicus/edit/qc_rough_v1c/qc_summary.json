@@ -1,0 +1,516 @@
+{
+ "master": "/workspace/posterity/renders/posterity-germanicus-ROUGH-v1c.mp4",
+ "md5": "eff55d2ffa4bf65b39f8b80e03789bbc",
+ "video": {
+  "codec": "h264",
+  "w": 1080,
+  "h": 1920,
+  "fps": "30/1",
+  "nb_frames": "2061",
+  "pix": "yuv420p",
+  "dur": 68.7
+ },
+ "audio": {
+  "codec": "aac",
+  "sr": "48000",
+  "ch": 2,
+  "dur": 68.7
+ },
+ "format_duration": 68.7,
+ "loudness": {
+  "I": -13.9,
+  "LRA": 3.2,
+  "TP": -3.7
+ },
+ "plates": [
+  {
+   "id": "1A",
+   "plate": "seq1a.png",
+   "f_in": 0,
+   "f_out": 180,
+   "t_in": 0.0,
+   "t_out": 6.0,
+   "dur_s": 6.0,
+   "first_word": "They",
+   "ir_tag": false,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": true
+  },
+  {
+   "id": "1B",
+   "plate": "seq1b.png",
+   "f_in": 180,
+   "f_out": 331,
+   "t_in": 6.0,
+   "t_out": 11.033,
+   "dur_s": 5.033,
+   "first_word": "The",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": true
+  },
+  {
+   "id": "2",
+   "plate": "seq2.png",
+   "f_in": 331,
+   "f_out": 499,
+   "t_in": 11.033,
+   "t_out": 16.633,
+   "dur_s": 5.6,
+   "first_word": "Germanicus",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "3",
+   "plate": "seq3.png",
+   "f_in": 499,
+   "f_out": 635,
+   "t_in": 16.633,
+   "t_out": 21.167,
+   "dur_s": 4.533,
+   "first_word": "But",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "4",
+   "plate": "seq4.png",
+   "f_in": 635,
+   "f_out": 767,
+   "t_in": 21.167,
+   "t_out": 25.567,
+   "dur_s": 4.4,
+   "first_word": "When",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": true
+  },
+  {
+   "id": "5",
+   "plate": "seq5.png",
+   "f_in": 767,
+   "f_out": 919,
+   "t_in": 25.567,
+   "t_out": 30.633,
+   "dur_s": 5.067,
+   "first_word": "The",
+   "ir_tag": false,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": true
+  },
+  {
+   "id": "6",
+   "plate": "seq6.png",
+   "f_in": 919,
+   "f_out": 1081,
+   "t_in": 30.633,
+   "t_out": 36.033,
+   "dur_s": 5.4,
+   "first_word": "Before",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": true
+  },
+  {
+   "id": "7A",
+   "plate": "seq7a.png",
+   "f_in": 1081,
+   "f_out": 1280,
+   "t_in": 36.033,
+   "t_out": 42.667,
+   "dur_s": 6.633,
+   "first_word": "So",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "7B",
+   "plate": "seq7b_lowerleft_v1c.png",
+   "f_in": 1280,
+   "f_out": 1437,
+   "t_in": 42.667,
+   "t_out": 47.9,
+   "dur_s": 5.233,
+   "first_word": "Before",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.03
+   ],
+   "anchor": [
+    0.44,
+    0.44
+   ],
+   "candle": true
+  },
+  {
+   "id": "8",
+   "plate": "seq8.png",
+   "f_in": 1437,
+   "f_out": 1634,
+   "t_in": 47.9,
+   "t_out": 54.467,
+   "dur_s": 6.567,
+   "first_word": "The",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "9A",
+   "plate": "seq9a.png",
+   "f_in": 1634,
+   "f_out": 1725,
+   "t_in": 54.467,
+   "t_out": 57.5,
+   "dur_s": 3.033,
+   "first_word": "Copies",
+   "ir_tag": false,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "9B",
+   "plate": "seq9b.png",
+   "f_in": 1725,
+   "f_out": 1866,
+   "t_in": 57.5,
+   "t_out": 62.2,
+   "dur_s": 4.7,
+   "first_word": "They",
+   "ir_tag": true,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "10",
+   "plate": "seq10_softcaps_v1c.png",
+   "f_in": 1866,
+   "f_out": 1956,
+   "t_in": 62.2,
+   "t_out": 65.2,
+   "dur_s": 3.0,
+   "first_word": "But",
+   "ir_tag": false,
+   "push": [
+    1.0,
+    1.04
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  },
+  {
+   "id": "OUTRO",
+   "plate": "outro.png",
+   "f_in": 1956,
+   "f_out": 2061,
+   "t_in": 65.2,
+   "t_out": 68.7,
+   "dur_s": 3.5,
+   "first_word": null,
+   "ir_tag": false,
+   "push": [
+    1.0,
+    1.02
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "candle": false
+  }
+ ],
+ "all_ge_3s": true,
+ "decoded_frames": 2061,
+ "near_black_frames": 0,
+ "ir_tag_check": [
+  {
+   "id": "1A",
+   "frame": 30,
+   "expected": false,
+   "ivory_px_tag_band": 7328
+  },
+  {
+   "id": "1B",
+   "frame": 210,
+   "expected": true,
+   "ivory_px_tag_band": 4380
+  },
+  {
+   "id": "2",
+   "frame": 361,
+   "expected": true,
+   "ivory_px_tag_band": 4399
+  },
+  {
+   "id": "3",
+   "frame": 529,
+   "expected": true,
+   "ivory_px_tag_band": 4467
+  },
+  {
+   "id": "4",
+   "frame": 665,
+   "expected": true,
+   "ivory_px_tag_band": 4340
+  },
+  {
+   "id": "5",
+   "frame": 797,
+   "expected": false,
+   "ivory_px_tag_band": 0
+  },
+  {
+   "id": "6",
+   "frame": 949,
+   "expected": true,
+   "ivory_px_tag_band": 4323
+  },
+  {
+   "id": "7A",
+   "frame": 1111,
+   "expected": true,
+   "ivory_px_tag_band": 4388
+  },
+  {
+   "id": "7B",
+   "frame": 1310,
+   "expected": true,
+   "ivory_px_tag_band": 4305
+  },
+  {
+   "id": "8",
+   "frame": 1467,
+   "expected": true,
+   "ivory_px_tag_band": 4443
+  },
+  {
+   "id": "9A",
+   "frame": 1664,
+   "expected": false,
+   "ivory_px_tag_band": 0
+  },
+  {
+   "id": "9B",
+   "frame": 1755,
+   "expected": true,
+   "ivory_px_tag_band": 4446
+  },
+  {
+   "id": "10",
+   "frame": 1896,
+   "expected": false,
+   "ivory_px_tag_band": 20
+  },
+  {
+   "id": "OUTRO",
+   "frame": 1986,
+   "expected": false,
+   "ivory_px_tag_band": 0
+  }
+ ],
+ "1B_text_runs_measured": [
+  {
+   "y0": 314,
+   "y1": 345,
+   "x0": 343,
+   "x1": 736
+  },
+  {
+   "y0": 374,
+   "y1": 381,
+   "x0": 1008,
+   "x1": 1013
+  },
+  {
+   "y0": 398,
+   "y1": 419,
+   "x0": 176,
+   "x1": 904
+  }
+ ],
+ "1B_text_clearance_px": 29,
+ "plate10": {
+  "plate": "/workspace/posterity/standalones/germanicus/plates-derived/seq10_softcaps_v1c.png",
+  "src": "/workspace/posterity/standalones/germanicus/plates-owner/seq10.png",
+  "sigma": 1.3,
+  "feather": 1.5,
+  "mask_px": 508700,
+  "changed_px": 520814,
+  "outside_mask_changed_px": 0
+ },
+ "person_audit_ok": true,
+ "title_1A": {
+  "45": {
+   "text_top_px": 271,
+   "text_bottom_px": 410
+  },
+  "60": {
+   "text_top_px": 271,
+   "text_bottom_px": 410
+  },
+  "75": {
+   "text_top_px": 271,
+   "text_bottom_px": 410
+  }
+ },
+ "audio_meta": {
+  "music": "/workspace/posterity/standalones/germanicus/score/macleod_ossuary6_air_v1c.mp3",
+  "music_md5": "253813904704fb2ed3a4a468c3cc5605",
+  "music_offset_s": 162.0,
+  "bed_level_db": 0.0,
+  "vo_over_bed_LU": 15.600000000000001,
+  "mix_I": -13.9,
+  "mix_TP": -4.0,
+  "v1c_leveler": {
+   "window_s": 3,
+   "clamp_db": 4.0,
+   "smooth_sigma_s": 1.5,
+   "target_env_db": -26.851969875399632,
+   "gain_range_db": [
+    -3.5676771582124926,
+    3.9769389134816437
+   ]
+  },
+  "v1c_hold": {
+   "from_s": 61.753,
+   "depth_db": 3.5,
+   "note": "duck held at full depth from war. onset through L13 and outro; fade only at the end"
+  },
+  "v1c_murder": {
+   "full_peak_margin_db": 17.18,
+   "band_rms_margin_db": 39.2,
+   "target": 9.0
+  },
+  "v1c_frames_1_4k": {
+   "n_frames": 752,
+   "pct_ge_6db": 100.0,
+   "pct_lt_0db": 0.0,
+   "median": 38.28,
+   "p10": 24.74,
+   "p5": 20.79
+  },
+  "frame_metric": "50 ms hops inside word spans, voiced = VO band level >= p99 - 35 dB; margin = VO 1-4 kHz power - bed (mean L/R) power, post-limiter",
+  "key_word_min_margin_db_post_limiter": 15.11,
+  "l13_word_band_margins_1_4k_post_limiter": [
+   [
+    147,
+    "But",
+    62.995,
+    43.29
+   ],
+   [
+    148,
+    "not",
+    63.227,
+    40.31
+   ],
+   [
+    149,
+    "for",
+    63.518,
+    38.73
+   ],
+   [
+    150,
+    "murder.",
+    63.715,
+    39.2
+   ]
+  ]
+ },
+ "bed_levels_250ms": {
+  "median_6_61": -30.29,
+  "first6_max": -28.07,
+  "first6_median": -30.79,
+  "L13_62_995_64_045_max": -31.39,
+  "L13_min": -34.5,
+  "gap_62_18_62_995_max": -27.66,
+  "after_murder_64_05_66_2_max": -27.15,
+  "p95_6_61": -27.66
+ }
+}

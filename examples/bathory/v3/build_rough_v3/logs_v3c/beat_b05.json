@@ -1,0 +1,168 @@
+{
+ "beat": "b05",
+ "kind": "flat",
+ "frames": [
+  590,
+  666
+ ],
+ "t": [
+  19.667,
+  22.2
+ ],
+ "seconds": 2.533,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b05_supper_manor.png",
+ "plate_md5": "e7b19be5b03b6a2a0199bba37c48e57d",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "heraldry_polys": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    345,
+    0
+   ],
+   [
+    345,
+    470
+   ],
+   [
+    0,
+    470
+   ]
+  ]
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "b05#0",
+    "sources": {
+     "candle": 3
+    },
+    "warped_candles": 3,
+    "spill_groups": 3,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "auto": [
+     [
+      40,
+      560,
+      270,
+      720
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "pulse": 0.2119,
+   "metrics_at_pulse1": {
+    "whole": 50.22430419921875,
+    "local": 115.28528594970703,
+    "step": 15.09115219116211
+   },
+   "metrics": {
+    "whole": 12.492585182189941,
+    "local": 35.50634765625,
+    "step": 4.468091011047363
+   }
+  },
+  {
+   "kind": "torch",
+   "info": {
+    "plate": "b05#1",
+    "sources": {
+     "offscreen": 1
+    },
+    "warped_candles": 0,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "offscreen": [
+     {
+      "xy": [
+       860,
+       400
+      ],
+      "h": 60,
+      "radius": 420,
+      "kind": "torch"
+     }
+    ],
+    "relight_exclude": [
+     [
+      360,
+      380,
+      580,
+      620
+     ]
+    ],
+    "spill_amp": 1.4
+   },
+   "pulse": 0.2945,
+   "metrics_at_pulse1": {
+    "whole": 6.384893417358398,
+    "local": 48.97062301635742,
+    "step": 10.018025398254395
+   },
+   "metrics": {
+    "whole": 1.4832265377044678,
+    "local": 13.844416618347168,
+    "step": 2.9645233154296875
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "wick_mid",
+   "type": "candle",
+   "opacity": 0.3
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

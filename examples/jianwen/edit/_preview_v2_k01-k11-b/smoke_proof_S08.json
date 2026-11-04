@@ -1,0 +1,29 @@
+{
+ "slot": "S08",
+ "plate": "k08_palace_fire_body_carried_out.png",
+ "smoke": "on",
+ "why": "",
+ "every": 15,
+ "frames": 10,
+ "max_outside_allow": 0,
+ "max_in_protect": 0,
+ "max_changed": 113,
+ "guards": {
+  "faces_0": 0,
+  "faces_1": 0,
+  "faces_2": 0,
+  "faces_3": 0,
+  "faces_4": 0,
+  "water_0": 0,
+  "flames_0": 0,
+  "flames_1": 0,
+  "flames_2": 0,
+  "flames_3": 0,
+  "flames_4": 0,
+  "flames_5": 0,
+  "flames_6": 0,
+  "flames_7": 0
+ },
+ "zero_motion_ok": true,
+ "emitter_layers": 6
+}

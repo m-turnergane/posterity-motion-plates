@@ -1,0 +1,1903 @@
+{
+ "beats": {
+  "b01a": {
+   "beat": "b01a",
+   "kind": "flat",
+   "frames": [
+    0,
+    91
+   ],
+   "seconds": 3.033,
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b01a#0",
+      "sources": {
+       "torch": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        0,
+        870,
+        215,
+        1360
+       ]
+      ],
+      "relight_exclude": [
+       [
+        40,
+        380,
+        160,
+        560
+       ],
+       [
+        330,
+        540,
+        520,
+        720
+       ],
+       [
+        190,
+        520,
+        290,
+        640
+       ],
+       [
+        520,
+        380,
+        630,
+        520
+       ],
+       [
+        680,
+        340,
+        860,
+        520
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.3435,
+     "metrics_at_pulse1": {
+      "whole": 28.15057945251465,
+      "local": 53.78871536254883,
+      "step": 8.58879280090332
+     },
+     "metrics": {
+      "whole": 9.922016143798828,
+      "local": 19.38601303100586,
+      "step": 3.089402198791504
+     }
+    }
+   ],
+   "dust": {
+    "n": [
+     380
+    ],
+    "amp": [
+     70
+    ]
+   },
+   "density_max": 1.217
+  },
+  "b01b": {
+   "beat": "b01b",
+   "kind": "flat",
+   "frames": [
+    91,
+    150
+   ],
+   "seconds": 1.967,
+   "heraldry_polys": [
+    [
+     [
+      770,
+      0
+     ],
+     [
+      941,
+      0
+     ],
+     [
+      941,
+      480
+     ],
+     [
+      770,
+      480
+     ]
+    ]
+   ],
+   "heraldry_mean_mask": 0.0523,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b01b#0",
+      "sources": {
+       "candle": 1
+      },
+      "warped_candles": 1,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "manual": [
+       [
+        72,
+        405,
+        122,
+        530
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.3162,
+     "metrics_at_pulse1": {
+      "whole": 42.060691833496094,
+      "local": 81.78575134277344,
+      "step": 10.521288871765137
+     },
+     "metrics": {
+      "whole": 14.588761329650879,
+      "local": 31.386005401611328,
+      "step": 4.073780059814453
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "wick",
+     "type": "candle",
+     "opacity": 0.35
+    }
+   ],
+   "density_max": 1.217
+  },
+  "b02": {
+   "beat": "b02",
+   "kind": "archival",
+   "frames": [
+    150,
+    228
+   ],
+   "seconds": 2.6,
+   "density_max": 1.41
+  },
+  "b03": {
+   "beat": "b03",
+   "kind": "map",
+   "frames": [
+    228,
+    284
+   ],
+   "seconds": 1.867,
+   "vah_thinned_px": 2824,
+   "density_max": 1.217
+  },
+  "b04": {
+   "beat": "b04",
+   "kind": "depth",
+   "frames": [
+    284,
+    362
+   ],
+   "seconds": 2.6,
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b04#0",
+      "sources": {
+       "torch": 1,
+       "window": 6
+      },
+      "warped_candles": 0,
+      "spill_groups": 7,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        250,
+        545,
+        345,
+        735
+       ]
+      ],
+      "window": [
+       [
+        430,
+        580,
+        478,
+        632
+       ],
+       [
+        560,
+        570,
+        606,
+        622
+       ],
+       [
+        720,
+        548,
+        768,
+        598
+       ],
+       [
+        560,
+        710,
+        606,
+        760
+       ],
+       [
+        890,
+        555,
+        941,
+        606
+       ],
+       [
+        720,
+        735,
+        768,
+        790
+       ]
+      ],
+      "window_amp": 0.7,
+      "relight_exclude": [
+       [
+        130,
+        790,
+        235,
+        905
+       ],
+       [
+        400,
+        770,
+        505,
+        880
+       ],
+       [
+        540,
+        830,
+        640,
+        945
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.1893,
+     "metrics_at_pulse1": {
+      "whole": 35.16610336303711,
+      "local": 78.25670623779297,
+      "step": 8.6400146484375
+     },
+     "metrics": {
+      "whole": 8.383027076721191,
+      "local": 27.400726318359375,
+      "step": 3.0563488006591797
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "torch",
+     "type": "torch",
+     "opacity": 0.4
+    }
+   ],
+   "depth_info": {
+    "mode": "hybrid",
+    "depth": {
+     "cached": true
+    },
+    "reveal_px": 63,
+    "layers": [
+     {
+      "name": "far",
+      "own_frac": 1.0
+     },
+     {
+      "name": "near",
+      "own_frac": 0.2715
+     }
+    ]
+   },
+   "overscan": 1.0241,
+   "guard": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0855471550673248,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.247,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.085547,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       866.4,
+       1540.2
+      ],
+      "ratio": 1.247,
+      "ratio_x": 1.247,
+      "ratio_y": 1.247,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "density_max": 1.247
+  },
+  "b05": {
+   "beat": "b05",
+   "kind": "flat",
+   "frames": [
+    362,
+    428
+   ],
+   "seconds": 2.2,
+   "heraldry_polys": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      345,
+      0
+     ],
+     [
+      345,
+      470
+     ],
+     [
+      0,
+      470
+     ]
+    ]
+   ],
+   "heraldry_mean_mask": 0.1036,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b05#0",
+      "sources": {
+       "candle": 3
+      },
+      "warped_candles": 3,
+      "spill_groups": 3,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "auto": [
+       [
+        40,
+        560,
+        270,
+        720
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.2119,
+     "metrics_at_pulse1": {
+      "whole": 50.22430419921875,
+      "local": 115.28528594970703,
+      "step": 15.09115219116211
+     },
+     "metrics": {
+      "whole": 12.492585182189941,
+      "local": 35.50634765625,
+      "step": 4.468091011047363
+     }
+    },
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b05#1",
+      "sources": {
+       "offscreen": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "offscreen": [
+       {
+        "xy": [
+         860,
+         400
+        ],
+        "h": 60,
+        "radius": 420,
+        "kind": "torch"
+       }
+      ],
+      "relight_exclude": [
+       [
+        360,
+        380,
+        580,
+        620
+       ]
+      ],
+      "spill_amp": 1.4
+     },
+     "pulse": 0.2945,
+     "metrics_at_pulse1": {
+      "whole": 6.384893417358398,
+      "local": 48.97062301635742,
+      "step": 10.018025398254395
+     },
+     "metrics": {
+      "whole": 1.4832265377044678,
+      "local": 13.844416618347168,
+      "step": 2.9645233154296875
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "wick_mid",
+     "type": "candle",
+     "opacity": 0.3
+    }
+   ],
+   "density_max": 1.217
+  },
+  "b06": {
+   "beat": "b06",
+   "kind": "flat",
+   "frames": [
+    428,
+    568
+   ],
+   "seconds": 4.667,
+   "dust": {
+    "n": [
+     520
+    ],
+    "amp": [
+     110
+    ]
+   },
+   "density_max": 1.217
+  },
+  "b07": {
+   "beat": "b07",
+   "kind": "flat",
+   "frames": [
+    568,
+    712
+   ],
+   "seconds": 4.8,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b07#0",
+      "sources": {
+       "candle": 1
+      },
+      "warped_candles": 1,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "manual": [
+       [
+        78,
+        285,
+        122,
+        375
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.2304,
+     "metrics_at_pulse1": {
+      "whole": 41.99882888793945,
+      "local": 97.00384521484375,
+      "step": 13.111983299255371
+     },
+     "metrics": {
+      "whole": 12.075571060180664,
+      "local": 35.33779525756836,
+      "step": 4.749477863311768
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "wick",
+     "type": "candle",
+     "opacity": 0.35
+    }
+   ],
+   "density_max": 1.217
+  },
+  "b08": {
+   "beat": "b08",
+   "kind": "flat",
+   "frames": [
+    712,
+    893
+   ],
+   "seconds": 6.033,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b08#0",
+      "sources": {
+       "candle": 1
+      },
+      "warped_candles": 1,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "manual": [
+       [
+        272,
+        105,
+        325,
+        275
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.4005,
+     "metrics_at_pulse1": {
+      "whole": 22.887771606445312,
+      "local": 74.42076110839844,
+      "step": 10.750306129455566
+     },
+     "metrics": {
+      "whole": 9.657678604125977,
+      "local": 35.251441955566406,
+      "step": 5.193912029266357
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "wick",
+     "type": "candle",
+     "opacity": 0.35
+    }
+   ],
+   "density_max": 1.219
+  },
+  "b09": {
+   "beat": "b09",
+   "kind": "depth",
+   "frames": [
+    893,
+    957
+   ],
+   "seconds": 2.133,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b09#0",
+      "sources": {
+       "candle": 6
+      },
+      "warped_candles": 5,
+      "spill_groups": 6,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "auto": [
+       [
+        0,
+        640,
+        140,
+        840
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.0576,
+     "metrics_at_pulse1": {
+      "whole": 60.16165542602539,
+      "local": 146.2042694091797,
+      "step": 17.482145309448242
+     },
+     "metrics": {
+      "whole": 6.600806713104248,
+      "local": 36.814186096191406,
+      "step": 4.0865607261657715
+     }
+    },
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b09#1",
+      "sources": {
+       "torch": 2
+      },
+      "warped_candles": 0,
+      "spill_groups": 2,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        645,
+        330,
+        715,
+        445
+       ],
+       [
+        860,
+        285,
+        925,
+        400
+       ]
+      ],
+      "relight_exclude": [
+       [
+        150,
+        250,
+        400,
+        560
+       ],
+       [
+        630,
+        380,
+        720,
+        480
+       ],
+       [
+        740,
+        380,
+        830,
+        470
+       ],
+       [
+        840,
+        380,
+        930,
+        470
+       ]
+      ],
+      "spill_amp": 1.5
+     },
+     "pulse": 0.055,
+     "metrics_at_pulse1": {
+      "whole": 42.91689682006836,
+      "local": 97.2586669921875,
+      "step": 14.091047286987305
+     },
+     "metrics": {
+      "whole": 4.68233060836792,
+      "local": 21.896289825439453,
+      "step": 3.1691477298736572
+     }
+    }
+   ],
+   "depth_info": {
+    "mode": "hybrid",
+    "depth": {
+     "cached": true
+    },
+    "reveal_px": 70,
+    "layers": [
+     {
+      "name": "far",
+      "own_frac": 1.0
+     },
+     {
+      "name": "near",
+      "own_frac": 0.333
+     }
+    ]
+   },
+   "overscan": 1.0258,
+   "guard": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.087371949657798,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.249,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.087372,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       864.9,
+       1537.7
+      ],
+      "ratio": 1.249,
+      "ratio_x": 1.249,
+      "ratio_y": 1.249,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "density_max": 1.249
+  },
+  "b10": {
+   "beat": "b10",
+   "kind": "flat",
+   "frames": [
+    957,
+    1116
+   ],
+   "seconds": 5.3,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b10#0",
+      "sources": {
+       "candle": 1
+      },
+      "warped_candles": 1,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "manual": [
+       [
+        540,
+        1075,
+        592,
+        1180
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.4482,
+     "metrics_at_pulse1": {
+      "whole": 31.078624725341797,
+      "local": 66.44165802001953,
+      "step": 8.012397766113281
+     },
+     "metrics": {
+      "whole": 14.36284065246582,
+      "local": 31.974441528320312,
+      "step": 3.8496859073638916
+     }
+    }
+   ],
+   "dust": {
+    "n": [
+     260
+    ],
+    "amp": [
+     90
+    ]
+   },
+   "density_max": 1.218
+  },
+  "b11": {
+   "beat": "b11",
+   "kind": "depth",
+   "frames": [
+    1116,
+    1234
+   ],
+   "seconds": 3.933,
+   "snow_cfg": "b11",
+   "faces_from_snow_detector": [
+    [
+     414,
+     723,
+     465,
+     801
+    ]
+   ],
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b11#0",
+      "sources": {
+       "torch": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        85,
+        985,
+        295,
+        1262
+       ]
+      ],
+      "relight_exclude": [
+       [
+        414,
+        723,
+        465,
+        801
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.2909,
+     "metrics_at_pulse1": {
+      "whole": 41.24991989135742,
+      "local": 72.44220733642578,
+      "step": 9.796253204345703
+     },
+     "metrics": {
+      "whole": 12.282403945922852,
+      "local": 22.62177848815918,
+      "step": 3.0249974727630615
+     }
+    }
+   ],
+   "depth_info": {
+    "mode": "hybrid",
+    "depth": {
+     "cached": true
+    },
+    "reveal_px": 53,
+    "layers": [
+     {
+      "name": "far",
+      "own_frac": 1.0
+     },
+     {
+      "name": "near",
+      "own_frac": 0.3801
+     }
+    ]
+   },
+   "overscan": 1.0133,
+   "guard": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0740886785835033,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.233,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.074089,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       875.6,
+       1556.7
+      ],
+      "ratio": 1.233,
+      "ratio_x": 1.233,
+      "ratio_y": 1.233,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "density_max": 1.233,
+   "snow_visible_flakes_per_frame": {
+    "min": 180,
+    "mean": 192.2,
+    "max": 208,
+    "per_tier_mean": {
+     "far": 110.7,
+     "mid": 56.0,
+     "near": 25.6
+    }
+   }
+  },
+  "b12": {
+   "beat": "b12",
+   "kind": "flat",
+   "frames": [
+    1234,
+    1332
+   ],
+   "seconds": 3.267,
+   "snow_cfg": "b12",
+   "b12_torch_pts": [
+    [
+     381,
+     691
+    ],
+    [
+     462,
+     664
+    ],
+    [
+     522,
+     637
+    ],
+    [
+     590,
+     599
+    ]
+   ],
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b12#0",
+      "sources": {
+       "torch": 4,
+       "window": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 5,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        359,
+        661,
+        403,
+        713
+       ],
+       [
+        440,
+        634,
+        484,
+        686
+       ],
+       [
+        500,
+        607,
+        544,
+        659
+       ],
+       [
+        568,
+        569,
+        612,
+        621
+       ]
+      ],
+      "window": [
+       [
+        365,
+        225,
+        395,
+        270
+       ]
+      ],
+      "window_amp": 0.7,
+      "radius_mult": 0.5,
+      "spill_amp": 1.4
+     },
+     "pulse": 0.2759,
+     "metrics_at_pulse1": {
+      "whole": 8.775530815124512,
+      "local": 52.617919921875,
+      "step": 9.725531578063965
+     },
+     "metrics": {
+      "whole": 1.8771804571151733,
+      "local": 15.553085327148438,
+      "step": 2.9732470512390137
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "t0",
+     "type": "torch",
+     "opacity": 0.35
+    },
+    {
+     "name": "t1",
+     "type": "torch",
+     "opacity": 0.35
+    },
+    {
+     "name": "t2",
+     "type": "torch",
+     "opacity": 0.35
+    },
+    {
+     "name": "t3",
+     "type": "torch",
+     "opacity": 0.35
+    }
+   ],
+   "density_max": 1.219,
+   "snow_visible_flakes_per_frame": {
+    "min": 144,
+    "mean": 154.0,
+    "max": 160,
+    "per_tier_mean": {
+     "far": 87.8,
+     "mid": 45.8,
+     "near": 20.4
+    }
+   }
+  },
+  "b13a": {
+   "beat": "b13a",
+   "kind": "depth",
+   "frames": [
+    1332,
+    1388
+   ],
+   "seconds": 1.867,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b13a#0",
+      "sources": {
+       "candle": 5
+      },
+      "warped_candles": 5,
+      "spill_groups": 5,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "auto": [
+       [
+        630,
+        520,
+        740,
+        660
+       ]
+      ],
+      "spill_amp": 1.6,
+      "relight_poly": [
+       [
+        [
+         484,
+         145
+        ],
+        [
+         753,
+         145
+        ],
+        [
+         753,
+         1300
+        ],
+        [
+         484,
+         1300
+        ]
+       ]
+      ]
+     },
+     "pulse": 0.5699,
+     "metrics_at_pulse1": {
+      "whole": 25.5259952545166,
+      "local": 39.25065612792969,
+      "step": 5.739345550537109
+     },
+     "metrics": {
+      "whole": 14.25,
+      "local": 22.362529754638672,
+      "step": 3.1014134883880615
+     }
+    }
+   ],
+   "depth_info": {
+    "mode": "poly",
+    "depth": null,
+    "reveal_px": 20,
+    "layers": [
+     {
+      "name": "far",
+      "own_frac": 1.0
+     },
+     {
+      "name": "near",
+      "own_frac": 0.853
+     }
+    ]
+   },
+   "overscan": 1.0222,
+   "guard": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0579586937418206,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.216,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1671
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.057959,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.149,
+      "visible_src_wh": [
+       888.4,
+       1579.5
+      ],
+      "ratio": 1.216,
+      "ratio_x": 1.216,
+      "ratio_y": 1.216,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "density_max": 1.216
+  },
+  "b13b": {
+   "beat": "b13b",
+   "kind": "b13b",
+   "frames": [
+    1388,
+    1470
+   ],
+   "seconds": 2.733,
+   "b13_cut_diff": {
+    "1": 10.821,
+    "-1": 10.407,
+    "0": 10.563
+   },
+   "b13_reg_sign": -1,
+   "b13_reg_shift_plate_px": [
+    0.423,
+    0.764
+   ],
+   "b13_reg_shift_output_px": [
+    0.514,
+    0.929
+   ],
+   "density_max": 1.245
+  },
+  "b14": {
+   "beat": "b14",
+   "kind": "flat",
+   "frames": [
+    1470,
+    1523
+   ],
+   "seconds": 1.767,
+   "dust": {
+    "n": [
+     300
+    ],
+    "amp": [
+     120
+    ]
+   },
+   "density_max": 1.218
+  },
+  "b15": {
+   "beat": "b15",
+   "kind": "flat",
+   "frames": [
+    1523,
+    1684
+   ],
+   "seconds": 5.367,
+   "heraldry_polys": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      300,
+      0
+     ],
+     [
+      300,
+      590
+     ],
+     [
+      0,
+      590
+     ]
+    ]
+   ],
+   "heraldry_mean_mask": 0.1132,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b15#0",
+      "sources": {
+       "candle": 1
+      },
+      "warped_candles": 1,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "manual": [
+       [
+        38,
+        690,
+        102,
+        845
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.3006,
+     "metrics_at_pulse1": {
+      "whole": 26.885417938232422,
+      "local": 76.09773254394531,
+      "step": 15.497973442077637
+     },
+     "metrics": {
+      "whole": 8.241593360900879,
+      "local": 28.345510482788086,
+      "step": 5.886955738067627
+     }
+    }
+   ],
+   "density_max": 1.219
+  },
+  "b16": {
+   "beat": "b16",
+   "kind": "flat",
+   "frames": [
+    1684,
+    1849
+   ],
+   "seconds": 5.5,
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b16#0",
+      "sources": {
+       "torch": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        340,
+        330,
+        690,
+        620
+       ]
+      ],
+      "relight_exclude": [
+       [
+        50,
+        420,
+        230,
+        580
+       ],
+       [
+        465,
+        505,
+        610,
+        670
+       ],
+       [
+        725,
+        390,
+        915,
+        580
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.2873,
+     "metrics_at_pulse1": {
+      "whole": 37.84752655029297,
+      "local": 62.875675201416016,
+      "step": 8.428701400756836
+     },
+     "metrics": {
+      "whole": 11.846136093139648,
+      "local": 22.490936279296875,
+      "step": 3.0779426097869873
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "hearth",
+     "type": "torch",
+     "opacity": 0.35
+    }
+   ],
+   "density_max": 1.218
+  },
+  "b17": {
+   "beat": "b17",
+   "kind": "flat",
+   "frames": [
+    1849,
+    1988
+   ],
+   "seconds": 4.633,
+   "heraldry_polys": [
+    [
+     [
+      95,
+      60
+     ],
+     [
+      335,
+      60
+     ],
+     [
+      335,
+      285
+     ],
+     [
+      95,
+      285
+     ]
+    ],
+    [
+     [
+      85,
+      430
+     ],
+     [
+      170,
+      430
+     ],
+     [
+      170,
+      570
+     ],
+     [
+      85,
+      570
+     ]
+    ]
+   ],
+   "heraldry_mean_mask": 0.0423,
+   "snow_cfg": "b17",
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b17#0",
+      "sources": {
+       "torch": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        50,
+        840,
+        235,
+        1120
+       ]
+      ],
+      "relight_exclude": [
+       [
+        430,
+        520,
+        941,
+        1080
+       ],
+       [
+        60,
+        560,
+        260,
+        720
+       ]
+      ],
+      "spill_amp": 1.5
+     },
+     "pulse": 0.3546,
+     "metrics_at_pulse1": {
+      "whole": 25.962364196777344,
+      "local": 53.6562614440918,
+      "step": 7.751928329467773
+     },
+     "metrics": {
+      "whole": 9.595563888549805,
+      "local": 20.844411849975586,
+      "step": 2.9776363372802734
+     }
+    }
+   ],
+   "smoke": [
+    {
+     "name": "brazier",
+     "type": "torch",
+     "opacity": 0.4
+    }
+   ],
+   "density_max": 1.219,
+   "snow_visible_flakes_per_frame": {
+    "min": 87,
+    "mean": 103.5,
+    "max": 117,
+    "per_tier_mean": {
+     "far": 51.6,
+     "mid": 36.2,
+     "near": 15.8
+    }
+   }
+  },
+  "b18": {
+   "beat": "b18",
+   "kind": "flat",
+   "frames": [
+    1988,
+    2057
+   ],
+   "seconds": 2.3,
+   "heraldry_polys": [
+    [
+     [
+      25,
+      130
+     ],
+     [
+      205,
+      130
+     ],
+     [
+      205,
+      690
+     ],
+     [
+      25,
+      690
+     ]
+    ]
+   ],
+   "heraldry_mean_mask": 0.0646,
+   "dust": {
+    "n": [
+     320
+    ],
+    "amp": [
+     110
+    ]
+   },
+   "smoke": [
+    {
+     "name": "wick",
+     "type": "candle",
+     "opacity": 0.35
+    }
+   ],
+   "density_max": 1.219
+  },
+  "b19a": {
+   "beat": "b19a",
+   "kind": "flat",
+   "frames": [
+    2057,
+    2127
+   ],
+   "seconds": 2.333,
+   "snow_cfg": "b19a",
+   "faces_from_snow_detector": [
+    [
+     414,
+     723,
+     465,
+     801
+    ]
+   ],
+   "fx": [
+    {
+     "kind": "torch",
+     "info": {
+      "plate": "b19a#0",
+      "sources": {
+       "torch": 1
+      },
+      "warped_candles": 0,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "torch": [
+       [
+        85,
+        985,
+        295,
+        1262
+       ]
+      ],
+      "relight_exclude": [
+       [
+        414,
+        723,
+        465,
+        801
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.2909,
+     "metrics_at_pulse1": {
+      "whole": 41.24991989135742,
+      "local": 72.44220733642578,
+      "step": 9.796253204345703
+     },
+     "metrics": {
+      "whole": 12.282403945922852,
+      "local": 22.62177848815918,
+      "step": 3.0249974727630615
+     }
+    }
+   ],
+   "density_max": 1.217,
+   "snow_visible_flakes_per_frame": {
+    "min": 186,
+    "mean": 199.5,
+    "max": 212,
+    "per_tier_mean": {
+     "far": 114.6,
+     "mid": 59.7,
+     "near": 25.2
+    }
+   }
+  },
+  "b19b": {
+   "beat": "b19b",
+   "kind": "archival",
+   "frames": [
+    2127,
+    2203
+   ],
+   "seconds": 2.533,
+   "density_max": 1.41
+  },
+  "b20": {
+   "beat": "b20",
+   "kind": "depth",
+   "frames": [
+    2203,
+    2388
+   ],
+   "seconds": 6.167,
+   "fx": [
+    {
+     "kind": "candle",
+     "info": {
+      "plate": "b20#0",
+      "sources": {
+       "candle": 1
+      },
+      "warped_candles": 1,
+      "spill_groups": 1,
+      "haze": 0,
+      "mist": 0,
+      "motes": 0,
+      "embers": 0,
+      "smoke": 0,
+      "moon": false,
+      "parallax": false,
+      "pool": false
+     },
+     "spec": {
+      "manual": [
+       [
+        45,
+        755,
+        118,
+        905
+       ]
+      ],
+      "spill_amp": 1.6
+     },
+     "pulse": 0.1582,
+     "metrics_at_pulse1": {
+      "whole": 43.63562774658203,
+      "local": 87.00532531738281,
+      "step": 12.003552436828613
+     },
+     "metrics": {
+      "whole": 7.920855522155762,
+      "local": 21.66661834716797,
+      "step": 2.8568434715270996
+     }
+    }
+   ],
+   "depth_info": {
+    "mode": "hybrid",
+    "depth": {
+     "cached": true
+    },
+    "reveal_px": 54,
+    "layers": [
+     {
+      "name": "far",
+      "own_frac": 1.0
+     },
+     {
+      "name": "near",
+      "own_frac": 0.6387
+     }
+    ]
+   },
+   "overscan": 1.0049,
+   "guard": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.065155951917171,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.224,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1671
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.065156,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.149,
+      "visible_src_wh": [
+       882.4,
+       1568.8
+      ],
+      "ratio": 1.224,
+      "ratio_x": 1.224,
+      "ratio_y": 1.224,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "density_max": 1.224
+  },
+  "outro": {
+   "beat": "outro",
+   "kind": "flat",
+   "frames": [
+    2388,
+    2610
+   ],
+   "seconds": 7.4,
+   "dust": {
+    "n": [
+     260
+    ],
+    "amp": [
+     80
+    ]
+   },
+   "density_max": 1.219
+  }
+ },
+ "mix": {
+  "vo_I": -30.4,
+  "iters": [
+   {
+    "bed_db": -8.0,
+    "bed_I": -34.2,
+    "vo_over_bed_LU": 3.8
+   },
+   {
+    "bed_db": -17.2,
+    "bed_I": -43.4,
+    "vo_over_bed_LU": 13.0
+   }
+  ],
+  "master": [
+   {
+    "master_db": 0.0,
+    "I": -29.8,
+    "TP": -8.0
+   },
+   {
+    "master_db": 15.8,
+    "I": -15.0,
+    "TP": -1.7
+   },
+   {
+    "master_db": 16.8,
+    "I": -14.4,
+    "TP": -1.7
+   },
+   {
+    "master_db": 17.2,
+    "I": -14.2,
+    "TP": -1.7
+   }
+  ],
+  "final_mix": "/workspace/posterity/standalones/bathory/v2/build_rough_v1/scratch/audio/mix_3.wav",
+  "bed_db": -17.199999999999996,
+  "f7_impact_timeline_s": 46.267,
+  "f7_impact_track_s": 77.267,
+  "fade": {
+   "start": 83.2,
+   "dB_per_s": 16.0
+  }
+ }
+}

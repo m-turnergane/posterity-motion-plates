@@ -1,0 +1,82 @@
+{
+ "beat": "b18",
+ "kind": "flat",
+ "frames": [
+  2071,
+  2132
+ ],
+ "t": [
+  69.033,
+  71.067
+ ],
+ "seconds": 2.033,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b18_empty_room.png",
+ "plate_md5": "0b0a87f138f376daa2a13ff116d40cac",
+ "plate_wh": [
+  942,
+  1670
+ ],
+ "heraldry_polys": [
+  [
+   [
+    25,
+    130
+   ],
+   [
+    205,
+    130
+   ],
+   [
+    205,
+    690
+   ],
+   [
+    25,
+    690
+   ]
+  ]
+ ],
+ "dust": {
+  "seed": 631,
+  "n": [
+   320
+  ],
+  "amp": [
+   110
+  ]
+ },
+ "smoke": [
+  {
+   "name": "wick",
+   "type": "candle",
+   "opacity": 0.35
+  }
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   942,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

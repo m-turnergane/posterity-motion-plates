@@ -1,0 +1,36 @@
+{
+ "config": "/workspace/posterity/engine-rnd/smoke/configs/b13_three_torches.json",
+ "config_md5": "3dacbedb171e83ce36e06cac7fb70ac2",
+ "smoke_v2_md5": "80bb28695757f7568b005e8ba8327bde",
+ "frames": 60,
+ "proof": {
+  "slot": "SMOKETEST",
+  "plate": "b13_nottingham_seizure_OWNER.png",
+  "smoke": "on",
+  "why": "--smoke-test",
+  "every": 15,
+  "frames": 4,
+  "max_outside_allow": 0,
+  "max_in_protect": 0,
+  "max_changed": 132,
+  "guards": {
+   "edward_face": 0,
+   "guard_face_r": 0,
+   "guard_face_l": 0,
+   "flame_l": 0,
+   "flame_r": 0,
+   "flame_fore": 0
+  },
+  "zero_motion_ok": true,
+  "emitter_layers": 3
+ },
+ "layer_order": {
+  "frame": 50,
+  "opaque_title_px": 28078,
+  "max_diff_under_opaque_title": 0,
+  "max_diff_elsewhere": 117,
+  "smoke_changes_px": 128035
+ },
+ "out": "qc/v2b-smoketest/smoketest_b13_three_torches_360x640.mp4",
+ "md5": "728407e0e1e5010f822de48a13544ff4"
+}

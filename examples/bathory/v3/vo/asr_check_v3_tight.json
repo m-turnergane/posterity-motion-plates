@@ -1,0 +1,17 @@
+{
+ "ratio": 0.9915,
+ "n_ref": 235,
+ "n_hyp": 235,
+ "diffs": [
+  [
+   "replace",
+   "rumours",
+   "rumors"
+  ],
+  [
+   "replace",
+   "girls'",
+   "girl's"
+  ]
+ ]
+}

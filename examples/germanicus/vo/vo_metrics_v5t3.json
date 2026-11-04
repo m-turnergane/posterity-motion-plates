@@ -1,0 +1,320 @@
+{
+ "take": "v5t3",
+ "out": "cand-vo-oliver-germanicus-v5t3.wav",
+ "raw_duration_s": 120.372,
+ "duration_s": 119.687,
+ "speech_start_s": 0.0,
+ "speech_end_s": 119.437,
+ "last_char_end_raw_s": 120.372,
+ "trim_s": 119.437,
+ "integrated_LUFS": -30.9,
+ "true_peak_dBTP": -6.1,
+ "body_L01_L21_I": -30.9,
+ "L22_I": -30.6,
+ "L23_I": -33.0,
+ "delta_L22_vs_body": 0.3,
+ "delta_L23_vs_body": -2.1,
+ "L22_L23_I": -31.5,
+ "voiced_median_rms_dBFS": {
+  "L01": -31.47,
+  "L02": -30.57,
+  "L03": -31.54,
+  "L04": -32.59,
+  "L05": -31.36,
+  "L06": -31.58,
+  "L07": -32.05,
+  "L08": -31.93,
+  "L09": -32.74,
+  "L10": -32.26,
+  "L11": -31.82,
+  "L12": -32.1,
+  "L13": -31.93,
+  "L14": -31.99,
+  "L15": -30.32,
+  "L16": -32.98,
+  "L17": -32.41,
+  "L18": -31.74,
+  "L19": -31.53,
+  "L20": -32.32,
+  "L21": -31.22,
+  "L22": -32.35,
+  "L23": -32.39
+ },
+ "end_drop_flag": false,
+ "pause_before_L23": {
+  "align_war_end": 116.123,
+  "align_but_start": 116.668,
+  "align_gap": 0.545,
+  "rms_war_offset": 115.981,
+  "rms_but_onset": 116.701,
+  "rms_gap": 0.72,
+  "break_tag_align": {
+   "chars": "<break time=\"0.5s\"/>",
+   "start": 116.668,
+   "end": 116.668
+  }
+ },
+ "wps": 2.42,
+ "gaps_over_0p6": [
+  {
+   "after": "kingdoms.",
+   "before": "Piso,",
+   "gap": 0.696,
+   "at": 16.312
+  },
+  {
+   "after": "Armenia.",
+   "before": "The",
+   "gap": 0.813,
+   "at": 27.794
+  },
+  {
+   "after": "command.",
+   "before": "Piso",
+   "gap": 0.604,
+   "at": 30.661
+  },
+  {
+   "after": "own.",
+   "before": "Then",
+   "gap": 0.696,
+   "at": 33.483
+  },
+  {
+   "after": "him.",
+   "before": "After",
+   "gap": 0.696,
+   "at": 50.294
+  },
+  {
+   "after": "Senate.",
+   "before": "Outside,",
+   "gap": 0.697,
+   "at": 67.627
+  },
+  {
+   "after": "it.",
+   "before": "He",
+   "gap": 0.604,
+   "at": 79.527
+  },
+  {
+   "after": "Germanicus.",
+   "before": "Before",
+   "gap": 0.813,
+   "at": 86.958
+  },
+  {
+   "after": "him.",
+   "before": "The",
+   "gap": 0.812,
+   "at": 92.659
+  },
+  {
+   "after": "bronze.",
+   "before": "Copies",
+   "gap": 0.813,
+   "at": 98.243
+  },
+  {
+   "after": "Spain.",
+   "before": "They",
+   "gap": 0.813,
+   "at": 100.809
+  },
+  {
+   "after": "war.",
+   "before": "They",
+   "gap": 0.603,
+   "at": 107.334
+  }
+ ],
+ "word_count": 289,
+ "lines": [
+  {
+   "line": "L01",
+   "start": 0.0,
+   "end": 3.088,
+   "I": -30.3,
+   "peak": -9.47,
+   "text": "Germanicus saved the man he later accused of"
+  },
+  {
+   "line": "L02",
+   "start": 3.599,
+   "end": 9.694,
+   "I": -30.0,
+   "peak": -10.06,
+   "text": "According to Tacitus, a storm drove Piso tow"
+  },
+  {
+   "line": "L03",
+   "start": 10.019,
+   "end": 16.312,
+   "I": -31.1,
+   "peak": -12.37,
+   "text": "He was the emperor's adopted son, heading ea"
+  },
+  {
+   "line": "L04",
+   "start": 17.008,
+   "end": 20.863,
+   "I": -31.5,
+   "peak": -14.6,
+   "text": "Piso, appointed governor of Syria, was suppo"
+  },
+  {
+   "line": "L05",
+   "start": 21.188,
+   "end": 27.794,
+   "I": -32.3,
+   "peak": -12.01,
+   "text": "Instead, he gave soldiers gifts, replaced st"
+  },
+  {
+   "line": "L06",
+   "start": 28.607,
+   "end": 33.483,
+   "I": -31.5,
+   "peak": -12.64,
+   "text": "The emperor's son held the higher command. P"
+  },
+  {
+   "line": "L07",
+   "start": 34.179,
+   "end": 36.652,
+   "I": -31.1,
+   "peak": -10.98,
+   "text": "Then Germanicus fell ill near Antioch."
+  },
+  {
+   "line": "L08",
+   "start": 37.093,
+   "end": 44.129,
+   "I": -30.9,
+   "peak": -10.45,
+   "text": "Tacitus says human remains, spells, and lead"
+  },
+  {
+   "line": "L09",
+   "start": 44.64,
+   "end": 50.294,
+   "I": -32.1,
+   "peak": -8.78,
+   "text": "Germanicus believed Piso had poisoned him. D"
+  },
+  {
+   "line": "L10",
+   "start": 50.99,
+   "end": 54.288,
+   "I": -31.6,
+   "peak": -12.14,
+   "text": "After Germanicus died, Piso wanted Syria bac"
+  },
+  {
+   "line": "L11",
+   "start": 54.798,
+   "end": 60.418,
+   "I": -31.3,
+   "peak": -12.79,
+   "text": "His own son urged him to return to Rome, war"
+  },
+  {
+   "line": "L12",
+   "start": 60.929,
+   "end": 65.189,
+   "I": -32.5,
+   "peak": -12.89,
+   "text": "Piso chose force. His men fought Roman troop"
+  },
+  {
+   "line": "L13",
+   "start": 65.63,
+   "end": 67.627,
+   "I": -32.7,
+   "peak": -11.43,
+   "text": "Now he had to face the Senate."
+  },
+  {
+   "line": "L14",
+   "start": 68.324,
+   "end": 74.175,
+   "I": -30.3,
+   "peak": -9.31,
+   "text": "Outside, crowds dragged off his statues to s"
+  },
+  {
+   "line": "L15",
+   "start": 74.5,
+   "end": 76.892,
+   "I": -30.6,
+   "peak": -12.15,
+   "text": "Inside, his accusers alleged poisoning."
+  },
+  {
+   "line": "L16",
+   "start": 77.217,
+   "end": 79.527,
+   "I": -32.6,
+   "peak": -13.77,
+   "text": "But Tacitus says they failed to prove it."
+  },
+  {
+   "line": "L17",
+   "start": 80.131,
+   "end": 86.958,
+   "I": -31.1,
+   "peak": -10.45,
+   "text": "He could be condemned for corrupting the arm"
+  },
+  {
+   "line": "L18",
+   "start": 87.771,
+   "end": 92.659,
+   "I": -29.6,
+   "peak": -9.79,
+   "text": "Before judgement, Piso was found dead in his"
+  },
+  {
+   "line": "L19",
+   "start": 93.471,
+   "end": 98.243,
+   "I": -29.1,
+   "peak": -9.47,
+   "text": "The Senate condemned him anyway, and ordered"
+  },
+  {
+   "line": "L20",
+   "start": 99.056,
+   "end": 107.334,
+   "I": -30.4,
+   "peak": -11.01,
+   "text": "Copies survive in Spain. They condemn his cr"
+  },
+  {
+   "line": "L21",
+   "start": 107.937,
+   "end": 112.431,
+   "I": -29.9,
+   "peak": -6.21,
+   "text": "They repeat Germanicus's accusation, but mak"
+  },
+  {
+   "line": "L22",
+   "start": 112.941,
+   "end": 116.123,
+   "I": -30.6,
+   "peak": -6.78,
+   "text": "The man Germanicus saved was condemned as a "
+  },
+  {
+   "line": "L23",
+   "start": 116.668,
+   "end": 119.437,
+   "I": -33.0,
+   "peak": -14.7,
+   "text": "Whether he had also been his killer remained"
+  }
+ ],
+ "seed": 37
+}

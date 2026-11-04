@@ -1,0 +1,24 @@
+{
+ "model": "medium.en",
+ "ref_words": 204,
+ "hyp_words": 88,
+ "matched": 86,
+ "diffs": [
+  [
+   "replace",
+   "zhu di's",
+   "judy's"
+  ],
+  [
+   "delete",
+   "jianwen's small son vanished too zhu di took the throne as yongle and wiped jianwen's reign from the calendar but rumours said jianwen had escaped dressed as a monk yongle sent an official named hu ying across china officially he was seeking a daoist holy man secretly he was looking for",
+   ""
+  ],
+  [
+   "replace",
+   "hu ying's mother died he asked to go home yongle refused more than twenty years after the fire hu ying returned yongle was already in bed he got up summoned the official and listened until deep into the night the later history of ming says yongle's suspicions finally ended it never says what hu ying told him history remembers the victors we remember the rest",
+   "you"
+  ]
+ ],
+ "hyp": "they buried a body as china's emperor his own uncle kept searching for him the missing emperor was jianwen his grandfather had founded the ming dynasty but jianwen inherited something else uncles with armies when he tried to take away their power one uncle zhu di rebelled three years later zhu di reached nanjing a commander who had once fought for jianwen helped open a city gate then the palace caught fire judy's men carried out a body he had it buried as his nephew jianwen when you"
+}

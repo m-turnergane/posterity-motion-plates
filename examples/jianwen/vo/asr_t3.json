@@ -1,0 +1,89 @@
+{
+ "model": "medium.en",
+ "ref_words": 235,
+ "hyp_words": 222,
+ "matched": 208,
+ "diffs": [
+  [
+   "delete",
+   "they pulled",
+   ""
+  ],
+  [
+   "delete",
+   "the",
+   ""
+  ],
+  [
+   "replace",
+   "jianwen the",
+   "a"
+  ],
+  [
+   "replace",
+   "grandson of the man",
+   "grand grandfather"
+  ],
+  [
+   "replace",
+   "ming dynasty",
+   "new empire"
+  ],
+  [
+   "delete",
+   "princes",
+   ""
+  ],
+  [
+   "replace",
+   "zhu di guarded",
+   "zh de"
+  ],
+  [
+   "delete",
+   "stripping",
+   ""
+  ],
+  [
+   "delete",
+   "their",
+   ""
+  ],
+  [
+   "replace",
+   "zhu di",
+   "zh de"
+  ],
+  [
+   "replace",
+   "zhu di's",
+   "judy's"
+  ],
+  [
+   "replace",
+   "zhu di",
+   "judy"
+  ],
+  [
+   "replace",
+   "rumour",
+   "rumor"
+  ],
+  [
+   "replace",
+   "fleets",
+   "fleet"
+  ],
+  [
+   "replace",
+   "twenty",
+   "20"
+  ],
+  [
+   "delete",
+   "he",
+   ""
+  ]
+ ],
+ "hyp": "a burned body from the palace and called it emperor so why did his uncle keep searching for him the emperor was a young grand grandfather who founded china's new empire his uncles were powerful and the strongest zh de the north when jianwen began his uncles of power zh de rebelled after three years of war his army reached nanjing the capital and a general opened a gate to him then the palace caught fire judy's men brought a body out of the flames and he buried it as the emperor jianwen's eldest son a small boy was never seen again judy took the throne as the yongle emperor and wiped his nephew's reign from the calendar but a rumor spread that jianwen had escaped yongle sent an official to search the empire for him year after year the official history of ming says the treasure fleet sailed partly to find him most historians doubt it more than 20 years after the fire that official came back and yongle rose from bed to talk with him deep into the night only then the history says was yongle's suspicion laid to rest it never says what was told whether jianwen died in that fire or walked out of it no one has ever proved history remembers the victors we remember the rest"
+}

@@ -1,0 +1,211 @@
+{
+ "take": "v2t3",
+ "out": "cand-vo-oliver-germanicus-v2t3.wav",
+ "raw_duration_s": 64.83,
+ "duration_s": 64.295,
+ "speech_start_s": 0.0,
+ "speech_end_s": 64.045,
+ "last_char_end_raw_s": 64.829,
+ "trim_s": 64.045,
+ "integrated_LUFS": -27.8,
+ "true_peak_dBTP": -4.3,
+ "body_L01_L11_I": -27.8,
+ "L12_I": -27.8,
+ "L13_I": -27.2,
+ "delta_L12_vs_body": 0.0,
+ "delta_L13_vs_body": 0.6,
+ "voiced_median_rms_dBFS": {
+  "L01": -26.86,
+  "L02": -27.29,
+  "L03": -28.14,
+  "L04": -27.75,
+  "L05": -27.59,
+  "L06": -28.79,
+  "L07": -29.7,
+  "L08": -30.45,
+  "L09": -29.14,
+  "L10": -29.03,
+  "L11": -31.13,
+  "L12": -29.14,
+  "L13": -26.62
+ },
+ "end_drop_flag": false,
+ "pause_before_L13": {
+  "align_war_end": 62.182,
+  "align_but_start": 62.995,
+  "align_gap": 0.813,
+  "rms_war_offset": 62.018,
+  "rms_but_onset": 63.013,
+  "rms_gap": 0.995,
+  "break_tag_align": {
+   "chars": "<break time=\"0.7s\"/>",
+   "start": 62.995,
+   "end": 62.995
+  }
+ },
+ "wps": 2.358,
+ "gaps_over_0p6": [
+  {
+   "after": "remains.",
+   "before": "The",
+   "gap": 0.604,
+   "at": 5.41
+  },
+  {
+   "after": "discovered.",
+   "before": "Germanicus",
+   "gap": 0.697,
+   "at": 10.344
+  },
+  {
+   "after": "orders.",
+   "before": "When",
+   "gap": 0.604,
+   "at": 20.584
+  },
+  {
+   "after": "below.",
+   "before": "Before",
+   "gap": 0.604,
+   "at": 30.035
+  },
+  {
+   "after": "justice.",
+   "before": "So",
+   "gap": 0.604,
+   "at": 35.433
+  },
+  {
+   "after": "Germanicus.",
+   "before": "Before",
+   "gap": 0.604,
+   "at": 42.086
+  },
+  {
+   "after": "him.",
+   "before": "The",
+   "gap": 0.604,
+   "at": 47.31
+  },
+  {
+   "after": "empire.",
+   "before": "Copies",
+   "gap": 0.603,
+   "at": 53.87
+  },
+  {
+   "after": "war.",
+   "before": "But",
+   "gap": 0.813,
+   "at": 62.182
+  }
+ ],
+ "word_count": 151,
+ "lines": [
+  {
+   "line": "L01",
+   "start": 0.0,
+   "end": 5.41,
+   "I": -27.0,
+   "peak": -9.88,
+   "text": "They found his name hidden in the walls, wri"
+  },
+  {
+   "line": "L02",
+   "start": 6.014,
+   "end": 10.344,
+   "I": -26.0,
+   "peak": -6.6,
+   "text": "The historian Tacitus says Germanicus was st"
+  },
+  {
+   "line": "L03",
+   "start": 11.041,
+   "end": 16.207,
+   "I": -26.5,
+   "peak": -4.27,
+   "text": "Germanicus was the emperor's adopted son, se"
+  },
+  {
+   "line": "L04",
+   "start": 16.649,
+   "end": 20.584,
+   "I": -27.7,
+   "peak": -10.34,
+   "text": "But Piso, the governor of Syria, overturned "
+  },
+  {
+   "line": "L05",
+   "start": 21.188,
+   "end": 25.077,
+   "I": -27.7,
+   "peak": -8.05,
+   "text": "When Germanicus fell ill, he believed Piso h"
+  },
+  {
+   "line": "L06",
+   "start": 25.588,
+   "end": 30.035,
+   "I": -27.9,
+   "peak": -8.15,
+   "text": "The hidden lead sheets were curses, meant to"
+  },
+  {
+   "line": "L07",
+   "start": 30.639,
+   "end": 35.433,
+   "I": -28.0,
+   "peak": -5.5,
+   "text": "Before he died, Germanicus begged his friend"
+  },
+  {
+   "line": "L08",
+   "start": 36.037,
+   "end": 42.086,
+   "I": -29.7,
+   "peak": -11.16,
+   "text": "So in Rome, Piso was put on trial before the"
+  },
+  {
+   "line": "L09",
+   "start": 42.69,
+   "end": 47.31,
+   "I": -28.9,
+   "peak": -13.11,
+   "text": "Before the verdict, Piso was found dead, a s"
+  },
+  {
+   "line": "L10",
+   "start": 47.914,
+   "end": 53.87,
+   "I": -27.9,
+   "peak": -9.37,
+   "text": "The Senate condemned him anyway, and ordered"
+  },
+  {
+   "line": "L11",
+   "start": 54.473,
+   "end": 57.295,
+   "I": -29.9,
+   "peak": -10.1,
+   "text": "Copies of that decree survive in Spain."
+  },
+  {
+   "line": "L12",
+   "start": 57.805,
+   "end": 62.182,
+   "I": -27.8,
+   "peak": -8.77,
+   "text": "They condemn Piso for corrupting soldiers an"
+  },
+  {
+   "line": "L13",
+   "start": 62.995,
+   "end": 64.045,
+   "I": -27.2,
+   "peak": -9.66,
+   "text": "But not for murder."
+  }
+ ],
+ "seed": 19
+}

@@ -1,0 +1,9 @@
+{
+ "note": "Full-cut medium.en pass dropped \"attempt at civil war. They repeat\" (Whisper 30 s window skip: hyp \"and\" spans 104.94-108.14). Re-run on master 102-113 s (mono 16 kHz, medium.en int8, condition_on_previous_text False, vad on/off identical) hears every word.",
+ "window_s": [
+  102,
+  113
+ ],
+ "hyp": "them his cruelty, his corruption of soldiers, and his attempt at civil war. They repeat Germanicus's accusation, but make no finding of murder.",
+ "result": "all script words present; only diff vs script is first-word clip (They->them at window start)"
+}

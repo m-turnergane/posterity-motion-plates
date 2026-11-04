@@ -1,0 +1,1415 @@
+{
+ "words": [
+  {
+   "word": "They",
+   "start": 0.0,
+   "end": 0.209,
+   "line": 1
+  },
+  {
+   "word": "pulled",
+   "start": 0.255,
+   "end": 0.615,
+   "line": 1
+  },
+  {
+   "word": "a",
+   "start": 0.662,
+   "end": 0.685,
+   "line": 1
+  },
+  {
+   "word": "burned",
+   "start": 0.778,
+   "end": 1.115,
+   "line": 1
+  },
+  {
+   "word": "body",
+   "start": 1.173,
+   "end": 1.474,
+   "line": 1
+  },
+  {
+   "word": "from",
+   "start": 1.556,
+   "end": 1.707,
+   "line": 1
+  },
+  {
+   "word": "the",
+   "start": 1.741,
+   "end": 1.811,
+   "line": 1
+  },
+  {
+   "word": "palace",
+   "start": 1.869,
+   "end": 2.357,
+   "line": 1
+  },
+  {
+   "word": "and",
+   "start": 2.508,
+   "end": 2.67,
+   "line": 1
+  },
+  {
+   "word": "called",
+   "start": 2.74,
+   "end": 2.995,
+   "line": 1
+  },
+  {
+   "word": "it",
+   "start": 3.03,
+   "end": 3.146,
+   "line": 1
+  },
+  {
+   "word": "the",
+   "start": 3.32,
+   "end": 3.495,
+   "line": 1
+  },
+  {
+   "word": "emperor.",
+   "start": 3.611,
+   "end": 4.272,
+   "line": 1
+  },
+  {
+   "word": "So",
+   "start": 5.387,
+   "end": 5.561,
+   "line": 1
+  },
+  {
+   "word": "why",
+   "start": 5.642,
+   "end": 5.851,
+   "line": 1
+  },
+  {
+   "word": "did",
+   "start": 5.909,
+   "end": 6.037,
+   "line": 1
+  },
+  {
+   "word": "his",
+   "start": 6.095,
+   "end": 6.211,
+   "line": 1
+  },
+  {
+   "word": "uncle",
+   "start": 6.304,
+   "end": 6.687,
+   "line": 1
+  },
+  {
+   "word": "keep",
+   "start": 6.745,
+   "end": 6.954,
+   "line": 1
+  },
+  {
+   "word": "searching",
+   "start": 7.047,
+   "end": 7.465,
+   "line": 1
+  },
+  {
+   "word": "for",
+   "start": 7.523,
+   "end": 7.663,
+   "line": 1
+  },
+  {
+   "word": "him?",
+   "start": 7.721,
+   "end": 8.034,
+   "line": 1
+  },
+  {
+   "word": "The",
+   "start": 9.149,
+   "end": 9.265,
+   "line": 2
+  },
+  {
+   "word": "emperor",
+   "start": 9.334,
+   "end": 9.683,
+   "line": 2
+  },
+  {
+   "word": "was",
+   "start": 9.752,
+   "end": 9.892,
+   "line": 2
+  },
+  {
+   "word": "Jianwen,",
+   "start": 9.973,
+   "end": 10.612,
+   "line": 2
+  },
+  {
+   "word": "the",
+   "start": 10.786,
+   "end": 10.879,
+   "line": 2
+  },
+  {
+   "word": "young",
+   "start": 10.96,
+   "end": 11.157,
+   "line": 2
+  },
+  {
+   "word": "grandson",
+   "start": 11.227,
+   "end": 11.738,
+   "line": 2
+  },
+  {
+   "word": "of",
+   "start": 11.784,
+   "end": 11.842,
+   "line": 2
+  },
+  {
+   "word": "the",
+   "start": 11.9,
+   "end": 11.97,
+   "line": 2
+  },
+  {
+   "word": "man",
+   "start": 12.028,
+   "end": 12.283,
+   "line": 2
+  },
+  {
+   "word": "who",
+   "start": 12.341,
+   "end": 12.457,
+   "line": 2
+  },
+  {
+   "word": "founded",
+   "start": 12.539,
+   "end": 12.899,
+   "line": 2
+  },
+  {
+   "word": "China's",
+   "start": 12.957,
+   "end": 13.363,
+   "line": 2
+  },
+  {
+   "word": "Ming",
+   "start": 13.444,
+   "end": 13.653,
+   "line": 2
+  },
+  {
+   "word": "dynasty.",
+   "start": 13.711,
+   "end": 14.327,
+   "line": 2
+  },
+  {
+   "word": "His",
+   "start": 14.652,
+   "end": 14.826,
+   "line": 3
+  },
+  {
+   "word": "uncles",
+   "start": 14.896,
+   "end": 15.337,
+   "line": 3
+  },
+  {
+   "word": "were",
+   "start": 15.406,
+   "end": 15.534,
+   "line": 3
+  },
+  {
+   "word": "powerful",
+   "start": 15.615,
+   "end": 16.056,
+   "line": 3
+  },
+  {
+   "word": "princes,",
+   "start": 16.126,
+   "end": 16.73,
+   "line": 3
+  },
+  {
+   "word": "and",
+   "start": 16.974,
+   "end": 17.113,
+   "line": 3
+  },
+  {
+   "word": "the",
+   "start": 17.159,
+   "end": 17.229,
+   "line": 3
+  },
+  {
+   "word": "strongest,",
+   "start": 17.275,
+   "end": 17.96,
+   "line": 3
+  },
+  {
+   "word": "Zhu",
+   "start": 18.111,
+   "end": 18.297,
+   "line": 3
+  },
+  {
+   "word": "Di,",
+   "start": 18.367,
+   "end": 18.692,
+   "line": 3
+  },
+  {
+   "word": "guarded",
+   "start": 18.843,
+   "end": 19.214,
+   "line": 3
+  },
+  {
+   "word": "the",
+   "start": 19.261,
+   "end": 19.33,
+   "line": 3
+  },
+  {
+   "word": "north.",
+   "start": 19.4,
+   "end": 19.853,
+   "line": 3
+  },
+  {
+   "word": "When",
+   "start": 20.805,
+   "end": 21.049,
+   "line": 4
+  },
+  {
+   "word": "Jianwen",
+   "start": 21.142,
+   "end": 21.594,
+   "line": 4
+  },
+  {
+   "word": "began",
+   "start": 21.652,
+   "end": 21.943,
+   "line": 4
+  },
+  {
+   "word": "stripping",
+   "start": 22.059,
+   "end": 22.477,
+   "line": 4
+  },
+  {
+   "word": "his",
+   "start": 22.546,
+   "end": 22.651,
+   "line": 4
+  },
+  {
+   "word": "uncles",
+   "start": 22.744,
+   "end": 23.162,
+   "line": 4
+  },
+  {
+   "word": "of",
+   "start": 23.208,
+   "end": 23.266,
+   "line": 4
+  },
+  {
+   "word": "their",
+   "start": 23.313,
+   "end": 23.464,
+   "line": 4
+  },
+  {
+   "word": "power,",
+   "start": 23.522,
+   "end": 23.963,
+   "line": 4
+  },
+  {
+   "word": "Zhu",
+   "start": 24.207,
+   "end": 24.369,
+   "line": 4
+  },
+  {
+   "word": "Di",
+   "start": 24.427,
+   "end": 24.532,
+   "line": 4
+  },
+  {
+   "word": "rebelled.",
+   "start": 24.648,
+   "end": 25.333,
+   "line": 4
+  },
+  {
+   "word": "After",
+   "start": 25.844,
+   "end": 26.099,
+   "line": 5
+  },
+  {
+   "word": "three",
+   "start": 26.169,
+   "end": 26.447,
+   "line": 5
+  },
+  {
+   "word": "years",
+   "start": 26.482,
+   "end": 26.714,
+   "line": 5
+  },
+  {
+   "word": "of",
+   "start": 26.761,
+   "end": 26.83,
+   "line": 5
+  },
+  {
+   "word": "war,",
+   "start": 26.912,
+   "end": 27.423,
+   "line": 5
+  },
+  {
+   "word": "his",
+   "start": 27.701,
+   "end": 27.829,
+   "line": 5
+  },
+  {
+   "word": "army",
+   "start": 27.887,
+   "end": 28.131,
+   "line": 5
+  },
+  {
+   "word": "reached",
+   "start": 28.224,
+   "end": 28.491,
+   "line": 5
+  },
+  {
+   "word": "Nanjing,",
+   "start": 28.56,
+   "end": 29.199,
+   "line": 5
+  },
+  {
+   "word": "the",
+   "start": 29.315,
+   "end": 29.408,
+   "line": 5
+  },
+  {
+   "word": "capital,",
+   "start": 29.466,
+   "end": 30.0,
+   "line": 5
+  },
+  {
+   "word": "and",
+   "start": 30.279,
+   "end": 30.418,
+   "line": 5
+  },
+  {
+   "word": "a",
+   "start": 30.476,
+   "end": 30.499,
+   "line": 5
+  },
+  {
+   "word": "general",
+   "start": 30.569,
+   "end": 30.929,
+   "line": 5
+  },
+  {
+   "word": "opened",
+   "start": 31.022,
+   "end": 31.3,
+   "line": 5
+  },
+  {
+   "word": "a",
+   "start": 31.324,
+   "end": 31.347,
+   "line": 5
+  },
+  {
+   "word": "gate",
+   "start": 31.405,
+   "end": 31.637,
+   "line": 5
+  },
+  {
+   "word": "to",
+   "start": 31.66,
+   "end": 31.73,
+   "line": 5
+  },
+  {
+   "word": "him.",
+   "start": 31.8,
+   "end": 32.078,
+   "line": 5
+  },
+  {
+   "word": "Then",
+   "start": 32.774,
+   "end": 33.065,
+   "line": 6
+  },
+  {
+   "word": "the",
+   "start": 33.134,
+   "end": 33.239,
+   "line": 6
+  },
+  {
+   "word": "palace",
+   "start": 33.308,
+   "end": 33.726,
+   "line": 6
+  },
+  {
+   "word": "caught",
+   "start": 33.773,
+   "end": 34.028,
+   "line": 6
+  },
+  {
+   "word": "fire.",
+   "start": 34.098,
+   "end": 34.597,
+   "line": 6
+  },
+  {
+   "word": "Zhu",
+   "start": 35.41,
+   "end": 35.572,
+   "line": 7
+  },
+  {
+   "word": "Di's",
+   "start": 35.63,
+   "end": 35.816,
+   "line": 7
+  },
+  {
+   "word": "men",
+   "start": 35.897,
+   "end": 36.13,
+   "line": 7
+  },
+  {
+   "word": "brought",
+   "start": 36.199,
+   "end": 36.443,
+   "line": 7
+  },
+  {
+   "word": "a",
+   "start": 36.478,
+   "end": 36.501,
+   "line": 7
+  },
+  {
+   "word": "body",
+   "start": 36.559,
+   "end": 36.849,
+   "line": 7
+  },
+  {
+   "word": "out",
+   "start": 36.919,
+   "end": 37.058,
+   "line": 7
+  },
+  {
+   "word": "of",
+   "start": 37.105,
+   "end": 37.163,
+   "line": 7
+  },
+  {
+   "word": "the",
+   "start": 37.198,
+   "end": 37.267,
+   "line": 7
+  },
+  {
+   "word": "flames,",
+   "start": 37.314,
+   "end": 37.79,
+   "line": 7
+  },
+  {
+   "word": "and",
+   "start": 37.999,
+   "end": 38.15,
+   "line": 7
+  },
+  {
+   "word": "he",
+   "start": 38.208,
+   "end": 38.254,
+   "line": 7
+  },
+  {
+   "word": "buried",
+   "start": 38.335,
+   "end": 38.684,
+   "line": 7
+  },
+  {
+   "word": "it",
+   "start": 38.73,
+   "end": 38.846,
+   "line": 7
+  },
+  {
+   "word": "as",
+   "start": 38.916,
+   "end": 39.079,
+   "line": 7
+  },
+  {
+   "word": "the",
+   "start": 39.137,
+   "end": 39.218,
+   "line": 7
+  },
+  {
+   "word": "emperor.",
+   "start": 39.299,
+   "end": 39.868,
+   "line": 7
+  },
+  {
+   "word": "Jianwen's",
+   "start": 40.472,
+   "end": 40.994,
+   "line": 8
+  },
+  {
+   "word": "eldest",
+   "start": 41.064,
+   "end": 41.412,
+   "line": 8
+  },
+  {
+   "word": "son,",
+   "start": 41.447,
+   "end": 41.865,
+   "line": 8
+  },
+  {
+   "word": "a",
+   "start": 42.039,
+   "end": 42.097,
+   "line": 8
+  },
+  {
+   "word": "small",
+   "start": 42.19,
+   "end": 42.48,
+   "line": 8
+  },
+  {
+   "word": "boy,",
+   "start": 42.538,
+   "end": 43.003,
+   "line": 8
+  },
+  {
+   "word": "was",
+   "start": 43.212,
+   "end": 43.374,
+   "line": 8
+  },
+  {
+   "word": "never",
+   "start": 43.467,
+   "end": 43.699,
+   "line": 8
+  },
+  {
+   "word": "seen",
+   "start": 43.769,
+   "end": 44.013,
+   "line": 8
+  },
+  {
+   "word": "again.",
+   "start": 44.071,
+   "end": 44.582,
+   "line": 8
+  },
+  {
+   "word": "Zhu",
+   "start": 45.185,
+   "end": 45.348,
+   "line": 9
+  },
+  {
+   "word": "Di",
+   "start": 45.406,
+   "end": 45.557,
+   "line": 9
+  },
+  {
+   "word": "took",
+   "start": 45.615,
+   "end": 45.824,
+   "line": 9
+  },
+  {
+   "word": "the",
+   "start": 45.87,
+   "end": 45.94,
+   "line": 9
+  },
+  {
+   "word": "throne",
+   "start": 45.998,
+   "end": 46.358,
+   "line": 9
+  },
+  {
+   "word": "as",
+   "start": 46.404,
+   "end": 46.509,
+   "line": 9
+  },
+  {
+   "word": "the",
+   "start": 46.555,
+   "end": 46.625,
+   "line": 9
+  },
+  {
+   "word": "Yongle",
+   "start": 46.718,
+   "end": 47.078,
+   "line": 9
+  },
+  {
+   "word": "Emperor,",
+   "start": 47.136,
+   "end": 47.647,
+   "line": 9
+  },
+  {
+   "word": "and",
+   "start": 47.798,
+   "end": 47.949,
+   "line": 9
+  },
+  {
+   "word": "wiped",
+   "start": 48.041,
+   "end": 48.366,
+   "line": 9
+  },
+  {
+   "word": "his",
+   "start": 48.413,
+   "end": 48.518,
+   "line": 9
+  },
+  {
+   "word": "nephew's",
+   "start": 48.611,
+   "end": 49.005,
+   "line": 9
+  },
+  {
+   "word": "reign",
+   "start": 49.087,
+   "end": 49.377,
+   "line": 9
+  },
+  {
+   "word": "from",
+   "start": 49.447,
+   "end": 49.598,
+   "line": 9
+  },
+  {
+   "word": "the",
+   "start": 49.632,
+   "end": 49.702,
+   "line": 9
+  },
+  {
+   "word": "calendar.",
+   "start": 49.748,
+   "end": 50.329,
+   "line": 9
+  },
+  {
+   "word": "But",
+   "start": 51.026,
+   "end": 51.177,
+   "line": 10
+  },
+  {
+   "word": "a",
+   "start": 51.211,
+   "end": 51.235,
+   "line": 10
+  },
+  {
+   "word": "rumour",
+   "start": 51.327,
+   "end": 51.618,
+   "line": 10
+  },
+  {
+   "word": "spread",
+   "start": 51.687,
+   "end": 52.07,
+   "line": 10
+  },
+  {
+   "word": "that",
+   "start": 52.129,
+   "end": 52.256,
+   "line": 10
+  },
+  {
+   "word": "Jianwen",
+   "start": 52.338,
+   "end": 52.732,
+   "line": 10
+  },
+  {
+   "word": "had",
+   "start": 52.802,
+   "end": 52.906,
+   "line": 10
+  },
+  {
+   "word": "escaped.",
+   "start": 52.964,
+   "end": 53.522,
+   "line": 10
+  },
+  {
+   "word": "Yongle",
+   "start": 53.963,
+   "end": 54.334,
+   "line": 11
+  },
+  {
+   "word": "sent",
+   "start": 54.392,
+   "end": 54.59,
+   "line": 11
+  },
+  {
+   "word": "an",
+   "start": 54.625,
+   "end": 54.683,
+   "line": 11
+  },
+  {
+   "word": "official",
+   "start": 54.718,
+   "end": 55.182,
+   "line": 11
+  },
+  {
+   "word": "to",
+   "start": 55.275,
+   "end": 55.344,
+   "line": 11
+  },
+  {
+   "word": "search",
+   "start": 55.414,
+   "end": 55.693,
+   "line": 11
+  },
+  {
+   "word": "the",
+   "start": 55.739,
+   "end": 55.809,
+   "line": 11
+  },
+  {
+   "word": "empire",
+   "start": 55.867,
+   "end": 56.285,
+   "line": 11
+  },
+  {
+   "word": "for",
+   "start": 56.331,
+   "end": 56.482,
+   "line": 11
+  },
+  {
+   "word": "him,",
+   "start": 56.54,
+   "end": 56.831,
+   "line": 11
+  },
+  {
+   "word": "year",
+   "start": 57.04,
+   "end": 57.353,
+   "line": 11
+  },
+  {
+   "word": "after",
+   "start": 57.411,
+   "end": 57.655,
+   "line": 11
+  },
+  {
+   "word": "year.",
+   "start": 57.736,
+   "end": 58.212,
+   "line": 11
+  },
+  {
+   "word": "The",
+   "start": 58.723,
+   "end": 58.839,
+   "line": 12
+  },
+  {
+   "word": "official",
+   "start": 58.886,
+   "end": 59.373,
+   "line": 12
+  },
+  {
+   "word": "History",
+   "start": 59.501,
+   "end": 59.872,
+   "line": 12
+  },
+  {
+   "word": "of",
+   "start": 59.919,
+   "end": 59.965,
+   "line": 12
+  },
+  {
+   "word": "Ming",
+   "start": 60.047,
+   "end": 60.29,
+   "line": 12
+  },
+  {
+   "word": "says",
+   "start": 60.383,
+   "end": 60.685,
+   "line": 12
+  },
+  {
+   "word": "the",
+   "start": 60.929,
+   "end": 61.045,
+   "line": 12
+  },
+  {
+   "word": "treasure",
+   "start": 61.091,
+   "end": 61.428,
+   "line": 12
+  },
+  {
+   "word": "fleets",
+   "start": 61.463,
+   "end": 61.753,
+   "line": 12
+  },
+  {
+   "word": "sailed",
+   "start": 61.788,
+   "end": 62.101,
+   "line": 12
+  },
+  {
+   "word": "partly",
+   "start": 62.171,
+   "end": 62.578,
+   "line": 12
+  },
+  {
+   "word": "to",
+   "start": 62.636,
+   "end": 62.694,
+   "line": 12
+  },
+  {
+   "word": "find",
+   "start": 62.775,
+   "end": 63.054,
+   "line": 12
+  },
+  {
+   "word": "him.",
+   "start": 63.112,
+   "end": 63.425,
+   "line": 12
+  },
+  {
+   "word": "Most",
+   "start": 63.936,
+   "end": 64.168,
+   "line": 12
+  },
+  {
+   "word": "historians",
+   "start": 64.226,
+   "end": 64.772,
+   "line": 12
+  },
+  {
+   "word": "doubt",
+   "start": 64.83,
+   "end": 65.062,
+   "line": 12
+  },
+  {
+   "word": "it.",
+   "start": 65.109,
+   "end": 65.341,
+   "line": 12
+  },
+  {
+   "word": "More",
+   "start": 65.945,
+   "end": 66.107,
+   "line": 13
+  },
+  {
+   "word": "than",
+   "start": 66.131,
+   "end": 66.27,
+   "line": 13
+  },
+  {
+   "word": "twenty",
+   "start": 66.328,
+   "end": 66.688,
+   "line": 13
+  },
+  {
+   "word": "years",
+   "start": 66.769,
+   "end": 67.059,
+   "line": 13
+  },
+  {
+   "word": "after",
+   "start": 67.106,
+   "end": 67.338,
+   "line": 13
+  },
+  {
+   "word": "the",
+   "start": 67.384,
+   "end": 67.454,
+   "line": 13
+  },
+  {
+   "word": "fire,",
+   "start": 67.512,
+   "end": 67.953,
+   "line": 13
+  },
+  {
+   "word": "that",
+   "start": 68.069,
+   "end": 68.22,
+   "line": 13
+  },
+  {
+   "word": "official",
+   "start": 68.267,
+   "end": 68.731,
+   "line": 13
+  },
+  {
+   "word": "came",
+   "start": 68.824,
+   "end": 69.056,
+   "line": 13
+  },
+  {
+   "word": "back,",
+   "start": 69.103,
+   "end": 69.474,
+   "line": 13
+  },
+  {
+   "word": "and",
+   "start": 69.59,
+   "end": 69.73,
+   "line": 13
+  },
+  {
+   "word": "Yongle",
+   "start": 69.799,
+   "end": 70.101,
+   "line": 13
+  },
+  {
+   "word": "rose",
+   "start": 70.159,
+   "end": 70.461,
+   "line": 13
+  },
+  {
+   "word": "from",
+   "start": 70.496,
+   "end": 70.647,
+   "line": 13
+  },
+  {
+   "word": "bed",
+   "start": 70.728,
+   "end": 70.949,
+   "line": 13
+  },
+  {
+   "word": "to",
+   "start": 71.007,
+   "end": 71.076,
+   "line": 13
+  },
+  {
+   "word": "talk",
+   "start": 71.158,
+   "end": 71.39,
+   "line": 13
+  },
+  {
+   "word": "with",
+   "start": 71.425,
+   "end": 71.529,
+   "line": 13
+  },
+  {
+   "word": "him",
+   "start": 71.564,
+   "end": 71.657,
+   "line": 13
+  },
+  {
+   "word": "deep",
+   "start": 71.773,
+   "end": 72.04,
+   "line": 13
+  },
+  {
+   "word": "into",
+   "start": 72.098,
+   "end": 72.237,
+   "line": 13
+  },
+  {
+   "word": "the",
+   "start": 72.295,
+   "end": 72.365,
+   "line": 13
+  },
+  {
+   "word": "night.",
+   "start": 72.423,
+   "end": 72.829,
+   "line": 13
+  },
+  {
+   "word": "Only",
+   "start": 73.34,
+   "end": 73.584,
+   "line": 14
+  },
+  {
+   "word": "then,",
+   "start": 73.642,
+   "end": 74.095,
+   "line": 14
+  },
+  {
+   "word": "the",
+   "start": 74.176,
+   "end": 74.292,
+   "line": 14
+  },
+  {
+   "word": "history",
+   "start": 74.362,
+   "end": 74.734,
+   "line": 14
+  },
+  {
+   "word": "says,",
+   "start": 74.792,
+   "end": 75.279,
+   "line": 14
+  },
+  {
+   "word": "was",
+   "start": 75.453,
+   "end": 75.604,
+   "line": 14
+  },
+  {
+   "word": "Yongle's",
+   "start": 75.674,
+   "end": 76.08,
+   "line": 14
+  },
+  {
+   "word": "suspicion",
+   "start": 76.115,
+   "end": 76.696,
+   "line": 14
+  },
+  {
+   "word": "laid",
+   "start": 76.812,
+   "end": 77.021,
+   "line": 14
+  },
+  {
+   "word": "to",
+   "start": 77.056,
+   "end": 77.125,
+   "line": 14
+  },
+  {
+   "word": "rest.",
+   "start": 77.218,
+   "end": 77.694,
+   "line": 14
+  },
+  {
+   "word": "It",
+   "start": 78.135,
+   "end": 78.262,
+   "line": 14
+  },
+  {
+   "word": "never",
+   "start": 78.309,
+   "end": 78.495,
+   "line": 14
+  },
+  {
+   "word": "says",
+   "start": 78.564,
+   "end": 78.855,
+   "line": 14
+  },
+  {
+   "word": "what",
+   "start": 78.913,
+   "end": 79.04,
+   "line": 14
+  },
+  {
+   "word": "he",
+   "start": 79.075,
+   "end": 79.122,
+   "line": 14
+  },
+  {
+   "word": "was",
+   "start": 79.18,
+   "end": 79.284,
+   "line": 14
+  },
+  {
+   "word": "told.",
+   "start": 79.342,
+   "end": 79.83,
+   "line": 14
+  },
+  {
+   "word": "Whether",
+   "start": 80.642,
+   "end": 80.91,
+   "line": 15
+  },
+  {
+   "word": "Jianwen",
+   "start": 80.979,
+   "end": 81.386,
+   "line": 15
+  },
+  {
+   "word": "died",
+   "start": 81.478,
+   "end": 81.815,
+   "line": 15
+  },
+  {
+   "word": "in",
+   "start": 81.862,
+   "end": 81.92,
+   "line": 15
+  },
+  {
+   "word": "that",
+   "start": 81.966,
+   "end": 82.105,
+   "line": 15
+  },
+  {
+   "word": "fire,",
+   "start": 82.187,
+   "end": 82.814,
+   "line": 15
+  },
+  {
+   "word": "or",
+   "start": 83.324,
+   "end": 83.475,
+   "line": 15
+  },
+  {
+   "word": "walked",
+   "start": 83.533,
+   "end": 83.8,
+   "line": 15
+  },
+  {
+   "word": "out",
+   "start": 83.847,
+   "end": 83.986,
+   "line": 15
+  },
+  {
+   "word": "of",
+   "start": 84.033,
+   "end": 84.091,
+   "line": 15
+  },
+  {
+   "word": "it,",
+   "start": 84.149,
+   "end": 84.509,
+   "line": 15
+  },
+  {
+   "word": "no",
+   "start": 85.321,
+   "end": 85.472,
+   "line": 15
+  },
+  {
+   "word": "one",
+   "start": 85.565,
+   "end": 85.751,
+   "line": 15
+  },
+  {
+   "word": "has",
+   "start": 85.809,
+   "end": 85.948,
+   "line": 15
+  },
+  {
+   "word": "ever",
+   "start": 86.03,
+   "end": 86.273,
+   "line": 15
+  },
+  {
+   "word": "proved.",
+   "start": 86.331,
+   "end": 86.842,
+   "line": 15
+  },
+  {
+   "word": "History",
+   "start": 87.725,
+   "end": 88.259,
+   "line": 16
+  },
+  {
+   "word": "remembers",
+   "start": 88.584,
+   "end": 89.118,
+   "line": 16
+  },
+  {
+   "word": "the",
+   "start": 89.176,
+   "end": 89.245,
+   "line": 16
+  },
+  {
+   "word": "victors.",
+   "start": 89.315,
+   "end": 89.942,
+   "line": 16
+  },
+  {
+   "word": "We",
+   "start": 90.894,
+   "end": 91.091,
+   "line": 16
+  },
+  {
+   "word": "remember",
+   "start": 91.173,
+   "end": 91.614,
+   "line": 16
+  },
+  {
+   "word": "the",
+   "start": 91.684,
+   "end": 91.753,
+   "line": 16
+  },
+  {
+   "word": "rest.",
+   "start": 91.834,
+   "end": 93.669,
+   "line": 16
+  }
+ ],
+ "source": "cand-vo-oliver-jianwen-t3_alignment.json"
+}

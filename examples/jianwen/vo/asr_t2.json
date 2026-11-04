@@ -1,0 +1,39 @@
+{
+ "model": "medium.en",
+ "ref_words": 235,
+ "hyp_words": 232,
+ "matched": 227,
+ "diffs": [
+  [
+   "replace",
+   "zhu di's",
+   "judy's"
+  ],
+  [
+   "replace",
+   "zhu di",
+   "judy"
+  ],
+  [
+   "replace",
+   "rumour",
+   "rumor"
+  ],
+  [
+   "replace",
+   "sailed",
+   "sail"
+  ],
+  [
+   "replace",
+   "twenty",
+   "20"
+  ],
+  [
+   "delete",
+   "yongle",
+   ""
+  ]
+ ],
+ "hyp": "they pulled a burned body from the palace and called it the emperor so why did his uncle keep searching for him the emperor was jianwen the young grandson of the man who founded china's ming dynasty his uncles were powerful princes and the strongest zhu di guarded the north when jianwen began stripping his uncles of their power zhu di rebelled after three years of war his army reached nanjing the capital and a general opened a gate to him then the palace caught fire judy's men brought a body out of the flames and he buried it as the emperor jianwen's eldest son a small boy was never seen again judy took the throne as the yongle emperor and wiped his nephew's reign from the calendar but a rumor spread that jianwen had escaped yongle sent an official to search the empire for him year after year the official history of ming says the treasure fleets sail partly to find him most historians doubt it more than 20 years after the fire that official came back and rose from bed to talk with him deep into the night only then the history says was yongle's suspicion laid to rest it never says what he was told whether jianwen died in that fire or walked out of it no one has ever proved history remembers the victors we remember the rest"
+}

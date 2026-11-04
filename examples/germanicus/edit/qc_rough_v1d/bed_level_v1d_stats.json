@@ -1,0 +1,52 @@
+{
+ "method": "1 s RMS (window [t, t+1]) of stem_bed_postlim.wav, mean of L/R, 0.25 s hop, dBFS; constancy span = windows wholly inside [2.5 s, fade start 64.5 s]",
+ "v1d": {
+  "label": "v1d 2.5-64.5",
+  "windows": 245,
+  "median_db": -32.48,
+  "max_dev_db": 0.64,
+  "max_dev_at_s": 7.75,
+  "min_db": -33.12,
+  "max_db": -32.17,
+  "max_rise_over_1s_db": 0.66,
+  "at_s": 60.5,
+  "max_rise_rate_0p25s_hop_db_per_s": 1.47,
+  "hop_at_s": 21.5
+ },
+ "v1d_centred_label": {
+  "label": "v1d, centred label, centres 3.0-64.0 approx",
+  "windows": 247,
+  "median_db": -32.48,
+  "max_dev_db": 0.72,
+  "max_dev_at_s": 2.5,
+  "min_db": -33.2,
+  "max_db": -32.17,
+  "max_rise_over_1s_db": 0.66,
+  "at_s": 61.0,
+  "max_rise_rate_0p25s_hop_db_per_s": 3.04,
+  "hop_at_s": 2.5
+ },
+ "v1c_same_span_for_reference": {
+  "label": "v1c 2.5-64.5",
+  "windows": 245,
+  "median_db": -32.14,
+  "max_dev_db": 5.96,
+  "max_dev_at_s": 4.75,
+  "min_db": -38.1,
+  "max_db": -28.65,
+  "max_rise_over_1s_db": 8.74,
+  "at_s": 5.0,
+  "max_rise_rate_0p25s_hop_db_per_s": 11.63,
+  "hop_at_s": 5.25
+ },
+ "mix_wav_ebur128": {
+  "I_LUFS": -13.9,
+  "LRA_LU": 3.0,
+  "TP_dBTP": -4.0
+ },
+ "mix_aac_ebur128": {
+  "I_LUFS": -13.9,
+  "LRA_LU": 3.0,
+  "TP_dBTP": -3.8
+ }
+}

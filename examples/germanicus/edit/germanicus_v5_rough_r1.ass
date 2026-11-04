@@ -1,0 +1,76 @@
+[Script Info]
+Title: Posterity Germanicus v5 ROUGH r1
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,54,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,4,2,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.36,Default,,0,0,0,,Germanicus saved the man
+Dialogue: 0,0:00:01.40,0:00:03.39,Default,,0,0,0,,he later accused\Nof killing him.
+Dialogue: 0,0:00:03.60,0:00:04.95,Default,,0,0,0,,According to Tacitus,
+Dialogue: 0,0:00:04.99,0:00:06.23,Default,,0,0,0,,a storm drove Piso
+Dialogue: 0,0:00:06.27,0:00:07.82,Default,,0,0,0,,towards a rocky coast.
+Dialogue: 0,0:00:07.86,0:00:09.98,Default,,0,0,0,,Germanicus sent\Nwarships to help.
+Dialogue: 0,0:00:10.02,0:00:11.94,Default,,0,0,0,,He was the emperor's\Nadopted son,
+Dialogue: 0,0:00:11.98,0:00:13.60,Default,,0,0,0,,heading east to\Nsettle disputes
+Dialogue: 0,0:00:13.64,0:00:16.61,Default,,0,0,0,,among Rome's provinces\Nand allied kingdoms.
+Dialogue: 0,0:00:17.01,0:00:19.19,Default,,0,0,0,,Piso, appointed\Ngovernor of Syria,
+Dialogue: 0,0:00:19.23,0:00:21.15,Default,,0,0,0,,was supposed to\Nserve under him.
+Dialogue: 0,0:00:21.19,0:00:23.41,Default,,0,0,0,,Instead, he gave\Nsoldiers gifts,
+Dialogue: 0,0:00:23.45,0:00:25.04,Default,,0,0,0,,replaced strict\Nofficers,
+Dialogue: 0,0:00:25.08,0:00:26.16,Default,,0,0,0,,and ignored orders
+Dialogue: 0,0:00:26.20,0:00:28.09,Default,,0,0,0,,to send troops\Nto Armenia.
+Dialogue: 0,0:00:28.61,0:00:30.96,Default,,0,0,0,,The emperor's son held\Nthe higher command.
+Dialogue: 0,0:00:31.26,0:00:32.22,Default,,0,0,0,,Piso was building
+Dialogue: 0,0:00:32.26,0:00:33.78,Default,,0,0,0,,a following of his own.
+Dialogue: 0,0:00:34.18,0:00:36.95,Default,,0,0,0,,Then Germanicus fell\Nill near Antioch.
+Dialogue: 0,0:00:37.09,0:00:39.31,Default,,0,0,0,,Tacitus says\Nhuman remains,
+Dialogue: 0,0:00:39.35,0:00:41.46,Default,,0,0,0,,spells, and lead\Ntablets bearing
+Dialogue: 0,0:00:41.50,0:00:42.70,Default,,0,0,0,,his name were\Nfound hidden
+Dialogue: 0,0:00:42.74,0:00:44.43,Default,,0,0,0,,in the floor and walls.
+Dialogue: 0,0:00:44.64,0:00:47.48,Default,,0,0,0,,Germanicus believed\NPiso had poisoned him.
+Dialogue: 0,0:00:47.69,0:00:48.79,Default,,0,0,0,,Dying, he asked
+Dialogue: 0,0:00:48.83,0:00:50.59,Default,,0,0,0,,his friends\Nto avenge him.
+Dialogue: 0,0:00:50.99,0:00:52.58,Default,,0,0,0,,After Germanicus died,
+Dialogue: 0,0:00:52.62,0:00:54.59,Default,,0,0,0,,Piso wanted Syria back.
+Dialogue: 0,0:00:54.80,0:00:55.91,Default,,0,0,0,,His own son urged
+Dialogue: 0,0:00:55.95,0:00:57.24,Default,,0,0,0,,him to return to Rome,
+Dialogue: 0,0:00:57.28,0:00:58.31,Default,,0,0,0,,warning that going back
+Dialogue: 0,0:00:58.35,0:01:00.72,Default,,0,0,0,,to Syria could\Nmean civil war.
+Dialogue: 0,0:01:00.93,0:01:02.41,Default,,0,0,0,,Piso chose force.
+Dialogue: 0,0:01:02.45,0:01:04.35,Default,,0,0,0,,His men fought\NRoman troops.
+Dialogue: 0,0:01:04.39,0:01:05.49,Default,,0,0,0,,He lost.
+Dialogue: 0,0:01:05.63,0:01:07.93,Default,,0,0,0,,Now he had to\Nface the Senate.
+Dialogue: 0,0:01:08.32,0:01:10.91,Default,,0,0,0,,Outside, crowds\Ndragged off his statues
+Dialogue: 0,0:01:10.95,0:01:12.35,Default,,0,0,0,,to smash them\Nand threatened
+Dialogue: 0,0:01:12.39,0:01:14.46,Default,,0,0,0,,violence if he\Nescaped punishment.
+Dialogue: 0,0:01:14.50,0:01:17.18,Default,,0,0,0,,Inside, his accusers\Nalleged poisoning.
+Dialogue: 0,0:01:17.22,0:01:18.43,Default,,0,0,0,,But Tacitus says they
+Dialogue: 0,0:01:18.47,0:01:19.83,Default,,0,0,0,,failed to prove it.
+Dialogue: 0,0:01:20.13,0:01:21.77,Default,,0,0,0,,He could be condemned\Nfor corrupting
+Dialogue: 0,0:01:21.82,0:01:22.73,Default,,0,0,0,,the army and taking
+Dialogue: 0,0:01:22.77,0:01:24.37,Default,,0,0,0,,up arms against Rome.
+Dialogue: 0,0:01:24.51,0:01:25.40,Default,,0,0,0,,That did not prove
+Dialogue: 0,0:01:25.44,0:01:27.26,Default,,0,0,0,,he had poisoned\NGermanicus.
+Dialogue: 0,0:01:27.77,0:01:30.02,Default,,0,0,0,,Before judgement,\NPiso was found
+Dialogue: 0,0:01:30.06,0:01:31.34,Default,,0,0,0,,dead in his room,
+Dialogue: 0,0:01:31.38,0:01:32.96,Default,,0,0,0,,a sword beside him.
+Dialogue: 0,0:01:33.47,0:01:35.59,Default,,0,0,0,,The Senate condemned\Nhim anyway,
+Dialogue: 0,0:01:35.63,0:01:38.54,Default,,0,0,0,,and ordered its decree\Ndisplayed in bronze.
+Dialogue: 0,0:01:39.06,0:01:41.11,Default,,0,0,0,,Copies survive in Spain.
+Dialogue: 0,0:01:41.62,0:01:43.36,Default,,0,0,0,,They condemn\Nhis cruelty,
+Dialogue: 0,0:01:43.57,0:01:45.41,Default,,0,0,0,,his corruption\Nof soldiers,
+Dialogue: 0,0:01:45.45,0:01:47.63,Default,,0,0,0,,and his attempt\Nat civil war.
+Dialogue: 0,0:01:47.94,0:01:50.54,Default,,0,0,0,,They repeat\NGermanicus's accusation,
+Dialogue: 0,0:01:50.68,0:01:52.73,Default,,0,0,0,,but make no\Nfinding of murder.
+Dialogue: 0,0:01:52.94,0:01:54.60,Default,,0,0,0,,The man Germanicus saved
+Dialogue: 0,0:01:54.64,0:01:56.42,Default,,0,0,0,,was condemned\Nas a rebel.
+Dialogue: 0,0:01:56.67,0:01:57.64,Default,,0,0,0,,Whether he had also
+Dialogue: 0,0:01:57.68,0:01:59.74,Default,,0,0,0,,been his killer\Nremained unproved.

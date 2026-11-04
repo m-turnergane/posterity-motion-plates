@@ -1,0 +1,56 @@
+{
+ "beat": "b13b",
+ "kind": "b13b",
+ "frames": [
+  1602,
+  1659
+ ],
+ "t": [
+  53.4,
+  55.3
+ ],
+ "seconds": 1.9,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b13b_doors_shut.png",
+ "plate_md5": "c54b28a72e045e6550dff1ade9eb839a",
+ "plate_wh": [
+  941,
+  1670
+ ],
+ "b13_cut_diff": {
+  "1": 9.945,
+  "-1": 9.529,
+  "0": 9.68
+ },
+ "b13_reg_sign": -1,
+ "b13_reg_shift_plate_px": [
+  0.423,
+  0.764
+ ],
+ "density_max": 1.218,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0593656518807015,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.7,
+   1576.4
+  ],
+  "ratio": 1.218,
+  "ratio_x": 1.218,
+  "ratio_y": 1.218,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "method": "BS.1770 K-weighted ST loudness, 400 ms window, 100 ms hop; live span 2.5-64.5 s; VO events from stem_vo_postlim (50 ms RMS > -45 dBFS)",
+ "vo_onsets": 22,
+ "vo_offsets": 22,
+ "max_short_term_swing_per_1s_db": {
+  "postlim_bed": 4.22,
+  "at_s": 20.4,
+  "source_music": 7.21,
+  "median_postlim": 1.45,
+  "median_source": 2.48,
+  "max_excess_over_source_db": 2.8,
+  "excess_at_s": 20.4
+ },
+ "gain_rider": {
+  "range_db": [
+   -7.63,
+   7.77
+  ],
+  "max_slope_db_per_s": 27.67,
+  "max_slope_at_s": 54.39,
+  "pct_time_slope_gt_2dB_s": 78.15,
+  "mod_1_4Hz_rms_db": 0.592,
+  "corr_with_vo_gate": 0.009
+ },
+ "limiter_gr_on_bed_db": {
+  "max": 1.36,
+  "p99": 0.97
+ },
+ "vo_triggered_bed_change_db": {
+  "postlim_at_onsets": {
+   "n": 22,
+   "mean_db": -0.262,
+   "sd_db": 0.89,
+   "max_abs_db": 2.24
+  },
+  "postlim_at_offsets": {
+   "n": 22,
+   "mean_db": 0.261,
+   "sd_db": 1.219,
+   "max_abs_db": 2.275
+  },
+  "source_at_onsets": {
+   "n": 22,
+   "mean_db": -0.303,
+   "sd_db": 2.26,
+   "max_abs_db": 4.792
+  },
+  "source_at_offsets": {
+   "n": 22,
+   "mean_db": -0.406,
+   "sd_db": 2.332,
+   "max_abs_db": 5.413
+  },
+  "note": "mean ST-loudness change (0.1-0.6 s after minus 0.6-0.1 s before each event); pumping would show a consistent negative onset / positive offset mean vs source"
+ },
+ "envelope_mod_1_4Hz_rms_db": {
+  "postlim": 0.257,
+  "source": 0.329,
+  "ridden_prelim": 0.212
+ },
+ "worst3": [
+  {
+   "t_s": 20.4,
+   "window": "20.4-21.4 s",
+   "post_swing_db": 4.22,
+   "source_swing_db": 1.43,
+   "rider_slope_max_db_per_s": 10.25,
+   "limiter_gr_max_db": 0.17,
+   "vo_event_within": true
+  },
+  {
+   "t_s": 61.3,
+   "window": "61.3-62.3 s",
+   "post_swing_db": 3.25,
+   "source_swing_db": 3.43,
+   "rider_slope_max_db_per_s": 19.92,
+   "limiter_gr_max_db": 0.45,
+   "vo_event_within": true
+  },
+  {
+   "t_s": 57.4,
+   "window": "57.4-58.4 s",
+   "post_swing_db": 3.17,
+   "source_swing_db": 3.64,
+   "rider_slope_max_db_per_s": 14.35,
+   "limiter_gr_max_db": 0.48,
+   "vo_event_within": true
+  }
+ ],
+ "verdict_basis": {
+  "vo_keyed_pumping": false,
+  "windows_with_added_swing": [
+   "20.4-21.4 s"
+  ]
+ },
+ "verdict": "suspect at 20.4s"
+}

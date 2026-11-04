@@ -1,0 +1,3479 @@
+{
+ "n_words": 289,
+ "house_min5": [
+  {
+   "i": 80,
+   "w": "a",
+   "t": 32.26,
+   "line": 6,
+   "house": 10.49,
+   "smax": 8.14,
+   "sfx": null,
+   "bed_sfx_smax": 8.14
+  },
+  {
+   "i": 258,
+   "w": "at",
+   "t": 106.28,
+   "line": 20,
+   "house": 11.31,
+   "smax": 8.32,
+   "sfx": null,
+   "bed_sfx_smax": 8.32
+  },
+  {
+   "i": 46,
+   "w": "of",
+   "t": 18.49,
+   "line": 4,
+   "house": 12.25,
+   "smax": 8.25,
+   "sfx": null,
+   "bed_sfx_smax": 8.25
+  },
+  {
+   "i": 245,
+   "w": "in",
+   "t": 100.09,
+   "line": 20,
+   "house": 12.8,
+   "smax": 8.57,
+   "sfx": null,
+   "bed_sfx_smax": 8.57
+  },
+  {
+   "i": 253,
+   "w": "of",
+   "t": 104.35,
+   "line": 20,
+   "house": 13.52,
+   "smax": 11.69,
+   "sfx": null,
+   "bed_sfx_smax": 11.69
+  }
+ ],
+ "house_lt12": [
+  {
+   "i": 80,
+   "w": "a",
+   "t": 32.26,
+   "line": 6,
+   "house": 10.49,
+   "smax": 8.14,
+   "sfx": null,
+   "bed_sfx_smax": 8.14
+  },
+  {
+   "i": 258,
+   "w": "at",
+   "t": 106.28,
+   "line": 20,
+   "house": 11.31,
+   "smax": 8.32,
+   "sfx": null,
+   "bed_sfx_smax": 8.32
+  }
+ ],
+ "smax_lt12": [
+  [
+   "of",
+   18.49,
+   8.25
+  ],
+  [
+   "a",
+   32.26,
+   8.14
+  ],
+  [
+   "of",
+   32.81,
+   11.89
+  ],
+  [
+   "and",
+   43.41,
+   11.52
+  ],
+  [
+   "to",
+   56.63,
+   10.46
+  ],
+  [
+   "the",
+   66.86,
+   11.41
+  ],
+  [
+   "Senate.",
+   67.05,
+   11.63
+  ],
+  [
+   "it.",
+   79.26,
+   10.22
+  ],
+  [
+   "in",
+   90.35,
+   11.67
+  ],
+  [
+   "in",
+   100.09,
+   8.57
+  ],
+  [
+   "of",
+   104.35,
+   11.69
+  ],
+  [
+   "at",
+   106.28,
+   8.32
+  ],
+  [
+   "a",
+   115.61,
+   11.2
+  ]
+ ],
+ "smax_lt9": [
+  [
+   "of",
+   18.49,
+   8.25
+  ],
+  [
+   "a",
+   32.26,
+   8.14
+  ],
+  [
+   "in",
+   100.09,
+   8.57
+  ],
+  [
+   "at",
+   106.28,
+   8.32
+  ]
+ ],
+ "seqC_words": [
+  {
+   "i": 150,
+   "w": "Piso",
+   "t": 60.93,
+   "line": 12,
+   "house": 17.24,
+   "smax": 15.54,
+   "sfx": 18.8,
+   "bed_sfx_smax": 12.49
+  },
+  {
+   "i": 151,
+   "w": "chose",
+   "t": 61.44,
+   "line": 12,
+   "house": 17.93,
+   "smax": 14.96,
+   "sfx": 17.45,
+   "bed_sfx_smax": 10.8
+  },
+  {
+   "i": 152,
+   "w": "force.",
+   "t": 61.8,
+   "line": 12,
+   "house": 17.19,
+   "smax": 14.68,
+   "sfx": 17.17,
+   "bed_sfx_smax": 10.52
+  },
+  {
+   "i": 153,
+   "w": "His",
+   "t": 62.45,
+   "line": 12,
+   "house": 18.59,
+   "smax": 16.01,
+   "sfx": 18.65,
+   "bed_sfx_smax": 13.65
+  },
+  {
+   "i": 154,
+   "w": "men",
+   "t": 62.69,
+   "line": 12,
+   "house": 19.31,
+   "smax": 16.48,
+   "sfx": 19.17,
+   "bed_sfx_smax": 14.12
+  },
+  {
+   "i": 155,
+   "w": "fought",
+   "t": 63.04,
+   "line": 12,
+   "house": 18.75,
+   "smax": 17.05,
+   "sfx": 18.62,
+   "bed_sfx_smax": 12.9
+  },
+  {
+   "i": 156,
+   "w": "Roman",
+   "t": 63.39,
+   "line": 12,
+   "house": 20.01,
+   "smax": 16.99,
+   "sfx": 19.6,
+   "bed_sfx_smax": 13.87
+  },
+  {
+   "i": 157,
+   "w": "troops.",
+   "t": 63.77,
+   "line": 12,
+   "house": 19.05,
+   "smax": 16.02,
+   "sfx": 18.22,
+   "bed_sfx_smax": 13.53
+  },
+  {
+   "i": 158,
+   "w": "He",
+   "t": 64.39,
+   "line": 12,
+   "house": 20.07,
+   "smax": 16.44,
+   "sfx": 18.38,
+   "bed_sfx_smax": 12.86
+  },
+  {
+   "i": 159,
+   "w": "lost.",
+   "t": 64.63,
+   "line": 12,
+   "house": 19.32,
+   "smax": 15.92,
+   "sfx": 18.65,
+   "bed_sfx_smax": 13.13
+  },
+  {
+   "i": 160,
+   "w": "Now",
+   "t": 65.63,
+   "line": 13,
+   "house": 19.28,
+   "smax": 15.42,
+   "sfx": 20.17,
+   "bed_sfx_smax": 14.8
+  }
+ ],
+ "band_house_mono": {
+  "n": 1285,
+  "median": 44.1,
+  "p5": 24.8,
+  "pct_lt6": 0.31,
+  "pct_lt0": 0.08
+ },
+ "band_stereo_max_bed+sfx": {
+  "n": 1285,
+  "median": 40.3,
+  "p5": 17.1,
+  "pct_lt6": 1.01,
+  "pct_lt0": 0.47
+ },
+ "band_vs_sfx_seqC": {
+  "n": 54,
+  "min": -3.4,
+  "median": 17.9,
+  "pct_lt6": 11.1
+ },
+ "line_lufs_vo": {
+  "1": [
+   0.0,
+   3.09,
+   -13.5
+  ],
+  "2": [
+   3.6,
+   9.69,
+   -13.4
+  ],
+  "3": [
+   10.02,
+   16.31,
+   -13.7
+  ],
+  "4": [
+   17.01,
+   20.86,
+   -13.7
+  ],
+  "5": [
+   21.19,
+   27.79,
+   -14.1
+  ],
+  "6": [
+   28.61,
+   33.48,
+   -14.5
+  ],
+  "7": [
+   34.18,
+   36.65,
+   -14.4
+  ],
+  "8": [
+   37.09,
+   44.13,
+   -14.0
+  ],
+  "9": [
+   44.64,
+   50.29,
+   -15.0
+  ],
+  "10": [
+   50.99,
+   54.29,
+   -14.4
+  ],
+  "11": [
+   54.8,
+   60.42,
+   -13.5
+  ],
+  "12": [
+   60.93,
+   65.19,
+   -14.9
+  ],
+  "13": [
+   65.63,
+   67.63,
+   -14.5
+  ],
+  "14": [
+   68.32,
+   74.17,
+   -13.8
+  ],
+  "15": [
+   74.5,
+   76.89,
+   -13.4
+  ],
+  "16": [
+   77.22,
+   79.53,
+   -14.3
+  ],
+  "17": [
+   80.13,
+   86.96,
+   -14.8
+  ],
+  "18": [
+   87.77,
+   92.66,
+   -14.0
+  ],
+  "19": [
+   93.47,
+   98.24,
+   -13.5
+  ],
+  "20": [
+   99.06,
+   107.33,
+   -14.5
+  ],
+  "21": [
+   107.94,
+   112.43,
+   -14.2
+  ],
+  "22": [
+   112.94,
+   116.12,
+   -16.6
+  ],
+  "23": [
+   116.67,
+   119.44,
+   -15.5
+  ]
+ },
+ "vo_line_stats": {
+  "body_median": -14.1,
+  "body_min": -15.0,
+  "body_max": -13.4,
+  "L22": [
+   112.94,
+   116.12,
+   -16.6
+  ],
+  "L23": [
+   116.67,
+   119.44,
+   -15.5
+  ]
+ },
+ "pause_L22_L23": 0.545,
+ "pause_L21_L22": 0.51,
+ "all_line_gaps": [
+  0.51,
+  0.32,
+  0.7,
+  0.32,
+  0.81,
+  0.7,
+  0.44,
+  0.51,
+  0.7,
+  0.51,
+  0.51,
+  0.44,
+  0.7,
+  0.33,
+  0.33,
+  0.6,
+  0.81,
+  0.81,
+  0.81,
+  0.6,
+  0.51,
+  0.55
+ ],
+ "last_words": [
+  [
+   "The",
+   112.94,
+   22.17,
+   17.61
+  ],
+  [
+   "man",
+   113.12,
+   23.18,
+   19.77
+  ],
+  [
+   "Germanicus",
+   113.45,
+   21.79,
+   18.03
+  ],
+  [
+   "saved",
+   114.09,
+   19.37,
+   16.76
+  ],
+  [
+   "was",
+   114.64,
+   17.72,
+   15.46
+  ],
+  [
+   "condemned",
+   114.88,
+   21.62,
+   17.24
+  ],
+  [
+   "as",
+   115.47,
+   16.56,
+   12.63
+  ],
+  [
+   "a",
+   115.61,
+   15.24,
+   11.2
+  ],
+  [
+   "rebel.",
+   115.72,
+   20.48,
+   15.99
+  ],
+  [
+   "Whether",
+   116.67,
+   21.43,
+   19.14
+  ],
+  [
+   "he",
+   117.03,
+   18.02,
+   17.14
+  ],
+  [
+   "had",
+   117.17,
+   21.28,
+   21.04
+  ],
+  [
+   "also",
+   117.31,
+   19.68,
+   16.22
+  ],
+  [
+   "been",
+   117.68,
+   21.82,
+   18.33
+  ],
+  [
+   "his",
+   117.88,
+   19.78,
+   16.29
+  ],
+  [
+   "killer",
+   118.05,
+   19.38,
+   15.89
+  ],
+  [
+   "remained",
+   118.49,
+   23.45,
+   18.99
+  ],
+  [
+   "unproved.",
+   118.97,
+   19.52,
+   16.11
+  ]
+ ],
+ "bed_lufs_windows": {
+  "body": -28.9,
+  "taildip": -31.6,
+  "L22": -31.6,
+  "L23": -32.3,
+  "fade": -40.3
+ },
+ "master_lufs_windows": {
+  "body": -14.4,
+  "L22": -16.5,
+  "L23": -15.5
+ },
+ "pumping": {
+  "n": 30,
+  "on_mean": -0.39,
+  "on_absmax": 3.36,
+  "off_mean": -0.25,
+  "off_absmax": 3.62,
+  "rand_absmean": 1.23,
+  "rand_p95": 3.05
+ },
+ "rows": [
+  {
+   "i": 0,
+   "w": "Germanicus",
+   "t": 0.0,
+   "line": 1,
+   "house": 42.31,
+   "smax": 39.58,
+   "sfx": null,
+   "bed_sfx_smax": 39.58
+  },
+  {
+   "i": 1,
+   "w": "saved",
+   "t": 0.7,
+   "line": 1,
+   "house": 39.51,
+   "smax": 37.61,
+   "sfx": null,
+   "bed_sfx_smax": 37.61
+  },
+  {
+   "i": 2,
+   "w": "the",
+   "t": 1.0,
+   "line": 1,
+   "house": 36.18,
+   "smax": 33.21,
+   "sfx": null,
+   "bed_sfx_smax": 33.21
+  },
+  {
+   "i": 3,
+   "w": "man",
+   "t": 1.11,
+   "line": 1,
+   "house": 34.44,
+   "smax": 28.38,
+   "sfx": null,
+   "bed_sfx_smax": 28.38
+  },
+  {
+   "i": 4,
+   "w": "he",
+   "t": 1.41,
+   "line": 1,
+   "house": 32.27,
+   "smax": 27.24,
+   "sfx": null,
+   "bed_sfx_smax": 27.24
+  },
+  {
+   "i": 5,
+   "w": "later",
+   "t": 1.57,
+   "line": 1,
+   "house": 24.06,
+   "smax": 21.59,
+   "sfx": null,
+   "bed_sfx_smax": 21.59
+  },
+  {
+   "i": 6,
+   "w": "accused",
+   "t": 1.92,
+   "line": 1,
+   "house": 17.14,
+   "smax": 14.84,
+   "sfx": null,
+   "bed_sfx_smax": 14.84
+  },
+  {
+   "i": 7,
+   "w": "of",
+   "t": 2.39,
+   "line": 1,
+   "house": 15.48,
+   "smax": 13.18,
+   "sfx": null,
+   "bed_sfx_smax": 13.18
+  },
+  {
+   "i": 8,
+   "w": "killing",
+   "t": 2.52,
+   "line": 1,
+   "house": 17.87,
+   "smax": 15.56,
+   "sfx": null,
+   "bed_sfx_smax": 15.56
+  },
+  {
+   "i": 9,
+   "w": "him.",
+   "t": 2.83,
+   "line": 1,
+   "house": 18.68,
+   "smax": 16.38,
+   "sfx": null,
+   "bed_sfx_smax": 16.38
+  },
+  {
+   "i": 10,
+   "w": "According",
+   "t": 3.6,
+   "line": 2,
+   "house": 18.66,
+   "smax": 15.18,
+   "sfx": null,
+   "bed_sfx_smax": 15.18
+  },
+  {
+   "i": 11,
+   "w": "to",
+   "t": 4.03,
+   "line": 2,
+   "house": 19.44,
+   "smax": 15.4,
+   "sfx": null,
+   "bed_sfx_smax": 15.4
+  },
+  {
+   "i": 12,
+   "w": "Tacitus,",
+   "t": 4.18,
+   "line": 2,
+   "house": 18.21,
+   "smax": 15.04,
+   "sfx": null,
+   "bed_sfx_smax": 15.04
+  },
+  {
+   "i": 13,
+   "w": "a",
+   "t": 4.99,
+   "line": 2,
+   "house": 19.24,
+   "smax": 15.08,
+   "sfx": null,
+   "bed_sfx_smax": 15.08
+  },
+  {
+   "i": 14,
+   "w": "storm",
+   "t": 5.12,
+   "line": 2,
+   "house": 18.26,
+   "smax": 15.6,
+   "sfx": null,
+   "bed_sfx_smax": 15.6
+  },
+  {
+   "i": 15,
+   "w": "drove",
+   "t": 5.48,
+   "line": 2,
+   "house": 18.78,
+   "smax": 16.12,
+   "sfx": null,
+   "bed_sfx_smax": 16.12
+  },
+  {
+   "i": 16,
+   "w": "Piso",
+   "t": 5.77,
+   "line": 2,
+   "house": 16.67,
+   "smax": 15.58,
+   "sfx": null,
+   "bed_sfx_smax": 15.58
+  },
+  {
+   "i": 17,
+   "w": "towards",
+   "t": 6.27,
+   "line": 2,
+   "house": 16.79,
+   "smax": 15.15,
+   "sfx": null,
+   "bed_sfx_smax": 15.15
+  },
+  {
+   "i": 18,
+   "w": "a",
+   "t": 6.68,
+   "line": 2,
+   "house": 16.92,
+   "smax": 13.38,
+   "sfx": null,
+   "bed_sfx_smax": 13.38
+  },
+  {
+   "i": 19,
+   "w": "rocky",
+   "t": 6.77,
+   "line": 2,
+   "house": 18.2,
+   "smax": 15.34,
+   "sfx": null,
+   "bed_sfx_smax": 15.34
+  },
+  {
+   "i": 20,
+   "w": "coast.",
+   "t": 7.11,
+   "line": 2,
+   "house": 16.21,
+   "smax": 14.11,
+   "sfx": null,
+   "bed_sfx_smax": 14.11
+  },
+  {
+   "i": 21,
+   "w": "Germanicus",
+   "t": 7.86,
+   "line": 2,
+   "house": 17.26,
+   "smax": 14.76,
+   "sfx": null,
+   "bed_sfx_smax": 14.76
+  },
+  {
+   "i": 22,
+   "w": "sent",
+   "t": 8.51,
+   "line": 2,
+   "house": 17.98,
+   "smax": 14.0,
+   "sfx": null,
+   "bed_sfx_smax": 14.0
+  },
+  {
+   "i": 23,
+   "w": "warships",
+   "t": 8.75,
+   "line": 2,
+   "house": 17.98,
+   "smax": 13.99,
+   "sfx": null,
+   "bed_sfx_smax": 13.99
+  },
+  {
+   "i": 24,
+   "w": "to",
+   "t": 9.23,
+   "line": 2,
+   "house": 17.78,
+   "smax": 15.49,
+   "sfx": null,
+   "bed_sfx_smax": 15.49
+  },
+  {
+   "i": 25,
+   "w": "help.",
+   "t": 9.37,
+   "line": 2,
+   "house": 19.81,
+   "smax": 16.73,
+   "sfx": null,
+   "bed_sfx_smax": 16.73
+  },
+  {
+   "i": 26,
+   "w": "He",
+   "t": 10.02,
+   "line": 3,
+   "house": 18.03,
+   "smax": 14.17,
+   "sfx": null,
+   "bed_sfx_smax": 14.17
+  },
+  {
+   "i": 27,
+   "w": "was",
+   "t": 10.17,
+   "line": 3,
+   "house": 17.95,
+   "smax": 14.09,
+   "sfx": null,
+   "bed_sfx_smax": 14.09
+  },
+  {
+   "i": 28,
+   "w": "the",
+   "t": 10.32,
+   "line": 3,
+   "house": 17.78,
+   "smax": 13.93,
+   "sfx": null,
+   "bed_sfx_smax": 13.93
+  },
+  {
+   "i": 29,
+   "w": "emperor's",
+   "t": 10.47,
+   "line": 3,
+   "house": 18.29,
+   "smax": 14.44,
+   "sfx": null,
+   "bed_sfx_smax": 14.44
+  },
+  {
+   "i": 30,
+   "w": "adopted",
+   "t": 10.96,
+   "line": 3,
+   "house": 18.52,
+   "smax": 16.84,
+   "sfx": null,
+   "bed_sfx_smax": 16.84
+  },
+  {
+   "i": 31,
+   "w": "son,",
+   "t": 11.47,
+   "line": 3,
+   "house": 17.94,
+   "smax": 16.41,
+   "sfx": null,
+   "bed_sfx_smax": 16.41
+  },
+  {
+   "i": 32,
+   "w": "heading",
+   "t": 11.98,
+   "line": 3,
+   "house": 17.63,
+   "smax": 16.1,
+   "sfx": null,
+   "bed_sfx_smax": 16.1
+  },
+  {
+   "i": 33,
+   "w": "east",
+   "t": 12.28,
+   "line": 3,
+   "house": 20.03,
+   "smax": 17.6,
+   "sfx": null,
+   "bed_sfx_smax": 17.6
+  },
+  {
+   "i": 34,
+   "w": "to",
+   "t": 12.56,
+   "line": 3,
+   "house": 19.28,
+   "smax": 16.06,
+   "sfx": null,
+   "bed_sfx_smax": 16.06
+  },
+  {
+   "i": 35,
+   "w": "settle",
+   "t": 12.74,
+   "line": 3,
+   "house": 19.22,
+   "smax": 15.33,
+   "sfx": null,
+   "bed_sfx_smax": 15.33
+  },
+  {
+   "i": 36,
+   "w": "disputes",
+   "t": 13.06,
+   "line": 3,
+   "house": 19.42,
+   "smax": 15.53,
+   "sfx": null,
+   "bed_sfx_smax": 15.53
+  },
+  {
+   "i": 37,
+   "w": "among",
+   "t": 13.64,
+   "line": 3,
+   "house": 18.78,
+   "smax": 17.24,
+   "sfx": null,
+   "bed_sfx_smax": 17.24
+  },
+  {
+   "i": 38,
+   "w": "Rome's",
+   "t": 13.96,
+   "line": 3,
+   "house": 18.28,
+   "smax": 15.03,
+   "sfx": null,
+   "bed_sfx_smax": 15.03
+  },
+  {
+   "i": 39,
+   "w": "provinces",
+   "t": 14.33,
+   "line": 3,
+   "house": 17.95,
+   "smax": 13.78,
+   "sfx": null,
+   "bed_sfx_smax": 13.78
+  },
+  {
+   "i": 40,
+   "w": "and",
+   "t": 15.04,
+   "line": 3,
+   "house": 16.48,
+   "smax": 13.17,
+   "sfx": null,
+   "bed_sfx_smax": 13.17
+  },
+  {
+   "i": 41,
+   "w": "allied",
+   "t": 15.29,
+   "line": 3,
+   "house": 17.63,
+   "smax": 15.3,
+   "sfx": null,
+   "bed_sfx_smax": 15.3
+  },
+  {
+   "i": 42,
+   "w": "kingdoms.",
+   "t": 15.72,
+   "line": 3,
+   "house": 17.64,
+   "smax": 14.76,
+   "sfx": null,
+   "bed_sfx_smax": 14.76
+  },
+  {
+   "i": 43,
+   "w": "Piso,",
+   "t": 17.01,
+   "line": 4,
+   "house": 19.73,
+   "smax": 15.11,
+   "sfx": null,
+   "bed_sfx_smax": 15.11
+  },
+  {
+   "i": 44,
+   "w": "appointed",
+   "t": 17.62,
+   "line": 4,
+   "house": 17.43,
+   "smax": 13.44,
+   "sfx": null,
+   "bed_sfx_smax": 13.44
+  },
+  {
+   "i": 45,
+   "w": "governor",
+   "t": 18.12,
+   "line": 4,
+   "house": 17.86,
+   "smax": 13.86,
+   "sfx": null,
+   "bed_sfx_smax": 13.86
+  },
+  {
+   "i": 46,
+   "w": "of",
+   "t": 18.49,
+   "line": 4,
+   "house": 12.25,
+   "smax": 8.25,
+   "sfx": null,
+   "bed_sfx_smax": 8.25
+  },
+  {
+   "i": 47,
+   "w": "Syria,",
+   "t": 18.61,
+   "line": 4,
+   "house": 17.22,
+   "smax": 13.94,
+   "sfx": null,
+   "bed_sfx_smax": 13.94
+  },
+  {
+   "i": 48,
+   "w": "was",
+   "t": 19.23,
+   "line": 4,
+   "house": 19.16,
+   "smax": 16.94,
+   "sfx": null,
+   "bed_sfx_smax": 16.94
+  },
+  {
+   "i": 49,
+   "w": "supposed",
+   "t": 19.41,
+   "line": 4,
+   "house": 19.65,
+   "smax": 17.43,
+   "sfx": null,
+   "bed_sfx_smax": 17.43
+  },
+  {
+   "i": 50,
+   "w": "to",
+   "t": 19.84,
+   "line": 4,
+   "house": 18.85,
+   "smax": 18.03,
+   "sfx": null,
+   "bed_sfx_smax": 18.03
+  },
+  {
+   "i": 51,
+   "w": "serve",
+   "t": 19.98,
+   "line": 4,
+   "house": 19.74,
+   "smax": 18.32,
+   "sfx": null,
+   "bed_sfx_smax": 18.32
+  },
+  {
+   "i": 52,
+   "w": "under",
+   "t": 20.35,
+   "line": 4,
+   "house": 21.58,
+   "smax": 18.05,
+   "sfx": null,
+   "bed_sfx_smax": 18.05
+  },
+  {
+   "i": 53,
+   "w": "him.",
+   "t": 20.56,
+   "line": 4,
+   "house": 19.37,
+   "smax": 17.48,
+   "sfx": null,
+   "bed_sfx_smax": 17.48
+  },
+  {
+   "i": 54,
+   "w": "Instead,",
+   "t": 21.19,
+   "line": 5,
+   "house": 18.56,
+   "smax": 17.01,
+   "sfx": null,
+   "bed_sfx_smax": 17.01
+  },
+  {
+   "i": 55,
+   "w": "he",
+   "t": 21.97,
+   "line": 5,
+   "house": 18.91,
+   "smax": 17.35,
+   "sfx": null,
+   "bed_sfx_smax": 17.35
+  },
+  {
+   "i": 56,
+   "w": "gave",
+   "t": 22.09,
+   "line": 5,
+   "house": 19.74,
+   "smax": 17.4,
+   "sfx": null,
+   "bed_sfx_smax": 17.4
+  },
+  {
+   "i": 57,
+   "w": "soldiers",
+   "t": 22.36,
+   "line": 5,
+   "house": 21.39,
+   "smax": 20.26,
+   "sfx": null,
+   "bed_sfx_smax": 20.26
+  },
+  {
+   "i": 58,
+   "w": "gifts,",
+   "t": 22.8,
+   "line": 5,
+   "house": 21.15,
+   "smax": 17.22,
+   "sfx": null,
+   "bed_sfx_smax": 17.22
+  },
+  {
+   "i": 59,
+   "w": "replaced",
+   "t": 23.45,
+   "line": 5,
+   "house": 18.95,
+   "smax": 16.5,
+   "sfx": null,
+   "bed_sfx_smax": 16.5
+  },
+  {
+   "i": 60,
+   "w": "strict",
+   "t": 24.04,
+   "line": 5,
+   "house": 18.08,
+   "smax": 16.12,
+   "sfx": null,
+   "bed_sfx_smax": 16.12
+  },
+  {
+   "i": 61,
+   "w": "officers,",
+   "t": 24.39,
+   "line": 5,
+   "house": 18.5,
+   "smax": 16.55,
+   "sfx": null,
+   "bed_sfx_smax": 16.55
+  },
+  {
+   "i": 62,
+   "w": "and",
+   "t": 25.08,
+   "line": 5,
+   "house": 21.67,
+   "smax": 17.53,
+   "sfx": null,
+   "bed_sfx_smax": 17.53
+  },
+  {
+   "i": 63,
+   "w": "ignored",
+   "t": 25.26,
+   "line": 5,
+   "house": 19.13,
+   "smax": 16.06,
+   "sfx": null,
+   "bed_sfx_smax": 16.06
+  },
+  {
+   "i": 64,
+   "w": "orders",
+   "t": 25.69,
+   "line": 5,
+   "house": 18.29,
+   "smax": 15.82,
+   "sfx": null,
+   "bed_sfx_smax": 15.82
+  },
+  {
+   "i": 65,
+   "w": "to",
+   "t": 26.2,
+   "line": 5,
+   "house": 16.83,
+   "smax": 16.03,
+   "sfx": null,
+   "bed_sfx_smax": 16.03
+  },
+  {
+   "i": 66,
+   "w": "send",
+   "t": 26.38,
+   "line": 5,
+   "house": 19.61,
+   "smax": 15.94,
+   "sfx": null,
+   "bed_sfx_smax": 15.94
+  },
+  {
+   "i": 67,
+   "w": "troops",
+   "t": 26.62,
+   "line": 5,
+   "house": 21.12,
+   "smax": 16.53,
+   "sfx": null,
+   "bed_sfx_smax": 16.53
+  },
+  {
+   "i": 68,
+   "w": "to",
+   "t": 26.99,
+   "line": 5,
+   "house": 19.78,
+   "smax": 15.19,
+   "sfx": null,
+   "bed_sfx_smax": 15.19
+  },
+  {
+   "i": 69,
+   "w": "Armenia.",
+   "t": 27.14,
+   "line": 5,
+   "house": 20.06,
+   "smax": 16.52,
+   "sfx": null,
+   "bed_sfx_smax": 16.52
+  },
+  {
+   "i": 70,
+   "w": "The",
+   "t": 28.61,
+   "line": 6,
+   "house": 19.93,
+   "smax": 16.95,
+   "sfx": null,
+   "bed_sfx_smax": 16.95
+  },
+  {
+   "i": 71,
+   "w": "emperor's",
+   "t": 28.77,
+   "line": 6,
+   "house": 20.34,
+   "smax": 16.8,
+   "sfx": null,
+   "bed_sfx_smax": 16.8
+  },
+  {
+   "i": 72,
+   "w": "son",
+   "t": 29.13,
+   "line": 6,
+   "house": 20.41,
+   "smax": 16.77,
+   "sfx": null,
+   "bed_sfx_smax": 16.77
+  },
+  {
+   "i": 73,
+   "w": "held",
+   "t": 29.48,
+   "line": 6,
+   "house": 20.39,
+   "smax": 16.64,
+   "sfx": null,
+   "bed_sfx_smax": 16.64
+  },
+  {
+   "i": 74,
+   "w": "the",
+   "t": 29.69,
+   "line": 6,
+   "house": 20.13,
+   "smax": 16.38,
+   "sfx": null,
+   "bed_sfx_smax": 16.38
+  },
+  {
+   "i": 75,
+   "w": "higher",
+   "t": 29.81,
+   "line": 6,
+   "house": 20.27,
+   "smax": 16.52,
+   "sfx": null,
+   "bed_sfx_smax": 16.52
+  },
+  {
+   "i": 76,
+   "w": "command.",
+   "t": 30.08,
+   "line": 6,
+   "house": 19.83,
+   "smax": 16.58,
+   "sfx": null,
+   "bed_sfx_smax": 16.58
+  },
+  {
+   "i": 77,
+   "w": "Piso",
+   "t": 31.27,
+   "line": 6,
+   "house": 21.4,
+   "smax": 17.41,
+   "sfx": null,
+   "bed_sfx_smax": 17.41
+  },
+  {
+   "i": 78,
+   "w": "was",
+   "t": 31.74,
+   "line": 6,
+   "house": 19.36,
+   "smax": 16.44,
+   "sfx": null,
+   "bed_sfx_smax": 16.44
+  },
+  {
+   "i": 79,
+   "w": "building",
+   "t": 31.91,
+   "line": 6,
+   "house": 20.1,
+   "smax": 17.75,
+   "sfx": null,
+   "bed_sfx_smax": 17.75
+  },
+  {
+   "i": 80,
+   "w": "a",
+   "t": 32.26,
+   "line": 6,
+   "house": 10.49,
+   "smax": 8.14,
+   "sfx": null,
+   "bed_sfx_smax": 8.14
+  },
+  {
+   "i": 81,
+   "w": "following",
+   "t": 32.37,
+   "line": 6,
+   "house": 20.12,
+   "smax": 17.07,
+   "sfx": null,
+   "bed_sfx_smax": 17.07
+  },
+  {
+   "i": 82,
+   "w": "of",
+   "t": 32.81,
+   "line": 6,
+   "house": 16.18,
+   "smax": 11.89,
+   "sfx": null,
+   "bed_sfx_smax": 11.89
+  },
+  {
+   "i": 83,
+   "w": "his",
+   "t": 32.91,
+   "line": 6,
+   "house": 19.13,
+   "smax": 15.95,
+   "sfx": null,
+   "bed_sfx_smax": 15.95
+  },
+  {
+   "i": 84,
+   "w": "own.",
+   "t": 33.09,
+   "line": 6,
+   "house": 17.33,
+   "smax": 14.7,
+   "sfx": null,
+   "bed_sfx_smax": 14.7
+  },
+  {
+   "i": 85,
+   "w": "Then",
+   "t": 34.18,
+   "line": 7,
+   "house": 18.96,
+   "smax": 16.65,
+   "sfx": null,
+   "bed_sfx_smax": 16.65
+  },
+  {
+   "i": 86,
+   "w": "Germanicus",
+   "t": 34.56,
+   "line": 7,
+   "house": 18.17,
+   "smax": 15.23,
+   "sfx": null,
+   "bed_sfx_smax": 15.23
+  },
+  {
+   "i": 87,
+   "w": "fell",
+   "t": 35.27,
+   "line": 7,
+   "house": 17.57,
+   "smax": 15.2,
+   "sfx": null,
+   "bed_sfx_smax": 15.2
+  },
+  {
+   "i": 88,
+   "w": "ill",
+   "t": 35.54,
+   "line": 7,
+   "house": 17.31,
+   "smax": 15.77,
+   "sfx": null,
+   "bed_sfx_smax": 15.77
+  },
+  {
+   "i": 89,
+   "w": "near",
+   "t": 35.84,
+   "line": 7,
+   "house": 17.36,
+   "smax": 15.82,
+   "sfx": null,
+   "bed_sfx_smax": 15.82
+  },
+  {
+   "i": 90,
+   "w": "Antioch.",
+   "t": 36.06,
+   "line": 7,
+   "house": 16.22,
+   "smax": 15.6,
+   "sfx": null,
+   "bed_sfx_smax": 15.6
+  },
+  {
+   "i": 91,
+   "w": "Tacitus",
+   "t": 37.09,
+   "line": 8,
+   "house": 18.42,
+   "smax": 15.53,
+   "sfx": null,
+   "bed_sfx_smax": 15.53
+  },
+  {
+   "i": 92,
+   "w": "says",
+   "t": 37.69,
+   "line": 8,
+   "house": 18.54,
+   "smax": 15.52,
+   "sfx": null,
+   "bed_sfx_smax": 15.52
+  },
+  {
+   "i": 93,
+   "w": "human",
+   "t": 38.06,
+   "line": 8,
+   "house": 18.87,
+   "smax": 14.78,
+   "sfx": null,
+   "bed_sfx_smax": 14.78
+  },
+  {
+   "i": 94,
+   "w": "remains,",
+   "t": 38.51,
+   "line": 8,
+   "house": 17.95,
+   "smax": 13.84,
+   "sfx": null,
+   "bed_sfx_smax": 13.84
+  },
+  {
+   "i": 95,
+   "w": "spells,",
+   "t": 39.35,
+   "line": 8,
+   "house": 19.57,
+   "smax": 15.95,
+   "sfx": null,
+   "bed_sfx_smax": 15.95
+  },
+  {
+   "i": 96,
+   "w": "and",
+   "t": 39.93,
+   "line": 8,
+   "house": 15.74,
+   "smax": 13.89,
+   "sfx": null,
+   "bed_sfx_smax": 13.89
+  },
+  {
+   "i": 97,
+   "w": "lead",
+   "t": 40.16,
+   "line": 8,
+   "house": 18.7,
+   "smax": 16.85,
+   "sfx": null,
+   "bed_sfx_smax": 16.85
+  },
+  {
+   "i": 98,
+   "w": "tablets",
+   "t": 40.41,
+   "line": 8,
+   "house": 19.33,
+   "smax": 17.47,
+   "sfx": null,
+   "bed_sfx_smax": 17.47
+  },
+  {
+   "i": 99,
+   "w": "bearing",
+   "t": 41.1,
+   "line": 8,
+   "house": 18.37,
+   "smax": 16.86,
+   "sfx": null,
+   "bed_sfx_smax": 16.86
+  },
+  {
+   "i": 100,
+   "w": "his",
+   "t": 41.51,
+   "line": 8,
+   "house": 18.07,
+   "smax": 16.56,
+   "sfx": null,
+   "bed_sfx_smax": 16.56
+  },
+  {
+   "i": 101,
+   "w": "name",
+   "t": 41.69,
+   "line": 8,
+   "house": 18.44,
+   "smax": 16.61,
+   "sfx": null,
+   "bed_sfx_smax": 16.61
+  },
+  {
+   "i": 102,
+   "w": "were",
+   "t": 41.96,
+   "line": 8,
+   "house": 18.36,
+   "smax": 16.54,
+   "sfx": null,
+   "bed_sfx_smax": 16.54
+  },
+  {
+   "i": 103,
+   "w": "found",
+   "t": 42.12,
+   "line": 8,
+   "house": 19.23,
+   "smax": 16.1,
+   "sfx": null,
+   "bed_sfx_smax": 16.1
+  },
+  {
+   "i": 104,
+   "w": "hidden",
+   "t": 42.4,
+   "line": 8,
+   "house": 19.57,
+   "smax": 16.44,
+   "sfx": null,
+   "bed_sfx_smax": 16.44
+  },
+  {
+   "i": 105,
+   "w": "in",
+   "t": 42.74,
+   "line": 8,
+   "house": 16.69,
+   "smax": 12.15,
+   "sfx": null,
+   "bed_sfx_smax": 12.15
+  },
+  {
+   "i": 106,
+   "w": "the",
+   "t": 42.85,
+   "line": 8,
+   "house": 20.09,
+   "smax": 14.59,
+   "sfx": null,
+   "bed_sfx_smax": 14.59
+  },
+  {
+   "i": 107,
+   "w": "floor",
+   "t": 42.97,
+   "line": 8,
+   "house": 17.32,
+   "smax": 13.07,
+   "sfx": null,
+   "bed_sfx_smax": 13.07
+  },
+  {
+   "i": 108,
+   "w": "and",
+   "t": 43.41,
+   "line": 8,
+   "house": 15.77,
+   "smax": 11.52,
+   "sfx": null,
+   "bed_sfx_smax": 11.52
+  },
+  {
+   "i": 109,
+   "w": "walls.",
+   "t": 43.59,
+   "line": 8,
+   "house": 17.6,
+   "smax": 13.35,
+   "sfx": null,
+   "bed_sfx_smax": 13.35
+  },
+  {
+   "i": 110,
+   "w": "Germanicus",
+   "t": 44.64,
+   "line": 9,
+   "house": 18.97,
+   "smax": 16.96,
+   "sfx": null,
+   "bed_sfx_smax": 16.96
+  },
+  {
+   "i": 111,
+   "w": "believed",
+   "t": 45.33,
+   "line": 9,
+   "house": 19.81,
+   "smax": 17.72,
+   "sfx": null,
+   "bed_sfx_smax": 17.72
+  },
+  {
+   "i": 112,
+   "w": "Piso",
+   "t": 45.8,
+   "line": 9,
+   "house": 21.48,
+   "smax": 18.26,
+   "sfx": null,
+   "bed_sfx_smax": 18.26
+  },
+  {
+   "i": 113,
+   "w": "had",
+   "t": 46.27,
+   "line": 9,
+   "house": 18.71,
+   "smax": 16.36,
+   "sfx": null,
+   "bed_sfx_smax": 16.36
+  },
+  {
+   "i": 114,
+   "w": "poisoned",
+   "t": 46.44,
+   "line": 9,
+   "house": 19.91,
+   "smax": 16.5,
+   "sfx": null,
+   "bed_sfx_smax": 16.5
+  },
+  {
+   "i": 115,
+   "w": "him.",
+   "t": 46.87,
+   "line": 9,
+   "house": 18.85,
+   "smax": 15.44,
+   "sfx": null,
+   "bed_sfx_smax": 15.44
+  },
+  {
+   "i": 116,
+   "w": "Dying,",
+   "t": 47.69,
+   "line": 9,
+   "house": 15.12,
+   "smax": 12.5,
+   "sfx": null,
+   "bed_sfx_smax": 12.5
+  },
+  {
+   "i": 117,
+   "w": "he",
+   "t": 48.37,
+   "line": 9,
+   "house": 14.88,
+   "smax": 12.26,
+   "sfx": null,
+   "bed_sfx_smax": 12.26
+  },
+  {
+   "i": 118,
+   "w": "asked",
+   "t": 48.52,
+   "line": 9,
+   "house": 15.06,
+   "smax": 12.44,
+   "sfx": null,
+   "bed_sfx_smax": 12.44
+  },
+  {
+   "i": 119,
+   "w": "his",
+   "t": 48.83,
+   "line": 9,
+   "house": 14.76,
+   "smax": 13.22,
+   "sfx": null,
+   "bed_sfx_smax": 13.22
+  },
+  {
+   "i": 120,
+   "w": "friends",
+   "t": 49.01,
+   "line": 9,
+   "house": 15.96,
+   "smax": 14.43,
+   "sfx": null,
+   "bed_sfx_smax": 14.43
+  },
+  {
+   "i": 121,
+   "w": "to",
+   "t": 49.42,
+   "line": 9,
+   "house": 15.44,
+   "smax": 12.5,
+   "sfx": null,
+   "bed_sfx_smax": 12.5
+  },
+  {
+   "i": 122,
+   "w": "avenge",
+   "t": 49.56,
+   "line": 9,
+   "house": 18.12,
+   "smax": 15.31,
+   "sfx": null,
+   "bed_sfx_smax": 15.31
+  },
+  {
+   "i": 123,
+   "w": "him.",
+   "t": 49.99,
+   "line": 9,
+   "house": 15.66,
+   "smax": 12.85,
+   "sfx": null,
+   "bed_sfx_smax": 12.85
+  },
+  {
+   "i": 124,
+   "w": "After",
+   "t": 50.99,
+   "line": 10,
+   "house": 19.22,
+   "smax": 15.61,
+   "sfx": null,
+   "bed_sfx_smax": 15.61
+  },
+  {
+   "i": 125,
+   "w": "Germanicus",
+   "t": 51.34,
+   "line": 10,
+   "house": 18.97,
+   "smax": 15.73,
+   "sfx": null,
+   "bed_sfx_smax": 15.73
+  },
+  {
+   "i": 126,
+   "w": "died,",
+   "t": 52.0,
+   "line": 10,
+   "house": 18.56,
+   "smax": 15.32,
+   "sfx": null,
+   "bed_sfx_smax": 15.32
+  },
+  {
+   "i": 127,
+   "w": "Piso",
+   "t": 52.62,
+   "line": 10,
+   "house": 20.46,
+   "smax": 18.12,
+   "sfx": null,
+   "bed_sfx_smax": 18.12
+  },
+  {
+   "i": 128,
+   "w": "wanted",
+   "t": 53.06,
+   "line": 10,
+   "house": 18.14,
+   "smax": 15.29,
+   "sfx": null,
+   "bed_sfx_smax": 15.29
+  },
+  {
+   "i": 129,
+   "w": "Syria",
+   "t": 53.41,
+   "line": 10,
+   "house": 18.06,
+   "smax": 15.21,
+   "sfx": null,
+   "bed_sfx_smax": 15.21
+  },
+  {
+   "i": 130,
+   "w": "back.",
+   "t": 53.85,
+   "line": 10,
+   "house": 18.6,
+   "smax": 15.34,
+   "sfx": null,
+   "bed_sfx_smax": 15.34
+  },
+  {
+   "i": 131,
+   "w": "His",
+   "t": 54.8,
+   "line": 11,
+   "house": 17.63,
+   "smax": 15.12,
+   "sfx": null,
+   "bed_sfx_smax": 15.12
+  },
+  {
+   "i": 132,
+   "w": "own",
+   "t": 55.01,
+   "line": 11,
+   "house": 17.3,
+   "smax": 14.79,
+   "sfx": null,
+   "bed_sfx_smax": 14.79
+  },
+  {
+   "i": 133,
+   "w": "son",
+   "t": 55.24,
+   "line": 11,
+   "house": 20.38,
+   "smax": 16.68,
+   "sfx": null,
+   "bed_sfx_smax": 16.68
+  },
+  {
+   "i": 134,
+   "w": "urged",
+   "t": 55.63,
+   "line": 11,
+   "house": 20.59,
+   "smax": 17.01,
+   "sfx": null,
+   "bed_sfx_smax": 17.01
+  },
+  {
+   "i": 135,
+   "w": "him",
+   "t": 55.95,
+   "line": 11,
+   "house": 22.65,
+   "smax": 16.62,
+   "sfx": null,
+   "bed_sfx_smax": 16.62
+  },
+  {
+   "i": 136,
+   "w": "to",
+   "t": 56.1,
+   "line": 11,
+   "house": 20.44,
+   "smax": 15.82,
+   "sfx": null,
+   "bed_sfx_smax": 15.82
+  },
+  {
+   "i": 137,
+   "w": "return",
+   "t": 56.24,
+   "line": 11,
+   "house": 18.34,
+   "smax": 14.01,
+   "sfx": null,
+   "bed_sfx_smax": 14.01
+  },
+  {
+   "i": 138,
+   "w": "to",
+   "t": 56.63,
+   "line": 11,
+   "house": 15.7,
+   "smax": 10.46,
+   "sfx": null,
+   "bed_sfx_smax": 10.46
+  },
+  {
+   "i": 139,
+   "w": "Rome,",
+   "t": 56.77,
+   "line": 11,
+   "house": 16.81,
+   "smax": 12.15,
+   "sfx": null,
+   "bed_sfx_smax": 12.15
+  },
+  {
+   "i": 140,
+   "w": "warning",
+   "t": 57.28,
+   "line": 11,
+   "house": 17.03,
+   "smax": 12.91,
+   "sfx": null,
+   "bed_sfx_smax": 12.91
+  },
+  {
+   "i": 141,
+   "w": "that",
+   "t": 57.68,
+   "line": 11,
+   "house": 19.14,
+   "smax": 16.43,
+   "sfx": null,
+   "bed_sfx_smax": 16.43
+  },
+  {
+   "i": 142,
+   "w": "going",
+   "t": 57.84,
+   "line": 11,
+   "house": 19.85,
+   "smax": 16.72,
+   "sfx": null,
+   "bed_sfx_smax": 16.72
+  },
+  {
+   "i": 143,
+   "w": "back",
+   "t": 58.14,
+   "line": 11,
+   "house": 19.47,
+   "smax": 16.86,
+   "sfx": null,
+   "bed_sfx_smax": 16.86
+  },
+  {
+   "i": 144,
+   "w": "to",
+   "t": 58.35,
+   "line": 11,
+   "house": 18.03,
+   "smax": 15.42,
+   "sfx": null,
+   "bed_sfx_smax": 15.42
+  },
+  {
+   "i": 145,
+   "w": "Syria",
+   "t": 58.5,
+   "line": 11,
+   "house": 19.56,
+   "smax": 17.09,
+   "sfx": null,
+   "bed_sfx_smax": 17.09
+  },
+  {
+   "i": 146,
+   "w": "could",
+   "t": 59.05,
+   "line": 11,
+   "house": 19.38,
+   "smax": 16.8,
+   "sfx": null,
+   "bed_sfx_smax": 16.8
+  },
+  {
+   "i": 147,
+   "w": "mean",
+   "t": 59.28,
+   "line": 11,
+   "house": 19.67,
+   "smax": 16.52,
+   "sfx": null,
+   "bed_sfx_smax": 16.52
+  },
+  {
+   "i": 148,
+   "w": "civil",
+   "t": 59.56,
+   "line": 11,
+   "house": 19.78,
+   "smax": 16.38,
+   "sfx": null,
+   "bed_sfx_smax": 16.38
+  },
+  {
+   "i": 149,
+   "w": "war.",
+   "t": 59.91,
+   "line": 11,
+   "house": 17.66,
+   "smax": 15.94,
+   "sfx": null,
+   "bed_sfx_smax": 15.94
+  },
+  {
+   "i": 150,
+   "w": "Piso",
+   "t": 60.93,
+   "line": 12,
+   "house": 17.24,
+   "smax": 15.54,
+   "sfx": 18.8,
+   "bed_sfx_smax": 12.49
+  },
+  {
+   "i": 151,
+   "w": "chose",
+   "t": 61.44,
+   "line": 12,
+   "house": 17.93,
+   "smax": 14.96,
+   "sfx": 17.45,
+   "bed_sfx_smax": 10.8
+  },
+  {
+   "i": 152,
+   "w": "force.",
+   "t": 61.8,
+   "line": 12,
+   "house": 17.19,
+   "smax": 14.68,
+   "sfx": 17.17,
+   "bed_sfx_smax": 10.52
+  },
+  {
+   "i": 153,
+   "w": "His",
+   "t": 62.45,
+   "line": 12,
+   "house": 18.59,
+   "smax": 16.01,
+   "sfx": 18.65,
+   "bed_sfx_smax": 13.65
+  },
+  {
+   "i": 154,
+   "w": "men",
+   "t": 62.69,
+   "line": 12,
+   "house": 19.31,
+   "smax": 16.48,
+   "sfx": 19.17,
+   "bed_sfx_smax": 14.12
+  },
+  {
+   "i": 155,
+   "w": "fought",
+   "t": 63.04,
+   "line": 12,
+   "house": 18.75,
+   "smax": 17.05,
+   "sfx": 18.62,
+   "bed_sfx_smax": 12.9
+  },
+  {
+   "i": 156,
+   "w": "Roman",
+   "t": 63.39,
+   "line": 12,
+   "house": 20.01,
+   "smax": 16.99,
+   "sfx": 19.6,
+   "bed_sfx_smax": 13.87
+  },
+  {
+   "i": 157,
+   "w": "troops.",
+   "t": 63.77,
+   "line": 12,
+   "house": 19.05,
+   "smax": 16.02,
+   "sfx": 18.22,
+   "bed_sfx_smax": 13.53
+  },
+  {
+   "i": 158,
+   "w": "He",
+   "t": 64.39,
+   "line": 12,
+   "house": 20.07,
+   "smax": 16.44,
+   "sfx": 18.38,
+   "bed_sfx_smax": 12.86
+  },
+  {
+   "i": 159,
+   "w": "lost.",
+   "t": 64.63,
+   "line": 12,
+   "house": 19.32,
+   "smax": 15.92,
+   "sfx": 18.65,
+   "bed_sfx_smax": 13.13
+  },
+  {
+   "i": 160,
+   "w": "Now",
+   "t": 65.63,
+   "line": 13,
+   "house": 19.28,
+   "smax": 15.42,
+   "sfx": 20.17,
+   "bed_sfx_smax": 14.8
+  },
+  {
+   "i": 161,
+   "w": "he",
+   "t": 66.05,
+   "line": 13,
+   "house": 18.11,
+   "smax": 15.08,
+   "sfx": null,
+   "bed_sfx_smax": 15.08
+  },
+  {
+   "i": 162,
+   "w": "had",
+   "t": 66.2,
+   "line": 13,
+   "house": 17.92,
+   "smax": 14.31,
+   "sfx": null,
+   "bed_sfx_smax": 14.31
+  },
+  {
+   "i": 163,
+   "w": "to",
+   "t": 66.36,
+   "line": 13,
+   "house": 16.26,
+   "smax": 12.65,
+   "sfx": null,
+   "bed_sfx_smax": 12.65
+  },
+  {
+   "i": 164,
+   "w": "face",
+   "t": 66.5,
+   "line": 13,
+   "house": 15.86,
+   "smax": 12.47,
+   "sfx": null,
+   "bed_sfx_smax": 12.47
+  },
+  {
+   "i": 165,
+   "w": "the",
+   "t": 66.86,
+   "line": 13,
+   "house": 14.8,
+   "smax": 11.41,
+   "sfx": null,
+   "bed_sfx_smax": 11.41
+  },
+  {
+   "i": 166,
+   "w": "Senate.",
+   "t": 67.05,
+   "line": 13,
+   "house": 15.03,
+   "smax": 11.63,
+   "sfx": null,
+   "bed_sfx_smax": 11.63
+  },
+  {
+   "i": 167,
+   "w": "Outside,",
+   "t": 68.32,
+   "line": 14,
+   "house": 20.55,
+   "smax": 16.54,
+   "sfx": null,
+   "bed_sfx_smax": 16.54
+  },
+  {
+   "i": 168,
+   "w": "crowds",
+   "t": 69.09,
+   "line": 14,
+   "house": 19.89,
+   "smax": 15.59,
+   "sfx": null,
+   "bed_sfx_smax": 15.59
+  },
+  {
+   "i": 169,
+   "w": "dragged",
+   "t": 69.73,
+   "line": 14,
+   "house": 19.33,
+   "smax": 15.69,
+   "sfx": null,
+   "bed_sfx_smax": 15.69
+  },
+  {
+   "i": 170,
+   "w": "off",
+   "t": 70.1,
+   "line": 14,
+   "house": 18.38,
+   "smax": 16.62,
+   "sfx": null,
+   "bed_sfx_smax": 16.62
+  },
+  {
+   "i": 171,
+   "w": "his",
+   "t": 70.29,
+   "line": 14,
+   "house": 18.28,
+   "smax": 15.91,
+   "sfx": null,
+   "bed_sfx_smax": 15.91
+  },
+  {
+   "i": 172,
+   "w": "statues",
+   "t": 70.42,
+   "line": 14,
+   "house": 18.38,
+   "smax": 16.01,
+   "sfx": null,
+   "bed_sfx_smax": 16.01
+  },
+  {
+   "i": 173,
+   "w": "to",
+   "t": 70.95,
+   "line": 14,
+   "house": 18.26,
+   "smax": 15.59,
+   "sfx": null,
+   "bed_sfx_smax": 15.59
+  },
+  {
+   "i": 174,
+   "w": "smash",
+   "t": 71.1,
+   "line": 14,
+   "house": 18.63,
+   "smax": 18.05,
+   "sfx": null,
+   "bed_sfx_smax": 18.05
+  },
+  {
+   "i": 175,
+   "w": "them",
+   "t": 71.46,
+   "line": 14,
+   "house": 18.37,
+   "smax": 17.07,
+   "sfx": null,
+   "bed_sfx_smax": 17.07
+  },
+  {
+   "i": 176,
+   "w": "and",
+   "t": 71.72,
+   "line": 14,
+   "house": 18.17,
+   "smax": 15.65,
+   "sfx": null,
+   "bed_sfx_smax": 15.65
+  },
+  {
+   "i": 177,
+   "w": "threatened",
+   "t": 71.93,
+   "line": 14,
+   "house": 19.0,
+   "smax": 16.48,
+   "sfx": null,
+   "bed_sfx_smax": 16.48
+  },
+  {
+   "i": 178,
+   "w": "violence",
+   "t": 72.39,
+   "line": 14,
+   "house": 18.82,
+   "smax": 16.28,
+   "sfx": null,
+   "bed_sfx_smax": 16.28
+  },
+  {
+   "i": 179,
+   "w": "if",
+   "t": 72.89,
+   "line": 14,
+   "house": 16.88,
+   "smax": 14.72,
+   "sfx": null,
+   "bed_sfx_smax": 14.72
+  },
+  {
+   "i": 180,
+   "w": "he",
+   "t": 73.01,
+   "line": 14,
+   "house": 17.22,
+   "smax": 15.06,
+   "sfx": null,
+   "bed_sfx_smax": 15.06
+  },
+  {
+   "i": 181,
+   "w": "escaped",
+   "t": 73.12,
+   "line": 14,
+   "house": 19.25,
+   "smax": 16.22,
+   "sfx": null,
+   "bed_sfx_smax": 16.22
+  },
+  {
+   "i": 182,
+   "w": "punishment.",
+   "t": 73.58,
+   "line": 14,
+   "house": 19.27,
+   "smax": 13.93,
+   "sfx": null,
+   "bed_sfx_smax": 13.93
+  },
+  {
+   "i": 183,
+   "w": "Inside,",
+   "t": 74.5,
+   "line": 15,
+   "house": 18.08,
+   "smax": 14.33,
+   "sfx": null,
+   "bed_sfx_smax": 14.33
+  },
+  {
+   "i": 184,
+   "w": "his",
+   "t": 75.07,
+   "line": 15,
+   "house": 20.1,
+   "smax": 15.77,
+   "sfx": null,
+   "bed_sfx_smax": 15.77
+  },
+  {
+   "i": 185,
+   "w": "accusers",
+   "t": 75.21,
+   "line": 15,
+   "house": 18.08,
+   "smax": 16.01,
+   "sfx": null,
+   "bed_sfx_smax": 16.01
+  },
+  {
+   "i": 186,
+   "w": "alleged",
+   "t": 75.81,
+   "line": 15,
+   "house": 18.02,
+   "smax": 15.66,
+   "sfx": null,
+   "bed_sfx_smax": 15.66
+  },
+  {
+   "i": 187,
+   "w": "poisoning.",
+   "t": 76.27,
+   "line": 15,
+   "house": 19.54,
+   "smax": 15.41,
+   "sfx": null,
+   "bed_sfx_smax": 15.41
+  },
+  {
+   "i": 188,
+   "w": "But",
+   "t": 77.22,
+   "line": 16,
+   "house": 19.55,
+   "smax": 17.2,
+   "sfx": null,
+   "bed_sfx_smax": 17.2
+  },
+  {
+   "i": 189,
+   "w": "Tacitus",
+   "t": 77.43,
+   "line": 16,
+   "house": 19.3,
+   "smax": 16.28,
+   "sfx": null,
+   "bed_sfx_smax": 16.28
+  },
+  {
+   "i": 190,
+   "w": "says",
+   "t": 77.94,
+   "line": 16,
+   "house": 18.43,
+   "smax": 14.89,
+   "sfx": null,
+   "bed_sfx_smax": 14.89
+  },
+  {
+   "i": 191,
+   "w": "they",
+   "t": 78.23,
+   "line": 16,
+   "house": 19.18,
+   "smax": 15.63,
+   "sfx": null,
+   "bed_sfx_smax": 15.63
+  },
+  {
+   "i": 192,
+   "w": "failed",
+   "t": 78.47,
+   "line": 16,
+   "house": 19.18,
+   "smax": 15.69,
+   "sfx": null,
+   "bed_sfx_smax": 15.69
+  },
+  {
+   "i": 193,
+   "w": "to",
+   "t": 78.84,
+   "line": 16,
+   "house": 15.99,
+   "smax": 14.48,
+   "sfx": null,
+   "bed_sfx_smax": 14.48
+  },
+  {
+   "i": 194,
+   "w": "prove",
+   "t": 78.97,
+   "line": 16,
+   "house": 18.63,
+   "smax": 16.07,
+   "sfx": null,
+   "bed_sfx_smax": 16.07
+  },
+  {
+   "i": 195,
+   "w": "it.",
+   "t": 79.26,
+   "line": 16,
+   "house": 14.51,
+   "smax": 10.22,
+   "sfx": null,
+   "bed_sfx_smax": 10.22
+  },
+  {
+   "i": 196,
+   "w": "He",
+   "t": 80.13,
+   "line": 17,
+   "house": 19.01,
+   "smax": 16.55,
+   "sfx": null,
+   "bed_sfx_smax": 16.55
+  },
+  {
+   "i": 197,
+   "w": "could",
+   "t": 80.27,
+   "line": 17,
+   "house": 18.78,
+   "smax": 16.76,
+   "sfx": null,
+   "bed_sfx_smax": 16.76
+  },
+  {
+   "i": 198,
+   "w": "be",
+   "t": 80.44,
+   "line": 17,
+   "house": 17.13,
+   "smax": 15.28,
+   "sfx": null,
+   "bed_sfx_smax": 15.28
+  },
+  {
+   "i": 199,
+   "w": "condemned",
+   "t": 80.56,
+   "line": 17,
+   "house": 18.99,
+   "smax": 15.07,
+   "sfx": null,
+   "bed_sfx_smax": 15.07
+  },
+  {
+   "i": 200,
+   "w": "for",
+   "t": 81.13,
+   "line": 17,
+   "house": 18.7,
+   "smax": 14.65,
+   "sfx": null,
+   "bed_sfx_smax": 14.65
+  },
+  {
+   "i": 201,
+   "w": "corrupting",
+   "t": 81.28,
+   "line": 17,
+   "house": 19.04,
+   "smax": 14.98,
+   "sfx": null,
+   "bed_sfx_smax": 14.98
+  },
+  {
+   "i": 202,
+   "w": "the",
+   "t": 81.81,
+   "line": 17,
+   "house": 16.39,
+   "smax": 15.06,
+   "sfx": null,
+   "bed_sfx_smax": 15.06
+  },
+  {
+   "i": 203,
+   "w": "army",
+   "t": 81.95,
+   "line": 17,
+   "house": 16.96,
+   "smax": 15.18,
+   "sfx": null,
+   "bed_sfx_smax": 15.18
+  },
+  {
+   "i": 204,
+   "w": "and",
+   "t": 82.24,
+   "line": 17,
+   "house": 14.55,
+   "smax": 12.77,
+   "sfx": null,
+   "bed_sfx_smax": 12.77
+  },
+  {
+   "i": 205,
+   "w": "taking",
+   "t": 82.39,
+   "line": 17,
+   "house": 16.05,
+   "smax": 13.36,
+   "sfx": null,
+   "bed_sfx_smax": 13.36
+  },
+  {
+   "i": 206,
+   "w": "up",
+   "t": 82.77,
+   "line": 17,
+   "house": 18.03,
+   "smax": 13.98,
+   "sfx": null,
+   "bed_sfx_smax": 13.98
+  },
+  {
+   "i": 207,
+   "w": "arms",
+   "t": 82.94,
+   "line": 17,
+   "house": 18.17,
+   "smax": 14.12,
+   "sfx": null,
+   "bed_sfx_smax": 14.12
+  },
+  {
+   "i": 208,
+   "w": "against",
+   "t": 83.23,
+   "line": 17,
+   "house": 18.17,
+   "smax": 14.94,
+   "sfx": null,
+   "bed_sfx_smax": 14.94
+  },
+  {
+   "i": 209,
+   "w": "Rome.",
+   "t": 83.59,
+   "line": 17,
+   "house": 17.24,
+   "smax": 14.98,
+   "sfx": null,
+   "bed_sfx_smax": 14.98
+  },
+  {
+   "i": 210,
+   "w": "That",
+   "t": 84.51,
+   "line": 17,
+   "house": 19.52,
+   "smax": 16.24,
+   "sfx": null,
+   "bed_sfx_smax": 16.24
+  },
+  {
+   "i": 211,
+   "w": "did",
+   "t": 84.69,
+   "line": 17,
+   "house": 19.65,
+   "smax": 16.36,
+   "sfx": null,
+   "bed_sfx_smax": 16.36
+  },
+  {
+   "i": 212,
+   "w": "not",
+   "t": 84.84,
+   "line": 17,
+   "house": 19.6,
+   "smax": 16.4,
+   "sfx": null,
+   "bed_sfx_smax": 16.4
+  },
+  {
+   "i": 213,
+   "w": "prove",
+   "t": 85.03,
+   "line": 17,
+   "house": 19.28,
+   "smax": 16.89,
+   "sfx": null,
+   "bed_sfx_smax": 16.89
+  },
+  {
+   "i": 214,
+   "w": "he",
+   "t": 85.44,
+   "line": 17,
+   "house": 18.32,
+   "smax": 15.83,
+   "sfx": null,
+   "bed_sfx_smax": 15.83
+  },
+  {
+   "i": 215,
+   "w": "had",
+   "t": 85.54,
+   "line": 17,
+   "house": 19.83,
+   "smax": 17.33,
+   "sfx": null,
+   "bed_sfx_smax": 17.33
+  },
+  {
+   "i": 216,
+   "w": "poisoned",
+   "t": 85.72,
+   "line": 17,
+   "house": 19.72,
+   "smax": 17.38,
+   "sfx": null,
+   "bed_sfx_smax": 17.38
+  },
+  {
+   "i": 217,
+   "w": "Germanicus.",
+   "t": 86.19,
+   "line": 17,
+   "house": 16.98,
+   "smax": 15.16,
+   "sfx": null,
+   "bed_sfx_smax": 15.16
+  },
+  {
+   "i": 218,
+   "w": "Before",
+   "t": 87.77,
+   "line": 18,
+   "house": 17.37,
+   "smax": 15.4,
+   "sfx": null,
+   "bed_sfx_smax": 15.4
+  },
+  {
+   "i": 219,
+   "w": "judgement,",
+   "t": 88.14,
+   "line": 18,
+   "house": 17.63,
+   "smax": 14.15,
+   "sfx": null,
+   "bed_sfx_smax": 14.15
+  },
+  {
+   "i": 220,
+   "w": "Piso",
+   "t": 89.02,
+   "line": 18,
+   "house": 17.89,
+   "smax": 14.77,
+   "sfx": null,
+   "bed_sfx_smax": 14.77
+  },
+  {
+   "i": 221,
+   "w": "was",
+   "t": 89.56,
+   "line": 18,
+   "house": 15.38,
+   "smax": 14.1,
+   "sfx": null,
+   "bed_sfx_smax": 14.1
+  },
+  {
+   "i": 222,
+   "w": "found",
+   "t": 89.74,
+   "line": 18,
+   "house": 18.28,
+   "smax": 16.11,
+   "sfx": null,
+   "bed_sfx_smax": 16.11
+  },
+  {
+   "i": 223,
+   "w": "dead",
+   "t": 90.06,
+   "line": 18,
+   "house": 18.56,
+   "smax": 16.12,
+   "sfx": null,
+   "bed_sfx_smax": 16.12
+  },
+  {
+   "i": 224,
+   "w": "in",
+   "t": 90.35,
+   "line": 18,
+   "house": 13.96,
+   "smax": 11.67,
+   "sfx": null,
+   "bed_sfx_smax": 11.67
+  },
+  {
+   "i": 225,
+   "w": "his",
+   "t": 90.46,
+   "line": 18,
+   "house": 16.49,
+   "smax": 14.21,
+   "sfx": null,
+   "bed_sfx_smax": 14.21
+  },
+  {
+   "i": 226,
+   "w": "room,",
+   "t": 90.64,
+   "line": 18,
+   "house": 18.24,
+   "smax": 15.95,
+   "sfx": null,
+   "bed_sfx_smax": 15.95
+  },
+  {
+   "i": 227,
+   "w": "a",
+   "t": 91.38,
+   "line": 18,
+   "house": 19.28,
+   "smax": 15.82,
+   "sfx": null,
+   "bed_sfx_smax": 15.82
+  },
+  {
+   "i": 228,
+   "w": "sword",
+   "t": 91.53,
+   "line": 18,
+   "house": 19.68,
+   "smax": 16.23,
+   "sfx": null,
+   "bed_sfx_smax": 16.23
+  },
+  {
+   "i": 229,
+   "w": "beside",
+   "t": 91.96,
+   "line": 18,
+   "house": 17.89,
+   "smax": 14.99,
+   "sfx": null,
+   "bed_sfx_smax": 14.99
+  },
+  {
+   "i": 230,
+   "w": "him.",
+   "t": 92.38,
+   "line": 18,
+   "house": 16.14,
+   "smax": 14.42,
+   "sfx": null,
+   "bed_sfx_smax": 14.42
+  },
+  {
+   "i": 231,
+   "w": "The",
+   "t": 93.47,
+   "line": 19,
+   "house": 18.93,
+   "smax": 17.06,
+   "sfx": null,
+   "bed_sfx_smax": 17.06
+  },
+  {
+   "i": 232,
+   "w": "Senate",
+   "t": 93.66,
+   "line": 19,
+   "house": 19.05,
+   "smax": 18.13,
+   "sfx": null,
+   "bed_sfx_smax": 18.13
+  },
+  {
+   "i": 233,
+   "w": "condemned",
+   "t": 94.06,
+   "line": 19,
+   "house": 18.74,
+   "smax": 14.57,
+   "sfx": null,
+   "bed_sfx_smax": 14.57
+  },
+  {
+   "i": 234,
+   "w": "him",
+   "t": 94.57,
+   "line": 19,
+   "house": 18.13,
+   "smax": 13.96,
+   "sfx": null,
+   "bed_sfx_smax": 13.96
+  },
+  {
+   "i": 235,
+   "w": "anyway,",
+   "t": 94.78,
+   "line": 19,
+   "house": 18.57,
+   "smax": 14.4,
+   "sfx": null,
+   "bed_sfx_smax": 14.4
+  },
+  {
+   "i": 236,
+   "w": "and",
+   "t": 95.63,
+   "line": 19,
+   "house": 17.68,
+   "smax": 13.92,
+   "sfx": null,
+   "bed_sfx_smax": 13.92
+  },
+  {
+   "i": 237,
+   "w": "ordered",
+   "t": 95.84,
+   "line": 19,
+   "house": 18.36,
+   "smax": 14.6,
+   "sfx": null,
+   "bed_sfx_smax": 14.6
+  },
+  {
+   "i": 238,
+   "w": "its",
+   "t": 96.2,
+   "line": 19,
+   "house": 17.89,
+   "smax": 15.62,
+   "sfx": null,
+   "bed_sfx_smax": 15.62
+  },
+  {
+   "i": 239,
+   "w": "decree",
+   "t": 96.39,
+   "line": 19,
+   "house": 16.54,
+   "smax": 14.94,
+   "sfx": null,
+   "bed_sfx_smax": 14.94
+  },
+  {
+   "i": 240,
+   "w": "displayed",
+   "t": 96.87,
+   "line": 19,
+   "house": 16.99,
+   "smax": 15.4,
+   "sfx": null,
+   "bed_sfx_smax": 15.4
+  },
+  {
+   "i": 241,
+   "w": "in",
+   "t": 97.49,
+   "line": 19,
+   "house": 15.13,
+   "smax": 13.96,
+   "sfx": null,
+   "bed_sfx_smax": 13.96
+  },
+  {
+   "i": 242,
+   "w": "bronze.",
+   "t": 97.64,
+   "line": 19,
+   "house": 19.53,
+   "smax": 16.42,
+   "sfx": null,
+   "bed_sfx_smax": 16.42
+  },
+  {
+   "i": 243,
+   "w": "Copies",
+   "t": 99.06,
+   "line": 20,
+   "house": 18.66,
+   "smax": 16.53,
+   "sfx": null,
+   "bed_sfx_smax": 16.53
+  },
+  {
+   "i": 244,
+   "w": "survive",
+   "t": 99.53,
+   "line": 20,
+   "house": 19.03,
+   "smax": 15.32,
+   "sfx": null,
+   "bed_sfx_smax": 15.32
+  },
+  {
+   "i": 245,
+   "w": "in",
+   "t": 100.09,
+   "line": 20,
+   "house": 12.8,
+   "smax": 8.57,
+   "sfx": null,
+   "bed_sfx_smax": 8.57
+  },
+  {
+   "i": 246,
+   "w": "Spain.",
+   "t": 100.25,
+   "line": 20,
+   "house": 17.94,
+   "smax": 14.97,
+   "sfx": null,
+   "bed_sfx_smax": 14.97
+  },
+  {
+   "i": 247,
+   "w": "They",
+   "t": 101.62,
+   "line": 20,
+   "house": 18.16,
+   "smax": 15.99,
+   "sfx": null,
+   "bed_sfx_smax": 15.99
+  },
+  {
+   "i": 248,
+   "w": "condemn",
+   "t": 101.81,
+   "line": 20,
+   "house": 18.28,
+   "smax": 15.29,
+   "sfx": null,
+   "bed_sfx_smax": 15.29
+  },
+  {
+   "i": 249,
+   "w": "his",
+   "t": 102.24,
+   "line": 20,
+   "house": 19.33,
+   "smax": 14.51,
+   "sfx": null,
+   "bed_sfx_smax": 14.51
+  },
+  {
+   "i": 250,
+   "w": "cruelty,",
+   "t": 102.41,
+   "line": 20,
+   "house": 19.89,
+   "smax": 15.2,
+   "sfx": null,
+   "bed_sfx_smax": 15.2
+  },
+  {
+   "i": 251,
+   "w": "his",
+   "t": 103.57,
+   "line": 20,
+   "house": 19.08,
+   "smax": 17.74,
+   "sfx": null,
+   "bed_sfx_smax": 17.74
+  },
+  {
+   "i": 252,
+   "w": "corruption",
+   "t": 103.77,
+   "line": 20,
+   "house": 17.03,
+   "smax": 15.21,
+   "sfx": null,
+   "bed_sfx_smax": 15.21
+  },
+  {
+   "i": 253,
+   "w": "of",
+   "t": 104.35,
+   "line": 20,
+   "house": 13.52,
+   "smax": 11.69,
+   "sfx": null,
+   "bed_sfx_smax": 11.69
+  },
+  {
+   "i": 254,
+   "w": "soldiers,",
+   "t": 104.51,
+   "line": 20,
+   "house": 17.08,
+   "smax": 15.26,
+   "sfx": null,
+   "bed_sfx_smax": 15.26
+  },
+  {
+   "i": 255,
+   "w": "and",
+   "t": 105.45,
+   "line": 20,
+   "house": 19.53,
+   "smax": 16.75,
+   "sfx": null,
+   "bed_sfx_smax": 16.75
+  },
+  {
+   "i": 256,
+   "w": "his",
+   "t": 105.65,
+   "line": 20,
+   "house": 19.29,
+   "smax": 16.52,
+   "sfx": null,
+   "bed_sfx_smax": 16.52
+  },
+  {
+   "i": 257,
+   "w": "attempt",
+   "t": 105.79,
+   "line": 20,
+   "house": 17.58,
+   "smax": 14.99,
+   "sfx": null,
+   "bed_sfx_smax": 14.99
+  },
+  {
+   "i": 258,
+   "w": "at",
+   "t": 106.28,
+   "line": 20,
+   "house": 11.31,
+   "smax": 8.32,
+   "sfx": null,
+   "bed_sfx_smax": 8.32
+  },
+  {
+   "i": 259,
+   "w": "civil",
+   "t": 106.45,
+   "line": 20,
+   "house": 17.15,
+   "smax": 14.16,
+   "sfx": null,
+   "bed_sfx_smax": 14.16
+  },
+  {
+   "i": 260,
+   "w": "war.",
+   "t": 106.82,
+   "line": 20,
+   "house": 16.98,
+   "smax": 13.99,
+   "sfx": null,
+   "bed_sfx_smax": 13.99
+  },
+  {
+   "i": 261,
+   "w": "They",
+   "t": 107.94,
+   "line": 21,
+   "house": 19.33,
+   "smax": 17.48,
+   "sfx": null,
+   "bed_sfx_smax": 17.48
+  },
+  {
+   "i": 262,
+   "w": "repeat",
+   "t": 108.16,
+   "line": 21,
+   "house": 18.85,
+   "smax": 17.03,
+   "sfx": null,
+   "bed_sfx_smax": 17.03
+  },
+  {
+   "i": 263,
+   "w": "Germanicus's",
+   "t": 108.62,
+   "line": 21,
+   "house": 18.83,
+   "smax": 16.12,
+   "sfx": null,
+   "bed_sfx_smax": 16.12
+  },
+  {
+   "i": 264,
+   "w": "accusation,",
+   "t": 109.45,
+   "line": 21,
+   "house": 19.41,
+   "smax": 15.08,
+   "sfx": null,
+   "bed_sfx_smax": 15.08
+  },
+  {
+   "i": 265,
+   "w": "but",
+   "t": 110.68,
+   "line": 21,
+   "house": 21.63,
+   "smax": 15.73,
+   "sfx": null,
+   "bed_sfx_smax": 15.73
+  },
+  {
+   "i": 266,
+   "w": "make",
+   "t": 110.88,
+   "line": 21,
+   "house": 21.47,
+   "smax": 15.56,
+   "sfx": null,
+   "bed_sfx_smax": 15.56
+  },
+  {
+   "i": 267,
+   "w": "no",
+   "t": 111.12,
+   "line": 21,
+   "house": 23.1,
+   "smax": 16.47,
+   "sfx": null,
+   "bed_sfx_smax": 16.47
+  },
+  {
+   "i": 268,
+   "w": "finding",
+   "t": 111.37,
+   "line": 21,
+   "house": 23.61,
+   "smax": 16.73,
+   "sfx": null,
+   "bed_sfx_smax": 16.73
+  },
+  {
+   "i": 269,
+   "w": "of",
+   "t": 111.83,
+   "line": 21,
+   "house": 19.8,
+   "smax": 12.64,
+   "sfx": null,
+   "bed_sfx_smax": 12.64
+  },
+  {
+   "i": 270,
+   "w": "murder.",
+   "t": 111.94,
+   "line": 21,
+   "house": 21.78,
+   "smax": 16.09,
+   "sfx": null,
+   "bed_sfx_smax": 16.09
+  },
+  {
+   "i": 271,
+   "w": "The",
+   "t": 112.94,
+   "line": 22,
+   "house": 22.17,
+   "smax": 17.61,
+   "sfx": null,
+   "bed_sfx_smax": 17.61
+  },
+  {
+   "i": 272,
+   "w": "man",
+   "t": 113.12,
+   "line": 22,
+   "house": 23.18,
+   "smax": 19.77,
+   "sfx": null,
+   "bed_sfx_smax": 19.77
+  },
+  {
+   "i": 273,
+   "w": "Germanicus",
+   "t": 113.45,
+   "line": 22,
+   "house": 21.79,
+   "smax": 18.03,
+   "sfx": null,
+   "bed_sfx_smax": 18.03
+  },
+  {
+   "i": 274,
+   "w": "saved",
+   "t": 114.09,
+   "line": 22,
+   "house": 19.37,
+   "smax": 16.76,
+   "sfx": null,
+   "bed_sfx_smax": 16.76
+  },
+  {
+   "i": 275,
+   "w": "was",
+   "t": 114.64,
+   "line": 22,
+   "house": 17.72,
+   "smax": 15.46,
+   "sfx": null,
+   "bed_sfx_smax": 15.46
+  },
+  {
+   "i": 276,
+   "w": "condemned",
+   "t": 114.88,
+   "line": 22,
+   "house": 21.62,
+   "smax": 17.24,
+   "sfx": null,
+   "bed_sfx_smax": 17.24
+  },
+  {
+   "i": 277,
+   "w": "as",
+   "t": 115.47,
+   "line": 22,
+   "house": 16.56,
+   "smax": 12.63,
+   "sfx": null,
+   "bed_sfx_smax": 12.63
+  },
+  {
+   "i": 278,
+   "w": "a",
+   "t": 115.61,
+   "line": 22,
+   "house": 15.24,
+   "smax": 11.2,
+   "sfx": null,
+   "bed_sfx_smax": 11.2
+  },
+  {
+   "i": 279,
+   "w": "rebel.",
+   "t": 115.72,
+   "line": 22,
+   "house": 20.48,
+   "smax": 15.99,
+   "sfx": null,
+   "bed_sfx_smax": 15.99
+  },
+  {
+   "i": 280,
+   "w": "Whether",
+   "t": 116.67,
+   "line": 23,
+   "house": 21.43,
+   "smax": 19.14,
+   "sfx": null,
+   "bed_sfx_smax": 19.14
+  },
+  {
+   "i": 281,
+   "w": "he",
+   "t": 117.03,
+   "line": 23,
+   "house": 18.02,
+   "smax": 17.14,
+   "sfx": null,
+   "bed_sfx_smax": 17.14
+  },
+  {
+   "i": 282,
+   "w": "had",
+   "t": 117.17,
+   "line": 23,
+   "house": 21.28,
+   "smax": 21.04,
+   "sfx": null,
+   "bed_sfx_smax": 21.04
+  },
+  {
+   "i": 283,
+   "w": "also",
+   "t": 117.31,
+   "line": 23,
+   "house": 19.68,
+   "smax": 16.22,
+   "sfx": null,
+   "bed_sfx_smax": 16.22
+  },
+  {
+   "i": 284,
+   "w": "been",
+   "t": 117.68,
+   "line": 23,
+   "house": 21.82,
+   "smax": 18.33,
+   "sfx": null,
+   "bed_sfx_smax": 18.33
+  },
+  {
+   "i": 285,
+   "w": "his",
+   "t": 117.88,
+   "line": 23,
+   "house": 19.78,
+   "smax": 16.29,
+   "sfx": null,
+   "bed_sfx_smax": 16.29
+  },
+  {
+   "i": 286,
+   "w": "killer",
+   "t": 118.05,
+   "line": 23,
+   "house": 19.38,
+   "smax": 15.89,
+   "sfx": null,
+   "bed_sfx_smax": 15.89
+  },
+  {
+   "i": 287,
+   "w": "remained",
+   "t": 118.49,
+   "line": 23,
+   "house": 23.45,
+   "smax": 18.99,
+   "sfx": null,
+   "bed_sfx_smax": 18.99
+  },
+  {
+   "i": 288,
+   "w": "unproved.",
+   "t": 118.97,
+   "line": 23,
+   "house": 19.52,
+   "smax": 16.11,
+   "sfx": null,
+   "bed_sfx_smax": 16.11
+  }
+ ]
+}

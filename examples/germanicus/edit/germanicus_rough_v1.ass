@@ -1,0 +1,46 @@
+[Script Info]
+Title: Posterity Germanicus ROUGH v1
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,54,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,4,2,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.17,Default,,0,0,0,,They found his name
+Dialogue: 0,0:00:01.21,0:00:02.42,Default,,0,0,0,,hidden in the walls,
+Dialogue: 0,0:00:02.46,0:00:03.68,Default,,0,0,0,,written on lead among
+Dialogue: 0,0:00:03.72,0:00:05.71,Default,,0,0,0,,spells and\Nhuman remains.
+Dialogue: 0,0:00:06.01,0:00:08.38,Default,,0,0,0,,The historian Tacitus\Nsays Germanicus
+Dialogue: 0,0:00:08.42,0:00:10.64,Default,,0,0,0,,was still alive when\Nthey were discovered.
+Dialogue: 0,0:00:11.04,0:00:13.64,Default,,0,0,0,,Germanicus was the\Nemperor's adopted son,
+Dialogue: 0,0:00:13.68,0:00:16.51,Default,,0,0,0,,sent east with authority\Nover Rome's governors.
+Dialogue: 0,0:00:16.65,0:00:19.14,Default,,0,0,0,,But Piso, the\Ngovernor of Syria,
+Dialogue: 0,0:00:19.18,0:00:20.88,Default,,0,0,0,,overturned his orders.
+Dialogue: 0,0:00:21.19,0:00:23.02,Default,,0,0,0,,When Germanicus\Nfell ill,
+Dialogue: 0,0:00:23.06,0:00:25.38,Default,,0,0,0,,he believed Piso\Nhad poisoned him.
+Dialogue: 0,0:00:25.59,0:00:27.75,Default,,0,0,0,,The hidden lead\Nsheets were curses,
+Dialogue: 0,0:00:27.83,0:00:28.75,Default,,0,0,0,,meant to deliver him
+Dialogue: 0,0:00:28.79,0:00:30.34,Default,,0,0,0,,to the gods below.
+Dialogue: 0,0:00:30.64,0:00:31.95,Default,,0,0,0,,Before he died,
+Dialogue: 0,0:00:32.03,0:00:33.65,Default,,0,0,0,,Germanicus begged\Nhis friends
+Dialogue: 0,0:00:33.69,0:00:35.73,Default,,0,0,0,,to bring Piso\Nto justice.
+Dialogue: 0,0:00:36.04,0:00:37.12,Default,,0,0,0,,So in Rome,
+Dialogue: 0,0:00:37.16,0:00:37.99,Default,,0,0,0,,Piso was put
+Dialogue: 0,0:00:38.03,0:00:39.90,Default,,0,0,0,,on trial before\Nthe Senate,
+Dialogue: 0,0:00:39.94,0:00:42.39,Default,,0,0,0,,accused of poisoning\NGermanicus.
+Dialogue: 0,0:00:42.69,0:00:44.04,Default,,0,0,0,,Before the verdict,
+Dialogue: 0,0:00:44.08,0:00:45.89,Default,,0,0,0,,Piso was found dead,
+Dialogue: 0,0:00:45.98,0:00:47.61,Default,,0,0,0,,a sword beside him.
+Dialogue: 0,0:00:47.91,0:00:50.15,Default,,0,0,0,,The Senate condemned\Nhim anyway,
+Dialogue: 0,0:00:50.19,0:00:52.03,Default,,0,0,0,,and ordered its\Ndecree displayed
+Dialogue: 0,0:00:52.07,0:00:54.17,Default,,0,0,0,,in bronze across\Nthe empire.
+Dialogue: 0,0:00:54.47,0:00:57.60,Default,,0,0,0,,Copies of that decree\Nsurvive in Spain.
+Dialogue: 0,0:00:57.80,0:01:00.27,Default,,0,0,0,,They condemn Piso for\Ncorrupting soldiers
+Dialogue: 0,0:01:00.31,0:01:02.48,Default,,0,0,0,,and trying to\Nstart a civil war.
+Dialogue: 0,0:01:03.00,0:01:04.34,Default,,0,0,0,,But not for murder.

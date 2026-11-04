@@ -1,0 +1,109 @@
+{
+ "beat": "b15",
+ "kind": "flat",
+ "frames": [
+  2536,
+  2620
+ ],
+ "t": [
+  84.533,
+  87.333
+ ],
+ "seconds": 2.8,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b15_thurzo_depositions.png",
+ "plate_md5": "a784a61147bbb3d95817c62bcd281c5c",
+ "plate_wh": [
+  941,
+  1670
+ ],
+ "heraldry_polys": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    300,
+    0
+   ],
+   [
+    300,
+    590
+   ],
+   [
+    0,
+    590
+   ]
+  ]
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "b15#0",
+    "sources": {
+     "candle": 1
+    },
+    "warped_candles": 1,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "manual": [
+     [
+      38,
+      690,
+      102,
+      845
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "pulse": 0.3006,
+   "metrics_at_pulse1": {
+    "whole": 26.885417938232422,
+    "local": 76.09773254394531,
+    "step": 15.497973442077637
+   },
+   "metrics": {
+    "whole": 8.241593360900879,
+    "local": 28.345510482788086,
+    "step": 5.886955738067627
+   }
+  }
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

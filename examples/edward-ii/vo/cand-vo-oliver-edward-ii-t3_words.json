@@ -1,0 +1,1337 @@
+{
+ "words": [
+  {
+   "word": "England",
+   "start": 0.0,
+   "end": 0.441,
+   "line": 1
+  },
+  {
+   "word": "buried",
+   "start": 0.522,
+   "end": 0.894,
+   "line": 1
+  },
+  {
+   "word": "its",
+   "start": 0.94,
+   "end": 1.068,
+   "line": 1
+  },
+  {
+   "word": "king.",
+   "start": 1.138,
+   "end": 1.614,
+   "line": 1
+  },
+  {
+   "word": "Two",
+   "start": 2.31,
+   "end": 2.496,
+   "line": 1
+  },
+  {
+   "word": "years",
+   "start": 2.566,
+   "end": 2.763,
+   "line": 1
+  },
+  {
+   "word": "later,",
+   "start": 2.833,
+   "end": 3.32,
+   "line": 1
+  },
+  {
+   "word": "his",
+   "start": 3.471,
+   "end": 3.611,
+   "line": 1
+  },
+  {
+   "word": "half-brother",
+   "start": 3.68,
+   "end": 4.261,
+   "line": 1
+  },
+  {
+   "word": "was",
+   "start": 4.342,
+   "end": 4.47,
+   "line": 1
+  },
+  {
+   "word": "executed",
+   "start": 4.551,
+   "end": 5.143,
+   "line": 1
+  },
+  {
+   "word": "for",
+   "start": 5.201,
+   "end": 5.306,
+   "line": 1
+  },
+  {
+   "word": "trying",
+   "start": 5.364,
+   "end": 5.654,
+   "line": 1
+  },
+  {
+   "word": "to",
+   "start": 5.7,
+   "end": 5.747,
+   "line": 1
+  },
+  {
+   "word": "rescue",
+   "start": 5.84,
+   "end": 6.188,
+   "line": 1
+  },
+  {
+   "word": "him.",
+   "start": 6.211,
+   "end": 6.513,
+   "line": 1
+  },
+  {
+   "word": "The",
+   "start": 6.896,
+   "end": 7.001,
+   "line": 2
+  },
+  {
+   "word": "king",
+   "start": 7.07,
+   "end": 7.326,
+   "line": 2
+  },
+  {
+   "word": "was",
+   "start": 7.442,
+   "end": 7.581,
+   "line": 2
+  },
+  {
+   "word": "Edward",
+   "start": 7.663,
+   "end": 7.953,
+   "line": 2
+  },
+  {
+   "word": "the",
+   "start": 7.988,
+   "end": 8.057,
+   "line": 2
+  },
+  {
+   "word": "Second.",
+   "start": 8.127,
+   "end": 8.615,
+   "line": 2
+  },
+  {
+   "word": "His",
+   "start": 8.94,
+   "end": 9.102,
+   "line": 3
+  },
+  {
+   "word": "half-brother,",
+   "start": 9.16,
+   "end": 9.822,
+   "line": 3
+  },
+  {
+   "word": "the",
+   "start": 9.915,
+   "end": 10.031,
+   "line": 3
+  },
+  {
+   "word": "Earl",
+   "start": 10.112,
+   "end": 10.286,
+   "line": 3
+  },
+  {
+   "word": "of",
+   "start": 10.333,
+   "end": 10.379,
+   "line": 3
+  },
+  {
+   "word": "Kent,",
+   "start": 10.449,
+   "end": 10.902,
+   "line": 3
+  },
+  {
+   "word": "had",
+   "start": 11.053,
+   "end": 11.18,
+   "line": 3
+  },
+  {
+   "word": "helped",
+   "start": 11.238,
+   "end": 11.459,
+   "line": 3
+  },
+  {
+   "word": "Edward's",
+   "start": 11.517,
+   "end": 11.865,
+   "line": 3
+  },
+  {
+   "word": "queen",
+   "start": 11.923,
+   "end": 12.225,
+   "line": 3
+  },
+  {
+   "word": "and",
+   "start": 12.272,
+   "end": 12.353,
+   "line": 3
+  },
+  {
+   "word": "Roger",
+   "start": 12.434,
+   "end": 12.69,
+   "line": 3
+  },
+  {
+   "word": "Mortimer",
+   "start": 12.748,
+   "end": 13.119,
+   "line": 3
+  },
+  {
+   "word": "overthrow",
+   "start": 13.189,
+   "end": 13.653,
+   "line": 3
+  },
+  {
+   "word": "him.",
+   "start": 13.711,
+   "end": 14.025,
+   "line": 3
+  },
+  {
+   "word": "Months",
+   "start": 14.629,
+   "end": 14.919,
+   "line": 4
+  },
+  {
+   "word": "later,",
+   "start": 14.977,
+   "end": 15.465,
+   "line": 4
+  },
+  {
+   "word": "Edward",
+   "start": 15.674,
+   "end": 15.975,
+   "line": 4
+  },
+  {
+   "word": "was",
+   "start": 16.01,
+   "end": 16.115,
+   "line": 4
+  },
+  {
+   "word": "announced",
+   "start": 16.161,
+   "end": 16.556,
+   "line": 4
+  },
+  {
+   "word": "dead",
+   "start": 16.614,
+   "end": 16.893,
+   "line": 4
+  },
+  {
+   "word": "at",
+   "start": 16.951,
+   "end": 17.032,
+   "line": 4
+  },
+  {
+   "word": "Berkeley",
+   "start": 17.102,
+   "end": 17.45,
+   "line": 4
+  },
+  {
+   "word": "Castle.",
+   "start": 17.508,
+   "end": 18.088,
+   "line": 4
+  },
+  {
+   "word": "Kent",
+   "start": 18.785,
+   "end": 19.087,
+   "line": 4
+  },
+  {
+   "word": "attended",
+   "start": 19.133,
+   "end": 19.47,
+   "line": 4
+  },
+  {
+   "word": "his",
+   "start": 19.505,
+   "end": 19.598,
+   "line": 4
+  },
+  {
+   "word": "funeral",
+   "start": 19.656,
+   "end": 20.004,
+   "line": 4
+  },
+  {
+   "word": "at",
+   "start": 20.062,
+   "end": 20.143,
+   "line": 4
+  },
+  {
+   "word": "Gloucester.",
+   "start": 20.19,
+   "end": 20.747,
+   "line": 4
+  },
+  {
+   "word": "Then",
+   "start": 21.444,
+   "end": 21.618,
+   "line": 5
+  },
+  {
+   "word": "Kent",
+   "start": 21.699,
+   "end": 22.013,
+   "line": 5
+  },
+  {
+   "word": "heard",
+   "start": 22.071,
+   "end": 22.233,
+   "line": 5
+  },
+  {
+   "word": "his",
+   "start": 22.268,
+   "end": 22.349,
+   "line": 5
+  },
+  {
+   "word": "brother",
+   "start": 22.407,
+   "end": 22.686,
+   "line": 5
+  },
+  {
+   "word": "was",
+   "start": 22.756,
+   "end": 22.872,
+   "line": 5
+  },
+  {
+   "word": "alive,",
+   "start": 22.918,
+   "end": 23.452,
+   "line": 5
+  },
+  {
+   "word": "held",
+   "start": 23.963,
+   "end": 24.207,
+   "line": 5
+  },
+  {
+   "word": "at",
+   "start": 24.253,
+   "end": 24.323,
+   "line": 5
+  },
+  {
+   "word": "Corfe",
+   "start": 24.381,
+   "end": 24.66,
+   "line": 5
+  },
+  {
+   "word": "Castle.",
+   "start": 24.683,
+   "end": 25.217,
+   "line": 5
+  },
+  {
+   "word": "Around",
+   "start": 25.914,
+   "end": 26.239,
+   "line": 6
+  },
+  {
+   "word": "seventy",
+   "start": 26.32,
+   "end": 26.726,
+   "line": 6
+  },
+  {
+   "word": "men",
+   "start": 26.796,
+   "end": 27.005,
+   "line": 6
+  },
+  {
+   "word": "backed",
+   "start": 27.098,
+   "end": 27.353,
+   "line": 6
+  },
+  {
+   "word": "his",
+   "start": 27.376,
+   "end": 27.469,
+   "line": 6
+  },
+  {
+   "word": "plan",
+   "start": 27.527,
+   "end": 27.783,
+   "line": 6
+  },
+  {
+   "word": "to",
+   "start": 27.841,
+   "end": 27.899,
+   "line": 6
+  },
+  {
+   "word": "free",
+   "start": 27.969,
+   "end": 28.154,
+   "line": 6
+  },
+  {
+   "word": "Edward.",
+   "start": 28.201,
+   "end": 28.63,
+   "line": 6
+  },
+  {
+   "word": "A",
+   "start": 29.443,
+   "end": 29.524,
+   "line": 7
+  },
+  {
+   "word": "chronicle",
+   "start": 29.594,
+   "end": 30.0,
+   "line": 7
+  },
+  {
+   "word": "says",
+   "start": 30.046,
+   "end": 30.255,
+   "line": 7
+  },
+  {
+   "word": "Kent",
+   "start": 30.348,
+   "end": 30.627,
+   "line": 7
+  },
+  {
+   "word": "handed",
+   "start": 30.685,
+   "end": 30.94,
+   "line": 7
+  },
+  {
+   "word": "a",
+   "start": 30.975,
+   "end": 30.998,
+   "line": 7
+  },
+  {
+   "word": "letter",
+   "start": 31.068,
+   "end": 31.312,
+   "line": 7
+  },
+  {
+   "word": "for",
+   "start": 31.358,
+   "end": 31.451,
+   "line": 7
+  },
+  {
+   "word": "Edward",
+   "start": 31.509,
+   "end": 31.753,
+   "line": 7
+  },
+  {
+   "word": "to",
+   "start": 31.788,
+   "end": 31.846,
+   "line": 7
+  },
+  {
+   "word": "a",
+   "start": 31.904,
+   "end": 31.927,
+   "line": 7
+  },
+  {
+   "word": "man",
+   "start": 32.009,
+   "end": 32.218,
+   "line": 7
+  },
+  {
+   "word": "at",
+   "start": 32.264,
+   "end": 32.345,
+   "line": 7
+  },
+  {
+   "word": "Corfe",
+   "start": 32.415,
+   "end": 32.728,
+   "line": 7
+  },
+  {
+   "word": "who",
+   "start": 32.752,
+   "end": 32.856,
+   "line": 7
+  },
+  {
+   "word": "claimed",
+   "start": 32.914,
+   "end": 33.204,
+   "line": 7
+  },
+  {
+   "word": "to",
+   "start": 33.228,
+   "end": 33.274,
+   "line": 7
+  },
+  {
+   "word": "guard",
+   "start": 33.332,
+   "end": 33.553,
+   "line": 7
+  },
+  {
+   "word": "him.",
+   "start": 33.587,
+   "end": 33.855,
+   "line": 7
+  },
+  {
+   "word": "That",
+   "start": 34.458,
+   "end": 34.621,
+   "line": 8
+  },
+  {
+   "word": "man",
+   "start": 34.679,
+   "end": 34.876,
+   "line": 8
+  },
+  {
+   "word": "took",
+   "start": 34.934,
+   "end": 35.097,
+   "line": 8
+  },
+  {
+   "word": "it",
+   "start": 35.132,
+   "end": 35.201,
+   "line": 8
+  },
+  {
+   "word": "to",
+   "start": 35.224,
+   "end": 35.271,
+   "line": 8
+  },
+  {
+   "word": "Mortimer.",
+   "start": 35.329,
+   "end": 35.886,
+   "line": 8
+  },
+  {
+   "word": "Kent",
+   "start": 36.583,
+   "end": 36.861,
+   "line": 8
+  },
+  {
+   "word": "was",
+   "start": 36.931,
+   "end": 37.07,
+   "line": 8
+  },
+  {
+   "word": "beheaded.",
+   "start": 37.14,
+   "end": 37.767,
+   "line": 8
+  },
+  {
+   "word": "Then",
+   "start": 38.464,
+   "end": 38.684,
+   "line": 9
+  },
+  {
+   "word": "Edward's",
+   "start": 38.766,
+   "end": 39.114,
+   "line": 9
+  },
+  {
+   "word": "young",
+   "start": 39.16,
+   "end": 39.346,
+   "line": 9
+  },
+  {
+   "word": "son,",
+   "start": 39.427,
+   "end": 39.752,
+   "line": 9
+  },
+  {
+   "word": "now",
+   "start": 39.81,
+   "end": 39.973,
+   "line": 9
+  },
+  {
+   "word": "king,",
+   "start": 40.054,
+   "end": 40.437,
+   "line": 9
+  },
+  {
+   "word": "and",
+   "start": 40.612,
+   "end": 40.762,
+   "line": 9
+  },
+  {
+   "word": "a",
+   "start": 40.809,
+   "end": 40.832,
+   "line": 9
+  },
+  {
+   "word": "few",
+   "start": 40.902,
+   "end": 41.076,
+   "line": 9
+  },
+  {
+   "word": "loyal",
+   "start": 41.157,
+   "end": 41.413,
+   "line": 9
+  },
+  {
+   "word": "men",
+   "start": 41.482,
+   "end": 41.668,
+   "line": 9
+  },
+  {
+   "word": "seized",
+   "start": 41.761,
+   "end": 42.063,
+   "line": 9
+  },
+  {
+   "word": "Mortimer",
+   "start": 42.109,
+   "end": 42.481,
+   "line": 9
+  },
+  {
+   "word": "at",
+   "start": 42.539,
+   "end": 42.597,
+   "line": 9
+  },
+  {
+   "word": "Nottingham",
+   "start": 42.666,
+   "end": 43.015,
+   "line": 9
+  },
+  {
+   "word": "Castle",
+   "start": 43.073,
+   "end": 43.456,
+   "line": 9
+  },
+  {
+   "word": "by",
+   "start": 43.491,
+   "end": 43.619,
+   "line": 9
+  },
+  {
+   "word": "night.",
+   "start": 43.7,
+   "end": 44.095,
+   "line": 9
+  },
+  {
+   "word": "Mortimer",
+   "start": 44.791,
+   "end": 45.186,
+   "line": 10
+  },
+  {
+   "word": "was",
+   "start": 45.244,
+   "end": 45.349,
+   "line": 10
+  },
+  {
+   "word": "hanged,",
+   "start": 45.418,
+   "end": 45.859,
+   "line": 10
+  },
+  {
+   "word": "charged",
+   "start": 46.068,
+   "end": 46.533,
+   "line": 10
+  },
+  {
+   "word": "with",
+   "start": 46.568,
+   "end": 46.695,
+   "line": 10
+  },
+  {
+   "word": "murdering",
+   "start": 46.765,
+   "end": 47.16,
+   "line": 10
+  },
+  {
+   "word": "the",
+   "start": 47.206,
+   "end": 47.276,
+   "line": 10
+  },
+  {
+   "word": "old",
+   "start": 47.334,
+   "end": 47.496,
+   "line": 10
+  },
+  {
+   "word": "king.",
+   "start": 47.554,
+   "end": 47.972,
+   "line": 10
+  },
+  {
+   "word": "Years",
+   "start": 48.669,
+   "end": 48.924,
+   "line": 11
+  },
+  {
+   "word": "later,",
+   "start": 48.982,
+   "end": 49.482,
+   "line": 11
+  },
+  {
+   "word": "a",
+   "start": 49.633,
+   "end": 49.702,
+   "line": 11
+  },
+  {
+   "word": "papal",
+   "start": 49.772,
+   "end": 50.074,
+   "line": 11
+  },
+  {
+   "word": "official",
+   "start": 50.132,
+   "end": 50.573,
+   "line": 11
+  },
+  {
+   "word": "wrote",
+   "start": 50.643,
+   "end": 50.875,
+   "line": 11
+  },
+  {
+   "word": "to",
+   "start": 50.898,
+   "end": 50.956,
+   "line": 11
+  },
+  {
+   "word": "Edward's",
+   "start": 51.026,
+   "end": 51.351,
+   "line": 11
+  },
+  {
+   "word": "son.",
+   "start": 51.386,
+   "end": 51.78,
+   "line": 11
+  },
+  {
+   "word": "He",
+   "start": 52.222,
+   "end": 52.326,
+   "line": 12
+  },
+  {
+   "word": "claimed",
+   "start": 52.373,
+   "end": 52.721,
+   "line": 12
+  },
+  {
+   "word": "Edward",
+   "start": 52.779,
+   "end": 53.011,
+   "line": 12
+  },
+  {
+   "word": "had",
+   "start": 53.046,
+   "end": 53.139,
+   "line": 12
+  },
+  {
+   "word": "escaped",
+   "start": 53.185,
+   "end": 53.58,
+   "line": 12
+  },
+  {
+   "word": "Berkeley",
+   "start": 53.626,
+   "end": 53.94,
+   "line": 12
+  },
+  {
+   "word": "in",
+   "start": 53.975,
+   "end": 54.033,
+   "line": 12
+  },
+  {
+   "word": "disguise,",
+   "start": 54.079,
+   "end": 54.671,
+   "line": 12
+  },
+  {
+   "word": "and",
+   "start": 54.846,
+   "end": 54.985,
+   "line": 12
+  },
+  {
+   "word": "another",
+   "start": 55.031,
+   "end": 55.31,
+   "line": 12
+  },
+  {
+   "word": "man",
+   "start": 55.38,
+   "end": 55.647,
+   "line": 12
+  },
+  {
+   "word": "lay",
+   "start": 55.728,
+   "end": 55.867,
+   "line": 12
+  },
+  {
+   "word": "in",
+   "start": 55.902,
+   "end": 55.96,
+   "line": 12
+  },
+  {
+   "word": "his",
+   "start": 56.006,
+   "end": 56.111,
+   "line": 12
+  },
+  {
+   "word": "tomb.",
+   "start": 56.169,
+   "end": 56.575,
+   "line": 12
+  },
+  {
+   "word": "He",
+   "start": 57.086,
+   "end": 57.202,
+   "line": 13
+  },
+  {
+   "word": "said",
+   "start": 57.272,
+   "end": 57.527,
+   "line": 13
+  },
+  {
+   "word": "Edward",
+   "start": 57.585,
+   "end": 57.829,
+   "line": 13
+  },
+  {
+   "word": "had",
+   "start": 57.852,
+   "end": 57.934,
+   "line": 13
+  },
+  {
+   "word": "been",
+   "start": 57.969,
+   "end": 58.12,
+   "line": 13
+  },
+  {
+   "word": "hidden",
+   "start": 58.178,
+   "end": 58.445,
+   "line": 13
+  },
+  {
+   "word": "at",
+   "start": 58.491,
+   "end": 58.573,
+   "line": 13
+  },
+  {
+   "word": "Corfe,",
+   "start": 58.654,
+   "end": 59.13,
+   "line": 13
+  },
+  {
+   "word": "the",
+   "start": 59.246,
+   "end": 59.339,
+   "line": 13
+  },
+  {
+   "word": "very",
+   "start": 59.385,
+   "end": 59.571,
+   "line": 13
+  },
+  {
+   "word": "castle",
+   "start": 59.641,
+   "end": 60.117,
+   "line": 13
+  },
+  {
+   "word": "Kent",
+   "start": 60.175,
+   "end": 60.419,
+   "line": 13
+  },
+  {
+   "word": "wrote",
+   "start": 60.453,
+   "end": 60.686,
+   "line": 13
+  },
+  {
+   "word": "to.",
+   "start": 60.72,
+   "end": 61.046,
+   "line": 13
+  },
+  {
+   "word": "And",
+   "start": 61.649,
+   "end": 61.8,
+   "line": 14
+  },
+  {
+   "word": "according",
+   "start": 61.835,
+   "end": 62.218,
+   "line": 14
+  },
+  {
+   "word": "to",
+   "start": 62.265,
+   "end": 62.311,
+   "line": 14
+  },
+  {
+   "word": "the",
+   "start": 62.369,
+   "end": 62.439,
+   "line": 14
+  },
+  {
+   "word": "letter,",
+   "start": 62.497,
+   "end": 62.984,
+   "line": 14
+  },
+  {
+   "word": "Edward",
+   "start": 63.159,
+   "end": 63.472,
+   "line": 14
+  },
+  {
+   "word": "left",
+   "start": 63.542,
+   "end": 63.751,
+   "line": 14
+  },
+  {
+   "word": "Corfe",
+   "start": 63.809,
+   "end": 64.227,
+   "line": 14
+  },
+  {
+   "word": "only",
+   "start": 64.25,
+   "end": 64.494,
+   "line": 14
+  },
+  {
+   "word": "after",
+   "start": 64.552,
+   "end": 64.807,
+   "line": 14
+  },
+  {
+   "word": "learning",
+   "start": 64.877,
+   "end": 65.225,
+   "line": 14
+  },
+  {
+   "word": "Kent",
+   "start": 65.341,
+   "end": 65.608,
+   "line": 14
+  },
+  {
+   "word": "had",
+   "start": 65.655,
+   "end": 65.736,
+   "line": 14
+  },
+  {
+   "word": "been",
+   "start": 65.771,
+   "end": 65.91,
+   "line": 14
+  },
+  {
+   "word": "executed",
+   "start": 65.957,
+   "end": 66.525,
+   "line": 14
+  },
+  {
+   "word": "for",
+   "start": 66.642,
+   "end": 66.792,
+   "line": 14
+  },
+  {
+   "word": "saying",
+   "start": 66.839,
+   "end": 67.118,
+   "line": 14
+  },
+  {
+   "word": "Edward",
+   "start": 67.199,
+   "end": 67.524,
+   "line": 14
+  },
+  {
+   "word": "was",
+   "start": 67.57,
+   "end": 67.698,
+   "line": 14
+  },
+  {
+   "word": "alive.",
+   "start": 67.756,
+   "end": 68.337,
+   "line": 14
+  },
+  {
+   "word": "Most",
+   "start": 68.778,
+   "end": 69.01,
+   "line": 15
+  },
+  {
+   "word": "historians",
+   "start": 69.068,
+   "end": 69.649,
+   "line": 15
+  },
+  {
+   "word": "believe",
+   "start": 69.707,
+   "end": 70.125,
+   "line": 15
+  },
+  {
+   "word": "Edward",
+   "start": 70.183,
+   "end": 70.473,
+   "line": 15
+  },
+  {
+   "word": "died",
+   "start": 70.519,
+   "end": 70.798,
+   "line": 15
+  },
+  {
+   "word": "at",
+   "start": 70.833,
+   "end": 70.891,
+   "line": 15
+  },
+  {
+   "word": "Berkeley.",
+   "start": 70.949,
+   "end": 71.518,
+   "line": 15
+  },
+  {
+   "word": "But",
+   "start": 71.843,
+   "end": 71.994,
+   "line": 16
+  },
+  {
+   "word": "if",
+   "start": 72.029,
+   "end": 72.098,
+   "line": 16
+  },
+  {
+   "word": "that",
+   "start": 72.145,
+   "end": 72.284,
+   "line": 16
+  },
+  {
+   "word": "letter",
+   "start": 72.353,
+   "end": 72.632,
+   "line": 16
+  },
+  {
+   "word": "is",
+   "start": 72.69,
+   "end": 72.771,
+   "line": 16
+  },
+  {
+   "word": "true,",
+   "start": 72.829,
+   "end": 73.317,
+   "line": 16
+  },
+  {
+   "word": "Edward",
+   "start": 73.561,
+   "end": 73.863,
+   "line": 16
+  },
+  {
+   "word": "lived",
+   "start": 73.932,
+   "end": 74.153,
+   "line": 16
+  },
+  {
+   "word": "to",
+   "start": 74.176,
+   "end": 74.234,
+   "line": 16
+  },
+  {
+   "word": "hear",
+   "start": 74.316,
+   "end": 74.525,
+   "line": 16
+  },
+  {
+   "word": "that",
+   "start": 74.571,
+   "end": 74.699,
+   "line": 16
+  },
+  {
+   "word": "the",
+   "start": 74.722,
+   "end": 74.792,
+   "line": 16
+  },
+  {
+   "word": "brother",
+   "start": 74.85,
+   "end": 75.186,
+   "line": 16
+  },
+  {
+   "word": "who",
+   "start": 75.36,
+   "end": 75.523,
+   "line": 16
+  },
+  {
+   "word": "helped",
+   "start": 75.581,
+   "end": 75.802,
+   "line": 16
+  },
+  {
+   "word": "overthrow",
+   "start": 75.848,
+   "end": 76.289,
+   "line": 16
+  },
+  {
+   "word": "him",
+   "start": 76.347,
+   "end": 76.475,
+   "line": 16
+  },
+  {
+   "word": "died",
+   "start": 76.719,
+   "end": 77.102,
+   "line": 16
+  },
+  {
+   "word": "trying",
+   "start": 77.148,
+   "end": 77.392,
+   "line": 16
+  },
+  {
+   "word": "to",
+   "start": 77.427,
+   "end": 77.473,
+   "line": 16
+  },
+  {
+   "word": "free",
+   "start": 77.543,
+   "end": 77.764,
+   "line": 16
+  },
+  {
+   "word": "him.",
+   "start": 77.81,
+   "end": 78.1,
+   "line": 16
+  },
+  {
+   "word": "History",
+   "start": 78.936,
+   "end": 79.494,
+   "line": 17
+  },
+  {
+   "word": "remembers",
+   "start": 79.819,
+   "end": 80.306,
+   "line": 17
+  },
+  {
+   "word": "the",
+   "start": 80.364,
+   "end": 80.434,
+   "line": 17
+  },
+  {
+   "word": "victors.",
+   "start": 80.504,
+   "end": 81.096,
+   "line": 17
+  },
+  {
+   "word": "We",
+   "start": 81.792,
+   "end": 81.943,
+   "line": 17
+  },
+  {
+   "word": "remember",
+   "start": 82.013,
+   "end": 82.361,
+   "line": 17
+  },
+  {
+   "word": "the",
+   "start": 82.408,
+   "end": 82.477,
+   "line": 17
+  },
+  {
+   "word": "rest.",
+   "start": 82.547,
+   "end": 83.499,
+   "line": 17
+  }
+ ],
+ "source": "cand-vo-oliver-edward-ii-t3_alignment.json"
+}

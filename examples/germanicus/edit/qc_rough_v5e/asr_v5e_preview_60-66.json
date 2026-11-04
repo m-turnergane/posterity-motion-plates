@@ -1,0 +1,81 @@
+{
+ "master": "/workspace/posterity/renders/posterity-germanicus-v5e-ROUGH-preview.mp4",
+ "window_s": [
+  60.0,
+  66.0
+ ],
+ "model": "faster-whisper medium.en int8",
+ "ref": "piso chose force his men fought roman troops he lost now",
+ "hyp": "piso chose force his men fought roman troops he lost",
+ "ref_words": 11,
+ "hyp_words": 10,
+ "diffs": [
+  [
+   "delete",
+   "now",
+   ""
+  ]
+ ],
+ "words": [
+  [
+   "Piso",
+   60.0,
+   61.32,
+   0.684
+  ],
+  [
+   "chose",
+   61.32,
+   61.7,
+   0.947
+  ],
+  [
+   "force.",
+   61.7,
+   62.1,
+   0.977
+  ],
+  [
+   "His",
+   62.54,
+   62.62,
+   0.973
+  ],
+  [
+   "men",
+   62.62,
+   62.9,
+   0.997
+  ],
+  [
+   "fought",
+   62.9,
+   63.24,
+   0.998
+  ],
+  [
+   "Roman",
+   63.24,
+   63.7,
+   0.912
+  ],
+  [
+   "troops.",
+   63.7,
+   64.06,
+   0.994
+  ],
+  [
+   "He",
+   64.52,
+   64.56,
+   0.987
+  ],
+  [
+   "lost.",
+   64.56,
+   64.94,
+   0.993
+  ]
+ ]
+}

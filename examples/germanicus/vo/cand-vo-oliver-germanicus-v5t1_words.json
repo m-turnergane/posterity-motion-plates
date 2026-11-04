@@ -1,0 +1,2070 @@
+{
+ "words": [
+  {
+   "i": 0,
+   "line": 1,
+   "word": "Germanicus",
+   "start": 0.0,
+   "end": 0.662
+  },
+  {
+   "i": 1,
+   "line": 1,
+   "word": "saved",
+   "start": 0.731,
+   "end": 1.033
+  },
+  {
+   "i": 2,
+   "line": 1,
+   "word": "the",
+   "start": 1.057,
+   "end": 1.126
+  },
+  {
+   "i": 3,
+   "line": 1,
+   "word": "man",
+   "start": 1.173,
+   "end": 1.393
+  },
+  {
+   "i": 4,
+   "line": 1,
+   "word": "he",
+   "start": 1.474,
+   "end": 1.544
+  },
+  {
+   "i": 5,
+   "line": 1,
+   "word": "later",
+   "start": 1.637,
+   "end": 1.939
+  },
+  {
+   "i": 6,
+   "line": 1,
+   "word": "accused",
+   "start": 1.985,
+   "end": 2.438
+  },
+  {
+   "i": 7,
+   "line": 1,
+   "word": "of",
+   "start": 2.473,
+   "end": 2.531
+  },
+  {
+   "i": 8,
+   "line": 1,
+   "word": "killing",
+   "start": 2.601,
+   "end": 2.868
+  },
+  {
+   "i": 9,
+   "line": 1,
+   "word": "him.",
+   "start": 2.914,
+   "end": 3.228
+  },
+  {
+   "i": 10,
+   "line": 2,
+   "word": "According",
+   "start": 3.738,
+   "end": 4.11
+  },
+  {
+   "i": 11,
+   "line": 2,
+   "word": "to",
+   "start": 4.145,
+   "end": 4.203
+  },
+  {
+   "i": 12,
+   "line": 2,
+   "word": "Tacitus,",
+   "start": 4.296,
+   "end": 5.05
+  },
+  {
+   "i": 13,
+   "line": 2,
+   "word": "a",
+   "start": 5.166,
+   "end": 5.236
+  },
+  {
+   "i": 14,
+   "line": 2,
+   "word": "storm",
+   "start": 5.317,
+   "end": 5.759
+  },
+  {
+   "i": 15,
+   "line": 2,
+   "word": "drove",
+   "start": 5.84,
+   "end": 6.118
+  },
+  {
+   "i": 16,
+   "line": 2,
+   "word": "Piso",
+   "start": 6.165,
+   "end": 6.583
+  },
+  {
+   "i": 17,
+   "line": 2,
+   "word": "towards",
+   "start": 6.653,
+   "end": 7.012
+  },
+  {
+   "i": 18,
+   "line": 2,
+   "word": "a",
+   "start": 7.047,
+   "end": 7.082
+  },
+  {
+   "i": 19,
+   "line": 2,
+   "word": "rocky",
+   "start": 7.163,
+   "end": 7.43
+  },
+  {
+   "i": 20,
+   "line": 2,
+   "word": "coast.",
+   "start": 7.5,
+   "end": 7.953
+  },
+  {
+   "i": 21,
+   "line": 2,
+   "word": "Germanicus",
+   "start": 8.336,
+   "end": 8.94
+  },
+  {
+   "i": 22,
+   "line": 2,
+   "word": "sent",
+   "start": 8.998,
+   "end": 9.183
+  },
+  {
+   "i": 23,
+   "line": 2,
+   "word": "warships",
+   "start": 9.253,
+   "end": 9.706
+  },
+  {
+   "i": 24,
+   "line": 2,
+   "word": "to",
+   "start": 9.741,
+   "end": 9.81
+  },
+  {
+   "i": 25,
+   "line": 2,
+   "word": "help.",
+   "start": 9.892,
+   "end": 10.228
+  },
+  {
+   "i": 26,
+   "line": 3,
+   "word": "He",
+   "start": 10.553,
+   "end": 10.67
+  },
+  {
+   "i": 27,
+   "line": 3,
+   "word": "was",
+   "start": 10.716,
+   "end": 10.82
+  },
+  {
+   "i": 28,
+   "line": 3,
+   "word": "the",
+   "start": 10.867,
+   "end": 10.937
+  },
+  {
+   "i": 29,
+   "line": 3,
+   "word": "emperor's",
+   "start": 11.018,
+   "end": 11.436
+  },
+  {
+   "i": 30,
+   "line": 3,
+   "word": "adopted",
+   "start": 11.482,
+   "end": 11.947
+  },
+  {
+   "i": 31,
+   "line": 3,
+   "word": "son,",
+   "start": 12.005,
+   "end": 12.446
+  },
+  {
+   "i": 32,
+   "line": 3,
+   "word": "heading",
+   "start": 12.562,
+   "end": 12.806
+  },
+  {
+   "i": 33,
+   "line": 3,
+   "word": "east",
+   "start": 12.875,
+   "end": 13.154
+  },
+  {
+   "i": 34,
+   "line": 3,
+   "word": "to",
+   "start": 13.212,
+   "end": 13.293
+  },
+  {
+   "i": 35,
+   "line": 3,
+   "word": "settle",
+   "start": 13.386,
+   "end": 13.688
+  },
+  {
+   "i": 36,
+   "line": 3,
+   "word": "disputes",
+   "start": 13.711,
+   "end": 14.292
+  },
+  {
+   "i": 37,
+   "line": 3,
+   "word": "among",
+   "start": 14.466,
+   "end": 14.744
+  },
+  {
+   "i": 38,
+   "line": 3,
+   "word": "Rome's",
+   "start": 14.837,
+   "end": 15.197
+  },
+  {
+   "i": 39,
+   "line": 3,
+   "word": "provinces",
+   "start": 15.243,
+   "end": 15.801
+  },
+  {
+   "i": 40,
+   "line": 3,
+   "word": "and",
+   "start": 15.917,
+   "end": 16.091
+  },
+  {
+   "i": 41,
+   "line": 3,
+   "word": "allied",
+   "start": 16.172,
+   "end": 16.544
+  },
+  {
+   "i": 42,
+   "line": 3,
+   "word": "kingdoms.",
+   "start": 16.59,
+   "end": 17.182
+  },
+  {
+   "i": 43,
+   "line": 4,
+   "word": "Piso,",
+   "start": 17.995,
+   "end": 18.61
+  },
+  {
+   "i": 44,
+   "line": 4,
+   "word": "appointed",
+   "start": 18.784,
+   "end": 19.237
+  },
+  {
+   "i": 45,
+   "line": 4,
+   "word": "governor",
+   "start": 19.307,
+   "end": 19.632
+  },
+  {
+   "i": 46,
+   "line": 4,
+   "word": "of",
+   "start": 19.678,
+   "end": 19.725
+  },
+  {
+   "i": 47,
+   "line": 4,
+   "word": "Syria,",
+   "start": 19.783,
+   "end": 20.271
+  },
+  {
+   "i": 48,
+   "line": 4,
+   "word": "was",
+   "start": 20.34,
+   "end": 20.491
+  },
+  {
+   "i": 49,
+   "line": 4,
+   "word": "supposed",
+   "start": 20.526,
+   "end": 20.932
+  },
+  {
+   "i": 50,
+   "line": 4,
+   "word": "to",
+   "start": 20.967,
+   "end": 21.025
+  },
+  {
+   "i": 51,
+   "line": 4,
+   "word": "serve",
+   "start": 21.106,
+   "end": 21.455
+  },
+  {
+   "i": 52,
+   "line": 4,
+   "word": "under",
+   "start": 21.501,
+   "end": 21.675
+  },
+  {
+   "i": 53,
+   "line": 4,
+   "word": "him.",
+   "start": 21.722,
+   "end": 22.012
+  },
+  {
+   "i": 54,
+   "line": 5,
+   "word": "Instead,",
+   "start": 22.523,
+   "end": 23.161
+  },
+  {
+   "i": 55,
+   "line": 5,
+   "word": "he",
+   "start": 23.405,
+   "end": 23.475
+  },
+  {
+   "i": 56,
+   "line": 5,
+   "word": "gave",
+   "start": 23.533,
+   "end": 23.754
+  },
+  {
+   "i": 57,
+   "line": 5,
+   "word": "soldiers",
+   "start": 23.812,
+   "end": 24.195
+  },
+  {
+   "i": 58,
+   "line": 5,
+   "word": "gifts,",
+   "start": 24.253,
+   "end": 24.682
+  },
+  {
+   "i": 59,
+   "line": 5,
+   "word": "replaced",
+   "start": 24.833,
+   "end": 25.309
+  },
+  {
+   "i": 60,
+   "line": 5,
+   "word": "strict",
+   "start": 25.391,
+   "end": 25.704
+  },
+  {
+   "i": 61,
+   "line": 5,
+   "word": "officers,",
+   "start": 25.762,
+   "end": 26.273
+  },
+  {
+   "i": 62,
+   "line": 5,
+   "word": "and",
+   "start": 26.517,
+   "end": 26.656
+  },
+  {
+   "i": 63,
+   "line": 5,
+   "word": "ignored",
+   "start": 26.702,
+   "end": 27.097
+  },
+  {
+   "i": 64,
+   "line": 5,
+   "word": "orders",
+   "start": 27.144,
+   "end": 27.515
+  },
+  {
+   "i": 65,
+   "line": 5,
+   "word": "to",
+   "start": 27.631,
+   "end": 27.736
+  },
+  {
+   "i": 66,
+   "line": 5,
+   "word": "send",
+   "start": 27.805,
+   "end": 28.014
+  },
+  {
+   "i": 67,
+   "line": 5,
+   "word": "troops",
+   "start": 28.061,
+   "end": 28.374
+  },
+  {
+   "i": 68,
+   "line": 5,
+   "word": "to",
+   "start": 28.421,
+   "end": 28.49
+  },
+  {
+   "i": 69,
+   "line": 5,
+   "word": "Armenia.",
+   "start": 28.583,
+   "end": 29.222
+  },
+  {
+   "i": 70,
+   "line": 6,
+   "word": "The",
+   "start": 29.826,
+   "end": 29.942
+  },
+  {
+   "i": 71,
+   "line": 6,
+   "word": "emperor's",
+   "start": 30.0,
+   "end": 30.336
+  },
+  {
+   "i": 72,
+   "line": 6,
+   "word": "son",
+   "start": 30.371,
+   "end": 30.627
+  },
+  {
+   "i": 73,
+   "line": 6,
+   "word": "held",
+   "start": 30.708,
+   "end": 30.894
+  },
+  {
+   "i": 74,
+   "line": 6,
+   "word": "the",
+   "start": 30.94,
+   "end": 31.01
+  },
+  {
+   "i": 75,
+   "line": 6,
+   "word": "higher",
+   "start": 31.068,
+   "end": 31.289
+  },
+  {
+   "i": 76,
+   "line": 6,
+   "word": "command.",
+   "start": 31.335,
+   "end": 31.904
+  },
+  {
+   "i": 77,
+   "line": 6,
+   "word": "Piso",
+   "start": 32.415,
+   "end": 32.833
+  },
+  {
+   "i": 78,
+   "line": 6,
+   "word": "was",
+   "start": 32.902,
+   "end": 33.03
+  },
+  {
+   "i": 79,
+   "line": 6,
+   "word": "building",
+   "start": 33.1,
+   "end": 33.413
+  },
+  {
+   "i": 80,
+   "line": 6,
+   "word": "a",
+   "start": 33.46,
+   "end": 33.483
+  },
+  {
+   "i": 81,
+   "line": 6,
+   "word": "following",
+   "start": 33.564,
+   "end": 33.936
+  },
+  {
+   "i": 82,
+   "line": 6,
+   "word": "of",
+   "start": 33.994,
+   "end": 34.04
+  },
+  {
+   "i": 83,
+   "line": 6,
+   "word": "his",
+   "start": 34.087,
+   "end": 34.191
+  },
+  {
+   "i": 84,
+   "line": 6,
+   "word": "own.",
+   "start": 34.249,
+   "end": 34.597
+  },
+  {
+   "i": 85,
+   "line": 7,
+   "word": "Then",
+   "start": 35.41,
+   "end": 35.631
+  },
+  {
+   "i": 86,
+   "line": 7,
+   "word": "Germanicus",
+   "start": 35.7,
+   "end": 36.258
+  },
+  {
+   "i": 87,
+   "line": 7,
+   "word": "fell",
+   "start": 36.327,
+   "end": 36.513
+  },
+  {
+   "i": 88,
+   "line": 7,
+   "word": "ill",
+   "start": 36.594,
+   "end": 36.78
+  },
+  {
+   "i": 89,
+   "line": 7,
+   "word": "near",
+   "start": 36.85,
+   "end": 37.012
+  },
+  {
+   "i": 90,
+   "line": 7,
+   "word": "Antioch.",
+   "start": 37.059,
+   "end": 37.604
+  },
+  {
+   "i": 91,
+   "line": 8,
+   "word": "Tacitus",
+   "start": 38.301,
+   "end": 38.835
+  },
+  {
+   "i": 92,
+   "line": 8,
+   "word": "says",
+   "start": 38.882,
+   "end": 39.16
+  },
+  {
+   "i": 93,
+   "line": 8,
+   "word": "human",
+   "start": 39.369,
+   "end": 39.706
+  },
+  {
+   "i": 94,
+   "line": 8,
+   "word": "remains,",
+   "start": 39.776,
+   "end": 40.344
+  },
+  {
+   "i": 95,
+   "line": 8,
+   "word": "spells,",
+   "start": 40.402,
+   "end": 40.902
+  },
+  {
+   "i": 96,
+   "line": 8,
+   "word": "and",
+   "start": 40.937,
+   "end": 41.053
+  },
+  {
+   "i": 97,
+   "line": 8,
+   "word": "lead",
+   "start": 41.134,
+   "end": 41.331
+  },
+  {
+   "i": 98,
+   "line": 8,
+   "word": "tablets",
+   "start": 41.378,
+   "end": 41.807
+  },
+  {
+   "i": 99,
+   "line": 8,
+   "word": "bearing",
+   "start": 41.981,
+   "end": 42.33
+  },
+  {
+   "i": 100,
+   "line": 8,
+   "word": "his",
+   "start": 42.376,
+   "end": 42.481
+  },
+  {
+   "i": 101,
+   "line": 8,
+   "word": "name",
+   "start": 42.55,
+   "end": 42.91
+  },
+  {
+   "i": 102,
+   "line": 8,
+   "word": "were",
+   "start": 42.98,
+   "end": 43.154
+  },
+  {
+   "i": 103,
+   "line": 8,
+   "word": "found",
+   "start": 43.2,
+   "end": 43.433
+  },
+  {
+   "i": 104,
+   "line": 8,
+   "word": "hidden",
+   "start": 43.491,
+   "end": 43.758
+  },
+  {
+   "i": 105,
+   "line": 8,
+   "word": "in",
+   "start": 43.816,
+   "end": 43.874
+  },
+  {
+   "i": 106,
+   "line": 8,
+   "word": "the",
+   "start": 43.92,
+   "end": 43.99
+  },
+  {
+   "i": 107,
+   "line": 8,
+   "word": "floor",
+   "start": 44.025,
+   "end": 44.315
+  },
+  {
+   "i": 108,
+   "line": 8,
+   "word": "and",
+   "start": 44.373,
+   "end": 44.443
+  },
+  {
+   "i": 109,
+   "line": 8,
+   "word": "walls.",
+   "start": 44.501,
+   "end": 45.0
+  },
+  {
+   "i": 110,
+   "line": 9,
+   "word": "Germanicus",
+   "start": 45.511,
+   "end": 46.173
+  },
+  {
+   "i": 111,
+   "line": 9,
+   "word": "believed",
+   "start": 46.231,
+   "end": 46.672
+  },
+  {
+   "i": 112,
+   "line": 9,
+   "word": "Piso",
+   "start": 46.742,
+   "end": 47.137
+  },
+  {
+   "i": 113,
+   "line": 9,
+   "word": "had",
+   "start": 47.206,
+   "end": 47.311
+  },
+  {
+   "i": 114,
+   "line": 9,
+   "word": "poisoned",
+   "start": 47.369,
+   "end": 47.74
+  },
+  {
+   "i": 115,
+   "line": 9,
+   "word": "him.",
+   "start": 47.775,
+   "end": 48.089
+  },
+  {
+   "i": 116,
+   "line": 9,
+   "word": "Dying,",
+   "start": 48.785,
+   "end": 49.157
+  },
+  {
+   "i": 117,
+   "line": 9,
+   "word": "he",
+   "start": 49.18,
+   "end": 49.226
+  },
+  {
+   "i": 118,
+   "line": 9,
+   "word": "asked",
+   "start": 49.308,
+   "end": 49.621
+  },
+  {
+   "i": 119,
+   "line": 9,
+   "word": "his",
+   "start": 49.656,
+   "end": 49.761
+  },
+  {
+   "i": 120,
+   "line": 9,
+   "word": "friends",
+   "start": 49.83,
+   "end": 50.19
+  },
+  {
+   "i": 121,
+   "line": 9,
+   "word": "to",
+   "start": 50.237,
+   "end": 50.306
+  },
+  {
+   "i": 122,
+   "line": 9,
+   "word": "avenge",
+   "start": 50.376,
+   "end": 50.747
+  },
+  {
+   "i": 123,
+   "line": 9,
+   "word": "him.",
+   "start": 50.782,
+   "end": 51.084
+  },
+  {
+   "i": 124,
+   "line": 10,
+   "word": "After",
+   "start": 51.688,
+   "end": 51.943
+  },
+  {
+   "i": 125,
+   "line": 10,
+   "word": "Germanicus",
+   "start": 52.001,
+   "end": 52.57
+  },
+  {
+   "i": 126,
+   "line": 10,
+   "word": "died,",
+   "start": 52.617,
+   "end": 53.035
+  },
+  {
+   "i": 127,
+   "line": 10,
+   "word": "Piso",
+   "start": 53.244,
+   "end": 53.661
+  },
+  {
+   "i": 128,
+   "line": 10,
+   "word": "wanted",
+   "start": 53.731,
+   "end": 54.021
+  },
+  {
+   "i": 129,
+   "line": 10,
+   "word": "Syria",
+   "start": 54.079,
+   "end": 54.463
+  },
+  {
+   "i": 130,
+   "line": 10,
+   "word": "back.",
+   "start": 54.521,
+   "end": 54.95
+  },
+  {
+   "i": 131,
+   "line": 11,
+   "word": "His",
+   "start": 55.391,
+   "end": 55.554
+  },
+  {
+   "i": 132,
+   "line": 11,
+   "word": "own",
+   "start": 55.6,
+   "end": 55.751
+  },
+  {
+   "i": 133,
+   "line": 11,
+   "word": "son",
+   "start": 55.833,
+   "end": 56.111
+  },
+  {
+   "i": 134,
+   "line": 11,
+   "word": "urged",
+   "start": 56.204,
+   "end": 56.471
+  },
+  {
+   "i": 135,
+   "line": 11,
+   "word": "him",
+   "start": 56.506,
+   "end": 56.599
+  },
+  {
+   "i": 136,
+   "line": 11,
+   "word": "to",
+   "start": 56.645,
+   "end": 56.692
+  },
+  {
+   "i": 137,
+   "line": 11,
+   "word": "return",
+   "start": 56.761,
+   "end": 57.098
+  },
+  {
+   "i": 138,
+   "line": 11,
+   "word": "to",
+   "start": 57.144,
+   "end": 57.203
+  },
+  {
+   "i": 139,
+   "line": 11,
+   "word": "Rome,",
+   "start": 57.284,
+   "end": 57.702
+  },
+  {
+   "i": 140,
+   "line": 11,
+   "word": "warning",
+   "start": 57.783,
+   "end": 58.143
+  },
+  {
+   "i": 141,
+   "line": 11,
+   "word": "that",
+   "start": 58.178,
+   "end": 58.282
+  },
+  {
+   "i": 142,
+   "line": 11,
+   "word": "going",
+   "start": 58.34,
+   "end": 58.572
+  },
+  {
+   "i": 143,
+   "line": 11,
+   "word": "back",
+   "start": 58.631,
+   "end": 58.781
+  },
+  {
+   "i": 144,
+   "line": 11,
+   "word": "to",
+   "start": 58.828,
+   "end": 58.886
+  },
+  {
+   "i": 145,
+   "line": 11,
+   "word": "Syria",
+   "start": 58.967,
+   "end": 59.362
+  },
+  {
+   "i": 146,
+   "line": 11,
+   "word": "could",
+   "start": 59.42,
+   "end": 59.594
+  },
+  {
+   "i": 147,
+   "line": 11,
+   "word": "mean",
+   "start": 59.641,
+   "end": 59.803
+  },
+  {
+   "i": 148,
+   "line": 11,
+   "word": "civil",
+   "start": 59.896,
+   "end": 60.175
+  },
+  {
+   "i": 149,
+   "line": 11,
+   "word": "war.",
+   "start": 60.244,
+   "end": 60.755
+  },
+  {
+   "i": 150,
+   "line": 12,
+   "word": "Piso",
+   "start": 61.196,
+   "end": 61.661
+  },
+  {
+   "i": 151,
+   "line": 12,
+   "word": "chose",
+   "start": 61.754,
+   "end": 62.079
+  },
+  {
+   "i": 152,
+   "line": 12,
+   "word": "force.",
+   "start": 62.137,
+   "end": 62.659
+  },
+  {
+   "i": 153,
+   "line": 12,
+   "word": "His",
+   "start": 63.17,
+   "end": 63.321
+  },
+  {
+   "i": 154,
+   "line": 12,
+   "word": "men",
+   "start": 63.391,
+   "end": 63.6
+  },
+  {
+   "i": 155,
+   "line": 12,
+   "word": "fought",
+   "start": 63.716,
+   "end": 63.971
+  },
+  {
+   "i": 156,
+   "line": 12,
+   "word": "Roman",
+   "start": 64.041,
+   "end": 64.378
+  },
+  {
+   "i": 157,
+   "line": 12,
+   "word": "troops.",
+   "start": 64.424,
+   "end": 64.912
+  },
+  {
+   "i": 158,
+   "line": 12,
+   "word": "He",
+   "start": 65.353,
+   "end": 65.481
+  },
+  {
+   "i": 159,
+   "line": 12,
+   "word": "lost.",
+   "start": 65.573,
+   "end": 66.096
+  },
+  {
+   "i": 160,
+   "line": 13,
+   "word": "Now",
+   "start": 66.792,
+   "end": 67.036
+  },
+  {
+   "i": 161,
+   "line": 13,
+   "word": "he",
+   "start": 67.152,
+   "end": 67.222
+  },
+  {
+   "i": 162,
+   "line": 13,
+   "word": "had",
+   "start": 67.292,
+   "end": 67.419
+  },
+  {
+   "i": 163,
+   "line": 13,
+   "word": "to",
+   "start": 67.454,
+   "end": 67.512
+  },
+  {
+   "i": 164,
+   "line": 13,
+   "word": "face",
+   "start": 67.605,
+   "end": 67.919
+  },
+  {
+   "i": 165,
+   "line": 13,
+   "word": "the",
+   "start": 67.965,
+   "end": 68.046
+  },
+  {
+   "i": 166,
+   "line": 13,
+   "word": "Senate.",
+   "start": 68.139,
+   "end": 68.662
+  },
+  {
+   "i": 167,
+   "line": 14,
+   "word": "Outside,",
+   "start": 68.987,
+   "end": 69.741
+  },
+  {
+   "i": 168,
+   "line": 14,
+   "word": "crowds",
+   "start": 69.95,
+   "end": 70.461
+  },
+  {
+   "i": 169,
+   "line": 14,
+   "word": "dragged",
+   "start": 70.531,
+   "end": 70.844
+  },
+  {
+   "i": 170,
+   "line": 14,
+   "word": "off",
+   "start": 70.879,
+   "end": 71.007
+  },
+  {
+   "i": 171,
+   "line": 14,
+   "word": "his",
+   "start": 71.065,
+   "end": 71.158
+  },
+  {
+   "i": 172,
+   "line": 14,
+   "word": "statues",
+   "start": 71.216,
+   "end": 71.703
+  },
+  {
+   "i": 173,
+   "line": 14,
+   "word": "to",
+   "start": 71.738,
+   "end": 71.808
+  },
+  {
+   "i": 174,
+   "line": 14,
+   "word": "smash",
+   "start": 71.901,
+   "end": 72.214
+  },
+  {
+   "i": 175,
+   "line": 14,
+   "word": "them",
+   "start": 72.249,
+   "end": 72.4
+  },
+  {
+   "i": 176,
+   "line": 14,
+   "word": "and",
+   "start": 72.551,
+   "end": 72.702
+  },
+  {
+   "i": 177,
+   "line": 14,
+   "word": "threatened",
+   "start": 72.76,
+   "end": 73.143
+  },
+  {
+   "i": 178,
+   "line": 14,
+   "word": "violence",
+   "start": 73.178,
+   "end": 73.689
+  },
+  {
+   "i": 179,
+   "line": 14,
+   "word": "if",
+   "start": 73.724,
+   "end": 73.84
+  },
+  {
+   "i": 180,
+   "line": 14,
+   "word": "he",
+   "start": 73.886,
+   "end": 73.933
+  },
+  {
+   "i": 181,
+   "line": 14,
+   "word": "escaped",
+   "start": 73.979,
+   "end": 74.409
+  },
+  {
+   "i": 182,
+   "line": 14,
+   "word": "punishment.",
+   "start": 74.467,
+   "end": 75.082
+  },
+  {
+   "i": 183,
+   "line": 15,
+   "word": "Inside,",
+   "start": 75.593,
+   "end": 76.185
+  },
+  {
+   "i": 184,
+   "line": 15,
+   "word": "his",
+   "start": 76.22,
+   "end": 76.324
+  },
+  {
+   "i": 185,
+   "line": 15,
+   "word": "accusers",
+   "start": 76.371,
+   "end": 76.905
+  },
+  {
+   "i": 186,
+   "line": 15,
+   "word": "alleged",
+   "start": 76.951,
+   "end": 77.311
+  },
+  {
+   "i": 187,
+   "line": 15,
+   "word": "poisoning.",
+   "start": 77.369,
+   "end": 77.973
+  },
+  {
+   "i": 188,
+   "line": 16,
+   "word": "But",
+   "start": 78.577,
+   "end": 78.727
+  },
+  {
+   "i": 189,
+   "line": 16,
+   "word": "Tacitus",
+   "start": 78.785,
+   "end": 79.25
+  },
+  {
+   "i": 190,
+   "line": 16,
+   "word": "says",
+   "start": 79.296,
+   "end": 79.575
+  },
+  {
+   "i": 191,
+   "line": 16,
+   "word": "they",
+   "start": 79.633,
+   "end": 79.772
+  },
+  {
+   "i": 192,
+   "line": 16,
+   "word": "failed",
+   "start": 79.865,
+   "end": 80.202
+  },
+  {
+   "i": 193,
+   "line": 16,
+   "word": "to",
+   "start": 80.237,
+   "end": 80.295
+  },
+  {
+   "i": 194,
+   "line": 16,
+   "word": "prove",
+   "start": 80.376,
+   "end": 80.643
+  },
+  {
+   "i": 195,
+   "line": 16,
+   "word": "it.",
+   "start": 80.678,
+   "end": 80.91
+  },
+  {
+   "i": 196,
+   "line": 17,
+   "word": "He",
+   "start": 81.421,
+   "end": 81.525
+  },
+  {
+   "i": 197,
+   "line": 17,
+   "word": "could",
+   "start": 81.572,
+   "end": 81.711
+  },
+  {
+   "i": 198,
+   "line": 17,
+   "word": "be",
+   "start": 81.746,
+   "end": 81.815
+  },
+  {
+   "i": 199,
+   "line": 17,
+   "word": "condemned",
+   "start": 81.85,
+   "end": 82.326
+  },
+  {
+   "i": 200,
+   "line": 17,
+   "word": "for",
+   "start": 82.373,
+   "end": 82.477
+  },
+  {
+   "i": 201,
+   "line": 17,
+   "word": "corrupting",
+   "start": 82.535,
+   "end": 82.988
+  },
+  {
+   "i": 202,
+   "line": 17,
+   "word": "the",
+   "start": 83.035,
+   "end": 83.104
+  },
+  {
+   "i": 203,
+   "line": 17,
+   "word": "army",
+   "start": 83.174,
+   "end": 83.406
+  },
+  {
+   "i": 204,
+   "line": 17,
+   "word": "and",
+   "start": 83.58,
+   "end": 83.743
+  },
+  {
+   "i": 205,
+   "line": 17,
+   "word": "taking",
+   "start": 83.801,
+   "end": 84.079
+  },
+  {
+   "i": 206,
+   "line": 17,
+   "word": "up",
+   "start": 84.137,
+   "end": 84.23
+  },
+  {
+   "i": 207,
+   "line": 17,
+   "word": "arms",
+   "start": 84.312,
+   "end": 84.59
+  },
+  {
+   "i": 208,
+   "line": 17,
+   "word": "against",
+   "start": 84.625,
+   "end": 84.915
+  },
+  {
+   "i": 209,
+   "line": 17,
+   "word": "Rome.",
+   "start": 84.985,
+   "end": 85.426
+  },
+  {
+   "i": 210,
+   "line": 17,
+   "word": "That",
+   "start": 86.123,
+   "end": 86.285
+  },
+  {
+   "i": 211,
+   "line": 17,
+   "word": "did",
+   "start": 86.332,
+   "end": 86.436
+  },
+  {
+   "i": 212,
+   "line": 17,
+   "word": "not",
+   "start": 86.483,
+   "end": 86.599
+  },
+  {
+   "i": 213,
+   "line": 17,
+   "word": "prove",
+   "start": 86.668,
+   "end": 87.04
+  },
+  {
+   "i": 214,
+   "line": 17,
+   "word": "he",
+   "start": 87.086,
+   "end": 87.144
+  },
+  {
+   "i": 215,
+   "line": 17,
+   "word": "had",
+   "start": 87.191,
+   "end": 87.295
+  },
+  {
+   "i": 216,
+   "line": 17,
+   "word": "poisoned",
+   "start": 87.365,
+   "end": 87.818
+  },
+  {
+   "i": 217,
+   "line": 17,
+   "word": "Germanicus.",
+   "start": 87.853,
+   "end": 88.619
+  },
+  {
+   "i": 218,
+   "line": 18,
+   "word": "Before",
+   "start": 89.432,
+   "end": 89.768
+  },
+  {
+   "i": 219,
+   "line": 18,
+   "word": "judgement,",
+   "start": 89.826,
+   "end": 90.453
+  },
+  {
+   "i": 220,
+   "line": 18,
+   "word": "Piso",
+   "start": 90.836,
+   "end": 91.266
+  },
+  {
+   "i": 221,
+   "line": 18,
+   "word": "was",
+   "start": 91.324,
+   "end": 91.44
+  },
+  {
+   "i": 222,
+   "line": 18,
+   "word": "found",
+   "start": 91.51,
+   "end": 91.754
+  },
+  {
+   "i": 223,
+   "line": 18,
+   "word": "dead",
+   "start": 91.823,
+   "end": 92.09
+  },
+  {
+   "i": 224,
+   "line": 18,
+   "word": "in",
+   "start": 92.148,
+   "end": 92.206
+  },
+  {
+   "i": 225,
+   "line": 18,
+   "word": "his",
+   "start": 92.264,
+   "end": 92.369
+  },
+  {
+   "i": 226,
+   "line": 18,
+   "word": "room,",
+   "start": 92.439,
+   "end": 92.798
+  },
+  {
+   "i": 227,
+   "line": 18,
+   "word": "a",
+   "start": 93.182,
+   "end": 93.251
+  },
+  {
+   "i": 228,
+   "line": 18,
+   "word": "sword",
+   "start": 93.344,
+   "end": 93.704
+  },
+  {
+   "i": 229,
+   "line": 18,
+   "word": "beside",
+   "start": 93.762,
+   "end": 94.169
+  },
+  {
+   "i": 230,
+   "line": 18,
+   "word": "him.",
+   "start": 94.203,
+   "end": 94.505
+  },
+  {
+   "i": 231,
+   "line": 19,
+   "word": "The",
+   "start": 95.202,
+   "end": 95.318
+  },
+  {
+   "i": 232,
+   "line": 19,
+   "word": "Senate",
+   "start": 95.388,
+   "end": 95.748
+  },
+  {
+   "i": 233,
+   "line": 19,
+   "word": "condemned",
+   "start": 95.782,
+   "end": 96.212
+  },
+  {
+   "i": 234,
+   "line": 19,
+   "word": "him",
+   "start": 96.247,
+   "end": 96.351
+  },
+  {
+   "i": 235,
+   "line": 19,
+   "word": "anyway,",
+   "start": 96.421,
+   "end": 96.967
+  },
+  {
+   "i": 236,
+   "line": 19,
+   "word": "and",
+   "start": 97.245,
+   "end": 97.385
+  },
+  {
+   "i": 237,
+   "line": 19,
+   "word": "ordered",
+   "start": 97.454,
+   "end": 97.768
+  },
+  {
+   "i": 238,
+   "line": 19,
+   "word": "its",
+   "start": 97.803,
+   "end": 97.93
+  },
+  {
+   "i": 239,
+   "line": 19,
+   "word": "decree",
+   "start": 97.977,
+   "end": 98.406
+  },
+  {
+   "i": 240,
+   "line": 19,
+   "word": "displayed",
+   "start": 98.464,
+   "end": 98.975
+  },
+  {
+   "i": 241,
+   "line": 19,
+   "word": "in",
+   "start": 99.01,
+   "end": 99.08
+  },
+  {
+   "i": 242,
+   "line": 19,
+   "word": "bronze.",
+   "start": 99.149,
+   "end": 99.741
+  },
+  {
+   "i": 243,
+   "line": 20,
+   "word": "Copies",
+   "start": 100.345,
+   "end": 100.775
+  },
+  {
+   "i": 244,
+   "line": 20,
+   "word": "survive",
+   "start": 100.821,
+   "end": 101.355
+  },
+  {
+   "i": 245,
+   "line": 20,
+   "word": "in",
+   "start": 101.402,
+   "end": 101.483
+  },
+  {
+   "i": 246,
+   "line": 20,
+   "word": "Spain.",
+   "start": 101.576,
+   "end": 102.168
+  },
+  {
+   "i": 247,
+   "line": 20,
+   "word": "They",
+   "start": 102.772,
+   "end": 102.934
+  },
+  {
+   "i": 248,
+   "line": 20,
+   "word": "condemn",
+   "start": 102.981,
+   "end": 103.375
+  },
+  {
+   "i": 249,
+   "line": 20,
+   "word": "his",
+   "start": 103.433,
+   "end": 103.538
+  },
+  {
+   "i": 250,
+   "line": 20,
+   "word": "cruelty,",
+   "start": 103.608,
+   "end": 104.235
+  },
+  {
+   "i": 251,
+   "line": 20,
+   "word": "his",
+   "start": 104.676,
+   "end": 104.803
+  },
+  {
+   "i": 252,
+   "line": 20,
+   "word": "corruption",
+   "start": 104.861,
+   "end": 105.349
+  },
+  {
+   "i": 253,
+   "line": 20,
+   "word": "of",
+   "start": 105.396,
+   "end": 105.454
+  },
+  {
+   "i": 254,
+   "line": 20,
+   "word": "soldiers,",
+   "start": 105.535,
+   "end": 106.104
+  },
+  {
+   "i": 255,
+   "line": 20,
+   "word": "and",
+   "start": 106.429,
+   "end": 106.568
+  },
+  {
+   "i": 256,
+   "line": 20,
+   "word": "his",
+   "start": 106.626,
+   "end": 106.731
+  },
+  {
+   "i": 257,
+   "line": 20,
+   "word": "attempt",
+   "start": 106.777,
+   "end": 107.207
+  },
+  {
+   "i": 258,
+   "line": 20,
+   "word": "at",
+   "start": 107.265,
+   "end": 107.346
+  },
+  {
+   "i": 259,
+   "line": 20,
+   "word": "civil",
+   "start": 107.427,
+   "end": 107.729
+  },
+  {
+   "i": 260,
+   "line": 20,
+   "word": "war.",
+   "start": 107.799,
+   "end": 108.286
+  },
+  {
+   "i": 261,
+   "line": 21,
+   "word": "They",
+   "start": 108.983,
+   "end": 109.134
+  },
+  {
+   "i": 262,
+   "line": 21,
+   "word": "repeat",
+   "start": 109.204,
+   "end": 109.587
+  },
+  {
+   "i": 263,
+   "line": 21,
+   "word": "Germanicus's",
+   "start": 109.645,
+   "end": 110.399
+  },
+  {
+   "i": 264,
+   "line": 21,
+   "word": "accusation,",
+   "start": 110.469,
+   "end": 111.34
+  },
+  {
+   "i": 265,
+   "line": 21,
+   "word": "but",
+   "start": 111.723,
+   "end": 111.874
+  },
+  {
+   "i": 266,
+   "line": 21,
+   "word": "make",
+   "start": 111.92,
+   "end": 112.083
+  },
+  {
+   "i": 267,
+   "line": 21,
+   "word": "no",
+   "start": 112.141,
+   "end": 112.292
+  },
+  {
+   "i": 268,
+   "line": 21,
+   "word": "finding",
+   "start": 112.385,
+   "end": 112.745
+  },
+  {
+   "i": 269,
+   "line": 21,
+   "word": "of",
+   "start": 112.803,
+   "end": 112.861
+  },
+  {
+   "i": 270,
+   "line": 21,
+   "word": "murder.",
+   "start": 112.919,
+   "end": 113.395
+  },
+  {
+   "i": 271,
+   "line": 22,
+   "word": "The",
+   "start": 114.208,
+   "end": 114.324
+  },
+  {
+   "i": 272,
+   "line": 22,
+   "word": "man",
+   "start": 114.382,
+   "end": 114.672
+  },
+  {
+   "i": 273,
+   "line": 22,
+   "word": "Germanicus",
+   "start": 114.753,
+   "end": 115.322
+  },
+  {
+   "i": 274,
+   "line": 22,
+   "word": "saved",
+   "start": 115.38,
+   "end": 115.775
+  },
+  {
+   "i": 275,
+   "line": 22,
+   "word": "was",
+   "start": 115.984,
+   "end": 116.158
+  },
+  {
+   "i": 276,
+   "line": 22,
+   "word": "condemned",
+   "start": 116.216,
+   "end": 116.692
+  },
+  {
+   "i": 277,
+   "line": 22,
+   "word": "as",
+   "start": 116.738,
+   "end": 116.82
+  },
+  {
+   "i": 278,
+   "line": 22,
+   "word": "a",
+   "start": 116.866,
+   "end": 116.901
+  },
+  {
+   "i": 279,
+   "line": 22,
+   "word": "rebel.",
+   "start": 116.971,
+   "end": 117.365
+  },
+  {
+   "i": 280,
+   "line": 23,
+   "word": "Whether",
+   "start": 117.911,
+   "end": 118.213
+  },
+  {
+   "i": 281,
+   "line": 23,
+   "word": "he",
+   "start": 118.294,
+   "end": 118.375
+  },
+  {
+   "i": 282,
+   "line": 23,
+   "word": "had",
+   "start": 118.434,
+   "end": 118.538
+  },
+  {
+   "i": 283,
+   "line": 23,
+   "word": "also",
+   "start": 118.584,
+   "end": 118.886
+  },
+  {
+   "i": 284,
+   "line": 23,
+   "word": "been",
+   "start": 118.956,
+   "end": 119.13
+  },
+  {
+   "i": 285,
+   "line": 23,
+   "word": "his",
+   "start": 119.177,
+   "end": 119.269
+  },
+  {
+   "i": 286,
+   "line": 23,
+   "word": "killer",
+   "start": 119.339,
+   "end": 119.641
+  },
+  {
+   "i": 287,
+   "line": 23,
+   "word": "remained",
+   "start": 119.85,
+   "end": 120.291
+  },
+  {
+   "i": 288,
+   "line": 23,
+   "word": "unproved.",
+   "start": 120.361,
+   "end": 120.871
+  }
+ ],
+ "word_count": 289,
+ "lines": [
+  "Germanicus saved the man he later accused of killing him.",
+  "According to Tacitus, a storm drove Piso towards a rocky coast. Germanicus sent warships to help.",
+  "He was the emperor's adopted son, heading east to settle disputes among Rome's provinces and allied kingdoms.",
+  "Piso, appointed governor of Syria, was supposed to serve under him.",
+  "Instead, he gave soldiers gifts, replaced strict officers, and ignored orders to send troops to Armenia.",
+  "The emperor's son held the higher command. Piso was building a following of his own.",
+  "Then Germanicus fell ill near Antioch.",
+  "Tacitus says human remains, spells, and lead tablets bearing his name were found hidden in the floor and walls.",
+  "Germanicus believed Piso had poisoned him. Dying, he asked his friends to avenge him.",
+  "After Germanicus died, Piso wanted Syria back.",
+  "His own son urged him to return to Rome, warning that going back to Syria could mean civil war.",
+  "Piso chose force. His men fought Roman troops. He lost.",
+  "Now he had to face the Senate.",
+  "Outside, crowds dragged off his statues to smash them and threatened violence if he escaped punishment.",
+  "Inside, his accusers alleged poisoning.",
+  "But Tacitus says they failed to prove it.",
+  "He could be condemned for corrupting the army and taking up arms against Rome. That did not prove he had poisoned Germanicus.",
+  "Before judgement, Piso was found dead in his room, a sword beside him.",
+  "The Senate condemned him anyway, and ordered its decree displayed in bronze.",
+  "Copies survive in Spain. They condemn his cruelty, his corruption of soldiers, and his attempt at civil war.",
+  "They repeat Germanicus's accusation, but make no finding of murder.",
+  "The man Germanicus saved was condemned as a rebel.",
+  "Whether he had also been his killer remained unproved."
+ ],
+ "wav": "cand-vo-oliver-germanicus-v5t1.wav",
+ "timing_source": "ElevenLabs /with-timestamps character alignment (word = first char start .. last char end); break-tag chars removed",
+ "speech_end_s": 120.871,
+ "duration_s": 121.126,
+ "pause_before_L23": {
+  "align_war_end": 117.365,
+  "align_but_start": 117.911,
+  "align_gap": 0.546,
+  "rms_war_offset": 117.231,
+  "rms_but_onset": 117.951,
+  "rms_gap": 0.72,
+  "break_tag_align": {
+   "chars": "<break time=\"0.5s\"/>",
+   "start": 117.911,
+   "end": 117.911
+  }
+ }
+}

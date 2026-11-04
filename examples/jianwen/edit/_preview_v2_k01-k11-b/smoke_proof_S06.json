@@ -1,0 +1,27 @@
+{
+ "slot": "S06",
+ "plate": "k06_army_before_nanjing_walls.png",
+ "smoke": "on",
+ "why": "",
+ "every": 15,
+ "frames": 7,
+ "max_outside_allow": 0,
+ "max_in_protect": 0,
+ "max_changed": 86,
+ "guards": {
+  "faces_0": 0,
+  "flames_0": 0,
+  "flames_1": 0,
+  "flames_2": 0,
+  "flames_3": 0,
+  "flames_4": 0,
+  "flames_5": 0,
+  "land_0": 0,
+  "land_1": 0,
+  "land_2": 0,
+  "land_3": 0,
+  "water_0": 0
+ },
+ "zero_motion_ok": true,
+ "emitter_layers": 6
+}

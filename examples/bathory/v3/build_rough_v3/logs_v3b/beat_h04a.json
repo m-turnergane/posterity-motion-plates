@@ -1,0 +1,122 @@
+{
+ "beat": "h04a",
+ "kind": "flat",
+ "frames": [
+  2236,
+  2536
+ ],
+ "t": [
+  74.533,
+  84.533
+ ],
+ "seconds": 10.0,
+ "inkgrade": {
+  "src_original": "/workspace/posterity/standalones/bathory/v2/plates/h04a_priest_writes_legend.png",
+  "src_original_md5": "d34476996b65667e75f308d01a4ecffe",
+  "src_v3_ink": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded.png",
+  "src_v3_ink_md5": "438bbd47c2653fea63c685f8453a3907",
+  "out": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded_v3b.png",
+  "out_md5": "2de025922ede31def045c411fe1c3a1a",
+  "table_box": [
+   305,
+   1360,
+   520,
+   1455
+  ],
+  "changed_px_vs_v3_ink": 5967,
+  "changed_px_outside_table_box": 0,
+  "crimson_px_gt_0_5": {
+   "original": 79234,
+   "v3_ink": 69928,
+   "v3b_ink": 68604
+  },
+  "crimson_px_in_table_box": {
+   "v3_ink": 1776,
+   "v3b_ink": 452
+  }
+ },
+ "plate": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded_v3b.png",
+ "plate_md5": "2de025922ede31def045c411fe1c3a1a",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "h04a#0",
+    "sources": {
+     "candle": 5
+    },
+    "warped_candles": 4,
+    "spill_groups": 5,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "auto": [
+     [
+      760,
+      470,
+      940,
+      740
+     ]
+    ],
+    "spill_amp": 1.6,
+    "relight_exclude": [
+     [
+      180,
+      150,
+      600,
+      720
+     ]
+    ]
+   },
+   "pulse": 0.4467,
+   "metrics_at_pulse1": {
+    "whole": 23.33637046813965,
+    "local": 59.03551483154297,
+    "step": 12.215384483337402
+   },
+   "metrics": {
+    "whole": 10.419206619262695,
+    "local": 27.55524253845215,
+    "step": 5.847213268280029
+   }
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

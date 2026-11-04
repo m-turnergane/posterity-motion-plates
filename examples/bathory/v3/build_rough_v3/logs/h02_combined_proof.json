@@ -1,0 +1,33 @@
+{
+ "times": [
+  0.0,
+  0.7,
+  1.4,
+  2.1
+ ],
+ "face_changed_px": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "outside_allow_changed_px": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "water_changed_px": [
+  20215,
+  22554,
+  23104,
+  17706
+ ],
+ "steam_changed_px": [
+  52738,
+  52734,
+  53226,
+  53464
+ ],
+ "pass": true
+}

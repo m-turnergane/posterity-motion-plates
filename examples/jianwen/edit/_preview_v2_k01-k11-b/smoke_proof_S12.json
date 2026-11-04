@@ -1,0 +1,20 @@
+{
+ "slot": "S12",
+ "plate": "k11_LEGEND_monk_leaves_burning_city.png",
+ "smoke": "on",
+ "why": "",
+ "every": 15,
+ "frames": 9,
+ "max_outside_allow": 0,
+ "max_in_protect": 0,
+ "max_changed": 59,
+ "guards": {
+  "faces_0": 0,
+  "land_0": 0,
+  "moon_0": 0,
+  "water_0": 0,
+  "legend_top_0": 0
+ },
+ "zero_motion_ok": true,
+ "emitter_layers": 2
+}

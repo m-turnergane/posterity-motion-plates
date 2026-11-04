@@ -1,0 +1,41 @@
+{
+ "final": "final-vo-oliver-germanicus-v5.wav",
+ "source_take": "v5t3",
+ "duration_s": 119.687,
+ "speech_end_s": 119.437,
+ "integrated_LUFS": -31.0,
+ "true_peak_dBTP": -6.1,
+ "body_L01_L21_I": -30.9,
+ "L22_I": -33.6,
+ "L23_I": -34.0,
+ "L22_L23_I": -33.7,
+ "delta_L22": -2.7,
+ "delta_L23": -3.1,
+ "delta_L22_L23": -2.8,
+ "pause_L22_L23": {
+  "align_war_end": 116.123,
+  "align_but_start": 116.668,
+  "align_gap": 0.545,
+  "rms_war_offset": 115.981,
+  "rms_but_onset": 116.701,
+  "rms_gap": 0.72,
+  "break_tag_align": {
+   "chars": "<break time=\"0.5s\"/>",
+   "start": 116.668,
+   "end": 116.668
+  }
+ },
+ "ending_gain_db": {
+  "L22": -3.0,
+  "L23": -1.0,
+  "ramp1": [
+   112.471,
+   112.901
+  ],
+  "ramp2": [
+   116.16300000000001,
+   116.628
+  ]
+ },
+ "wps": 2.42
+}

@@ -1,0 +1,90 @@
+{
+ "window": {
+  "track_start": 256.0,
+  "segA": [
+   256.0,
+   295.75
+  ],
+  "segB": [
+   279.65,
+   345.233
+  ],
+  "crossfade_cut_s": [
+   37.25,
+   39.75
+  ],
+  "crossfade_track_A": [
+   293.25,
+   295.75
+  ],
+  "crossfade_track_B": [
+   279.65,
+   282.15
+  ],
+  "repeat_s": 13.599999999999994,
+  "map": "cut t -> track t+256 (t<38.5), t+242.4 after"
+ },
+ "fix": {
+  "ramp": [
+   71.498,
+   72.498
+  ],
+  "extra_duck_db": -3.5,
+  "eq": "2 kHz bell -3 dB Q1 (bed only)"
+ },
+ "ease": {
+  "ramp": [
+   89.041,
+   92.026
+  ],
+  "db": -3.0
+ },
+ "priest_line_cut": 78.813,
+ "priest_line_track": 321.213,
+ "blood_countess_cut": 92.176,
+ "blood_countess_track": 334.576,
+ "fade": [
+  100.333,
+  102.833
+ ],
+ "iters": [
+  {
+   "bed_db": -2.0,
+   "bed_I": -21.8,
+   "vo_over_bed_LU": -2.6
+  },
+  {
+   "bed_db": -16.6,
+   "bed_I": -36.4,
+   "vo_over_bed_LU": 12.0
+  }
+ ],
+ "master": [
+  {
+   "master_db": 0.0,
+   "I": -24.7,
+   "TP": -8.2
+  },
+  {
+   "master_db": 10.7,
+   "I": -14.5,
+   "TP": -4.4
+  },
+  {
+   "master_db": 11.2,
+   "I": -14.2,
+   "TP": -4.4
+  },
+  {
+   "master_db": 11.4,
+   "I": -14.1,
+   "TP": -4.4
+  }
+ ],
+ "vo_I": -24.4,
+ "final_wav": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/scratch_v3c/audio/mix_v3c_final.wav",
+ "bed_db": -16.6,
+ "master_db": 11.4,
+ "I": -14.1,
+ "TP": -4.4
+}

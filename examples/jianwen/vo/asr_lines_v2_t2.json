@@ -1,0 +1,212 @@
+{
+ "model": "medium.en",
+ "take": "t2",
+ "matched": 185,
+ "ref_words": 204,
+ "lines": [
+  {
+   "line": 1,
+   "start": 0,
+   "end": 4.88,
+   "ref_words": 14,
+   "matched": 14,
+   "hyp": "They buried a body as China's emperor. His own uncle kept searching for him.",
+   "diffs": []
+  },
+  {
+   "line": 2,
+   "start": 4.99,
+   "end": 14.4,
+   "ref_words": 20,
+   "matched": 20,
+   "hyp": "The missing emperor was Jianwen. His grandfather had founded the Ming dynasty.  But Jianwen inherited something else. Uncles with armies.",
+   "diffs": []
+  },
+  {
+   "line": 3,
+   "start": 14.7,
+   "end": 19.55,
+   "ref_words": 13,
+   "matched": 11,
+   "hyp": "When he tried to take away their power, one uncle, Judy, rebelled.",
+   "diffs": [
+    [
+     "replace",
+     "zhu di",
+     "judy"
+    ]
+   ]
+  },
+  {
+   "line": 4,
+   "start": 20.45,
+   "end": 27.97,
+   "ref_words": 20,
+   "matched": 17,
+   "hyp": "3 years later, Judy reached Nanjing. A commander who had once fought for Jianwen helped open a city gate.",
+   "diffs": [
+    [
+     "replace",
+     "three",
+     "3"
+    ],
+    [
+     "replace",
+     "zhu di",
+     "judy"
+    ]
+   ]
+  },
+  {
+   "line": 5,
+   "start": 28.08,
+   "end": 30.26,
+   "ref_words": 5,
+   "matched": 5,
+   "hyp": "then the palace caught fire.",
+   "diffs": []
+  },
+  {
+   "line": 6,
+   "start": 30.46,
+   "end": 35.11,
+   "ref_words": 14,
+   "matched": 12,
+   "hyp": "Judy's men carried out a body. He had it buried as his nephew.",
+   "diffs": [
+    [
+     "replace",
+     "zhu di's",
+     "judy's"
+    ]
+   ]
+  },
+  {
+   "line": 7,
+   "start": 35.41,
+   "end": 37.94,
+   "ref_words": 5,
+   "matched": 4,
+   "hyp": "Jianwen's small sun vanished too.",
+   "diffs": [
+    [
+     "replace",
+     "son",
+     "sun"
+    ]
+   ]
+  },
+  {
+   "line": 8,
+   "start": 38.15,
+   "end": 42.75,
+   "ref_words": 14,
+   "matched": 11,
+   "hyp": "Judy took the throne as Yongle and wiped Yanwen's reign from the calendar.",
+   "diffs": [
+    [
+     "replace",
+     "zhu di",
+     "judy"
+    ],
+    [
+     "replace",
+     "jianwen's",
+     "yanwen's"
+    ]
+   ]
+  },
+  {
+   "line": 9,
+   "start": 43.05,
+   "end": 47.2,
+   "ref_words": 10,
+   "matched": 8,
+   "hyp": "But rumors said Janwen had escaped dressed as a monk.",
+   "diffs": [
+    [
+     "replace",
+     "rumours",
+     "rumors"
+    ],
+    [
+     "replace",
+     "jianwen",
+     "janwen"
+    ]
+   ]
+  },
+  {
+   "line": 10,
+   "start": 47.31,
+   "end": 57.4,
+   "ref_words": 23,
+   "matched": 20,
+   "hyp": "Yonglei sent an official named Hu Ying across China.  He was seeking a Taoist holy man.  Secretly, he was looking for Jianwen.",
+   "diffs": [
+    [
+     "replace",
+     "yongle",
+     "yonglei"
+    ],
+    [
+     "delete",
+     "officially",
+     ""
+    ],
+    [
+     "replace",
+     "daoist",
+     "taoist"
+    ]
+   ]
+  },
+  {
+   "line": 11,
+   "start": 57.81,
+   "end": 62.91,
+   "ref_words": 12,
+   "matched": 12,
+   "hyp": "When Hu Ying's mother died, he asked to go home.  Yongle refused.",
+   "diffs": []
+  },
+  {
+   "line": 12,
+   "start": 62.95,
+   "end": 73.98,
+   "ref_words": 28,
+   "matched": 25,
+   "hyp": "More than 20 years after the fire, Huying returned.  Yongle was already in bed.  He got up, summoned the official, and listened until deep into the night.",
+   "diffs": [
+    [
+     "replace",
+     "twenty",
+     "20"
+    ],
+    [
+     "replace",
+     "hu ying",
+     "huying"
+    ]
+   ]
+  },
+  {
+   "line": 13,
+   "start": 74.19,
+   "end": 81.31,
+   "ref_words": 18,
+   "matched": 18,
+   "hyp": "The later history of Ming says Yongle's suspicions finally ended.  It never says what Hu Ying told him.",
+   "diffs": []
+  },
+  {
+   "line": 14,
+   "start": 81.85,
+   "end": 86.81,
+   "ref_words": 8,
+   "matched": 8,
+   "hyp": "History remembers the victors, we remember the rest.",
+   "diffs": []
+  }
+ ]
+}

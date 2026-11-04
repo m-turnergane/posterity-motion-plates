@@ -1,0 +1,97 @@
+{
+ "beat": "h04b",
+ "kind": "h04b",
+ "frames": [
+  2511,
+  2925
+ ],
+ "t": [
+  83.7,
+  97.5
+ ],
+ "seconds": 13.8,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/h04b_final_stare.png",
+ "plate_md5": "0d8575f772adc1dc9c000c9fd9e2b1e5",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "h04b#0",
+    "sources": {
+     "candle": 3
+    },
+    "warped_candles": 3,
+    "spill_groups": 3,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "auto": [
+     [
+      10,
+      640,
+      130,
+      860
+     ]
+    ],
+    "spill_amp": 1.6,
+    "relight_exclude": [
+     [
+      240,
+      320,
+      620,
+      860
+     ]
+    ]
+   },
+   "pulse": 0.304,
+   "metrics_at_pulse1": {
+    "whole": 32.46756362915039,
+    "local": 80.0545883178711,
+    "step": 17.431171417236328
+   },
+   "metrics": {
+    "whole": 10.109419822692871,
+    "local": 28.468429565429688,
+    "step": 5.899522304534912
+   }
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

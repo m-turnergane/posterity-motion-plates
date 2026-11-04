@@ -1,0 +1,548 @@
+{
+ "macleod_ignosi.mp3": {
+  "offset": 29,
+  "window_median": -25.0,
+  "rows": [
+   {
+    "beat": "B01a",
+    "energy": "INTRUSION",
+    "video_s": "0.0-2.1",
+    "track": "0:29.0-0:31.1",
+    "M_LUFS": -22.2,
+    "rel_dB": 2.8
+   },
+   {
+    "beat": "B01b",
+    "energy": "ISOLATION",
+    "video_s": "2.1-4.0",
+    "track": "0:31.1-0:33.0",
+    "M_LUFS": -27.3,
+    "rel_dB": -2.3
+   },
+   {
+    "beat": "B02",
+    "energy": "UNEASE",
+    "video_s": "4.0-6.8",
+    "track": "0:33.0-0:35.8",
+    "M_LUFS": -31.1,
+    "rel_dB": -6.1
+   },
+   {
+    "beat": "B03",
+    "energy": "UNEASE (MAP)",
+    "video_s": "6.8-9.8",
+    "track": "0:35.8-0:38.8",
+    "M_LUFS": -25.9,
+    "rel_dB": -0.9
+   },
+   {
+    "beat": "B04",
+    "energy": "INTRUSION",
+    "video_s": "9.8-12.1",
+    "track": "0:38.8-0:41.1",
+    "M_LUFS": -24.5,
+    "rel_dB": 0.5
+   },
+   {
+    "beat": "B05",
+    "energy": "UNEASE",
+    "video_s": "12.1-14.0",
+    "track": "0:41.1-0:43.0",
+    "M_LUFS": -25.6,
+    "rel_dB": -0.6
+   },
+   {
+    "beat": "B06",
+    "energy": "UNEASE",
+    "video_s": "14.0-19.9",
+    "track": "0:43.0-0:48.9",
+    "M_LUFS": -25.4,
+    "rel_dB": -0.4
+   },
+   {
+    "beat": "B07",
+    "energy": "UNEASE",
+    "video_s": "19.9-24.4",
+    "track": "0:48.9-0:53.4",
+    "M_LUFS": -24.1,
+    "rel_dB": 0.9
+   },
+   {
+    "beat": "B08",
+    "energy": "UNEASE",
+    "video_s": "24.4-31.2",
+    "track": "0:53.4-1:00.2",
+    "M_LUFS": -22.3,
+    "rel_dB": 2.7
+   },
+   {
+    "beat": "B09",
+    "energy": "INTRUSION (arrest, peak)",
+    "video_s": "31.2-33.8",
+    "track": "1:00.2-1:02.8",
+    "M_LUFS": -20.2,
+    "rel_dB": 4.8
+   },
+   {
+    "beat": "B10",
+    "energy": "INTRUSION (peak)",
+    "video_s": "33.8-38.5",
+    "track": "1:02.8-1:07.5",
+    "M_LUFS": -18.7,
+    "rel_dB": 6.3
+   },
+   {
+    "beat": "B11",
+    "energy": "ISOLATION",
+    "video_s": "38.5-41.1",
+    "track": "1:07.5-1:10.1",
+    "M_LUFS": -22.0,
+    "rel_dB": 3.0
+   },
+   {
+    "beat": "B12",
+    "energy": "ISOLATION",
+    "video_s": "41.1-45.1",
+    "track": "1:10.1-1:14.1",
+    "M_LUFS": -22.4,
+    "rel_dB": 2.6
+   },
+   {
+    "beat": "B13",
+    "energy": "INTRUSION blocked",
+    "video_s": "45.1-50.0",
+    "track": "1:14.1-1:19.0",
+    "M_LUFS": -19.9,
+    "rel_dB": 5.1
+   },
+   {
+    "beat": "B14",
+    "energy": "ISOLATION (+pause)",
+    "video_s": "50.0-50.5",
+    "track": "1:19.0-1:19.5",
+    "M_LUFS": -22.6,
+    "rel_dB": 2.4
+   },
+   {
+    "beat": "B15",
+    "energy": "UNEASE",
+    "video_s": "50.5-57.3",
+    "track": "1:19.5-1:26.3",
+    "M_LUFS": -24.0,
+    "rel_dB": 1.0
+   },
+   {
+    "beat": "B16",
+    "energy": "UNEASE",
+    "video_s": "57.3-64.1",
+    "track": "1:26.3-1:33.1",
+    "M_LUFS": -24.0,
+    "rel_dB": 1.0
+   },
+   {
+    "beat": "B17",
+    "energy": "UNEASE",
+    "video_s": "64.1-68.1",
+    "track": "1:33.1-1:37.1",
+    "M_LUFS": -27.9,
+    "rel_dB": -2.9
+   },
+   {
+    "beat": "B18",
+    "energy": "ISOLATION",
+    "video_s": "68.1-69.9",
+    "track": "1:37.1-1:38.9",
+    "M_LUFS": -25.9,
+    "rel_dB": -0.9
+   },
+   {
+    "beat": "B19",
+    "energy": "UNEASE",
+    "video_s": "69.9-73.5",
+    "track": "1:38.9-1:42.5",
+    "M_LUFS": -26.1,
+    "rel_dB": -1.1
+   },
+   {
+    "beat": "B20",
+    "energy": "ISOLATION (closing reveal)",
+    "video_s": "73.5-79.8",
+    "track": "1:42.5-1:48.8",
+    "M_LUFS": -29.7,
+    "rel_dB": -4.7
+   },
+   {
+    "beat": "Outro",
+    "energy": "card / tail",
+    "video_s": "79.8-83.9",
+    "track": "1:48.8-1:52.9",
+    "M_LUFS": -27.1,
+    "rel_dB": -2.1
+   }
+  ]
+ },
+ "macleod_gagool.mp3": {
+  "offset": 77,
+  "window_median": -22.4,
+  "rows": [
+   {
+    "beat": "B01a",
+    "energy": "INTRUSION",
+    "video_s": "0.0-2.1",
+    "track": "1:17.0-1:19.1",
+    "M_LUFS": -20.7,
+    "rel_dB": 1.7
+   },
+   {
+    "beat": "B01b",
+    "energy": "ISOLATION",
+    "video_s": "2.1-4.0",
+    "track": "1:19.1-1:21.0",
+    "M_LUFS": -23.4,
+    "rel_dB": -1.0
+   },
+   {
+    "beat": "B02",
+    "energy": "UNEASE",
+    "video_s": "4.0-6.8",
+    "track": "1:21.0-1:23.8",
+    "M_LUFS": -26.3,
+    "rel_dB": -3.9
+   },
+   {
+    "beat": "B03",
+    "energy": "UNEASE (MAP)",
+    "video_s": "6.8-9.8",
+    "track": "1:23.8-1:26.8",
+    "M_LUFS": -25.4,
+    "rel_dB": -3.0
+   },
+   {
+    "beat": "B04",
+    "energy": "INTRUSION",
+    "video_s": "9.8-12.1",
+    "track": "1:26.8-1:29.1",
+    "M_LUFS": -21.7,
+    "rel_dB": 0.7
+   },
+   {
+    "beat": "B05",
+    "energy": "UNEASE",
+    "video_s": "12.1-14.0",
+    "track": "1:29.1-1:31.0",
+    "M_LUFS": -18.3,
+    "rel_dB": 4.1
+   },
+   {
+    "beat": "B06",
+    "energy": "UNEASE",
+    "video_s": "14.0-19.9",
+    "track": "1:31.0-1:36.9",
+    "M_LUFS": -22.7,
+    "rel_dB": -0.3
+   },
+   {
+    "beat": "B07",
+    "energy": "UNEASE",
+    "video_s": "19.9-24.4",
+    "track": "1:36.9-1:41.4",
+    "M_LUFS": -19.6,
+    "rel_dB": 2.8
+   },
+   {
+    "beat": "B08",
+    "energy": "UNEASE",
+    "video_s": "24.4-31.2",
+    "track": "1:41.4-1:48.2",
+    "M_LUFS": -20.9,
+    "rel_dB": 1.5
+   },
+   {
+    "beat": "B09",
+    "energy": "INTRUSION (arrest, peak)",
+    "video_s": "31.2-33.8",
+    "track": "1:48.2-1:50.8",
+    "M_LUFS": -16.3,
+    "rel_dB": 6.1
+   },
+   {
+    "beat": "B10",
+    "energy": "INTRUSION (peak)",
+    "video_s": "33.8-38.5",
+    "track": "1:50.8-1:55.5",
+    "M_LUFS": -15.0,
+    "rel_dB": 7.4
+   },
+   {
+    "beat": "B11",
+    "energy": "ISOLATION",
+    "video_s": "38.5-41.1",
+    "track": "1:55.5-1:58.1",
+    "M_LUFS": -16.9,
+    "rel_dB": 5.5
+   },
+   {
+    "beat": "B12",
+    "energy": "ISOLATION",
+    "video_s": "41.1-45.1",
+    "track": "1:58.1-2:02.1",
+    "M_LUFS": -16.7,
+    "rel_dB": 5.7
+   },
+   {
+    "beat": "B13",
+    "energy": "INTRUSION blocked",
+    "video_s": "45.1-50.0",
+    "track": "2:02.1-2:07.0",
+    "M_LUFS": -12.7,
+    "rel_dB": 9.7
+   },
+   {
+    "beat": "B14",
+    "energy": "ISOLATION (+pause)",
+    "video_s": "50.0-50.5",
+    "track": "2:07.0-2:07.5",
+    "M_LUFS": -13.8,
+    "rel_dB": 8.6
+   },
+   {
+    "beat": "B15",
+    "energy": "UNEASE",
+    "video_s": "50.5-57.3",
+    "track": "2:07.5-2:14.3",
+    "M_LUFS": -19.8,
+    "rel_dB": 2.6
+   },
+   {
+    "beat": "B16",
+    "energy": "UNEASE",
+    "video_s": "57.3-64.1",
+    "track": "2:14.3-2:21.1",
+    "M_LUFS": -22.7,
+    "rel_dB": -0.3
+   },
+   {
+    "beat": "B17",
+    "energy": "UNEASE",
+    "video_s": "64.1-68.1",
+    "track": "2:21.1-2:25.1",
+    "M_LUFS": -23.1,
+    "rel_dB": -0.7
+   },
+   {
+    "beat": "B18",
+    "energy": "ISOLATION",
+    "video_s": "68.1-69.9",
+    "track": "2:25.1-2:26.9",
+    "M_LUFS": -27.9,
+    "rel_dB": -5.5
+   },
+   {
+    "beat": "B19",
+    "energy": "UNEASE",
+    "video_s": "69.9-73.5",
+    "track": "2:26.9-2:30.5",
+    "M_LUFS": -26.1,
+    "rel_dB": -3.7
+   },
+   {
+    "beat": "B20",
+    "energy": "ISOLATION (closing reveal)",
+    "video_s": "73.5-79.8",
+    "track": "2:30.5-2:36.8",
+    "M_LUFS": -31.0,
+    "rel_dB": -8.6
+   },
+   {
+    "beat": "Outro",
+    "energy": "card / tail",
+    "video_s": "79.8-83.9",
+    "track": "2:36.8-2:40.9",
+    "M_LUFS": -27.5,
+    "rel_dB": -5.1
+   }
+  ]
+ },
+ "sb_eyes_in_the_void.mp3": {
+  "offset": 161,
+  "window_median": -12.4,
+  "rows": [
+   {
+    "beat": "B01a",
+    "energy": "INTRUSION",
+    "video_s": "0.0-2.1",
+    "track": "2:41.0-2:43.1",
+    "M_LUFS": -15.6,
+    "rel_dB": -3.2
+   },
+   {
+    "beat": "B01b",
+    "energy": "ISOLATION",
+    "video_s": "2.1-4.0",
+    "track": "2:43.1-2:45.0",
+    "M_LUFS": -18.6,
+    "rel_dB": -6.2
+   },
+   {
+    "beat": "B02",
+    "energy": "UNEASE",
+    "video_s": "4.0-6.8",
+    "track": "2:45.0-2:47.8",
+    "M_LUFS": -13.7,
+    "rel_dB": -1.3
+   },
+   {
+    "beat": "B03",
+    "energy": "UNEASE (MAP)",
+    "video_s": "6.8-9.8",
+    "track": "2:47.8-2:50.8",
+    "M_LUFS": -11.3,
+    "rel_dB": 1.1
+   },
+   {
+    "beat": "B04",
+    "energy": "INTRUSION",
+    "video_s": "9.8-12.1",
+    "track": "2:50.8-2:53.1",
+    "M_LUFS": -14.1,
+    "rel_dB": -1.7
+   },
+   {
+    "beat": "B05",
+    "energy": "UNEASE",
+    "video_s": "12.1-14.0",
+    "track": "2:53.1-2:55.0",
+    "M_LUFS": -12.0,
+    "rel_dB": 0.4
+   },
+   {
+    "beat": "B06",
+    "energy": "UNEASE",
+    "video_s": "14.0-19.9",
+    "track": "2:55.0-3:00.9",
+    "M_LUFS": -10.8,
+    "rel_dB": 1.6
+   },
+   {
+    "beat": "B07",
+    "energy": "UNEASE",
+    "video_s": "19.9-24.4",
+    "track": "3:00.9-3:05.4",
+    "M_LUFS": -11.5,
+    "rel_dB": 0.9
+   },
+   {
+    "beat": "B08",
+    "energy": "UNEASE",
+    "video_s": "24.4-31.2",
+    "track": "3:05.4-3:12.2",
+    "M_LUFS": -12.2,
+    "rel_dB": 0.2
+   },
+   {
+    "beat": "B09",
+    "energy": "INTRUSION (arrest, peak)",
+    "video_s": "31.2-33.8",
+    "track": "3:12.2-3:14.8",
+    "M_LUFS": -10.0,
+    "rel_dB": 2.4
+   },
+   {
+    "beat": "B10",
+    "energy": "INTRUSION (peak)",
+    "video_s": "33.8-38.5",
+    "track": "3:14.8-3:19.5",
+    "M_LUFS": -10.0,
+    "rel_dB": 2.4
+   },
+   {
+    "beat": "B11",
+    "energy": "ISOLATION",
+    "video_s": "38.5-41.1",
+    "track": "3:19.5-3:22.1",
+    "M_LUFS": -12.4,
+    "rel_dB": -0.0
+   },
+   {
+    "beat": "B12",
+    "energy": "ISOLATION",
+    "video_s": "41.1-45.1",
+    "track": "3:22.1-3:26.1",
+    "M_LUFS": -10.8,
+    "rel_dB": 1.6
+   },
+   {
+    "beat": "B13",
+    "energy": "INTRUSION blocked",
+    "video_s": "45.1-50.0",
+    "track": "3:26.1-3:31.0",
+    "M_LUFS": -11.9,
+    "rel_dB": 0.5
+   },
+   {
+    "beat": "B14",
+    "energy": "ISOLATION (+pause)",
+    "video_s": "50.0-50.5",
+    "track": "3:31.0-3:31.5",
+    "M_LUFS": -9.8,
+    "rel_dB": 2.6
+   },
+   {
+    "beat": "B15",
+    "energy": "UNEASE",
+    "video_s": "50.5-57.3",
+    "track": "3:31.5-3:38.3",
+    "M_LUFS": -11.0,
+    "rel_dB": 1.4
+   },
+   {
+    "beat": "B16",
+    "energy": "UNEASE",
+    "video_s": "57.3-64.1",
+    "track": "3:38.3-3:45.1",
+    "M_LUFS": -10.6,
+    "rel_dB": 1.8
+   },
+   {
+    "beat": "B17",
+    "energy": "UNEASE",
+    "video_s": "64.1-68.1",
+    "track": "3:45.1-3:49.1",
+    "M_LUFS": -10.0,
+    "rel_dB": 2.4
+   },
+   {
+    "beat": "B18",
+    "energy": "ISOLATION",
+    "video_s": "68.1-69.9",
+    "track": "3:49.1-3:50.9",
+    "M_LUFS": -12.5,
+    "rel_dB": -0.1
+   },
+   {
+    "beat": "B19",
+    "energy": "UNEASE",
+    "video_s": "69.9-73.5",
+    "track": "3:50.9-3:54.5",
+    "M_LUFS": -15.0,
+    "rel_dB": -2.6
+   },
+   {
+    "beat": "B20",
+    "energy": "ISOLATION (closing reveal)",
+    "video_s": "73.5-79.8",
+    "track": "3:54.5-4:00.8",
+    "M_LUFS": -21.6,
+    "rel_dB": -9.2
+   },
+   {
+    "beat": "Outro",
+    "energy": "card / tail",
+    "video_s": "79.8-83.9",
+    "track": "4:00.8-4:04.9",
+    "M_LUFS": -15.6,
+    "rel_dB": -3.2
+   }
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "beat": "b14",
+ "kind": "flat",
+ "frames": [
+  1958,
+  2049
+ ],
+ "t": [
+  65.267,
+  68.3
+ ],
+ "seconds": 3.033,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b14_why_window.png",
+ "plate_md5": "52531e02e5bdcb03ee608b79f023a1a8",
+ "plate_wh": [
+  941,
+  1671
+ ],
+ "dust": {
+  "seed": 986,
+  "n": [
+   300
+  ],
+  "amp": [
+   120
+  ]
+ },
+ "density_max": 1.218,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1671
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000025704504,
+  "cover_scale": 1.149,
+  "visible_src_wh": [
+   886.7,
+   1576.4
+  ],
+  "ratio": 1.218,
+  "ratio_x": 1.218,
+  "ratio_y": 1.218,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

@@ -1,0 +1,201 @@
+{
+ "beat": "b01a",
+ "kind": "flat",
+ "frames": [
+  1056,
+  1250
+ ],
+ "t": [
+  35.2,
+  41.667
+ ],
+ "seconds": 6.467,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b01a_bytca_led_away.png",
+ "plate_md5": "e4cf0d6dcbd8f57d3aa076868df2b258",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "snow_cfg": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/snow_b01a.json",
+ "snow_face_boxes": [
+  [
+   40,
+   380,
+   160,
+   560
+  ],
+  [
+   330,
+   540,
+   520,
+   720
+  ],
+  [
+   190,
+   520,
+   290,
+   640
+  ],
+  [
+   520,
+   380,
+   630,
+   520
+  ],
+  [
+   680,
+   340,
+   860,
+   520
+  ],
+  [
+   42,
+   366,
+   168,
+   543
+  ],
+  [
+   533,
+   508,
+   617,
+   625
+  ],
+  [
+   671,
+   307,
+   834,
+   521
+  ],
+  [
+   214,
+   517,
+   299,
+   629
+  ],
+  [
+   360,
+   481,
+   550,
+   728
+  ]
+ ],
+ "fx": [
+  {
+   "kind": "torch",
+   "info": {
+    "plate": "b01a#0",
+    "sources": {
+     "torch": 1
+    },
+    "warped_candles": 0,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "torch": [
+     [
+      0,
+      870,
+      215,
+      1360
+     ]
+    ],
+    "relight_exclude": [
+     [
+      40,
+      380,
+      160,
+      560
+     ],
+     [
+      330,
+      540,
+      520,
+      720
+     ],
+     [
+      190,
+      520,
+      290,
+      640
+     ],
+     [
+      520,
+      380,
+      630,
+      520
+     ],
+     [
+      680,
+      340,
+      860,
+      520
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "fire_sharpness": {
+    "check": "fire_sharpness",
+    "zoom": 1.0599999616543452,
+    "lapvar": [
+     535.4
+    ],
+    "min_lapvar": 100.0,
+    "soft_rects": [],
+    "max_zoom": 1.5,
+    "ok": true,
+    "msg": "ok"
+   },
+   "pulse": 0.3435,
+   "metrics_at_pulse1": {
+    "whole": 28.15057945251465,
+    "local": 53.78871536254883,
+    "step": 8.58879280090332
+   },
+   "metrics": {
+    "whole": 9.922016143798828,
+    "local": 19.38601303100586,
+    "step": 3.089402198791504
+   }
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "snow_visible_flakes_per_frame": {
+  "min": 91,
+  "mean": 99.7,
+  "max": 108
+ }
+}

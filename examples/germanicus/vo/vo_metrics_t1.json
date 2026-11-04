@@ -1,0 +1,110 @@
+{
+ "take": "t1",
+ "out": "cand-vo-oliver-germanicus-t1.wav",
+ "raw_duration_s": 56.982,
+ "duration_s": 56.513,
+ "speech_start_s": 0.0,
+ "speech_end_s": 56.253,
+ "last_char_end_raw_s": 56.982,
+ "trim_s": 56.263,
+ "integrated_LUFS": -31.3,
+ "true_peak_dBTP": -9.7,
+ "sample_peak_dBFS": -9.73,
+ "body_L01_L09_I": -31.2,
+ "end_L10_L11_I": -32.1,
+ "delta_end_vs_body_LU": -0.9,
+ "final_line_L11_I": -31.6,
+ "delta_L11_vs_body_LU": -0.4,
+ "L11_sample_peak_dBFS": -12.86,
+ "end_drop_flag": false,
+ "wps": 2.595,
+ "max_gap": {
+  "after": "turn.",
+  "before": "Then",
+  "gap": 0.697,
+  "at": 20.166
+ },
+ "long_gaps_over_1p2": [],
+ "rms_silences_over_1p2": [],
+ "word_count": 146,
+ "lines": [
+  {
+   "line": "L01",
+   "start": 0.0,
+   "end": 7.419,
+   "I": -30.5,
+   "text": "Rome's favourite prince said he was murdered"
+  },
+  {
+   "line": "L02",
+   "start": 8.115,
+   "end": 12.481,
+   "I": -29.5,
+   "text": "His name was Germanicus, the adopted son of "
+  },
+  {
+   "line": "L03",
+   "start": 13.084,
+   "end": 20.166,
+   "I": -31.0,
+   "text": "He was sent east with authority over its gov"
+  },
+  {
+   "line": "L04",
+   "start": 20.863,
+   "end": 22.593,
+   "I": -30.2,
+   "text": "Then Germanicus fell ill."
+  },
+  {
+   "line": "L05",
+   "start": 23.196,
+   "end": 31.985,
+   "I": -30.2,
+   "text": "The historian Tacitus says things were found"
+  },
+  {
+   "line": "L06",
+   "start": 32.682,
+   "end": 36.908,
+   "I": -33.7,
+   "text": "These were curse tablets, meant to hand a vi"
+  },
+  {
+   "line": "L07",
+   "start": 37.418,
+   "end": 39.392,
+   "I": -32.3,
+   "text": "Dying, Germanicus blamed Piso."
+  },
+  {
+   "line": "L08",
+   "start": 39.903,
+   "end": 45.778,
+   "I": -32.9,
+   "text": "Piso was tried before the Senate, but before"
+  },
+  {
+   "line": "L09",
+   "start": 46.161,
+   "end": 51.711,
+   "I": -32.6,
+   "text": "The Senate judged him anyway, and ordered it"
+  },
+  {
+   "line": "L10",
+   "start": 52.314,
+   "end": 54.59,
+   "I": -33.3,
+   "text": "It lists his crimes, one by one."
+  },
+  {
+   "line": "L11",
+   "start": 55.101,
+   "end": 56.253,
+   "I": -31.6,
+   "text": "Murder is not one of them."
+  }
+ ],
+ "seed": 11
+}

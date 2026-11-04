@@ -1,0 +1,56 @@
+{
+ "name": "h02_freezing_water_streams_v3",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+ "times": [
+  0.0,
+  0.5,
+  1.0,
+  1.7,
+  2.4,
+  3.1,
+  4.0
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "impulse_live_changed_min_frac": 0.9728,
+ "protect_px": 1496212,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  20215,
+  20079,
+  19500,
+  21613,
+  19212,
+  24040,
+  22076
+ ],
+ "changed_frac_of_frame": [
+  0.01285,
+  0.01276,
+  0.01239,
+  0.01374,
+  0.01221,
+  0.01528,
+  0.01403
+ ],
+ "max_abs_diff_in_allow": [
+  169,
+  177,
+  175,
+  169,
+  179,
+  156,
+  161
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

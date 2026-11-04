@@ -1,0 +1,1506 @@
+{
+ "method": "1-4 kHz 4th-order Butterworth (zero-phase); VO at -3.01 dB/channel as mixed; bed = mean L/R power; pre-limiter stems; band_rms_margin = VO band RMS over the word span minus bed band RMS over the same span; peak_syllable = loudest 50 ms of the word vs bed in that window; spike = 20 ms bed band frame > 1 s running median + 6 dB during a word",
+ "audio_dir": "edit/_build_v1/audio",
+ "L1-L4": {
+  "min_band_rms_margin_db": -0.52,
+  "median_band_rms_margin_db": 9.865,
+  "words_under_8db": [
+   {
+    "i": 2,
+    "line": 1,
+    "word": "his",
+    "start": 0.58,
+    "end": 0.697,
+    "band_rms_margin_db": 2.46,
+    "peak_syllable_margin_db": 2.91
+   },
+   {
+    "i": 4,
+    "line": 1,
+    "word": "hidden",
+    "start": 1.207,
+    "end": 1.521,
+    "band_rms_margin_db": 7.64,
+    "peak_syllable_margin_db": 13.5
+   },
+   {
+    "i": 6,
+    "line": 1,
+    "word": "the",
+    "start": 1.683,
+    "end": 1.753,
+    "band_rms_margin_db": 2.53,
+    "peak_syllable_margin_db": 3.6
+   },
+   {
+    "i": 7,
+    "line": 1,
+    "word": "walls,",
+    "start": 1.811,
+    "end": 2.31,
+    "band_rms_margin_db": -0.52,
+    "peak_syllable_margin_db": 16.95
+   },
+   {
+    "i": 9,
+    "line": 1,
+    "word": "on",
+    "start": 2.856,
+    "end": 2.949,
+    "band_rms_margin_db": 2.81,
+    "peak_syllable_margin_db": 3.93
+   },
+   {
+    "i": 13,
+    "line": 1,
+    "word": "and",
+    "start": 4.203,
+    "end": 4.296,
+    "band_rms_margin_db": 1.82,
+    "peak_syllable_margin_db": 2.94
+   },
+   {
+    "i": 21,
+    "line": 2,
+    "word": "was",
+    "start": 8.417,
+    "end": 8.533,
+    "band_rms_margin_db": 5.82,
+    "peak_syllable_margin_db": 6.47
+   },
+   {
+    "i": 22,
+    "line": 2,
+    "word": "still",
+    "start": 8.591,
+    "end": 8.812,
+    "band_rms_margin_db": 4.64,
+    "peak_syllable_margin_db": 8.18
+   },
+   {
+    "i": 26,
+    "line": 2,
+    "word": "were",
+    "start": 9.578,
+    "end": 9.683,
+    "band_rms_margin_db": 1.45,
+    "peak_syllable_margin_db": 3.56
+   },
+   {
+    "i": 27,
+    "line": 2,
+    "word": "discovered.",
+    "start": 9.718,
+    "end": 10.344,
+    "band_rms_margin_db": 7.76,
+    "peak_syllable_margin_db": 12.83
+   },
+   {
+    "i": 29,
+    "line": 3,
+    "word": "was",
+    "start": 11.738,
+    "end": 11.865,
+    "band_rms_margin_db": 3.1,
+    "peak_syllable_margin_db": 4.65
+   },
+   {
+    "i": 31,
+    "line": 3,
+    "word": "emperor's",
+    "start": 12.074,
+    "end": 12.504,
+    "band_rms_margin_db": 7.87,
+    "peak_syllable_margin_db": 11.64
+   },
+   {
+    "i": 32,
+    "line": 3,
+    "word": "adopted",
+    "start": 12.55,
+    "end": 13.015,
+    "band_rms_margin_db": 7.33,
+    "peak_syllable_margin_db": 12.47
+   },
+   {
+    "i": 36,
+    "line": 3,
+    "word": "with",
+    "start": 14.257,
+    "end": 14.408,
+    "band_rms_margin_db": 5.4,
+    "peak_syllable_margin_db": 6.02
+   },
+   {
+    "i": 46,
+    "line": 4,
+    "word": "Syria,",
+    "start": 18.332,
+    "end": 18.901,
+    "band_rms_margin_db": 6.45,
+    "peak_syllable_margin_db": 14.4
+   },
+   {
+    "i": 48,
+    "line": 4,
+    "word": "his",
+    "start": 19.934,
+    "end": 20.05,
+    "band_rms_margin_db": 5.57,
+    "peak_syllable_margin_db": 5.25
+   },
+   {
+    "i": 49,
+    "line": 4,
+    "word": "orders.",
+    "start": 20.108,
+    "end": 20.584,
+    "band_rms_margin_db": 4.31,
+    "peak_syllable_margin_db": 9.24
+   }
+  ],
+  "bed_spikes_over_speech": [
+   {
+    "t": 0.96,
+    "word": "name",
+    "line": 1,
+    "jump_over_local_median_db": 7.0
+   },
+   {
+    "t": 1.8,
+    "word": "walls,",
+    "line": 1,
+    "jump_over_local_median_db": 7.2
+   },
+   {
+    "t": 1.82,
+    "word": "walls,",
+    "line": 1,
+    "jump_over_local_median_db": 7.1
+   },
+   {
+    "t": 1.92,
+    "word": "walls,",
+    "line": 1,
+    "jump_over_local_median_db": 11.9
+   },
+   {
+    "t": 1.94,
+    "word": "walls,",
+    "line": 1,
+    "jump_over_local_median_db": 8.9
+   },
+   {
+    "t": 1.96,
+    "word": "walls,",
+    "line": 1,
+    "jump_over_local_median_db": 6.3
+   },
+   {
+    "t": 2.88,
+    "word": "on",
+    "line": 1,
+    "jump_over_local_median_db": 9.5
+   },
+   {
+    "t": 2.9,
+    "word": "on",
+    "line": 1,
+    "jump_over_local_median_db": 6.9
+   },
+   {
+    "t": 6.72,
+    "word": "Tacitus",
+    "line": 2,
+    "jump_over_local_median_db": 8.5
+   },
+   {
+    "t": 6.74,
+    "word": "Tacitus",
+    "line": 2,
+    "jump_over_local_median_db": 6.7
+   }
+  ],
+  "rows": [
+   {
+    "i": 0,
+    "line": 1,
+    "word": "They",
+    "start": 0.0,
+    "end": 0.197,
+    "band_rms_margin_db": 43.72,
+    "peak_syllable_margin_db": 49.83
+   },
+   {
+    "i": 1,
+    "line": 1,
+    "word": "found",
+    "start": 0.267,
+    "end": 0.511,
+    "band_rms_margin_db": 21.28,
+    "peak_syllable_margin_db": 31.8
+   },
+   {
+    "i": 2,
+    "line": 1,
+    "word": "his",
+    "start": 0.58,
+    "end": 0.697,
+    "band_rms_margin_db": 2.46,
+    "peak_syllable_margin_db": 2.91
+   },
+   {
+    "i": 3,
+    "line": 1,
+    "word": "name",
+    "start": 0.778,
+    "end": 1.161,
+    "band_rms_margin_db": 9.46,
+    "peak_syllable_margin_db": 15.11
+   },
+   {
+    "i": 4,
+    "line": 1,
+    "word": "hidden",
+    "start": 1.207,
+    "end": 1.521,
+    "band_rms_margin_db": 7.64,
+    "peak_syllable_margin_db": 13.5
+   },
+   {
+    "i": 5,
+    "line": 1,
+    "word": "in",
+    "start": 1.579,
+    "end": 1.649,
+    "band_rms_margin_db": 11.3,
+    "peak_syllable_margin_db": 12.08
+   },
+   {
+    "i": 6,
+    "line": 1,
+    "word": "the",
+    "start": 1.683,
+    "end": 1.753,
+    "band_rms_margin_db": 2.53,
+    "peak_syllable_margin_db": 3.6
+   },
+   {
+    "i": 7,
+    "line": 1,
+    "word": "walls,",
+    "start": 1.811,
+    "end": 2.31,
+    "band_rms_margin_db": -0.52,
+    "peak_syllable_margin_db": 16.95
+   },
+   {
+    "i": 8,
+    "line": 1,
+    "word": "written",
+    "start": 2.461,
+    "end": 2.798,
+    "band_rms_margin_db": 13.39,
+    "peak_syllable_margin_db": 16.4
+   },
+   {
+    "i": 9,
+    "line": 1,
+    "word": "on",
+    "start": 2.856,
+    "end": 2.949,
+    "band_rms_margin_db": 2.81,
+    "peak_syllable_margin_db": 3.93
+   },
+   {
+    "i": 10,
+    "line": 1,
+    "word": "lead",
+    "start": 3.042,
+    "end": 3.32,
+    "band_rms_margin_db": 18.21,
+    "peak_syllable_margin_db": 22.93
+   },
+   {
+    "i": 11,
+    "line": 1,
+    "word": "among",
+    "start": 3.379,
+    "end": 3.622,
+    "band_rms_margin_db": 15.64,
+    "peak_syllable_margin_db": 24.37
+   },
+   {
+    "i": 12,
+    "line": 1,
+    "word": "spells",
+    "start": 3.715,
+    "end": 4.156,
+    "band_rms_margin_db": 11.65,
+    "peak_syllable_margin_db": 15.67
+   },
+   {
+    "i": 13,
+    "line": 1,
+    "word": "and",
+    "start": 4.203,
+    "end": 4.296,
+    "band_rms_margin_db": 1.82,
+    "peak_syllable_margin_db": 2.94
+   },
+   {
+    "i": 14,
+    "line": 1,
+    "word": "human",
+    "start": 4.377,
+    "end": 4.714,
+    "band_rms_margin_db": 9.91,
+    "peak_syllable_margin_db": 14.01
+   },
+   {
+    "i": 15,
+    "line": 1,
+    "word": "remains.",
+    "start": 4.783,
+    "end": 5.41,
+    "band_rms_margin_db": 8.36,
+    "peak_syllable_margin_db": 11.17
+   },
+   {
+    "i": 16,
+    "line": 2,
+    "word": "The",
+    "start": 6.014,
+    "end": 6.107,
+    "band_rms_margin_db": 18.85,
+    "peak_syllable_margin_db": 14.47
+   },
+   {
+    "i": 17,
+    "line": 2,
+    "word": "historian",
+    "start": 6.142,
+    "end": 6.606,
+    "band_rms_margin_db": 14.65,
+    "peak_syllable_margin_db": 19.76
+   },
+   {
+    "i": 18,
+    "line": 2,
+    "word": "Tacitus",
+    "start": 6.676,
+    "end": 7.175,
+    "band_rms_margin_db": 13.37,
+    "peak_syllable_margin_db": 12.12
+   },
+   {
+    "i": 19,
+    "line": 2,
+    "word": "says",
+    "start": 7.221,
+    "end": 7.5,
+    "band_rms_margin_db": 15.91,
+    "peak_syllable_margin_db": 22.09
+   },
+   {
+    "i": 20,
+    "line": 2,
+    "word": "Germanicus",
+    "start": 7.709,
+    "end": 8.359,
+    "band_rms_margin_db": 15.07,
+    "peak_syllable_margin_db": 20.26
+   },
+   {
+    "i": 21,
+    "line": 2,
+    "word": "was",
+    "start": 8.417,
+    "end": 8.533,
+    "band_rms_margin_db": 5.82,
+    "peak_syllable_margin_db": 6.47
+   },
+   {
+    "i": 22,
+    "line": 2,
+    "word": "still",
+    "start": 8.591,
+    "end": 8.812,
+    "band_rms_margin_db": 4.64,
+    "peak_syllable_margin_db": 8.18
+   },
+   {
+    "i": 23,
+    "line": 2,
+    "word": "alive",
+    "start": 8.858,
+    "end": 9.253,
+    "band_rms_margin_db": 11.88,
+    "peak_syllable_margin_db": 16.08
+   },
+   {
+    "i": 24,
+    "line": 2,
+    "word": "when",
+    "start": 9.276,
+    "end": 9.404,
+    "band_rms_margin_db": 8.87,
+    "peak_syllable_margin_db": 11.87
+   },
+   {
+    "i": 25,
+    "line": 2,
+    "word": "they",
+    "start": 9.427,
+    "end": 9.543,
+    "band_rms_margin_db": 10.96,
+    "peak_syllable_margin_db": 11.13
+   },
+   {
+    "i": 26,
+    "line": 2,
+    "word": "were",
+    "start": 9.578,
+    "end": 9.683,
+    "band_rms_margin_db": 1.45,
+    "peak_syllable_margin_db": 3.56
+   },
+   {
+    "i": 27,
+    "line": 2,
+    "word": "discovered.",
+    "start": 9.718,
+    "end": 10.344,
+    "band_rms_margin_db": 7.76,
+    "peak_syllable_margin_db": 12.83
+   },
+   {
+    "i": 28,
+    "line": 3,
+    "word": "Germanicus",
+    "start": 11.041,
+    "end": 11.668,
+    "band_rms_margin_db": 14.66,
+    "peak_syllable_margin_db": 20.35
+   },
+   {
+    "i": 29,
+    "line": 3,
+    "word": "was",
+    "start": 11.738,
+    "end": 11.865,
+    "band_rms_margin_db": 3.1,
+    "peak_syllable_margin_db": 4.65
+   },
+   {
+    "i": 30,
+    "line": 3,
+    "word": "the",
+    "start": 11.912,
+    "end": 11.981,
+    "band_rms_margin_db": 9.09,
+    "peak_syllable_margin_db": 8.76
+   },
+   {
+    "i": 31,
+    "line": 3,
+    "word": "emperor's",
+    "start": 12.074,
+    "end": 12.504,
+    "band_rms_margin_db": 7.87,
+    "peak_syllable_margin_db": 11.64
+   },
+   {
+    "i": 32,
+    "line": 3,
+    "word": "adopted",
+    "start": 12.55,
+    "end": 13.015,
+    "band_rms_margin_db": 7.33,
+    "peak_syllable_margin_db": 12.47
+   },
+   {
+    "i": 33,
+    "line": 3,
+    "word": "son,",
+    "start": 13.073,
+    "end": 13.468,
+    "band_rms_margin_db": 10.41,
+    "peak_syllable_margin_db": 16.03
+   },
+   {
+    "i": 34,
+    "line": 3,
+    "word": "sent",
+    "start": 13.677,
+    "end": 13.909,
+    "band_rms_margin_db": 11.07,
+    "peak_syllable_margin_db": 14.91
+   },
+   {
+    "i": 35,
+    "line": 3,
+    "word": "east",
+    "start": 13.978,
+    "end": 14.199,
+    "band_rms_margin_db": 10.87,
+    "peak_syllable_margin_db": 13.04
+   },
+   {
+    "i": 36,
+    "line": 3,
+    "word": "with",
+    "start": 14.257,
+    "end": 14.408,
+    "band_rms_margin_db": 5.4,
+    "peak_syllable_margin_db": 6.02
+   },
+   {
+    "i": 37,
+    "line": 3,
+    "word": "authority",
+    "start": 14.454,
+    "end": 14.965,
+    "band_rms_margin_db": 12.57,
+    "peak_syllable_margin_db": 17.09
+   },
+   {
+    "i": 38,
+    "line": 3,
+    "word": "over",
+    "start": 15.035,
+    "end": 15.221,
+    "band_rms_margin_db": 8.04,
+    "peak_syllable_margin_db": 11.75
+   },
+   {
+    "i": 39,
+    "line": 3,
+    "word": "Rome's",
+    "start": 15.29,
+    "end": 15.604,
+    "band_rms_margin_db": 14.53,
+    "peak_syllable_margin_db": 19.09
+   },
+   {
+    "i": 40,
+    "line": 3,
+    "word": "governors.",
+    "start": 15.662,
+    "end": 16.207,
+    "band_rms_margin_db": 8.28,
+    "peak_syllable_margin_db": 15.45
+   },
+   {
+    "i": 41,
+    "line": 4,
+    "word": "But",
+    "start": 16.649,
+    "end": 16.811,
+    "band_rms_margin_db": 12.27,
+    "peak_syllable_margin_db": 14.81
+   },
+   {
+    "i": 42,
+    "line": 4,
+    "word": "Piso,",
+    "start": 16.869,
+    "end": 17.461,
+    "band_rms_margin_db": 13.65,
+    "peak_syllable_margin_db": 20.03
+   },
+   {
+    "i": 43,
+    "line": 4,
+    "word": "the",
+    "start": 17.635,
+    "end": 17.728,
+    "band_rms_margin_db": 9.09,
+    "peak_syllable_margin_db": -5.68
+   },
+   {
+    "i": 44,
+    "line": 4,
+    "word": "governor",
+    "start": 17.798,
+    "end": 18.158,
+    "band_rms_margin_db": 16.9,
+    "peak_syllable_margin_db": 20.64
+   },
+   {
+    "i": 45,
+    "line": 4,
+    "word": "of",
+    "start": 18.204,
+    "end": 18.274,
+    "band_rms_margin_db": 11.27,
+    "peak_syllable_margin_db": 2.53
+   },
+   {
+    "i": 46,
+    "line": 4,
+    "word": "Syria,",
+    "start": 18.332,
+    "end": 18.901,
+    "band_rms_margin_db": 6.45,
+    "peak_syllable_margin_db": 14.4
+   },
+   {
+    "i": 47,
+    "line": 4,
+    "word": "overturned",
+    "start": 19.18,
+    "end": 19.865,
+    "band_rms_margin_db": 9.82,
+    "peak_syllable_margin_db": 17.8
+   },
+   {
+    "i": 48,
+    "line": 4,
+    "word": "his",
+    "start": 19.934,
+    "end": 20.05,
+    "band_rms_margin_db": 5.57,
+    "peak_syllable_margin_db": 5.25
+   },
+   {
+    "i": 49,
+    "line": 4,
+    "word": "orders.",
+    "start": 20.108,
+    "end": 20.584,
+    "band_rms_margin_db": 4.31,
+    "peak_syllable_margin_db": 9.24
+   }
+  ]
+ },
+ "L9-L12": {
+  "min_band_rms_margin_db": -14.2,
+  "median_band_rms_margin_db": 7.055,
+  "words_under_8db": [
+   {
+    "i": 101,
+    "line": 9,
+    "word": "Before",
+    "start": 42.69,
+    "end": 43.003,
+    "band_rms_margin_db": 4.45,
+    "peak_syllable_margin_db": 11.59
+   },
+   {
+    "i": 102,
+    "line": 9,
+    "word": "the",
+    "start": 43.038,
+    "end": 43.108,
+    "band_rms_margin_db": 6.74,
+    "peak_syllable_margin_db": 8.28
+   },
+   {
+    "i": 103,
+    "line": 9,
+    "word": "verdict,",
+    "start": 43.177,
+    "end": 43.804,
+    "band_rms_margin_db": 7.41,
+    "peak_syllable_margin_db": 13.64
+   },
+   {
+    "i": 105,
+    "line": 9,
+    "word": "was",
+    "start": 44.617,
+    "end": 44.756,
+    "band_rms_margin_db": 4.8,
+    "peak_syllable_margin_db": 3.13
+   },
+   {
+    "i": 107,
+    "line": 9,
+    "word": "dead,",
+    "start": 45.163,
+    "end": 45.592,
+    "band_rms_margin_db": 5.75,
+    "peak_syllable_margin_db": 11.72
+   },
+   {
+    "i": 111,
+    "line": 9,
+    "word": "him.",
+    "start": 47.032,
+    "end": 47.31,
+    "band_rms_margin_db": -4.74,
+    "peak_syllable_margin_db": 3.81
+   },
+   {
+    "i": 113,
+    "line": 10,
+    "word": "Senate",
+    "start": 48.111,
+    "end": 48.541,
+    "band_rms_margin_db": 7.37,
+    "peak_syllable_margin_db": 14.88
+   },
+   {
+    "i": 114,
+    "line": 10,
+    "word": "condemned",
+    "start": 48.599,
+    "end": 49.086,
+    "band_rms_margin_db": 2.69,
+    "peak_syllable_margin_db": 7.24
+   },
+   {
+    "i": 115,
+    "line": 10,
+    "word": "him",
+    "start": 49.121,
+    "end": 49.237,
+    "band_rms_margin_db": 4.89,
+    "peak_syllable_margin_db": 8.44
+   },
+   {
+    "i": 116,
+    "line": 10,
+    "word": "anyway,",
+    "start": 49.307,
+    "end": 49.864,
+    "band_rms_margin_db": 0.64,
+    "peak_syllable_margin_db": 10.1
+   },
+   {
+    "i": 118,
+    "line": 10,
+    "word": "ordered",
+    "start": 50.398,
+    "end": 50.689,
+    "band_rms_margin_db": 3.86,
+    "peak_syllable_margin_db": 8.67
+   },
+   {
+    "i": 119,
+    "line": 10,
+    "word": "its",
+    "start": 50.723,
+    "end": 50.863,
+    "band_rms_margin_db": 3.92,
+    "peak_syllable_margin_db": 3.68
+   },
+   {
+    "i": 121,
+    "line": 10,
+    "word": "displayed",
+    "start": 51.443,
+    "end": 52.024,
+    "band_rms_margin_db": 5.35,
+    "peak_syllable_margin_db": 9.94
+   },
+   {
+    "i": 122,
+    "line": 10,
+    "word": "in",
+    "start": 52.07,
+    "end": 52.14,
+    "band_rms_margin_db": -13.98,
+    "peak_syllable_margin_db": -12.6
+   },
+   {
+    "i": 123,
+    "line": 10,
+    "word": "bronze",
+    "start": 52.233,
+    "end": 52.743,
+    "band_rms_margin_db": 2.69,
+    "peak_syllable_margin_db": 9.02
+   },
+   {
+    "i": 125,
+    "line": 10,
+    "word": "the",
+    "start": 53.15,
+    "end": 53.219,
+    "band_rms_margin_db": 3.99,
+    "peak_syllable_margin_db": 4.03
+   },
+   {
+    "i": 126,
+    "line": 10,
+    "word": "empire.",
+    "start": 53.289,
+    "end": 53.87,
+    "band_rms_margin_db": 0.69,
+    "peak_syllable_margin_db": 5.62
+   },
+   {
+    "i": 127,
+    "line": 11,
+    "word": "Copies",
+    "start": 54.473,
+    "end": 54.891,
+    "band_rms_margin_db": 5.95,
+    "peak_syllable_margin_db": 13.28
+   },
+   {
+    "i": 128,
+    "line": 11,
+    "word": "of",
+    "start": 54.938,
+    "end": 54.996,
+    "band_rms_margin_db": -3.6,
+    "peak_syllable_margin_db": -2.94
+   },
+   {
+    "i": 130,
+    "line": 11,
+    "word": "decree",
+    "start": 55.263,
+    "end": 55.832,
+    "band_rms_margin_db": 5.76,
+    "peak_syllable_margin_db": 13.98
+   },
+   {
+    "i": 131,
+    "line": 11,
+    "word": "survive",
+    "start": 56.006,
+    "end": 56.54,
+    "band_rms_margin_db": 3.55,
+    "peak_syllable_margin_db": 6.71
+   },
+   {
+    "i": 132,
+    "line": 11,
+    "word": "in",
+    "start": 56.586,
+    "end": 56.668,
+    "band_rms_margin_db": -14.2,
+    "peak_syllable_margin_db": -14.25
+   },
+   {
+    "i": 133,
+    "line": 11,
+    "word": "Spain.",
+    "start": 56.761,
+    "end": 57.295,
+    "band_rms_margin_db": 3.96,
+    "peak_syllable_margin_db": 14.58
+   },
+   {
+    "i": 140,
+    "line": 12,
+    "word": "and",
+    "start": 60.313,
+    "end": 60.394,
+    "band_rms_margin_db": 1.9,
+    "peak_syllable_margin_db": 3.42
+   },
+   {
+    "i": 146,
+    "line": 12,
+    "word": "war.",
+    "start": 61.753,
+    "end": 62.182,
+    "band_rms_margin_db": -11.08,
+    "peak_syllable_margin_db": -4.11
+   }
+  ],
+  "bed_spikes_over_speech": [],
+  "rows": [
+   {
+    "i": 101,
+    "line": 9,
+    "word": "Before",
+    "start": 42.69,
+    "end": 43.003,
+    "band_rms_margin_db": 4.45,
+    "peak_syllable_margin_db": 11.59
+   },
+   {
+    "i": 102,
+    "line": 9,
+    "word": "the",
+    "start": 43.038,
+    "end": 43.108,
+    "band_rms_margin_db": 6.74,
+    "peak_syllable_margin_db": 8.28
+   },
+   {
+    "i": 103,
+    "line": 9,
+    "word": "verdict,",
+    "start": 43.177,
+    "end": 43.804,
+    "band_rms_margin_db": 7.41,
+    "peak_syllable_margin_db": 13.64
+   },
+   {
+    "i": 104,
+    "line": 9,
+    "word": "Piso",
+    "start": 44.083,
+    "end": 44.547,
+    "band_rms_margin_db": 9.07,
+    "peak_syllable_margin_db": 12.98
+   },
+   {
+    "i": 105,
+    "line": 9,
+    "word": "was",
+    "start": 44.617,
+    "end": 44.756,
+    "band_rms_margin_db": 4.8,
+    "peak_syllable_margin_db": 3.13
+   },
+   {
+    "i": 106,
+    "line": 9,
+    "word": "found",
+    "start": 44.826,
+    "end": 45.093,
+    "band_rms_margin_db": 13.38,
+    "peak_syllable_margin_db": 18.49
+   },
+   {
+    "i": 107,
+    "line": 9,
+    "word": "dead,",
+    "start": 45.163,
+    "end": 45.592,
+    "band_rms_margin_db": 5.75,
+    "peak_syllable_margin_db": 11.72
+   },
+   {
+    "i": 108,
+    "line": 9,
+    "word": "a",
+    "start": 45.975,
+    "end": 46.045,
+    "band_rms_margin_db": 10.92,
+    "peak_syllable_margin_db": 10.71
+   },
+   {
+    "i": 109,
+    "line": 9,
+    "word": "sword",
+    "start": 46.138,
+    "end": 46.521,
+    "band_rms_margin_db": 12.25,
+    "peak_syllable_margin_db": 17.93
+   },
+   {
+    "i": 110,
+    "line": 9,
+    "word": "beside",
+    "start": 46.579,
+    "end": 46.997,
+    "band_rms_margin_db": 8.32,
+    "peak_syllable_margin_db": 11.39
+   },
+   {
+    "i": 111,
+    "line": 9,
+    "word": "him.",
+    "start": 47.032,
+    "end": 47.31,
+    "band_rms_margin_db": -4.74,
+    "peak_syllable_margin_db": 3.81
+   },
+   {
+    "i": 112,
+    "line": 10,
+    "word": "The",
+    "start": 47.914,
+    "end": 48.03,
+    "band_rms_margin_db": 10.03,
+    "peak_syllable_margin_db": 13.26
+   },
+   {
+    "i": 113,
+    "line": 10,
+    "word": "Senate",
+    "start": 48.111,
+    "end": 48.541,
+    "band_rms_margin_db": 7.37,
+    "peak_syllable_margin_db": 14.88
+   },
+   {
+    "i": 114,
+    "line": 10,
+    "word": "condemned",
+    "start": 48.599,
+    "end": 49.086,
+    "band_rms_margin_db": 2.69,
+    "peak_syllable_margin_db": 7.24
+   },
+   {
+    "i": 115,
+    "line": 10,
+    "word": "him",
+    "start": 49.121,
+    "end": 49.237,
+    "band_rms_margin_db": 4.89,
+    "peak_syllable_margin_db": 8.44
+   },
+   {
+    "i": 116,
+    "line": 10,
+    "word": "anyway,",
+    "start": 49.307,
+    "end": 49.864,
+    "band_rms_margin_db": 0.64,
+    "peak_syllable_margin_db": 10.1
+   },
+   {
+    "i": 117,
+    "line": 10,
+    "word": "and",
+    "start": 50.189,
+    "end": 50.329,
+    "band_rms_margin_db": 9.86,
+    "peak_syllable_margin_db": 13.48
+   },
+   {
+    "i": 118,
+    "line": 10,
+    "word": "ordered",
+    "start": 50.398,
+    "end": 50.689,
+    "band_rms_margin_db": 3.86,
+    "peak_syllable_margin_db": 8.67
+   },
+   {
+    "i": 119,
+    "line": 10,
+    "word": "its",
+    "start": 50.723,
+    "end": 50.863,
+    "band_rms_margin_db": 3.92,
+    "peak_syllable_margin_db": 3.68
+   },
+   {
+    "i": 120,
+    "line": 10,
+    "word": "decree",
+    "start": 50.921,
+    "end": 51.385,
+    "band_rms_margin_db": 8.81,
+    "peak_syllable_margin_db": 14.87
+   },
+   {
+    "i": 121,
+    "line": 10,
+    "word": "displayed",
+    "start": 51.443,
+    "end": 52.024,
+    "band_rms_margin_db": 5.35,
+    "peak_syllable_margin_db": 9.94
+   },
+   {
+    "i": 122,
+    "line": 10,
+    "word": "in",
+    "start": 52.07,
+    "end": 52.14,
+    "band_rms_margin_db": -13.98,
+    "peak_syllable_margin_db": -12.6
+   },
+   {
+    "i": 123,
+    "line": 10,
+    "word": "bronze",
+    "start": 52.233,
+    "end": 52.743,
+    "band_rms_margin_db": 2.69,
+    "peak_syllable_margin_db": 9.02
+   },
+   {
+    "i": 124,
+    "line": 10,
+    "word": "across",
+    "start": 52.778,
+    "end": 53.115,
+    "band_rms_margin_db": 9.36,
+    "peak_syllable_margin_db": 14.57
+   },
+   {
+    "i": 125,
+    "line": 10,
+    "word": "the",
+    "start": 53.15,
+    "end": 53.219,
+    "band_rms_margin_db": 3.99,
+    "peak_syllable_margin_db": 4.03
+   },
+   {
+    "i": 126,
+    "line": 10,
+    "word": "empire.",
+    "start": 53.289,
+    "end": 53.87,
+    "band_rms_margin_db": 0.69,
+    "peak_syllable_margin_db": 5.62
+   },
+   {
+    "i": 127,
+    "line": 11,
+    "word": "Copies",
+    "start": 54.473,
+    "end": 54.891,
+    "band_rms_margin_db": 5.95,
+    "peak_syllable_margin_db": 13.28
+   },
+   {
+    "i": 128,
+    "line": 11,
+    "word": "of",
+    "start": 54.938,
+    "end": 54.996,
+    "band_rms_margin_db": -3.6,
+    "peak_syllable_margin_db": -2.94
+   },
+   {
+    "i": 129,
+    "line": 11,
+    "word": "that",
+    "start": 55.042,
+    "end": 55.193,
+    "band_rms_margin_db": 9.12,
+    "peak_syllable_margin_db": 11.9
+   },
+   {
+    "i": 130,
+    "line": 11,
+    "word": "decree",
+    "start": 55.263,
+    "end": 55.832,
+    "band_rms_margin_db": 5.76,
+    "peak_syllable_margin_db": 13.98
+   },
+   {
+    "i": 131,
+    "line": 11,
+    "word": "survive",
+    "start": 56.006,
+    "end": 56.54,
+    "band_rms_margin_db": 3.55,
+    "peak_syllable_margin_db": 6.71
+   },
+   {
+    "i": 132,
+    "line": 11,
+    "word": "in",
+    "start": 56.586,
+    "end": 56.668,
+    "band_rms_margin_db": -14.2,
+    "peak_syllable_margin_db": -14.25
+   },
+   {
+    "i": 133,
+    "line": 11,
+    "word": "Spain.",
+    "start": 56.761,
+    "end": 57.295,
+    "band_rms_margin_db": 3.96,
+    "peak_syllable_margin_db": 14.58
+   },
+   {
+    "i": 134,
+    "line": 12,
+    "word": "They",
+    "start": 57.805,
+    "end": 57.968,
+    "band_rms_margin_db": 14.23,
+    "peak_syllable_margin_db": 18.76
+   },
+   {
+    "i": 135,
+    "line": 12,
+    "word": "condemn",
+    "start": 58.014,
+    "end": 58.432,
+    "band_rms_margin_db": 8.86,
+    "peak_syllable_margin_db": 14.74
+   },
+   {
+    "i": 136,
+    "line": 12,
+    "word": "Piso",
+    "start": 58.514,
+    "end": 58.966,
+    "band_rms_margin_db": 12.4,
+    "peak_syllable_margin_db": 17.2
+   },
+   {
+    "i": 137,
+    "line": 12,
+    "word": "for",
+    "start": 59.048,
+    "end": 59.175,
+    "band_rms_margin_db": 9.09,
+    "peak_syllable_margin_db": 12.44
+   },
+   {
+    "i": 138,
+    "line": 12,
+    "word": "corrupting",
+    "start": 59.245,
+    "end": 59.733,
+    "band_rms_margin_db": 11.34,
+    "peak_syllable_margin_db": 15.89
+   },
+   {
+    "i": 139,
+    "line": 12,
+    "word": "soldiers",
+    "start": 59.826,
+    "end": 60.278,
+    "band_rms_margin_db": 14.28,
+    "peak_syllable_margin_db": 20.62
+   },
+   {
+    "i": 140,
+    "line": 12,
+    "word": "and",
+    "start": 60.313,
+    "end": 60.394,
+    "band_rms_margin_db": 1.9,
+    "peak_syllable_margin_db": 3.42
+   },
+   {
+    "i": 141,
+    "line": 12,
+    "word": "trying",
+    "start": 60.452,
+    "end": 60.743,
+    "band_rms_margin_db": 20.21,
+    "peak_syllable_margin_db": 25.02
+   },
+   {
+    "i": 142,
+    "line": 12,
+    "word": "to",
+    "start": 60.778,
+    "end": 60.836,
+    "band_rms_margin_db": 12.23,
+    "peak_syllable_margin_db": 8.81
+   },
+   {
+    "i": 143,
+    "line": 12,
+    "word": "start",
+    "start": 60.917,
+    "end": 61.265,
+    "band_rms_margin_db": 15.18,
+    "peak_syllable_margin_db": 18.07
+   },
+   {
+    "i": 144,
+    "line": 12,
+    "word": "a",
+    "start": 61.312,
+    "end": 61.346,
+    "band_rms_margin_db": 13.42,
+    "peak_syllable_margin_db": 13.66
+   },
+   {
+    "i": 145,
+    "line": 12,
+    "word": "civil",
+    "start": 61.416,
+    "end": 61.683,
+    "band_rms_margin_db": 11.45,
+    "peak_syllable_margin_db": 17.76
+   },
+   {
+    "i": 146,
+    "line": 12,
+    "word": "war.",
+    "start": 61.753,
+    "end": 62.182,
+    "band_rms_margin_db": -11.08,
+    "peak_syllable_margin_db": -4.11
+   }
+  ]
+ },
+ "L13": {
+  "min_band_rms_margin_db": 3.02,
+  "median_band_rms_margin_db": 4.025,
+  "words_under_8db": [
+   {
+    "i": 148,
+    "line": 13,
+    "word": "not",
+    "start": 63.227,
+    "end": 63.448,
+    "band_rms_margin_db": 4.26,
+    "peak_syllable_margin_db": 7.88
+   },
+   {
+    "i": 149,
+    "line": 13,
+    "word": "for",
+    "start": 63.518,
+    "end": 63.645,
+    "band_rms_margin_db": 3.79,
+    "peak_syllable_margin_db": 7.26
+   },
+   {
+    "i": 150,
+    "line": 13,
+    "word": "murder.",
+    "start": 63.715,
+    "end": 64.045,
+    "band_rms_margin_db": 3.02,
+    "peak_syllable_margin_db": 8.72
+   }
+  ],
+  "bed_spikes_over_speech": [],
+  "rows": [
+   {
+    "i": 147,
+    "line": 13,
+    "word": "But",
+    "start": 62.995,
+    "end": 63.158,
+    "band_rms_margin_db": 8.34,
+    "peak_syllable_margin_db": 12.64
+   },
+   {
+    "i": 148,
+    "line": 13,
+    "word": "not",
+    "start": 63.227,
+    "end": 63.448,
+    "band_rms_margin_db": 4.26,
+    "peak_syllable_margin_db": 7.88
+   },
+   {
+    "i": 149,
+    "line": 13,
+    "word": "for",
+    "start": 63.518,
+    "end": 63.645,
+    "band_rms_margin_db": 3.79,
+    "peak_syllable_margin_db": 7.26
+   },
+   {
+    "i": 150,
+    "line": 13,
+    "word": "murder.",
+    "start": 63.715,
+    "end": 64.045,
+    "band_rms_margin_db": 3.02,
+    "peak_syllable_margin_db": 8.72
+   }
+  ]
+ },
+ "speech_band_overall_db": {
+  "vo": -31.04,
+  "bed": -41.34,
+  "margin": 10.3
+ },
+ "l13_lift_scan_pre_limiter": {
+  "0.0": {
+   "But": 8.34,
+   "not": 4.26,
+   "for": 3.79,
+   "murder.": 3.02
+  },
+  "0.5": {
+   "But": 7.84,
+   "not": 3.76,
+   "for": 3.29,
+   "murder.": 2.52
+  },
+  "1.0": {
+   "But": 7.34,
+   "not": 3.26,
+   "for": 2.79,
+   "murder.": 2.02
+  },
+  "1.5": {
+   "But": 6.84,
+   "not": 2.76,
+   "for": 2.29,
+   "murder.": 1.52
+  },
+  "2.0": {
+   "But": 6.34,
+   "not": 2.26,
+   "for": 1.79,
+   "murder.": 1.02
+  },
+  "2.5": {
+   "But": 5.84,
+   "not": 1.76,
+   "for": 1.29,
+   "murder.": 0.52
+  },
+  "3.0": {
+   "But": 5.34,
+   "not": 1.26,
+   "for": 0.79,
+   "murder.": 0.02
+  },
+  "3.5": {
+   "But": 4.84,
+   "not": 0.76,
+   "for": 0.29,
+   "murder.": -0.48
+  },
+  "4.0": {
+   "But": 4.34,
+   "not": 0.26,
+   "for": -0.21,
+   "murder.": -0.98
+  },
+  "4.5": {
+   "But": 3.84,
+   "not": -0.24,
+   "for": -0.71,
+   "murder.": -1.48
+  },
+  "5.0": {
+   "But": 3.34,
+   "not": -0.74,
+   "for": -1.21,
+   "murder.": -1.98
+  },
+  "5.5": {
+   "But": 2.84,
+   "not": -1.24,
+   "for": -1.71,
+   "murder.": -2.48
+  },
+  "6.0": {
+   "But": 2.34,
+   "not": -1.74,
+   "for": -2.21,
+   "murder.": -2.98
+  },
+  "6.5": {
+   "But": 1.84,
+   "not": -2.24,
+   "for": -2.71,
+   "murder.": -3.48
+  },
+  "7.0": {
+   "But": 1.34,
+   "not": -2.74,
+   "for": -3.21,
+   "murder.": -3.98
+  },
+  "7.5": {
+   "But": 0.84,
+   "not": -3.24,
+   "for": -3.71,
+   "murder.": -4.48
+  },
+  "8.0": {
+   "But": 0.34,
+   "not": -3.74,
+   "for": -4.21,
+   "murder.": -4.98
+  }
+ }
+}

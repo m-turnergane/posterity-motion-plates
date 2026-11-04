@@ -1,0 +1,286 @@
+{
+ "A_offset31": {
+  "whole_0-6s": {
+   "centroid_Hz": 777,
+   "low_lt250_pct": 50.9,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -15.7,
+   "chroma_entropy_bits": 3.12,
+   "semitone_cluster": 0.57,
+   "key_fit": 0.47,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "G",
+    "A#"
+   ]
+  },
+  "0-2s": {
+   "centroid_Hz": 716,
+   "low_lt250_pct": 50.8,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -13.1,
+   "chroma_entropy_bits": 2.85,
+   "semitone_cluster": 0.36,
+   "key_fit": 0.73,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "A#",
+    "G#"
+   ]
+  },
+  "2-4s": {
+   "centroid_Hz": 873,
+   "low_lt250_pct": 32.7,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -14.2,
+   "chroma_entropy_bits": 3.2,
+   "semitone_cluster": 0.65,
+   "key_fit": 0.65,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "G#",
+    "G"
+   ]
+  },
+  "4-6s": {
+   "centroid_Hz": 785,
+   "low_lt250_pct": 69.1,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -20.5,
+   "chroma_entropy_bits": 2.57,
+   "semitone_cluster": 0.3,
+   "key_fit": 0.74,
+   "key": "G min",
+   "top3": [
+    "G",
+    "D",
+    "G#"
+   ]
+  }
+ },
+ "B_offset0": {
+  "whole_0-6s": {
+   "centroid_Hz": 466,
+   "low_lt250_pct": 83.7,
+   "flatness": 0.0232,
+   "perc_to_harm_dB": -17.0,
+   "chroma_entropy_bits": 2.35,
+   "semitone_cluster": 0.25,
+   "key_fit": 0.71,
+   "key": "C maj",
+   "top3": [
+    "C",
+    "G",
+    "B"
+   ]
+  },
+  "0-2s": {
+   "centroid_Hz": 466,
+   "low_lt250_pct": 85.6,
+   "flatness": 0.069,
+   "perc_to_harm_dB": -17.4,
+   "chroma_entropy_bits": 2.17,
+   "semitone_cluster": 0.25,
+   "key_fit": 0.7,
+   "key": "C maj",
+   "top3": [
+    "C",
+    "B",
+    "G"
+   ]
+  },
+  "2-4s": {
+   "centroid_Hz": 417,
+   "low_lt250_pct": 93.2,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -20.8,
+   "chroma_entropy_bits": 1.77,
+   "semitone_cluster": 0.14,
+   "key_fit": 0.72,
+   "key": "C maj",
+   "top3": [
+    "C",
+    "G",
+    "B"
+   ]
+  },
+  "4-6s": {
+   "centroid_Hz": 598,
+   "low_lt250_pct": 72.3,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -13.3,
+   "chroma_entropy_bits": 2.73,
+   "semitone_cluster": 0.36,
+   "key_fit": 0.73,
+   "key": "C min",
+   "top3": [
+    "C",
+    "G",
+    "B"
+   ]
+  }
+ },
+ "A_alt_offset29": {
+  "whole_0-6s": {
+   "centroid_Hz": 734,
+   "low_lt250_pct": 49.5,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -14.7,
+   "chroma_entropy_bits": 2.98,
+   "semitone_cluster": 0.44,
+   "key_fit": 0.73,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "A#",
+    "G#"
+   ]
+  },
+  "0-2s": {
+   "centroid_Hz": 681,
+   "low_lt250_pct": 64.8,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -16.0,
+   "chroma_entropy_bits": 2.68,
+   "semitone_cluster": 0.28,
+   "key_fit": 0.75,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "A#",
+    "G#"
+   ]
+  },
+  "2-4s": {
+   "centroid_Hz": 716,
+   "low_lt250_pct": 50.8,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -13.1,
+   "chroma_entropy_bits": 2.85,
+   "semitone_cluster": 0.36,
+   "key_fit": 0.73,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "A#",
+    "G#"
+   ]
+  },
+  "4-6s": {
+   "centroid_Hz": 873,
+   "low_lt250_pct": 32.7,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -14.2,
+   "chroma_entropy_bits": 3.2,
+   "semitone_cluster": 0.65,
+   "key_fit": 0.65,
+   "key": "C# maj",
+   "top3": [
+    "C#",
+    "G#",
+    "G"
+   ]
+  }
+ },
+ "A_alt_offset35": {
+  "whole_0-6s": {
+   "centroid_Hz": 803,
+   "low_lt250_pct": 67.5,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -18.5,
+   "chroma_entropy_bits": 2.98,
+   "semitone_cluster": 0.56,
+   "key_fit": 0.64,
+   "key": "G min",
+   "top3": [
+    "G",
+    "G#",
+    "C"
+   ]
+  },
+  "0-2s": {
+   "centroid_Hz": 785,
+   "low_lt250_pct": 69.1,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -20.5,
+   "chroma_entropy_bits": 2.57,
+   "semitone_cluster": 0.3,
+   "key_fit": 0.74,
+   "key": "G min",
+   "top3": [
+    "G",
+    "D",
+    "G#"
+   ]
+  },
+  "2-4s": {
+   "centroid_Hz": 815,
+   "low_lt250_pct": 77.1,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -20.8,
+   "chroma_entropy_bits": 2.51,
+   "semitone_cluster": 0.35,
+   "key_fit": 0.68,
+   "key": "G min",
+   "top3": [
+    "G",
+    "G#",
+    "F#"
+   ]
+  },
+  "4-6s": {
+   "centroid_Hz": 785,
+   "low_lt250_pct": 56.1,
+   "flatness": 0.0,
+   "perc_to_harm_dB": -16.0,
+   "chroma_entropy_bits": 3.09,
+   "semitone_cluster": 0.5,
+   "key_fit": 0.79,
+   "key": "G# maj",
+   "top3": [
+    "G#",
+    "C",
+    "D#"
+   ]
+  }
+ },
+ "ref_window_31-111": {
+  "centroid_Hz": 732,
+  "low_lt250_pct": 53.8,
+  "flatness": 0.0,
+  "perc_to_harm_dB": -15.9,
+  "chroma_entropy_bits": 3.28,
+  "semitone_cluster": 0.57,
+  "key_fit": 0.84,
+  "key": "C min",
+  "top3": [
+   "C",
+   "G",
+   "F"
+  ]
+ },
+ "ref_peak_60-68": {
+  "centroid_Hz": 736,
+  "low_lt250_pct": 50.6,
+  "flatness": 0.0,
+  "perc_to_harm_dB": -15.7,
+  "chroma_entropy_bits": 3.24,
+  "semitone_cluster": 0.66,
+  "key_fit": 0.68,
+  "key": "C min",
+  "top3": [
+   "D",
+   "C",
+   "D#"
+  ]
+ },
+ "onsets_24_40": [
+  27.89
+ ],
+ "onsets_0_8": [
+  0.22
+ ]
+}

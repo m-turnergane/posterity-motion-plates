@@ -1,0 +1,1384 @@
+{
+"words": [
+{
+"word": "Elizabeth",
+"start": 0.0,
+"end": 0.58,
+"line": 1
+},
+{
+"word": "B\u00e1thory",
+"start": 0.639,
+"end": 1.103,
+"line": 1
+},
+{
+"word": "was",
+"start": 1.173,
+"end": 1.289,
+"line": 1
+},
+{
+"word": "accused",
+"start": 1.335,
+"end": 1.776,
+"line": 1
+},
+{
+"word": "of",
+"start": 1.811,
+"end": 1.881,
+"line": 1
+},
+{
+"word": "burning",
+"start": 1.95,
+"end": 2.31,
+"line": 1
+},
+{
+"word": "young",
+"start": 2.426,
+"end": 2.624,
+"line": 1
+},
+{
+"word": "maids",
+"start": 2.717,
+"end": 3.03,
+"line": 1
+},
+{
+"word": "with",
+"start": 3.077,
+"end": 3.228,
+"line": 1
+},
+{
+"word": "hot",
+"start": 3.286,
+"end": 3.495,
+"line": 1
+},
+{
+"word": "irons.",
+"start": 3.553,
+"end": 3.982,
+"line": 1
+},
+{
+"word": "Of",
+"start": 4.098,
+"end": 4.214,
+"line": 1
+},
+{
+"word": "forcing",
+"start": 4.296,
+"end": 4.667,
+"line": 1
+},
+{
+"word": "others",
+"start": 4.737,
+"end": 5.016,
+"line": 1
+},
+{
+"word": "into",
+"start": 5.074,
+"end": 5.248,
+"line": 1
+},
+{
+"word": "freezing",
+"start": 5.341,
+"end": 5.747,
+"line": 1
+},
+{
+"word": "water.",
+"start": 5.817,
+"end": 6.281,
+"line": 1
+},
+{
+"word": "People",
+"start": 6.455,
+"end": 6.803,
+"line": 2
+},
+{
+"word": "said",
+"start": 6.861,
+"end": 7.082,
+"line": 2
+},
+{
+"word": "young",
+"start": 7.152,
+"end": 7.349,
+"line": 2
+},
+{
+"word": "women",
+"start": 7.407,
+"end": 7.663,
+"line": 2
+},
+{
+"word": "were",
+"start": 7.709,
+"end": 7.848,
+"line": 2
+},
+{
+"word": "dying",
+"start": 7.895,
+"end": 8.22,
+"line": 2
+},
+{
+"word": "in",
+"start": 8.266,
+"end": 8.324,
+"line": 2
+},
+{
+"word": "her",
+"start": 8.394,
+"end": 8.522,
+"line": 2
+},
+{
+"word": "household.",
+"start": 8.591,
+"end": 9.23,
+"line": 2
+},
+{
+"word": "The",
+"start": 9.671,
+"end": 9.787,
+"line": 2
+},
+{
+"word": "rumours",
+"start": 9.88,
+"end": 10.298,
+"line": 2
+},
+{
+"word": "reached",
+"start": 10.379,
+"end": 10.658,
+"line": 2
+},
+{
+"word": "the",
+"start": 10.693,
+"end": 10.762,
+"line": 2
+},
+{
+"word": "king.",
+"start": 10.82,
+"end": 11.227,
+"line": 2
+},
+{
+"word": "He",
+"start": 11.401,
+"end": 11.517,
+"line": 3
+},
+{
+"word": "sent",
+"start": 11.575,
+"end": 11.784,
+"line": 3
+},
+{
+"word": "Hungary's",
+"start": 11.842,
+"end": 12.249,
+"line": 3
+},
+{
+"word": "highest",
+"start": 12.318,
+"end": 12.655,
+"line": 3
+},
+{
+"word": "official,",
+"start": 12.701,
+"end": 13.258,
+"line": 3
+},
+{
+"word": "Gy\u00f6rgy",
+"start": 13.374,
+"end": 13.699,
+"line": 3
+},
+{
+"word": "Thurz\u00f3,",
+"start": 13.781,
+"end": 14.338,
+"line": 3
+},
+{
+"word": "to",
+"start": 14.454,
+"end": 14.558,
+"line": 3
+},
+{
+"word": "investigate.",
+"start": 14.628,
+"end": 15.441,
+"line": 3
+},
+{
+"word": "One",
+"start": 15.983,
+"end": 16.216,
+"line": 4
+},
+{
+"word": "December",
+"start": 16.25,
+"end": 16.726,
+"line": 4
+},
+{
+"word": "night,",
+"start": 16.819,
+"end": 17.202,
+"line": 4
+},
+{
+"word": "armed",
+"start": 17.353,
+"end": 17.713,
+"line": 4
+},
+{
+"word": "men",
+"start": 17.795,
+"end": 18.027,
+"line": 4
+},
+{
+"word": "arrived",
+"start": 18.085,
+"end": 18.526,
+"line": 4
+},
+{
+"word": "at",
+"start": 18.561,
+"end": 18.63,
+"line": 4
+},
+{
+"word": "her",
+"start": 18.688,
+"end": 18.793,
+"line": 4
+},
+{
+"word": "manor.",
+"start": 18.874,
+"end": 19.339,
+"line": 4
+},
+{
+"word": "B\u00e1thory",
+"start": 19.78,
+"end": 20.244,
+"line": 4
+},
+{
+"word": "was",
+"start": 20.302,
+"end": 20.418,
+"line": 4
+},
+{
+"word": "eating",
+"start": 20.488,
+"end": 20.755,
+"line": 4
+},
+{
+"word": "supper.",
+"start": 20.871,
+"end": 21.394,
+"line": 4
+},
+{
+"word": "Thurz\u00f3",
+"start": 22.316,
+"end": 22.781,
+"line": 5
+},
+{
+"word": "wrote",
+"start": 22.839,
+"end": 23.083,
+"line": 5
+},
+{
+"word": "that",
+"start": 23.106,
+"end": 23.21,
+"line": 5
+},
+{
+"word": "his",
+"start": 23.245,
+"end": 23.35,
+"line": 5
+},
+{
+"word": "men",
+"start": 23.431,
+"end": 23.628,
+"line": 5
+},
+{
+"word": "had",
+"start": 23.698,
+"end": 23.802,
+"line": 5
+},
+{
+"word": "found",
+"start": 23.884,
+"end": 24.151,
+"line": 5
+},
+{
+"word": "one",
+"start": 24.232,
+"end": 24.429,
+"line": 5
+},
+{
+"word": "girl",
+"start": 24.476,
+"end": 24.673,
+"line": 5
+},
+{
+"word": "dead",
+"start": 24.754,
+"end": 25.021,
+"line": 5
+},
+{
+"word": "and",
+"start": 25.196,
+"end": 25.381,
+"line": 5
+},
+{
+"word": "another",
+"start": 25.439,
+"end": 25.846,
+"line": 5
+},
+{
+"word": "dying.",
+"start": 25.927,
+"end": 26.438,
+"line": 5
+},
+{
+"word": "B\u00e1thory",
+"start": 26.98,
+"end": 27.468,
+"line": 6
+},
+{
+"word": "was",
+"start": 27.526,
+"end": 27.642,
+"line": 6
+},
+{
+"word": "taken",
+"start": 27.7,
+"end": 28.049,
+"line": 6
+},
+{
+"word": "to",
+"start": 28.107,
+"end": 28.165,
+"line": 6
+},
+{
+"word": "the",
+"start": 28.223,
+"end": 28.292,
+"line": 6
+},
+{
+"word": "fortress",
+"start": 28.362,
+"end": 28.815,
+"line": 6
+},
+{
+"word": "above",
+"start": 28.861,
+"end": 29.186,
+"line": 6
+},
+{
+"word": "her",
+"start": 29.233,
+"end": 29.349,
+"line": 6
+},
+{
+"word": "home.",
+"start": 29.419,
+"end": 29.825,
+"line": 6
+},
+{
+"word": "Four",
+"start": 30.15,
+"end": 30.382,
+"line": 7
+},
+{
+"word": "servants,",
+"start": 30.452,
+"end": 31.09,
+"line": 7
+},
+{
+"word": "three",
+"start": 31.265,
+"end": 31.52,
+"line": 7
+},
+{
+"word": "women",
+"start": 31.578,
+"end": 31.892,
+"line": 7
+},
+{
+"word": "and",
+"start": 32.008,
+"end": 32.159,
+"line": 7
+},
+{
+"word": "a",
+"start": 32.205,
+"end": 32.24,
+"line": 7
+},
+{
+"word": "young",
+"start": 32.321,
+"end": 32.507,
+"line": 7
+},
+{
+"word": "man,",
+"start": 32.588,
+"end": 33.029,
+"line": 7
+},
+{
+"word": "were",
+"start": 33.145,
+"end": 33.331,
+"line": 7
+},
+{
+"word": "arrested",
+"start": 33.366,
+"end": 33.865,
+"line": 7
+},
+{
+"word": "as",
+"start": 33.923,
+"end": 34.016,
+"line": 7
+},
+{
+"word": "her",
+"start": 34.097,
+"end": 34.214,
+"line": 7
+},
+{
+"word": "alleged",
+"start": 34.272,
+"end": 34.666,
+"line": 7
+},
+{
+"word": "accomplices.",
+"start": 34.701,
+"end": 35.502,
+"line": 7
+},
+{
+"word": "Under",
+"start": 35.943,
+"end": 36.187,
+"line": 8
+},
+{
+"word": "torture,",
+"start": 36.245,
+"end": 36.814,
+"line": 8
+},
+{
+"word": "they",
+"start": 36.93,
+"end": 37.058,
+"line": 8
+},
+{
+"word": "confessed",
+"start": 37.104,
+"end": 37.604,
+"line": 8
+},
+{
+"word": "to",
+"start": 37.639,
+"end": 37.708,
+"line": 8
+},
+{
+"word": "dozens",
+"start": 37.824,
+"end": 38.324,
+"line": 8
+},
+{
+"word": "of",
+"start": 38.37,
+"end": 38.428,
+"line": 8
+},
+{
+"word": "killings.",
+"start": 38.498,
+"end": 39.078,
+"line": 8
+},
+{
+"word": "Three",
+"start": 39.519,
+"end": 40.007,
+"line": 8
+},
+{
+"word": "were",
+"start": 40.158,
+"end": 40.332,
+"line": 8
+},
+{
+"word": "executed",
+"start": 40.378,
+"end": 40.971,
+"line": 8
+},
+{
+"word": "within",
+"start": 41.04,
+"end": 41.365,
+"line": 8
+},
+{
+"word": "days.",
+"start": 41.447,
+"end": 41.946,
+"line": 8
+},
+{
+"word": "But",
+"start": 42.55,
+"end": 42.712,
+"line": 9
+},
+{
+"word": "B\u00e1thory",
+"start": 42.77,
+"end": 43.2,
+"line": 9
+},
+{
+"word": "was",
+"start": 43.269,
+"end": 43.385,
+"line": 9
+},
+{
+"word": "never",
+"start": 43.455,
+"end": 43.664,
+"line": 9
+},
+{
+"word": "tried.",
+"start": 43.711,
+"end": 44.21,
+"line": 9
+},
+{
+"word": "Nothing",
+"start": 45.322,
+"end": 45.682,
+"line": 10
+},
+{
+"word": "was",
+"start": 45.752,
+"end": 45.868,
+"line": 10
+},
+{
+"word": "ever",
+"start": 45.926,
+"end": 46.077,
+"line": 10
+},
+{
+"word": "proven",
+"start": 46.146,
+"end": 46.53,
+"line": 10
+},
+{
+"word": "against",
+"start": 46.576,
+"end": 46.901,
+"line": 10
+},
+{
+"word": "her",
+"start": 46.959,
+"end": 47.064,
+"line": 10
+},
+{
+"word": "in",
+"start": 47.11,
+"end": 47.18,
+"line": 10
+},
+{
+"word": "court.",
+"start": 47.261,
+"end": 47.702,
+"line": 10
+},
+{
+"word": "The",
+"start": 48.244,
+"end": 48.36,
+"line": 10
+},
+{
+"word": "case",
+"start": 48.418,
+"end": 48.79,
+"line": 10
+},
+{
+"word": "rested",
+"start": 48.871,
+"end": 49.242,
+"line": 10
+},
+{
+"word": "on",
+"start": 49.289,
+"end": 49.382,
+"line": 10
+},
+{
+"word": "witness",
+"start": 49.451,
+"end": 49.8,
+"line": 10
+},
+{
+"word": "testimony,",
+"start": 49.858,
+"end": 50.531,
+"line": 10
+},
+{
+"word": "and",
+"start": 50.856,
+"end": 51.019,
+"line": 10
+},
+{
+"word": "much",
+"start": 51.088,
+"end": 51.297,
+"line": 10
+},
+{
+"word": "of",
+"start": 51.344,
+"end": 51.402,
+"line": 10
+},
+{
+"word": "it",
+"start": 51.472,
+"end": 51.564,
+"line": 10
+},
+{
+"word": "was",
+"start": 51.634,
+"end": 51.808,
+"line": 10
+},
+{
+"word": "hearsay.",
+"start": 51.878,
+"end": 52.47,
+"line": 10
+},
+{
+"word": "The",
+"start": 53.062,
+"end": 53.178,
+"line": 11
+},
+{
+"word": "king",
+"start": 53.236,
+"end": 53.492,
+"line": 11
+},
+{
+"word": "pressed",
+"start": 53.608,
+"end": 53.933,
+"line": 11
+},
+{
+"word": "for",
+"start": 53.968,
+"end": 54.072,
+"line": 11
+},
+{
+"word": "a",
+"start": 54.119,
+"end": 54.142,
+"line": 11
+},
+{
+"word": "trial.",
+"start": 54.188,
+"end": 54.711,
+"line": 11
+},
+{
+"word": "Thurz\u00f3",
+"start": 55.603,
+"end": 56.161,
+"line": 11
+},
+{
+"word": "prevented",
+"start": 56.242,
+"end": 56.695,
+"line": 11
+},
+{
+"word": "it.",
+"start": 56.741,
+"end": 57.043,
+"line": 11
+},
+{
+"word": "Thurz\u00f3",
+"start": 58.155,
+"end": 58.666,
+"line": 12
+},
+{
+"word": "had",
+"start": 58.747,
+"end": 58.863,
+"line": 12
+},
+{
+"word": "fought",
+"start": 58.933,
+"end": 59.2,
+"line": 12
+},
+{
+"word": "the",
+"start": 59.235,
+"end": 59.304,
+"line": 12
+},
+{
+"word": "Ottomans",
+"start": 59.374,
+"end": 59.85,
+"line": 12
+},
+{
+"word": "beside",
+"start": 59.92,
+"end": 60.338,
+"line": 12
+},
+{
+"word": "her",
+"start": 60.384,
+"end": 60.488,
+"line": 12
+},
+{
+"word": "husband.",
+"start": 60.547,
+"end": 61.081,
+"line": 12
+},
+{
+"word": "Ferenc's",
+"start": 61.591,
+"end": 62.149,
+"line": 12
+},
+{
+"word": "dying",
+"start": 62.23,
+"end": 62.543,
+"line": 12
+},
+{
+"word": "wish",
+"start": 62.613,
+"end": 62.892,
+"line": 12
+},
+{
+"word": "was",
+"start": 62.961,
+"end": 63.124,
+"line": 12
+},
+{
+"word": "that",
+"start": 63.17,
+"end": 63.31,
+"line": 12
+},
+{
+"word": "his",
+"start": 63.368,
+"end": 63.484,
+"line": 12
+},
+{
+"word": "friend",
+"start": 63.565,
+"end": 63.913,
+"line": 12
+},
+{
+"word": "watch",
+"start": 64.006,
+"end": 64.25,
+"line": 12
+},
+{
+"word": "over",
+"start": 64.308,
+"end": 64.506,
+"line": 12
+},
+{
+"word": "her.",
+"start": 64.564,
+"end": 64.865,
+"line": 12
+},
+{
+"word": "Many",
+"start": 65.376,
+"end": 65.632,
+"line": 12
+},
+{
+"word": "historians",
+"start": 65.701,
+"end": 66.41,
+"line": 12
+},
+{
+"word": "think",
+"start": 66.468,
+"end": 66.677,
+"line": 12
+},
+{
+"word": "he",
+"start": 66.735,
+"end": 66.793,
+"line": 12
+},
+{
+"word": "confined",
+"start": 66.862,
+"end": 67.431,
+"line": 12
+},
+{
+"word": "her",
+"start": 67.489,
+"end": 67.582,
+"line": 12
+},
+{
+"word": "quietly",
+"start": 67.652,
+"end": 68.209,
+"line": 12
+},
+{
+"word": "rather",
+"start": 68.418,
+"end": 68.673,
+"line": 12
+},
+{
+"word": "than",
+"start": 68.72,
+"end": 68.848,
+"line": 12
+},
+{
+"word": "risk",
+"start": 68.941,
+"end": 69.196,
+"line": 12
+},
+{
+"word": "her",
+"start": 69.254,
+"end": 69.335,
+"line": 12
+},
+{
+"word": "beheading",
+"start": 69.393,
+"end": 69.823,
+"line": 12
+},
+{
+"word": "and",
+"start": 69.997,
+"end": 70.16,
+"line": 12
+},
+{
+"word": "the",
+"start": 70.206,
+"end": 70.276,
+"line": 12
+},
+{
+"word": "family's",
+"start": 70.357,
+"end": 70.821,
+"line": 12
+},
+{
+"word": "lands.",
+"start": 70.903,
+"end": 71.495,
+"line": 12
+},
+{
+"word": "She",
+"start": 72.098,
+"end": 72.238,
+"line": 13
+},
+{
+"word": "died",
+"start": 72.319,
+"end": 72.667,
+"line": 13
+},
+{
+"word": "in",
+"start": 72.714,
+"end": 72.783,
+"line": 13
+},
+{
+"word": "confinement.",
+"start": 72.853,
+"end": 73.689,
+"line": 13
+},
+{
+"word": "Then",
+"start": 74.651,
+"end": 74.906,
+"line": 14
+},
+{
+"word": "someone",
+"start": 75.057,
+"end": 75.417,
+"line": 14
+},
+{
+"word": "added",
+"start": 75.452,
+"end": 75.672,
+"line": 14
+},
+{
+"word": "the",
+"start": 75.707,
+"end": 75.777,
+"line": 14
+},
+{
+"word": "detail",
+"start": 75.835,
+"end": 76.334,
+"line": 14
+},
+{
+"word": "that",
+"start": 76.485,
+"end": 76.636,
+"line": 14
+},
+{
+"word": "would",
+"start": 76.659,
+"end": 76.798,
+"line": 14
+},
+{
+"word": "make",
+"start": 76.868,
+"end": 77.077,
+"line": 14
+},
+{
+"word": "her",
+"start": 77.112,
+"end": 77.216,
+"line": 14
+},
+{
+"word": "infamous.",
+"start": 77.298,
+"end": 77.971,
+"line": 14
+},
+{
+"word": "A",
+"start": 78.813,
+"end": 78.894,
+"line": 15
+},
+{
+"word": "century",
+"start": 78.975,
+"end": 79.335,
+"line": 15
+},
+{
+"word": "later,",
+"start": 79.393,
+"end": 79.974,
+"line": 15
+},
+{
+"word": "a",
+"start": 80.148,
+"end": 80.206,
+"line": 15
+},
+{
+"word": "priest",
+"start": 80.299,
+"end": 80.636,
+"line": 15
+},
+{
+"word": "wrote",
+"start": 80.682,
+"end": 80.972,
+"line": 15
+},
+{
+"word": "that",
+"start": 81.007,
+"end": 81.123,
+"line": 15
+},
+{
+"word": "she",
+"start": 81.158,
+"end": 81.263,
+"line": 15
+},
+{
+"word": "bathed",
+"start": 81.355,
+"end": 81.808,
+"line": 15
+},
+{
+"word": "in",
+"start": 81.855,
+"end": 81.924,
+"line": 15
+},
+{
+"word": "murdered",
+"start": 82.017,
+"end": 82.389,
+"line": 15
+},
+{
+"word": "girls'",
+"start": 82.447,
+"end": 82.772,
+"line": 15
+},
+{
+"word": "blood",
+"start": 82.795,
+"end": 83.062,
+"line": 15
+},
+{
+"word": "to",
+"start": 83.12,
+"end": 83.201,
+"line": 15
+},
+{
+"word": "keep",
+"start": 83.271,
+"end": 83.48,
+"line": 15
+},
+{
+"word": "her",
+"start": 83.538,
+"end": 83.619,
+"line": 15
+},
+{
+"word": "beauty.",
+"start": 83.677,
+"end": 84.223,
+"line": 15
+},
+{
+"word": "No",
+"start": 84.664,
+"end": 84.827,
+"line": 16
+},
+{
+"word": "witness",
+"start": 84.896,
+"end": 85.268,
+"line": 16
+},
+{
+"word": "against",
+"start": 85.314,
+"end": 85.651,
+"line": 16
+},
+{
+"word": "her",
+"start": 85.709,
+"end": 85.825,
+"line": 16
+},
+{
+"word": "had",
+"start": 85.907,
+"end": 86.023,
+"line": 16
+},
+{
+"word": "described",
+"start": 86.069,
+"end": 86.533,
+"line": 16
+},
+{
+"word": "that.",
+"start": 86.568,
+"end": 86.951,
+"line": 16
+},
+{
+"word": "No",
+"start": 87.462,
+"end": 87.625,
+"line": 17
+},
+{
+"word": "court",
+"start": 87.718,
+"end": 88.136,
+"line": 17
+},
+{
+"word": "ever",
+"start": 88.205,
+"end": 88.414,
+"line": 17
+},
+{
+"word": "heard",
+"start": 88.472,
+"end": 88.681,
+"line": 17
+},
+{
+"word": "her.",
+"start": 88.739,
+"end": 89.041,
+"line": 17
+},
+{
+"word": "But",
+"start": 89.552,
+"end": 89.703,
+"line": 18
+},
+{
+"word": "the",
+"start": 89.738,
+"end": 89.807,
+"line": 18
+},
+{
+"word": "legend",
+"start": 89.889,
+"end": 90.284,
+"line": 18
+},
+{
+"word": "had",
+"start": 90.353,
+"end": 90.481,
+"line": 18
+},
+{
+"word": "its",
+"start": 90.539,
+"end": 90.667,
+"line": 18
+},
+{
+"word": "monster:",
+"start": 90.736,
+"end": 91.398,
+"line": 18
+},
+{
+"word": "the",
+"start": 92.002,
+"end": 92.106,
+"line": 18
+},
+{
+"word": "Blood",
+"start": 92.176,
+"end": 92.466,
+"line": 18
+},
+{
+"word": "Countess.",
+"start": 92.547,
+"end": 93.244,
+"line": 18
+},
+{
+"word": "History",
+"start": 94.103,
+"end": 94.626,
+"line": 19
+},
+{
+"word": "remembers",
+"start": 94.835,
+"end": 95.369,
+"line": 19
+},
+{
+"word": "the",
+"start": 95.427,
+"end": 95.508,
+"line": 19
+},
+{
+"word": "victors.",
+"start": 95.566,
+"end": 96.181,
+"line": 19
+},
+{
+"word": "We",
+"start": 96.973,
+"end": 97.379,
+"line": 19
+},
+{
+"word": "remember",
+"start": 97.53,
+"end": 97.995,
+"line": 19
+},
+{
+"word": "the",
+"start": 98.053,
+"end": 98.122,
+"line": 19
+},
+{
+"word": "rest.",
+"start": 98.215,
+"end": 98.854,
+"line": 19
+}
+]
+}

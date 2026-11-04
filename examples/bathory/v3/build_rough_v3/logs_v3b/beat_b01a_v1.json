@@ -1,0 +1,66 @@
+{
+ "beat": "b01a_v1",
+ "kind": "flat",
+ "frames": [
+  901,
+  1273
+ ],
+ "t": [
+  30.033,
+  42.433
+ ],
+ "seconds": 12.4,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b01a_bytca_led_away_v1.png",
+ "plate_md5": "4bd2d0dffe4e3e740619dcaeb5aa81e4",
+ "plate_wh": [
+  941,
+  1670
+ ],
+ "snow_cfg": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/snow_b01a_v1.json",
+ "snow_face_boxes": [
+  [
+   170,
+   752,
+   232,
+   870
+  ],
+  [
+   108,
+   686,
+   186,
+   806
+  ]
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "snow_visible_flakes_per_frame": {
+  "min": 127,
+  "mean": 140.9,
+  "max": 154
+ }
+}

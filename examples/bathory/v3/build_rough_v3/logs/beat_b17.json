@@ -1,0 +1,240 @@
+{
+ "beat": "b17",
+ "kind": "flat",
+ "frames": [
+  1313,
+  1539
+ ],
+ "t": [
+  43.767,
+  51.3
+ ],
+ "seconds": 7.533,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b17_secondhand_witnesses.png",
+ "plate_md5": "b48467066fb2d4832db9139bd0d3efb3",
+ "plate_wh": [
+  942,
+  1670
+ ],
+ "heraldry_polys": [
+  [
+   [
+    95,
+    60
+   ],
+   [
+    335,
+    60
+   ],
+   [
+    335,
+    285
+   ],
+   [
+    95,
+    285
+   ]
+  ],
+  [
+   [
+    85,
+    430
+   ],
+   [
+    170,
+    430
+   ],
+   [
+    170,
+    570
+   ],
+   [
+    85,
+    570
+   ]
+  ]
+ ],
+ "snow_cfg": "b17",
+ "snow_face_boxes": [
+  [
+   531,
+   626,
+   616,
+   759
+  ],
+  [
+   592,
+   585,
+   641,
+   646
+  ],
+  [
+   633,
+   583,
+   703,
+   684
+  ],
+  [
+   646,
+   692,
+   775,
+   892
+  ],
+  [
+   697,
+   783,
+   838,
+   1015
+  ],
+  [
+   333,
+   550,
+   376,
+   626
+  ],
+  [
+   105,
+   566,
+   177,
+   656
+  ],
+  [
+   830,
+   610,
+   906,
+   732
+  ],
+  [
+   500,
+   619,
+   565,
+   762
+  ],
+  [
+   500,
+   598,
+   571,
+   699
+  ],
+  [
+   725,
+   591,
+   792,
+   717
+  ],
+  [
+   266,
+   558,
+   320,
+   642
+  ]
+ ],
+ "fx": [
+  {
+   "kind": "torch",
+   "info": {
+    "plate": "b17#0",
+    "sources": {
+     "torch": 1
+    },
+    "warped_candles": 0,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "torch": [
+     [
+      50,
+      840,
+      235,
+      1120
+     ]
+    ],
+    "relight_exclude": [
+     [
+      430,
+      520,
+      941,
+      1080
+     ],
+     [
+      60,
+      560,
+      260,
+      720
+     ]
+    ],
+    "spill_amp": 1.5
+   },
+   "fire_sharpness": {
+    "check": "fire_sharpness",
+    "zoom": 1.0600000104556482,
+    "lapvar": [
+     760.2
+    ],
+    "min_lapvar": 100.0,
+    "soft_rects": [],
+    "max_zoom": 1.5,
+    "ok": true,
+    "msg": "ok"
+   },
+   "pulse": 0.3546,
+   "metrics_at_pulse1": {
+    "whole": 25.962364196777344,
+    "local": 53.6562614440918,
+    "step": 7.751928329467773
+   },
+   "metrics": {
+    "whole": 9.595563888549805,
+    "local": 20.844411849975586,
+    "step": 2.9776363372802734
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "brazier",
+   "type": "torch",
+   "opacity": 0.4
+  }
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   942,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "snow_visible_flakes_per_frame": {
+  "min": 88,
+  "mean": 100.8,
+  "max": 117
+ }
+}

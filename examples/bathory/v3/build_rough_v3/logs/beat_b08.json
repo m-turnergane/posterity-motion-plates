@@ -1,0 +1,96 @@
+{
+ "beat": "b08",
+ "kind": "flat",
+ "frames": [
+  1659,
+  1873
+ ],
+ "t": [
+  55.3,
+  62.433
+ ],
+ "seconds": 7.133,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b08_husbands_letter.png",
+ "plate_md5": "46cecb33bb820756d75bcdba0dc1ec3b",
+ "plate_wh": [
+  941,
+  1670
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "b08#0",
+    "sources": {
+     "candle": 1
+    },
+    "warped_candles": 1,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "manual": [
+     [
+      272,
+      105,
+      325,
+      275
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "pulse": 0.4005,
+   "metrics_at_pulse1": {
+    "whole": 22.887771606445312,
+    "local": 74.42076110839844,
+    "step": 10.750306129455566
+   },
+   "metrics": {
+    "whole": 9.657678604125977,
+    "local": 35.251441955566406,
+    "step": 5.193912029266357
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "wick",
+   "type": "candle",
+   "opacity": 0.35
+  }
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

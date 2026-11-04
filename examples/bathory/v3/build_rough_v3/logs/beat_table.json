@@ -1,0 +1,233 @@
+[
+ {
+  "beat": "h01",
+  "lines": "Elizabeth Báthory was accused of / burning young maids with hot irons.",
+  "plate": "h01_heated_iron_threat.png",
+  "t_in": 0.0,
+  "t_out": 3.967,
+  "motion": "1.5× face open, smoothstep tilt-down to iron 0.6–3.4 s",
+  "fx": "fx_candle(candle3), torch_v1c(torch1)",
+  "scale": 1.5,
+  "plate_md5": "062343feeaead44464eb3d0034332ae3"
+ },
+ {
+  "beat": "h02",
+  "lines": "Of forcing others into freezing water.",
+  "plate": "h02_freezing_water.png",
+  "t_in": 3.967,
+  "t_out": 6.333,
+  "motion": "full-frame push 1.00→1.06",
+  "fx": "smoke_v2 steam≤0.30, water_v1 glints (77140 px)",
+  "scale": 1.2172,
+  "plate_md5": "20bfe504bea71d1eef4644012fdbadde"
+ },
+ {
+  "beat": "b06",
+  "lines": "People said young women / were dying in her household. / The rumours reached the king.",
+  "plate": "b06_rumours_village.png",
+  "t_in": 6.333,
+  "t_out": 11.3,
+  "motion": "push 1.00→1.06",
+  "fx": "dust_v1",
+  "scale": 1.2172,
+  "plate_md5": "35fa139e07103904e88d8fd096f6846d"
+ },
+ {
+  "beat": "b07",
+  "lines": "He sent Hungary's highest official, / György Thurzó, to investigate.",
+  "plate": "b07_thurzo_ordered.png",
+  "t_in": 11.3,
+  "t_out": 15.8,
+  "motion": "push 1.00→1.06",
+  "fx": "fx_candle(candle1), smoke_v2≤0.35",
+  "scale": 1.2172,
+  "plate_md5": "802bfc8b41ea49a3dec9bed9be2b3dc2"
+ },
+ {
+  "beat": "b04",
+  "lines": "One December night, / armed men arrived at her manor.",
+  "plate": "b04_riders_at_the_manor.png",
+  "t_in": 15.8,
+  "t_out": 19.567,
+  "motion": "push 1.00→1.06",
+  "fx": "torch_v1c(torch1,window6), smoke_v2≤0.40",
+  "scale": 1.2172,
+  "plate_md5": "f7ce3eecc08b00aa544c24cc532e0f3a"
+ },
+ {
+  "beat": "b05",
+  "lines": "Báthory was eating supper.",
+  "plate": "b05_supper_manor.png",
+  "t_in": 19.567,
+  "t_out": 21.667,
+  "motion": "push 1.00→1.06",
+  "fx": "fx_candle(candle3), torch_v1c(offscreen1), smoke_v2≤0.30",
+  "scale": 1.2172,
+  "plate_md5": "e7b19be5b03b6a2a0199bba37c48e57d"
+ },
+ {
+  "beat": "h03",
+  "lines": "Thurzó wrote that his men had found / one girl dead and another dying.",
+  "plate": "h03_thurzo_claimed_finding.png",
+  "t_in": 21.667,
+  "t_out": 26.233,
+  "motion": "push 1.00→1.06",
+  "fx": "torch_v1c(torch1)",
+  "scale": 1.2187,
+  "plate_md5": "debada1d867a6683be6692ea63cfd738"
+ },
+ {
+  "beat": "b12",
+  "lines": "Báthory was taken to the / fortress above her home.",
+  "plate": "b12_taken_up_to_fortress.png",
+  "t_in": 26.233,
+  "t_out": 29.4,
+  "motion": "push 1.00→1.06",
+  "fx": "torch_v1c(torch4,window1), smoke_v2≤0.35, snow_v1b(b12, 154 flakes/f)",
+  "scale": 1.2187,
+  "plate_md5": "78699fc77cbbba1365ced9f37d8569ae"
+ },
+ {
+  "beat": "b01a_v1",
+  "lines": "Four servants, / three women and a young man, / were arrested as her alleged accomplices.",
+  "plate": "b01a_bytca_led_away_v1.png",
+  "t_in": 29.4,
+  "t_out": 35.2,
+  "motion": "push 1.00→1.06",
+  "fx": "snow_v1b(/workspace/posterity/standalones/bathory/v3/build_rough_v3/snow_b01a_v1.json, 143 flakes/f)",
+  "scale": 1.2187,
+  "plate_md5": "4bd2d0dffe4e3e740619dcaeb5aa81e4"
+ },
+ {
+  "beat": "b01a",
+  "lines": "Under torture, they confessed / to dozens of killings. / Three were executed within days.",
+  "plate": "b01a_bytca_led_away.png",
+  "t_in": 35.2,
+  "t_out": 41.667,
+  "motion": "push 1.00→1.06",
+  "fx": "torch_v1c(torch1), snow_v1b(/workspace/posterity/standalones/bathory/v3/build_rough_v3/snow_b01a.json, 100 flakes/f)",
+  "scale": 1.2172,
+  "plate_md5": "e4cf0d6dcbd8f57d3aa076868df2b258"
+ },
+ {
+  "beat": "b01b",
+  "lines": "But Báthory was never tried.",
+  "plate": "b01b_never_tried.png",
+  "t_in": 41.667,
+  "t_out": 43.767,
+  "motion": "push 1.00→1.06",
+  "fx": "fx_candle(candle1), smoke_v2≤0.35",
+  "scale": 1.2172,
+  "plate_md5": "e44dbeb29e73cad4881a28b4c10938f9"
+ },
+ {
+  "beat": "b17",
+  "lines": "Nothing was ever proven / against her in court. / The case rested on witness testimony, / and much of it was hearsay.",
+  "plate": "b17_secondhand_witnesses.png",
+  "t_in": 43.767,
+  "t_out": 51.3,
+  "motion": "push 1.00→1.06",
+  "fx": "torch_v1c(torch1), smoke_v2≤0.40, snow_v1b(b17, 101 flakes/f)",
+  "scale": 1.2187,
+  "plate_md5": "b48467066fb2d4832db9139bd0d3efb3"
+ },
+ {
+  "beat": "b13a",
+  "lines": "The king pressed for a trial.",
+  "plate": "b13a_doors_open.png",
+  "t_in": 51.3,
+  "t_out": 53.4,
+  "motion": "flat (static)",
+  "fx": "fx_candle(candle5)",
+  "scale": 1.1892,
+  "plate_md5": "42f7a59e64e40ba81d1372b8d11d8e3c"
+ },
+ {
+  "beat": "b13b",
+  "lines": "Thurzó prevented it.",
+  "plate": "b13b_doors_shut.png",
+  "t_in": 53.4,
+  "t_out": 55.3,
+  "motion": "static, registered to B13a (sign −1)",
+  "fx": "—",
+  "scale": 1.218,
+  "plate_md5": "c54b28a72e045e6550dff1ade9eb839a"
+ },
+ {
+  "beat": "b08",
+  "lines": "Thurzó had fought the / Ottomans beside her husband. / Ferenc's dying wish was that / his friend watch over her.",
+  "plate": "b08_husbands_letter.png",
+  "t_in": 55.3,
+  "t_out": 62.433,
+  "motion": "push 1.00→1.06",
+  "fx": "fx_candle(candle1), smoke_v2≤0.35",
+  "scale": 1.2187,
+  "plate_md5": "46cecb33bb820756d75bcdba0dc1ec3b"
+ },
+ {
+  "beat": "b14",
+  "lines": "Many historians think he confined her quietly",
+  "plate": "b14_why_window.png",
+  "t_in": 62.433,
+  "t_out": 65.467,
+  "motion": "push 1.00→1.06",
+  "fx": "dust_v1",
+  "scale": 1.218,
+  "plate_md5": "52531e02e5bdcb03ee608b79f023a1a8"
+ },
+ {
+  "beat": "b16",
+  "lines": "rather than risk her beheading / and the family's lands.",
+  "plate": "b16_family_silence.png",
+  "t_in": 65.467,
+  "t_out": 69.033,
+  "motion": "push 1.00→1.06",
+  "fx": "torch_v1c(torch1), smoke_v2≤0.35",
+  "scale": 1.218,
+  "plate_md5": "de39b28c9fdc1a45519e2a1805e6765c"
+ },
+ {
+  "beat": "b18",
+  "lines": "She died in confinement.",
+  "plate": "b18_empty_room.png",
+  "t_in": 69.033,
+  "t_out": 71.067,
+  "motion": "push 1.00→1.06",
+  "fx": "smoke_v2≤0.35, dust_v1",
+  "scale": 1.2187,
+  "plate_md5": "0b0a87f138f376daa2a13ff116d40cac"
+ },
+ {
+  "beat": "h04a",
+  "lines": "Then someone added the detail / that would make her infamous. / A century later, / a priest wrote that she bathed / in murdered girls' blood / to keep her beauty.",
+  "plate": "h04a_priest_writes_legend_inkgraded.png",
+  "t_in": 71.067,
+  "t_out": 80.933,
+  "motion": "push 1.00→1.06",
+  "fx": "fx_candle(candle5)",
+  "scale": 1.2172,
+  "plate_md5": "438bbd47c2653fea63c685f8453a3907"
+ },
+ {
+  "beat": "b15",
+  "lines": "No witness against her had described that.",
+  "plate": "b15_thurzo_depositions.png",
+  "t_in": 80.933,
+  "t_out": 83.7,
+  "motion": "push 1.00→1.06",
+  "fx": "fx_candle(candle1)",
+  "scale": 1.2187,
+  "plate_md5": "a784a61147bbb3d95817c62bcd281c5c"
+ },
+ {
+  "beat": "h04b",
+  "lines": "No court ever heard her. / But the legend had its monster: / the Blood Countess. / History remembers the victors. / We remember the rest.",
+  "plate": "h04b_final_stare.png",
+  "t_in": 83.7,
+  "t_out": 97.5,
+  "motion": "push 1.00→1.06 to the eyes by 90.2 s, then hold under tagline",
+  "fx": "fx_candle(candle3)",
+  "scale": 1.2172,
+  "plate_md5": "0d8575f772adc1dc9c000c9fd9e2b1e5"
+ }
+]

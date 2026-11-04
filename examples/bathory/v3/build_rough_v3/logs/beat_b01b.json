@@ -1,0 +1,116 @@
+{
+ "beat": "b01b",
+ "kind": "flat",
+ "frames": [
+  1250,
+  1313
+ ],
+ "t": [
+  41.667,
+  43.767
+ ],
+ "seconds": 2.1,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b01b_never_tried.png",
+ "plate_md5": "e44dbeb29e73cad4881a28b4c10938f9",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "heraldry_polys": [
+  [
+   [
+    770,
+    0
+   ],
+   [
+    941,
+    0
+   ],
+   [
+    941,
+    480
+   ],
+   [
+    770,
+    480
+   ]
+  ]
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "b01b#0",
+    "sources": {
+     "candle": 1
+    },
+    "warped_candles": 1,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "manual": [
+     [
+      72,
+      405,
+      122,
+      530
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "pulse": 0.3162,
+   "metrics_at_pulse1": {
+    "whole": 42.060691833496094,
+    "local": 81.78575134277344,
+    "step": 10.521288871765137
+   },
+   "metrics": {
+    "whole": 14.588761329650879,
+    "local": 31.386005401611328,
+    "step": 4.073780059814453
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "wick",
+   "type": "candle",
+   "opacity": 0.35
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

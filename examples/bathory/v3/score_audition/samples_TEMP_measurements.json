@@ -1,0 +1,62 @@
+{
+ "anabasis_i": {
+  "file": "sample_anabasis_i.mp3",
+  "window_start_s": 256,
+  "bed_gain_dB": -20.9,
+  "vo_stem_I": -27.7,
+  "bed_ducked_I": -41.6,
+  "vo_over_ducked_bed_LU": 13.9,
+  "sample_I": -14.1,
+  "sample_TP": -1.8,
+  "dur": 29.23102,
+  "master": "acompressor 3:1 @-20dBFS, gain 13.40 dB, 4x-oversampled alimiter (-2.2 dBFS), mp3 128k",
+  "mid_SNR_dB_open_median": 23.4,
+  "mid_SNR_dB_payoff_median": 6.5,
+  "mid_SNR_dB_p10": 2.8
+ },
+ "katabasis_i": {
+  "file": "sample_katabasis_i.mp3",
+  "window_start_s": 424,
+  "bed_gain_dB": -19.4,
+  "vo_stem_I": -27.7,
+  "bed_ducked_I": -42.5,
+  "vo_over_ducked_bed_LU": 14.8,
+  "sample_I": -14.1,
+  "sample_TP": -1.2,
+  "dur": 29.23102,
+  "master": "acompressor 3:1 @-20dBFS, gain 13.6 dB, 4x-oversampled alimiter (limit 0.7), mp3 128k",
+  "mid_SNR_dB_open_median": 26.2,
+  "mid_SNR_dB_payoff_median": 7.6,
+  "mid_SNR_dB_p10": 4.7
+ },
+ "dark_times": {
+  "file": "sample_dark_times.mp3",
+  "window_start_s": 66,
+  "bed_gain_dB": -16.6,
+  "vo_stem_I": -27.7,
+  "bed_ducked_I": -42.4,
+  "vo_over_ducked_bed_LU": 14.7,
+  "sample_I": -14.2,
+  "sample_TP": -1.3,
+  "dur": 29.23102,
+  "master": "acompressor 3:1 @-20dBFS, gain 13.00 dB, 4x-oversampled alimiter (-2.2 dBFS), mp3 128k",
+  "mid_SNR_dB_open_median": 26.5,
+  "mid_SNR_dB_payoff_median": 13.3,
+  "mid_SNR_dB_p10": 10.6
+ },
+ "eyes_in_the_void": {
+  "file": "sample_eyes_in_the_void.mp3",
+  "window_start_s": 0,
+  "bed_gain_dB": -22.6,
+  "vo_stem_I": -27.7,
+  "bed_ducked_I": -41.6,
+  "vo_over_ducked_bed_LU": 13.9,
+  "sample_I": -14.2,
+  "sample_TP": -1.3,
+  "dur": 29.23102,
+  "master": "acompressor 3:1 @-20dBFS, gain 13.10 dB, 4x-oversampled alimiter (-2.2 dBFS), mp3 128k",
+  "mid_SNR_dB_open_median": 28.9,
+  "mid_SNR_dB_payoff_median": 10.3,
+  "mid_SNR_dB_p10": 6.9
+ }
+}

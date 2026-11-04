@@ -1,0 +1,55 @@
+{
+ "beat": "outro",
+ "kind": "flat",
+ "frames": [
+  2833,
+  3085
+ ],
+ "t": [
+  94.433,
+  102.833
+ ],
+ "seconds": 8.4,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/outro_bathory_csejte_first_light_OWNER.png",
+ "plate_md5": "084f83546ec8f48b6b87c86a5e40115c",
+ "plate_wh": [
+  942,
+  1670
+ ],
+ "dust": {
+  "seed": 480,
+  "n": [
+   260
+  ],
+  "amp": [
+   95
+  ]
+ },
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   942,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "times": [
+  0.0,
+  0.7,
+  1.4,
+  2.1
+ ],
+ "face_changed_px": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "outside_allow_changed_px": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "water_changed_px": [
+  3084,
+  2984,
+  3543,
+  3290
+ ],
+ "steam_changed_px": [
+  33219,
+  32762,
+  32316,
+  31768
+ ],
+ "pass": true,
+ "figure_body_changed_px_excl_drips": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "snow_pass": true,
+ "snow_protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "out_figure_changed_px": [
+  0,
+  0,
+  0,
+  0
+ ]
+}

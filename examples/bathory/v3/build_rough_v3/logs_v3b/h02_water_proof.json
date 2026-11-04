@@ -1,0 +1,56 @@
+{
+ "name": "h02_hem_drips_v3b",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+ "times": [
+  0.0,
+  0.5,
+  1.0,
+  1.7,
+  2.4,
+  3.1,
+  4.0
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "impulse_live_changed_min_frac": 0.8716,
+ "protect_px": 1561571,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  3084,
+  3682,
+  3561,
+  3242,
+  3363,
+  3691,
+  2729
+ ],
+ "changed_frac_of_frame": [
+  0.00196,
+  0.00234,
+  0.00226,
+  0.00206,
+  0.00214,
+  0.00235,
+  0.00173
+ ],
+ "max_abs_diff_in_allow": [
+  177,
+  150,
+  178,
+  146,
+  146,
+  171,
+  136
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

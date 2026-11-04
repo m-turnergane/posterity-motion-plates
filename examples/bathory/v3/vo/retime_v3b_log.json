@@ -1,0 +1,118 @@
+{
+ "source": "vo_oliver_v3_final.mp3 (raw read)",
+ "raw_s": 98.128,
+ "v3b_s": 98.854,
+ "net_change_s": 0.726,
+ "ops": [
+  {
+   "after": "investigate.",
+   "before": "One",
+   "raw_gap": 0.696,
+   "new_gap": 0.55,
+   "change_s": -0.146,
+   "why": "tighten",
+   "at_raw_s": 15.606,
+   "local_floor_dBFS": -90.0
+  },
+  {
+   "after": "supper.",
+   "before": "Thurzó",
+   "raw_gap": 0.603,
+   "new_gap": 0.93,
+   "change_s": 0.327,
+   "why": "open: B05 >= 2.5 s",
+   "at_raw_s": 21.74,
+   "local_floor_dBFS": -90.7
+  },
+  {
+   "after": "dying.",
+   "before": "Báthory",
+   "raw_gap": 0.696,
+   "new_gap": 0.55,
+   "change_s": -0.146,
+   "why": "tighten",
+   "at_raw_s": 26.384,
+   "local_floor_dBFS": -79.5
+  },
+  {
+   "after": "tried.",
+   "before": "Nothing",
+   "raw_gap": 0.441,
+   "new_gap": 1.12,
+   "change_s": 0.679,
+   "why": "open: ~1.0 s held beat on B01b after \"never tried.\"",
+   "at_raw_s": 44.375,
+   "local_floor_dBFS": -90.4
+  },
+  {
+   "after": "court.",
+   "before": "The",
+   "raw_gap": 0.697,
+   "new_gap": 0.55,
+   "change_s": -0.147,
+   "why": "tighten",
+   "at_raw_s": 47.166,
+   "local_floor_dBFS": -88.2
+  },
+  {
+   "after": "hearsay.",
+   "before": "The",
+   "raw_gap": 0.952,
+   "new_gap": 0.6,
+   "change_s": -0.352,
+   "why": "tighten",
+   "at_raw_s": 52.039,
+   "local_floor_dBFS": -83.1
+  },
+  {
+   "after": "trial.",
+   "before": "Thurzó",
+   "raw_gap": 0.603,
+   "new_gap": 0.9,
+   "change_s": 0.297,
+   "why": "open: B13a >= 2.5 s",
+   "at_raw_s": 54.71,
+   "local_floor_dBFS": -91.1
+  },
+  {
+   "after": "it.",
+   "before": "Thurzó",
+   "raw_gap": 0.511,
+   "new_gap": 1.12,
+   "change_s": 0.609,
+   "why": "open: B13b >= 2.5 s",
+   "at_raw_s": 56.756,
+   "local_floor_dBFS": -89.6
+  },
+  {
+   "after": "confinement.",
+   "before": "Then",
+   "raw_gap": 0.697,
+   "new_gap": 0.97,
+   "change_s": 0.273,
+   "why": "open: B18 >= 2.5 s",
+   "at_raw_s": 72.824,
+   "local_floor_dBFS": -91.3
+  },
+  {
+   "after": "infamous.",
+   "before": "A",
+   "raw_gap": 1.115,
+   "new_gap": 0.85,
+   "change_s": -0.265,
+   "why": "tighten (keeps a build before the priest line)",
+   "at_raw_s": 76.815,
+   "local_floor_dBFS": -89.7
+  },
+  {
+   "after": "victors.",
+   "before": "We",
+   "raw_gap": 1.115,
+   "new_gap": 0.8,
+   "change_s": -0.315,
+   "why": "tighten",
+   "at_raw_s": 95.228,
+   "local_floor_dBFS": -82.7
+  }
+ ]
+}

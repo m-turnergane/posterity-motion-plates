@@ -1,0 +1,205 @@
+{
+ "name": "h02_snow_v3b",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+ "plate_md5": "adf6966b498d4ed4fb4cb60cc4cb6e05",
+ "times": [
+  0.0,
+  0.9,
+  1.7,
+  2.5,
+  3.3,
+  3.97
+ ],
+ "info": {
+  "name": "h02_snow_v3b",
+  "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+  "out": [
+   1080,
+   1920
+  ],
+  "auto_faces": [
+   [
+    541.1,
+    577.9,
+    108.0,
+    144.7,
+    0.9
+   ],
+   [
+    62.7,
+    467.6,
+    62.9,
+    66.1,
+    0.9
+   ],
+   [
+    292.1,
+    342.5,
+    38.1,
+    55.2,
+    0.9
+   ]
+  ],
+  "face_boxes": [
+   [
+    470,
+    480,
+    720,
+    790
+   ],
+   [
+    40,
+    400,
+    185,
+    560
+   ],
+   [
+    215,
+    310,
+    345,
+    460
+   ],
+   [
+    476,
+    448,
+    714,
+    795
+   ],
+   [
+    25,
+    408,
+    163,
+    567
+   ],
+   [
+    269,
+    293,
+    353,
+    425
+   ]
+  ],
+  "protect_px": 780704,
+  "snow_white": [
+   140,
+   140,
+   150
+  ],
+  "tiers": {
+   "far": {
+    "n": 160,
+    "matte_px": 464099
+   },
+   "mid": {
+    "n": 80,
+    "matte_px": 464099
+   },
+   "near": {
+    "n": 24,
+    "matte_px": 464099
+   }
+  }
+ },
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "outside_matte_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "changed_px": [
+  7822,
+  8241,
+  7192,
+  6089,
+  5615,
+  5434
+ ],
+ "flakes_on_screen": [
+  {
+   "far": 33,
+   "mid": 20,
+   "near": 6
+  },
+  {
+   "far": 36,
+   "mid": 20,
+   "near": 6
+  },
+  {
+   "far": 35,
+   "mid": 24,
+   "near": 4
+  },
+  {
+   "far": 35,
+   "mid": 22,
+   "near": 2
+  },
+  {
+   "far": 33,
+   "mid": 19,
+   "near": 0
+  },
+  {
+   "far": 33,
+   "mid": 17,
+   "near": 2
+  }
+ ],
+ "frame_md5": [
+  "e4c4550f1232f67daa2b8ee8647307e6",
+  "22f62d8f330896bc269eabfd89e84855",
+  "cfec4f46f9b8f2768d004b838234d1bf",
+  "8c1f156f4832d3db7606f8885c82a2ca",
+  "751b10cc88f0d49c9ea5aa3868202c0d",
+  "0444c7258189896d619c382b6170c1c5"
+ ],
+ "det_identical": true,
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "ok": true,
+   "msg": "ok"
+  },
+  {
+   "check": "pixel_density",
+   "plate": "/workspace/posterity/standalones/bathory/v2/plates/h02_freezing_water.png",
+   "plate_wh": [
+    941,
+    1672
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1483,
+   "visible_src_wh": [
+    887.3,
+    1577.4
+   ],
+   "ratio": 1.217,
+   "ratio_x": 1.217,
+   "ratio_y": 1.217,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_keepout_0px": true,
+ "pass_outside_0px": true,
+ "pass": true
+}

@@ -1,0 +1,55 @@
+{
+ "beat": "b06",
+ "kind": "flat",
+ "frames": [
+  190,
+  339
+ ],
+ "t": [
+  6.333,
+  11.3
+ ],
+ "seconds": 4.967,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b06_rumours_village.png",
+ "plate_md5": "35fa139e07103904e88d8fd096f6846d",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "dust": {
+  "seed": 378,
+  "n": [
+   520
+  ],
+  "amp": [
+   110
+  ]
+ },
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "beat": "b16",
+ "kind": "flat",
+ "frames": [
+  1964,
+  2071
+ ],
+ "t": [
+  65.467,
+  69.033
+ ],
+ "seconds": 3.567,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b16_family_silence.png",
+ "plate_md5": "de39b28c9fdc1a45519e2a1805e6765c",
+ "plate_wh": [
+  941,
+  1671
+ ],
+ "fx": [
+  {
+   "kind": "torch",
+   "info": {
+    "plate": "b16#0",
+    "sources": {
+     "torch": 1
+    },
+    "warped_candles": 0,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "torch": [
+     [
+      340,
+      330,
+      690,
+      620
+     ]
+    ],
+    "relight_exclude": [
+     [
+      50,
+      420,
+      230,
+      580
+     ],
+     [
+      465,
+      505,
+      610,
+      670
+     ],
+     [
+      725,
+      390,
+      915,
+      580
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "fire_sharpness": {
+    "check": "fire_sharpness",
+    "zoom": 1.0600000025704504,
+    "lapvar": [
+     346.8
+    ],
+    "min_lapvar": 100.0,
+    "soft_rects": [],
+    "max_zoom": 1.5,
+    "ok": true,
+    "msg": "ok"
+   },
+   "pulse": 0.2873,
+   "metrics_at_pulse1": {
+    "whole": 37.84752655029297,
+    "local": 62.875675201416016,
+    "step": 8.428701400756836
+   },
+   "metrics": {
+    "whole": 11.846136093139648,
+    "local": 22.490936279296875,
+    "step": 3.0779426097869873
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "hearth",
+   "type": "torch",
+   "opacity": 0.35
+  }
+ ],
+ "density_max": 1.218,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1671
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000025704504,
+  "cover_scale": 1.149,
+  "visible_src_wh": [
+   886.7,
+   1576.4
+  ],
+  "ratio": 1.218,
+  "ratio_x": 1.218,
+  "ratio_y": 1.218,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

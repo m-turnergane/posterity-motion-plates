@@ -1,0 +1,30 @@
+{
+ "S20": {
+  "plate": "k19",
+  "freeze_rect": [
+   0,
+   700,
+   941,
+   1215
+  ],
+  "frames": 90,
+  "smoke_layer": false,
+  "max_diff_in_rect_plate_space": 0,
+  "max_diff_in_rect_after_grade_cover_vs_static": 0,
+  "max_diff_elsewhere": 199
+ },
+ "OUTRO": {
+  "plate": "outro",
+  "freeze_rect": [
+   0,
+   450,
+   941,
+   990
+  ],
+  "frames": 146,
+  "smoke_layer": false,
+  "max_diff_in_rect_plate_space": 0,
+  "max_diff_in_rect_after_grade_cover_vs_static": 0,
+  "max_diff_elsewhere": 108
+ }
+}

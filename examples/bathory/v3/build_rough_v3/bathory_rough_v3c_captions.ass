@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,54,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,4,2,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.95,Default,,0,0,0,,Elizabeth Báthory\Nwas accused of
+Dialogue: 0,0:00:01.95,0:00:04.10,Default,,0,0,0,,burning young maids\Nwith hot irons.
+Dialogue: 0,0:00:04.10,0:00:06.46,Default,,0,0,0,,Of forcing others\Ninto freezing water.
+Dialogue: 0,0:00:06.46,0:00:07.71,Default,,0,0,0,,People said young women
+Dialogue: 0,0:00:07.71,0:00:09.48,Default,,0,0,0,,were dying in\Nher household.
+Dialogue: 0,0:00:09.67,0:00:11.40,Default,,0,0,0,,The rumours\Nreached the king.
+Dialogue: 0,0:00:11.40,0:00:13.37,Default,,0,0,0,,He sent Hungary's\Nhighest official,
+Dialogue: 0,0:00:13.37,0:00:15.69,Default,,0,0,0,,György Thurzó,\Nto investigate.
+Dialogue: 0,0:00:15.98,0:00:17.35,Default,,0,0,0,,One December night,
+Dialogue: 0,0:00:17.35,0:00:19.59,Default,,0,0,0,,armed men arrived\Nat her manor.
+Dialogue: 0,0:00:19.78,0:00:21.64,Default,,0,0,0,,Báthory was\Neating supper.
+Dialogue: 0,0:00:22.32,0:00:24.23,Default,,0,0,0,,Thurzó wrote that\Nhis men had found
+Dialogue: 0,0:00:24.23,0:00:26.69,Default,,0,0,0,,one girl dead and\Nanother dying.
+Dialogue: 0,0:00:26.98,0:00:28.36,Default,,0,0,0,,Báthory was taken to the
+Dialogue: 0,0:00:28.36,0:00:30.08,Default,,0,0,0,,fortress above her home.
+Dialogue: 0,0:00:30.15,0:00:31.26,Default,,0,0,0,,Four servants,
+Dialogue: 0,0:00:31.26,0:00:33.15,Default,,0,0,0,,three women and\Na young man,
+Dialogue: 0,0:00:33.15,0:00:35.75,Default,,0,0,0,,were arrested as her\Nalleged accomplices.
+Dialogue: 0,0:00:35.94,0:00:37.64,Default,,0,0,0,,Under torture,\Nthey confessed
+Dialogue: 0,0:00:37.64,0:00:39.33,Default,,0,0,0,,to dozens of killings.
+Dialogue: 0,0:00:39.52,0:00:42.20,Default,,0,0,0,,Three were executed\Nwithin days.
+Dialogue: 0,0:00:42.55,0:00:44.46,Default,,0,0,0,,But Báthory was\Nnever tried.
+Dialogue: 0,0:00:45.32,0:00:46.58,Default,,0,0,0,,Nothing was ever proven
+Dialogue: 0,0:00:46.58,0:00:47.95,Default,,0,0,0,,against her in court.
+Dialogue: 0,0:00:48.24,0:00:50.78,Default,,0,0,0,,The case rested on\Nwitness testimony,
+Dialogue: 0,0:00:50.86,0:00:52.72,Default,,0,0,0,,and much of it\Nwas hearsay.
+Dialogue: 0,0:00:53.06,0:00:54.96,Default,,0,0,0,,The king pressed\Nfor a trial.
+Dialogue: 0,0:00:55.60,0:00:57.29,Default,,0,0,0,,Thurzó prevented it.
+Dialogue: 0,0:00:58.16,0:00:59.37,Default,,0,0,0,,Thurzó had fought the
+Dialogue: 0,0:00:59.37,0:01:01.33,Default,,0,0,0,,Ottomans beside\Nher husband.
+Dialogue: 0,0:01:01.59,0:01:03.37,Default,,0,0,0,,Ferenc's dying\Nwish was that
+Dialogue: 0,0:01:03.37,0:01:05.11,Default,,0,0,0,,his friend\Nwatch over her.
+Dialogue: 0,0:01:05.38,0:01:08.42,Default,,0,0,0,,Many historians think\Nhe confined her quietly
+Dialogue: 0,0:01:08.42,0:01:10.00,Default,,0,0,0,,rather than risk\Nher beheading
+Dialogue: 0,0:01:10.00,0:01:11.75,Default,,0,0,0,,and the family's lands.
+Dialogue: 0,0:01:12.10,0:01:13.94,Default,,0,0,0,,She died in confinement.
+Dialogue: 0,0:01:14.65,0:01:16.48,Default,,0,0,0,,Then someone\Nadded the detail
+Dialogue: 0,0:01:16.48,0:01:18.22,Default,,0,0,0,,that would make\Nher infamous.
+Dialogue: 0,0:01:18.81,0:01:20.15,Default,,0,0,0,,A century later,
+Dialogue: 0,0:01:20.15,0:01:21.86,Default,,0,0,0,,a priest wrote\Nthat she bathed
+Dialogue: 0,0:01:21.86,0:01:23.12,Default,,0,0,0,,in murdered girls' blood
+Dialogue: 0,0:01:23.12,0:01:24.47,Default,,0,0,0,,to keep her beauty.
+Dialogue: 0,0:01:24.66,0:01:27.20,Default,,0,0,0,,No witness against her\Nhad described that.
+Dialogue: 0,0:01:27.46,0:01:29.29,Default,,0,0,0,,No court ever heard her.
+Dialogue: 0,0:01:29.55,0:01:31.65,Default,,0,0,0,,But the legend\Nhad its monster:
+Dialogue: 0,0:01:32.00,0:01:33.49,Default,,0,0,0,,the Blood Countess.

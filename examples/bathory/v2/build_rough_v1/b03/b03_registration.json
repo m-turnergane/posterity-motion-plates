@@ -1,0 +1,676 @@
+{
+ "stat": {
+  "n_primary": 29,
+  "n_accepted": 29,
+  "n_used": 29,
+  "affine": [
+   [
+    0.9996920799035202,
+    0.00016776762588085922,
+    -0.7008506461448498
+   ],
+   [
+    0.0005398114882727731,
+    1.0002519124833442,
+    -0.8240123491190022
+   ]
+  ],
+  "scale": 0.9999719117330529,
+  "shift_px": [
+   -0.7008506461448498,
+   -0.8240123491190022
+  ],
+  "raw_median": 0.9321480569094098,
+  "raw_max": 2.963190847718102,
+  "post_median": 1.0,
+  "post_p95": 1.9079999999999984,
+  "post_max": 3.0,
+  "n_pass_4px": 29,
+  "n_flag_8px": 0,
+  "n_fail": 0,
+  "chamfer_median": 0.0,
+  "chamfer_p95": 4.196899890899658
+ },
+ "cps": [
+  {
+   "id": "CP01",
+   "name": "Horn\u00fd Dudv\u00e1h into V\u00e1h",
+   "ref": [
+    122.5,
+    1581.3
+   ],
+   "plate": [
+    123.17,
+    1581.41
+   ],
+   "ncc": 0.975,
+   "ok": true,
+   "raw_px": 0.68,
+   "affine_resid_px": 0.32,
+   "used": true
+  },
+  {
+   "id": "CP02",
+   "name": "Raj\u010danka into V\u00e1h",
+   "ref": [
+    1009.0,
+    342.0
+   ],
+   "plate": [
+    1009.09,
+    341.67
+   ],
+   "ncc": 0.939,
+   "ok": true,
+   "raw_px": 0.34,
+   "affine_resid_px": 1.01,
+   "used": true
+  },
+  {
+   "id": "CP03",
+   "name": "Papradnianka into V\u00e1h",
+   "ref": [
+    791.2,
+    446.7
+   ],
+   "plate": [
+    792.15,
+    447.74
+   ],
+   "ncc": 0.94,
+   "ok": true,
+   "raw_px": 1.41,
+   "affine_resid_px": 0.76,
+   "used": true
+  },
+  {
+   "id": "CP04",
+   "name": "Tepli\u010dka into V\u00e1h",
+   "ref": [
+    405.0,
+    810.3
+   ],
+   "plate": [
+    406.62,
+    811.84
+   ],
+   "ncc": 0.822,
+   "ok": true,
+   "raw_px": 2.24,
+   "affine_resid_px": 1.47,
+   "used": true
+  },
+  {
+   "id": "CP05",
+   "name": "Biela voda into V\u00e1h",
+   "ref": [
+    644.6,
+    519.7
+   ],
+   "plate": [
+    645.62,
+    519.78
+   ],
+   "ncc": 0.956,
+   "ok": true,
+   "raw_px": 1.02,
+   "affine_resid_px": 0.34,
+   "used": true
+  },
+  {
+   "id": "CP06",
+   "name": "Lednica into V\u00e1h",
+   "ref": [
+    583.0,
+    652.8
+   ],
+   "plate": [
+    584.29,
+    653.13
+   ],
+   "ncc": 0.934,
+   "ok": true,
+   "raw_px": 1.33,
+   "affine_resid_px": 0.52,
+   "used": true
+  },
+  {
+   "id": "CP07",
+   "name": "Domani\u017eanka into V\u00e1h",
+   "ref": [
+    767.9,
+    504.6
+   ],
+   "plate": [
+    767.58,
+    502.49
+   ],
+   "ncc": 0.935,
+   "ok": true,
+   "raw_px": 2.13,
+   "affine_resid_px": 2.67,
+   "used": true
+  },
+  {
+   "id": "CP08",
+   "name": "Mal\u00e1 Nitra into Nitra",
+   "ref": [
+    451.4,
+    1703.1
+   ],
+   "plate": [
+    452.32,
+    1702.95
+   ],
+   "ncc": 0.968,
+   "ok": true,
+   "raw_px": 0.93,
+   "affine_resid_px": 0.47,
+   "used": true
+  },
+  {
+   "id": "CP09",
+   "name": "Handlovka into Nitra",
+   "ref": [
+    874.4,
+    1035.1
+   ],
+   "plate": [
+    875.76,
+    1035.58
+   ],
+   "ncc": 0.94,
+   "ok": true,
+   "raw_px": 1.44,
+   "affine_resid_px": 0.68,
+   "used": true
+  },
+  {
+   "id": "CP10",
+   "name": "Bojnianka into Nitra",
+   "ref": [
+    499.2,
+    1360.0
+   ],
+   "plate": [
+    499.7,
+    1359.83
+   ],
+   "ncc": 0.948,
+   "ok": true,
+   "raw_px": 0.53,
+   "affine_resid_px": 0.4,
+   "used": true
+  },
+  {
+   "id": "CP11",
+   "name": "\u0160\u0165\u00e1vnice into Ol\u0161ava",
+   "ref": [
+    66.8,
+    628.1
+   ],
+   "plate": [
+    66.96,
+    628.09
+   ],
+   "ncc": 0.964,
+   "ok": true,
+   "raw_px": 0.16,
+   "affine_resid_px": 0.79,
+   "used": true
+  },
+  {
+   "id": "CP12",
+   "name": "Nitrica into Nitra",
+   "ref": [
+    681.7,
+    1213.5
+   ],
+   "plate": [
+    681.75,
+    1213.55
+   ],
+   "ncc": 0.928,
+   "ok": true,
+   "raw_px": 0.07,
+   "affine_resid_px": 0.66,
+   "used": true
+  },
+  {
+   "id": "CP13",
+   "name": "Bebrava into Nitra",
+   "ref": [
+    548.7,
+    1284.5
+   ],
+   "plate": [
+    549.49,
+    1284.33
+   ],
+   "ncc": 0.892,
+   "ok": true,
+   "raw_px": 0.81,
+   "affine_resid_px": 0.4,
+   "used": true
+  },
+  {
+   "id": "CP14",
+   "name": "Senice into Vset\u00ednsk\u00e1 Be\u010dva",
+   "ref": [
+    357.1,
+    235.4
+   ],
+   "plate": [
+    358.41,
+    235.82
+   ],
+   "ncc": 0.958,
+   "ok": true,
+   "raw_px": 1.38,
+   "affine_resid_px": 0.56,
+   "used": true
+  },
+  {
+   "id": "CP15",
+   "name": "V\u00e1h bend 107 deg",
+   "ref": [
+    703.8,
+    501.1
+   ],
+   "plate": [
+    705.09,
+    501.77
+   ],
+   "ncc": 0.925,
+   "ok": true,
+   "raw_px": 1.45,
+   "affine_resid_px": 0.58,
+   "used": true
+  },
+  {
+   "id": "CP16",
+   "name": "V\u00e1h bend 87 deg",
+   "ref": [
+    110.0,
+    1694.4
+   ],
+   "plate": [
+    109.85,
+    1695.19
+   ],
+   "ncc": 0.976,
+   "ok": true,
+   "raw_px": 0.8,
+   "affine_resid_px": 0.75,
+   "used": true
+  },
+  {
+   "id": "CP17",
+   "name": "V\u00e1h bend 63 deg",
+   "ref": [
+    965.2,
+    307.5
+   ],
+   "plate": [
+    965.81,
+    306.97
+   ],
+   "ncc": 0.931,
+   "ok": true,
+   "raw_px": 0.81,
+   "affine_resid_px": 0.83,
+   "used": true
+  },
+  {
+   "id": "CP18",
+   "name": "V\u00e1h bend 54 deg",
+   "ref": [
+    214.3,
+    1005.7
+   ],
+   "plate": [
+    214.61,
+    1005.82
+   ],
+   "ncc": 0.978,
+   "ok": true,
+   "raw_px": 0.33,
+   "affine_resid_px": 0.44,
+   "used": true
+  },
+  {
+   "id": "CP19",
+   "name": "V\u00e1h bend 54 deg",
+   "ref": [
+    331.8,
+    859.0
+   ],
+   "plate": [
+    333.38,
+    858.77
+   ],
+   "ncc": 0.934,
+   "ok": true,
+   "raw_px": 1.6,
+   "affine_resid_px": 1.13,
+   "used": true
+  },
+  {
+   "id": "CP20",
+   "name": "V\u00e1h bend 42 deg",
+   "ref": [
+    437.4,
+    758.0
+   ],
+   "plate": [
+    437.95,
+    759.6
+   ],
+   "ncc": 0.902,
+   "ok": true,
+   "raw_px": 1.69,
+   "affine_resid_px": 1.21,
+   "used": true
+  },
+  {
+   "id": "CP21",
+   "name": "Senice bend 111 deg",
+   "ref": [
+    409.0,
+    420.3
+   ],
+   "plate": [
+    409.8,
+    421.78
+   ],
+   "ncc": 0.931,
+   "ok": true,
+   "raw_px": 1.68,
+   "affine_resid_px": 0.98,
+   "used": true
+  },
+  {
+   "id": "CP22",
+   "name": "Nitra bend 88 deg",
+   "ref": [
+    436.3,
+    1635.0
+   ],
+   "plate": [
+    436.63,
+    1635.14
+   ],
+   "ncc": 0.95,
+   "ok": true,
+   "raw_px": 0.36,
+   "affine_resid_px": 0.23,
+   "used": true
+  },
+  {
+   "id": "CP23",
+   "name": "D\u0159evnice bend 80 deg",
+   "ref": [
+    150.9,
+    368.1
+   ],
+   "plate": [
+    150.79,
+    368.79
+   ],
+   "ncc": 0.965,
+   "ok": true,
+   "raw_px": 0.7,
+   "affine_resid_px": 0.8,
+   "used": true
+  },
+  {
+   "id": "CP24",
+   "name": "Lednica bend 80 deg",
+   "ref": [
+    625.1,
+    584.6
+   ],
+   "plate": [
+    626.11,
+    584.2
+   ],
+   "ncc": 0.95,
+   "ok": true,
+   "raw_px": 1.09,
+   "affine_resid_px": 0.77,
+   "used": true
+  },
+  {
+   "id": "CP25",
+   "name": "Nitrica bend 69 deg",
+   "ref": [
+    819.8,
+    1051.6
+   ],
+   "plate": [
+    821.11,
+    1051.95
+   ],
+   "ncc": 0.972,
+   "ok": true,
+   "raw_px": 1.36,
+   "affine_resid_px": 0.58,
+   "used": true
+  },
+  {
+   "id": "CP26",
+   "name": "Hron bend 66 deg",
+   "ref": [
+    846.5,
+    1819.8
+   ],
+   "plate": [
+    847.38,
+    1819.72
+   ],
+   "ncc": 0.971,
+   "ok": true,
+   "raw_px": 0.88,
+   "affine_resid_px": 0.22,
+   "used": true
+  },
+  {
+   "id": "CP27",
+   "name": "Vset\u00ednsk\u00e1 Be\u010dva bend 65 deg",
+   "ref": [
+    300.7,
+    150.6
+   ],
+   "plate": [
+    300.98,
+    151.03
+   ],
+   "ncc": 0.964,
+   "ok": true,
+   "raw_px": 0.51,
+   "affine_resid_px": 0.53,
+   "used": true
+  },
+  {
+   "id": "CP28",
+   "name": "Hron bend 65 deg",
+   "ref": [
+    1008.6,
+    1468.6
+   ],
+   "plate": [
+    1008.44,
+    1468.66
+   ],
+   "ncc": 0.883,
+   "ok": true,
+   "raw_px": 0.17,
+   "affine_resid_px": 0.94,
+   "used": true
+  },
+  {
+   "id": "CP29",
+   "name": "Nitra bend 59 deg",
+   "ref": [
+    382.2,
+    1593.3
+   ],
+   "plate": [
+    382.57,
+    1596.24
+   ],
+   "ncc": 0.939,
+   "ok": true,
+   "raw_px": 2.96,
+   "affine_resid_px": 2.73,
+   "used": true
+  }
+ ],
+ "post": [
+  {
+   "id": "CP01",
+   "resid_px": 0.0,
+   "ncc": 0.983
+  },
+  {
+   "id": "CP02",
+   "resid_px": 1.41,
+   "ncc": 0.936
+  },
+  {
+   "id": "CP03",
+   "resid_px": 1.0,
+   "ncc": 0.939
+  },
+  {
+   "id": "CP04",
+   "resid_px": 1.41,
+   "ncc": 0.824
+  },
+  {
+   "id": "CP05",
+   "resid_px": 0.0,
+   "ncc": 0.956
+  },
+  {
+   "id": "CP06",
+   "resid_px": 0.0,
+   "ncc": 0.934
+  },
+  {
+   "id": "CP07",
+   "resid_px": 2.24,
+   "ncc": 0.934
+  },
+  {
+   "id": "CP08",
+   "resid_px": 1.0,
+   "ncc": 0.96
+  },
+  {
+   "id": "CP09",
+   "resid_px": 1.0,
+   "ncc": 0.94
+  },
+  {
+   "id": "CP10",
+   "resid_px": 1.0,
+   "ncc": 0.957
+  },
+  {
+   "id": "CP11",
+   "resid_px": 1.0,
+   "ncc": 0.95
+  },
+  {
+   "id": "CP12",
+   "resid_px": 1.0,
+   "ncc": 0.921
+  },
+  {
+   "id": "CP13",
+   "resid_px": 0.0,
+   "ncc": 0.898
+  },
+  {
+   "id": "CP14",
+   "resid_px": 1.0,
+   "ncc": 0.959
+  },
+  {
+   "id": "CP15",
+   "resid_px": 0.0,
+   "ncc": 0.927
+  },
+  {
+   "id": "CP16",
+   "resid_px": 1.0,
+   "ncc": 0.97
+  },
+  {
+   "id": "CP17",
+   "resid_px": 1.0,
+   "ncc": 0.936
+  },
+  {
+   "id": "CP18",
+   "resid_px": 1.0,
+   "ncc": 0.978
+  },
+  {
+   "id": "CP19",
+   "resid_px": 1.0,
+   "ncc": 0.934
+  },
+  {
+   "id": "CP20",
+   "resid_px": 1.0,
+   "ncc": 0.902
+  },
+  {
+   "id": "CP21",
+   "resid_px": 1.0,
+   "ncc": 0.945
+  },
+  {
+   "id": "CP22",
+   "resid_px": 0.0,
+   "ncc": 0.955
+  },
+  {
+   "id": "CP23",
+   "resid_px": 1.0,
+   "ncc": 0.967
+  },
+  {
+   "id": "CP24",
+   "resid_px": 1.0,
+   "ncc": 0.947
+  },
+  {
+   "id": "CP25",
+   "resid_px": 0.0,
+   "ncc": 0.971
+  },
+  {
+   "id": "CP26",
+   "resid_px": 0.0,
+   "ncc": 0.976
+  },
+  {
+   "id": "CP27",
+   "resid_px": 0.0,
+   "ncc": 0.975
+  },
+  {
+   "id": "CP28",
+   "resid_px": 1.0,
+   "ncc": 0.876
+  },
+  {
+   "id": "CP29",
+   "resid_px": 3.0,
+   "ncc": 0.944
+  }
+ ]
+}

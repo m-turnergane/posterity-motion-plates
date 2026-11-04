@@ -1,0 +1,124 @@
+{
+ "master": "/workspace/posterity/renders/posterity-germanicus-ROUGH-v1.mp4",
+ "md5": "fe6938e061e4d396b19957d3201fcc3e",
+ "video": {
+  "codec": "h264",
+  "w": 1080,
+  "h": 1920,
+  "fps": "30/1",
+  "nb_frames": "2057",
+  "pix": "yuv420p",
+  "dur": 68.566667
+ },
+ "audio": {
+  "codec": "aac",
+  "sr": "48000",
+  "ch": 2,
+  "br": "268683",
+  "dur": 68.566
+ },
+ "format_duration": 68.566667,
+ "loudness": {
+  "I": -13.9,
+  "LRA": 3.0,
+  "TP": -3.8
+ },
+ "edge": {
+  "min_edge_luma": 21.362152099609375,
+  "first_frame_mean": 72.00686728395061,
+  "last_frame_mean": 51.77732494212963,
+  "frames_flagged": 0,
+  "flagged": []
+ },
+ "person_audit": {
+  "1A": {
+   "persons_px": 0,
+   "samples": 90,
+   "seconds": 6.0,
+   "person_disp_max": 0.0,
+   "protect_disp_max": 0.0,
+   "outside_allow_change_max": 0.0,
+   "disp_max": 12.377402305603027,
+   "luma_swing_360x640_p95": 52.62555694580078,
+   "luma_swing_360x640_max": 151.74636840820312,
+   "ok": true
+  },
+  "1B": {
+   "persons_px": 630064,
+   "samples": 76,
+   "seconds": 5.033333333333333,
+   "person_disp_max": 0.0,
+   "protect_disp_max": 0.0,
+   "outside_allow_change_max": 0.0,
+   "disp_max": 3.851961612701416,
+   "luma_swing_360x640_p95": 35.36892318725586,
+   "luma_swing_360x640_max": 111.20159912109375,
+   "ok": true
+  },
+  "4": {
+   "persons_px": 895972,
+   "samples": 66,
+   "seconds": 4.4,
+   "person_disp_max": 0.0,
+   "protect_disp_max": 0.0,
+   "outside_allow_change_max": 0.0,
+   "disp_max": 4.76244592666626,
+   "luma_swing_360x640_p95": 61.71466827392578,
+   "luma_swing_360x640_max": 136.02145385742188,
+   "ok": true
+  },
+  "5": {
+   "persons_px": 0,
+   "samples": 76,
+   "seconds": 5.066666666666666,
+   "person_disp_max": 0.0,
+   "protect_disp_max": 0.0,
+   "outside_allow_change_max": 0.0,
+   "disp_max": 6.878411293029785,
+   "luma_swing_360x640_p95": 58.909053802490234,
+   "luma_swing_360x640_max": 121.74887084960938,
+   "ok": true
+  },
+  "6": {
+   "persons_px": 948601,
+   "samples": 81,
+   "seconds": 5.4,
+   "person_disp_max": 0.0,
+   "protect_disp_max": 0.0,
+   "outside_allow_change_max": 0.0,
+   "disp_max": 6.775332450866699,
+   "luma_swing_360x640_p95": 49.137847900390625,
+   "luma_swing_360x640_max": 122.86637878417969,
+   "ok": true
+  },
+  "7B": {
+   "persons_px": 194096,
+   "samples": 79,
+   "seconds": 5.233333333333333,
+   "person_disp_max": 0.0,
+   "protect_disp_max": 0.0,
+   "outside_allow_change_max": 0.0,
+   "disp_max": 12.21716594696045,
+   "luma_swing_360x640_p95": 34.06167221069336,
+   "luma_swing_360x640_max": 186.58456420898438,
+   "ok": true
+  }
+ },
+ "hit": {
+  "bed_rise_at_s": 63.0,
+  "rise_db": 5.8,
+  "but_onset_s": 62.995,
+  "bed_pre_db": -40.0,
+  "bed_post_db": -32.3
+ },
+ "L13_key_margins": [
+  [
+   150,
+   "murder.",
+   63.715,
+   9.6
+  ]
+ ],
+ "vo_over_bed_LU": 13.600000000000001,
+ "key_word_min_margin_db": 9.6
+}

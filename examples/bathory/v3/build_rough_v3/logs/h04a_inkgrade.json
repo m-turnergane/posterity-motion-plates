@@ -1,0 +1,15 @@
+{
+ "src": "/workspace/posterity/standalones/bathory/v2/plates/h04a_priest_writes_legend.png",
+ "src_md5": "d34476996b65667e75f308d01a4ecffe",
+ "out": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded.png",
+ "out_md5": "438bbd47c2653fea63c685f8453a3907",
+ "box": [
+  300,
+  1240,
+  540,
+  1410
+ ],
+ "changed_px": 16257,
+ "mask_px_gt_0_5": 10114,
+ "outside_box_changed_px": 0
+}

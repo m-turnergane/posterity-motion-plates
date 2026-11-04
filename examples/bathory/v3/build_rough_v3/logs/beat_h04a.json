@@ -1,0 +1,112 @@
+{
+ "beat": "h04a",
+ "kind": "flat",
+ "frames": [
+  2132,
+  2428
+ ],
+ "t": [
+  71.067,
+  80.933
+ ],
+ "seconds": 9.867,
+ "inkgrade": {
+  "src": "/workspace/posterity/standalones/bathory/v2/plates/h04a_priest_writes_legend.png",
+  "src_md5": "d34476996b65667e75f308d01a4ecffe",
+  "out": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded.png",
+  "out_md5": "438bbd47c2653fea63c685f8453a3907",
+  "box": [
+   300,
+   1240,
+   540,
+   1410
+  ],
+  "changed_px": 16257,
+  "mask_px_gt_0_5": 10114,
+  "outside_box_changed_px": 0
+ },
+ "plate": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded.png",
+ "plate_md5": "438bbd47c2653fea63c685f8453a3907",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "h04a#0",
+    "sources": {
+     "candle": 5
+    },
+    "warped_candles": 4,
+    "spill_groups": 5,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "auto": [
+     [
+      760,
+      470,
+      940,
+      740
+     ]
+    ],
+    "spill_amp": 1.6,
+    "relight_exclude": [
+     [
+      180,
+      150,
+      600,
+      720
+     ]
+    ]
+   },
+   "pulse": 0.4467,
+   "metrics_at_pulse1": {
+    "whole": 23.337051391601562,
+    "local": 59.03551483154297,
+    "step": 12.215384483337402
+   },
+   "metrics": {
+    "whole": 10.419387817382812,
+    "local": 27.55524253845215,
+    "step": 5.847213268280029
+   }
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

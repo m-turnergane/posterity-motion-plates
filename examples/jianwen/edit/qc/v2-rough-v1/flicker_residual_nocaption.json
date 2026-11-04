@@ -1,0 +1,90 @@
+{
+ "S01": {
+  "upper_resid_pct": 4.76,
+  "full_nocap_resid_pct": 2.52
+ },
+ "S02A": {
+  "upper_resid_pct": 0.68,
+  "full_nocap_resid_pct": 1.85
+ },
+ "S02B": {
+  "upper_resid_pct": 5.85,
+  "full_nocap_resid_pct": 1.74
+ },
+ "S03": {
+  "upper_resid_pct": 3.01,
+  "full_nocap_resid_pct": 1.77
+ },
+ "S04": {
+  "upper_resid_pct": 1.09,
+  "full_nocap_resid_pct": 1.93
+ },
+ "S05": {
+  "upper_resid_pct": 2.46,
+  "full_nocap_resid_pct": 2.99
+ },
+ "S06": {
+  "upper_resid_pct": 0.8,
+  "full_nocap_resid_pct": 1.66
+ },
+ "S07": {
+  "upper_resid_pct": 0.66,
+  "full_nocap_resid_pct": 3.77
+ },
+ "S08": {
+  "upper_resid_pct": 3.53,
+  "full_nocap_resid_pct": 3.33
+ },
+ "S09": {
+  "upper_resid_pct": 2.34,
+  "full_nocap_resid_pct": 2.18
+ },
+ "S10": {
+  "upper_resid_pct": 2.86,
+  "full_nocap_resid_pct": 1.87
+ },
+ "S11": {
+  "upper_resid_pct": 2.55,
+  "full_nocap_resid_pct": 1.9
+ },
+ "S12": {
+  "upper_resid_pct": 0.34,
+  "full_nocap_resid_pct": 0.71
+ },
+ "S13": {
+  "upper_resid_pct": 5.3,
+  "full_nocap_resid_pct": 2.87
+ },
+ "S14": {
+  "upper_resid_pct": 4.8,
+  "full_nocap_resid_pct": 4.21
+ },
+ "S15": {
+  "upper_resid_pct": 1.21,
+  "full_nocap_resid_pct": 2.15
+ },
+ "S16": {
+  "upper_resid_pct": 3.52,
+  "full_nocap_resid_pct": 2.35
+ },
+ "S17": {
+  "upper_resid_pct": 1.0,
+  "full_nocap_resid_pct": 1.62
+ },
+ "S18": {
+  "upper_resid_pct": 0.86,
+  "full_nocap_resid_pct": 2.42
+ },
+ "S19": {
+  "upper_resid_pct": 1.14,
+  "full_nocap_resid_pct": 2.92
+ },
+ "S20": {
+  "upper_resid_pct": 4.42,
+  "full_nocap_resid_pct": 1.03
+ },
+ "OUTRO": {
+  "upper_resid_pct": 0.0,
+  "full_nocap_resid_pct": 0.08
+ }
+}

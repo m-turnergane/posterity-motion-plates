@@ -1,0 +1,96 @@
+{
+ "beat": "b07",
+ "kind": "flat",
+ "frames": [
+  339,
+  474
+ ],
+ "t": [
+  11.3,
+  15.8
+ ],
+ "seconds": 4.5,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b07_thurzo_ordered.png",
+ "plate_md5": "802bfc8b41ea49a3dec9bed9be2b3dc2",
+ "plate_wh": [
+  941,
+  1672
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "b07#0",
+    "sources": {
+     "candle": 1
+    },
+    "warped_candles": 1,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "manual": [
+     [
+      78,
+      285,
+      122,
+      375
+     ]
+    ],
+    "spill_amp": 1.6
+   },
+   "pulse": 0.2304,
+   "metrics_at_pulse1": {
+    "whole": 41.99882888793945,
+    "local": 97.00384521484375,
+    "step": 13.111983299255371
+   },
+   "metrics": {
+    "whole": 12.075571060180664,
+    "local": 35.33779525756836,
+    "step": 4.749477863311768
+   }
+  }
+ ],
+ "smoke": [
+  {
+   "name": "wick",
+   "type": "candle",
+   "opacity": 0.35
+  }
+ ],
+ "density_max": 1.2172,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0599999616543452,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

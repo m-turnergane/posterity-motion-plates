@@ -1,0 +1,50 @@
+{
+ "model": "medium.en",
+ "vad_filter": true,
+ "ref_words": 204,
+ "hyp_words": 198,
+ "matched": 190,
+ "diffs": [
+  [
+   "replace",
+   "zhu di",
+   "judy"
+  ],
+  [
+   "replace",
+   "zhu di",
+   "judy"
+  ],
+  [
+   "replace",
+   "zhu di's",
+   "judy's"
+  ],
+  [
+   "replace",
+   "zhu di",
+   "judy"
+  ],
+  [
+   "replace",
+   "rumours",
+   "rumors"
+  ],
+  [
+   "replace",
+   "daoist",
+   "taoist"
+  ],
+  [
+   "replace",
+   "hu ying's",
+   "huying's"
+  ],
+  [
+   "replace",
+   "hu ying",
+   "huying"
+  ]
+ ],
+ "hyp": "they buried a body as china's emperor his own uncle kept searching for him the missing emperor was jianwen his grandfather had founded the ming dynasty but jianwen inherited something else uncles with armies when he tried to take away their power one uncle judy rebelled three years later judy reached nanjing a commander who had once fought for jianwen helped open a city gate then the palace caught fire judy's men carried out a body he had it buried as his nephew jianwen's small son vanished too judy took the throne as yongle and wiped jianwen's reign from the calendar but rumors said jianwen had escaped dressed as a monk yongle sent an official named hu ying across china officially he was seeking a taoist holy man secretly he was looking for jianwen when huying's mother died he asked to go home yongle refused more than twenty years after the fire huying returned yongle was already in bed he got up summoned the official and listened until deep into the night the later history of ming says yongle's suspicions finally ended it never says what hu ying told him history remembers the victors we remember the rest"
+}

@@ -1,0 +1,558 @@
+{
+ "md5": "dfaaf4dfca172c88776f5e0deda7494d",
+ "bytes": 122015274,
+ "ffprobe": {
+  "width": 1080,
+  "height": 1920,
+  "v_codec": "h264",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "fps": "30/1",
+  "nb_frames": "2070",
+  "v_bitrate": "13880531",
+  "a_codec": "aac",
+  "a_rate": "48000",
+  "a_ch": 2,
+  "a_bitrate": "257554",
+  "duration": 69.0,
+  "v_dur": 69.0,
+  "a_dur": 69.0
+ },
+ "ebur128": {
+  "I_LUFS": -13.9,
+  "LRA_LU": 3.0,
+  "TP_dBTP": -3.7
+ },
+ "decoded_frames": 2070,
+ "edges": {
+  "frames_checked": 690,
+  "min_mean_lum": {
+   "top": 18.9,
+   "bottom": 33.6,
+   "left": 35.9,
+   "right": 20.0
+  },
+  "max_black_frac": {
+   "top": 0.213,
+   "bottom": 0.06,
+   "left": 0.081,
+   "right": 0.345
+  },
+  "worst_frames": [
+   1326,
+   651,
+   1434,
+   330
+  ]
+ },
+ "audit_7B_decoded": {
+  "method": "master frames vs static-plate reference (same cover + StablePush 1.00->1.03 @ (0.5,0.5)); still zone eroded 4 px; caption band y1360-1545 and IR tag scrim band y150-420 excluded (overlays); phase-correlation shift of blade/hand/pool crops vs reference",
+  "rows": [
+   {
+    "f": 1280,
+    "k": 0,
+    "still_px": 586261,
+    "still_absdiff_mean": 3.432,
+    "still_absdiff_p99": 11.0,
+    "still_absdiff_max": 35,
+    "relit_lum_ratio": 0.8731,
+    "relit_absdiff_mean": 6.78,
+    "ir_box_diff_mean": 10.06,
+    "ir_box_bright_px": 0,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.002,
+      0.033
+     ],
+     "hand_upper": [
+      -0.021,
+      -0.061
+     ],
+     "floor_pool": [
+      0.006,
+      -0.09
+     ]
+    }
+   },
+   {
+    "f": 1281,
+    "k": 1,
+    "still_px": 585423,
+    "still_absdiff_mean": 3.158,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 35,
+    "relit_lum_ratio": 0.8927,
+    "relit_absdiff_mean": 5.91,
+    "ir_box_diff_mean": 23.61,
+    "ir_box_bright_px": 0,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.005,
+      -0.005
+     ],
+     "hand_upper": [
+      -0.016,
+      0.001
+     ],
+     "floor_pool": [
+      -0.014,
+      0.5
+     ]
+    }
+   },
+   {
+    "f": 1282,
+    "k": 2,
+    "still_px": 585423,
+    "still_absdiff_mean": 3.2,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 0.9117,
+    "relit_absdiff_mean": 5.06,
+    "ir_box_diff_mean": 41.9,
+    "ir_box_bright_px": 0,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.002,
+      -0.027
+     ],
+     "hand_upper": [
+      -0.018,
+      0.027
+     ],
+     "floor_pool": [
+      -0.018,
+      0.51
+     ]
+    }
+   },
+   {
+    "f": 1283,
+    "k": 3,
+    "still_px": 585593,
+    "still_absdiff_mean": 3.071,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 36,
+    "relit_lum_ratio": 0.9433,
+    "relit_absdiff_mean": 4.14,
+    "ir_box_diff_mean": 57.46,
+    "ir_box_bright_px": 58,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.0,
+      -0.004
+     ],
+     "hand_upper": [
+      -0.013,
+      -0.013
+     ],
+     "floor_pool": [
+      -0.029,
+      0.559
+     ]
+    }
+   },
+   {
+    "f": 1284,
+    "k": 4,
+    "still_px": 585760,
+    "still_absdiff_mean": 3.075,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 35,
+    "relit_lum_ratio": 0.9529,
+    "relit_absdiff_mean": 3.91,
+    "ir_box_diff_mean": 64.77,
+    "ir_box_bright_px": 3522,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.002,
+      -0.024
+     ],
+     "hand_upper": [
+      -0.009,
+      -0.023
+     ],
+     "floor_pool": [
+      -0.037,
+      0.509
+     ]
+    }
+   },
+   {
+    "f": 1285,
+    "k": 5,
+    "still_px": 585686,
+    "still_absdiff_mean": 3.076,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 36,
+    "relit_lum_ratio": 0.9622,
+    "relit_absdiff_mean": 3.78,
+    "ir_box_diff_mean": 64.45,
+    "ir_box_bright_px": 3520,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.002,
+      -0.022
+     ],
+     "hand_upper": [
+      -0.014,
+      -0.032
+     ],
+     "floor_pool": [
+      -0.037,
+      0.462
+     ]
+    }
+   },
+   {
+    "f": 1286,
+    "k": 6,
+    "still_px": 585853,
+    "still_absdiff_mean": 3.141,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 0.9675,
+    "relit_absdiff_mean": 3.78,
+    "ir_box_diff_mean": 64.15,
+    "ir_box_bright_px": 3515,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.002,
+      -0.018
+     ],
+     "hand_upper": [
+      -0.004,
+      -0.03
+     ],
+     "floor_pool": [
+      -0.015,
+      0.5
+     ]
+    }
+   },
+   {
+    "f": 1287,
+    "k": 7,
+    "still_px": 585909,
+    "still_absdiff_mean": 3.166,
+    "still_absdiff_p99": 11.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 0.9848,
+    "relit_absdiff_mean": 3.82,
+    "ir_box_diff_mean": 63.81,
+    "ir_box_bright_px": 3471,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.007,
+      -0.018
+     ],
+     "hand_upper": [
+      -0.003,
+      -0.009
+     ],
+     "floor_pool": [
+      -0.018,
+      0.579
+     ]
+    }
+   },
+   {
+    "f": 1288,
+    "k": 8,
+    "still_px": 586002,
+    "still_absdiff_mean": 3.155,
+    "still_absdiff_p99": 11.0,
+    "still_absdiff_max": 38,
+    "relit_lum_ratio": 1.0071,
+    "relit_absdiff_mean": 4.1,
+    "ir_box_diff_mean": 63.36,
+    "ir_box_bright_px": 3483,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.005,
+      -0.036
+     ],
+     "hand_upper": [
+      -0.014,
+      -0.017
+     ],
+     "floor_pool": [
+      -0.036,
+      0.065
+     ]
+    }
+   },
+   {
+    "f": 1289,
+    "k": 9,
+    "still_px": 586110,
+    "still_absdiff_mean": 3.219,
+    "still_absdiff_p99": 11.0,
+    "still_absdiff_max": 38,
+    "relit_lum_ratio": 1.0103,
+    "relit_absdiff_mean": 4.31,
+    "ir_box_diff_mean": 63.29,
+    "ir_box_bright_px": 3378,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.007,
+      -0.044
+     ],
+     "hand_upper": [
+      -0.014,
+      -0.015
+     ],
+     "floor_pool": [
+      -0.035,
+      0.479
+     ]
+    }
+   },
+   {
+    "f": 1290,
+    "k": 10,
+    "still_px": 586173,
+    "still_absdiff_mean": 2.984,
+    "still_absdiff_p99": 9.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 1.0124,
+    "relit_absdiff_mean": 4.13,
+    "ir_box_diff_mean": 63.24,
+    "ir_box_bright_px": 3895,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.011,
+      -0.003
+     ],
+     "hand_upper": [
+      0.007,
+      -0.012
+     ],
+     "floor_pool": [
+      -0.04,
+      0.502
+     ]
+    }
+   },
+   {
+    "f": 1291,
+    "k": 11,
+    "still_px": 586189,
+    "still_absdiff_mean": 2.984,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 36,
+    "relit_lum_ratio": 1.0169,
+    "relit_absdiff_mean": 4.2,
+    "ir_box_diff_mean": 63.16,
+    "ir_box_bright_px": 3911,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.011,
+      -0.006
+     ],
+     "hand_upper": [
+      0.003,
+      0.014
+     ],
+     "floor_pool": [
+      -0.042,
+      0.52
+     ]
+    }
+   },
+   {
+    "f": 1292,
+    "k": 12,
+    "still_px": 586472,
+    "still_absdiff_mean": 2.976,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 36,
+    "relit_lum_ratio": 1.0205,
+    "relit_absdiff_mean": 4.24,
+    "ir_box_diff_mean": 63.15,
+    "ir_box_bright_px": 3914,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.008,
+      -0.015
+     ],
+     "hand_upper": [
+      -0.001,
+      0.007
+     ],
+     "floor_pool": [
+      -0.019,
+      0.487
+     ]
+    }
+   },
+   {
+    "f": 1306,
+    "k": 26,
+    "still_px": 587665,
+    "still_absdiff_mean": 3.087,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 41,
+    "relit_lum_ratio": 1.0124,
+    "relit_absdiff_mean": 4.03,
+    "ir_box_diff_mean": 63.32,
+    "ir_box_bright_px": 3954,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.011,
+      -0.012
+     ],
+     "hand_upper": [
+      -0.012,
+      -0.022
+     ],
+     "floor_pool": [
+      -0.016,
+      -0.004
+     ]
+    }
+   },
+   {
+    "f": 1332,
+    "k": 52,
+    "still_px": 589805,
+    "still_absdiff_mean": 3.045,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 38,
+    "relit_lum_ratio": 0.9574,
+    "relit_absdiff_mean": 3.89,
+    "ir_box_diff_mean": 64.49,
+    "ir_box_bright_px": 4018,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.0,
+      -0.005
+     ],
+     "hand_upper": [
+      -0.019,
+      -0.011
+     ],
+     "floor_pool": [
+      -0.028,
+      0.008
+     ]
+    }
+   },
+   {
+    "f": 1358,
+    "k": 78,
+    "still_px": 592216,
+    "still_absdiff_mean": 3.175,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 1.0426,
+    "relit_absdiff_mean": 5.07,
+    "ir_box_diff_mean": 62.1,
+    "ir_box_bright_px": 3937,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.017,
+      -0.022
+     ],
+     "hand_upper": [
+      -0.019,
+      -0.003
+     ],
+     "floor_pool": [
+      -0.014,
+      0.021
+     ]
+    }
+   },
+   {
+    "f": 1384,
+    "k": 104,
+    "still_px": 594161,
+    "still_absdiff_mean": 3.103,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 41,
+    "relit_lum_ratio": 0.8555,
+    "relit_absdiff_mean": 7.94,
+    "ir_box_diff_mean": 67.19,
+    "ir_box_bright_px": 4046,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.01,
+      -0.014
+     ],
+     "hand_upper": [
+      -0.022,
+      0.017
+     ],
+     "floor_pool": [
+      -0.026,
+      0.025
+     ]
+    }
+   },
+   {
+    "f": 1410,
+    "k": 130,
+    "still_px": 596504,
+    "still_absdiff_mean": 3.051,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 36,
+    "relit_lum_ratio": 0.9088,
+    "relit_absdiff_mean": 5.29,
+    "ir_box_diff_mean": 65.01,
+    "ir_box_bright_px": 4046,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.009,
+      -0.021
+     ],
+     "hand_upper": [
+      -0.006,
+      0.035
+     ],
+     "floor_pool": [
+      -0.026,
+      -0.011
+     ]
+    }
+   },
+   {
+    "f": 1436,
+    "k": 156,
+    "still_px": 598254,
+    "still_absdiff_mean": 3.514,
+    "still_absdiff_p99": 12.0,
+    "still_absdiff_max": 42,
+    "relit_lum_ratio": 0.8756,
+    "relit_absdiff_mean": 7.22,
+    "ir_box_diff_mean": 6.47,
+    "ir_box_bright_px": 0,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.018,
+      -0.048
+     ],
+     "hand_upper": [
+      -0.043,
+      -0.096
+     ],
+     "floor_pool": [
+      -0.059,
+      0.014
+     ]
+    }
+   }
+  ],
+  "still_absdiff_max": 42,
+  "still_absdiff_mean_max": 3.514,
+  "relit_ratio_range": [
+   0.8555,
+   1.0426
+  ]
+ },
+ "temp_watermark": {
+  "grep_TEMP_in_ass": 0,
+  "grep_TEMP_in_build_script": 0,
+  "note": "no watermark code path; 7B still-zone + relit pixels match the clean plate reference (see audit)"
+ }
+}

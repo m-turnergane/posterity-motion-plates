@@ -1,0 +1,246 @@
+{
+ "md5": "cf48058a5a15f0b69c5d7cf373378db9",
+ "bytes": 121959416,
+ "ffprobe": {
+  "width": 1080,
+  "height": 1920,
+  "v_codec": "h264",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "fps": "30/1",
+  "nb_frames": "2070",
+  "v_bitrate": "13874640",
+  "a_codec": "aac",
+  "a_rate": "48000",
+  "a_ch": 2,
+  "a_bitrate": "256966",
+  "duration": 69.0,
+  "v_dur": 69.0,
+  "a_dur": 69.0
+ },
+ "ebur128": {
+  "I_LUFS": -13.9,
+  "LRA_LU": 3.0,
+  "TP_dBTP": -3.8
+ },
+ "decoded_frames": 2070,
+ "edges": {
+  "frames_checked": 690,
+  "min_mean_lum": {
+   "top": 18.9,
+   "bottom": 33.6,
+   "left": 35.9,
+   "right": 20.0
+  },
+  "max_black_frac": {
+   "top": 0.213,
+   "bottom": 0.06,
+   "left": 0.081,
+   "right": 0.345
+  },
+  "worst_frames": [
+   1326,
+   651,
+   1434,
+   330
+  ]
+ },
+ "audit_7B_decoded": {
+  "method": "master frames vs static-plate reference (same cover + StablePush 1.00->1.03 @ (0.5,0.5)); still zone eroded 4 px; caption band y1360-1545 and IR tag scrim band y150-420 excluded (overlays); phase-correlation shift of blade/hand/pool crops vs reference",
+  "rows": [
+   {
+    "f": 1280,
+    "k": 0,
+    "still_px": 586261,
+    "still_absdiff_mean": 3.442,
+    "still_absdiff_p99": 11.0,
+    "still_absdiff_max": 39,
+    "relit_lum_ratio": 0.8723,
+    "relit_absdiff_mean": 6.82,
+    "ir_box_diff_mean": 5.49,
+    "ir_box_bright_px": 0,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.008,
+      0.031
+     ],
+     "hand_upper": [
+      0.007,
+      -0.057
+     ],
+     "floor_pool": [
+      0.022,
+      -0.073
+     ]
+    }
+   },
+   {
+    "f": 1306,
+    "k": 26,
+    "still_px": 587665,
+    "still_absdiff_mean": 3.119,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 1.0131,
+    "relit_absdiff_mean": 4.08,
+    "ir_box_diff_mean": 63.21,
+    "ir_box_bright_px": 3828,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.006,
+      -0.027
+     ],
+     "hand_upper": [
+      -0.034,
+      0.007
+     ],
+     "floor_pool": [
+      -0.022,
+      -0.004
+     ]
+    }
+   },
+   {
+    "f": 1332,
+    "k": 52,
+    "still_px": 589805,
+    "still_absdiff_mean": 3.045,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 38,
+    "relit_lum_ratio": 0.9574,
+    "relit_absdiff_mean": 3.89,
+    "ir_box_diff_mean": 64.49,
+    "ir_box_bright_px": 4018,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.0,
+      -0.005
+     ],
+     "hand_upper": [
+      -0.019,
+      -0.011
+     ],
+     "floor_pool": [
+      -0.028,
+      0.008
+     ]
+    }
+   },
+   {
+    "f": 1358,
+    "k": 78,
+    "still_px": 592216,
+    "still_absdiff_mean": 3.175,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 37,
+    "relit_lum_ratio": 1.0426,
+    "relit_absdiff_mean": 5.07,
+    "ir_box_diff_mean": 62.1,
+    "ir_box_bright_px": 3937,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.017,
+      -0.022
+     ],
+     "hand_upper": [
+      -0.019,
+      -0.003
+     ],
+     "floor_pool": [
+      -0.014,
+      0.021
+     ]
+    }
+   },
+   {
+    "f": 1384,
+    "k": 104,
+    "still_px": 594161,
+    "still_absdiff_mean": 3.103,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 41,
+    "relit_lum_ratio": 0.8555,
+    "relit_absdiff_mean": 7.94,
+    "ir_box_diff_mean": 67.19,
+    "ir_box_bright_px": 4046,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.01,
+      -0.014
+     ],
+     "hand_upper": [
+      -0.022,
+      0.017
+     ],
+     "floor_pool": [
+      -0.026,
+      0.025
+     ]
+    }
+   },
+   {
+    "f": 1410,
+    "k": 130,
+    "still_px": 596504,
+    "still_absdiff_mean": 3.051,
+    "still_absdiff_p99": 10.0,
+    "still_absdiff_max": 36,
+    "relit_lum_ratio": 0.9088,
+    "relit_absdiff_mean": 5.29,
+    "ir_box_diff_mean": 65.01,
+    "ir_box_bright_px": 4046,
+    "phasecorr_shift_px": {
+     "blade": [
+      -0.009,
+      -0.021
+     ],
+     "hand_upper": [
+      -0.006,
+      0.035
+     ],
+     "floor_pool": [
+      -0.026,
+      -0.011
+     ]
+    }
+   },
+   {
+    "f": 1436,
+    "k": 156,
+    "still_px": 598254,
+    "still_absdiff_mean": 3.514,
+    "still_absdiff_p99": 12.0,
+    "still_absdiff_max": 42,
+    "relit_lum_ratio": 0.8756,
+    "relit_absdiff_mean": 7.22,
+    "ir_box_diff_mean": 6.47,
+    "ir_box_bright_px": 0,
+    "phasecorr_shift_px": {
+     "blade": [
+      0.018,
+      -0.048
+     ],
+     "hand_upper": [
+      -0.043,
+      -0.096
+     ],
+     "floor_pool": [
+      -0.059,
+      0.014
+     ]
+    }
+   }
+  ],
+  "still_absdiff_max": 42,
+  "still_absdiff_mean_max": 3.514,
+  "relit_ratio_range": [
+   0.8555,
+   1.0426
+  ]
+ },
+ "temp_watermark": {
+  "grep_TEMP_in_ass": 0,
+  "grep_TEMP_in_build_script": 0,
+  "note": "no watermark code path; 7B still-zone + relit pixels match the clean plate reference (see audit)"
+ }
+}

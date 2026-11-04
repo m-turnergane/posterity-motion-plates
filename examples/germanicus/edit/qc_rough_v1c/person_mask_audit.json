@@ -1,0 +1,62 @@
+{
+ "1A": {
+  "config": "/workspace/posterity/standalones/germanicus/motion/configs/germ_G1a_light_v1b.json",
+  "persons_px": 0,
+  "samples": 90,
+  "person_disp_max": 0.0,
+  "protect_disp_max": 0.0,
+  "outside_allow_change_max": 0.0,
+  "disp_max": 12.377402305603027,
+  "ok": true
+ },
+ "1B": {
+  "config": "/workspace/posterity/standalones/germanicus/motion/configs/germ_G1b_light_v1b.json",
+  "persons_px": 630064,
+  "samples": 76,
+  "person_disp_max": 0.0,
+  "protect_disp_max": 0.0,
+  "outside_allow_change_max": 0.0,
+  "disp_max": 3.851961612701416,
+  "ok": true
+ },
+ "4": {
+  "config": "/workspace/posterity/standalones/germanicus/motion/configs/germ_G4_light_v1b.json",
+  "persons_px": 895972,
+  "samples": 66,
+  "person_disp_max": 0.0,
+  "protect_disp_max": 0.0,
+  "outside_allow_change_max": 0.0,
+  "disp_max": 4.76244592666626,
+  "ok": true
+ },
+ "5": {
+  "config": "/workspace/posterity/standalones/germanicus/motion/configs/germ_G5_light_v1b.json",
+  "persons_px": 0,
+  "samples": 76,
+  "person_disp_max": 0.0,
+  "protect_disp_max": 0.0,
+  "outside_allow_change_max": 0.0,
+  "disp_max": 6.878411293029785,
+  "ok": true
+ },
+ "6": {
+  "config": "/workspace/posterity/standalones/germanicus/motion/configs/germ_G6_light_v1b.json",
+  "persons_px": 948601,
+  "samples": 81,
+  "person_disp_max": 0.0,
+  "protect_disp_max": 0.0,
+  "outside_allow_change_max": 0.0,
+  "disp_max": 6.775332450866699,
+  "ok": true
+ },
+ "7B": {
+  "config": "/workspace/posterity/standalones/germanicus/motion/configs/germ_G7c_light_v1c.json",
+  "persons_px": 0,
+  "samples": 79,
+  "person_disp_max": 0.0,
+  "protect_disp_max": 0.0,
+  "outside_allow_change_max": 0.0,
+  "disp_max": 32.815589904785156,
+  "ok": true
+ }
+}

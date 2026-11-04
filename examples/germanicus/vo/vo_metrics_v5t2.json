@@ -1,0 +1,290 @@
+{
+ "take": "v5t2",
+ "out": "cand-vo-oliver-germanicus-v5t2.wav",
+ "raw_duration_s": 118.654,
+ "duration_s": 117.653,
+ "speech_start_s": 0.0,
+ "speech_end_s": 117.418,
+ "last_char_end_raw_s": 118.653,
+ "trim_s": 117.403,
+ "integrated_LUFS": -32.2,
+ "true_peak_dBTP": -5.6,
+ "body_L01_L21_I": -32.1,
+ "L22_I": -34.1,
+ "L23_I": -38.1,
+ "delta_L22_vs_body": -2.0,
+ "delta_L23_vs_body": -6.0,
+ "L22_L23_I": -35.7,
+ "voiced_median_rms_dBFS": {
+  "L01": -31.45,
+  "L02": -31.24,
+  "L03": -30.53,
+  "L04": -32.86,
+  "L05": -32.33,
+  "L06": -32.6,
+  "L07": -30.58,
+  "L08": -33.04,
+  "L09": -33.84,
+  "L10": -31.92,
+  "L11": -31.8,
+  "L12": -32.01,
+  "L13": -32.06,
+  "L14": -32.79,
+  "L15": -32.34,
+  "L16": -35.8,
+  "L17": -33.27,
+  "L18": -33.34,
+  "L19": -32.5,
+  "L20": -33.93,
+  "L21": -33.01,
+  "L22": -33.98,
+  "L23": -36.04
+ },
+ "end_drop_flag": true,
+ "pause_before_L23": {
+  "align_war_end": 113.765,
+  "align_but_start": 114.311,
+  "align_gap": 0.546,
+  "rms_war_offset": 113.571,
+  "rms_but_onset": 114.346,
+  "rms_gap": 0.775,
+  "break_tag_align": {
+   "chars": "<break time=\"0.5s\"/>",
+   "start": 114.311,
+   "end": 114.311
+  }
+ },
+ "wps": 2.461,
+ "gaps_over_0p6": [
+  {
+   "after": "him.",
+   "before": "According",
+   "gap": 0.813,
+   "at": 3.123
+  },
+  {
+   "after": "Armenia.",
+   "before": "The",
+   "gap": 0.813,
+   "at": 29.025
+  },
+  {
+   "after": "own.",
+   "before": "Then",
+   "gap": 0.696,
+   "at": 34.54
+  },
+  {
+   "after": "Antioch.",
+   "before": "Tacitus",
+   "gap": 0.604,
+   "at": 37.547
+  },
+  {
+   "after": "him.",
+   "before": "After",
+   "gap": 0.813,
+   "at": 50.48
+  },
+  {
+   "after": "Rome.",
+   "before": "That",
+   "gap": 0.813,
+   "at": 84.009
+  },
+  {
+   "after": "Germanicus.",
+   "before": "Before",
+   "gap": 0.604,
+   "at": 87.399
+  }
+ ],
+ "word_count": 289,
+ "lines": [
+  {
+   "line": "L01",
+   "start": 0.0,
+   "end": 3.123,
+   "I": -28.7,
+   "peak": -5.58,
+   "text": "Germanicus saved the man he later accused of"
+  },
+  {
+   "line": "L02",
+   "start": 3.936,
+   "end": 10.275,
+   "I": -29.3,
+   "peak": -8.74,
+   "text": "According to Tacitus, a storm drove Piso tow"
+  },
+  {
+   "line": "L03",
+   "start": 10.658,
+   "end": 17.485,
+   "I": -30.7,
+   "peak": -12.71,
+   "text": "He was the emperor's adopted son, heading ea"
+  },
+  {
+   "line": "L04",
+   "start": 17.995,
+   "end": 22.059,
+   "I": -33.0,
+   "peak": -17.39,
+   "text": "Piso, appointed governor of Syria, was suppo"
+  },
+  {
+   "line": "L05",
+   "start": 22.5,
+   "end": 29.025,
+   "I": -32.8,
+   "peak": -15.25,
+   "text": "Instead, he gave soldiers gifts, replaced st"
+  },
+  {
+   "line": "L06",
+   "start": 29.838,
+   "end": 34.54,
+   "I": -32.4,
+   "peak": -13.87,
+   "text": "The emperor's son held the higher command. P"
+  },
+  {
+   "line": "L07",
+   "start": 35.236,
+   "end": 37.547,
+   "I": -31.6,
+   "peak": -12.41,
+   "text": "Then Germanicus fell ill near Antioch."
+  },
+  {
+   "line": "L08",
+   "start": 38.151,
+   "end": 44.803,
+   "I": -32.6,
+   "peak": -10.6,
+   "text": "Tacitus says human remains, spells, and lead"
+  },
+  {
+   "line": "L09",
+   "start": 45.244,
+   "end": 50.48,
+   "I": -32.1,
+   "peak": -8.5,
+   "text": "Germanicus believed Piso had poisoned him. D"
+  },
+  {
+   "line": "L10",
+   "start": 51.293,
+   "end": 54.648,
+   "I": -31.3,
+   "peak": -9.28,
+   "text": "After Germanicus died, Piso wanted Syria bac"
+  },
+  {
+   "line": "L11",
+   "start": 55.159,
+   "end": 60.651,
+   "I": -31.1,
+   "peak": -13.11,
+   "text": "His own son urged him to return to Rome, war"
+  },
+  {
+   "line": "L12",
+   "start": 61.161,
+   "end": 65.445,
+   "I": -34.0,
+   "peak": -16.81,
+   "text": "Piso chose force. His men fought Roman troop"
+  },
+  {
+   "line": "L13",
+   "start": 65.77,
+   "end": 67.581,
+   "I": -33.4,
+   "peak": -12.44,
+   "text": "Now he had to face the Senate."
+  },
+  {
+   "line": "L14",
+   "start": 67.86,
+   "end": 73.851,
+   "I": -33.2,
+   "peak": -12.6,
+   "text": "Outside, crowds dragged off his statues to s"
+  },
+  {
+   "line": "L15",
+   "start": 74.234,
+   "end": 76.568,
+   "I": -32.3,
+   "peak": -15.23,
+   "text": "Inside, his accusers alleged poisoning."
+  },
+  {
+   "line": "L16",
+   "start": 77.009,
+   "end": 79.354,
+   "I": -35.7,
+   "peak": -15.92,
+   "text": "But Tacitus says they failed to prove it."
+  },
+  {
+   "line": "L17",
+   "start": 79.679,
+   "end": 87.399,
+   "I": -33.9,
+   "peak": -13.22,
+   "text": "He could be condemned for corrupting the arm"
+  },
+  {
+   "line": "L18",
+   "start": 88.003,
+   "end": 92.751,
+   "I": -33.4,
+   "peak": -16.08,
+   "text": "Before judgement, Piso was found dead in his"
+  },
+  {
+   "line": "L19",
+   "start": 93.262,
+   "end": 97.801,
+   "I": -32.4,
+   "peak": -14.43,
+   "text": "The Senate condemned him anyway, and ordered"
+  },
+  {
+   "line": "L20",
+   "start": 98.312,
+   "end": 105.859,
+   "I": -33.0,
+   "peak": -13.25,
+   "text": "Copies survive in Spain. They condemn his cr"
+  },
+  {
+   "line": "L21",
+   "start": 106.37,
+   "end": 110.572,
+   "I": -34.0,
+   "peak": -12.68,
+   "text": "They repeat Germanicus's accusation, but mak"
+  },
+  {
+   "line": "L22",
+   "start": 110.897,
+   "end": 113.765,
+   "I": -34.1,
+   "peak": -11.33,
+   "text": "The man Germanicus saved was condemned as a "
+  },
+  {
+   "line": "L23",
+   "start": 114.311,
+   "end": 117.418,
+   "I": -38.1,
+   "peak": -18.97,
+   "text": "Whether he had also been his killer remained"
+  }
+ ],
+ "seed": 23
+}

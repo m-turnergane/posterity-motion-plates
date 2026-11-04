@@ -1,0 +1,25 @@
+{
+ "src_original": "/workspace/posterity/standalones/bathory/v2/plates/h04a_priest_writes_legend.png",
+ "src_original_md5": "d34476996b65667e75f308d01a4ecffe",
+ "src_v3_ink": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded.png",
+ "src_v3_ink_md5": "438bbd47c2653fea63c685f8453a3907",
+ "out": "/workspace/posterity/standalones/bathory/v3/build_rough_v3/h04a_priest_writes_legend_inkgraded_v3b.png",
+ "out_md5": "2de025922ede31def045c411fe1c3a1a",
+ "table_box": [
+  305,
+  1360,
+  520,
+  1455
+ ],
+ "changed_px_vs_v3_ink": 5967,
+ "changed_px_outside_table_box": 0,
+ "crimson_px_gt_0_5": {
+  "original": 79234,
+  "v3_ink": 69928,
+  "v3b_ink": 68604
+ },
+ "crimson_px_in_table_box": {
+  "v3_ink": 1776,
+  "v3b_ink": 452
+ }
+}

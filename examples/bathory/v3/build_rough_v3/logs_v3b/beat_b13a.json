@@ -1,0 +1,109 @@
+{
+ "beat": "b13a",
+ "kind": "flat",
+ "frames": [
+  1588,
+  1665
+ ],
+ "t": [
+  52.933,
+  55.5
+ ],
+ "seconds": 2.567,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b13a_doors_open.png",
+ "plate_md5": "42f7a59e64e40ba81d1372b8d11d8e3c",
+ "plate_wh": [
+  941,
+  1671
+ ],
+ "fx": [
+  {
+   "kind": "candle",
+   "info": {
+    "plate": "b13a#0",
+    "sources": {
+     "candle": 5
+    },
+    "warped_candles": 5,
+    "spill_groups": 5,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "auto": [
+     [
+      630,
+      520,
+      740,
+      660
+     ]
+    ],
+    "spill_amp": 1.6,
+    "relight_poly": [
+     [
+      [
+       484,
+       145
+      ],
+      [
+       753,
+       145
+      ],
+      [
+       753,
+       1300
+      ],
+      [
+       484,
+       1300
+      ]
+     ]
+    ]
+   },
+   "pulse": 0.5699,
+   "metrics_at_pulse1": {
+    "whole": 25.5259952545166,
+    "local": 39.25065612792969,
+    "step": 5.739345550537109
+   },
+   "metrics": {
+    "whole": 14.25,
+    "local": 22.362529754638672,
+    "step": 3.1014134883880615
+   }
+  }
+ ],
+ "density_max": 1.1892,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1671
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0350000441074372,
+  "cover_scale": 1.149,
+  "visible_src_wh": [
+   908.2,
+   1614.5
+  ],
+  "ratio": 1.189,
+  "ratio_x": 1.189,
+  "ratio_y": 1.189,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

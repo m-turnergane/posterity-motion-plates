@@ -1,0 +1,454 @@
+{
+ "method": {
+  "house_1s": "1 s RMS [t,t+1], 0.25 s hop, dBFS, post-limiter bed stem; span = windows wholly in [3, 64] s (and [30, 64] s)",
+  "examiner_K1s": "BS.1770 K-weighted stereo (L+R power) 1 s window, 0.1 s hop (reproduces the examiner's -25.2 LUFS at 61.0 s on v1d)",
+  "st400": "BS.1770 K-weighted stereo 400 ms, 0.1 s hop; max-min within 1 s windows",
+  "word_margin": "VO-stem peak inside the word minus max(|L|,|R|) bed-stem peak in the word +-0.3 s, post-limiter (reproduces examiner 8.4 / 8.5 dB on v1d)"
+ },
+ "v1e": {
+  "mono": {
+   "3-64": {
+    "spread_maxmin_db": 8.35,
+    "p95_p5_db": 3.82,
+    "sd_db": 1.15,
+    "max_dev_db": 4.89,
+    "max_dev_at_s": 60.5,
+    "pct_within_0p75_db": 58.1
+   },
+   "30-64": {
+    "spread_maxmin_db": 7.1,
+    "p95_p5_db": 3.61,
+    "sd_db": 1.16,
+    "max_dev_db": 4.91,
+    "max_dev_at_s": 60.5,
+    "pct_within_0p75_db": 57.1
+   }
+  },
+  "L": {
+   "3-64": {
+    "spread_maxmin_db": 7.22,
+    "p95_p5_db": 4.79,
+    "sd_db": 1.48,
+    "max_dev_db": 3.85,
+    "max_dev_at_s": 15.5,
+    "pct_within_0p75_db": 36.1
+   },
+   "30-64": {
+    "spread_maxmin_db": 5.49,
+    "p95_p5_db": 4.32,
+    "sd_db": 1.33,
+    "max_dev_db": 3.03,
+    "max_dev_at_s": 58.75,
+    "pct_within_0p75_db": 39.8
+   }
+  },
+  "R": {
+   "3-64": {
+    "spread_maxmin_db": 6.25,
+    "p95_p5_db": 4.73,
+    "sd_db": 1.34,
+    "max_dev_db": 3.53,
+    "max_dev_at_s": 3.0,
+    "pct_within_0p75_db": 41.1
+   },
+   "30-64": {
+    "spread_maxmin_db": 5.75,
+    "p95_p5_db": 4.23,
+    "sd_db": 1.28,
+    "max_dev_db": 2.96,
+    "max_dev_at_s": 39.5,
+    "pct_within_0p75_db": 45.9
+   }
+  },
+  "examiner_K1s": {
+   "59-62.5": {
+    "swing_db": 0.99,
+    "max_lufs": -28.66,
+    "max_at_s": 62.5
+   },
+   "19.8-21.6": {
+    "swing_db": 1.03,
+    "max_lufs": -28.72,
+    "max_at_s": 21.0
+   },
+   "3-64": {
+    "swing_db": 4.13,
+    "max_lufs": -26.38,
+    "max_at_s": 16.0
+   },
+   "at_61.0_lufs": -29.47
+  },
+  "st400_max_swing_per_1s": {
+   "20.4_window (19.9-20.9 start)": {
+    "max_swing_db": 1.86,
+    "window_start_s": 20.6
+   },
+   "source_20.4": {
+    "max_swing_db": 1.81,
+    "window_start_s": 19.9
+   },
+   "61.0_window (60.0-61.0 start)": {
+    "max_swing_db": 1.62,
+    "window_start_s": 61.0
+   },
+   "source_61.0": {
+    "max_swing_db": 3.57,
+    "window_start_s": 61.0
+   },
+   "whole 3-63": {
+    "max_swing_db": 5.3,
+    "window_start_s": 14.8
+   },
+   "source whole 3-63": {
+    "max_swing_db": 7.21,
+    "window_start_s": 14.8
+   }
+  },
+  "word_margin": {
+   "and_60.31": 12.05,
+   "to_60.78": 13.89,
+   "words_59_62": [
+    [
+     "for",
+     59.05,
+     14.58
+    ],
+    [
+     "corrupting",
+     59.24,
+     15.24
+    ],
+    [
+     "soldiers",
+     59.83,
+     14.81
+    ],
+    [
+     "and",
+     60.31,
+     12.05
+    ],
+    [
+     "trying",
+     60.45,
+     15.66
+    ],
+    [
+     "to",
+     60.78,
+     13.89
+    ],
+    [
+     "start",
+     60.92,
+     16.38
+    ],
+    [
+     "a",
+     61.31,
+     12.97
+    ],
+    [
+     "civil",
+     61.42,
+     15.15
+    ],
+    [
+     "war.",
+     61.75,
+     15.04
+    ]
+   ],
+   "min_all_words": [
+    "was",
+    37.64,
+    10.66
+   ],
+   "n_words_under_12": 3
+  },
+  "rider": {
+   "max_slope_db_per_s": 3.0,
+   "range_db": [
+    -4.37,
+    4.52
+   ]
+  },
+  "st3s": {
+   "range_db": 2.11,
+   "p95_p5_db": 1.47,
+   "median_lufs": -28.99,
+   "max_move_within_3s_db": 1.84,
+   "max_move_at_s": 24.3,
+   "n_3s_spans_over_2db": 0
+  },
+  "bumps_st400": {
+   "14.6-15.9": {
+    "max_swing_db": 5.3,
+    "window_start_s": 14.9
+   },
+   "source_14.6-15.9": {
+    "max_swing_db": 7.21,
+    "window_start_s": 14.9
+   },
+   "25.6 (25.1-26.1 start)": {
+    "max_swing_db": 3.4,
+    "window_start_s": 25.2
+   },
+   "source_25.6": {
+    "max_swing_db": 2.65,
+    "window_start_s": 25.1
+   }
+  },
+  "bumps_K1s": {
+   "14.6-15.9": {
+    "swing_db": 3.38,
+    "max_lufs": -26.44,
+    "max_at_s": 15.9
+   },
+   "25.1-26.6": {
+    "swing_db": 2.69,
+    "max_lufs": -27.82,
+    "max_at_s": 25.2
+   }
+  },
+  "word_margin_monobed": {
+   "and": 19.43,
+   "to": 21.42,
+   "min_and_to": 19.43,
+   "min_all": 13.97
+  },
+  "build_meta": {
+   "bed_level_db": 0.0,
+   "house_key_word_min": 12.45,
+   "vo_over_bed_LU": 15.5,
+   "word_check": {
+    "140": 12.05,
+    "142": 13.89
+   }
+  },
+  "LR_correlation_3_64": 0.238
+ },
+ "v1f": {
+  "mono": {
+   "3-64": {
+    "spread_maxmin_db": 7.18,
+    "p95_p5_db": 3.18,
+    "sd_db": 0.92,
+    "max_dev_db": 4.28,
+    "max_dev_at_s": 15.5,
+    "pct_within_0p75_db": 73.0
+   },
+   "30-64": {
+    "spread_maxmin_db": 5.4,
+    "p95_p5_db": 2.4,
+    "sd_db": 0.79,
+    "max_dev_db": 2.95,
+    "max_dev_at_s": 60.5,
+    "pct_within_0p75_db": 78.2
+   }
+  },
+  "L": {
+   "3-64": {
+    "spread_maxmin_db": 7.29,
+    "p95_p5_db": 4.63,
+    "sd_db": 1.49,
+    "max_dev_db": 4.55,
+    "max_dev_at_s": 15.5,
+    "pct_within_0p75_db": 36.1
+   },
+   "30-64": {
+    "spread_maxmin_db": 5.17,
+    "p95_p5_db": 4.29,
+    "sd_db": 1.33,
+    "max_dev_db": 2.59,
+    "max_dev_at_s": 41.25,
+    "pct_within_0p75_db": 37.6
+   }
+  },
+  "R": {
+   "3-64": {
+    "spread_maxmin_db": 6.96,
+    "p95_p5_db": 5.2,
+    "sd_db": 1.52,
+    "max_dev_db": 3.93,
+    "max_dev_at_s": 13.5,
+    "pct_within_0p75_db": 33.6
+   },
+   "30-64": {
+    "spread_maxmin_db": 6.65,
+    "p95_p5_db": 4.94,
+    "sd_db": 1.46,
+    "max_dev_db": 3.34,
+    "max_dev_at_s": 31.75,
+    "pct_within_0p75_db": 41.4
+   }
+  },
+  "examiner_K1s": {
+   "59-62.5": {
+    "swing_db": 1.66,
+    "max_lufs": -29.48,
+    "max_at_s": 61.3
+   },
+   "19.8-21.6": {
+    "swing_db": 2.07,
+    "max_lufs": -30.11,
+    "max_at_s": 21.1
+   },
+   "3-64": {
+    "swing_db": 5.44,
+    "max_lufs": -27.75,
+    "max_at_s": 16.0
+   },
+   "at_61.0_lufs": -29.64
+  },
+  "st400_max_swing_per_1s": {
+   "20.4_window (19.9-20.9 start)": {
+    "max_swing_db": 2.49,
+    "window_start_s": 19.9
+   },
+   "source_20.4": {
+    "max_swing_db": 1.81,
+    "window_start_s": 19.9
+   },
+   "61.0_window (60.0-61.0 start)": {
+    "max_swing_db": 2.06,
+    "window_start_s": 61.0
+   },
+   "source_61.0": {
+    "max_swing_db": 3.57,
+    "window_start_s": 61.0
+   },
+   "whole 3-63": {
+    "max_swing_db": 5.52,
+    "window_start_s": 16.2
+   },
+   "source whole 3-63": {
+    "max_swing_db": 7.21,
+    "window_start_s": 14.8
+   }
+  },
+  "word_margin": {
+   "and_60.31": 12.36,
+   "to_60.78": 13.83,
+   "words_59_62": [
+    [
+     "for",
+     59.05,
+     16.29
+    ],
+    [
+     "corrupting",
+     59.24,
+     16.25
+    ],
+    [
+     "soldiers",
+     59.83,
+     15.85
+    ],
+    [
+     "and",
+     60.31,
+     12.36
+    ],
+    [
+     "trying",
+     60.45,
+     15.98
+    ],
+    [
+     "to",
+     60.78,
+     13.83
+    ],
+    [
+     "start",
+     60.92,
+     16.33
+    ],
+    [
+     "a",
+     61.31,
+     13.87
+    ],
+    [
+     "civil",
+     61.42,
+     16.08
+    ],
+    [
+     "war.",
+     61.75,
+     15.95
+    ]
+   ],
+   "min_all_words": [
+    "and",
+    60.31,
+    12.36
+   ],
+   "n_words_under_12": 0
+  },
+  "rider": {
+   "max_slope_db_per_s": 3.0,
+   "range_db": [
+    -2.39,
+    6.0
+   ]
+  },
+  "st3s": {
+   "range_db": 2.84,
+   "p95_p5_db": 2.0,
+   "median_lufs": -31.03,
+   "max_move_within_3s_db": 2.52,
+   "max_move_at_s": 12.4,
+   "n_3s_spans_over_2db": 23
+  },
+  "bumps_st400": {
+   "14.6-15.9": {
+    "max_swing_db": 5.28,
+    "window_start_s": 14.9
+   },
+   "source_14.6-15.9": {
+    "max_swing_db": 7.21,
+    "window_start_s": 14.9
+   },
+   "25.6 (25.1-26.1 start)": {
+    "max_swing_db": 3.47,
+    "window_start_s": 25.5
+   },
+   "source_25.6": {
+    "max_swing_db": 2.65,
+    "window_start_s": 25.1
+   }
+  },
+  "bumps_K1s": {
+   "14.6-15.9": {
+    "swing_db": 3.42,
+    "max_lufs": -27.81,
+    "max_at_s": 15.9
+   },
+   "25.1-26.6": {
+    "swing_db": 2.52,
+    "max_lufs": -30.19,
+    "max_at_s": 25.2
+   }
+  },
+  "word_margin_monobed": {
+   "and": 19.72,
+   "to": 21.62,
+   "min_and_to": 19.72,
+   "min_all": 16.62
+  },
+  "build_meta": {
+   "bed_level_db": -2.0,
+   "house_key_word_min": 13.77,
+   "vo_over_bed_LU": 17.6,
+   "word_check": {
+    "140": 12.36,
+    "142": 13.83
+   }
+  },
+  "LR_correlation_3_64": 0.214
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "beat": "h03",
+ "kind": "flat",
+ "frames": [
+  666,
+  806
+ ],
+ "t": [
+  22.2,
+  26.867
+ ],
+ "seconds": 4.667,
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/h03_thurzo_claimed_finding.png",
+ "plate_md5": "debada1d867a6683be6692ea63cfd738",
+ "plate_wh": [
+  941,
+  1670
+ ],
+ "fx": [
+  {
+   "kind": "torch",
+   "info": {
+    "plate": "h03#0",
+    "sources": {
+     "torch": 1
+    },
+    "warped_candles": 0,
+    "spill_groups": 1,
+    "haze": 0,
+    "mist": 0,
+    "motes": 0,
+    "embers": 0,
+    "smoke": 0,
+    "moon": false,
+    "parallax": false,
+    "pool": false
+   },
+   "spec": {
+    "torch": [
+     [
+      395,
+      50,
+      520,
+      320
+     ]
+    ],
+    "relight_exclude": [
+     [
+      330,
+      200,
+      640,
+      560
+     ],
+     [
+      100,
+      120,
+      330,
+      420
+     ]
+    ],
+    "spill_amp": 1.5
+   },
+   "fire_sharpness": {
+    "check": "fire_sharpness",
+    "zoom": 1.0600000104556482,
+    "lapvar": [
+     188.2
+    ],
+    "min_lapvar": 100.0,
+    "soft_rects": [],
+    "max_zoom": 1.5,
+    "ok": true,
+    "msg": "ok"
+   },
+   "pulse": 0.5494,
+   "metrics_at_pulse1": {
+    "whole": 21.8424015045166,
+    "local": 34.876686096191406,
+    "step": 3.809781789779663
+   },
+   "metrics": {
+    "whole": 12.128771781921387,
+    "local": 20.022253036499023,
+    "step": 2.2368061542510986
+   }
+  }
+ ],
+ "density_max": 1.2187,
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1670
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.0600000104556482,
+  "cover_scale": 1.1497,
+  "visible_src_wh": [
+   886.2,
+   1575.5
+  ],
+  "ratio": 1.219,
+  "ratio_x": 1.219,
+  "ratio_y": 1.219,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ }
+}

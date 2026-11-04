@@ -1,0 +1,146 @@
+{
+ "take": "v5t3",
+ "model": "medium.en",
+ "lines_ok": 20,
+ "n_lines": 23,
+ "lines": [
+  {
+   "line": 1,
+   "ok": true,
+   "ref": "Germanicus saved the man he later accused of killing him.",
+   "hyp": "Germanicus saved the man he later accused of killing him."
+  },
+  {
+   "line": 2,
+   "ok": false,
+   "ref": "According to Tacitus, a storm drove Piso towards a rocky coast. Germanicus sent warships to help.",
+   "hyp": "According to Tacitus, a storm drove Piso towards a rocky coast. Germanica sent warships to help."
+  },
+  {
+   "line": 3,
+   "ok": true,
+   "ref": "He was the emperor's adopted son, heading east to settle disputes among Rome's provinces and allied kingdoms.",
+   "hyp": "He was the emperor's adopted son, heading east to settle disputes among Rome's provinces  and allied kingdoms."
+  },
+  {
+   "line": 4,
+   "ok": true,
+   "ref": "Piso, appointed governor of Syria, was supposed to serve under him.",
+   "hyp": "Piso, appointed governor of Syria, was supposed to serve under him."
+  },
+  {
+   "line": 5,
+   "ok": true,
+   "ref": "Instead, he gave soldiers gifts, replaced strict officers, and ignored orders to send troops to Armenia.",
+   "hyp": "Instead, he gave soldiers gifts, replaced strict officers, and ignored orders to send  troops to Armenia."
+  },
+  {
+   "line": 6,
+   "ok": true,
+   "ref": "The emperor's son held the higher command. Piso was building a following of his own.",
+   "hyp": "The emperor's son held the higher command.  Piso was building a following of his own."
+  },
+  {
+   "line": 7,
+   "ok": true,
+   "ref": "Then Germanicus fell ill near Antioch.",
+   "hyp": "Then Germanicus fell ill near Antioch."
+  },
+  {
+   "line": 8,
+   "ok": true,
+   "ref": "Tacitus says human remains, spells, and lead tablets bearing his name were found hidden in the floor and walls.",
+   "hyp": "Tacitus says human remains, spells and lead tablets bearing his name were found hidden in the floor and walls."
+  },
+  {
+   "line": 9,
+   "ok": true,
+   "ref": "Germanicus believed Piso had poisoned him. Dying, he asked his friends to avenge him.",
+   "hyp": "Germanicus believed Piso had poisoned him.  Dying, he asked his friends to avenge him."
+  },
+  {
+   "line": 10,
+   "ok": true,
+   "ref": "After Germanicus died, Piso wanted Syria back.",
+   "hyp": "After Germanicus died, Piso wanted Syria back."
+  },
+  {
+   "line": 11,
+   "ok": true,
+   "ref": "His own son urged him to return to Rome, warning that going back to Syria could mean civil war.",
+   "hyp": "His own son urged him to return to Rome, warning that going back to Syria could mean civil war."
+  },
+  {
+   "line": 12,
+   "ok": true,
+   "ref": "Piso chose force. His men fought Roman troops. He lost.",
+   "hyp": "Piso chose force. His men fought Roman troops. He lost."
+  },
+  {
+   "line": 13,
+   "ok": true,
+   "ref": "Now he had to face the Senate.",
+   "hyp": "Now, he had to face the Senate."
+  },
+  {
+   "line": 14,
+   "ok": false,
+   "ref": "Outside, crowds dragged off his statues to smash them and threatened violence if he escaped punishment.",
+   "hyp": "Outside, crowds dragged off his statues to smash them and threaten violence if he escaped  punishment."
+  },
+  {
+   "line": 15,
+   "ok": false,
+   "ref": "Inside, his accusers alleged poisoning.",
+   "hyp": "inside his accuser's alleged poisoning."
+  },
+  {
+   "line": 16,
+   "ok": true,
+   "ref": "But Tacitus says they failed to prove it.",
+   "hyp": "but Tacitus says they failed to prove it."
+  },
+  {
+   "line": 17,
+   "ok": true,
+   "ref": "He could be condemned for corrupting the army and taking up arms against Rome. That did not prove he had poisoned Germanicus.",
+   "hyp": "He could be condemned for corrupting the army and taking up arms against Rome.  That did not prove he had poisoned Germanicus."
+  },
+  {
+   "line": 18,
+   "ok": true,
+   "ref": "Before judgement, Piso was found dead in his room, a sword beside him.",
+   "hyp": "Before judgment, Piso was found dead in his room, a sword beside him."
+  },
+  {
+   "line": 19,
+   "ok": true,
+   "ref": "The Senate condemned him anyway, and ordered its decree displayed in bronze.",
+   "hyp": "The Senate condemned him anyway, and ordered its decree displayed in bronze."
+  },
+  {
+   "line": 20,
+   "ok": true,
+   "ref": "Copies survive in Spain. They condemn his cruelty, his corruption of soldiers, and his attempt at civil war.",
+   "hyp": "Copies survive in Spain.  They condemn his cruelty, his corruption of soldiers, and his attempt at civil war."
+  },
+  {
+   "line": 21,
+   "ok": true,
+   "ref": "They repeat Germanicus's accusation, but make no finding of murder.",
+   "hyp": "They repeat Germanicus's accusation, but make no finding of murder."
+  },
+  {
+   "line": 22,
+   "ok": true,
+   "ref": "The man Germanicus saved was condemned as a rebel.",
+   "hyp": "The man Germanicus saved was condemned as a rebel."
+  },
+  {
+   "line": 23,
+   "ok": true,
+   "ref": "Whether he had also been his killer remained unproved.",
+   "hyp": "Whether he had also been his killer remained unproved."
+  }
+ ]
+}

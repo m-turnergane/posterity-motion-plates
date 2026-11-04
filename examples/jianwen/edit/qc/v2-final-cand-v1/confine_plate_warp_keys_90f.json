@@ -1,0 +1,254 @@
+{
+ "k02": {
+  "warped_sources": 1,
+  "zone_px": 4267,
+  "zone_px_inside_guard": 0,
+  "frames": 90,
+  "max_abs_diff": 96,
+  "changed_px_max": 3984,
+  "changed_outside_zone_px": 0,
+  "changed_in_guard_px": 0,
+  "warp_max_px": 1.947,
+  "zone_step_mean_max": 18.16,
+  "zone_step_p99_max": 45.340000000000146,
+  "zone_bbox": [
+   35,
+   697,
+   92,
+   803
+  ]
+ },
+ "k03": {
+  "warped_sources": 12,
+  "zone_px": 12098,
+  "zone_px_inside_guard": 0,
+  "frames": 90,
+  "max_abs_diff": 172,
+  "changed_px_max": 9839,
+  "changed_outside_zone_px": 0,
+  "changed_in_guard_px": 0,
+  "warp_max_px": 2.161,
+  "zone_step_mean_max": 7.74,
+  "zone_step_p99_max": 40.0,
+  "zone_bbox": [
+   0,
+   289,
+   940,
+   655
+  ]
+ },
+ "k09": {
+  "warped_sources": 1,
+  "zone_px": 1884,
+  "zone_px_inside_guard": 0,
+  "frames": 90,
+  "max_abs_diff": 137,
+  "changed_px_max": 1590,
+  "changed_outside_zone_px": 0,
+  "changed_in_guard_px": 0,
+  "warp_max_px": 1.499,
+  "zone_step_mean_max": 12.54,
+  "zone_step_p99_max": 42.17000000000007,
+  "zone_bbox": [
+   582,
+   452,
+   625,
+   513
+  ]
+ },
+ "k10": {
+  "warped_sources": 14,
+  "zone_px": 10995,
+  "zone_px_inside_guard": 0,
+  "frames": 90,
+  "max_abs_diff": 222,
+  "changed_px_max": 8571,
+  "changed_outside_zone_px": 0,
+  "changed_in_guard_px": 0,
+  "warp_max_px": 2.347,
+  "zone_step_mean_max": 6.14,
+  "zone_step_p99_max": 36.0,
+  "zone_bbox": [
+   416,
+   315,
+   865,
+   433
+  ],
+  "warp_log": [
+   [
+    [
+     485,
+     312,
+     504,
+     361
+    ],
+    "warp"
+   ],
+   [
+    [
+     422,
+     338,
+     444,
+     371
+    ],
+    "warp"
+   ],
+   [
+    [
+     580,
+     356,
+     596,
+     373
+    ],
+    "warp"
+   ],
+   [
+    [
+     777,
+     356,
+     796,
+     382
+    ],
+    "warp"
+   ],
+   [
+    [
+     534,
+     357,
+     551,
+     378
+    ],
+    "warp"
+   ],
+   [
+    [
+     422,
+     365,
+     454,
+     404
+    ],
+    "warp"
+   ],
+   [
+    [
+     816,
+     366,
+     844,
+     394
+    ],
+    "warp"
+   ],
+   [
+    [
+     506,
+     369,
+     525,
+     394
+    ],
+    "warp"
+   ],
+   [
+    [
+     635,
+     380,
+     662,
+     418
+    ],
+    "skip: zone touches FACES/LAND"
+   ],
+   [
+    [
+     833,
+     387,
+     860,
+     426
+    ],
+    "warp"
+   ],
+   [
+    [
+     559,
+     398,
+     577,
+     417
+    ],
+    "warp"
+   ],
+   [
+    [
+     786,
+     406,
+     799,
+     424
+    ],
+    "warp"
+   ],
+   [
+    [
+     755,
+     409,
+     768,
+     427
+    ],
+    "warp"
+   ],
+   [
+    [
+     528,
+     410,
+     544,
+     430
+    ],
+    "warp"
+   ],
+   [
+    [
+     590,
+     411,
+     603,
+     428
+    ],
+    "warp"
+   ],
+   [
+    [
+     850,
+     426,
+     860,
+     450
+    ],
+    "skip: hairline/small"
+   ]
+  ]
+ },
+ "k11": {
+  "warped_sources": 1,
+  "zone_px": 242,
+  "zone_px_inside_guard": 242,
+  "frames": 90,
+  "max_abs_diff": 22,
+  "changed_px_max": 176,
+  "changed_outside_zone_px": 0,
+  "changed_in_guard_px": 14005,
+  "warp_max_px": 1.012,
+  "zone_step_mean_max": 22.51,
+  "zone_step_p99_max": 24.0,
+  "zone_bbox": [
+   231,
+   1033,
+   246,
+   1050
+  ],
+  "warp_log": [
+   [
+    [
+     231,
+     1033,
+     246,
+     1050
+    ],
+    "warp-only inner flame h=8 zone=2 sway=0.92px"
+   ]
+  ]
+ }
+}

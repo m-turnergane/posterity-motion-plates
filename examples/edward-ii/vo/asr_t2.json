@@ -1,0 +1,19 @@
+{
+ "model": "medium.en",
+ "ref_words": 224,
+ "hyp_words": 223,
+ "matched": 221,
+ "diffs": [
+  [
+   "replace",
+   "the second",
+   "ii"
+  ],
+  [
+   "replace",
+   "seventy",
+   "70"
+  ]
+ ],
+ "hyp": "england buried its king two years later his half brother was executed for trying to rescue him the king was edward ii his half brother the earl of kent had helped edward's queen and roger mortimer overthrow him months later edward was announced dead at berkeley castle kent attended his funeral at gloucester then kent heard his brother was alive held at corfe castle around 70 men backed his plan to free edward a chronicle says kent handed a letter for edward to a man at corfe who claimed to guard him that man took it to mortimer kent was beheaded then edward's young son now king and a few loyal men seized mortimer at nottingham castle by night mortimer was hanged charged with murdering the old king years later a papal official wrote to edward's son he claimed edward had escaped berkeley in disguise and another man lay in his tomb he said edward had been hidden at corfe the very castle kent wrote to and according to the letter edward left corfe only after learning kent had been executed for saying edward was alive most historians believe edward died at berkeley but if that letter is true edward lived to hear that the brother who helped overthrow him died trying to free him history remembers the victors we remember the rest"
+}

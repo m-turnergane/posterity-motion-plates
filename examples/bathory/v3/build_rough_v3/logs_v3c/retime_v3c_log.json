@@ -1,0 +1,23 @@
+{
+ "source": "v3/vo/vo_oliver_v3b.wav",
+ "v3b_s": 98.854,
+ "v3c_s": 100.187,
+ "op": {
+  "after": "Countess.",
+  "before": "History",
+  "old_gap": 0.859,
+  "new_gap": 2.192,
+  "change_s": 1.333,
+  "at_s": 93.351,
+  "local_floor_dBFS": -85.0,
+  "why": "tagline (L18) moved onto the restored outro; H04b ends captionless on her eyes"
+ },
+ "tagline_v3b": [
+  94.103,
+  98.854
+ ],
+ "tagline_v3c": [
+  95.436,
+  100.187
+ ]
+}

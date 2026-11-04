@@ -1,0 +1,51 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,54,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,4,2,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.92,Default,,0,0,0,,Elizabeth Báthory's\Nservants were executed.
+Dialogue: 0,0:00:03.11,0:00:04.63,Default,,0,0,0,,She was never tried.
+Dialogue: 0,0:00:05.07,0:00:07.75,Default,,0,0,0,,History calls her\Nthe Blood Countess.
+Dialogue: 0,0:00:08.31,0:00:09.53,Default,,0,0,0,,One winter night,
+Dialogue: 0,0:00:09.53,0:00:12.16,Default,,0,0,0,,armed men entered\Nher manor at Csejte
+Dialogue: 0,0:00:12.16,0:00:14.01,Default,,0,0,0,,as she sat\Ndown to supper.
+Dialogue: 0,0:00:14.36,0:00:16.68,Default,,0,0,0,,For months, rumours\Nhad spread that young
+Dialogue: 0,0:00:16.68,0:00:18.99,Default,,0,0,0,,women in her service\Nwere disappearing.
+Dialogue: 0,0:00:19.02,0:00:20.36,Default,,0,0,0,,The king ordered\NHungary's
+Dialogue: 0,0:00:20.36,0:00:21.42,Default,,0,0,0,,highest official,
+Dialogue: 0,0:00:21.42,0:00:23.78,Default,,0,0,0,,György Thurzó,\Nto investigate.
+Dialogue: 0,0:00:23.81,0:00:25.87,Default,,0,0,0,,But Thurzó was\Nno stranger.
+Dialogue: 0,0:00:26.23,0:00:27.77,Default,,0,0,0,,Báthory's dying\Nhusband had
+Dialogue: 0,0:00:27.77,0:00:29.59,Default,,0,0,0,,asked him to\Nprotect the family.
+Dialogue: 0,0:00:29.85,0:00:31.94,Default,,0,0,0,,Now his men were\Narresting her.
+Dialogue: 0,0:00:31.97,0:00:34.22,Default,,0,0,0,,Her servants were\Ntaken to Bytča,
+Dialogue: 0,0:00:34.25,0:00:36.94,Default,,0,0,0,,questioned under\Ntorture, and tried.
+Dialogue: 0,0:00:37.29,0:00:40.15,Default,,0,0,0,,Within days, most\Nwere executed.
+Dialogue: 0,0:00:41.20,0:00:42.79,Default,,0,0,0,,Báthory was\Nconfined in the
+Dialogue: 0,0:00:42.79,0:00:44.54,Default,,0,0,0,,fortress above\Nher manor.
+Dialogue: 0,0:00:44.99,0:00:46.29,Default,,0,0,0,,Even when the\Nking pressed
+Dialogue: 0,0:00:46.29,0:00:49.08,Default,,0,0,0,,for her trial,\NThurzó prevented it.
+Dialogue: 0,0:00:49.64,0:00:50.50,Default,,0,0,0,,Why?
+Dialogue: 0,0:00:50.85,0:00:53.29,Default,,0,0,0,,Some historians\Nsuspect a case built to
+Dialogue: 0,0:00:53.29,0:00:55.87,Default,,0,0,0,,ruin her, and kept\Nfrom any courtroom.
+Dialogue: 0,0:00:56.23,0:00:57.59,Default,,0,0,0,,Others think her family
+Dialogue: 0,0:00:57.59,0:00:58.70,Default,,0,0,0,,feared a trial would
+Dialogue: 0,0:00:58.70,0:01:01.35,Default,,0,0,0,,reveal her guilt and\Ndestroy their name.
+Dialogue: 0,0:01:01.71,0:01:03.41,Default,,0,0,0,,Witnesses had\Naccused her,
+Dialogue: 0,0:01:03.41,0:01:05.66,Default,,0,0,0,,but many accounts\Nwere secondhand.
+Dialogue: 0,0:01:06.36,0:01:08.13,Default,,0,0,0,,She died in confinement.
+Dialogue: 0,0:01:08.66,0:01:10.56,Default,,0,0,0,,Her servants\Nreceived verdicts.
+Dialogue: 0,0:01:10.97,0:01:12.85,Default,,0,0,0,,Báthory received\Na legend.
+Dialogue: 0,0:01:13.51,0:01:15.59,Default,,0,0,0,,The world called\Nher a monster.
+Dialogue: 0,0:01:16.11,0:01:17.59,Default,,0,0,0,,No court ever decided
+Dialogue: 0,0:01:17.59,0:01:18.95,Default,,0,0,0,,whether she was one.
+Dialogue: 0,0:01:19.68,0:01:21.95,Default,,0,0,0,,History remembers\Nthe victors.
+Dialogue: 0,0:01:22.77,0:01:25.61,Default,,0,0,0,,We remember the rest.

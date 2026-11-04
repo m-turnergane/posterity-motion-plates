@@ -1,0 +1,211 @@
+{
+ "frames": 2700,
+ "slots": {
+  "S01": {
+   "mean": 48.3,
+   "swing_pct": 10.1,
+   "pump_resid_pct": 1.44,
+   "max_step": 0.75,
+   "max_step_pct": 1.55,
+   "steps_over_2pct": 0
+  },
+  "S02A": {
+   "mean": 70.4,
+   "swing_pct": 6.0,
+   "pump_resid_pct": 1.61,
+   "max_step": 0.55,
+   "max_step_pct": 0.78,
+   "steps_over_2pct": 0
+  },
+  "S02B": {
+   "mean": 64.2,
+   "swing_pct": 12.8,
+   "pump_resid_pct": 2.16,
+   "max_step": 1.08,
+   "max_step_pct": 1.68,
+   "steps_over_2pct": 0
+  },
+  "S03": {
+   "mean": 52.6,
+   "swing_pct": 11.1,
+   "pump_resid_pct": 2.43,
+   "max_step": 1.12,
+   "max_step_pct": 2.12,
+   "steps_over_2pct": 2
+  },
+  "S04": {
+   "mean": 46.7,
+   "swing_pct": 7.5,
+   "pump_resid_pct": 2.6,
+   "max_step": 0.74,
+   "max_step_pct": 1.59,
+   "steps_over_2pct": 0
+  },
+  "S05": {
+   "mean": 41.6,
+   "swing_pct": 12.8,
+   "pump_resid_pct": 2.17,
+   "max_step": 0.79,
+   "max_step_pct": 1.89,
+   "steps_over_2pct": 0
+  },
+  "S06": {
+   "mean": 48.6,
+   "swing_pct": 10.7,
+   "pump_resid_pct": 2.63,
+   "max_step": 0.93,
+   "max_step_pct": 1.91,
+   "steps_over_2pct": 0
+  },
+  "S07": {
+   "mean": 42.2,
+   "swing_pct": 11.8,
+   "pump_resid_pct": 3.23,
+   "max_step": 0.92,
+   "max_step_pct": 2.17,
+   "steps_over_2pct": 3
+  },
+  "S08": {
+   "mean": 51.4,
+   "swing_pct": 9.6,
+   "pump_resid_pct": 2.79,
+   "max_step": 1.25,
+   "max_step_pct": 2.43,
+   "steps_over_2pct": 2
+  },
+  "S09": {
+   "mean": 50.7,
+   "swing_pct": 8.1,
+   "pump_resid_pct": 2.01,
+   "max_step": 0.88,
+   "max_step_pct": 1.74,
+   "steps_over_2pct": 0
+  },
+  "S10": {
+   "mean": 41.0,
+   "swing_pct": 8.5,
+   "pump_resid_pct": 1.41,
+   "max_step": 0.78,
+   "max_step_pct": 1.9,
+   "steps_over_2pct": 0
+  },
+  "S11": {
+   "mean": 34.1,
+   "swing_pct": 9.2,
+   "pump_resid_pct": 4.68,
+   "max_step": 1.4,
+   "max_step_pct": 4.1,
+   "steps_over_2pct": 4
+  },
+  "S12": {
+   "mean": 42.1,
+   "swing_pct": 6.5,
+   "pump_resid_pct": 3.44,
+   "max_step": 0.9,
+   "max_step_pct": 2.13,
+   "steps_over_2pct": 1
+  },
+  "S13": {
+   "mean": 42.8,
+   "swing_pct": 13.0,
+   "pump_resid_pct": 2.07,
+   "max_step": 0.71,
+   "max_step_pct": 1.65,
+   "steps_over_2pct": 0
+  },
+  "S14": {
+   "mean": 41.4,
+   "swing_pct": 13.2,
+   "pump_resid_pct": 3.83,
+   "max_step": 1.03,
+   "max_step_pct": 2.48,
+   "steps_over_2pct": 4
+  },
+  "S15": {
+   "mean": 31.4,
+   "swing_pct": 9.1,
+   "pump_resid_pct": 3.13,
+   "max_step": 0.86,
+   "max_step_pct": 2.74,
+   "steps_over_2pct": 2
+  },
+  "S16": {
+   "mean": 48.2,
+   "swing_pct": 9.4,
+   "pump_resid_pct": 3.14,
+   "max_step": 0.83,
+   "max_step_pct": 1.72,
+   "steps_over_2pct": 0
+  },
+  "S17": {
+   "mean": 49.0,
+   "swing_pct": 7.1,
+   "pump_resid_pct": 1.24,
+   "max_step": 0.55,
+   "max_step_pct": 1.12,
+   "steps_over_2pct": 0
+  },
+  "S18": {
+   "mean": 41.3,
+   "swing_pct": 12.2,
+   "pump_resid_pct": 4.46,
+   "max_step": 1.07,
+   "max_step_pct": 2.6,
+   "steps_over_2pct": 3
+  },
+  "S19": {
+   "mean": 38.3,
+   "swing_pct": 13.8,
+   "pump_resid_pct": 3.75,
+   "max_step": 0.88,
+   "max_step_pct": 2.29,
+   "steps_over_2pct": 3
+  },
+  "S20": {
+   "mean": 57.5,
+   "swing_pct": 5.3,
+   "pump_resid_pct": 1.61,
+   "max_step": 0.57,
+   "max_step_pct": 0.99,
+   "steps_over_2pct": 0
+  },
+  "OUTRO": {
+   "mean": 32.2,
+   "swing_pct": 2.7,
+   "pump_resid_pct": 0.62,
+   "max_step": 0.16,
+   "max_step_pct": 0.5,
+   "steps_over_2pct": 0
+  }
+ },
+ "corner_identical_frac_across_slots": {
+  "tl": 0.0,
+  "tr": 0.0,
+  "bl": 0.0,
+  "br": 0.0
+ },
+ "edge_to_centre_ratio": {
+  "S01": 0.7200000286102295,
+  "S02A": 0.5199999809265137,
+  "S02B": 0.5799999833106995,
+  "S03": 0.6700000166893005,
+  "S04": 0.6800000071525574,
+  "S05": 1.190000057220459,
+  "S06": 0.6499999761581421,
+  "S07": 0.6299999952316284,
+  "S08": 1.2999999523162842,
+  "S09": 0.7599999904632568,
+  "S10": 0.8299999833106995,
+  "S11": 0.8299999833106995,
+  "S12": 0.7699999809265137,
+  "S13": 0.41999998688697815,
+  "S14": 1.3799999952316284,
+  "S15": 0.6899999976158142,
+  "S16": 0.6499999761581421,
+  "S17": 0.23999999463558197,
+  "S18": 0.49000000953674316,
+  "S19": 0.44999998807907104,
+  "S20": 0.3499999940395355,
+  "OUTRO": 0.6899999976158142
+ }
+}

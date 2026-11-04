@@ -1,0 +1,22 @@
+{
+ "slot": "S14",
+ "plate": "k13_hu_ying_searching_daoist_temple.png",
+ "smoke": "on",
+ "why": "",
+ "every": 15,
+ "frames": 14,
+ "max_outside_allow": 0,
+ "max_in_protect": 0,
+ "max_changed": 43,
+ "guards": {
+  "faces_0": 0,
+  "faces_1": 0,
+  "faces_2": 0,
+  "faces_3": 0,
+  "lanterns_0": 0,
+  "lanterns_1": 0,
+  "lanterns_2": 0
+ },
+ "zero_motion_ok": true,
+ "emitter_layers": 1
+}
