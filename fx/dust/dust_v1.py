@@ -33,7 +33,7 @@ HERE = Path(__file__).resolve().parent
 def _load(n, p):
     s = importlib.util.spec_from_file_location(n, p); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 F3 = _load("flames_v3", HERE.parent / "flames" / "flames_v3.py")            # helpers only (read-only import)
-G = _load("guardrails", HERE.parent.parent / "motion" / "guardrails.py")
+G = _load("guardrails", HERE.parent.parent / "engine" / "motion" / "guardrails.py")
 cv2.setNumThreads(4)
 
 def L_of(a): return 0.299 * a[..., 0] + 0.587 * a[..., 1] + 0.114 * a[..., 2]

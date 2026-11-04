@@ -15,7 +15,7 @@ HERE = Path(__file__).resolve().parent
 def _load(name, path):
     s = importlib.util.spec_from_file_location(name, path); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 W = _load("water_v1", HERE / "water_v1.py")
-G = _load("guardrails", HERE.parent.parent / "motion" / "guardrails.py")
+G = _load("guardrails", HERE.parent.parent / "engine" / "motion" / "guardrails.py")
 
 def guard(cfg, mode="refuse"):
     P = cv2.cvtColor(cv2.imread(cfg["plate"]), cv2.COLOR_BGR2RGB)
