@@ -20,3 +20,11 @@ Notes
 - Build scripts still use absolute paths (`/workspace/posterity/...`, `/workspace/mpvenv/bin/python`). They were copied verbatim and **not** re-pathed, so they reproduce the box layout exactly.
 - `src/motionplates/` on remote `master` and on the open PR branches already has packaged versions of smoke_v2, fx_candle, fx_torch (PR #3), fx_water and guardrails (PR #4). The copies here are the production originals. Merge with remote `master` before you de-duplicate them.
 - The copy manifest (source → destination for every file) is in `CONSOLIDATION-MANIFEST.json`.
+
+## Running the copies (verified 2026-11-04)
+- Engines that locate siblings relative to their own folder fail when run from this repo's layout, because they expect the box tree. `fx/water/water_v1_1.py` and `fx/dust/dust_v1.py` load `HERE.parent.parent / "motion" / "guardrails.py"`, which is `engine-rnd/../motion` on the box. For now, run them from their originals under `/workspace/posterity/engine-rnd/...`. Repathing them belongs to the PoC/packaging backlog (see BACKLOG-POC.md).
+- The scripts that work in place from the repo are:
+  - `templates/build_template_v1.py --help`
+  - `examples/bjorn/rough_v4/build/p05_rough_v4d.py --help`
+  - imports of the guardrails functions
+- `titles/remotion-posterity-motion` ships without `node_modules`. Run `npm ci` before `npx remotion studio` or `npx remotion render`.
