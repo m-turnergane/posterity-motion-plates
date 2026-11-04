@@ -1,0 +1,7 @@
+---
+description: Pointer for Posterity episode files. Does not replace the playbook.
+globs: episodes/**/*
+alwaysApply: false
+---
+
+Read `STATUS.md` in the episode before editing it. Do not invent a script, title, claim, or plate. OPEN claim IDs stay out of narration until the ledger file is in `inbox/`.

@@ -1,0 +1,7 @@
+---
+description: Budget files block paid calls when their status says so.
+globs: config/**/*
+alwaysApply: false
+---
+
+`config/budget.yaml` is the spend gate. If Higgsfield status is `blocked`, do not submit a generation. If an ElevenLabs total would pass `ask_before_credits`, stop and ask. Never write a secret value into these files.
