@@ -6,18 +6,19 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 
 | Gap | Blocks |
 | --- | --- |
-| Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the test line. Feature narration still waits for the spoken script and the 30,000-credit ask |
-| Higgsfield credit cap. The owner named `nano_banana_pro` and said the cap is coming with the Edward pack | Any Higgsfield generation, including the style sample |
-| Edward feature prep pack: script, spoken script, claim ledger, eight movements, shot list | The feature film. Not this setup pass |
-| Packet (i): treatment and whether 03:05–04:55 is still the sample; approval of the 33–34 master budget; Gregorian Chant as a feature section | Feature spend and score |
-| Feature title | Titles and thumbnails. A technical test may use a labeled stand-in |
-| Explorer's Chart for Edward, and whether depth_v1 stays off | Those two techniques. Default is off |
+| Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the test line. Feature VO still waits for the sample task and the 30,000-credit ask |
+| Yes/no on the recommended plan in `DECISION-BUNDLE.md`: Penumbra versus Anabasis I for Act I, and the opening sample as specified | Starting the sample. The pack recommends Penumbra |
+| Feature title. The pack offers three, and recommends "The Letter for a Buried King" | The pen-stroke title in the intro |
+| Whether the tagline is also written on screen. Default in the pack is narrated only | The outro type |
+| POSTERITY wordmark master, vector or at least 4K with alpha | Exact-geometry stroke reveal. The sample intro needs it or an approved trace |
+| Explorer's Chart as the Edward map class. depth_v1 stays off unless the owner says otherwise | The map class only |
+| Drive media parts 01–09. Each zip is 13–25 MB and the connector stops at 10 MB | The 40 atlas guides and 21 Short plates. Scores and the three tomb photos were retrieved another way |
 
 ## Desk / next pack
 
 | Gap | Blocks |
 | --- | --- |
-| Script lock and Archivist countersign (gate 2 and gate 3) | Feature narration |
+| Script lock and Archivist countersign | Closed for v3.2. Locked file md5 `11f4e6f9ac7d640d006dac33533472f6`, countersigned. Do not edit the VO |
 | Text of OPEN claims C02e, C11, C14b, C15, C16e, C17 | Nothing, if they stay out of the script. Do not invent them |
 | 16:9 safe-area numbers and per-episode accent hex | Final type layout. Test uses the known title colors |
 | ElevenLabs speed | Leave unset |

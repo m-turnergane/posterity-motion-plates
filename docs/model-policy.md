@@ -6,16 +6,17 @@ Discover ids and prices at call time. Do not hardcode a credit price from the No
 
 | Job | Route | Status |
 | --- | --- | --- |
-| Plate stills for this long-form experiment | Higgsfield MCP, model `nano_banana_pro`, after a cap | Blocked until the cap arrives. Owner named Nano Banana Pro at 12:30 PM America/Toronto on 4 Nov 2026. The live account is Plus with 110 credits, and free-trial unlimited is not spendable. The MCP general default is `gpt_image_2_5`, so a call must name `nano_banana_pro` rather than omit the model |
-| Generative motion (cloth, water that must move, gesture, weather) | Higgsfield video models, shot by shot, after the still is accepted | Blocked with the same cap |
-| Held paintings, push, titles, maps, document reveals | Deterministic engine. Locked presets only. depth_v1 off | Allowed without Higgsfield |
+| Plate stills for this long-form experiment | Higgsfield MCP, model `nano_banana_pro` | Sample phase is authorized. `hold: reference-media` until the atlas guides and Short plates are on disk. Name `nano_banana_pro` on the call. The MCP general default is `gpt_image_2_5` |
+| Generative motion (cloth, water that must move, gesture, weather) | Higgsfield video, after the still is accepted | Same hold. I2V prompts come from each shot's intent, invariants, and permitted action |
+| Held paintings, push, titles, document reveals | Deterministic engine. depth_v1 off | Allowed without Higgsfield |
+| Maps | Engine routes, labels, and markers on a registered plate | Owner rule, 12:44 PM America/Toronto. I2V never draws routes, labels, or markers. An atmosphere layer under those engine layers is an optional test |
 | Narration | ElevenLabs `eleven_multilingual_v2`, Oliver Silk | Allowed inside the 30,000 credit ask-first cap once the secret is set |
 | Agent reasoning | The session model | Not a generation charge. Do not poll job status with a fresh reasoning turn |
 | Developer API for Higgsfield | Do not use | Separate billing route. Not authorized |
 
 ## Spend rules
 
-- Higgsfield balance is not a cap. With no cap in `config/budget.yaml`, generation count is zero.
+- Higgsfield balance is not a cap. While `hold` is set, generation count is zero. The sample phase has no numeric cap. Ask before a plan upgrade or any spend that would exhaust the account.
 - ElevenLabs: record characters per call. Stop and ask before the running draft total would pass about 30,000 credits. One short setup line does not need a fresh ask.
 - Do not buy a plan, add credits, or turn on auto top-up.
 - Cache by input hash. A timeout resumes the saved job id. It does not submit a second job.

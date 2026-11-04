@@ -1,0 +1,44 @@
+pack_path,origin_path,md5,role
+sources/ARCHIVIST-SCRIPT-v1-CHECK.md,/workspace/posterity/longform/edward-ii-feature/ARCHIVIST-SCRIPT-v1-CHECK.md,631a6212f0a995475ac33f6d964e16c1,read-only copy
+sources/CLAIM-LEDGER-v1.md,/workspace/posterity/longform/edward-ii-feature/CLAIM-LEDGER-v1.md,d8dc5b970e6f495075fff245c78308d0,read-only copy
+sources/CLAIM-LEDGER-v2.md,/workspace/posterity/longform/edward-ii-feature/CLAIM-LEDGER-v2.md,9d8b951ae48889a99c49b19a9e0aa70c,read-only copy
+sources/DECISION-PACKET-v1.md,/workspace/posterity/longform/edward-ii-feature/DECISION-PACKET-v1.md,a91979bb1ebb7c4df405ef410e1b5006,read-only copy
+sources/INFO-PACKET-LONGFORM-v1.md,/workspace/posterity/longform/edward-ii-feature/INFO-PACKET-LONGFORM-v1.md,32670e08c6494344dc7a05030c1a07da,read-only copy
+sources/MAP-PLACES-v1.md,/workspace/posterity/longform/edward-ii-feature/MAP-PLACES-v1.md,46d9c1215950404d6c15295de36f5f48,read-only copy
+sources/PLATE-PROMPT-TEMPLATE-v2.md,/workspace/posterity/ledger/PLATE-PROMPT-TEMPLATE-v2.md,71ced6431f2ed79c80643799ad6ec4b1,read-only copy
+sources/REALMS-1327-v1.md,/workspace/posterity/longform/edward-ii-feature/REALMS-1327-v1.md,85a055bc9ae9532d9fa5a48b37ea4a50,read-only copy
+sources/STANDING-LAW-longform.md,/workspace/posterity/ledger/STANDING-LAW-longform.md,9c90730a2de09ab8bacc42399065cf78,read-only copy
+sources/atlas-refpack-v2/PLATE-PROMPTS-v2.md,/workspace/posterity/engine-rnd/maps/atlas/refpack/PLATE-PROMPTS-v2.md,931301b42bdb94189cb3693b330da220,read-only copy
+sources/atlas-refpack-v2/README-v2.md,/workspace/posterity/engine-rnd/maps/atlas/refpack/README-v2.md,45a278f56217519f71db0788b3b8c1bd,read-only copy
+sources/atlas-refpack-v2/REGISTRATION-PLAN-v2.md,/workspace/posterity/engine-rnd/maps/atlas/refpack/REGISTRATION-PLAN-v2.md,b8002aff5209e5c4a1103f9c3524c7e6,read-only copy
+sources/atlas-refpack-v2/britain_16x9_ref_bare.png,/workspace/posterity/engine-rnd/maps/atlas/refpack/img_v2/britain_16x9_ref_bare.png,b11a986672cd335fa2b9b2f748831237,read-only copy
+sources/atlas-refpack-v2/britain_16x9_ref_tinted_notext.png,/workspace/posterity/engine-rnd/maps/atlas/refpack/img_v2/britain_16x9_ref_tinted_notext.png,2519b448ea7a8076d94b7ebf7e9e4bd2,read-only copy
+sources/atlas-refpack-v2/control_points_refpack_v2.json,/workspace/posterity/engine-rnd/maps/atlas/refpack/control_points_refpack_v2.json,8081580a3824b013bf2d83c36749ea94,read-only copy
+sources/atlas-refpack-v2/euro_16x9_ref_bare.png,/workspace/posterity/engine-rnd/maps/atlas/refpack/img_v2/euro_16x9_ref_bare.png,51712532e7a52dc298225d54a4213e5b,read-only copy
+sources/atlas-refpack-v2/euro_16x9_ref_tinted_notext.png,/workspace/posterity/engine-rnd/maps/atlas/refpack/img_v2/euro_16x9_ref_tinted_notext.png,141caa4281f1b2ff20d1d9806ec39770,read-only copy
+sources/atlas-refpack-v2/framing_refpack_v2.json,/workspace/posterity/engine-rnd/maps/atlas/refpack/framing_refpack_v2.json,8db7392a7264eb5630af95eb38471a47,read-only copy
+sources/prep/HERO_16x9_PROMPTS_v1.md,/workspace/posterity/longform/edward-ii-feature/prep/HERO_16x9_PROMPTS_v1.md,7c7dc1a040dc533035badbd8781790b1,read-only copy
+sources/prep/hero_16x9_manifest_v1.csv,/workspace/posterity/longform/edward-ii-feature/prep/hero_16x9_manifest_v1.csv,4735c19297928bd0aee68f058ca894f8,read-only copy
+sources/prep/hero_16x9_manifest_v1.json,/workspace/posterity/longform/edward-ii-feature/prep/hero_16x9_manifest_v1.json,d321205e381c2d06d6d599dbadddbfdc,read-only copy
+sources/raw/script-vo-v2-DRAFT.txt,/workspace/posterity/longform/edward-ii-feature/raw/script-vo-v2-DRAFT.txt,852babf5ee00468240c33626f7dc4a26,read-only copy; SUPERSEDED by script v3.2 LOCKED (v2.1)
+sources/script-proposal-v2.md,/workspace/posterity/longform/edward-ii-feature/script-proposal-v2.md,6ae937e95835650b042267f341325def,read-only copy; SUPERSEDED (v2.1)
+score/candidates/Anabasis_I.mp3,https://www.scottbuckley.com.au/library/ (local copy /workspace/tmp/vp/audio/Anabasis_I.mp3),eb524bf636a1a563a33e1d257aea220a,score candidate CC BY 4.0
+score/candidates/Katabasis_I.mp3,https://www.scottbuckley.com.au/library/ (local copy /workspace/tmp/vp/audio/Katabasis_I.mp3),793f064af7c20f8a12efb62ca9fd7cd7,score candidate CC BY 4.0
+score/candidates/MemoriesOfStone.mp3,https://www.scottbuckley.com.au/library/ (local copy /workspace/tmp/vp/audio/MemoriesOfStone.mp3),079ab0396952684311318f74da63fd57,score candidate CC BY 4.0
+score/candidates/Penumbra.mp3,https://www.scottbuckley.com.au/library/ (local copy /workspace/tmp/vp/audio/Penumbra.mp3),2acea4098213d02c944d57a2faa19a51,score candidate CC BY 4.0
+score/candidates/Unraveling.mp3,https://www.scottbuckley.com.au/library/ (local copy /workspace/tmp/vp/audio/Unraveling.mp3),fad860bf48863a78b15b8988963c426e,score candidate CC BY 4.0
+score/licence_evidence/scottbuckley_library_anabasis-i.html,https://www.scottbuckley.com.au/library/anabasis-i/ fetched 2026-11-04 11:22 ET,acf91977bbc4913f4f2317b933894c27,licence evidence
+score/licence_evidence/scottbuckley_library_katabasis-i.html,https://www.scottbuckley.com.au/library/katabasis-i/ fetched 2026-11-04 11:22 ET,532bb88f8d0e9ff806349faf857d0bf8,licence evidence
+score/licence_evidence/scottbuckley_library_memories-of-stone.html,https://www.scottbuckley.com.au/library/memories-of-stone/ fetched 2026-11-04 11:22 ET,d5dbc50306d76aef46d67591f1cc194a,licence evidence
+score/licence_evidence/scottbuckley_library_penumbra.html,https://www.scottbuckley.com.au/library/penumbra/ fetched 2026-11-04 11:22 ET,8e0496a13b42739d1632821d459de63f,licence evidence
+score/licence_evidence/scottbuckley_library_unraveling.html,https://www.scottbuckley.com.au/library/unraveling/ fetched 2026-11-04 11:22 ET,d716526c8a3655bfd1b117cddf78378a,licence evidence
+sources/CLAIM-LEDGER-v3.md,/workspace/posterity/longform/edward-ii-feature/CLAIM-LEDGER-v3.md,3238bb7d635d5f32fc4a466666cdc8c1,read-only copy; SUPERSEDED by CLAIM-LEDGER-v3.2 (v2.1)
+sources/CLAIM-LEDGER-v3.json,/workspace/posterity/longform/edward-ii-feature/CLAIM-LEDGER-v3.json,ecc9afb6b351729b6801c7685eff98fb,read-only copy; SUPERSEDED by CLAIM-LEDGER-v3.2 (v2.1)
+sources/script-proposal-v3-SURGICAL.md,/workspace/posterity/longform/edward-ii-feature/script-proposal-v3-SURGICAL.md,383c393ecd00e48b0a2a15b12716388b,SUPERSEDED by script v3.2 LOCKED (v2.1); never adopted
+sources/raw/script-vo-v3-PROPOSED.txt,/workspace/posterity/longform/edward-ii-feature/raw/script-vo-v3-PROPOSED.txt,4e8996e0170ee5a88dd4fb3ca406beee,SUPERSEDED by script v3.2 LOCKED (v2.1); never adopted
+sources/commons_imageinfo_T01_2026-11-04.json,/workspace/tmp/vp2/t01/commons_imageinfo_T01_2026-11-04.json,617b4065f8c2cf24b1842eedd68481a1,T01 CC0 licence evidence
+sources/raw/script-vo-v3.2-LOCKED.txt,/workspace/posterity/longform/edward-ii-feature/raw/script-vo-v3.2-PROPOSED.txt,11f4e6f9ac7d640d006dac33533472f6,"CANONICAL VO (v2.1): owner approved as is 12:50pm ET 2026-11-04; byte-identical copy"
+sources/CLAIM-LEDGER-v3.2.md,/workspace/posterity/longform/edward-ii-feature/CLAIM-LEDGER-v3.2.md,8e824c980c2f2d3c289a20ae5447e7a9,"read-only copy; CURRENT ledger for v2.1"
+sources/CLAIM-LEDGER-v3.2.json,/workspace/posterity/longform/edward-ii-feature/CLAIM-LEDGER-v3.2.json,c654b495e59d086188bf52162eec587e,"read-only copy; CURRENT ledger for v2.1"
+sources/ARCHIVIST-SCRIPT-v3.2-CHECK.md,/workspace/posterity/longform/edward-ii-feature/ARCHIVIST-SCRIPT-v3.2-CHECK.md,480224d8bcdd079ef030e2c4728481bc,"read-only copy; Archivist countersign of v3.2"
+sources/script-vo-v3.2-diff-vs-v3.md,/workspace/posterity/longform/edward-ii-feature/script-vo-v3.2-diff-vs-v3.md,2ae167905dba688bdd03bc86a50d5d21,"read-only copy; v3->v3.2 diff"
