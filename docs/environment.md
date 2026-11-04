@@ -23,13 +23,13 @@ Names only.
 | Name | State |
 | --- | --- |
 | `ELEVENLABS_API_KEY` | Set. The value starts with `sk_` and is not in the repo. One 70-character Oliver line succeeded at about 12:13 PM America/Toronto. `GET /v1/user/subscription` returned 401, so the live balance was not re-read. |
-| Higgsfield | MCP session is signed in. No API key is stored in the repo. Re-read at 12:30 PM America/Toronto on 4 Nov 2026: Plus, 110 credits. Registration grant 10 at 2:24 PM on 3 Nov; subscription grant 100 at 10:52 AM on 4 Nov. Free-trial unlimited is not spendable. A later read the same day, 3:49 PM America/Toronto, was still Plus and 48 credits after the opening sample. |
+| Higgsfield | MCP session is signed in. No API key is stored in the repo. Re-read at 12:30 PM America/Toronto on 4 Nov 2026: Plus, 110 credits. Registration grant 10 at 2:24 PM on 3 Nov; subscription grant 100 at 10:52 AM on 4 Nov. Free-trial unlimited is not spendable. After the opening sample the balance was 48. After test two, read at 6:01 PM America/Toronto, it was 31.5. |
 
 ## Providers
 
 | Provider | Use | Auth |
 | --- | --- | --- |
-| Higgsfield MCP `https://mcp.higgsfield.ai/mcp` | Images and generative video, plan credits only | Connected for read queries. Generation blocked until a cap exists |
+| Higgsfield MCP `https://mcp.higgsfield.ai/mcp` | Images and generative video, plan credits only | Signed in. Test two used its cap. Further generation waits on the owner's review |
 | ElevenLabs | Narration with timestamps | Secret name above |
 | Remotion 4.0.529 | Chronicle Reveal on the engine branch | Not installed this session. Composition is 1080×1920 and its default plate file is absent |
 | Google Drive | Plate archive `1oSSP805SIUXEVhGBA7ytg3vkcpegHR9w`, video dump `11_Rx49M2UUJByXAsZOwUFUjIpD45ncy_`, handoff zips in folder `109Cx5eBBjNwk2uokRHu5_H00ZqyKSC07` | Connected. `download_file` caps at 10 MB, so MEDIA-01 through MEDIA-07 were not retrieved |

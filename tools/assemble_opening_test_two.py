@@ -3,8 +3,8 @@
 
 Same Oliver takes, same Anabasis I, same line timing as the first cut.
 The picture path is different: a locked camera, one float resample, the
-house flame and smoke on the shots that already have a usable plate, a
-black-ink wordmark, and a black ACT I card.
+house flame and smoke on the shots that have a flame, a black-ink
+wordmark, and a black ACT I card.
 
 Replacement plates, when they exist, live in
 ``var/edward-ii-feature/opening-sample-test-two/plates`` and override the
@@ -78,6 +78,63 @@ FX = {
         "spill_amp": 0.45,
         "radius_mult": 0.4,
     },
+    # Rects below are pixels of the 2688x1520 replacement plates.
+    "S003": {
+        "native": True,
+        "torches": [
+            (2628, 260, 2680, 400),
+            (2465, 250, 2560, 360),
+            (1016, 320, 1090, 430),
+            (1230, 445, 1300, 550),
+            (1905, 340, 1985, 440),
+            (2020, 450, 2095, 560),
+            (2545, 390, 2620, 500),
+            (2128, 400, 2195, 500),
+        ],
+        "smoke": [
+            {"type": "candle", "src": (2000, 400), "height": 90, "w1": 16, "w0": 3,
+             "opacity": 0.2, "rise": 24, "lean": 4},
+            {"type": "candle", "src": (2520, 280), "height": 80, "w1": 14, "w0": 3,
+             "opacity": 0.16, "rise": 22, "lean": -4},
+        ],
+        "protect": [[(40, 160), (1080, 160), (1080, 1480), (40, 1480)]],
+        "spill_amp": 0.42,
+        "radius_mult": 0.45,
+    },
+    "S007": {
+        "native": True,
+        "torches": [(970, 130, 1070, 270)],
+        "smoke": [{"type": "torch", "src": (1015, 170), "height": 120, "w1": 18, "w0": 4,
+                   "opacity": 0.22, "rise": 30, "lean": 4}],
+        "protect": [[(1180, 80), (2100, 80), (2100, 980), (1180, 980)]],
+        "spill_amp": 0.4,
+        "radius_mult": 0.4,
+    },
+    "S007a": {
+        "native": True,
+        "torches": [(2500, 100, 2670, 340)],
+        "smoke": [{"type": "torch", "src": (2590, 150), "height": 100, "w1": 16, "w0": 4,
+                   "opacity": 0.18, "rise": 26, "lean": -6}],
+        "protect": [[(700, 80), (2100, 80), (2100, 1400), (700, 1400)]],
+        "spill_amp": 0.35,
+        "radius_mult": 0.35,
+    },
+    "S009": {
+        "native": True,
+        "torches": [(440, 430, 560, 580), (1540, 590, 1640, 720)],
+        "smoke": [
+            {"type": "torch", "src": (500, 470), "height": 80, "w1": 12, "w0": 3,
+             "opacity": 0.16, "rise": 22},
+            {"type": "torch", "src": (1585, 620), "height": 70, "w1": 12, "w0": 3,
+             "opacity": 0.14, "rise": 20},
+        ],
+        "protect": [
+            [(200, 200), (1100, 200), (1100, 1100), (200, 1100)],
+            [(1500, 180), (2500, 180), (2500, 900), (1500, 900)],
+        ],
+        "spill_amp": 0.35,
+        "radius_mult": 0.4,
+    },
 }
 
 # These five are the paid replacements. The recovered plates do not satisfy them.
@@ -104,6 +161,8 @@ def scale_rect(rect, w, h):
 
 
 def scale_fx(spec, w, h):
+    if spec.get("native"):
+        return spec
     out = dict(spec)
     for key in ("candles", "torches"):
         out[key] = [scale_rect(r, w, h) for r in spec.get(key, [])]

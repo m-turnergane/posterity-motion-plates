@@ -264,11 +264,9 @@ These are in `tools/assemble_opening_sample.py` as committed. Test two is the pl
 | Numeric cap for test two | None. A $49 / 1,000-credit plan was being considered and is not in effect |
 | ElevenLabs live balance | Unknown. Subscription endpoint returned 401 |
 
-### Paid work still waiting
+### Later, the same day
 
-`OPENING-TEST-TWO.md` is the brief. The local renderer and the costed ask are in [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). Preserve this cut. Write `opening-sample-test-two.mp4` only after a numeric cap exists and the five replacement plates pass review. Website "unlimited" does not apply to MCP. The H06 clip was compared with the assembly and is kept. A Seedance reshoot is not in the ask. `gpt_image_2_5` is the quoted still candidate for the five replacements. Do not re-synthesize the nine Oliver takes to change pictures.
-
-Already in the renderer: locked cameras, the S002 insert with local flame and smoke, S005 spill on the paper and desk, black ink on the CB1 interior, and a black centred ACT I card. S008 is the one N01 wide. N21 stays. N22 is not required. Still waiting on paid plates: S003 without the extra crown, S004 as the pre-strike tableau, and distinct pictures for S007, S007a, and S009.
+At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions. The review film was encoded the same evening. Spend, sources, and the export check are in [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). This checkpoint's first-cut file was not rebuilt. A fresh session should read that record before treating the paragraphs above as the current spend state. The balance in the table in this section is the 3:04 PM read.
 
 ### Secrets for a new session
 
@@ -280,7 +278,7 @@ Already in the renderer: locked cameras, the S002 insert with local flame and sm
 2. The test-two intro reads `assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`. The first-cut assembler still points at `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`.
 3. The ElevenLabs secret, only if a new line is actually authorized. The nine takes are in the zip. Do not re-render them.
 4. The Drive connection, for image parts and the two reference paintings.
-5. A numeric spending cap, asked once, before any test-two generation.
+5. The test-two cap is closed. Spent 16.50 of 23.50. Further generation waits on the owner's review of `opening-sample-test-two.mp4`. Do not treat the leftover 7.00 credits as a new authorization.
 6. The ink-inspiration images, if the owner still wants them. They were not found.
 7. The two coordinate JSON files, only when map registration starts. They sit in Drive zips this connector cannot download.
 8. Leave PR #5 unmerged. Leave the first `opening-sample.mp4` untouched.

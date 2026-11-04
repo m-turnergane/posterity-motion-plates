@@ -1,6 +1,6 @@
 # Edward II / Kent feature
 
-status: OPENING_TEST_TWO_LOCAL
+status: OPENING_TEST_TWO_REVIEW
 updated: 2026-11-04
 timezone: America/Toronto
 
@@ -32,10 +32,10 @@ The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The re
 | --- | --- |
 | Delivery config | `config/delivery.yaml` approved |
 | Voice config | `config/narration.yaml` approved, speed unknown. Opening lines L01–L05, L07, L07a, L08, L09 rendered once |
-| Higgsfield | Sample phase authorized. 62 credits spent, 48 remaining at 3:49 PM America/Toronto. Test-two stills are quoted and not submitted. See `TEST-TWO-RECORD.md` |
+| Higgsfield | Sample phase authorized. Test two spent 16.50 of an authorized 23.50. Balance 31.5 at 6:01 PM America/Toronto. Further generation is on hold for the owner's review. See `TEST-TWO-RECORD.md` |
 | Engine branch | PR #5, not merged |
 | Technical test film | `pipeline-test/README.md`. Picture and one Oliver line verified. Not the episode |
 
 ## Next action
 
-The local test-two renderer is in. `opening-sample-test-two.mp4` is not encoded. Five plates are still the wrong picture, and the 23.50-credit ask in `TEST-TWO-RECORD.md` has no answer yet. Do not submit a generation before that cap is a number. The full film, the outro, and any plan upgrade wait. Explorer's Chart is still a proposal. PR #5 stays unmerged.
+`opening-sample-test-two.mp4` is encoded and waiting on the owner's creative review. The working note is `TEST-TWO-RECORD.md`. Do not submit another generation, merge, publish, or start the full film from this review. The unused 7.00 credits are not a new budget. Explorer's Chart is still a proposal. PR #5 stays unmerged.

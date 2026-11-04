@@ -45,7 +45,7 @@ pytest -q
 
 `pytest -q` was run on this branch on 4 Nov 2026 after the test-two renderer: 57 passed, 1 skipped. It does not render the feature. `test_plate_never_in_repo` allows `OWNER` in filenames under `intake/` only.
 
-## Opening test two (verified here, 4 Nov 2026, about 3:49 PM America/Toronto)
+## Opening test two (encoded here, 4 Nov 2026, about 5:58 PM America/Toronto)
 
 ```bash
 python tools/assemble_opening_test_two.py --timeline
@@ -53,7 +53,7 @@ python tools/assemble_opening_test_two.py
 python tools/assemble_opening_test_two.py --full
 ```
 
-The first command prints the locked 69.740 s clock. The second writes intro and effect proofs under `var/edward-ii-feature/opening-sample-test-two/proofs/` and does not call Higgsfield or ElevenLabs. The third refuses to encode `opening-sample-test-two.mp4` while `S003.png`, `S004.png`, `S007.png`, `S007a.png`, or `S009.png` is missing from `var/edward-ii-feature/opening-sample-test-two/plates/`. Rebuilding the comparison cut takes `python tools/assemble_opening_sample.py --rebuild-first-cut` and overwrites `opening-sample.mp4`.
+The first command prints the locked 69.740 s clock. The second writes intro and effect proofs under `var/edward-ii-feature/opening-sample-test-two/proofs/` and does not call Higgsfield or ElevenLabs. The third writes `opening-sample-test-two.mp4` once `S003.png`, `S004.png`, `S007.png`, `S007a.png`, and `S009.png` are in `var/edward-ii-feature/opening-sample-test-two/plates/`, and refuses while any of them is missing. It was run after those five files existed. The export measured −14.0 LUFS and −1.3 dBTP. Rebuilding the comparison cut takes `python tools/assemble_opening_sample.py --rebuild-first-cut` and overwrites `opening-sample.mp4`.
 
 ## House build template (desk, not verified as a feature render)
 
@@ -77,7 +77,7 @@ Environment name: `ELEVENLABS_API_KEY`. Do not print it. The locked spoken scrip
 
 ## Higgsfield
 
-MCP is connected for account and model queries. The sample phase has no numeric cap. The reference hold is cleared. Name `nano_banana_pro` for stills, except the opening test-two replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. Ask before a plan upgrade or any spend that would exhaust the account. The opening pass left 48 credits, and a reread at 3:49 PM America/Toronto was still 48.
+MCP is connected. The test-two cap is spent and the hold is `owner-review`. Name `nano_banana_pro` for stills, except the opening test-two replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. Ask before a plan upgrade, the full film, or any spend that would exhaust the account. Balance at 6:01 PM America/Toronto was 31.5.
 
 ## Assembly checks
 
