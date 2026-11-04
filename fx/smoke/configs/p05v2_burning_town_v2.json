@@ -1,0 +1,328 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "note": "Ugarit p05 v2: burning coastal town at dusk. Sea, beach crowd and ships are protected (smoke never touches them).",
+ "seed": 5,
+ "ease_in": 0.8,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "protect": [
+  [
+   [
+    232,
+    528
+   ],
+   [
+    1080,
+    528
+   ],
+   [
+    1080,
+    1012
+   ],
+   [
+    640,
+    1006
+   ],
+   [
+    560,
+    958
+   ],
+   [
+    505,
+    884
+   ],
+   [
+    470,
+    850
+   ],
+   [
+    300,
+    850
+   ],
+   [
+    280,
+    780
+   ],
+   [
+    232,
+    700
+   ]
+  ],
+  [
+   [
+    290,
+    700
+   ],
+   [
+    420,
+    700
+   ],
+   [
+    420,
+    790
+   ],
+   [
+    290,
+    790
+   ]
+  ]
+ ],
+ "emitters": [
+  {
+   "name": "left_column",
+   "type": "column",
+   "src": [
+    125,
+    845
+   ],
+   "height": 760,
+   "w0": 70,
+   "w1": 230,
+   "lean": -35,
+   "layers": 3,
+   "seed": 1,
+   "rise": 34,
+   "color_dark": [
+    24,
+    16,
+    20
+   ],
+   "color_light": [
+    64,
+    50,
+    60
+   ]
+  },
+  {
+   "name": "town_mid",
+   "type": "column",
+   "src": [
+    365,
+    1050
+   ],
+   "height": 230,
+   "w0": 30,
+   "w1": 120,
+   "lean": -70,
+   "layers": 1,
+   "seed": 2,
+   "rise": 26,
+   "opacity": 0.6,
+   "color_dark": [
+    24,
+    16,
+    20
+   ],
+   "color_light": [
+    64,
+    50,
+    60
+   ]
+  },
+  {
+   "name": "right_fire",
+   "type": "column",
+   "src": [
+    960,
+    1215
+   ],
+   "height": 230,
+   "w0": 40,
+   "w1": 150,
+   "lean": 40,
+   "layers": 2,
+   "seed": 3,
+   "rise": 28,
+   "opacity": 0.85,
+   "color_dark": [
+    24,
+    16,
+    20
+   ],
+   "color_light": [
+    64,
+    50,
+    60
+   ]
+  },
+  {
+   "name": "headland",
+   "type": "column",
+   "src": [
+    452,
+    524
+   ],
+   "height": 330,
+   "w0": 10,
+   "w1": 90,
+   "lean": 60,
+   "layers": 2,
+   "seed": 4,
+   "rise": 14,
+   "opacity": 0.55,
+   "lo": 70,
+   "color_dark": [
+    24,
+    16,
+    20
+   ],
+   "color_light": [
+    64,
+    50,
+    60
+   ]
+  },
+  {
+   "name": "ground_haze",
+   "type": "haze",
+   "rect": [
+    0,
+    1120,
+    1080,
+    1560
+   ],
+   "drift": 9,
+   "opacity": 0.22,
+   "color_light": [
+    150,
+    110,
+    90
+   ],
+   "feather": 60,
+   "seed": 5
+  }
+ ],
+ "billows": [
+  {
+   "name": "sky_smoke",
+   "region": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      1080,
+      0
+     ],
+     [
+      1080,
+      512
+     ],
+     [
+      600,
+      512
+     ],
+     [
+      540,
+      496
+     ],
+     [
+      470,
+      486
+     ],
+     [
+      300,
+      484
+     ],
+     [
+      180,
+      490
+     ],
+     [
+      0,
+      468
+     ]
+    ]
+   ],
+   "luma": [
+    0.0,
+    0.27
+   ],
+   "sat_max": 0.48,
+   "amp": 12,
+   "rise": 18,
+   "scale": 120,
+   "seed": 1,
+   "soft": 0.06,
+   "period": 2.2
+  },
+  {
+   "name": "left_column_painted",
+   "region": [
+    [
+     [
+      0,
+      468
+     ],
+     [
+      180,
+      490
+     ],
+     [
+      175,
+      560
+     ],
+     [
+      160,
+      690
+     ],
+     [
+      0,
+      700
+     ]
+    ]
+   ],
+   "luma": [
+    0.0,
+    0.3
+   ],
+   "sat_max": 0.5,
+   "amp": 10,
+   "rise": 20,
+   "seed": 2,
+   "soft": 0.06,
+   "period": 2.2
+  }
+ ],
+ "guards": {
+  "horizon_sea": [
+   [
+    600,
+    516
+   ],
+   [
+    1080,
+    516
+   ],
+   [
+    1080,
+    560
+   ],
+   [
+    600,
+    560
+   ]
+  ],
+  "headland_shore": [
+   [
+    180,
+    560
+   ],
+   [
+    560,
+    560
+   ],
+   [
+    560,
+    640
+   ],
+   [
+    180,
+    640
+   ]
+  ]
+ }
+}

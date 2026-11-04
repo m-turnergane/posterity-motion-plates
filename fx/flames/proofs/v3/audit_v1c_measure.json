@@ -1,0 +1,419 @@
+{
+ "b13": {
+  "slot": "S13",
+  "frames": 126,
+  "f0": 1274,
+  "inmem_as_shipped": {
+   "surfaces": {
+    "left_doorframe_wall": {
+     "swing_pct_median": 36.25,
+     "swing_pct_min": 23.11,
+     "swing_pct_max": 53.92
+    },
+    "left_stone_wall": {
+     "swing_pct_median": 13.65,
+     "swing_pct_min": 11.6,
+     "swing_pct_max": 22.09
+    },
+    "right_door_wall": {
+     "swing_pct_median": 36.69,
+     "swing_pct_min": 28.78,
+     "swing_pct_max": 41.77
+    },
+    "guard_face_l": {
+     "swing_pct_median": 28.0,
+     "swing_pct_min": 22.09,
+     "swing_pct_max": 45.72
+    },
+    "guard_face_r": {
+     "swing_pct_median": 23.92,
+     "swing_pct_min": 16.09,
+     "swing_pct_max": 27.8
+    },
+    "edward_face": {
+     "swing_pct_median": 32.21,
+     "swing_pct_min": 13.81,
+     "swing_pct_max": 45.72
+    },
+    "guard_l_chainmail": {
+     "swing_pct_median": 11.76,
+     "swing_pct_min": 8.24,
+     "swing_pct_max": 20.39
+    },
+    "guard_r_chainmail": {
+     "swing_pct_median": 12.01,
+     "swing_pct_min": 6.77,
+     "swing_pct_max": 13.12
+    },
+    "stairs_left_of_fore_torch": {
+     "swing_pct_median": 24.54,
+     "swing_pct_min": 14.53,
+     "swing_pct_max": 36.42
+    },
+    "stairs_right_of_fore_torch": {
+     "swing_pct_median": 21.8,
+     "swing_pct_min": 12.74,
+     "swing_pct_max": 31.6
+    },
+    "fore_soldier_chainmail": {
+     "swing_pct_median": 12.6,
+     "swing_pct_min": 8.46,
+     "swing_pct_max": 18.34
+    },
+    "guard_l_coif_chainmail": {
+     "swing_pct_median": 19.93,
+     "swing_pct_min": 15.26,
+     "swing_pct_max": 34.47
+    },
+    "guard_r_coif_chainmail": {
+     "swing_pct_median": 17.67,
+     "swing_pct_min": 11.35,
+     "swing_pct_max": 22.39
+    },
+    "back_guard_r_face_mail": {
+     "swing_pct_median": 23.09,
+     "swing_pct_min": 17.21,
+     "swing_pct_max": 28.08
+    },
+    "torch_holder_l_face": {
+     "swing_pct_median": 24.51,
+     "swing_pct_min": 20.51,
+     "swing_pct_max": 42.5
+    }
+   },
+   "whole": {
+    "swing_pct": 19.213,
+    "swing_1s_median": 12.934,
+    "max_step_pct": 3.072,
+    "energy_above_5hz": 0.0013
+   }
+  },
+  "inmem_embers_off": {
+   "surfaces": {
+    "left_doorframe_wall": {
+     "swing_pct_median": 36.25,
+     "swing_pct_min": 23.11,
+     "swing_pct_max": 53.92
+    },
+    "left_stone_wall": {
+     "swing_pct_median": 13.65,
+     "swing_pct_min": 11.6,
+     "swing_pct_max": 22.09
+    },
+    "right_door_wall": {
+     "swing_pct_median": 36.69,
+     "swing_pct_min": 28.78,
+     "swing_pct_max": 41.77
+    },
+    "guard_face_l": {
+     "swing_pct_median": 28.0,
+     "swing_pct_min": 22.09,
+     "swing_pct_max": 45.72
+    },
+    "guard_face_r": {
+     "swing_pct_median": 23.92,
+     "swing_pct_min": 16.09,
+     "swing_pct_max": 27.8
+    },
+    "edward_face": {
+     "swing_pct_median": 32.21,
+     "swing_pct_min": 13.81,
+     "swing_pct_max": 45.72
+    },
+    "guard_l_chainmail": {
+     "swing_pct_median": 11.76,
+     "swing_pct_min": 8.24,
+     "swing_pct_max": 20.39
+    },
+    "guard_r_chainmail": {
+     "swing_pct_median": 12.01,
+     "swing_pct_min": 6.77,
+     "swing_pct_max": 13.12
+    },
+    "stairs_left_of_fore_torch": {
+     "swing_pct_median": 24.54,
+     "swing_pct_min": 14.53,
+     "swing_pct_max": 36.42
+    },
+    "stairs_right_of_fore_torch": {
+     "swing_pct_median": 21.8,
+     "swing_pct_min": 12.74,
+     "swing_pct_max": 31.6
+    },
+    "fore_soldier_chainmail": {
+     "swing_pct_median": 12.6,
+     "swing_pct_min": 8.46,
+     "swing_pct_max": 18.34
+    },
+    "guard_l_coif_chainmail": {
+     "swing_pct_median": 19.93,
+     "swing_pct_min": 15.26,
+     "swing_pct_max": 34.47
+    },
+    "guard_r_coif_chainmail": {
+     "swing_pct_median": 17.67,
+     "swing_pct_min": 11.35,
+     "swing_pct_max": 22.39
+    },
+    "back_guard_r_face_mail": {
+     "swing_pct_median": 23.09,
+     "swing_pct_min": 17.21,
+     "swing_pct_max": 28.08
+    },
+    "torch_holder_l_face": {
+     "swing_pct_median": 24.51,
+     "swing_pct_min": 20.51,
+     "swing_pct_max": 42.5
+    }
+   },
+   "whole": {
+    "swing_pct": 19.226,
+    "swing_1s_median": 12.946,
+    "max_step_pct": 3.078,
+    "energy_above_5hz": 0.0013
+   }
+  },
+  "decoded_master": {
+   "frames": 126,
+   "surfaces": {
+    "left_doorframe_wall": {
+     "swing_pct_median": 38.74,
+     "swing_pct_min": 25.19,
+     "swing_pct_max": 57.97
+    },
+    "left_stone_wall": {
+     "swing_pct_median": 13.61,
+     "swing_pct_min": 12.65,
+     "swing_pct_max": 22.71
+    },
+    "right_door_wall": {
+     "swing_pct_median": 38.38,
+     "swing_pct_min": 29.28,
+     "swing_pct_max": 46.78
+    },
+    "guard_face_l": {
+     "swing_pct_median": 26.38,
+     "swing_pct_min": 22.18,
+     "swing_pct_max": 46.37
+    },
+    "guard_face_r": {
+     "swing_pct_median": 23.58,
+     "swing_pct_min": 15.92,
+     "swing_pct_max": 27.25
+    },
+    "edward_face": {
+     "swing_pct_median": 31.43,
+     "swing_pct_min": 12.47,
+     "swing_pct_max": 45.76
+    },
+    "guard_l_chainmail": {
+     "swing_pct_median": 13.3,
+     "swing_pct_min": 8.41,
+     "swing_pct_max": 22.39
+    },
+    "guard_r_chainmail": {
+     "swing_pct_median": 13.14,
+     "swing_pct_min": 7.37,
+     "swing_pct_max": 14.2
+    },
+    "stairs_left_of_fore_torch": {
+     "swing_pct_median": 27.09,
+     "swing_pct_min": 16.62,
+     "swing_pct_max": 42.05
+    },
+    "stairs_right_of_fore_torch": {
+     "swing_pct_median": 28.03,
+     "swing_pct_min": 14.93,
+     "swing_pct_max": 39.53
+    },
+    "fore_soldier_chainmail": {
+     "swing_pct_median": 12.67,
+     "swing_pct_min": 7.87,
+     "swing_pct_max": 17.66
+    },
+    "guard_l_coif_chainmail": {
+     "swing_pct_median": 19.98,
+     "swing_pct_min": 16.3,
+     "swing_pct_max": 34.49
+    },
+    "guard_r_coif_chainmail": {
+     "swing_pct_median": 17.45,
+     "swing_pct_min": 13.08,
+     "swing_pct_max": 22.72
+    },
+    "back_guard_r_face_mail": {
+     "swing_pct_median": 22.91,
+     "swing_pct_min": 20.88,
+     "swing_pct_max": 27.23
+    },
+    "torch_holder_l_face": {
+     "swing_pct_median": 22.97,
+     "swing_pct_min": 19.95,
+     "swing_pct_max": 42.25
+    }
+   },
+   "whole_excl_captions": {
+    "swing_pct": 20.116,
+    "swing_1s_median": 14.189,
+    "max_step_pct": 3.104,
+    "energy_above_5hz": 0.0072
+   }
+  }
+ },
+ "b10": {
+  "slot": "S10",
+  "frames": 102,
+  "f0": 954,
+  "inmem_as_shipped": {
+   "surfaces": {
+    "wall_above_cresset": {
+     "swing_pct_median": 40.37,
+     "swing_pct_min": 27.86,
+     "swing_pct_max": 47.51
+    },
+    "pillar_left_of_cresset": {
+     "swing_pct_median": 22.06,
+     "swing_pct_min": 15.65,
+     "swing_pct_max": 24.35
+    },
+    "wall_right_of_cresset": {
+     "swing_pct_median": 44.38,
+     "swing_pct_min": 29.83,
+     "swing_pct_max": 53.67
+    },
+    "pillar_below_cresset": {
+     "swing_pct_median": 33.14,
+     "swing_pct_min": 24.04,
+     "swing_pct_max": 36.67
+    },
+    "gaoler_face": {
+     "swing_pct_median": 36.64,
+     "swing_pct_min": 26.64,
+     "swing_pct_max": 40.93
+    },
+    "gaoler_chainmail": {
+     "swing_pct_median": 18.1,
+     "swing_pct_min": 12.99,
+     "swing_pct_max": 19.07
+    },
+    "kent_face": {
+     "swing_pct_median": 26.04,
+     "swing_pct_min": 18.53,
+     "swing_pct_max": 28.12
+    },
+    "gaoler_shoulder_chainmail": {
+     "swing_pct_median": 27.31,
+     "swing_pct_min": 20.01,
+     "swing_pct_max": 29.76
+    }
+   },
+   "whole": {
+    "swing_pct": 14.971,
+    "swing_1s_median": 12.722,
+    "max_step_pct": 1.766,
+    "energy_above_5hz": 0.0001
+   }
+  },
+  "inmem_embers_off": {
+   "surfaces": {
+    "wall_above_cresset": {
+     "swing_pct_median": 40.38,
+     "swing_pct_min": 27.86,
+     "swing_pct_max": 47.51
+    },
+    "pillar_left_of_cresset": {
+     "swing_pct_median": 22.06,
+     "swing_pct_min": 15.65,
+     "swing_pct_max": 24.35
+    },
+    "wall_right_of_cresset": {
+     "swing_pct_median": 44.38,
+     "swing_pct_min": 29.83,
+     "swing_pct_max": 53.67
+    },
+    "pillar_below_cresset": {
+     "swing_pct_median": 33.14,
+     "swing_pct_min": 24.04,
+     "swing_pct_max": 36.67
+    },
+    "gaoler_face": {
+     "swing_pct_median": 36.64,
+     "swing_pct_min": 26.64,
+     "swing_pct_max": 40.93
+    },
+    "gaoler_chainmail": {
+     "swing_pct_median": 18.1,
+     "swing_pct_min": 12.99,
+     "swing_pct_max": 19.07
+    },
+    "kent_face": {
+     "swing_pct_median": 26.04,
+     "swing_pct_min": 18.53,
+     "swing_pct_max": 28.12
+    },
+    "gaoler_shoulder_chainmail": {
+     "swing_pct_median": 27.31,
+     "swing_pct_min": 20.01,
+     "swing_pct_max": 29.76
+    }
+   },
+   "whole": {
+    "swing_pct": 14.977,
+    "swing_1s_median": 12.728,
+    "max_step_pct": 1.769,
+    "energy_above_5hz": 0.0001
+   }
+  },
+  "decoded_master": {
+   "frames": 102,
+   "surfaces": {
+    "wall_above_cresset": {
+     "swing_pct_median": 41.79,
+     "swing_pct_min": 31.24,
+     "swing_pct_max": 50.49
+    },
+    "pillar_left_of_cresset": {
+     "swing_pct_median": 22.68,
+     "swing_pct_min": 16.63,
+     "swing_pct_max": 23.92
+    },
+    "wall_right_of_cresset": {
+     "swing_pct_median": 46.33,
+     "swing_pct_min": 30.07,
+     "swing_pct_max": 54.85
+    },
+    "pillar_below_cresset": {
+     "swing_pct_median": 33.19,
+     "swing_pct_min": 23.95,
+     "swing_pct_max": 37.12
+    },
+    "gaoler_face": {
+     "swing_pct_median": 38.33,
+     "swing_pct_min": 28.39,
+     "swing_pct_max": 40.49
+    },
+    "gaoler_chainmail": {
+     "swing_pct_median": 18.43,
+     "swing_pct_min": 13.1,
+     "swing_pct_max": 21.0
+    },
+    "kent_face": {
+     "swing_pct_median": 25.3,
+     "swing_pct_min": 19.08,
+     "swing_pct_max": 28.03
+    },
+    "gaoler_shoulder_chainmail": {
+     "swing_pct_median": 29.2,
+     "swing_pct_min": 21.27,
+     "swing_pct_max": 31.11
+    }
+   },
+   "whole_excl_captions": {
+    "swing_pct": 16.525,
+    "swing_1s_median": 13.553,
+    "max_step_pct": 2.352,
+    "energy_above_5hz": 0.0046
+   }
+  }
+ }
+}

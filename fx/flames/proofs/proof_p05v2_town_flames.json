@@ -1,0 +1,23 @@
+{
+ "frames": 15,
+ "changed_px_outside_allowed": 0,
+ "max_diff_outside_allowed": 0,
+ "flames_only_changed_px_outside_flame_zone": 0,
+ "max_diff_in_protect": 0,
+ "protect_px": 757770,
+ "guards_max_diff": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "allowed_fraction": 0.3275,
+ "flame_zone_fraction": 0.0697,
+ "components": 28,
+ "changed_px_inside_allowed_max": 458711,
+ "pass": true,
+ "config": "configs/p05v2_town_flames.json",
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "seconds": 7.0,
+ "times_step": 0.5
+}

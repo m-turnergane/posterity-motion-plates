@@ -1,0 +1,9 @@
+{
+ "note": "dust_v1 reel: drifting motes/haze in painted light shafts + ground dust. Strongest first, hard cuts, 6 s each. (1) Tamerlane tomb shaft seq1a, push 1.00->1.06; (2) Chan Chan emptied citadel ground dust, fixed framing; (3) Tamerlane oculus stair shaft seq6, push 1.00->1.06. Matte-only additive/alpha dust; nothing displaces; protect = everything outside the dust zones (0 px changed).",
+ "size": "1080x1920", "crf": 25,
+ "shots": [
+  {"config": "configs/t1a_tomb_shaft_v1c.json", "seconds": 6.0},
+  {"config": "configs/c6_citadel_ground_dust_v1b.json", "seconds": 6.0},
+  {"config": "configs/t6_oculus_stair_shaft_v1c.json", "seconds": 6.0}
+ ]
+}

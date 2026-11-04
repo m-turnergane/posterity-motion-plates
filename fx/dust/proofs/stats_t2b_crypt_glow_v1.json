@@ -1,0 +1,34 @@
+{
+ "name": "t2b_crypt_glow_v1",
+ "seconds": 6.0,
+ "phone": "360x640",
+ "push": [
+  1.0,
+  1.06
+ ],
+ "whole_frame": {
+  "swing_1s_median_pct": 0.912,
+  "swing_1s_max_pct": 1.079,
+  "max_step_pct": 0.0425,
+  "energy_above_5hz": 0.0133
+ },
+ "dust_zone": {
+  "swing_1s_median_pct": 0.631,
+  "swing_1s_max_pct": 0.694,
+  "max_step_pct": 0.0334,
+  "energy_above_5hz": 0.0144
+ },
+ "read_px_1s_range_ge6": 832,
+ "read_px_1s_range_ge12": 422,
+ "mean_abs_lift_in_zone": 0.318,
+ "pop_px_max_per_frame_jump_ge12": 5,
+ "pop_px_max_per_frame_jump_ge8": 15,
+ "outside_zone_px_changed_ge2": 0,
+ "protect_px_changed_ge2": 0,
+ "dust_energy_series": {
+  "swing_1s_median_pct": 1.289,
+  "swing_1s_max_pct": 2.382,
+  "max_step_pct": 0.1316,
+  "energy_above_5hz": 0.0003
+ }
+}

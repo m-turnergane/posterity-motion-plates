@@ -1,0 +1,42 @@
+{
+ "name": "p10_escape_drift_v1",
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "phone": [
+    360,
+    640
+   ],
+   "whole_frame": {
+    "swing_1s_median_pct": 0.059,
+    "swing_1s_max_pct": 0.098,
+    "max_step_pct": 0.0086,
+    "energy_above_5hz": 0.0129
+   },
+   "layers": {
+    "far": {
+     "travel_phone_px": 8.12,
+     "travel_first_1s_phone_px": 1.21,
+     "speed_phone_px_s_max": 1.44,
+     "measured_travel_px": 6.27,
+     "jitter_rms_px": 0.019,
+     "vel_energy_above_5hz": 0.0135
+    },
+    "near": {
+     "travel_phone_px": 10.22,
+     "travel_first_1s_phone_px": 1.52,
+     "speed_phone_px_s_max": 1.81,
+     "measured_travel_px": 6.32,
+     "jitter_rms_px": 0.0147,
+     "vel_energy_above_5hz": 0.0136
+    }
+   },
+   "relative_parallax_phone_px": 13.13,
+   "relative_parallax_first_1s_phone_px": 1.95,
+   "relative_parallax_pct_of_width": 3.65
+  }
+ }
+}

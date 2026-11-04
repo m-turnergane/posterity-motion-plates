@@ -1,0 +1,324 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p01_crisis_terrace_v2_OWNER.png",
+ "note": "Ugarit p01 v2: distant city burning on the coast. The painted plumes billow and rise inside a smoke matte (local-darkness key); sea, horizon, coast city and the man are protected.",
+ "seed": 1,
+ "preroll": 8.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "protect": [
+  [
+   [
+    0,
+    603
+   ],
+   [
+    430,
+    605
+   ],
+   [
+    560,
+    621
+   ],
+   [
+    680,
+    631
+   ],
+   [
+    800,
+    641
+   ],
+   [
+    880,
+    662
+   ],
+   [
+    820,
+    692
+   ],
+   [
+    0,
+    702
+   ]
+  ],
+  [
+   [
+    780,
+    730
+   ],
+   [
+    1080,
+    730
+   ],
+   [
+    1080,
+    1920
+   ],
+   [
+    780,
+    1920
+   ]
+  ]
+ ],
+ "protect_feather": 24,
+ "emitters": [
+  {
+   "color_dark": [
+    38,
+    28,
+    36
+   ],
+   "color_light": [
+    84,
+    64,
+    74
+   ],
+   "opacity": 0.6,
+   "rise": 14,
+   "lo": 45,
+   "hi": 3,
+   "swirl": 6,
+   "breakup": 0.5,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "res": 1.0,
+   "glow": {
+    "color": [
+     255,
+     120,
+     50
+    ],
+    "strength": 0.5,
+    "reach": 0.12,
+    "flicker": 0.3,
+    "patch": 0.4
+   },
+   "name": "far_left_fire",
+   "type": "torch",
+   "src": [
+    456,
+    598
+   ],
+   "w0": 3,
+   "w1": 40,
+   "height": 130,
+   "lean": 65,
+   "seed": 7
+  }
+ ],
+ "billows": [
+  {
+   "name": "city_plumes",
+   "region": [
+    [
+     [
+      380,
+      594
+     ],
+     [
+      470,
+      500
+     ],
+     [
+      640,
+      420
+     ],
+     [
+      820,
+      330
+     ],
+     [
+      960,
+      200
+     ],
+     [
+      1080,
+      160
+     ],
+     [
+      1080,
+      594
+     ]
+    ]
+   ],
+   "luma": [
+    0.0,
+    0.42
+   ],
+   "sat_max": 0.5,
+   "soft": 0.06,
+   "dark_rel": [
+    0.01,
+    0.06
+   ],
+   "rel_sigma": 40,
+   "grow": 5,
+   "feather": 5,
+   "edge_feather": 12,
+   "amp": 9,
+   "rise": 12,
+   "period": 2.6,
+   "scale": 70,
+   "seed": 1
+  }
+ ],
+ "guards": {
+  "horizon_sea": [
+   [
+    0,
+    606
+   ],
+   [
+    420,
+    606
+   ],
+   [
+    420,
+    640
+   ],
+   [
+    0,
+    640
+   ]
+  ],
+  "man": [
+   [
+    780,
+    740
+   ],
+   [
+    1080,
+    740
+   ],
+   [
+    1080,
+    1100
+   ],
+   [
+    780,
+    1100
+   ]
+  ]
+ },
+ "fires": {
+  "ymin": 580,
+  "ymax": 640,
+  "min_area": 40,
+  "split": 60,
+  "wind": 0.5,
+  "ember": {
+   "color_dark": [
+    38,
+    28,
+    36
+   ],
+   "color_light": [
+    84,
+    64,
+    74
+   ],
+   "opacity": 0.6,
+   "rise": 14,
+   "lo": 45,
+   "hi": 3,
+   "swirl": 6,
+   "breakup": 0.5,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "res": 1.0,
+   "glow": {
+    "color": [
+     255,
+     120,
+     50
+    ],
+    "strength": 0.5,
+    "reach": 0.12,
+    "flicker": 0.3,
+    "patch": 0.4
+   }
+  },
+  "torch": {
+   "color_dark": [
+    38,
+    28,
+    36
+   ],
+   "color_light": [
+    84,
+    64,
+    74
+   ],
+   "opacity": 0.6,
+   "rise": 14,
+   "lo": 45,
+   "hi": 3,
+   "swirl": 6,
+   "breakup": 0.5,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "res": 1.0,
+   "glow": {
+    "color": [
+     255,
+     120,
+     50
+    ],
+    "strength": 0.5,
+    "reach": 0.12,
+    "flicker": 0.3,
+    "patch": 0.4
+   }
+  },
+  "column": {
+   "color_dark": [
+    38,
+    28,
+    36
+   ],
+   "color_light": [
+    84,
+    64,
+    74
+   ],
+   "opacity": 0.6,
+   "rise": 14,
+   "lo": 45,
+   "hi": 3,
+   "swirl": 6,
+   "breakup": 0.5,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "res": 1.0,
+   "glow": {
+    "color": [
+     255,
+     120,
+     50
+    ],
+    "strength": 0.5,
+    "reach": 0.12,
+    "flicker": 0.3,
+    "patch": 0.4
+   }
+  },
+  "r_min": 150,
+  "rb_min": 80,
+  "drop": [
+   [
+    218,
+    595
+   ]
+  ]
+ },
+ "flame_keepout": 0.85
+}

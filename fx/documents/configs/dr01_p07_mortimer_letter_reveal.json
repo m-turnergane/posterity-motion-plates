@@ -1,0 +1,159 @@
+{
+ "name": "dr01_p07_mortimer_letter_reveal",
+ "document": "DOC-K1",
+ "treatment": "reveal",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/p07_mortimer_reads_letter_OWNER.png",
+ "seconds": 4.5,
+ "note": "Kent's message (DOC-K1) in Mortimer's hands: candle-light sweeps across the sealed letter from the candle side. Flat: no depth on a quiet document shot.",
+ "camera": {
+  "mode": "flat",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "crop_zoom": 1.0,
+  "anchor": [
+   600,
+   980
+  ]
+ },
+ "doc_poly": [
+  [
+   482,
+   858
+  ],
+  [
+   800,
+   900
+  ],
+  [
+   745,
+   1000
+  ],
+  [
+   700,
+   1110
+  ],
+  [
+   420,
+   1110
+  ],
+  [
+   400,
+   1000
+  ]
+ ],
+ "protect": {
+  "face_mortimer": [
+   [
+    240,
+    370
+   ],
+   [
+    600,
+    370
+   ],
+   [
+    600,
+    790
+   ],
+   [
+    240,
+    790
+   ]
+  ],
+  "face_guard": [
+   [
+    730,
+    320
+   ],
+   [
+    900,
+    320
+   ],
+   [
+    900,
+    570
+   ],
+   [
+    730,
+    570
+   ]
+  ]
+ },
+ "smoke": {
+  "seed": 7,
+  "preroll": 8.0,
+  "flame_keepout": 0.85,
+  "protect": [
+   [
+    [
+     240,
+     370
+    ],
+    [
+     600,
+     370
+    ],
+    [
+     600,
+     790
+    ],
+    [
+     240,
+     790
+    ]
+   ],
+   [
+    [
+     730,
+     320
+    ],
+    [
+     900,
+     320
+    ],
+    [
+     900,
+     570
+    ],
+    [
+     730,
+     570
+    ]
+   ]
+  ],
+  "emitters": [
+   {
+    "name": "wick",
+    "type": "candle",
+    "src": [
+     66,
+     814
+    ],
+    "height": 230,
+    "lean": 8,
+    "seed": 1,
+    "opacity": 0.32
+   }
+  ]
+ },
+ "reveal": {
+  "t0": 0.1,
+  "dur": 2.0,
+  "g0": 0.45,
+  "soft": 0.35,
+  "glint": 0.1,
+  "glint_w": 0.14,
+  "feather": 5.0,
+  "axis": [
+   1.0,
+   0.12
+  ],
+  "tint": [
+   1.0,
+   0.94,
+   0.82
+  ]
+ }
+}

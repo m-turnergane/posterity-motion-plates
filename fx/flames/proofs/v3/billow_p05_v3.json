@@ -1,0 +1,11 @@
+{
+ "matte_phone_px": 45277,
+ "matte_frac_of_frame": 0.1965,
+ "frac_matte_px_ge6_per_1s_median": 0.891,
+ "frac_min": 0.885,
+ "flow_1s_median_px": 2.56,
+ "flow_1s_p90_px": 5.33,
+ "_config": [
+  "configs/p05v2_sky_billow_v3.json"
+ ]
+}

@@ -1,0 +1,561 @@
+{
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b13_nottingham_seizure_OWNER.png",
+ "note": "flames_v2 Edward II b13: three torches with v2 lick (phone-floored), size-scaled fine sparks, spill pulled in (local). Faces protected (0 px). | v2b: lick floor 3.6 phone px (lick 0.26 where >=0.18), lick_lx_min 60, dim-warm core gaps | v3: phone-readable light spill (per-pixel gain only, Gaussian falloff, own clock re-weighted to 1.3/2.9 Hz, through face protects as light; protects still block all motion)",
+ "seed": 13,
+ "preroll": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.5,
+  0.45
+ ],
+ "protect_feather": 8,
+ "protect": [
+  [
+   [
+    430,
+    290
+   ],
+   [
+    590,
+    290
+   ],
+   [
+    590,
+    480
+   ],
+   [
+    430,
+    480
+   ]
+  ],
+  [
+   [
+    610,
+    290
+   ],
+   [
+    730,
+    290
+   ],
+   [
+    730,
+    430
+   ],
+   [
+    610,
+    430
+   ]
+  ],
+  [
+   [
+    220,
+    250
+   ],
+   [
+    340,
+    250
+   ],
+   [
+    340,
+    390
+   ],
+   [
+    220,
+    390
+   ]
+  ],
+  [
+   [
+    150,
+    280
+   ],
+   [
+    220,
+    280
+   ],
+   [
+    220,
+    380
+   ],
+   [
+    150,
+    380
+   ]
+  ]
+ ],
+ "flames": [
+  {
+   "name": "torch_left",
+   "region": [
+    [
+     [
+      180,
+      110
+     ],
+     [
+      300,
+      110
+     ],
+     [
+      300,
+      262
+     ],
+     [
+      180,
+      262
+     ]
+    ]
+   ],
+   "seed": 1,
+   "spill": {
+    "strength": 0.6,
+    "radius_k": 0.8,
+    "radius_max": 120,
+    "falloff": 2.0,
+    "breath": 0.1,
+    "weights": [
+     0.15,
+     0.6,
+     0.35
+    ],
+    "through_protect": true,
+    "lit": 0.0,
+    "max_gain": 0.6,
+    "skip_flame": true,
+    "amp": 0.2,
+    "radius_min": 120
+   },
+   "tongue": 0.16,
+   "shear_max": 0.75,
+   "lick_min_phone": 3.6,
+   "lick": 0.26
+  },
+  {
+   "name": "torch_right",
+   "region": [
+    [
+     [
+      735,
+      140
+     ],
+     [
+      835,
+      140
+     ],
+     [
+      835,
+      285
+     ],
+     [
+      735,
+      285
+     ]
+    ]
+   ],
+   "seed": 2,
+   "spill": {
+    "strength": 0.6,
+    "radius_k": 0.8,
+    "radius_max": 130,
+    "falloff": 2.0,
+    "breath": 0.1,
+    "weights": [
+     0.15,
+     0.6,
+     0.35
+    ],
+    "through_protect": true,
+    "lit": 0.0,
+    "max_gain": 0.6,
+    "skip_flame": true,
+    "amp": 0.33,
+    "radius_min": 130
+   },
+   "tongue": 0.16,
+   "shear_max": 0.75,
+   "lick_min_phone": 3.6,
+   "lick": 0.26
+  },
+  {
+   "name": "torch_fore",
+   "region": [
+    [
+     [
+      690,
+      975
+     ],
+     [
+      828,
+      975
+     ],
+     [
+      828,
+      1245
+     ],
+     [
+      690,
+      1245
+     ]
+    ]
+   ],
+   "seed": 3,
+   "tongue": 0.1,
+   "soften": 2.0,
+   "spill": {
+    "strength": 0.5,
+    "radius_k": 0.8,
+    "radius_max": 110,
+    "falloff": 2.0,
+    "breath": 0.1,
+    "weights": [
+     0.15,
+     0.6,
+     0.35
+    ],
+    "through_protect": true,
+    "lit": 0.0,
+    "max_gain": 0.6,
+    "skip_flame": true,
+    "amp": 0.11,
+    "radius_min": 80
+   },
+   "sparks": {
+    "rate": 4.0
+   },
+   "shear_max": 0.7,
+   "lick": 0.08,
+   "lick_min_phone": 3.6
+  }
+ ],
+ "guards": {
+  "edward_face": [
+   [
+    440,
+    300
+   ],
+   [
+    580,
+    300
+   ],
+   [
+    580,
+    470
+   ],
+   [
+    440,
+    470
+   ]
+  ],
+  "guard_face_r": [
+   [
+    620,
+    300
+   ],
+   [
+    720,
+    300
+   ],
+   [
+    720,
+    420
+   ],
+   [
+    620,
+    420
+   ]
+  ],
+  "guard_face_l": [
+   [
+    230,
+    260
+   ],
+   [
+    330,
+    260
+   ],
+   [
+    330,
+    380
+   ],
+   [
+    230,
+    380
+   ]
+  ]
+ },
+ "spill_surfaces": {
+  "left_doorframe_wall": [
+   [
+    95,
+    110
+   ],
+   [
+    175,
+    110
+   ],
+   [
+    175,
+    280
+   ],
+   [
+    95,
+    280
+   ]
+  ],
+  "left_stone_wall": [
+   [
+    0,
+    100
+   ],
+   [
+    90,
+    100
+   ],
+   [
+    90,
+    400
+   ],
+   [
+    0,
+    400
+   ]
+  ],
+  "right_door_wall": [
+   [
+    835,
+    120
+   ],
+   [
+    941,
+    120
+   ],
+   [
+    941,
+    360
+   ],
+   [
+    835,
+    360
+   ]
+  ],
+  "guard_face_l": [
+   [
+    240,
+    270
+   ],
+   [
+    320,
+    270
+   ],
+   [
+    320,
+    370
+   ],
+   [
+    240,
+    370
+   ]
+  ],
+  "guard_face_r": [
+   [
+    630,
+    310
+   ],
+   [
+    710,
+    310
+   ],
+   [
+    710,
+    410
+   ],
+   [
+    630,
+    410
+   ]
+  ],
+  "edward_face": [
+   [
+    460,
+    320
+   ],
+   [
+    560,
+    320
+   ],
+   [
+    560,
+    440
+   ],
+   [
+    460,
+    440
+   ]
+  ],
+  "guard_l_chainmail": [
+   [
+    230,
+    400
+   ],
+   [
+    330,
+    400
+   ],
+   [
+    330,
+    520
+   ],
+   [
+    230,
+    520
+   ]
+  ],
+  "guard_r_chainmail": [
+   [
+    620,
+    440
+   ],
+   [
+    760,
+    440
+   ],
+   [
+    760,
+    620
+   ],
+   [
+    620,
+    620
+   ]
+  ],
+  "stairs_left_of_fore_torch": [
+   [
+    580,
+    1000
+   ],
+   [
+    690,
+    1000
+   ],
+   [
+    690,
+    1300
+   ],
+   [
+    580,
+    1300
+   ]
+  ],
+  "stairs_right_of_fore_torch": [
+   [
+    840,
+    1050
+   ],
+   [
+    941,
+    1050
+   ],
+   [
+    941,
+    1350
+   ],
+   [
+    840,
+    1350
+   ]
+  ],
+  "fore_soldier_chainmail": [
+   [
+    420,
+    920
+   ],
+   [
+    550,
+    920
+   ],
+   [
+    550,
+    1220
+   ],
+   [
+    420,
+    1220
+   ]
+  ],
+  "guard_l_coif_chainmail": [
+   [
+    285,
+    330
+   ],
+   [
+    355,
+    330
+   ],
+   [
+    355,
+    400
+   ],
+   [
+    285,
+    400
+   ]
+  ],
+  "guard_r_coif_chainmail": [
+   [
+    650,
+    360
+   ],
+   [
+    730,
+    360
+   ],
+   [
+    730,
+    425
+   ],
+   [
+    650,
+    425
+   ]
+  ],
+  "back_guard_r_face_mail": [
+   [
+    730,
+    300
+   ],
+   [
+    790,
+    300
+   ],
+   [
+    790,
+    400
+   ],
+   [
+    730,
+    400
+   ]
+  ],
+  "torch_holder_l_face": [
+   [
+    160,
+    280
+   ],
+   [
+    212,
+    280
+   ],
+   [
+    212,
+    350
+   ],
+   [
+    160,
+    350
+   ]
+  ]
+ }
+}

@@ -1,0 +1,534 @@
+[
+ {
+  "name": "town#0",
+  "hc_px": 24,
+  "hc_phone_px": 8.0,
+  "bbox": [
+   441,
+   489,
+   480,
+   544
+  ],
+  "lick_px_median": 1.25,
+  "lick_px_min": 0.92,
+  "best_column_lick_px_median": 1.56,
+  "change_frac_median": 0.276,
+  "change_frac_min": 0.245,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#1",
+  "hc_px": 21,
+  "hc_phone_px": 7.0,
+  "bbox": [
+   268,
+   553,
+   342,
+   599
+  ],
+  "lick_px_median": 1.02,
+  "lick_px_min": 0.54,
+  "best_column_lick_px_median": 1.19,
+  "change_frac_median": 0.144,
+  "change_frac_min": 0.1,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#2",
+  "hc_px": 16,
+  "hc_phone_px": 5.3,
+  "bbox": [
+   404,
+   599,
+   460,
+   641
+  ],
+  "lick_px_median": 1.29,
+  "lick_px_min": 0.7,
+  "best_column_lick_px_median": 1.5,
+  "change_frac_median": 0.184,
+  "change_frac_min": 0.149,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#3",
+  "hc_px": 41,
+  "hc_phone_px": 13.7,
+  "bbox": [
+   32,
+   657,
+   106,
+   738
+  ],
+  "lick_px_median": 2.04,
+  "lick_px_min": 1.36,
+  "best_column_lick_px_median": 3.94,
+  "change_frac_median": 0.323,
+  "change_frac_min": 0.276,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#4",
+  "hc_px": 159,
+  "hc_phone_px": 53.0,
+  "bbox": [
+   12,
+   683,
+   280,
+   939
+  ],
+  "lick_px_median": 6.21,
+  "lick_px_min": 3.8,
+  "best_column_lick_px_median": 11.68,
+  "change_frac_median": 0.283,
+  "change_frac_min": 0.241,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#5",
+  "hc_px": 57,
+  "hc_phone_px": 19.0,
+  "bbox": [
+   334,
+   797,
+   435,
+   901
+  ],
+  "lick_px_median": 3.48,
+  "lick_px_min": 2.37,
+  "best_column_lick_px_median": 5.34,
+  "change_frac_median": 0.306,
+  "change_frac_min": 0.261,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#6",
+  "hc_px": 41,
+  "hc_phone_px": 13.7,
+  "bbox": [
+   702,
+   825,
+   843,
+   905
+  ],
+  "lick_px_median": 1.66,
+  "lick_px_min": 0.93,
+  "best_column_lick_px_median": 3.85,
+  "change_frac_median": 0.221,
+  "change_frac_min": 0.181,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#7",
+  "hc_px": 55,
+  "hc_phone_px": 18.3,
+  "bbox": [
+   448,
+   846,
+   560,
+   948
+  ],
+  "lick_px_median": 4.22,
+  "lick_px_min": 2.24,
+  "best_column_lick_px_median": 6.97,
+  "change_frac_median": 0.301,
+  "change_frac_min": 0.261,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#8",
+  "hc_px": 76,
+  "hc_phone_px": 25.3,
+  "bbox": [
+   328,
+   860,
+   416,
+   993
+  ],
+  "lick_px_median": 3.23,
+  "lick_px_min": 2.17,
+  "best_column_lick_px_median": 6.21,
+  "change_frac_median": 0.269,
+  "change_frac_min": 0.244,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#9",
+  "hc_px": 34,
+  "hc_phone_px": 11.3,
+  "bbox": [
+   63,
+   897,
+   130,
+   962
+  ],
+  "lick_px_median": 2.47,
+  "lick_px_min": 1.48,
+  "best_column_lick_px_median": 3.21,
+  "change_frac_median": 0.287,
+  "change_frac_min": 0.222,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#10",
+  "hc_px": 16,
+  "hc_phone_px": 5.3,
+  "bbox": [
+   164,
+   921,
+   203,
+   959
+  ],
+  "lick_px_median": 1.19,
+  "lick_px_min": 0.81,
+  "best_column_lick_px_median": 1.66,
+  "change_frac_median": 0.217,
+  "change_frac_min": 0.171,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#11",
+  "hc_px": 15,
+  "hc_phone_px": 5.0,
+  "bbox": [
+   278,
+   921,
+   331,
+   962
+  ],
+  "lick_px_median": 1.07,
+  "lick_px_min": 0.74,
+  "best_column_lick_px_median": 1.39,
+  "change_frac_median": 0.264,
+  "change_frac_min": 0.202,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#12",
+  "hc_px": 55,
+  "hc_phone_px": 18.3,
+  "bbox": [
+   564,
+   908,
+   660,
+   1008
+  ],
+  "lick_px_median": 2.61,
+  "lick_px_min": 1.88,
+  "best_column_lick_px_median": 6.37,
+  "change_frac_median": 0.365,
+  "change_frac_min": 0.296,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#13",
+  "hc_px": 12,
+  "hc_phone_px": 4.0,
+  "bbox": [
+   502,
+   938,
+   524,
+   975
+  ],
+  "lick_px_median": 0.7,
+  "lick_px_min": 0.37,
+  "best_column_lick_px_median": 0.76,
+  "change_frac_median": 0.214,
+  "change_frac_min": 0.119,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#14",
+  "hc_px": 44,
+  "hc_phone_px": 14.7,
+  "bbox": [
+   441,
+   929,
+   502,
+   1010
+  ],
+  "lick_px_median": 1.58,
+  "lick_px_min": 0.9,
+  "best_column_lick_px_median": 2.59,
+  "change_frac_median": 0.23,
+  "change_frac_min": 0.182,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#15",
+  "hc_px": 18,
+  "hc_phone_px": 6.0,
+  "bbox": [
+   698,
+   949,
+   729,
+   995
+  ],
+  "lick_px_median": 0.94,
+  "lick_px_min": 0.45,
+  "best_column_lick_px_median": 1.48,
+  "change_frac_median": 0.186,
+  "change_frac_min": 0.137,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#16",
+  "hc_px": 54,
+  "hc_phone_px": 18.0,
+  "bbox": [
+   293,
+   965,
+   380,
+   1066
+  ],
+  "lick_px_median": 2.89,
+  "lick_px_min": 1.73,
+  "best_column_lick_px_median": 5.51,
+  "change_frac_median": 0.341,
+  "change_frac_min": 0.313,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#17",
+  "hc_px": 19,
+  "hc_phone_px": 6.3,
+  "bbox": [
+   812,
+   1033,
+   879,
+   1080
+  ],
+  "lick_px_median": 1.8,
+  "lick_px_min": 1.22,
+  "best_column_lick_px_median": 2.54,
+  "change_frac_median": 0.263,
+  "change_frac_min": 0.246,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#18",
+  "hc_px": 39,
+  "hc_phone_px": 13.0,
+  "bbox": [
+   361,
+   1031,
+   462,
+   1108
+  ],
+  "lick_px_median": 2.57,
+  "lick_px_min": 1.5,
+  "best_column_lick_px_median": 3.8,
+  "change_frac_median": 0.329,
+  "change_frac_min": 0.289,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#19",
+  "hc_px": 13,
+  "hc_phone_px": 4.3,
+  "bbox": [
+   684,
+   1049,
+   758,
+   1088
+  ],
+  "lick_px_median": 0.43,
+  "lick_px_min": 0.32,
+  "best_column_lick_px_median": 1.24,
+  "change_frac_median": 0.148,
+  "change_frac_min": 0.114,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#20",
+  "hc_px": 43,
+  "hc_phone_px": 14.3,
+  "bbox": [
+   49,
+   1043,
+   136,
+   1127
+  ],
+  "lick_px_median": 2.49,
+  "lick_px_min": 1.67,
+  "best_column_lick_px_median": 3.91,
+  "change_frac_median": 0.33,
+  "change_frac_min": 0.301,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#21",
+  "hc_px": 163,
+  "hc_phone_px": 54.3,
+  "bbox": [
+   882,
+   1020,
+   1071,
+   1286
+  ],
+  "lick_px_median": 7.17,
+  "lick_px_min": 3.86,
+  "best_column_lick_px_median": 14.9,
+  "change_frac_median": 0.315,
+  "change_frac_min": 0.294,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#22",
+  "hc_px": 24,
+  "hc_phone_px": 8.0,
+  "bbox": [
+   729,
+   1100,
+   761,
+   1154
+  ],
+  "lick_px_median": 1.05,
+  "lick_px_min": 0.62,
+  "best_column_lick_px_median": 1.24,
+  "change_frac_median": 0.124,
+  "change_frac_min": 0.078,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#23",
+  "hc_px": 17,
+  "hc_phone_px": 5.7,
+  "bbox": [
+   856,
+   1237,
+   885,
+   1280
+  ],
+  "lick_px_median": 0.7,
+  "lick_px_min": 0.53,
+  "best_column_lick_px_median": 1.04,
+  "change_frac_median": 0.159,
+  "change_frac_min": 0.112,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#24",
+  "hc_px": 12,
+  "hc_phone_px": 4.0,
+  "bbox": [
+   963,
+   1251,
+   1002,
+   1287
+  ],
+  "lick_px_median": 0.55,
+  "lick_px_min": 0.28,
+  "best_column_lick_px_median": 0.97,
+  "change_frac_median": 0.107,
+  "change_frac_min": 0.057,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#25",
+  "hc_px": 23,
+  "hc_phone_px": 7.7,
+  "bbox": [
+   198,
+   1294,
+   237,
+   1348
+  ],
+  "lick_px_median": 1.7,
+  "lick_px_min": 1.36,
+  "best_column_lick_px_median": 2.77,
+  "change_frac_median": 0.16,
+  "change_frac_min": 0.129,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ },
+ {
+  "name": "town#26",
+  "hc_px": 17,
+  "hc_phone_px": 5.7,
+  "bbox": [
+   612,
+   1314,
+   641,
+   1357
+  ],
+  "lick_px_median": 1.07,
+  "lick_px_min": 0.65,
+  "best_column_lick_px_median": 1.85,
+  "change_frac_median": 0.17,
+  "change_frac_min": 0.123,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": false
+ },
+ {
+  "name": "town#27",
+  "hc_px": 83,
+  "hc_phone_px": 27.7,
+  "bbox": [
+   834,
+   1306,
+   979,
+   1450
+  ],
+  "lick_px_median": 4.21,
+  "lick_px_min": 1.9,
+  "best_column_lick_px_median": 6.89,
+  "change_frac_median": 0.311,
+  "change_frac_min": 0.254,
+  "planned_tip_ext_phone_px": 0.0,
+  "flicker_amp": 0.12,
+  "sparks": true
+ }
+]

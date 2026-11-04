@@ -1,0 +1,70 @@
+{
+ "one_warp_per_layer_frame_with_fx": {
+  "warps": 10,
+  "expected": 10,
+  "max_per_layer_frame": 1,
+  "locked_effect_camera_calls": 0,
+  "pass_": true
+ },
+ "identity_plate_fx": {
+  "max_abs_diff": 0.0,
+  "pass_": true
+ },
+ "fx_delta_rides_layer_matrix": {
+  "px": 1024,
+  "mean_abs_err": 0.0,
+  "pass_": true,
+  "note": "dust_v1 normally applies F3.push_frame itself; here it was trapped and called 0 times"
+ },
+ "dot_test": {
+  "dots": [
+   {
+    "layer": "far",
+    "plate_xy": [
+     261,
+     521
+    ],
+    "expected": [
+     162.172,
+     288.22
+    ],
+    "measured": [
+     162.17,
+     288.218
+    ],
+    "err_px": 0.0027,
+    "err_if_double_push_px": 13.2
+   },
+   {
+    "layer": "near",
+    "plate_xy": [
+     226,
+     655
+    ],
+    "expected": [
+     129.628,
+     369.353
+    ],
+    "measured": [
+     129.628,
+     369.355
+    ],
+    "err_px": 0.0025,
+    "err_if_double_push_px": 10.73
+   }
+  ],
+  "pass_": true
+ },
+ "uniform_scale_translate_only_all_180_frames": true,
+ "push_folded": {
+  "far": [
+   1.0,
+   1.024
+  ],
+  "near": [
+   1.0,
+   1.06
+  ]
+ },
+ "pass": true
+}

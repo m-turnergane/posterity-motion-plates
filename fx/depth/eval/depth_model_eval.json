@@ -1,0 +1,85 @@
+{
+ "model": {
+  "name": "Depth Anything V2 Small (onnx-community, fp32 ONNX, Apache-2.0)",
+  "runtime": "onnxruntime CPU (already in venv; no pip install)",
+  "weights_mb": 99.1,
+  "session_load_s": 0.37,
+  "infer_s_min": 0.89,
+  "net_in": [
+   518,
+   924
+  ],
+  "cache_kb_per_plate": 2886.1
+ },
+ "hand_poly": {
+  "config": "configs/b10_corfe_letter_drift_HANDPOLY_eval.json",
+  "build_s": 3.85,
+  "edges": {
+   "contour_px": 2812,
+   "grad_on_contour_rel_median": 1.81,
+   "share_on_strong_edge": 0.227
+  },
+  "soft_band_px": 5.32,
+  "disocclusion": [
+   {
+    "e": 0.0,
+    "revealed_px": 39332,
+    "revealed_frac": 0.01897,
+    "revealed_strip_mean_width_px": 17.8,
+    "holes_px": 0,
+    "hf_revealed": 2.958,
+    "hf_ring": 4.221,
+    "hf_ratio": 0.701
+   },
+   {
+    "e": 1.0,
+    "revealed_px": 19792,
+    "revealed_frac": 0.00954,
+    "revealed_strip_mean_width_px": 14.97,
+    "holes_px": 0,
+    "hf_revealed": 3.013,
+    "hf_ring": 4.894,
+    "hf_ratio": 0.616
+   }
+  ],
+  "rigidity_pass": true,
+  "near_own_frac": 0.6993,
+  "authoring": "2 traced polygons, 44 vertices, ~15 min incl. checking; still misses hair curls, horse ears, cloak fur, spear tips"
+ },
+ "da2_hybrid": {
+  "config": "configs/b10_corfe_letter_drift_v1.json",
+  "build_s": 4.14,
+  "edges": {
+   "contour_px": 3416,
+   "grad_on_contour_rel_median": 4.72,
+   "share_on_strong_edge": 0.79
+  },
+  "soft_band_px": 5.87,
+  "disocclusion": [
+   {
+    "e": 0.0,
+    "revealed_px": 45504,
+    "revealed_frac": 0.02194,
+    "revealed_strip_mean_width_px": 16.16,
+    "holes_px": 0,
+    "hf_revealed": 3.075,
+    "hf_ring": 5.683,
+    "hf_ratio": 0.541
+   },
+   {
+    "e": 1.0,
+    "revealed_px": 22341,
+    "revealed_frac": 0.01077,
+    "revealed_strip_mean_width_px": 14.62,
+    "holes_px": 0,
+    "hf_revealed": 3.118,
+    "hf_ring": 6.361,
+    "hf_ratio": 0.49
+   }
+  ],
+  "rigidity_pass": true,
+  "near_own_frac": 0.6833,
+  "authoring": "1 threshold (depth_min 0.32) + 1 floor-seam box, ~3 min; model run once per plate (cached)"
+ },
+ "label_disagreement_frac": 0.0212
+}

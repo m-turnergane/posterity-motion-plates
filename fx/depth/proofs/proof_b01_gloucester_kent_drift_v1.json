@@ -1,0 +1,208 @@
+{
+ "name": "b01_gloucester_kent_drift_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b01_gloucester_funeral_wide_kent_OWNER.png",
+ "plate_md5": "5cbbcb42e6b7c6691aa8b691fff045e8",
+ "info": {
+  "mode": "hybrid",
+  "depth": {
+   "cached": true
+  },
+  "reveal_px": 67,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.3272
+   }
+  ]
+ },
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "overscan": 1.05682,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.1202275345511736,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.286,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.120228,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       839.6,
+       1492.6
+      ],
+      "ratio": 1.286,
+      "ratio_x": 1.286,
+      "ratio_y": 1.286,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        261,
+        521
+       ],
+       "expected": [
+        324.344,
+        576.44
+       ],
+       "measured": [
+        324.344,
+        576.442
+       ],
+       "err_px": 0.0019,
+       "err_if_double_push_px": 26.4
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        226,
+        655
+       ],
+       "expected": [
+        259.257,
+        738.706
+       ],
+       "measured": [
+        259.255,
+        738.708
+       ],
+       "err_px": 0.0026,
+       "err_if_double_push_px": 21.45
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 16208,
+     "revealed_frac": 0.00782,
+     "revealed_strip_mean_width_px": 15.66,
+     "holes_px": 0,
+     "hf_revealed": 3.927,
+     "hf_ring": 4.199,
+     "hf_ratio": 0.935
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 15882,
+     "revealed_frac": 0.00766,
+     "revealed_strip_mean_width_px": 14.26,
+     "holes_px": 0,
+     "hf_revealed": 3.709,
+     "hf_ring": 4.299,
+     "hf_ratio": 0.863
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "kent_face",
+     "area_px": 1260,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 580
+      },
+      {
+       "frame": 90,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 660
+      },
+      {
+       "frame": 179,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 671
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "kent_hands",
+     "area_px": 1479,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 940
+      },
+      {
+       "frame": 90,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 1056
+      },
+      {
+       "frame": 179,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 1100
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 49.97,
+  "max_abs": 194.25,
+  "px_ge4": 5454,
+  "px_ge4_frac": 0.003466
+ },
+ "pass": true
+}

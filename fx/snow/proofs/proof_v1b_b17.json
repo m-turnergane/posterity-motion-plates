@@ -1,0 +1,304 @@
+{
+ "name": "b17_snow_v1b",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b17_secondhand_witnesses.png",
+ "plate_md5": "b48467066fb2d4832db9139bd0d3efb3",
+ "times": [
+  0.0,
+  0.9,
+  1.7,
+  2.5,
+  3.3,
+  3.97
+ ],
+ "info": {
+  "name": "b17_snow_v1b",
+  "plate": "/workspace/posterity/standalones/bathory/v2/plates/b17_secondhand_witnesses.png",
+  "out": [
+   1080,
+   1920
+  ],
+  "auto_faces": [
+   [
+    554.0,
+    676.3,
+    38.7,
+    55.4,
+    0.9
+   ],
+   [
+    605.3,
+    607.5,
+    22.4,
+    25.5,
+    0.9
+   ],
+   [
+    651.7,
+    620.5,
+    31.9,
+    42.1,
+    0.9
+   ],
+   [
+    681.2,
+    766.9,
+    58.5,
+    83.6,
+    0.9
+   ],
+   [
+    735.1,
+    870.2,
+    64.0,
+    96.7,
+    0.9
+   ],
+   [
+    344.6,
+    578.6,
+    19.7,
+    31.3,
+    0.9
+   ],
+   [
+    124.5,
+    600.1,
+    32.7,
+    37.6,
+    0.9
+   ],
+   [
+    850.9,
+    655.7,
+    34.2,
+    51.0,
+    0.9
+   ],
+   [
+    517.6,
+    672.8,
+    29.9,
+    59.5,
+    0.8
+   ],
+   [
+    519.5,
+    636.2,
+    32.2,
+    41.9,
+    0.8
+   ],
+   [
+    743.3,
+    638.2,
+    30.6,
+    52.6,
+    0.8
+   ],
+   [
+    281.1,
+    589.9,
+    24.4,
+    34.9,
+    0.6
+   ]
+  ],
+  "face_boxes": [
+   [
+    531,
+    626,
+    616,
+    759
+   ],
+   [
+    592,
+    585,
+    641,
+    646
+   ],
+   [
+    633,
+    583,
+    703,
+    684
+   ],
+   [
+    646,
+    692,
+    775,
+    892
+   ],
+   [
+    697,
+    783,
+    838,
+    1015
+   ],
+   [
+    333,
+    550,
+    376,
+    626
+   ],
+   [
+    105,
+    566,
+    177,
+    656
+   ],
+   [
+    830,
+    610,
+    906,
+    732
+   ],
+   [
+    500,
+    619,
+    565,
+    762
+   ],
+   [
+    500,
+    598,
+    571,
+    699
+   ],
+   [
+    725,
+    591,
+    792,
+    717
+   ],
+   [
+    266,
+    558,
+    320,
+    642
+   ]
+  ],
+  "protect_px": 550801,
+  "snow_white": [
+   182,
+   179,
+   185
+  ],
+  "tiers": {
+   "far": {
+    "n": 221,
+    "matte_px": 505696
+   },
+   "mid": {
+    "n": 128,
+    "matte_px": 561587
+   },
+   "near": {
+    "n": 44,
+    "matte_px": 823692
+   }
+  }
+ },
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "outside_matte_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "changed_px": [
+  19870,
+  20191,
+  19483,
+  18106,
+  16676,
+  16070
+ ],
+ "flakes_on_screen": [
+  {
+   "far": 51,
+   "mid": 44,
+   "near": 16
+  },
+  {
+   "far": 49,
+   "mid": 43,
+   "near": 19
+  },
+  {
+   "far": 49,
+   "mid": 34,
+   "near": 20
+  },
+  {
+   "far": 56,
+   "mid": 37,
+   "near": 16
+  },
+  {
+   "far": 53,
+   "mid": 33,
+   "near": 14
+  },
+  {
+   "far": 49,
+   "mid": 32,
+   "near": 14
+  }
+ ],
+ "frame_md5": [
+  "8f8c6d7e07c15240a44f9abe6f2c075a",
+  "0e32082e9db7c3724a8cc1d2d6e2e312",
+  "5f55e19d16b0ce7bb21900a33e00dbfd",
+  "55c15d9dd76c41fa08f7aa368860e1a5",
+  "2dd7b83bdebac465d26e07ba1dfd42d0",
+  "059f3a04e732ae0daff3d1f035ac12c1"
+ ],
+ "det_identical": true,
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "ok": true,
+   "msg": "ok"
+  },
+  {
+   "check": "pixel_density",
+   "plate": "/workspace/posterity/standalones/bathory/v2/plates/b17_secondhand_witnesses.png",
+   "plate_wh": [
+    942,
+    1670
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1497,
+   "visible_src_wh": [
+    886.2,
+    1575.5
+   ],
+   "ratio": 1.219,
+   "ratio_x": 1.219,
+   "ratio_y": 1.219,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_keepout_0px": true,
+ "pass_outside_0px": true,
+ "pass": true
+}

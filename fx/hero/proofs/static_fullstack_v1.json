@@ -1,0 +1,189 @@
+{
+ "density": {
+  "pixel_density": {
+   "check": "pixel_density",
+   "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+   "plate_wh": [
+    941,
+    1672
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1483,
+   "visible_src_wh": [
+    887.3,
+    1577.4
+   ],
+   "ratio": 1.217,
+   "ratio_x": 1.217,
+   "ratio_y": 1.217,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  },
+  "depth_guard": [
+   {
+    "check": "crop_zoom",
+    "zoom": 1.0829172254353758,
+    "max_zoom": 1.5,
+    "output_px_per_plate_px": 1.244,
+    "ok": true,
+    "msg": "ok",
+    "pixel_density": {
+     "check": "pixel_density",
+     "plate": null,
+     "plate_wh": [
+      941,
+      1672
+     ],
+     "out_wh": [
+      1080,
+      1920
+     ],
+     "push_max": 1.082917,
+     "crop_zoom": 1.0,
+     "cover_scale": 1.1483,
+     "visible_src_wh": [
+      868.5,
+      1544.0
+     ],
+     "ratio": 1.244,
+     "ratio_x": 1.244,
+     "ratio_y": 1.244,
+     "max_ratio": 1.5,
+     "pass": true,
+     "ok": true,
+     "msg": "ok"
+    }
+   }
+  ],
+  "overscan": 1.02162
+ },
+ "single_transform": {
+  "uniform_scale_no_shear_no_rot": true,
+  "dot_test": {
+   "dots": [
+    {
+     "layer": "far",
+     "plate_xy": [
+      280,
+      524
+     ],
+     "expected": [
+      324.444,
+      576.333
+     ],
+     "measured": [
+      324.444,
+      576.331
+     ],
+     "err_px": 0.002,
+     "err_if_double_push_px": 26.4
+    },
+    {
+     "layer": "near",
+     "plate_xy": [
+      316,
+      577
+     ],
+     "expected": [
+      341.553,
+      622.003
+     ],
+     "measured": [
+      341.553,
+      622.0
+     ],
+     "err_px": 0.0026,
+     "err_if_double_push_px": 23.51
+    }
+   ],
+   "pass_": true
+  }
+ },
+ "disocclusion": [
+  {
+   "e": 0.0,
+   "revealed_px": 45504,
+   "revealed_frac": 0.02194,
+   "revealed_strip_mean_width_px": 16.16,
+   "holes_px": 0,
+   "hf_revealed": 3.075,
+   "hf_ring": 5.683,
+   "hf_ratio": 0.541
+  },
+  {
+   "e": 1.0,
+   "revealed_px": 22341,
+   "revealed_frac": 0.01077,
+   "revealed_strip_mean_width_px": 14.62,
+   "holes_px": 0,
+   "hf_revealed": 3.118,
+   "hf_ring": 6.361,
+   "hf_ratio": 0.49
+  }
+ ],
+ "holes_full_stack": [
+  {
+   "frame": 0,
+   "holes_px_full_stack": 0
+  },
+  {
+   "frame": 209,
+   "holes_px_full_stack": 0
+  }
+ ],
+ "torch_fixed_zones_impulse": {
+  "method": "impulse lattice (+-24 levels, every 9th px) added to fx_v1c's Pf; same t rendered with/without; any resample would leak to neighbours",
+  "impulses": 19530,
+  "frames": 14,
+  "leaked_px_total": 0,
+  "impulse_px_changed_min_frac": 1.0,
+  "pass_": true,
+  "fx_v1c_reported_warp_disp_px": 0.0,
+  "warped_sources": 0
+ },
+ "smoke_path_equiv": [
+  {
+   "t": 0.0,
+   "max_abs_vs_SmokeScene_frame": 0.0,
+   "px_ne": 0
+  },
+  {
+   "t": 2.0,
+   "max_abs_vs_SmokeScene_frame": 0.0,
+   "px_ne": 0
+  },
+  {
+   "t": 4.0,
+   "max_abs_vs_SmokeScene_frame": 1.0,
+   "px_ne": 1
+  },
+  {
+   "t": 6.9,
+   "max_abs_vs_SmokeScene_frame": 0.0,
+   "px_ne": 0
+  }
+ ],
+ "smoke_zero_motion_report": {
+  "frames": 5,
+  "max_diff_outside": 0,
+  "changed_px_outside": 0,
+  "max_diff_in_protect": 0,
+  "protect_px": 78531,
+  "allow_fraction": 0.1572,
+  "guards_max_diff": {
+   "kent_face": 0,
+   "gaoler_face": 0,
+   "torch_flame": 0
+  }
+ },
+ "camera_calls": {
+  "smoke_v2.push_frame": 0
+ }
+}

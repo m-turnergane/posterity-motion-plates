@@ -1,0 +1,352 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "note": "Ugarit p05 v2, v2-final pass: EVERY fire on the plate gets its own plume (auto-detected, sized to the fire), painted sky smoke billows in a matte, sea + ships protected with a soft keep-out, pre-rolled (no fade-in).",
+ "seed": 5,
+ "preroll": 8.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.32,
+  0.5
+ ],
+ "protect": [
+  [
+   [
+    545,
+    526
+   ],
+   [
+    1080,
+    520
+   ],
+   [
+    1080,
+    905
+   ],
+   [
+    960,
+    900
+   ],
+   [
+    820,
+    880
+   ],
+   [
+    700,
+    840
+   ],
+   [
+    500,
+    765
+   ],
+   [
+    240,
+    722
+   ],
+   [
+    232,
+    656
+   ],
+   [
+    400,
+    652
+   ],
+   [
+    560,
+    649
+   ],
+   [
+    616,
+    630
+   ],
+   [
+    528,
+    612
+   ],
+   [
+    606,
+    592
+   ],
+   [
+    712,
+    578
+   ],
+   [
+    602,
+    558
+   ],
+   [
+    486,
+    542
+   ],
+   [
+    566,
+    532
+   ]
+  ],
+  [
+   [
+    290,
+    700
+   ],
+   [
+    420,
+    700
+   ],
+   [
+    420,
+    790
+   ],
+   [
+    290,
+    790
+   ]
+  ]
+ ],
+ "protect_feather": 36,
+ "emitters": [
+  {
+   "name": "left_column_hero",
+   "type": "column",
+   "src": [
+    150,
+    800
+   ],
+   "height": 700,
+   "w0": 70,
+   "w1": 220,
+   "lean": 55,
+   "layers": 3,
+   "seed": 1,
+   "rise": 34,
+   "color_dark": [
+    24,
+    16,
+    20
+   ],
+   "color_light": [
+    64,
+    50,
+    60
+   ]
+  },
+  {
+   "name": "ground_haze",
+   "type": "haze",
+   "rect": [
+    0,
+    1120,
+    1080,
+    1560
+   ],
+   "drift": 9,
+   "opacity": 0.22,
+   "color_light": [
+    150,
+    110,
+    90
+   ],
+   "feather": 60,
+   "seed": 5
+  }
+ ],
+ "fires": {
+  "ymin": 480,
+  "exclude": [
+   [
+    [
+     560,
+     455
+    ],
+    [
+     1080,
+     455
+    ],
+    [
+     1080,
+     530
+    ],
+    [
+     560,
+     530
+    ]
+   ]
+  ],
+  "min_area": 100,
+  "split": 90,
+  "skip_radius": 70,
+  "wind": 0.08,
+  "column": {
+   "color_dark": [
+    24,
+    16,
+    20
+   ],
+   "color_light": [
+    64,
+    50,
+    60
+   ]
+  },
+  "torch": {
+   "color_dark": [
+    26,
+    19,
+    22
+   ],
+   "color_light": [
+    66,
+    54,
+    58
+   ],
+   "opacity": 0.82,
+   "edge": [
+    0.14,
+    0.7
+   ],
+   "breakup": 0.5,
+   "puffs": 0.5,
+   "relief": 0.35,
+   "glow": {
+    "color": [
+     255,
+     130,
+     55
+    ],
+    "strength": 0.55,
+    "reach": 0.14,
+    "flicker": 0.25,
+    "patch": 0.5
+   }
+  },
+  "ember": {
+   "color_dark": [
+    40,
+    32,
+    34
+   ],
+   "color_light": [
+    92,
+    82,
+    84
+   ],
+   "opacity": 0.6
+  }
+ },
+ "billows": [
+  {
+   "name": "sky_smoke",
+   "region": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      1080,
+      0
+     ],
+     [
+      1080,
+      512
+     ],
+     [
+      600,
+      512
+     ],
+     [
+      540,
+      496
+     ],
+     [
+      470,
+      486
+     ],
+     [
+      300,
+      484
+     ],
+     [
+      180,
+      490
+     ],
+     [
+      0,
+      468
+     ]
+    ]
+   ],
+   "luma": [
+    0.0,
+    0.27
+   ],
+   "sat_max": 0.48,
+   "amp": 12,
+   "rise": 18,
+   "scale": 120,
+   "seed": 1,
+   "soft": 0.06,
+   "period": 2.2
+  },
+  {
+   "name": "left_column_painted",
+   "region": [
+    [
+     [
+      0,
+      468
+     ],
+     [
+      180,
+      490
+     ],
+     [
+      175,
+      560
+     ],
+     [
+      160,
+      690
+     ],
+     [
+      0,
+      700
+     ]
+    ]
+   ],
+   "luma": [
+    0.0,
+    0.3
+   ],
+   "sat_max": 0.5,
+   "amp": 10,
+   "rise": 20,
+   "seed": 2,
+   "soft": 0.06,
+   "period": 2.2
+  }
+ ],
+ "guards": {
+  "horizon_line": [
+   [
+    560,
+    514
+   ],
+   [
+    1080,
+    514
+   ],
+   [
+    1080,
+    530
+   ],
+   [
+    560,
+    530
+   ]
+  ]
+ },
+ "flame_keepout": 0.85
+}

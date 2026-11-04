@@ -1,0 +1,157 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "note": "Ugarit p05 v2: burning coastal town at dusk. Sea, beach crowd and ships are protected (smoke never touches them).",
+ "seed": 5,
+ "ease_in": 0.8,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "protect": [
+  [
+   [
+    232,
+    528
+   ],
+   [
+    1080,
+    528
+   ],
+   [
+    1080,
+    1012
+   ],
+   [
+    640,
+    1006
+   ],
+   [
+    560,
+    958
+   ],
+   [
+    505,
+    884
+   ],
+   [
+    470,
+    850
+   ],
+   [
+    300,
+    850
+   ],
+   [
+    280,
+    780
+   ],
+   [
+    232,
+    700
+   ]
+  ],
+  [
+   [
+    290,
+    700
+   ],
+   [
+    420,
+    700
+   ],
+   [
+    420,
+    790
+   ],
+   [
+    290,
+    790
+   ]
+  ]
+ ],
+ "emitters": [
+  {
+   "name": "left_column",
+   "type": "column",
+   "src": [
+    125,
+    845
+   ],
+   "height": 760,
+   "w0": 70,
+   "w1": 230,
+   "lean": -35,
+   "layers": 3,
+   "seed": 1,
+   "rise": 34
+  },
+  {
+   "name": "town_mid",
+   "type": "column",
+   "src": [
+    365,
+    1050
+   ],
+   "height": 230,
+   "w0": 30,
+   "w1": 120,
+   "lean": -70,
+   "layers": 1,
+   "seed": 2,
+   "rise": 26,
+   "opacity": 0.6
+  },
+  {
+   "name": "right_fire",
+   "type": "column",
+   "src": [
+    960,
+    1215
+   ],
+   "height": 230,
+   "w0": 40,
+   "w1": 150,
+   "lean": 40,
+   "layers": 2,
+   "seed": 3,
+   "rise": 28,
+   "opacity": 0.85
+  },
+  {
+   "name": "headland",
+   "type": "column",
+   "src": [
+    452,
+    524
+   ],
+   "height": 330,
+   "w0": 10,
+   "w1": 90,
+   "lean": 60,
+   "layers": 2,
+   "seed": 4,
+   "rise": 14,
+   "opacity": 0.55,
+   "lo": 70
+  },
+  {
+   "name": "ground_haze",
+   "type": "haze",
+   "rect": [
+    0,
+    1120,
+    1080,
+    1560
+   ],
+   "drift": 9,
+   "opacity": 0.22,
+   "color_light": [
+    150,
+    110,
+    90
+   ],
+   "feather": 60,
+   "seed": 5
+  }
+ ]
+}

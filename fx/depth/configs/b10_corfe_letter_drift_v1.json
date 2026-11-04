@@ -1,0 +1,180 @@
+{
+ "name": "b10_corfe_letter_drift_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "note": "Kent hands the letter at the Corfe gate. Near card = both men + arch + torch + horse + near ground (they touch: hands and letter must stay on ONE card). Far card = Corfe castle, sky, misty valley, distant soldiers. Slow lateral drift: the castle slides behind the gate. | 16:9 band crop removed 2026-10-30: portrait 941px plate -> 1920x1080 = 2.2 px/src px, fails guardrails.check_pixel_density (EIC: never upscale).",
+ "seconds": 6.0,
+ "formats": [
+  "1080x1920"
+ ],
+ "matte": {
+  "mode": "hybrid",
+  "guided_r": 4,
+  "guided_eps": 0.002
+ },
+ "camera": {
+  "type": "drift",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "anchor": [
+   0.45,
+   0.6
+  ],
+  "travel": 0.04,
+  "dir": [
+   -1,
+   0
+  ],
+  "pivot": 0.5
+ },
+ "layers": [
+  {
+   "name": "far",
+   "parallax": 0.0,
+   "push_gain": 0.4
+  },
+  {
+   "name": "near",
+   "parallax": 1.0,
+   "push_gain": 1.0,
+   "depth_min": 0.32,
+   "seams": [
+    [
+     [
+      0.46,
+      0.72
+     ],
+     [
+      0.66,
+      0.72
+     ],
+     [
+      0.66,
+      0.9
+     ],
+     [
+      0.46,
+      0.9
+     ]
+    ]
+   ],
+   "seam_feather_px": 16,
+   "protect": [
+    {
+     "name": "kent_face",
+     "poly": [
+      [
+       0.335,
+       0.37
+      ],
+      [
+       0.41,
+       0.37
+      ],
+      [
+       0.415,
+       0.43
+      ],
+      [
+       0.37,
+       0.445
+      ],
+      [
+       0.34,
+       0.43
+      ]
+     ]
+    },
+    {
+     "name": "gaoler_face",
+     "poly": [
+      [
+       0.83,
+       0.34
+      ],
+      [
+       0.88,
+       0.33
+      ],
+      [
+       0.9,
+       0.4
+      ],
+      [
+       0.87,
+       0.44
+      ],
+      [
+       0.83,
+       0.42
+      ]
+     ]
+    },
+    {
+     "name": "kent_hand",
+     "poly": [
+      [
+       0.5,
+       0.54
+      ],
+      [
+       0.56,
+       0.545
+      ],
+      [
+       0.56,
+       0.565
+      ],
+      [
+       0.51,
+       0.57
+      ]
+     ]
+    },
+    {
+     "name": "letter",
+     "poly": [
+      [
+       0.6,
+       0.548
+      ],
+      [
+       0.68,
+       0.556
+      ],
+      [
+       0.67,
+       0.574
+      ],
+      [
+       0.59,
+       0.566
+      ]
+     ]
+    },
+    {
+     "name": "gaoler_hand",
+     "poly": [
+      [
+       0.7,
+       0.565
+      ],
+      [
+       0.75,
+       0.565
+      ],
+      [
+       0.75,
+       0.595
+      ],
+      [
+       0.7,
+       0.595
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "frames": 15,
+ "changed_px_outside_allowed": 0,
+ "flames_only_changed_px_outside_flame_zone": 0,
+ "protect_px": 757770,
+ "protect_motion_max_diff": 0,
+ "protect_light_residual_max": 0,
+ "protect_light_change_max": 0,
+ "protect_lit_px_max": 0,
+ "guards_motion_max_diff": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "guards_light_residual_max": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "guards_light_change_max": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "guards_shift_px_max": {
+  "horizon_line": 0.0,
+  "sea_open": 0.0,
+  "sky": 0.0,
+  "shore_glitter": 0.0
+ },
+ "guards_matte_overlap_px": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "allowed_fraction": 0.3285,
+ "components": 28,
+ "pass": true,
+ "config": "configs/p05v2_town_flames_v3.json",
+ "smoke": null,
+ "billow": [],
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "seconds": 7.0,
+ "times_step": 0.5
+}

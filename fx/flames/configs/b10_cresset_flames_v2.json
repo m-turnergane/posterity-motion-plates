@@ -1,0 +1,128 @@
+{
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "note": "flames_v2 Edward II b10 gate cresset: v2 lick, flicker, spill, fine sparks. Kent and the gaoler protected.",
+ "seed": 10,
+ "preroll": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.6,
+  0.4
+ ],
+ "protect_feather": 10,
+ "protect": [
+  [
+   [
+    290,
+    560
+   ],
+   [
+    430,
+    560
+   ],
+   [
+    430,
+    740
+   ],
+   [
+    290,
+    740
+   ]
+  ],
+  [
+   [
+    790,
+    480
+   ],
+   [
+    941,
+    480
+   ],
+   [
+    941,
+    760
+   ],
+   [
+    790,
+    760
+   ]
+  ]
+ ],
+ "flames": [
+  {
+   "name": "cresset",
+   "region": [
+    [
+     [
+      636,
+      340
+     ],
+     [
+      728,
+      340
+     ],
+     [
+      728,
+      522
+     ],
+     [
+      636,
+      522
+     ]
+    ]
+   ],
+   "seed": 1,
+   "key": {
+    "v_min": 0.8,
+    "rb_min": 90
+   },
+   "spill": {
+    "strength": 0.5,
+    "radius_k": 1.2
+   },
+   "sparks": {
+    "rate": 3.0
+   }
+  }
+ ],
+ "guards": {
+  "kent_face": [
+   [
+    300,
+    570
+   ],
+   [
+    420,
+    570
+   ],
+   [
+    420,
+    730
+   ],
+   [
+    300,
+    730
+   ]
+  ],
+  "gaoler": [
+   [
+    800,
+    490
+   ],
+   [
+    941,
+    490
+   ],
+   [
+    941,
+    750
+   ],
+   [
+    800,
+    750
+   ]
+  ]
+ }
+}

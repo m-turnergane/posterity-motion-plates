@@ -1,0 +1,65 @@
+{
+ "name": "t6_oculus_stair_shaft_v1c",
+ "plate": "/workspace/posterity/micro-anomaly/tamerlane/plates/seq6.png",
+ "times": [
+  0.0,
+  0.7,
+  1.5,
+  2.6,
+  3.4,
+  4.5,
+  5.9
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "protect_px": 1204626,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  213429,
+  197377,
+  222946,
+  239616,
+  239247,
+  205018,
+  204459
+ ],
+ "changed_frac_of_frame": [
+  0.13565,
+  0.12545,
+  0.1417,
+  0.1523,
+  0.15206,
+  0.13031,
+  0.12995
+ ],
+ "max_abs_diff_in_allow": [
+  194,
+  198,
+  194,
+  203,
+  181,
+  197,
+  189
+ ],
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

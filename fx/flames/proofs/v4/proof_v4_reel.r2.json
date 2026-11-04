@@ -1,0 +1,88 @@
+{
+ "b13": {
+  "frames_checked": 35,
+  "warp_max_px": 0.0,
+  "parallax": false,
+  "phase_shift_px_max": {
+   "left_doorframe_wall": 0.524,
+   "left_stone_wall": 0.023,
+   "right_door_wall": 0.529,
+   "guard_face_l": 0.511,
+   "guard_face_r": 0.515,
+   "edward_face": 0.513,
+   "guard_l_chainmail": 0.51,
+   "guard_r_chainmail": 0.018,
+   "stairs_left_of_fore_torch": 0.02,
+   "stairs_right_of_fore_torch": 0.014,
+   "fore_soldier_chainmail": 0.512,
+   "guard_l_coif_chainmail": 0.041,
+   "guard_r_coif_chainmail": 0.531,
+   "back_guard_r_face_mail": 0.07,
+   "torch_holder_l_face": 0.177
+  },
+  "highpass_structure_ncc_min": {
+   "left_doorframe_wall": 0.9912,
+   "left_stone_wall": 0.9969,
+   "right_door_wall": 0.9882,
+   "guard_face_l": 0.9947,
+   "guard_face_r": 0.9972,
+   "edward_face": 0.998,
+   "guard_l_chainmail": 0.9992,
+   "guard_r_chainmail": 0.9987,
+   "stairs_left_of_fore_torch": 0.998,
+   "stairs_right_of_fore_torch": 0.9972,
+   "fore_soldier_chainmail": 0.9973,
+   "guard_l_coif_chainmail": 0.9986,
+   "guard_r_coif_chainmail": 0.9962,
+   "back_guard_r_face_mail": 0.9965,
+   "torch_holder_l_face": 0.9942
+  },
+  "pass": false
+ },
+ "p05": {
+  "frames_checked": 35,
+  "warp_max_px": 0.0,
+  "parallax": false,
+  "protect_px": 757770,
+  "protect_changed_px_max": 0,
+  "phase_shift_px_max": {
+   "guard_horizon_line": 0.0,
+   "guard_sea_open": 0.0,
+   "guard_sky": 0.0,
+   "guard_shore_glitter": 0.001
+  },
+  "highpass_structure_ncc_min": {
+   "guard_horizon_line": 1.0,
+   "guard_sea_open": 1.0,
+   "guard_sky": 1.0,
+   "guard_shore_glitter": 1.0
+  },
+  "pass": true
+ },
+ "b10": {
+  "frames_checked": 15,
+  "warp_max_px": 0.0,
+  "parallax": false,
+  "phase_shift_px_max": {
+   "wall_above_cresset": 0.081,
+   "pillar_left_of_cresset": 0.517,
+   "wall_right_of_cresset": 0.026,
+   "pillar_below_cresset": 0.718,
+   "gaoler_face": 0.52,
+   "gaoler_chainmail": 0.011,
+   "kent_face": 0.023,
+   "gaoler_shoulder_chainmail": 0.016
+  },
+  "highpass_structure_ncc_min": {
+   "wall_above_cresset": 0.9804,
+   "pillar_left_of_cresset": 0.9978,
+   "wall_right_of_cresset": 0.9961,
+   "pillar_below_cresset": 0.9967,
+   "gaoler_face": 0.9966,
+   "gaoler_chainmail": 0.9995,
+   "kent_face": 0.9994,
+   "gaoler_shoulder_chainmail": 0.9987
+  },
+  "pass": false
+ }
+}

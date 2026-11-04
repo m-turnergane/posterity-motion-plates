@@ -1,0 +1,127 @@
+{
+ "name": "dr02_b20_kent_seal_reveal",
+ "document": "DOC-K1",
+ "treatment": "reveal",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b20_kent_seals_letter_OWNER.png",
+ "seconds": 4.0,
+ "note": "Kent seals the same message (DOC-K1): light runs along the folded letter from the candle. Flat.",
+ "camera": {
+  "mode": "flat",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "crop_zoom": 1.0,
+  "anchor": [
+   540,
+   1150
+  ]
+ },
+ "doc_poly": [
+  [
+   268,
+   1158
+  ],
+  [
+   545,
+   1112
+  ],
+  [
+   805,
+   1122
+  ],
+  [
+   800,
+   1150
+  ],
+  [
+   560,
+   1188
+  ],
+  [
+   330,
+   1200
+  ],
+  [
+   268,
+   1185
+  ]
+ ],
+ "protect": {
+  "face_kent": [
+   [
+    410,
+    260
+   ],
+   [
+    680,
+    260
+   ],
+   [
+    680,
+    690
+   ],
+   [
+    410,
+    690
+   ]
+  ]
+ },
+ "smoke": {
+  "seed": 20,
+  "preroll": 8.0,
+  "flame_keepout": 0.85,
+  "protect": [
+   [
+    [
+     410,
+     260
+    ],
+    [
+     680,
+     260
+    ],
+    [
+     680,
+     690
+    ],
+    [
+     410,
+     690
+    ]
+   ]
+  ],
+  "emitters": [
+   {
+    "name": "wick",
+    "type": "candle",
+    "src": [
+     67,
+     750
+    ],
+    "height": 240,
+    "lean": 10,
+    "seed": 2,
+    "opacity": 0.32
+   }
+  ]
+ },
+ "reveal": {
+  "t0": 0.1,
+  "dur": 2.0,
+  "g0": 0.45,
+  "soft": 0.35,
+  "glint": 0.1,
+  "glint_w": 0.14,
+  "feather": 5.0,
+  "axis": [
+   1.0,
+   -0.1
+  ],
+  "tint": [
+   1.0,
+   0.94,
+   0.82
+  ]
+ }
+}

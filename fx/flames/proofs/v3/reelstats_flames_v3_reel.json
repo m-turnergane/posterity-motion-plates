@@ -1,0 +1,27 @@
+{
+ "frames": 510,
+ "b13": {
+  "plate_luma_swing_pct": 7.092,
+  "max_step_pct": 0.957,
+  "energy_above_5Hz": 0.02293,
+  "px_changing_ge6_per_1s": 0.5535
+ },
+ "p05": {
+  "plate_luma_swing_pct": 1.825,
+  "max_step_pct": 0.67,
+  "energy_above_5Hz": 0.28974,
+  "px_changing_ge6_per_1s": 0.797
+ },
+ "b10_hold1": {
+  "plate_luma_swing_pct": 0.001,
+  "max_step_pct": 0.0,
+  "energy_above_5Hz": 0.39134,
+  "px_changing_ge6_per_1s": 0.0
+ },
+ "b10_hold2": {
+  "plate_luma_swing_pct": 0.011,
+  "max_step_pct": 0.007,
+  "energy_above_5Hz": 0.37381,
+  "px_changing_ge6_per_1s": 0.0
+ }
+}

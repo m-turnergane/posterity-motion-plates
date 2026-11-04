@@ -1,0 +1,38 @@
+{
+ "note": "flames_v3 audit reel: same structure as v2. B13 flames_v3 (local light spill) + smoke_v2 7s; P05 v2 flames_v3 + smoke_v2 on the big fires + smoke_v2 painted-plume sky billow 7s; then two held stills of the B10 cresset (v3 spill config; holds are frozen frames, so the cresset flicker is shown separately in proofs/v3/b10_cresset_v3_360.mp4). Hard cuts.",
+ "smoke_module": "../smoke/smoke_v2.py",
+ "crf": 22,
+ "shots": [
+  {
+   "config": "configs/b13_three_torches_flames_v3.json",
+   "smoke": "../smoke/configs/b13_three_torches.json",
+   "seconds": 7.0
+  },
+  {
+   "config": "configs/p05v2_town_flames_v3.json",
+   "smoke": "configs/p05v2_smoke_bigfires_v2b.json",
+   "seconds": 7.0,
+   "billow": [
+    "configs/p05v2_sky_billow_v3.json"
+   ]
+  },
+  {
+   "config": "configs/b10_cresset_flames_v3.json",
+   "seconds": 1.5,
+   "hold": 1.0,
+   "push": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "config": "configs/b10_cresset_flames_v3.json",
+   "seconds": 1.5,
+   "hold": 2.5,
+   "push": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

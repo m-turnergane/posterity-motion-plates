@@ -1,0 +1,146 @@
+{
+ "name": "b12_snow_v1b",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b12_taken_up_to_fortress.png",
+ "plate_md5": "78699fc77cbbba1365ced9f37d8569ae",
+ "times": [
+  0.0,
+  0.9,
+  1.7,
+  2.5,
+  3.3,
+  3.97
+ ],
+ "info": {
+  "name": "b12_snow_v1b",
+  "plate": "/workspace/posterity/standalones/bathory/v2/plates/b12_taken_up_to_fortress.png",
+  "out": [
+   1080,
+   1920
+  ],
+  "auto_faces": [],
+  "face_boxes": [],
+  "protect_px": 60501,
+  "snow_white": [
+   117,
+   128,
+   144
+  ],
+  "tiers": {
+   "far": {
+    "n": 204,
+    "matte_px": 1059151
+   },
+   "mid": {
+    "n": 94,
+    "matte_px": 1080165
+   },
+   "near": {
+    "n": 31,
+    "matte_px": 1080165
+   }
+  }
+ },
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "outside_matte_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "changed_px": [
+  26157,
+  27039,
+  26635,
+  25412,
+  25174,
+  26139
+ ],
+ "flakes_on_screen": [
+  {
+   "far": 87,
+   "mid": 51,
+   "near": 20
+  },
+  {
+   "far": 85,
+   "mid": 47,
+   "near": 21
+  },
+  {
+   "far": 91,
+   "mid": 43,
+   "near": 19
+  },
+  {
+   "far": 85,
+   "mid": 44,
+   "near": 20
+  },
+  {
+   "far": 90,
+   "mid": 43,
+   "near": 21
+  },
+  {
+   "far": 96,
+   "mid": 45,
+   "near": 21
+  }
+ ],
+ "frame_md5": [
+  "b16a4529a3c75d4a294ab3cb0fae3a2d",
+  "059fe5f38fe4ea0d40c867b1840221b1",
+  "d87d77dd857c4704bb28495fdeac4d43",
+  "356d70096f32b03fef19ee241b92bd43",
+  "b6c30511a42a7f14ffc4589bf00ce634",
+  "5bdd9b3ab6d6e3270f484deb87eb484d"
+ ],
+ "det_identical": true,
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "ok": true,
+   "msg": "ok"
+  },
+  {
+   "check": "pixel_density",
+   "plate": "/workspace/posterity/standalones/bathory/v2/plates/b12_taken_up_to_fortress.png",
+   "plate_wh": [
+    942,
+    1670
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1497,
+   "visible_src_wh": [
+    886.2,
+    1575.5
+   ],
+   "ratio": 1.219,
+   "ratio_x": 1.219,
+   "ratio_y": 1.219,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_keepout_0px": true,
+ "pass_outside_0px": true,
+ "pass": true
+}

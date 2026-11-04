@@ -1,0 +1,304 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "note": "flames_v2 Ugarit p05 v2: every keyed town fire licks (phone-floored lick), flickers, local spill, fine sparks on fires >= 20 px. Sky, sea, ships, sun and shore glitter protected: the sea never moves. | v2b: lick floor 3.6 phone px (lick 0.26 where >=0.18), lick_lx_min 60, dim-warm core gaps, small-fire flicker small_ref 110 boost 2.4 + self-pulse 0.22 | v3: identical flames to v2b; adds billow_guards_ok=['sky'] because the v3 sky billow (configs/p05v2_sky_billow_v3.json) legitimately moves painted plumes inside the sky guard box; the proof then checks the sky guard OUTSIDE the billow matte (must stay 0 px) and reports the matte overlap. Tiny far fires: twinkle accepted, not faked.",
+ "seed": 5,
+ "preroll": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.32,
+  0.5
+ ],
+ "protect_feather": 24,
+ "protect": [
+  [
+   [
+    545,
+    526
+   ],
+   [
+    1080,
+    520
+   ],
+   [
+    1080,
+    905
+   ],
+   [
+    960,
+    900
+   ],
+   [
+    820,
+    880
+   ],
+   [
+    700,
+    840
+   ],
+   [
+    500,
+    765
+   ],
+   [
+    240,
+    722
+   ],
+   [
+    232,
+    656
+   ],
+   [
+    400,
+    652
+   ],
+   [
+    560,
+    649
+   ],
+   [
+    616,
+    630
+   ],
+   [
+    528,
+    612
+   ],
+   [
+    606,
+    592
+   ],
+   [
+    712,
+    578
+   ],
+   [
+    602,
+    558
+   ],
+   [
+    486,
+    542
+   ],
+   [
+    566,
+    532
+   ]
+  ],
+  [
+   [
+    290,
+    700
+   ],
+   [
+    420,
+    700
+   ],
+   [
+    420,
+    790
+   ],
+   [
+    290,
+    790
+   ]
+  ],
+  [
+   [
+    0,
+    0
+   ],
+   [
+    1080,
+    0
+   ],
+   [
+    1080,
+    470
+   ],
+   [
+    0,
+    470
+   ]
+  ],
+  [
+   [
+    560,
+    455
+   ],
+   [
+    1080,
+    455
+   ],
+   [
+    1080,
+    530
+   ],
+   [
+    560,
+    530
+   ]
+  ],
+  [
+   [
+    840,
+    872
+   ],
+   [
+    1080,
+    872
+   ],
+   [
+    1080,
+    965
+   ],
+   [
+    960,
+    940
+   ],
+   [
+    880,
+    910
+   ]
+  ]
+ ],
+ "flames": [
+  {
+   "name": "town",
+   "region": [
+    [
+     [
+      0,
+      480
+     ],
+     [
+      1080,
+      480
+     ],
+     [
+      1080,
+      1440
+     ],
+     [
+      0,
+      1440
+     ]
+    ]
+   ],
+   "seed": 1,
+   "min_area": 40,
+   "min_h": 10,
+   "spill": {
+    "strength": 0.45,
+    "radius_k": 1.0,
+    "radius_min": 24,
+    "radius_max": 120
+   },
+   "sparks": {
+    "rate": 3.0,
+    "min_h": 20,
+    "size": [
+     1.2,
+     2.4
+    ],
+    "v0": [
+     60,
+     150
+    ]
+   },
+   "key": {
+    "v_min": 0.74,
+    "rb_min": 95
+   },
+   "tongue": 0.16,
+   "shear_max": 0.75,
+   "flicker": {
+    "amp": 0.12,
+    "small_ref": 110.0,
+    "small_boost": 2.4,
+    "self": 0.22
+   },
+   "lick_min_phone": 3.6,
+   "lick": 0.26
+  }
+ ],
+ "guards": {
+  "horizon_line": [
+   [
+    560,
+    514
+   ],
+   [
+    1080,
+    514
+   ],
+   [
+    1080,
+    530
+   ],
+   [
+    560,
+    530
+   ]
+  ],
+  "sea_open": [
+   [
+    700,
+    600
+   ],
+   [
+    1080,
+    600
+   ],
+   [
+    1080,
+    860
+   ],
+   [
+    700,
+    800
+   ]
+  ],
+  "sky": [
+   [
+    0,
+    0
+   ],
+   [
+    1080,
+    0
+   ],
+   [
+    1080,
+    440
+   ],
+   [
+    0,
+    440
+   ]
+  ],
+  "shore_glitter": [
+   [
+    900,
+    885
+   ],
+   [
+    1080,
+    885
+   ],
+   [
+    1080,
+    950
+   ],
+   [
+    900,
+    915
+   ]
+  ]
+ },
+ "billow_guards_ok": [
+  "sky"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "name": "b17_snow_v1",
+ "seconds": 4.0,
+ "phone": "360x640",
+ "push": [
+  1.0,
+  1.06
+ ],
+ "flakes_on_screen": {
+  "far": {
+   "mean": 28.5,
+   "min": 24,
+   "max": 32
+  },
+  "mid": {
+   "mean": 20.5,
+   "min": 13,
+   "max": 26
+  },
+  "near": {
+   "mean": 9.5,
+   "min": 7,
+   "max": 13
+  }
+ },
+ "flakes_on_screen_total": {
+  "mean": 58.5,
+  "min": 51,
+  "max": 70
+ },
+ "flake_alpha_step_max": 0.1718,
+ "flake_alpha_step_p99": 0.0293,
+ "pop_px_max_per_frame_jump_ge12": 13,
+ "pop_px_max_per_frame_jump_ge8": 56,
+ "read_px_1s_range_ge6": 1940,
+ "max_abs_delta_phone": 44.4,
+ "mean_abs_delta_phone": 0.0155,
+ "whole_frame": {
+  "swing_1s_median_pct": 0.042,
+  "swing_1s_max_pct": 0.066,
+  "energy_above_5hz": 0.0092
+ },
+ "snow_energy": {
+  "swing_1s_median_pct": 0.329,
+  "swing_1s_max_pct": 0.46,
+  "energy_above_5hz": 0.0135
+ }
+}

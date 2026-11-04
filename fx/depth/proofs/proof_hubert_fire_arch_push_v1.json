@@ -1,0 +1,240 @@
+{
+ "name": "hubert_fire_arch_push_v1",
+ "plate": "/workspace/posterity/day3/nero-fiddle/assets/pd_hubert_robert_fire.jpg",
+ "plate_md5": "4769c36fed6465a21b7f1e0c2aa14652",
+ "info": {
+  "mode": "hybrid",
+  "depth": {
+   "cached": true
+  },
+  "reveal_px": 85,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.7793
+   }
+  ]
+ },
+ "formats": {
+  "1920x1080": {
+   "size": [
+    1920,
+    1080
+   ],
+   "overscan": 1.0375,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0997499988153578,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.1,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       1920,
+       1543
+      ],
+      "out_wh": [
+       1920,
+       1080
+      ],
+      "push_max": 1.09975,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.0,
+      "visible_src_wh": [
+       1745.9,
+       982.0
+      ],
+      "ratio": 1.1,
+      "ratio_x": 1.1,
+      "ratio_y": 1.1,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        614,
+        568
+       ],
+       "expected": [
+        575.59,
+        323.802
+       ],
+       "measured": [
+        575.592,
+        323.809
+       ],
+       "err_px": 0.0074,
+       "err_if_double_push_px": 26.47
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        593,
+        621
+       ],
+       "expected": [
+        575.544,
+        374.488
+       ],
+       "measured": [
+        575.538,
+        374.489
+       ],
+       "err_px": 0.0058,
+       "err_if_double_push_px": 25.11
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 25451,
+     "revealed_frac": 0.01227,
+     "revealed_strip_mean_width_px": 14.49,
+     "holes_px": 0,
+     "hf_revealed": 3.908,
+     "hf_ring": 5.331,
+     "hf_ratio": 0.733
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 35863,
+     "revealed_frac": 0.0173,
+     "revealed_strip_mean_width_px": 18.41,
+     "holes_px": 0,
+     "hf_revealed": 3.686,
+     "hf_ring": 4.866,
+     "hf_ratio": 0.758
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "statue",
+     "area_px": 3090,
+     "in_layer_frac": 0.9974,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0015,
+       "max": 2.505,
+       "ncc": 0.999995,
+       "px": 1674
+      },
+      {
+       "frame": 90,
+       "mae": 0.0011,
+       "max": 1.298,
+       "ncc": 0.999995,
+       "px": 1746
+      },
+      {
+       "frame": 179,
+       "mae": 0.0008,
+       "max": 1.485,
+       "ncc": 0.999995,
+       "px": 1881
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "fg_figures",
+     "area_px": 25110,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0015,
+       "max": 4.758,
+       "ncc": 0.999999,
+       "px": 10795
+      },
+      {
+       "frame": 90,
+       "mae": 0.0017,
+       "max": 4.643,
+       "ncc": 0.999999,
+       "px": 9230
+      },
+      {
+       "frame": 179,
+       "mae": 0.0019,
+       "max": 4.529,
+       "ncc": 0.999999,
+       "px": 7638
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "arch_walker",
+     "area_px": 1316,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 0.999999,
+       "px": 84
+      },
+      {
+       "frame": 90,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 0.999999,
+       "px": 87
+      },
+      {
+       "frame": 179,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 0.999999,
+       "px": 90
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 51.22,
+  "max_abs": 132.87,
+  "px_ge4": 10069,
+  "px_ge4_frac": 0.003399
+ },
+ "pass": true
+}

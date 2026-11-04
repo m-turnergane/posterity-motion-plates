@@ -1,0 +1,65 @@
+{
+ "name": "g7_piso_window_beam_v1",
+ "plate": "/workspace/posterity/standalones/germanicus/plates-owner/seq7b_piso_room_daybreak_sword_floor_v5_OWNER.png",
+ "times": [
+  0.0,
+  0.7,
+  1.5,
+  2.6,
+  3.4,
+  4.5,
+  5.9
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "protect_px": 1383812,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  91214,
+  90114,
+  81788,
+  28143,
+  43759,
+  81439,
+  85044
+ ],
+ "changed_frac_of_frame": [
+  0.05797,
+  0.05728,
+  0.05198,
+  0.01789,
+  0.02781,
+  0.05176,
+  0.05405
+ ],
+ "max_abs_diff_in_allow": [
+  80,
+  100,
+  102,
+  104,
+  118,
+  105,
+  97
+ ],
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

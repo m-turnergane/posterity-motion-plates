@@ -1,0 +1,290 @@
+{
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "note": "flames_v2 Edward II b10 gate cresset: v2 lick, flicker, spill, fine sparks. Kent and the gaoler protected. | v2b: lick floor 3.6 phone px (lick 0.26 where >=0.18), lick_lx_min 60, dim-warm core gaps | v3: phone-readable cresset spill (per-pixel gain only, sharp exp(-(d/r)^3) falloff r=175, re-weighted clock, lights the gaoler as light only)",
+ "seed": 10,
+ "preroll": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.6,
+  0.4
+ ],
+ "protect_feather": 10,
+ "protect": [
+  [
+   [
+    290,
+    560
+   ],
+   [
+    430,
+    560
+   ],
+   [
+    430,
+    740
+   ],
+   [
+    290,
+    740
+   ]
+  ],
+  [
+   [
+    790,
+    480
+   ],
+   [
+    941,
+    480
+   ],
+   [
+    941,
+    760
+   ],
+   [
+    790,
+    760
+   ]
+  ]
+ ],
+ "flames": [
+  {
+   "name": "cresset",
+   "region": [
+    [
+     [
+      636,
+      340
+     ],
+     [
+      728,
+      340
+     ],
+     [
+      728,
+      522
+     ],
+     [
+      636,
+      522
+     ]
+    ]
+   ],
+   "seed": 1,
+   "key": {
+    "v_min": 0.8,
+    "rb_min": 90
+   },
+   "spill": {
+    "strength": 0.5,
+    "radius_k": 0.8,
+    "falloff": 3.0,
+    "breath": 0.1,
+    "weights": [
+     0.15,
+     0.6,
+     0.35
+    ],
+    "through_protect": true,
+    "lit": 0.0,
+    "max_gain": 0.6,
+    "skip_flame": true,
+    "amp": 0.14,
+    "radius_min": 175,
+    "radius_max": 175
+   },
+   "sparks": {
+    "rate": 3.0
+   },
+   "lick_min_phone": 3.6,
+   "lick": 0.26
+  }
+ ],
+ "guards": {
+  "kent_face": [
+   [
+    300,
+    570
+   ],
+   [
+    420,
+    570
+   ],
+   [
+    420,
+    730
+   ],
+   [
+    300,
+    730
+   ]
+  ],
+  "gaoler": [
+   [
+    800,
+    490
+   ],
+   [
+    941,
+    490
+   ],
+   [
+    941,
+    750
+   ],
+   [
+    800,
+    750
+   ]
+  ]
+ },
+ "spill_surfaces": {
+  "wall_above_cresset": [
+   [
+    630,
+    250
+   ],
+   [
+    770,
+    250
+   ],
+   [
+    770,
+    400
+   ],
+   [
+    630,
+    400
+   ]
+  ],
+  "pillar_left_of_cresset": [
+   [
+    600,
+    400
+   ],
+   [
+    645,
+    400
+   ],
+   [
+    645,
+    640
+   ],
+   [
+    600,
+    640
+   ]
+  ],
+  "wall_right_of_cresset": [
+   [
+    735,
+    400
+   ],
+   [
+    790,
+    400
+   ],
+   [
+    790,
+    600
+   ],
+   [
+    735,
+    600
+   ]
+  ],
+  "pillar_below_cresset": [
+   [
+    640,
+    560
+   ],
+   [
+    760,
+    560
+   ],
+   [
+    760,
+    780
+   ],
+   [
+    640,
+    780
+   ]
+  ],
+  "gaoler_face": [
+   [
+    800,
+    500
+   ],
+   [
+    880,
+    500
+   ],
+   [
+    880,
+    640
+   ],
+   [
+    800,
+    640
+   ]
+  ],
+  "gaoler_chainmail": [
+   [
+    830,
+    650
+   ],
+   [
+    941,
+    650
+   ],
+   [
+    941,
+    900
+   ],
+   [
+    830,
+    900
+   ]
+  ],
+  "kent_face": [
+   [
+    330,
+    590
+   ],
+   [
+    400,
+    590
+   ],
+   [
+    400,
+    700
+   ],
+   [
+    330,
+    700
+   ]
+  ],
+  "gaoler_shoulder_chainmail": [
+   [
+    815,
+    600
+   ],
+   [
+    900,
+    600
+   ],
+   [
+    900,
+    690
+   ],
+   [
+    815,
+    690
+   ]
+  ]
+ }
+}

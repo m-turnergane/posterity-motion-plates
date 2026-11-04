@@ -1,0 +1,42 @@
+{
+ "name": "hubert_fire_arch_push_v1",
+ "formats": {
+  "1920x1080": {
+   "size": [
+    1920,
+    1080
+   ],
+   "phone": [
+    640,
+    360
+   ],
+   "whole_frame": {
+    "swing_1s_median_pct": 0.21,
+    "swing_1s_max_pct": 0.219,
+    "max_step_pct": 0.0095,
+    "energy_above_5hz": 0.0165
+   },
+   "layers": {
+    "far": {
+     "travel_phone_px": 18.36,
+     "travel_first_1s_phone_px": 2.73,
+     "speed_phone_px_s_max": 3.26,
+     "measured_travel_px": 5.51,
+     "jitter_rms_px": 0.0291,
+     "vel_energy_above_5hz": 0.0097
+    },
+    "near": {
+     "travel_phone_px": 4.93,
+     "travel_first_1s_phone_px": 0.73,
+     "speed_phone_px_s_max": 0.87,
+     "measured_travel_px": 1.6,
+     "jitter_rms_px": 0.0096,
+     "vel_energy_above_5hz": 0.0632
+    }
+   },
+   "relative_parallax_phone_px": 21.8,
+   "relative_parallax_first_1s_phone_px": 3.24,
+   "relative_parallax_pct_of_width": 3.41
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "name": "k11_fire_reflection_v1b",
+ "plate": "/workspace/posterity/standalones/jianwen/plates-v1/k11_LEGEND_monk_leaves_burning_city.png",
+ "times": [
+  0.0,
+  0.5,
+  1.0,
+  1.7,
+  2.4,
+  3.1,
+  4.0
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "impulse_live_changed_min_frac": 0.8862,
+ "protect_px": 1546578,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  19959,
+  24319,
+  23898,
+  24194,
+  24319,
+  22100,
+  24305
+ ],
+ "changed_frac_of_frame": [
+  0.01269,
+  0.01546,
+  0.01519,
+  0.01538,
+  0.01546,
+  0.01405,
+  0.01545
+ ],
+ "max_abs_diff_in_allow": [
+  104,
+  127,
+  103,
+  79,
+  94,
+  96,
+  108
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

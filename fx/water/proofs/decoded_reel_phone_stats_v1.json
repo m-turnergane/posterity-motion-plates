@@ -1,0 +1,8 @@
+{
+ "frames": 540,
+ "nm4a_moon_path_v1b": {
+  "water_px_range_ge8": 5334,
+  "allow_px_range_ge8": 5334,
+  "outside_allow_px_range_ge8_codec": 0,
+  "outside_allow_range_p99": 1.6666669845581055,
+  "whole_frame_swing_1s_max_pct": 

@@ -1,0 +1,250 @@
+{
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b13_nottingham_seizure_OWNER.png",
+ "note": "flames_v2 Edward II b13: three torches with v2 lick (phone-floored), size-scaled fine sparks, spill pulled in (local). Faces protected (0 px). | v2b: lick floor 3.6 phone px (lick 0.26 where >=0.18), lick_lx_min 60, dim-warm core gaps",
+ "seed": 13,
+ "preroll": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.5,
+  0.45
+ ],
+ "protect_feather": 8,
+ "protect": [
+  [
+   [
+    430,
+    290
+   ],
+   [
+    590,
+    290
+   ],
+   [
+    590,
+    480
+   ],
+   [
+    430,
+    480
+   ]
+  ],
+  [
+   [
+    610,
+    290
+   ],
+   [
+    730,
+    290
+   ],
+   [
+    730,
+    430
+   ],
+   [
+    610,
+    430
+   ]
+  ],
+  [
+   [
+    220,
+    250
+   ],
+   [
+    340,
+    250
+   ],
+   [
+    340,
+    390
+   ],
+   [
+    220,
+    390
+   ]
+  ],
+  [
+   [
+    150,
+    280
+   ],
+   [
+    220,
+    280
+   ],
+   [
+    220,
+    380
+   ],
+   [
+    150,
+    380
+   ]
+  ]
+ ],
+ "flames": [
+  {
+   "name": "torch_left",
+   "region": [
+    [
+     [
+      180,
+      110
+     ],
+     [
+      300,
+      110
+     ],
+     [
+      300,
+      262
+     ],
+     [
+      180,
+      262
+     ]
+    ]
+   ],
+   "seed": 1,
+   "spill": {
+    "strength": 0.6,
+    "radius_k": 0.8,
+    "radius_max": 110
+   },
+   "tongue": 0.16,
+   "shear_max": 0.75,
+   "lick_min_phone": 3.6,
+   "lick": 0.26
+  },
+  {
+   "name": "torch_right",
+   "region": [
+    [
+     [
+      735,
+      140
+     ],
+     [
+      835,
+      140
+     ],
+     [
+      835,
+      285
+     ],
+     [
+      735,
+      285
+     ]
+    ]
+   ],
+   "seed": 2,
+   "spill": {
+    "strength": 0.6,
+    "radius_k": 0.8,
+    "radius_max": 110
+   },
+   "tongue": 0.16,
+   "shear_max": 0.75,
+   "lick_min_phone": 3.6,
+   "lick": 0.26
+  },
+  {
+   "name": "torch_fore",
+   "region": [
+    [
+     [
+      690,
+      975
+     ],
+     [
+      828,
+      975
+     ],
+     [
+      828,
+      1245
+     ],
+     [
+      690,
+      1245
+     ]
+    ]
+   ],
+   "seed": 3,
+   "tongue": 0.1,
+   "soften": 2.0,
+   "spill": {
+    "strength": 0.5,
+    "radius_k": 0.55,
+    "radius_max": 140
+   },
+   "sparks": {
+    "rate": 4.0
+   },
+   "shear_max": 0.7,
+   "lick": 0.08,
+   "lick_min_phone": 3.6
+  }
+ ],
+ "guards": {
+  "edward_face": [
+   [
+    440,
+    300
+   ],
+   [
+    580,
+    300
+   ],
+   [
+    580,
+    470
+   ],
+   [
+    440,
+    470
+   ]
+  ],
+  "guard_face_r": [
+   [
+    620,
+    300
+   ],
+   [
+    720,
+    300
+   ],
+   [
+    720,
+    420
+   ],
+   [
+    620,
+    420
+   ]
+  ],
+  "guard_face_l": [
+   [
+    230,
+    260
+   ],
+   [
+    330,
+    260
+   ],
+   [
+    330,
+    380
+   ],
+   [
+    230,
+    380
+   ]
+  ]
+ }
+}

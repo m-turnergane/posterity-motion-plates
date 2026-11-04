@@ -1,0 +1,21 @@
+[
+ {
+  "name": "cresset#0",
+  "hc_px": 183,
+  "hc_phone_px": 70.0,
+  "bbox": [
+   630,
+   211,
+   739,
+   533
+  ],
+  "lick_px_median": 5.91,
+  "lick_px_min": 4.42,
+  "best_column_lick_px_median": 10.06,
+  "change_frac_median": 0.433,
+  "change_frac_min": 0.412,
+  "planned_tip_ext_phone_px": 7.26,
+  "flicker_amp": 0.1,
+  "sparks": true
+ }
+]

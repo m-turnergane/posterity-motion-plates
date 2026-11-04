@@ -1,0 +1,44 @@
+{
+ "frames": 15,
+ "changed_px_outside_allowed": 0,
+ "flames_only_changed_px_outside_flame_zone": 0,
+ "protect_px": 71943,
+ "protect_motion_max_diff": 0,
+ "protect_light_residual_max": 0,
+ "protect_light_change_max": 106,
+ "protect_lit_px_max": 49201,
+ "guards_motion_max_diff": {
+  "edward_face": 0,
+  "guard_face_r": 0,
+  "guard_face_l": 0
+ },
+ "guards_light_residual_max": {
+  "edward_face": 0,
+  "guard_face_r": 0,
+  "guard_face_l": 0
+ },
+ "guards_light_change_max": {
+  "edward_face": 20,
+  "guard_face_r": 80,
+  "guard_face_l": 98
+ },
+ "guards_shift_px_max": {
+  "edward_face": 0.001,
+  "guard_face_r": 0.506,
+  "guard_face_l": 0.519
+ },
+ "guards_matte_overlap_px": {
+  "edward_face": 0,
+  "guard_face_r": 0,
+  "guard_face_l": 0
+ },
+ "allowed_fraction": 0.6354,
+ "components": 3,
+ "pass": true,
+ "config": "configs/b13_three_torches_flames_v3.json",
+ "smoke": "../smoke/configs/b13_three_torches.json",
+ "billow": [],
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b13_nottingham_seizure_OWNER.png",
+ "seconds": 7.0,
+ "times_step": 0.5
+}

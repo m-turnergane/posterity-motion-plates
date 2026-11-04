@@ -1,0 +1,140 @@
+{
+ "native": [
+  941,
+  1672
+ ],
+ "cover_fit_scale": 1.1483,
+ "zoom": 2.2,
+ "output_px_per_plate_px": 2.526,
+ "phone_px_per_plate_px": 0.842,
+ "plate_px_visible_w": 427.7,
+ "k11_fire_rect_lapvar": [
+  820.8,
+  913.5,
+  1790.1,
+  626.3,
+  412.0,
+  498.8,
+  1025.8
+ ],
+ "ref_torch_rect_lapvar": {
+  "b13": [
+   706.5,
+   410.8,
+   133.7
+  ],
+  "b10": [
+   599.2
+  ]
+ },
+ "sources": [
+  {
+   "bb": [
+    548,
+    668,
+    600,
+    700
+   ],
+   "h": 14.0,
+   "w": 52.0,
+   "glow_sigma_plate_px": 20.0,
+   "glow_sigma_out_px": 50.5,
+   "glow_sigma_phone_px": 16.8,
+   "mask_px": 425
+  },
+  {
+   "bb": [
+    600,
+    668,
+    645,
+    700
+   ],
+   "h": 27.0,
+   "w": 45.0,
+   "glow_sigma_plate_px": 24.3,
+   "glow_sigma_out_px": 61.4,
+   "glow_sigma_phone_px": 20.5,
+   "mask_px": 664
+  },
+  {
+   "bb": [
+    690,
+    686,
+    740,
+    712
+   ],
+   "h": 26.0,
+   "w": 50.0,
+   "glow_sigma_plate_px": 23.4,
+   "glow_sigma_out_px": 59.1,
+   "glow_sigma_phone_px": 19.7,
+   "mask_px": 710
+  },
+  {
+   "bb": [
+    725,
+    630,
+    790,
+    700
+   ],
+   "h": 47.0,
+   "w": 65.0,
+   "glow_sigma_plate_px": 42.3,
+   "glow_sigma_out_px": 106.9,
+   "glow_sigma_phone_px": 35.6,
+   "mask_px": 1347
+  },
+  {
+   "bb": [
+    790,
+    610,
+    860,
+    700
+   ],
+   "h": 54.0,
+   "w": 70.0,
+   "glow_sigma_plate_px": 48.6,
+   "glow_sigma_out_px": 122.8,
+   "glow_sigma_phone_px": 40.9,
+   "mask_px": 1703
+  },
+  {
+   "bb": [
+    860,
+    640,
+    941,
+    700
+   ],
+   "h": 39.0,
+   "w": 74.0,
+   "glow_sigma_plate_px": 35.1,
+   "glow_sigma_out_px": 88.7,
+   "glow_sigma_phone_px": 29.6,
+   "mask_px": 1004
+  },
+  {
+   "bb": [
+    760,
+    690,
+    820,
+    712
+   ],
+   "h": 5.0,
+   "w": 18.0,
+   "glow_sigma_plate_px": 20.0,
+   "glow_sigma_out_px": 50.5,
+   "glow_sigma_phone_px": 16.8,
+   "mask_px": 185
+  }
+ ],
+ "fx_change_energy_kept_frac": 0.092,
+ "fx_changed_px_raw": 901770,
+ "fx_changed_px_after_matte": 23406,
+ "change_map_gradient_at_fire_matte_edge_mean": 0.85,
+ "change_map_gradient_elsewhere_in_allow_mean": 1.63,
+ "allow_feather_plate_px": 3,
+ "allow_feather_out_px": 7.6,
+ "mask_dilate_out_px": 7.6,
+ "cubic_overshoot_px_frac": 0.0286,
+ "phone_fire_band_tenengrad_z2.2": 503.4
+}

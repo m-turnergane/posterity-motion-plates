@@ -1,0 +1,16 @@
+{
+ "note": "flames+smoke composite: diff vs plate; allowed = flames zones U smoke allow_mask",
+ "frames": 15,
+ "changed_px_outside_allowed": 0,
+ "max_diff_in_protect": 0,
+ "guards_max_diff": {
+  "edward_face": 0,
+  "guard_face_r": 0,
+  "guard_face_l": 0
+ },
+ "pass": true,
+ "config": "configs/b13_three_torches_flames_v2b.json",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b13_nottingham_seizure_OWNER.png",
+ "seconds": 7.0,
+ "times_step": 0.5
+}

@@ -1,0 +1,26 @@
+{
+ "b13": {
+  "impulses": 19530,
+  "frames": 21,
+  "leaked_px_total": 0,
+  "impulse_px_changed_min_frac": 1.0,
+  "phasecorr_baseline_gain_only_px": 0.009,
+  "pass": true
+ },
+ "p05": {
+  "impulses": 25560,
+  "frames": 21,
+  "leaked_px_total": 0,
+  "impulse_px_changed_min_frac": 0.9918,
+  "phasecorr_baseline_gain_only_px": 0.007,
+  "pass": true
+ },
+ "b10": {
+  "impulses": 19530,
+  "frames": 9,
+  "leaked_px_total": 0,
+  "impulse_px_changed_min_frac": 1.0,
+  "phasecorr_baseline_gain_only_px": 0.004,
+  "pass": true
+ }
+}

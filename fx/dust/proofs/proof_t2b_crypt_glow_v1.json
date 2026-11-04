@@ -1,0 +1,65 @@
+{
+ "name": "t2b_crypt_glow_v1",
+ "plate": "/workspace/posterity/micro-anomaly/tamerlane/plates/seq2b.png",
+ "times": [
+  0.0,
+  0.7,
+  1.5,
+  2.6,
+  3.4,
+  4.5,
+  5.9
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "protect_px": 1252540,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  57546,
+  54627,
+  37697,
+  25884,
+  54695,
+  64871,
+  55384
+ ],
+ "changed_frac_of_frame": [
+  0.03658,
+  0.03472,
+  0.02396,
+  0.01645,
+  0.03476,
+  0.04123,
+  0.0352
+ ],
+ "max_abs_diff_in_allow": [
+  98,
+  97,
+  97,
+  99,
+  131,
+  126,
+  126
+ ],
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

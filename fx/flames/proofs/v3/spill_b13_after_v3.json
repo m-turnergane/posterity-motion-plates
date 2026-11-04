@@ -1,0 +1,128 @@
+{
+ "left_doorframe_wall": {
+  "mean_luma": 37.1,
+  "swing_pct_median": 18.06,
+  "swing_pct_min": 10.94,
+  "px_p2p_levels_median": 3.37,
+  "frac_px_ge4_median": 0.399,
+  "phone_px": 2045
+ },
+ "left_stone_wall": {
+  "mean_luma": 56.3,
+  "swing_pct_median": 5.13,
+  "swing_pct_min": 3.26,
+  "px_p2p_levels_median": 2.48,
+  "frac_px_ge4_median": 0.294,
+  "phone_px": 4025
+ },
+ "right_door_wall": {
+  "mean_luma": 26.1,
+  "swing_pct_median": 16.21,
+  "swing_pct_min": 7.71,
+  "px_p2p_levels_median": 3.97,
+  "frac_px_ge4_median": 0.474,
+  "phone_px": 3772
+ },
+ "guard_face_l": {
+  "mean_luma": 43.5,
+  "swing_pct_median": 13.41,
+  "swing_pct_min": 8.65,
+  "px_p2p_levels_median": 3.97,
+  "frac_px_ge4_median": 0.497,
+  "phone_px": 1209
+ },
+ "guard_face_r": {
+  "mean_luma": 34.5,
+  "swing_pct_median": 10.36,
+  "swing_pct_min": 4.56,
+  "px_p2p_levels_median": 2.97,
+  "frac_px_ge4_median": 0.34,
+  "phone_px": 1178
+ },
+ "edward_face": {
+  "mean_luma": 35.8,
+  "swing_pct_median": 0.13,
+  "swing_pct_min": 0.02,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1832
+ },
+ "guard_l_chainmail": {
+  "mean_luma": 26.7,
+  "swing_pct_median": 0.39,
+  "swing_pct_min": 0.21,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1794
+ },
+ "guard_r_chainmail": {
+  "mean_luma": 19.0,
+  "swing_pct_median": 0.55,
+  "swing_pct_min": 0.06,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 3779
+ },
+ "stairs_left_of_fore_torch": {
+  "mean_luma": 65.9,
+  "swing_pct_median": 10.9,
+  "swing_pct_min": 3.9,
+  "px_p2p_levels_median": 6.34,
+  "frac_px_ge4_median": 0.727,
+  "phone_px": 4687
+ },
+ "stairs_right_of_fore_torch": {
+  "mean_luma": 95.8,
+  "swing_pct_median": 10.34,
+  "swing_pct_min": 3.6,
+  "px_p2p_levels_median": 8.89,
+  "frac_px_ge4_median": 0.907,
+  "phone_px": 4485
+ },
+ "fore_soldier_chainmail": {
+  "mean_luma": 43.7,
+  "swing_pct_median": 0.44,
+  "swing_pct_min": 0.16,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.004,
+  "phone_px": 5750
+ },
+ "guard_l_coif_chainmail": {
+  "mean_luma": 28.8,
+  "swing_pct_median": 6.67,
+  "swing_pct_min": 4.16,
+  "px_p2p_levels_median": 1.18,
+  "frac_px_ge4_median": 0.163,
+  "phone_px": 729
+ },
+ "guard_r_coif_chainmail": {
+  "mean_luma": 21.6,
+  "swing_pct_median": 8.99,
+  "swing_pct_min": 3.39,
+  "px_p2p_levels_median": 1.3,
+  "frac_px_ge4_median": 0.133,
+  "phone_px": 775
+ },
+ "back_guard_r_face_mail": {
+  "mean_luma": 70.3,
+  "swing_pct_median": 18.08,
+  "swing_pct_min": 9.49,
+  "px_p2p_levels_median": 12.48,
+  "frac_px_ge4_median": 0.875,
+  "phone_px": 912
+ },
+ "torch_holder_l_face": {
+  "mean_luma": 79.0,
+  "swing_pct_median": 17.33,
+  "swing_pct_min": 10.47,
+  "px_p2p_levels_median": 12.33,
+  "frac_px_ge4_median": 0.931,
+  "phone_px": 540
+ },
+ "_whole_frame": {
+  "swing_pct": 5.768,
+  "max_step_pct": 0.449,
+  "energy_above_5hz": 0.0017
+ },
+ "_config": "configs/b13_three_torches_flames_v3.json"
+}

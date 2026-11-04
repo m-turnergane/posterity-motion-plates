@@ -1,0 +1,130 @@
+{
+ "name": "b05_landing_push_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b05_landing_1326_kent_OWNER.png",
+ "note": "The three walking leads + near shore on the near card; soldiers, ships, sea, sky on the far card. Push: the leads grow faster than the fleet (walk-toward feel), plus a slight drift. | 16:9 band crop removed 2026-10-30: portrait 941px plate -> 1920x1080 = 2.2 px/src px, fails guardrails.check_pixel_density (EIC: never upscale).",
+ "seconds": 6.0,
+ "formats": [
+  "1080x1920"
+ ],
+ "matte": {
+  "mode": "hybrid",
+  "guided_r": 4,
+  "guided_eps": 0.002
+ },
+ "camera": {
+  "type": "push+drift",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "anchor": [
+   0.45,
+   0.42
+  ],
+  "travel": 0.03,
+  "dir": [
+   1,
+   0
+  ],
+  "pivot": 0.5
+ },
+ "layers": [
+  {
+   "name": "far",
+   "parallax": 0.0,
+   "push_gain": 0.3
+  },
+  {
+   "name": "near",
+   "parallax": 1.0,
+   "push_gain": 1.0,
+   "depth_min": 0.35,
+   "seams": [
+    [
+     [
+      0.8,
+      0.7
+     ],
+     [
+      1.0,
+      0.7
+     ],
+     [
+      1.0,
+      0.88
+     ],
+     [
+      0.8,
+      0.88
+     ]
+    ]
+   ],
+   "seam_feather_px": 16,
+   "protect": [
+    {
+     "name": "left_man_face",
+     "poly": [
+      [
+       0.17,
+       0.345
+      ],
+      [
+       0.205,
+       0.345
+      ],
+      [
+       0.205,
+       0.375
+      ],
+      [
+       0.17,
+       0.375
+      ]
+     ]
+    },
+    {
+     "name": "woman_face",
+     "poly": [
+      [
+       0.42,
+       0.38
+      ],
+      [
+       0.46,
+       0.38
+      ],
+      [
+       0.46,
+       0.43
+      ],
+      [
+       0.42,
+       0.43
+      ]
+     ]
+    },
+    {
+     "name": "right_man_face",
+     "poly": [
+      [
+       0.75,
+       0.36
+      ],
+      [
+       0.79,
+       0.36
+      ],
+      [
+       0.79,
+       0.41
+      ],
+      [
+       0.75,
+       0.41
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

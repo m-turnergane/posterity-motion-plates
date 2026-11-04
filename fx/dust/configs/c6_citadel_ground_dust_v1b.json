@@ -1,0 +1,155 @@
+{
+ "name": "c6_citadel_ground_dust_v1b",
+ "plate": "/workspace/posterity/day8/chan-chan-chimu/assets/owner/seq6_emptied_citadel_OWNER.png",
+ "seed": 66,
+ "seconds": 6.0,
+ "push": [
+  1.0,
+  1.0
+ ],
+ "push_center": [
+  0.5,
+  0.5
+ ],
+ "crf": 24,
+ "protect_feather": 8,
+ "zones": [
+  {
+   "type": "ground",
+   "poly": [
+    [
+     455,
+     905
+    ],
+    [
+     700,
+     882
+    ],
+    [
+     880,
+     882
+    ],
+    [
+     880,
+     968
+    ],
+    [
+     832,
+     984
+    ],
+    [
+     832,
+     1148
+    ],
+    [
+     745,
+     1166
+    ],
+    [
+     742,
+     1600
+    ],
+    [
+     870,
+     1672
+    ],
+    [
+     0,
+     1672
+    ],
+    [
+     0,
+     1112
+    ],
+    [
+     233,
+     1106
+    ],
+    [
+     238,
+     1022
+    ],
+    [
+     462,
+     1016
+    ]
+   ],
+   "feather": 30,
+   "lum_lo": 40,
+   "lum_hi": 170,
+   "lum_blur": 10
+  }
+ ],
+ "protect": [],
+ "layers": [
+  {
+   "type": "sheets",
+   "zone": 0,
+   "amp": 0.36,
+   "thresh": 0.0,
+   "gamma": 1.2,
+   "scales": [
+    [
+     260,
+     20
+    ],
+    [
+     120,
+     10
+    ]
+   ],
+   "wind": [
+    [
+     26,
+     -3
+    ],
+    [
+     15,
+     1
+    ]
+   ],
+   "squash_y": 2.6,
+   "color": [
+    250,
+    228,
+    192
+   ]
+  },
+  {
+   "type": "motes",
+   "zone": 0,
+   "n": 420,
+   "sigma": [
+    0.8,
+    2.6
+   ],
+   "speed": [
+    12,
+    40
+   ],
+   "dir": [
+    1.0,
+    -0.08
+   ],
+   "dir_jitter_deg": 12,
+   "turb_px": 4,
+   "turb_hz": [
+    0.1,
+    0.4
+   ],
+   "life_s": [
+    4,
+    9
+   ],
+   "amp": 150,
+   "near_gain": 1.5,
+   "depth_power": 2.0,
+   "pre_roll": 40,
+   "color": [
+    255,
+    232,
+    190
+   ]
+  }
+ ]
+}

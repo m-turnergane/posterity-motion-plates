@@ -1,0 +1,65 @@
+{
+ "name": "c6_citadel_ground_dust_v1b",
+ "plate": "/workspace/posterity/day8/chan-chan-chimu/assets/owner/seq6_emptied_citadel_OWNER.png",
+ "times": [
+  0.0,
+  0.7,
+  1.5,
+  2.6,
+  3.4,
+  4.5,
+  5.9
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "protect_px": 1038497,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  228579,
+  226881,
+  227332,
+  224205,
+  221670,
+  219875,
+  218612
+ ],
+ "changed_frac_of_frame": [
+  0.14528,
+  0.1442,
+  0.14449,
+  0.1425,
+  0.14089,
+  0.13975,
+  0.13895
+ ],
+ "max_abs_diff_in_allow": [
+  88,
+  86,
+  91,
+  94,
+  77,
+  86,
+  86
+ ],
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.0,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.148,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

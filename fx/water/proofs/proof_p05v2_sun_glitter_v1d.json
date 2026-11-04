@@ -1,0 +1,56 @@
+{
+ "name": "p05v2_sun_glitter_v1d",
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "times": [
+  0.0,
+  0.5,
+  1.0,
+  1.7,
+  2.4,
+  3.1,
+  4.0
+ ],
+ "impulses": 25560,
+ "leaked_px_total": 0,
+ "impulse_live_changed_min_frac": 0.9781,
+ "protect_px": 1977651,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  28304,
+  32250,
+  30351,
+  28628,
+  33568,
+  29795,
+  33512
+ ],
+ "changed_frac_of_frame": [
+  0.01365,
+  0.01555,
+  0.01464,
+  0.01381,
+  0.01619,
+  0.01437,
+  0.01616
+ ],
+ "max_abs_diff_in_allow": [
+  188,
+  199,
+  199,
+  193,
+  198,
+  202,
+  193
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

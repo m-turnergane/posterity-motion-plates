@@ -1,0 +1,6 @@
+{"size": "1080x1920", "crf": 25,
+ "note": "strongest first, hard cuts, no labels",
+ "shots": [{"config": "configs/b05_landing_push_v1.json", "seconds": 6.0},
+           {"config": "configs/b10_corfe_letter_drift_v1.json", "seconds": 6.0},
+           {"config": "configs/b01_gloucester_kent_drift_v1.json", "seconds": 6.0},
+           {"config": "configs/p10_escape_drift_v1.json", "seconds": 6.0}]}

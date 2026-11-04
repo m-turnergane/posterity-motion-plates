@@ -1,0 +1,473 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p06_burnt_city_doorway_OWNER.png",
+ "note": "Ugarit p06 HAZE-LED: drifting smoke haze fills the ruined street seen through the doorway, plus the doorway plume billow and base columns. Door frame protected (0 px).",
+ "seed": 16,
+ "preroll": 8.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "protect": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    941,
+    0
+   ],
+   [
+    941,
+    172
+   ],
+   [
+    0,
+    172
+   ]
+  ],
+  [
+   [
+    0,
+    0
+   ],
+   [
+    152,
+    0
+   ],
+   [
+    152,
+    1672
+   ],
+   [
+    0,
+    1672
+   ]
+  ],
+  [
+   [
+    802,
+    0
+   ],
+   [
+    941,
+    0
+   ],
+   [
+    941,
+    1672
+   ],
+   [
+    802,
+    1672
+   ]
+  ]
+ ],
+ "protect_feather": 24,
+ "emitters": [
+  {
+   "color_dark": [
+    78,
+    76,
+    86
+   ],
+   "color_light": [
+    150,
+    146,
+    154
+   ],
+   "opacity": 0.62,
+   "layers": 2,
+   "rise": 16,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "breakup": 0.45,
+   "puffs": 0.6,
+   "relief": 0.4,
+   "name": "main_column",
+   "type": "column",
+   "src": [
+    520,
+    600
+   ],
+   "height": 400,
+   "w0": 26,
+   "w1": 160,
+   "lean": 70,
+   "seed": 1,
+   "glow": {
+    "color": [
+     255,
+     140,
+     70
+    ],
+    "strength": 0.12,
+    "reach": 0.04,
+    "flicker": 0.3,
+    "patch": 0.5
+   }
+  },
+  {
+   "color_dark": [
+    78,
+    76,
+    86
+   ],
+   "color_light": [
+    150,
+    146,
+    154
+   ],
+   "opacity": 0.62,
+   "layers": 2,
+   "rise": 16,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "breakup": 0.45,
+   "puffs": 0.6,
+   "relief": 0.4,
+   "name": "left_plume",
+   "type": "column",
+   "src": [
+    380,
+    580
+   ],
+   "height": 300,
+   "w0": 18,
+   "w1": 120,
+   "lean": 60,
+   "seed": 2,
+   "glow": {
+    "color": [
+     255,
+     140,
+     70
+    ],
+    "strength": 0.12,
+    "reach": 0.04,
+    "flicker": 0.3,
+    "patch": 0.5
+   }
+  },
+  {
+   "color_dark": [
+    78,
+    76,
+    86
+   ],
+   "color_light": [
+    150,
+    146,
+    154
+   ],
+   "opacity": 0.62,
+   "layers": 2,
+   "rise": 16,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "breakup": 0.45,
+   "puffs": 0.6,
+   "relief": 0.4,
+   "name": "right_plume",
+   "type": "column",
+   "src": [
+    720,
+    594
+   ],
+   "height": 330,
+   "w0": 18,
+   "w1": 130,
+   "lean": 50,
+   "seed": 3,
+   "glow": {
+    "color": [
+     255,
+     140,
+     70
+    ],
+    "strength": 0.12,
+    "reach": 0.04,
+    "flicker": 0.3,
+    "patch": 0.5
+   }
+  },
+  {
+   "color_dark": [
+    78,
+    76,
+    86
+   ],
+   "color_light": [
+    150,
+    146,
+    154
+   ],
+   "opacity": 0.62,
+   "layers": 2,
+   "rise": 16,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "breakup": 0.45,
+   "puffs": 0.6,
+   "relief": 0.4,
+   "name": "small_left",
+   "type": "column",
+   "src": [
+    240,
+    592
+   ],
+   "height": 190,
+   "w0": 10,
+   "w1": 80,
+   "lean": 40,
+   "seed": 4,
+   "glow": {
+    "color": [
+     255,
+     140,
+     70
+    ],
+    "strength": 0.12,
+    "reach": 0.04,
+    "flicker": 0.3,
+    "patch": 0.5
+   }
+  },
+  {
+   "color_dark": [
+    78,
+    76,
+    86
+   ],
+   "color_light": [
+    150,
+    146,
+    154
+   ],
+   "opacity": 0.62,
+   "layers": 2,
+   "rise": 16,
+   "edge": [
+    0.12,
+    0.7
+   ],
+   "breakup": 0.45,
+   "puffs": 0.6,
+   "relief": 0.4,
+   "name": "spire_wisp",
+   "type": "column",
+   "src": [
+    600,
+    598
+   ],
+   "height": 160,
+   "w0": 8,
+   "w1": 60,
+   "lean": 30,
+   "seed": 5,
+   "glow": {
+    "color": [
+     255,
+     140,
+     70
+    ],
+    "strength": 0.12,
+    "reach": 0.04,
+    "flicker": 0.3,
+    "patch": 0.5
+   }
+  },
+  {
+   "name": "far_city_haze",
+   "type": "haze",
+   "rect": [
+    152,
+    540,
+    802,
+    760
+   ],
+   "drift": 8,
+   "opacity": 0.6,
+   "color_light": [
+    210,
+    200,
+    196
+   ],
+   "feather": 70,
+   "seed": 11,
+   "lo": 420,
+   "hi": 20,
+   "swirl": 24,
+   "color_dark": [
+    140,
+    132,
+    134
+   ],
+   "beta": 3.2
+  },
+  {
+   "name": "street_haze",
+   "type": "haze",
+   "rect": [
+    152,
+    820,
+    802,
+    1250
+   ],
+   "drift": -7,
+   "opacity": 0.5,
+   "color_light": [
+    210,
+    200,
+    196
+   ],
+   "feather": 90,
+   "seed": 12,
+   "lo": 420,
+   "hi": 20,
+   "swirl": 24,
+   "color_dark": [
+    140,
+    132,
+    134
+   ],
+   "beta": 3.2
+  },
+  {
+   "name": "floor_haze",
+   "type": "haze",
+   "rect": [
+    152,
+    1300,
+    802,
+    1620
+   ],
+   "drift": 10,
+   "opacity": 0.42,
+   "color_light": [
+    210,
+    200,
+    196
+   ],
+   "feather": 90,
+   "seed": 13,
+   "lo": 420,
+   "hi": 20,
+   "swirl": 24,
+   "color_dark": [
+    140,
+    132,
+    134
+   ],
+   "beta": 3.2
+  }
+ ],
+ "billows": [
+  {
+   "name": "doorway_plumes",
+   "region": [
+    [
+     [
+      156,
+      176
+     ],
+     [
+      798,
+      176
+     ],
+     [
+      798,
+      540
+     ],
+     [
+      156,
+      540
+     ]
+    ]
+   ],
+   "luma": [
+    0.2,
+    0.72
+   ],
+   "sat_max": 0.2,
+   "soft": 0.05,
+   "dark_rel": [
+    -0.005,
+    0.03
+   ],
+   "rel_sigma": 60,
+   "grow": 8,
+   "feather": 6,
+   "edge_feather": 12,
+   "amp": 10,
+   "rise": 14,
+   "period": 2.6,
+   "scale": 90,
+   "seed": 1
+  }
+ ],
+ "guards": {
+  "door_left": [
+   [
+    0,
+    200
+   ],
+   [
+    140,
+    200
+   ],
+   [
+    140,
+    1600
+   ],
+   [
+    0,
+    1600
+   ]
+  ],
+  "door_right": [
+   [
+    812,
+    200
+   ],
+   [
+    941,
+    200
+   ],
+   [
+    941,
+    1600
+   ],
+   [
+    812,
+    1600
+   ]
+  ],
+  "lintel": [
+   [
+    0,
+    0
+   ],
+   [
+    941,
+    0
+   ],
+   [
+    941,
+    160
+   ],
+   [
+    0,
+    160
+   ]
+  ]
+ }
+}

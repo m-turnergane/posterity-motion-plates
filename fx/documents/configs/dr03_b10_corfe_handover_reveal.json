@@ -1,0 +1,167 @@
+{
+ "name": "dr03_b10_corfe_handover_reveal",
+ "document": "DOC-K1",
+ "treatment": "reveal",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "seconds": 4.5,
+ "note": "Action plate: Kent hands DOC-K1 over at the Corfe gate. Follows the LOCKED b10 full stack (PRESETS 'Stacking: depth_v1 + torch_v1c + smoke_v2'): depth_v1 the only camera, torch_v1c as plate_fx with the locked face keep-out (pad 6, feather 18), smoke_v2 from the wall torch at alpha x0.4 on the near layer, mist as locked. The document gain multiplies the torch layer inside the letter mask only. protect = check-only on the locked face polys (+ left soldier). The locked stack keeps two faces out of the torch; the left soldier's face (plate x0-70, y690-790) still took up to 22 levels of torch flicker, so it gets the same keep-out (exact inside, faded back over 24 px = locked pad 6 + feather 18).",
+ "camera": {
+  "mode": "fullstack",
+  "smoke_gain": 0.4,
+  "stack": "engine-rnd/hero/fullstack_v1.py",
+  "config": "engine-rnd/depth/configs/b10_corfe_letter_drift_v1.json"
+ },
+ "doc_poly": [
+  [
+   525,
+   918
+  ],
+  [
+   565,
+   898
+  ],
+  [
+   675,
+   940
+  ],
+  [
+   660,
+   955
+  ],
+  [
+   625,
+   972
+  ],
+  [
+   560,
+   945
+  ]
+ ],
+ "protect": {
+  "kent_face": [
+   [
+    305,
+    600
+   ],
+   [
+    330,
+    585
+   ],
+   [
+    380,
+    590
+   ],
+   [
+    400,
+    610
+   ],
+   [
+    405,
+    660
+   ],
+   [
+    398,
+    700
+   ],
+   [
+    370,
+    725
+   ],
+   [
+    330,
+    722
+   ],
+   [
+    300,
+    690
+   ],
+   [
+    292,
+    640
+   ]
+  ],
+  "gaoler_face": [
+   [
+    778,
+    560
+   ],
+   [
+    810,
+    540
+   ],
+   [
+    850,
+    548
+   ],
+   [
+    868,
+    580
+   ],
+   [
+    870,
+    640
+   ],
+   [
+    860,
+    690
+   ],
+   [
+    830,
+    716
+   ],
+   [
+    800,
+    712
+   ],
+   [
+    775,
+    680
+   ],
+   [
+    768,
+    630
+   ]
+  ],
+  "face_soldier_left": [
+   [
+    0,
+    690
+   ],
+   [
+    70,
+    690
+   ],
+   [
+    70,
+    790
+   ],
+   [
+    0,
+    790
+   ]
+  ]
+ },
+ "smoke": null,
+ "reveal": {
+  "t0": 0.1,
+  "dur": 2.0,
+  "g0": 0.5,
+  "soft": 0.35,
+  "glint": 0.1,
+  "glint_w": 0.14,
+  "feather": 5.0,
+  "axis": [
+   -1.0,
+   -0.35
+  ],
+  "tint": [
+   1.0,
+   0.92,
+   0.8
+  ]
+ },
+ "protect_feather": 1,
+ "protect_feather_by_region": {
+  "face_soldier_left": 24
+ }
+}

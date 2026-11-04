@@ -1,0 +1,155 @@
+{
+ "name": "hubert_fire_arch_push_v1",
+ "plate": "/workspace/posterity/day3/nero-fiddle/assets/pd_hubert_robert_fire.jpg",
+ "note": "Hubert Robert, The Fire of Rome (public domain; see day3/nero-fiddle/assets/CREDITS.md). Native landscape 1920x1543 -> 1920x1080 = ~1.1 output px/src px (passes check_pixel_density). Near = bridge, statue, balustrade, temple, foreground figures; far = sky + the burning city seen through the arch. Push into the arch, slow orbit-like drift around the near plane. Hand fix: two thin polys add the statue's lit left rim and the walker's staff tip in the arch (depth put both with the far fire).",
+ "seconds": 6.0,
+ "formats": [
+  "1920x1080"
+ ],
+ "matte": {
+  "mode": "hybrid",
+  "guided_r": 4,
+  "guided_eps": 0.002
+ },
+ "camera": {
+  "type": "push+drift",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "anchor": [
+   0.4,
+   0.5
+  ],
+  "travel": 0.03,
+  "dir": [
+   1,
+   0
+  ],
+  "pivot": 1.0
+ },
+ "layers": [
+  {
+   "name": "far",
+   "parallax": 0.0,
+   "push_gain": 0.4
+  },
+  {
+   "name": "near",
+   "parallax": 1.0,
+   "push_gain": 1.0,
+   "depth_min": 0.26,
+   "protect": [
+    {
+     "name": "statue",
+     "poly": [
+      [
+       0.446,
+       0.302
+      ],
+      [
+       0.461,
+       0.302
+      ],
+      [
+       0.461,
+       0.368
+      ],
+      [
+       0.446,
+       0.368
+      ]
+     ]
+    },
+    {
+     "name": "fg_figures",
+     "poly": [
+      [
+       0.05,
+       0.78
+      ],
+      [
+       0.12,
+       0.78
+      ],
+      [
+       0.12,
+       0.9
+      ],
+      [
+       0.05,
+       0.9
+      ]
+     ]
+    },
+    {
+     "name": "arch_walker",
+     "poly": [
+      [
+       0.4365,
+       0.63
+      ],
+      [
+       0.443,
+       0.63
+      ],
+      [
+       0.443,
+       0.69
+      ],
+      [
+       0.4365,
+       0.69
+      ]
+     ]
+    }
+   ],
+   "polys": [
+    [
+     [
+      0.448,
+      0.296
+     ],
+     [
+      0.441,
+      0.299
+     ],
+     [
+      0.4365,
+      0.315
+     ],
+     [
+      0.4362,
+      0.345
+     ],
+     [
+      0.439,
+      0.372
+     ],
+     [
+      0.448,
+      0.372
+     ]
+    ],
+    [
+     [
+      0.3885,
+      0.614
+     ],
+     [
+      0.3945,
+      0.614
+     ],
+     [
+      0.4025,
+      0.652
+     ],
+     [
+      0.3955,
+      0.652
+     ]
+    ]
+   ]
+  }
+ ]
+}

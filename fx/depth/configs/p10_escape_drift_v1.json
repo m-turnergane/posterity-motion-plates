@@ -1,0 +1,137 @@
+{
+ "name": "p10_escape_drift_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/p10_escape_servant_clothes_twilight_OWNER.png",
+ "note": "Wall, door, fugitive and near grass on the near card; the castle and twilight sky on the far card. Lateral drift reveals the castle past the wall edge.",
+ "seconds": 6.0,
+ "formats": [
+  "1080x1920"
+ ],
+ "matte": {
+  "mode": "hybrid",
+  "guided_r": 4,
+  "guided_eps": 0.002
+ },
+ "camera": {
+  "type": "drift+push",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "anchor": [
+   0.55,
+   0.4
+  ],
+  "travel": 0.03,
+  "dir": [
+   -1,
+   0
+  ],
+  "pivot": 0.5
+ },
+ "layers": [
+  {
+   "name": "far",
+   "parallax": 0.0,
+   "push_gain": 0.4
+  },
+  {
+   "name": "near",
+   "parallax": 1.0,
+   "push_gain": 1.0,
+   "depth_min": 0.2,
+   "seams": [
+    [
+     [
+      0.55,
+      0.68
+     ],
+     [
+      1.0,
+      0.68
+     ],
+     [
+      1.0,
+      0.86
+     ],
+     [
+      0.55,
+      0.86
+     ]
+    ]
+   ],
+   "seam_feather_px": 18,
+   "protect": [
+    {
+     "name": "face",
+     "poly": [
+      [
+       0.52,
+       0.33
+      ],
+      [
+       0.57,
+       0.33
+      ],
+      [
+       0.57,
+       0.37
+      ],
+      [
+       0.52,
+       0.37
+      ]
+     ]
+    },
+    {
+     "name": "hand",
+     "poly": [
+      [
+       0.565,
+       0.42
+      ],
+      [
+       0.59,
+       0.42
+      ],
+      [
+       0.59,
+       0.44
+      ],
+      [
+       0.565,
+       0.44
+      ]
+     ]
+    }
+   ],
+   "region": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      0.72,
+      0
+     ],
+     [
+      0.72,
+      0.68
+     ],
+     [
+      1,
+      0.68
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      0,
+      1
+     ]
+    ]
+   ]
+  }
+ ]
+}

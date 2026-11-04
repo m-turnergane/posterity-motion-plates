@@ -1,0 +1,208 @@
+{
+ "name": "nero_balcony_push_v1",
+ "plate": "/workspace/posterity/day3/nero-fiddle/assets/art_nero_lyre_balcony_fire_v2.png",
+ "plate_md5": "b8b63a406cd7317b20b6aa6f61d5ba99",
+ "info": {
+  "mode": "hybrid",
+  "depth": {
+   "cached": true
+  },
+  "reveal_px": 66,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.4468
+   }
+  ]
+ },
+ "formats": {
+  "1920x1080": {
+   "size": [
+    1920,
+    1080
+   ],
+   "overscan": 1.05172,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.114827583633363,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.672,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       1280,
+       720
+      ],
+      "out_wh": [
+       1920,
+       1080
+      ],
+      "push_max": 1.114828,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.5,
+      "visible_src_wh": [
+       1148.2,
+       645.8
+      ],
+      "ratio": 1.672,
+      "ratio_x": 1.672,
+      "ratio_y": 1.672,
+      "max_ratio": 1.5,
+      "pass": false,
+      "ok": false,
+      "msg": "plate 1280x720: 1.672 output px per source px > 1.5 (plate 1280x720 -> 1920x1080, cover-fit 1.500x x peak push/crop 1.115x; visible source only 1148x646 px) -- needs a native (same-aspect) >= 1427x803 plate or less push"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        401,
+        214
+       ],
+       "expected": [
+        575.999,
+        324.764
+       ],
+       "measured": [
+        575.999,
+        324.762
+       ],
+       "err_px": 0.0019,
+       "err_if_double_push_px": 26.41
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        380,
+        210
+       ],
+       "expected": [
+        571.516,
+        320.167
+       ],
+       "measured": [
+        571.516,
+        320.168
+       ],
+       "err_px": 0.0013,
+       "err_if_double_push_px": 26.78
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 63427,
+     "revealed_frac": 0.03059,
+     "revealed_strip_mean_width_px": 15.36,
+     "holes_px": 0,
+     "hf_revealed": 3.059,
+     "hf_ring": 7.175,
+     "hf_ratio": 0.426
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 50490,
+     "revealed_frac": 0.02435,
+     "revealed_strip_mean_width_px": 16.94,
+     "holes_px": 0,
+     "hf_revealed": 2.685,
+     "hf_ring": 5.023,
+     "hf_ratio": 0.534
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "nero_face",
+     "area_px": 3800,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0046,
+       "max": 5.347,
+       "ncc": 1.0,
+       "px": 5940
+      },
+      {
+       "frame": 90,
+       "mae": 0.0046,
+       "max": 5.085,
+       "ncc": 1.0,
+       "px": 6392
+      },
+      {
+       "frame": 179,
+       "mae": 0.0044,
+       "max": 5.193,
+       "ncc": 1.0,
+       "px": 6720
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "hands_lyre",
+     "area_px": 2288,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0164,
+       "max": 18.2,
+       "ncc": 1.0,
+       "px": 3328
+      },
+      {
+       "frame": 90,
+       "mae": 0.013,
+       "max": 15.709,
+       "ncc": 1.0,
+       "px": 3432
+      },
+      {
+       "frame": 179,
+       "mae": 0.0136,
+       "max": 15.95,
+       "ncc": 1.0,
+       "px": 3672
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 47.37,
+  "max_abs": 82.06,
+  "px_ge4": 12800,
+  "px_ge4_frac": 0.013889
+ },
+ "pass": false
+}

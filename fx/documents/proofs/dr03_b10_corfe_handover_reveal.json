@@ -1,0 +1,369 @@
+{
+ "shot": "dr03_b10_corfe_handover_reveal",
+ "document": "DOC-K1",
+ "treatment": "reveal",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "plate_md5": "386d4c426bfc75da9d72eca768057228",
+ "seconds": 4.5,
+ "camera": {
+  "mode": "fullstack",
+  "smoke_gain": 0.4,
+  "stack": "engine-rnd/hero/fullstack_v1.py",
+  "config": "engine-rnd/depth/configs/b10_corfe_letter_drift_v1.json"
+ },
+ "pixel_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.082917,
+  "crop_zoom": 1.0,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   868.5,
+   1544.0
+  ],
+  "ratio": 1.244,
+  "ratio_x": 1.244,
+  "ratio_y": 1.244,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "looks": {
+  "plate_fx": "fx_v1c.PlateFX (fx_candle flicker+spill / torch_v1c), own parallax OFF",
+  "fx_drop": [],
+  "smoke_v2": true,
+  "depth_v1": true,
+  "locked_stack": "engine-rnd/hero/fullstack_v1.Stack (PRESETS 'Stacking: depth_v1 + torch_v1c + smoke_v2'): torch_v1c face keep-out pad 6 / feather 18, smoke_v2 alpha x0.4, smoke on the near layer, depth the only camera; smoke_v2.push_frame calls 0"
+ },
+ "protected_pixels": {
+  "note": "plate space, every frame, changed px inside face/land/water polygons",
+  "by_region": {
+   "kent_face": 0,
+   "gaoler_face": 0,
+   "face_soldier_left": 0
+  },
+  "total": 0,
+  "pass_": true
+ },
+ "legibility": {
+  "note": "plate space, page interior (mask eroded 12px), out vs the same locked-look frame without the document gain (vs_untouched_plate also listed per sample); hp = p99 |log(out/ref) - blur3| on ref luma 40..250 (a gain field leaves ~0); detail_ncc = correlation of the high-pass of out vs ref (marks are the plate's own); new edges = local-contrast Canny edges >2px from any ref edge (abs-threshold count reported); lapvar = var(Laplacian(log L)) out/plate (<=1: never sharper/more marks). Boundary band reported only.",
+  "samples": [
+   {
+    "t": 0.0,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1216,
+    "hp_logratio_p99": 0.0146,
+    "detail_ncc_vs_plate": 0.9999,
+    "new_edges_px": 0,
+    "plate_edges_px": 264,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 0.9553,
+    "boundary_new_edges_px": 3,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0337,
+     "detail_ncc_vs_plate": 0.9995,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.9185,
+     "boundary_new_edges_px": 4
+    }
+   },
+   {
+    "t": 0.5,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1209,
+    "hp_logratio_p99": 0.0155,
+    "detail_ncc_vs_plate": 0.9999,
+    "new_edges_px": 0,
+    "plate_edges_px": 273,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 0.9573,
+    "boundary_new_edges_px": 34,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0403,
+     "detail_ncc_vs_plate": 0.9995,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.8818,
+     "boundary_new_edges_px": 29
+    }
+   },
+   {
+    "t": 1.0,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1191,
+    "hp_logratio_p99": 0.0175,
+    "detail_ncc_vs_plate": 0.9998,
+    "new_edges_px": 0,
+    "plate_edges_px": 275,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 0.9568,
+    "boundary_new_edges_px": 9,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0581,
+     "detail_ncc_vs_plate": 0.9991,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.8244,
+     "boundary_new_edges_px": 2
+    }
+   },
+   {
+    "t": 1.5,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1223,
+    "hp_logratio_p99": 0.0013,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 268,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0442,
+     "detail_ncc_vs_plate": 0.9994,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 3,
+     "lapvar_log_ratio": 0.8796,
+     "boundary_new_edges_px": 0
+    }
+   },
+   {
+    "t": 2.0,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1210,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 273,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0591,
+     "detail_ncc_vs_plate": 0.9989,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.8442,
+     "boundary_new_edges_px": 0
+    }
+   },
+   {
+    "t": 2.5,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1210,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 274,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0704,
+     "detail_ncc_vs_plate": 0.9981,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.821,
+     "boundary_new_edges_px": 10
+    }
+   },
+   {
+    "t": 3.0,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1212,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 268,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0716,
+     "detail_ncc_vs_plate": 0.9982,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.8175,
+     "boundary_new_edges_px": 4
+    }
+   },
+   {
+    "t": 3.5,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1234,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 275,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0639,
+     "detail_ncc_vs_plate": 0.9982,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 8,
+     "lapvar_log_ratio": 0.8212,
+     "boundary_new_edges_px": 0
+    }
+   },
+   {
+    "t": 4.0,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1224,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 279,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0751,
+     "detail_ncc_vs_plate": 0.998,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.7933,
+     "boundary_new_edges_px": 1
+    }
+   },
+   {
+    "t": 4.47,
+    "interior_px_area": 1279,
+    "hp_measured_px": 1191,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 271,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 1279,
+     "hp_measured_px": 1194,
+     "hp_logratio_p99": 0.0972,
+     "detail_ncc_vs_plate": 0.9974,
+     "new_edges_px": 0,
+     "plate_edges_px": 275,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.7564,
+     "boundary_new_edges_px": 5
+    }
+   }
+  ],
+  "worst": {
+   "hp_logratio_p99": 0.0175,
+   "new_edges_px": 0,
+   "lapvar_log_ratio": 1.0,
+   "detail_ncc_min": 0.9998,
+   "boundary_new_edges_px": 34
+  },
+  "gate": {
+   "new_edges_px_max": 5,
+   "lapvar_log_ratio_max": 1.05,
+   "detail_ncc_min": 0.9,
+   "hp_logratio_p99_max": 0.06
+  },
+  "pass_": true,
+  "text_added": false
+ },
+ "phone_360x640": {
+  "note": "all at 360x640, same camera. document_effect = mean luma(out) / mean luma(locked-look frame without the document gain): the new effect alone, gated swing<8%/1s and >5Hz<0.05. locked_looks = locked-look frame / untouched plate (fx_candle / torch_v1c / smoke_v2 as locked; reported, not re-tuned). all_effects = out / untouched plate. document_roi swing is the one-way reveal (dim -> native), gated on >5 Hz only. first_second = px whose document-effect luma changes >12 between t=0 and t=1s.",
+  "first_second_effect_px_gt12": 616,
+  "first_second_pass": true,
+  "full_frame_with_camera": {
+   "swing_1s_max_pct": 15.95,
+   "energy_above_5hz": 0.02499
+  },
+  "document_effect_full_frame": {
+   "swing_1s_max_pct": 0.457,
+   "energy_above_5hz": 0.01332
+  },
+  "locked_looks_full_frame": {
+   "swing_1s_max_pct": 15.733,
+   "energy_above_5hz": 0.03245
+  },
+  "all_effects_full_frame": {
+   "swing_1s_max_pct": 15.733,
+   "energy_above_5hz": 0.03065
+  },
+  "document_roi": {
+   "swing_1s_max_pct": 69.644,
+   "energy_above_5hz": 0.00326
+  },
+  "pass_": true
+ },
+ "single_camera": {
+  "kind": "depth_v1: one warp per layer card per frame (WARP_LOG), effects passed as plate_fx",
+  "frames": 135,
+  "cards": 2,
+  "max_warps_per_layer_frame": 1,
+  "overscan": 1.02162,
+  "rigidity": [
+   {
+    "name": "kent_face",
+    "layer": "near",
+    "pass_": true
+   },
+   {
+    "name": "gaoler_face",
+    "layer": "near",
+    "pass_": true
+   },
+   {
+    "name": "kent_hand",
+    "layer": "near",
+    "pass_": true
+   },
+   {
+    "name": "letter",
+    "layer": "near",
+    "pass_": true
+   },
+   {
+    "name": "gaoler_hand",
+    "layer": "near",
+    "pass_": true
+   }
+  ],
+  "pass_": true
+ },
+ "pass": true
+}

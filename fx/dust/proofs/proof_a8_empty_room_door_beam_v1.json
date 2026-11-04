@@ -1,0 +1,65 @@
+{
+ "name": "a8_empty_room_door_beam_v1",
+ "plate": "/workspace/posterity/day21/atahualpa/plates/atahualpa_p08_empty_room_payoff_OWNER.png",
+ "times": [
+  0.0,
+  0.7,
+  1.5,
+  2.6,
+  3.4,
+  4.5,
+  5.9
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "protect_px": 1145585,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  119504,
+  98729,
+  92349,
+  81907,
+  114189,
+  125771,
+  129254
+ ],
+ "changed_frac_of_frame": [
+  0.07596,
+  0.06275,
+  0.0587,
+  0.05206,
+  0.07258,
+  0.07994,
+  0.08215
+ ],
+ "max_abs_diff_in_allow": [
+  132,
+  114,
+  132,
+  108,
+  130,
+  87,
+  116
+ ],
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

@@ -1,0 +1,21 @@
+{
+ "frames": 510,
+ "b13": {
+  "plate_luma_swing_pct": 7.092,
+  "max_step_pct": 0.957,
+  "energy_above_5Hz": 0.02293,
+  "px_changing_ge6_per_1s": 0.5535
+ },
+ "p05": {
+  "plate_luma_swing_pct": 1.825,
+  "max_step_pct": 0.67,
+  "energy_above_5Hz": 0.29042,
+  "px_changing_ge6_per_1s": 0.797
+ },
+ "b10_live": {
+  "plate_luma_swing_pct": 6.101,
+  "max_step_pct": 0.554,
+  "energy_above_5Hz": 0.00163,
+  "px_changing_ge6_per_1s": 0.1042
+ }
+}

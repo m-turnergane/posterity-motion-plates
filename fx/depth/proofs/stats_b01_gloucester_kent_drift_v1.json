@@ -1,0 +1,42 @@
+{
+ "name": "b01_gloucester_kent_drift_v1",
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "phone": [
+    360,
+    640
+   ],
+   "whole_frame": {
+    "swing_1s_median_pct": 0.425,
+    "swing_1s_max_pct": 0.521,
+    "max_step_pct": 0.0202,
+    "energy_above_5hz": 0.0159
+   },
+   "layers": {
+    "far": {
+     "travel_phone_px": 17.21,
+     "travel_first_1s_phone_px": 2.56,
+     "speed_phone_px_s_max": 3.05,
+     "measured_travel_px": 11.51,
+     "jitter_rms_px": 0.0232,
+     "vel_energy_above_5hz": 0.0107
+    },
+    "near": {
+     "travel_phone_px": 14.66,
+     "travel_first_1s_phone_px": 2.18,
+     "speed_phone_px_s_max": 2.6,
+     "measured_travel_px": 3.13,
+     "jitter_rms_px": 0.0099,
+     "vel_energy_above_5hz": 0.031
+    }
+   },
+   "relative_parallax_phone_px": 14.63,
+   "relative_parallax_first_1s_phone_px": 2.17,
+   "relative_parallax_pct_of_width": 4.06
+  }
+ }
+}

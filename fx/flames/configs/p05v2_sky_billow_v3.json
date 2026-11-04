@@ -1,0 +1,245 @@
+{
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "note": "flames_v3 P05 sky billow (billows only; applied UNDER the flames). smoke_v2 locked painted-plume billow (P06 doorway-plumes approach: luma/sat key + dark_rel local-darkness, two-phase flow map, curl warp). Protect = sea, ships, sun+horizon glitter, shore glitter, land below the skyline. No sky protect so the matte can cover the plumes; clear (orange) sky outside the matte is untouched.",
+ "seed": 5,
+ "preroll": 8.0,
+ "protect_feather": 14,
+ "protect": [
+  [
+   [
+    545,
+    526
+   ],
+   [
+    1080,
+    520
+   ],
+   [
+    1080,
+    905
+   ],
+   [
+    960,
+    900
+   ],
+   [
+    820,
+    880
+   ],
+   [
+    700,
+    840
+   ],
+   [
+    500,
+    765
+   ],
+   [
+    240,
+    722
+   ],
+   [
+    232,
+    656
+   ],
+   [
+    400,
+    652
+   ],
+   [
+    560,
+    649
+   ],
+   [
+    616,
+    630
+   ],
+   [
+    528,
+    612
+   ],
+   [
+    606,
+    592
+   ],
+   [
+    712,
+    578
+   ],
+   [
+    602,
+    558
+   ],
+   [
+    486,
+    542
+   ],
+   [
+    566,
+    532
+   ]
+  ],
+  [
+   [
+    290,
+    700
+   ],
+   [
+    420,
+    700
+   ],
+   [
+    420,
+    790
+   ],
+   [
+    290,
+    790
+   ]
+  ],
+  [
+   [
+    560,
+    455
+   ],
+   [
+    1080,
+    455
+   ],
+   [
+    1080,
+    530
+   ],
+   [
+    560,
+    530
+   ]
+  ],
+  [
+   [
+    840,
+    872
+   ],
+   [
+    1080,
+    872
+   ],
+   [
+    1080,
+    965
+   ],
+   [
+    960,
+    940
+   ],
+   [
+    880,
+    910
+   ]
+  ],
+  [
+   [
+    0,
+    466
+   ],
+   [
+    150,
+    470
+   ],
+   [
+    300,
+    470
+   ],
+   [
+    521,
+    470
+   ],
+   [
+    540,
+    492
+   ],
+   [
+    560,
+    505
+   ],
+   [
+    1080,
+    505
+   ],
+   [
+    1080,
+    1920
+   ],
+   [
+    0,
+    1920
+   ]
+  ]
+ ],
+ "emitters": [],
+ "billows": [
+  {
+   "name": "sky_plumes",
+   "region": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      1080,
+      0
+     ],
+     [
+      1080,
+      505
+     ],
+     [
+      560,
+      505
+     ],
+     [
+      540,
+      492
+     ],
+     [
+      521,
+      466
+     ],
+     [
+      300,
+      466
+     ],
+     [
+      150,
+      466
+     ],
+     [
+      0,
+      462
+     ]
+    ]
+   ],
+   "luma": [
+    0.0,
+    0.3
+   ],
+   "sat_max": 0.72,
+   "soft": 0.045,
+   "dark_rel": [
+    -0.04,
+    0.0
+   ],
+   "rel_sigma": 60,
+   "grow": 6,
+   "feather": 6,
+   "edge_feather": 12,
+   "amp": 14,
+   "rise": 26,
+   "period": 2.4,
+   "scale": 120,
+   "shade": 0.07,
+   "seed": 1
+  }
+ ]
+}

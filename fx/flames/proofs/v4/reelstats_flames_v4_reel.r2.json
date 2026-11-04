@@ -1,0 +1,60 @@
+{
+ "frames": 510,
+ "b13": {
+  "frames": [
+   0,
+   210
+  ],
+  "whole_swing_1s_median": 11.15,
+  "whole_swing_1s_max": 17.08,
+  "max_step_pct": 3.19,
+  "energy_above_5hz": 0.0071,
+  "local_swing_1s_median": {
+   "left_doorframe_wall": 37.17,
+   "left_stone_wall": 15.08,
+   "right_door_wall": 38.42,
+   "guard_face_l": 25.3,
+   "guard_face_r": 21.82,
+   "edward_face": 19.98,
+   "guard_l_chainmail": 10.45,
+   "guard_r_chainmail": 11.01,
+   "stairs_left_of_fore_torch": 24.47,
+   "stairs_right_of_fore_torch": 21.32,
+   "fore_soldier_chainmail": 10.97,
+   "guard_l_coif_chainmail": 18.39,
+   "guard_r_coif_chainmail": 17.62,
+   "back_guard_r_face_mail": 25.07,
+   "torch_holder_l_face": 22.89
+  }
+ },
+ "p05": {
+  "frames": [
+   210,
+   420
+  ],
+  "whole_swing_1s_median": 10.13,
+  "whole_swing_1s_max": 13.43,
+  "max_step_pct": 2.7,
+  "energy_above_5hz": 0.0158
+ },
+ "b10": {
+  "frames": [
+   420,
+   510
+  ],
+  "whole_swing_1s_median": 12.61,
+  "whole_swing_1s_max": 12.96,
+  "max_step_pct": 2.19,
+  "energy_above_5hz": 0.0082,
+  "local_swing_1s_median": {
+   "wall_above_cresset": 41.92,
+   "pillar_left_of_cresset": 25.57,
+   "wall_right_of_cresset": 43.62,
+   "pillar_below_cresset": 33.07,
+   "gaoler_face": 35.97,
+   "gaoler_chainmail": 18.12,
+   "kent_face": 25.77,
+   "gaoler_shoulder_chainmail": 26.98
+  }
+ }
+}

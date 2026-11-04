@@ -1,0 +1,68 @@
+{
+ "b13": {
+  "frames_checked": 35,
+  "warp_max_px": 0.0,
+  "parallax": false,
+  "phase_shift_px_max": {
+   "left_doorframe_wall": 0.519,
+   "left_stone_wall": 0.016,
+   "right_door_wall": 0.511,
+   "guard_face_l": 0.51,
+   "guard_face_r": 0.51,
+   "edward_face": 0.511,
+   "guard_l_chainmail": 0.505,
+   "guard_r_chainmail": 0.007,
+   "stairs_left_of_fore_torch": 0.009,
+   "stairs_right_of_fore_torch": 0.02,
+   "fore_soldier_chainmail": 0.509,
+   "guard_l_coif_chainmail": 0.032,
+   "guard_r_coif_chainmail": 0.51,
+   "back_guard_r_face_mail": 0.069,
+   "torch_holder_l_face": 0.119
+  },
+  "highpass_structure_ncc_min": {
+   "left_doorframe_wall": 0.9969,
+   "left_stone_wall": 0.9996,
+   "right_door_wall": 0.9974,
+   "guard_face_l": 0.9979,
+   "guard_face_r": 0.9993,
+   "edward_face": 0.9995,
+   "guard_l_chainmail": 0.9999,
+   "guard_r_chainmail": 0.9998,
+   "stairs_left_of_fore_torch": 0.999,
+   "stairs_right_of_fore_torch": 0.9958,
+   "fore_soldier_chainmail": 0.9977,
+   "guard_l_coif_chainmail": 0.9996,
+   "guard_r_coif_chainmail": 0.9994,
+   "back_guard_r_face_mail": 0.9962,
+   "torch_holder_l_face": 0.9975
+  },
+  "pass": false
+ },
+ "b10": {
+  "frames_checked": 15,
+  "warp_max_px": 0.0,
+  "parallax": false,
+  "phase_shift_px_max": {
+   "wall_above_cresset": 0.036,
+   "pillar_left_of_cresset": 0.508,
+   "wall_right_of_cresset": 0.028,
+   "pillar_below_cresset": 0.712,
+   "gaoler_face": 0.507,
+   "gaoler_chainmail": 0.006,
+   "kent_face": 0.02,
+   "gaoler_shoulder_chainmail": 0.018
+  },
+  "highpass_structure_ncc_min": {
+   "wall_above_cresset": 0.9933,
+   "pillar_left_of_cresset": 0.9994,
+   "wall_right_of_cresset": 0.9938,
+   "pillar_below_cresset": 0.9974,
+   "gaoler_face": 0.9982,
+   "gaoler_chainmail": 0.9998,
+   "kent_face": 0.999,
+   "gaoler_shoulder_chainmail": 0.9996
+  },
+  "pass": false
+ }
+}

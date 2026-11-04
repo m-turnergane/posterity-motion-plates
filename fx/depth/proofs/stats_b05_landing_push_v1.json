@@ -1,0 +1,42 @@
+{
+ "name": "b05_landing_push_v1",
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "phone": [
+    360,
+    640
+   ],
+   "whole_frame": {
+    "swing_1s_median_pct": 0.472,
+    "swing_1s_max_pct": 0.537,
+    "max_step_pct": 0.0206,
+    "energy_above_5hz": 0.0167
+   },
+   "layers": {
+    "far": {
+     "travel_phone_px": 5.46,
+     "travel_first_1s_phone_px": 0.81,
+     "speed_phone_px_s_max": 0.97,
+     "measured_travel_px": 2.8,
+     "jitter_rms_px": 0.0091,
+     "vel_energy_above_5hz": 0.0372
+    },
+    "near": {
+     "travel_phone_px": 12.23,
+     "travel_first_1s_phone_px": 1.82,
+     "speed_phone_px_s_max": 2.17,
+     "measured_travel_px": 3.85,
+     "jitter_rms_px": 0.01,
+     "vel_energy_above_5hz": 0.0145
+    }
+   },
+   "relative_parallax_phone_px": 13.48,
+   "relative_parallax_first_1s_phone_px": 2.0,
+   "relative_parallax_pct_of_width": 3.74
+  }
+ }
+}

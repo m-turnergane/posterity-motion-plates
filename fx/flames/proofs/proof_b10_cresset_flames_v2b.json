@@ -1,0 +1,21 @@
+{
+ "frames": 15,
+ "changed_px_outside_allowed": 0,
+ "max_diff_outside_allowed": 0,
+ "flames_only_changed_px_outside_flame_zone": 0,
+ "max_diff_in_protect": 0,
+ "protect_px": 67952,
+ "guards_max_diff": {
+  "kent_face": 0,
+  "gaoler": 0
+ },
+ "allowed_fraction": 0.3936,
+ "flame_zone_fraction": 0.0166,
+ "components": 1,
+ "changed_px_inside_allowed_max": 378443,
+ "pass": true,
+ "config": "configs/b10_cresset_flames_v2b.json",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "seconds": 7.0,
+ "times_step": 0.5
+}

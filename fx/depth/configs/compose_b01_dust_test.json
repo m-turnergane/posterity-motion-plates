@@ -1,0 +1,7 @@
+{"name": "compose_b01_dust_test", "note": "TEST ONLY: dust_v1 (locked) on the b01 plate, used as depth_v1 plate_fx. Its own push is never called.",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b01_gloucester_funeral_wide_kent_OWNER.png",
+ "seed": 7, "seconds": 6.0, "push": [1.0, 1.0], "protect_feather": 8,
+ "zones": [{"type": "shaft", "poly": [[330, 60], [941, 60], [941, 760], [330, 760]], "feather": 40, "lum_lo": 40, "lum_hi": 200, "lum_blur": 8, "lum_gamma": 0.8}],
+ "protect": [[[0, 0], [330, 0], [330, 1672], [0, 1672]]],
+ "layers": [{"type": "motes", "zone": 0, "n": 500, "sigma": [0.9, 3.0], "speed": [5, 18], "dir": [-0.2, 1.0], "dir_jitter_deg": 35, "turb_px": 6,
+             "turb_hz": [0.07, 0.3], "life_s": [5, 12], "amp": 200, "near_gain": 1.8, "depth_power": 2.0, "pre_roll": 40, "color": [255, 226, 180]}]}

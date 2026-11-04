@@ -1,0 +1,240 @@
+{
+ "name": "b05_landing_push_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b05_landing_1326_kent_OWNER.png",
+ "plate_md5": "e5c1415ce0f03cae5aff99f6e724bf8f",
+ "info": {
+  "mode": "hybrid",
+  "depth": {
+   "cached": true
+  },
+  "reveal_px": 66,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.5966
+   }
+  ]
+ },
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "overscan": 1.01607,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0770314657352866,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.237,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.077031,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       873.2,
+       1552.4
+      ],
+      "ratio": 1.237,
+      "ratio_x": 1.237,
+      "ratio_y": 1.237,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        294,
+        508
+       ],
+       "expected": [
+        324.113,
+        575.686
+       ],
+       "measured": [
+        324.117,
+        575.685
+       ],
+       "err_px": 0.0031,
+       "err_if_double_push_px": 26.45
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        211,
+        558
+       ],
+       "expected": [
+        231.317,
+        628.006
+       ],
+       "measured": [
+        231.314,
+        628.005
+       ],
+       "err_px": 0.0034,
+       "err_if_double_push_px": 27.2
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 19376,
+     "revealed_frac": 0.00934,
+     "revealed_strip_mean_width_px": 11.82,
+     "holes_px": 0,
+     "hf_revealed": 6.66,
+     "hf_ring": 11.251,
+     "hf_ratio": 0.592
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 7994,
+     "revealed_frac": 0.00386,
+     "revealed_strip_mean_width_px": 10.57,
+     "holes_px": 0,
+     "hf_revealed": 6.781,
+     "hf_ring": 9.263,
+     "hf_ratio": 0.732
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "left_man_face",
+     "area_px": 1734,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 1125
+      },
+      {
+       "frame": 90,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 1222
+      },
+      {
+       "frame": 179,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 1296
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "woman_face",
+     "area_px": 3315,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 2635
+      },
+      {
+       "frame": 90,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 2784
+      },
+      {
+       "frame": 179,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 2970
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "right_man_face",
+     "area_px": 3230,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 2520
+      },
+      {
+       "frame": 90,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 2728
+      },
+      {
+       "frame": 179,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 2880
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 45.83,
+  "max_abs": 155.48,
+  "px_ge4": 8257,
+  "px_ge4_frac": 0.005248
+ },
+ "pass": true
+}

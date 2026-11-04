@@ -1,0 +1,27 @@
+{
+ "frames": 540,
+ "nm4a_moon_path_v1b": {
+  "water_px_range_ge8": 5334,
+  "allow_px_range_ge8": 5334,
+  "outside_allow_px_range_ge8_codec": 0,
+  "outside_allow_range_p99": 1.7,
+  "whole_frame_swing_1s_max_pct": 0.27,
+  "whole_frame_energy_above_5hz": 0.0256
+ },
+ "k11_fire_reflection_v1b": {
+  "water_px_range_ge8": 11004,
+  "allow_px_range_ge8": 16947,
+  "outside_allow_px_range_ge8_codec": 0,
+  "outside_allow_range_p99": 1.3,
+  "whole_frame_swing_1s_max_pct": 5.87,
+  "whole_frame_energy_above_5hz": 0.0025
+ },
+ "p05v2_sun_glitter_v1d": {
+  "water_px_range_ge8": 7360,
+  "allow_px_range_ge8": 7360,
+  "outside_allow_px_range_ge8_codec": 0,
+  "outside_allow_range_p99": 0.3,
+  "whole_frame_swing_1s_max_pct": 0.2,
+  "whole_frame_energy_above_5hz": 0.1
+ }
+}

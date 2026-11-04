@@ -1,0 +1,28 @@
+{
+ "note": "flames_v3b reel (editor-approved v3, recut): B13 flames_v3 + smoke_v2 7s; P05 v2 flames_v3 + big-fire smoke + sky billow 7s (both exactly as reel_v3); then a 3s LIVE B10 cresset clip (b10_cresset_flames_v3, 1080x1920, no push) replacing the two freeze holds, so the cresset spill flicker shows. Sparks/flicker/spill are pre-rolled by the config's preroll (6 s) so they are established at the cut. Hard cuts.",
+ "smoke_module": "../smoke/smoke_v2.py",
+ "crf": 22,
+ "shots": [
+  {
+   "config": "configs/b13_three_torches_flames_v3.json",
+   "smoke": "../smoke/configs/b13_three_torches.json",
+   "seconds": 7.0
+  },
+  {
+   "config": "configs/p05v2_town_flames_v3.json",
+   "smoke": "configs/p05v2_smoke_bigfires_v2b.json",
+   "seconds": 7.0,
+   "billow": [
+    "configs/p05v2_sky_billow_v3.json"
+   ]
+  },
+  {
+   "config": "configs/b10_cresset_flames_v3.json",
+   "seconds": 3.0,
+   "push": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

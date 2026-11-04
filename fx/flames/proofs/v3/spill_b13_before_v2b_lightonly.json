@@ -1,0 +1,96 @@
+{
+ "left_doorframe_wall": {
+  "mean_luma": 15.4,
+  "swing_pct_median": 1.49,
+  "swing_pct_min": 0.18,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.004,
+  "phone_px": 1176
+ },
+ "left_stone_wall": {
+  "mean_luma": 56.7,
+  "swing_pct_median": 0.38,
+  "swing_pct_min": 0.04,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 4025
+ },
+ "right_door_wall": {
+  "mean_luma": 25.3,
+  "swing_pct_median": 1.17,
+  "swing_pct_min": 0.25,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1609
+ },
+ "guard_face_l": {
+  "mean_luma": 44.4,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1209
+ },
+ "guard_face_r": {
+  "mean_luma": 33.7,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1178
+ },
+ "edward_face": {
+  "mean_luma": 35.8,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1832
+ },
+ "guard_l_chainmail": {
+  "mean_luma": 26.7,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1794
+ },
+ "guard_r_chainmail": {
+  "mean_luma": NaN,
+  "swing_pct_median": NaN,
+  "swing_pct_min": NaN,
+  "px_p2p_levels_median": NaN,
+  "frac_px_ge4_median": NaN,
+  "phone_px": 0
+ },
+ "stairs_left_of_fore_torch": {
+  "mean_luma": 59.2,
+  "swing_pct_median": 3.1,
+  "swing_pct_min": 0.55,
+  "px_p2p_levels_median": 1.48,
+  "frac_px_ge4_median": 0.05,
+  "phone_px": 2112
+ },
+ "stairs_right_of_fore_torch": {
+  "mean_luma": 93.3,
+  "swing_pct_median": 3.11,
+  "swing_pct_min": 0.7,
+  "px_p2p_levels_median": 2.67,
+  "frac_px_ge4_median": 0.179,
+  "phone_px": 2535
+ },
+ "fore_soldier_chainmail": {
+  "mean_luma": 43.7,
+  "swing_pct_median": 0.28,
+  "swing_pct_min": 0.03,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 5750
+ },
+ "_whole_frame": {
+  "swing_pct": 4.914,
+  "max_step_pct": 0.221,
+  "energy_above_5hz": 0.0013
+ },
+ "_config": "configs/b13_three_torches_flames_v2b.json"
+}

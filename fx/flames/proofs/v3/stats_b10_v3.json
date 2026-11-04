@@ -1,0 +1,29 @@
+{
+ "seconds": 7.0,
+ "fps": 30,
+ "plate_swing_pct": 6.375,
+ "plate_max_step_pct": 0.531,
+ "effect_zone_swing_pct": 18.961,
+ "flame_zone_swing_pct": 23.499,
+ "flame_zone_max_frame_step_pct": 2.093,
+ "flame_zone_spectrum": {
+  "peak_hz": 0.29,
+  "f95_hz": 1.0,
+  "energy_above_5hz": 0.0
+ },
+ "flicker_amp_rms": 0.073,
+ "clock_spectrum": {
+  "peak_hz": 0.29,
+  "f95_hz": 1.0,
+  "energy_above_5hz": 0.0
+ },
+ "tongue_feature_hz": [
+  1.8
+ ],
+ "tongue_amp_px": [
+  4.8
+ ],
+ "lick_tip_ext_px": [
+  19.0
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "name": "t6_oculus_stair_shaft_v1c",
+ "plate": "/workspace/posterity/micro-anomaly/tamerlane/plates/seq6.png",
+ "seed": 606,
+ "seconds": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.62,
+  0.38
+ ],
+ "crf": 24,
+ "protect_feather": 8,
+ "zones": [
+  {
+   "type": "shaft",
+   "poly": [
+    [
+     430,
+     540
+    ],
+    [
+     770,
+     540
+    ],
+    [
+     880,
+     820
+    ],
+    [
+     880,
+     1250
+    ],
+    [
+     300,
+     1250
+    ],
+    [
+     330,
+     820
+    ]
+   ],
+   "feather": 60,
+   "lum_lo": 10,
+   "lum_hi": 110,
+   "lum_blur": 10,
+   "lum_gamma": 0.8
+  }
+ ],
+ "protect": [
+  [
+   [
+    0,
+    880
+   ],
+   [
+    230,
+    880
+   ],
+   [
+    230,
+    1420
+   ],
+   [
+    0,
+    1420
+   ]
+  ]
+ ],
+ "layers": [
+  {
+   "type": "haze",
+   "zone": 0,
+   "amp": 10,
+   "blobs": 6,
+   "blob_sigma": 90,
+   "hz": [
+    0.05,
+    0.14
+   ],
+   "color": [
+    255,
+    225,
+    180
+   ]
+  },
+  {
+   "type": "motes",
+   "zone": 0,
+   "n": 800,
+   "sigma": [
+    1.0,
+    3.6
+   ],
+   "speed": [
+    4,
+    16
+   ],
+   "dir": [
+    -0.35,
+    1.0
+   ],
+   "dir_jitter_deg": 50,
+   "turb_px": 8,
+   "turb_hz": [
+    0.07,
+    0.3
+   ],
+   "life_s": [
+    5,
+    12
+   ],
+   "amp": 230,
+   "near_gain": 1.8,
+   "depth_power": 2.0,
+   "pre_roll": 40,
+   "color": [
+    255,
+    225,
+    180
+   ]
+  }
+ ]
+}

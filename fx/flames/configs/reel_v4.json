@@ -1,0 +1,54 @@
+{
+ "note": "flames_v4 reel: v3b structure (B13 7s, P05 v2 7s, live B10 cresset 3s, hard cuts) with the LOCKED torch_v1c treatment (fx_v1c.py) on every fire. No tongues/warp/parallax, no smoke, static sky. B13/B10 use the Edward master's own time base (t0 = slot f0/30) and keep the v1c haze/mist as shipped, so the pulse matches the shipped master.",
+ "crf": 22,
+ "shots": [
+  {
+   "name": "b13",
+   "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b13_nottingham_seizure_OWNER.png",
+   "seed": 13,
+   "seconds": 7.0,
+   "push": [
+    1.0,
+    1.06
+   ],
+   "push_center": [
+    0.5,
+    0.45
+   ],
+   "t0": 42.4667
+  },
+  {
+   "name": "p05",
+   "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+   "seed": 5,
+   "seconds": 7.0,
+   "push": [
+    1.0,
+    1.06
+   ],
+   "push_center": [
+    0.32,
+    0.5
+   ],
+   "p05_from_flames_cfg": "configs/p05v2_town_flames_v3.json",
+   "spill_amp": 1.8,
+   "pulse": 0.13,
+   "embers": false
+  },
+  {
+   "name": "b10",
+   "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+   "seed": 10,
+   "seconds": 3.0,
+   "push": [
+    1.0,
+    1.0
+   ],
+   "push_center": [
+    0.6,
+    0.4
+   ],
+   "t0": 31.8
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "frames": 7,
+ "changed_px_outside_allowed": 0,
+ "flames_only_changed_px_outside_flame_zone": 0,
+ "protect_px": 67952,
+ "protect_motion_max_diff": 0,
+ "protect_light_residual_max": 0,
+ "protect_light_change_max": 63,
+ "protect_lit_px_max": 40767,
+ "guards_motion_max_diff": {
+  "kent_face": 0,
+  "gaoler": 0
+ },
+ "guards_light_residual_max": {
+  "kent_face": 0,
+  "gaoler": 0
+ },
+ "guards_light_change_max": {
+  "kent_face": 6,
+  "gaoler": 63
+ },
+ "guards_shift_px_max": {
+  "kent_face": 0.501,
+  "gaoler": 0.005
+ },
+ "guards_matte_overlap_px": {
+  "kent_face": 0,
+  "gaoler": 0
+ },
+ "allowed_fraction": 0.2868,
+ "components": 1,
+ "pass": true,
+ "config": "configs/b10_cresset_flames_v3.json",
+ "smoke": null,
+ "billow": [],
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "seconds": 3.0,
+ "times_step": 0.5
+}

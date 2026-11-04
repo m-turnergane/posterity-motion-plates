@@ -1,0 +1,302 @@
+{
+ "name": "b10_corfe_letter_drift_HANDPOLY_eval",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "plate_md5": "386d4c426bfc75da9d72eca768057228",
+ "info": {
+  "mode": "poly",
+  "depth": null,
+  "reveal_px": 65,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.6993
+   }
+  ]
+ },
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "overscan": 1.02162,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0829172254353758,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.244,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.082917,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       868.5,
+       1544.0
+      ],
+      "ratio": 1.244,
+      "ratio_x": 1.244,
+      "ratio_y": 1.244,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        280,
+        524
+       ],
+       "expected": [
+        324.444,
+        576.333
+       ],
+       "measured": [
+        324.444,
+        576.331
+       ],
+       "err_px": 0.002,
+       "err_if_double_push_px": 26.4
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        314,
+        575
+       ],
+       "expected": [
+        339.066,
+        619.516
+       ],
+       "measured": [
+        339.067,
+        619.514
+       ],
+       "err_px": 0.0019,
+       "err_if_double_push_px": 23.72
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 39332,
+     "revealed_frac": 0.01897,
+     "revealed_strip_mean_width_px": 17.8,
+     "holes_px": 0,
+     "hf_revealed": 2.958,
+     "hf_ring": 4.221,
+     "hf_ratio": 0.701
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 19792,
+     "revealed_frac": 0.00954,
+     "revealed_strip_mean_width_px": 14.97,
+     "holes_px": 0,
+     "hf_revealed": 3.013,
+     "hf_ring": 4.894,
+     "hf_ratio": 0.616
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "kent_face",
+     "area_px": 8159,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0022,
+       "max": 1.305,
+       "ncc": 1.0,
+       "px": 8314
+      },
+      {
+       "frame": 90,
+       "mae": 0.0021,
+       "max": 1.785,
+       "ncc": 1.0,
+       "px": 8819
+      },
+      {
+       "frame": 179,
+       "mae": 0.0021,
+       "max": 1.652,
+       "ncc": 1.0,
+       "px": 9315
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "gaoler_face",
+     "area_px": 9275,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0014,
+       "max": 2.567,
+       "ncc": 1.0,
+       "px": 9269
+      },
+      {
+       "frame": 90,
+       "mae": 0.0012,
+       "max": 2.788,
+       "ncc": 1.0,
+       "px": 9861
+      },
+      {
+       "frame": 179,
+       "mae": 0.0013,
+       "max": 2.627,
+       "ncc": 1.0,
+       "px": 10443
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "kent_hand",
+     "area_px": 2279,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0031,
+       "max": 4.79,
+       "ncc": 1.0,
+       "px": 1679
+      },
+      {
+       "frame": 90,
+       "mae": 0.0028,
+       "max": 4.532,
+       "ncc": 1.0,
+       "px": 1801
+      },
+      {
+       "frame": 179,
+       "mae": 0.0022,
+       "max": 4.153,
+       "ncc": 1.0,
+       "px": 1893
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "letter",
+     "area_px": 2496,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0138,
+       "max": 6.868,
+       "ncc": 1.0,
+       "px": 1749
+      },
+      {
+       "frame": 90,
+       "mae": 0.011,
+       "max": 5.628,
+       "ncc": 1.0,
+       "px": 1870
+      },
+      {
+       "frame": 179,
+       "mae": 0.0095,
+       "max": 5.632,
+       "ncc": 1.0,
+       "px": 1994
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "gaoler_hand",
+     "area_px": 2448,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0013,
+       "max": 1.289,
+       "ncc": 1.0,
+       "px": 1890
+      },
+      {
+       "frame": 90,
+       "mae": 0.0008,
+       "max": 0.755,
+       "ncc": 1.0,
+       "px": 2021
+      },
+      {
+       "frame": 179,
+       "mae": 0.0012,
+       "max": 1.956,
+       "ncc": 1.0,
+       "px": 2112
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 48.02,
+  "max_abs": 104.05,
+  "px_ge4": 7235,
+  "px_ge4_frac": 0.004598
+ },
+ "pass": true
+}

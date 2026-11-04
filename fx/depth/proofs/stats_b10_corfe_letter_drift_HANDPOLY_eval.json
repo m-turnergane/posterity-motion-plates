@@ -1,0 +1,42 @@
+{
+ "name": "b10_corfe_letter_drift_HANDPOLY_eval",
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "phone": [
+    360,
+    640
+   ],
+   "whole_frame": {
+    "swing_1s_median_pct": 0.242,
+    "swing_1s_max_pct": 0.304,
+    "max_step_pct": 0.0134,
+    "energy_above_5hz": 0.0184
+   },
+   "layers": {
+    "far": {
+     "travel_phone_px": 8.44,
+     "travel_first_1s_phone_px": 1.25,
+     "speed_phone_px_s_max": 1.5,
+     "measured_travel_px": 4.36,
+     "jitter_rms_px": 0.0154,
+     "vel_energy_above_5hz": 0.0087
+    },
+    "near": {
+     "travel_phone_px": 4.97,
+     "travel_first_1s_phone_px": 0.74,
+     "speed_phone_px_s_max": 0.88,
+     "measured_travel_px": 4.6,
+     "jitter_rms_px": 0.0119,
+     "vel_energy_above_5hz": 0.0136
+    }
+   },
+   "relative_parallax_phone_px": 13.06,
+   "relative_parallax_first_1s_phone_px": 1.94,
+   "relative_parallax_pct_of_width": 3.63
+  }
+ }
+}

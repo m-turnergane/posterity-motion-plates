@@ -1,0 +1,161 @@
+{
+ "name": "b11_snow_v1b",
+ "plate": "/workspace/posterity/standalones/bathory/v2/plates/b11_bytca_door_shut.png",
+ "plate_md5": "32aa34cb6a207b5b2e2138d2c96d1c12",
+ "times": [
+  0.0,
+  0.9,
+  1.7,
+  2.5,
+  3.3,
+  3.97
+ ],
+ "info": {
+  "name": "b11_snow_v1b",
+  "plate": "/workspace/posterity/standalones/bathory/v2/plates/b11_bytca_door_shut.png",
+  "out": [
+   1080,
+   1920
+  ],
+  "auto_faces": [
+   [
+    428.1,
+    752.6,
+    23.1,
+    32.5,
+    0.7
+   ]
+  ],
+  "face_boxes": [
+   [
+    414,
+    723,
+    465,
+    801
+   ]
+  ],
+  "protect_px": 201828,
+  "snow_white": [
+   199,
+   193,
+   197
+  ],
+  "tiers": {
+   "far": {
+    "n": 300,
+    "matte_px": 823105
+   },
+   "mid": {
+    "n": 152,
+    "matte_px": 838028
+   },
+   "near": {
+    "n": 58,
+    "matte_px": 909098
+   }
+  }
+ },
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "outside_matte_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "changed_px": [
+  31762,
+  32986,
+  30733,
+  30544,
+  32181,
+  37082
+ ],
+ "flakes_on_screen": [
+  {
+   "far": 116,
+   "mid": 61,
+   "near": 22
+  },
+  {
+   "far": 111,
+   "mid": 58,
+   "near": 23
+  },
+  {
+   "far": 104,
+   "mid": 53,
+   "near": 25
+  },
+  {
+   "far": 107,
+   "mid": 53,
+   "near": 24
+  },
+  {
+   "far": 118,
+   "mid": 55,
+   "near": 27
+  },
+  {
+   "far": 113,
+   "mid": 56,
+   "near": 33
+  }
+ ],
+ "frame_md5": [
+  "00ff8cac67bfad41845913f02ed9307e",
+  "53e44336dcca6bbe6386b5412bcf0e68",
+  "29198cef023664fd236f686009b6349e",
+  "a5eecbcbd83dd3c42b8f31dbbf6bdec0",
+  "6c6c1bcaedcfe516db8b6e79e645fff0",
+  "a94dac0ff87e2bd5667de76bdc61cb65"
+ ],
+ "det_identical": true,
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "ok": true,
+   "msg": "ok"
+  },
+  {
+   "check": "pixel_density",
+   "plate": "/workspace/posterity/standalones/bathory/v2/plates/b11_bytca_door_shut.png",
+   "plate_wh": [
+    941,
+    1672
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1483,
+   "visible_src_wh": [
+    887.3,
+    1577.4
+   ],
+   "ratio": 1.217,
+   "ratio_x": 1.217,
+   "ratio_y": 1.217,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_keepout_0px": true,
+ "pass_outside_0px": true,
+ "pass": true
+}

@@ -1,0 +1,35 @@
+{
+ "note": "flames_v2 audit reel: B13 (three torches) flames_v2 + smoke_v2 7s, P05 v2 (burning town) flames_v2 + smoke_v2 on the big fires 7s, then two held stills of the B10 cresset (no push). Hard cuts. Paths relative to engine-rnd/flames/.",
+ "smoke_module": "../smoke/smoke_v2.py",
+ "crf": 22,
+ "shots": [
+  {
+   "config": "configs/b13_three_torches_flames_v2b.json",
+   "smoke": "../smoke/configs/b13_three_torches.json",
+   "seconds": 7.0
+  },
+  {
+   "config": "configs/p05v2_town_flames_v2b.json",
+   "smoke": "configs/p05v2_smoke_bigfires_v2b.json",
+   "seconds": 7.0
+  },
+  {
+   "config": "configs/b10_cresset_flames_v2b.json",
+   "seconds": 1.5,
+   "hold": 1.0,
+   "push": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "config": "configs/b10_cresset_flames_v2b.json",
+   "seconds": 1.5,
+   "hold": 2.5,
+   "push": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

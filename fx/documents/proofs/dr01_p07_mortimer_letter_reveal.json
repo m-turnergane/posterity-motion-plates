@@ -1,0 +1,346 @@
+{
+ "shot": "dr01_p07_mortimer_letter_reveal",
+ "document": "DOC-K1",
+ "treatment": "reveal",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/p07_mortimer_reads_letter_OWNER.png",
+ "plate_md5": "fb2ce5feda25c02cf8e1a268f83c7862",
+ "seconds": 4.5,
+ "camera": {
+  "mode": "flat",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "crop_zoom": 1.0,
+  "anchor": [
+   600,
+   980
+  ]
+ },
+ "pixel_density": {
+  "check": "pixel_density",
+  "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/p07_mortimer_reads_letter_OWNER.png",
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.06,
+  "crop_zoom": 1.0,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   887.3,
+   1577.4
+  ],
+  "ratio": 1.217,
+  "ratio_x": 1.217,
+  "ratio_y": 1.217,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "looks": {
+  "plate_fx": "fx_v1c.PlateFX (fx_candle flicker+spill / torch_v1c), own parallax OFF",
+  "fx_drop": [],
+  "smoke_v2": true,
+  "depth_v1": false,
+  "locked_stack": null
+ },
+ "protected_pixels": {
+  "note": "plate space, every frame, changed px inside face/land/water polygons",
+  "by_region": {
+   "face_mortimer": 0,
+   "face_guard": 0
+  },
+  "total": 0,
+  "pass_": true
+ },
+ "legibility": {
+  "note": "plate space, page interior (mask eroded 12px), out vs the same locked-look frame without the document gain (vs_untouched_plate also listed per sample); hp = p99 |log(out/ref) - blur3| on ref luma 40..250 (a gain field leaves ~0); detail_ncc = correlation of the high-pass of out vs ref (marks are the plate's own); new edges = local-contrast Canny edges >2px from any ref edge (abs-threshold count reported); lapvar = var(Laplacian(log L)) out/plate (<=1: never sharper/more marks). Boundary band reported only.",
+  "samples": [
+   {
+    "t": 0.0,
+    "interior_px_area": 61550,
+    "hp_measured_px": 54328,
+    "hp_logratio_p99": 0.0146,
+    "detail_ncc_vs_plate": 0.9969,
+    "new_edges_px": 9,
+    "plate_edges_px": 3658,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 0.9778,
+    "boundary_new_edges_px": 129,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0348,
+     "detail_ncc_vs_plate": 0.983,
+     "new_edges_px": 7,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.6706,
+     "boundary_new_edges_px": 110
+    }
+   },
+   {
+    "t": 0.5,
+    "interior_px_area": 61550,
+    "hp_measured_px": 54697,
+    "hp_logratio_p99": 0.0144,
+    "detail_ncc_vs_plate": 0.997,
+    "new_edges_px": 27,
+    "plate_edges_px": 3694,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 0.9852,
+    "boundary_new_edges_px": 172,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0317,
+     "detail_ncc_vs_plate": 0.9835,
+     "new_edges_px": 8,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.6772,
+     "boundary_new_edges_px": 123
+    }
+   },
+   {
+    "t": 1.0,
+    "interior_px_area": 61550,
+    "hp_measured_px": 56403,
+    "hp_logratio_p99": 0.0124,
+    "detail_ncc_vs_plate": 0.9983,
+    "new_edges_px": 26,
+    "plate_edges_px": 3692,
+    "new_edges_abs_px": 25,
+    "lapvar_log_ratio": 0.973,
+    "boundary_new_edges_px": 86,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0219,
+     "detail_ncc_vs_plate": 0.9852,
+     "new_edges_px": 10,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 28,
+     "lapvar_log_ratio": 0.6984,
+     "boundary_new_edges_px": 85
+    }
+   },
+   {
+    "t": 1.5,
+    "interior_px_area": 61550,
+    "hp_measured_px": 55746,
+    "hp_logratio_p99": 0.0031,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 1,
+    "plate_edges_px": 3633,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0001,
+    "boundary_new_edges_px": 13,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0217,
+     "detail_ncc_vs_plate": 0.987,
+     "new_edges_px": 26,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 3,
+     "lapvar_log_ratio": 0.7078,
+     "boundary_new_edges_px": 5
+    }
+   },
+   {
+    "t": 2.0,
+    "interior_px_area": 61550,
+    "hp_measured_px": 54254,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 3655,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0273,
+     "detail_ncc_vs_plate": 0.987,
+     "new_edges_px": 25,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.6884,
+     "boundary_new_edges_px": 13
+    }
+   },
+   {
+    "t": 2.5,
+    "interior_px_area": 61550,
+    "hp_measured_px": 55558,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 3648,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0232,
+     "detail_ncc_vs_plate": 0.9866,
+     "new_edges_px": 7,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.7152,
+     "boundary_new_edges_px": 7
+    }
+   },
+   {
+    "t": 3.0,
+    "interior_px_area": 61550,
+    "hp_measured_px": 56964,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 3854,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0186,
+     "detail_ncc_vs_plate": 0.9873,
+     "new_edges_px": 25,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 132,
+     "lapvar_log_ratio": 0.7548,
+     "boundary_new_edges_px": 44
+    }
+   },
+   {
+    "t": 3.5,
+    "interior_px_area": 61550,
+    "hp_measured_px": 54108,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 3580,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.029,
+     "detail_ncc_vs_plate": 0.9902,
+     "new_edges_px": 11,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 0,
+     "lapvar_log_ratio": 0.7342,
+     "boundary_new_edges_px": 3
+    }
+   },
+   {
+    "t": 4.0,
+    "interior_px_area": 61550,
+    "hp_measured_px": 55944,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 3782,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0216,
+     "detail_ncc_vs_plate": 0.9929,
+     "new_edges_px": 51,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 1,
+     "lapvar_log_ratio": 0.7954,
+     "boundary_new_edges_px": 12
+    }
+   },
+   {
+    "t": 4.47,
+    "interior_px_area": 61550,
+    "hp_measured_px": 55619,
+    "hp_logratio_p99": 0.0,
+    "detail_ncc_vs_plate": 1.0,
+    "new_edges_px": 0,
+    "plate_edges_px": 3797,
+    "new_edges_abs_px": 0,
+    "lapvar_log_ratio": 1.0,
+    "boundary_new_edges_px": 0,
+    "vs_untouched_plate": {
+     "interior_px_area": 61550,
+     "hp_measured_px": 55023,
+     "hp_logratio_p99": 0.0231,
+     "detail_ncc_vs_plate": 0.9923,
+     "new_edges_px": 30,
+     "plate_edges_px": 4193,
+     "new_edges_abs_px": 4,
+     "lapvar_log_ratio": 0.7766,
+     "boundary_new_edges_px": 6
+    }
+   }
+  ],
+  "worst": {
+   "hp_logratio_p99": 0.0146,
+   "new_edges_px": 27,
+   "lapvar_log_ratio": 1.0001,
+   "detail_ncc_min": 0.9969,
+   "boundary_new_edges_px": 172
+  },
+  "gate": {
+   "new_edges_px_max": 18,
+   "lapvar_log_ratio_max": 1.05,
+   "detail_ncc_min": 0.9,
+   "hp_logratio_p99_max": 0.06
+  },
+  "pass_": false,
+  "text_added": false
+ },
+ "phone_360x640": {
+  "note": "all at 360x640, same camera. document_effect = mean luma(out) / mean luma(locked-look frame without the document gain): the new effect alone, gated swing<8%/1s and >5Hz<0.05. locked_looks = locked-look frame / untouched plate (fx_candle / torch_v1c / smoke_v2 as locked; reported, not re-tuned). all_effects = out / untouched plate. document_roi swing is the one-way reveal (dim -> native), gated on >5 Hz only. first_second = px whose document-effect luma changes >12 between t=0 and t=1s.",
+  "first_second_effect_px_gt12": 4839,
+  "first_second_pass": true,
+  "full_frame_with_camera": {
+   "swing_1s_max_pct": 19.316,
+   "energy_above_5hz": 0.01329
+  },
+  "document_effect_full_frame": {
+   "swing_1s_max_pct": 6.279,
+   "energy_above_5hz": 0.01281
+  },
+  "locked_looks_full_frame": {
+   "swing_1s_max_pct": 19.557,
+   "energy_above_5hz": 0.00399
+  },
+  "all_effects_full_frame": {
+   "swing_1s_max_pct": 19.557,
+   "energy_above_5hz": 0.01085
+  },
+  "document_roi": {
+   "swing_1s_max_pct": 80.541,
+   "energy_above_5hz": 0.01426
+  },
+  "pass_": true
+ },
+ "single_camera": {
+  "kind": "flat: one cv2.warpAffine per delivered frame (uniform scale + translate, LANCZOS4); no fx camera, no smoke push_frame",
+  "delivered_warps": 135,
+  "frames": 135,
+  "window_inside_plate": true,
+  "pass_": true
+ },
+ "pass": false
+}

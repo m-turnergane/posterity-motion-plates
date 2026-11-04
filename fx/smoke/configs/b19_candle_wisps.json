@@ -1,0 +1,13 @@
+{
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b19_kent_empty_seat_OWNER.png",
+ "note": "Edward II b19: three snuffed candles on the table, wick smoke rising past the empty seat.",
+ "seed": 19,
+ "ease_in": 0.7,
+ "push": [1.0, 1.06],
+ "protect": [],
+ "emitters": [
+  {"name": "wick_left",  "type": "candle", "src": [353, 739], "height": 320, "lean": -14, "seed": 1},
+  {"name": "wick_right", "type": "candle", "src": [408, 741], "height": 340, "lean": 10,  "seed": 2},
+  {"name": "wick_front", "type": "candle", "src": [381, 812], "height": 250, "lean": -6,  "seed": 3, "opacity": 0.5}
+ ]
+}

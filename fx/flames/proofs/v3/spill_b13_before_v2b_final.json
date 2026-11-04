@@ -1,0 +1,128 @@
+{
+ "left_doorframe_wall": {
+  "mean_luma": 38.4,
+  "swing_pct_median": 3.37,
+  "swing_pct_min": 0.79,
+  "px_p2p_levels_median": 0.3,
+  "frac_px_ge4_median": 0.158,
+  "phone_px": 2045
+ },
+ "left_stone_wall": {
+  "mean_luma": 56.7,
+  "swing_pct_median": 0.38,
+  "swing_pct_min": 0.04,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 4025
+ },
+ "right_door_wall": {
+  "mean_luma": 25.4,
+  "swing_pct_median": 1.51,
+  "swing_pct_min": 0.34,
+  "px_p2p_levels_median": 0.3,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 3772
+ },
+ "guard_face_l": {
+  "mean_luma": 44.4,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1209
+ },
+ "guard_face_r": {
+  "mean_luma": 33.7,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1178
+ },
+ "edward_face": {
+  "mean_luma": 35.8,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1832
+ },
+ "guard_l_chainmail": {
+  "mean_luma": 26.7,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 1794
+ },
+ "guard_r_chainmail": {
+  "mean_luma": 18.9,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 3779
+ },
+ "stairs_left_of_fore_torch": {
+  "mean_luma": 64.5,
+  "swing_pct_median": 3.74,
+  "swing_pct_min": 0.78,
+  "px_p2p_levels_median": 2.37,
+  "frac_px_ge4_median": 0.134,
+  "phone_px": 4687
+ },
+ "stairs_right_of_fore_torch": {
+  "mean_luma": 93.9,
+  "swing_pct_median": 3.65,
+  "swing_pct_min": 0.88,
+  "px_p2p_levels_median": 3.26,
+  "frac_px_ge4_median": 0.32,
+  "phone_px": 4485
+ },
+ "fore_soldier_chainmail": {
+  "mean_luma": 43.7,
+  "swing_pct_median": 0.28,
+  "swing_pct_min": 0.03,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 5750
+ },
+ "guard_l_coif_chainmail": {
+  "mean_luma": 29.0,
+  "swing_pct_median": 0.02,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 729
+ },
+ "guard_r_coif_chainmail": {
+  "mean_luma": 21.2,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 775
+ },
+ "back_guard_r_face_mail": {
+  "mean_luma": 68.7,
+  "swing_pct_median": 1.96,
+  "swing_pct_min": 0.98,
+  "px_p2p_levels_median": 1.19,
+  "frac_px_ge4_median": 0.03,
+  "phone_px": 912
+ },
+ "torch_holder_l_face": {
+  "mean_luma": 81.3,
+  "swing_pct_median": 0.0,
+  "swing_pct_min": 0.0,
+  "px_p2p_levels_median": 0.0,
+  "frac_px_ge4_median": 0.0,
+  "phone_px": 540
+ },
+ "_whole_frame": {
+  "swing_pct": 4.919,
+  "max_step_pct": 0.218,
+  "energy_above_5hz": 0.0014
+ },
+ "_config": "configs/b13_three_torches_flames_v2b.json"
+}

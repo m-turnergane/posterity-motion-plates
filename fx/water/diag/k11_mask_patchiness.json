@@ -1,0 +1,85 @@
+{
+ "sources": [
+  {
+   "bb": [
+    548,
+    668,
+    600,
+    700
+   ],
+   "mask_fill_of_bb": 0.255,
+   "components": 4,
+   "median_comp_px": 50
+  },
+  {
+   "bb": [
+    600,
+    668,
+    645,
+    700
+   ],
+   "mask_fill_of_bb": 0.461,
+   "components": 3,
+   "median_comp_px": 172
+  },
+  {
+   "bb": [
+    690,
+    686,
+    740,
+    712
+   ],
+   "mask_fill_of_bb": 0.546,
+   "components": 4,
+   "median_comp_px": 86
+  },
+  {
+   "bb": [
+    725,
+    630,
+    790,
+    700
+   ],
+   "mask_fill_of_bb": 0.296,
+   "components": 2,
+   "median_comp_px": 673
+  },
+  {
+   "bb": [
+    790,
+    610,
+    860,
+    700
+   ],
+   "mask_fill_of_bb": 0.27,
+   "components": 3,
+   "median_comp_px": 46
+  },
+  {
+   "bb": [
+    860,
+    640,
+    941,
+    700
+   ],
+   "mask_fill_of_bb": 0.207,
+   "components": 5,
+   "median_comp_px": 114
+  },
+  {
+   "bb": [
+    760,
+    690,
+    820,
+    712
+   ],
+   "mask_fill_of_bb": 0.14,
+   "components": 1,
+   "median_comp_px": 185
+  }
+ ],
+ "peak_t": 2.9,
+ "fire_zone_mean_lift_at_peak": 34.9,
+ "fire_zone_near_white_frac_plate": 0.0,
+ "fire_zone_near_white_frac_peak": 0.034
+}

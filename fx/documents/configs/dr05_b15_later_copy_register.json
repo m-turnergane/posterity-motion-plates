@@ -1,0 +1,200 @@
+{
+ "name": "dr05_b15_later_copy_register",
+ "document": "DOC-F1",
+ "treatment": "later_copy",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b15_papal_notary_writes_OWNER.png",
+ "seconds": 4.0,
+ "note": "'Later copy' variant: DOC-F1 survives only as the Maguelone cartulary copy (1368). Same generic room; the page surface reads as a copied register leaf: cooler vellum, faded iron-gall ink, foxing, gutter shadow at the spine. No seal, no flourish, no text added.",
+ "camera": {
+  "mode": "flat",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "crop_zoom": 1.2323,
+  "crop_align": [
+   1.0,
+   1.0
+  ],
+  "anchor": [
+   420,
+   1120
+  ]
+ },
+ "doc_poly": [
+  [
+   200,
+   1102
+  ],
+  [
+   300,
+   1085
+  ],
+  [
+   420,
+   1062
+  ],
+  [
+   515,
+   1062
+  ],
+  [
+   530,
+   1077
+  ],
+  [
+   700,
+   1078
+  ],
+  [
+   732,
+   1110
+  ],
+  [
+   715,
+   1175
+  ],
+  [
+   580,
+   1180
+  ],
+  [
+   440,
+   1165
+  ],
+  [
+   300,
+   1145
+  ],
+  [
+   210,
+   1128
+  ]
+ ],
+ "protect": {
+  "face_churchman": [
+   [
+    300,
+    370
+   ],
+   [
+    690,
+    370
+   ],
+   [
+    690,
+    750
+   ],
+   [
+    300,
+    750
+   ]
+  ],
+  "land_window_view": [
+   [
+    55,
+    0
+   ],
+   [
+    305,
+    0
+   ],
+   [
+    305,
+    475
+   ],
+   [
+    55,
+    475
+   ]
+  ]
+ },
+ "smoke": {
+  "seed": 16,
+  "preroll": 8.0,
+  "flame_keepout": 0.85,
+  "protect": [
+   [
+    [
+     300,
+     370
+    ],
+    [
+     690,
+     370
+    ],
+    [
+     690,
+     750
+    ],
+    [
+     300,
+     750
+    ]
+   ]
+  ],
+  "emitters": [
+   {
+    "name": "wick",
+    "type": "candle",
+    "src": [
+     910,
+     668
+    ],
+    "height": 240,
+    "lean": -10,
+    "seed": 4,
+    "opacity": 0.28
+   }
+  ]
+ },
+ "reveal": {
+  "t0": 0.1,
+  "dur": 2.0,
+  "g0": 0.62,
+  "soft": 0.35,
+  "glint": 0.1,
+  "glint_w": 0.14,
+  "feather": 5.0,
+  "axis": [
+   -1.0,
+   0.0
+  ],
+  "tint": [
+   1.0,
+   0.98,
+   0.94
+  ]
+ },
+ "later_copy": {
+  "vellum": [
+   232,
+   222,
+   198
+  ],
+  "tone_lift": 0.06,
+  "ink_keep": 0.6,
+  "ink_hue": [
+   0.78,
+   0.92,
+   1.2
+  ],
+  "fibre_keep": 0.7,
+  "mottle": 0.05,
+  "foxing_n": 10,
+  "foxing": 1.0,
+  "fox_col": [
+   0.93,
+   0.87,
+   0.77
+  ],
+  "gutter_x": [
+   200,
+   280
+  ],
+  "gutter_min": 0.7,
+  "tone_sigma": 14,
+  "seed": 1368,
+  "vellum_mix": 0.5
+ }
+}

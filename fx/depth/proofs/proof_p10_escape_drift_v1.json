@@ -1,0 +1,208 @@
+{
+ "name": "p10_escape_drift_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/p10_escape_servant_clothes_twilight_OWNER.png",
+ "plate_md5": "02372df087f7d6b684d765e8c214a8b1",
+ "info": {
+  "mode": "hybrid",
+  "depth": {
+   "cached": true
+  },
+  "reveal_px": 61,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.79
+   }
+  ]
+ },
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "overscan": 1.01607,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.0770313709639014,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.237,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       941,
+       1672
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.077031,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.1483,
+      "visible_src_wh": [
+       873.2,
+       1552.4
+      ],
+      "ratio": 1.237,
+      "ratio_x": 1.237,
+      "ratio_y": 1.237,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        285,
+        508
+       ],
+       "expected": [
+        324.283,
+        575.88
+       ],
+       "measured": [
+        324.282,
+        575.876
+       ],
+       "err_px": 0.0037,
+       "err_if_double_push_px": 26.43
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        306,
+        514
+       ],
+       "expected": [
+        324.287,
+        576.546
+       ],
+       "measured": [
+        324.287,
+        576.542
+       ],
+       "err_px": 0.0038,
+       "err_if_double_push_px": 26.39
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 0,
+     "revealed_frac": 0.0,
+     "revealed_strip_mean_width_px": 0.0,
+     "holes_px": 0,
+     "hf_revealed": null,
+     "hf_ring": null,
+     "hf_ratio": null
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 13145,
+     "revealed_frac": 0.00634,
+     "revealed_strip_mean_width_px": 9.36,
+     "holes_px": 0,
+     "hf_revealed": 3.713,
+     "hf_ring": 4.53,
+     "hf_ratio": 0.82
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "face",
+     "area_px": 3264,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.002,
+       "max": 1.644,
+       "ncc": 1.0,
+       "px": 2730
+      },
+      {
+       "frame": 90,
+       "mae": 0.0023,
+       "max": 0.859,
+       "ncc": 1.0,
+       "px": 2881
+      },
+      {
+       "frame": 179,
+       "mae": 0.0023,
+       "max": 1.299,
+       "ncc": 1.0,
+       "px": 3036
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "hand",
+     "area_px": 840,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0059,
+       "max": 2.502,
+       "ncc": 1.0,
+       "px": 364
+      },
+      {
+       "frame": 90,
+       "mae": 0.0047,
+       "max": 1.669,
+       "ncc": 1.0,
+       "px": 378
+      },
+      {
+       "frame": 179,
+       "mae": 0.0051,
+       "max": 1.442,
+       "ncc": 1.0,
+       "px": 435
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 53.69,
+  "max_abs": 212.04,
+  "px_ge4": 3313,
+  "px_ge4_frac": 0.002106
+ },
+ "pass": true
+}

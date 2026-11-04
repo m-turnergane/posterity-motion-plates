@@ -1,0 +1,3 @@
+{"size": "1920x1080", "crf": 25,
+ "note": "native-landscape plates only (EIC ruling 2026-10-30: never upscale; portrait band crops fail check_pixel_density at 2.2 px/src px, nero 1280x720 at 1.59). Only one plate in the project passes and is a usable depth scene: Hubert Robert, Fire of Rome (1920x1543). Poynter 'The Catapult' (1433x1200) passes density (1.42) but was rejected: flat crowd with no depth gap, baked inscription, museum watermark.",
+ "shots": [{"config": "configs/hubert_fire_arch_push_v1.json", "seconds": 6.0}]}

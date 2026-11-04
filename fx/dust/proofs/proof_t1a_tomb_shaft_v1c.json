@@ -1,0 +1,65 @@
+{
+ "name": "t1a_tomb_shaft_v1c",
+ "plate": "/workspace/posterity/micro-anomaly/tamerlane/plates/seq1a.png",
+ "times": [
+  0.0,
+  0.7,
+  1.5,
+  2.6,
+  3.4,
+  4.5,
+  5.9
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "protect_px": 1397751,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  86678,
+  93073,
+  94794,
+  88569,
+  89228,
+  94332,
+  91530
+ ],
+ "changed_frac_of_frame": [
+  0.05509,
+  0.05916,
+  0.06025,
+  0.05629,
+  0.05671,
+  0.05996,
+  0.05818
+ ],
+ "max_abs_diff_in_allow": [
+  188,
+  177,
+  180,
+  143,
+  139,
+  149,
+  187
+ ],
+ "guardrails": [
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok"
+  }
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

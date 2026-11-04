@@ -1,0 +1,208 @@
+{
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b10_corfe_kent_hands_letter_OWNER.png",
+ "note": "Edward II b10: wall torch at the gate; sooty torch smoke curls up the stone arch. Flame static (keep-out), faces protected (0 px).",
+ "seed": 10,
+ "preroll": 8.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.6,
+  0.4
+ ],
+ "protect": [
+  [
+   [
+    290,
+    560
+   ],
+   [
+    430,
+    560
+   ],
+   [
+    430,
+    740
+   ],
+   [
+    290,
+    740
+   ]
+  ],
+  [
+   [
+    790,
+    480
+   ],
+   [
+    941,
+    480
+   ],
+   [
+    941,
+    760
+   ],
+   [
+    790,
+    760
+   ]
+  ],
+  [
+   [
+    640,
+    412
+   ],
+   [
+    710,
+    412
+   ],
+   [
+    710,
+    560
+   ],
+   [
+    640,
+    560
+   ]
+  ]
+ ],
+ "protect_feather": 20,
+ "flame_keepout": 0.0,
+ "emitters": [
+  {
+   "name": "wall_torch",
+   "type": "torch",
+   "src": [
+    674,
+    404
+   ],
+   "height": 460,
+   "w0": 12,
+   "w1": 140,
+   "lean": -30,
+   "seed": 1,
+   "opacity": 0.9,
+   "color_dark": [
+    30,
+    30,
+    34
+   ],
+   "color_light": [
+    96,
+    94,
+    100
+   ],
+   "glow": {
+    "color": [
+     255,
+     150,
+     80
+    ],
+    "strength": 0.25,
+    "reach": 0.1,
+    "flicker": 0.3,
+    "patch": 0.4
+   },
+   "detail": 0.2,
+   "relief": 0.12,
+   "breakup": 0.3,
+   "hi": 6.0,
+   "lo": 90,
+   "edge": [
+    0.06,
+    0.75
+   ]
+  },
+  {
+   "name": "wall_torch_wisp",
+   "type": "torch",
+   "src": [
+    690,
+    410
+   ],
+   "height": 320,
+   "w0": 5,
+   "w1": 60,
+   "lean": 25,
+   "seed": 2,
+   "opacity": 0.6,
+   "glow": null,
+   "color_dark": [
+    60,
+    60,
+    64
+   ],
+   "color_light": [
+    130,
+    128,
+    132
+   ],
+   "detail": 0.2,
+   "relief": 0.12,
+   "breakup": 0.3,
+   "hi": 6.0,
+   "lo": 90,
+   "edge": [
+    0.06,
+    0.75
+   ]
+  }
+ ],
+ "guards": {
+  "kent_face": [
+   [
+    300,
+    570
+   ],
+   [
+    420,
+    570
+   ],
+   [
+    420,
+    730
+   ],
+   [
+    300,
+    730
+   ]
+  ],
+  "gaoler_face": [
+   [
+    800,
+    490
+   ],
+   [
+    941,
+    490
+   ],
+   [
+    941,
+    750
+   ],
+   [
+    800,
+    750
+   ]
+  ],
+  "torch_flame": [
+   [
+    645,
+    440
+   ],
+   [
+    705,
+    440
+   ],
+   [
+    705,
+    560
+   ],
+   [
+    645,
+    560
+   ]
+  ]
+ }
+}

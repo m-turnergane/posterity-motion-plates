@@ -1,0 +1,19 @@
+{
+ "note": "dust_v1 reference reel: shots 1-2 unchanged from reel_v1; shot 3 swapped (EIC 2026-10-30) from t6 oculus stair to the darker Germanicus Piso-room window beam (g7_piso_window_beam_v1b, push 1.00->1.06). Matte-only additive dust; nothing displaces; protect = everything outside the dust zone plus window glass and oil lamp (0 px changed).",
+ "size": "1080x1920",
+ "crf": 25,
+ "shots": [
+  {
+   "config": "configs/t1a_tomb_shaft_v1c.json",
+   "seconds": 6.0
+  },
+  {
+   "config": "configs/c6_citadel_ground_dust_v1b.json",
+   "seconds": 6.0
+  },
+  {
+   "config": "configs/g7_piso_window_beam_v1b.json",
+   "seconds": 6.0
+  }
+ ]
+}

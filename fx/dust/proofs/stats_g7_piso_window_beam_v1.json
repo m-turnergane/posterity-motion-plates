@@ -1,0 +1,34 @@
+{
+ "name": "g7_piso_window_beam_v1",
+ "seconds": 6.0,
+ "phone": "360x640",
+ "push": [
+  1.0,
+  1.06
+ ],
+ "whole_frame": {
+  "swing_1s_median_pct": 0.387,
+  "swing_1s_max_pct": 0.459,
+  "max_step_pct": 0.0203,
+  "energy_above_5hz": 0.0127
+ },
+ "dust_zone": {
+  "swing_1s_median_pct": 0.845,
+  "swing_1s_max_pct": 1.234,
+  "max_step_pct": 0.0565,
+  "energy_above_5hz": 0.0118
+ },
+ "read_px_1s_range_ge6": 1750,
+ "read_px_1s_range_ge12": 992,
+ "mean_abs_lift_in_zone": 0.958,
+ "pop_px_max_per_frame_jump_ge12": 9,
+ "pop_px_max_per_frame_jump_ge8": 21,
+ "outside_zone_px_changed_ge2": 0,
+ "protect_px_changed_ge2": 0,
+ "dust_energy_series": {
+  "swing_1s_median_pct": 2.343,
+  "swing_1s_max_pct": 3.795,
+  "max_step_pct": 0.216,
+  "energy_above_5hz": 0.0012
+ }
+}

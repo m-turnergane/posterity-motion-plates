@@ -1,0 +1,56 @@
+{
+ "name": "nm4a_moon_path_v1b",
+ "plate": "/workspace/posterity/day7/nan-madol-saudeleur/assets/owner/seq4a_oral_floating_stones_canal.png",
+ "times": [
+  0.0,
+  0.5,
+  1.0,
+  1.7,
+  2.4,
+  3.1,
+  4.0
+ ],
+ "impulses": 19530,
+ "leaked_px_total": 0,
+ "impulse_live_changed_min_frac": 0.9838,
+ "protect_px": 1361478,
+ "protect_changed_px": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "allow_changed_px": [
+  53620,
+  48833,
+  39957,
+  39089,
+  40102,
+  41535,
+  47043
+ ],
+ "changed_frac_of_frame": [
+  0.03408,
+  0.03104,
+  0.0254,
+  0.02484,
+  0.02549,
+  0.0264,
+  0.0299
+ ],
+ "max_abs_diff_in_allow": [
+  187,
+  215,
+  198,
+  185,
+  184,
+  173,
+  203
+ ],
+ "pass_impulse_0px": true,
+ "pass_protect_0px": true,
+ "pass": true
+}

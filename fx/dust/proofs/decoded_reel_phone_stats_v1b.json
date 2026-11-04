@@ -1,0 +1,16 @@
+{
+ "frames": 540,
+ "note": "decoded final reel at 360x640 phone. read_px counts include camera push (shots 1,3); see proofs/stats_*.json for dust-only (vs pushed still plate) numbers. v1 file is truncated/invalid (json float32 error).",
+ "shot1": {
+  "swing_1s_max_pct": 1.087,
+  "energy_above_5hz": 0.0687
+ },
+ "shot2": {
+  "swing_1s_max_pct": 0.02,
+  "energy_above_5hz": 0.0827
+ },
+ "shot3": {
+  "swing_1s_max_pct": 1.99,
+  "energy_above_5hz": 0.0192
+ }
+}

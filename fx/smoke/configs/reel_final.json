@@ -1,0 +1,10 @@
+{
+ "note": "Posterity SMOKE v2 final reel: 5 plates, hard cuts, 1080x1920 @30, push 1.00->1.06 per shot, no text/vignette/letterbox/watermark.",
+ "shots": [
+  {"config": "configs/p05v2_every_fire.json", "seconds": 6.0},
+  {"config": "configs/b13_three_torches.json", "seconds": 5.0},
+  {"config": "configs/p06_street_haze.json", "seconds": 5.0},
+  {"config": "configs/b19_candle_wisps_v2.json", "seconds": 5.0},
+  {"config": "configs/p01v2_city_plumes.json", "seconds": 5.0}
+ ]
+}

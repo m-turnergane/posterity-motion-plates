@@ -1,0 +1,54 @@
+{
+ "frames": 15,
+ "changed_px_outside_allowed": 0,
+ "flames_only_changed_px_outside_flame_zone": 0,
+ "protect_px": 297582,
+ "protect_motion_max_diff": 0,
+ "protect_light_residual_max": 0,
+ "protect_light_change_max": 0,
+ "protect_lit_px_max": 0,
+ "guards_motion_max_diff": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "guards_light_residual_max": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "guards_light_change_max": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 0,
+  "shore_glitter": 0
+ },
+ "guards_shift_px_max": {
+  "horizon_line": 0.0,
+  "sea_open": 0.0,
+  "sky": 0.114,
+  "shore_glitter": 0.001
+ },
+ "guards_matte_overlap_px": {
+  "horizon_line": 0,
+  "sea_open": 0,
+  "sky": 441817,
+  "shore_glitter": 0
+ },
+ "allowed_fraction": 0.5659,
+ "components": 28,
+ "matte_px": 460894,
+ "matte_protect_overlap_px": 460188,
+ "billow_only_changed_px_outside_matte": 0,
+ "pass": true,
+ "config": "configs/p05v2_town_flames_v3.json",
+ "smoke": "configs/p05v2_smoke_bigfires_v2b.json",
+ "billow": [
+  "configs/p05v2_sky_billow_v3.json"
+ ],
+ "plate": "/workspace/posterity/micro-anomaly/ugarit/plates/p05_coastal_town_raid_v2_OWNER.png",
+ "seconds": 7.0,
+ "times_step": 0.5
+}

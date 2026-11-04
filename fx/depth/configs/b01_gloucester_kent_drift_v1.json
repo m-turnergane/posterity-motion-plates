@@ -1,0 +1,109 @@
+{
+ "name": "b01_gloucester_kent_drift_v1",
+ "plate": "/workspace/posterity/standalones/edward-ii/plates-v3b/b01_gloucester_funeral_wide_kent_OWNER.png",
+ "note": "Kent + near floor (+ right-edge mourner) on the near card; bier, priests, candles, nave on the far card. Kent's feet and the floor share a card (no foot slide); the floor cut runs along the dark base of the bier, softened by a wide seam feather. | 16:9 band crop removed 2026-10-30: portrait 941px plate -> 1920x1080 = 2.2 px/src px, fails guardrails.check_pixel_density (EIC: never upscale).",
+ "seconds": 6.0,
+ "formats": [
+  "1080x1920"
+ ],
+ "matte": {
+  "mode": "hybrid",
+  "guided_r": 4,
+  "guided_eps": 0.002
+ },
+ "camera": {
+  "type": "drift+push",
+  "push": [
+   1.0,
+   1.06
+  ],
+  "anchor": [
+   0.24,
+   0.45
+  ],
+  "travel": 0.04,
+  "dir": [
+   -1,
+   0
+  ],
+  "pivot": 1.0
+ },
+ "layers": [
+  {
+   "name": "far",
+   "parallax": 0.0,
+   "push_gain": 0.4
+  },
+  {
+   "name": "near",
+   "parallax": 1.0,
+   "push_gain": 1.0,
+   "depth_min": 0.4,
+   "seams": [
+    [
+     [
+      0.3,
+      0.72
+     ],
+     [
+      0.96,
+      0.72
+     ],
+     [
+      0.96,
+      0.93
+     ],
+     [
+      0.3,
+      0.93
+     ]
+    ]
+   ],
+   "seam_feather_px": 16,
+   "protect": [
+    {
+     "name": "kent_face",
+     "poly": [
+      [
+       0.21,
+       0.405
+      ],
+      [
+       0.232,
+       0.405
+      ],
+      [
+       0.232,
+       0.44
+      ],
+      [
+       0.21,
+       0.44
+      ]
+     ]
+    },
+    {
+     "name": "kent_hands",
+     "poly": [
+      [
+       0.235,
+       0.6
+      ],
+      [
+       0.265,
+       0.6
+      ],
+      [
+       0.265,
+       0.63
+      ],
+      [
+       0.235,
+       0.63
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

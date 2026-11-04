@@ -1,0 +1,144 @@
+{
+ "name": "g7_piso_window_beam_v1",
+ "plate": "/workspace/posterity/standalones/germanicus/plates-owner/seq7b_piso_room_daybreak_sword_floor_v5_OWNER.png",
+ "seed": 71,
+ "seconds": 6.0,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "push_center": [
+  0.3,
+  0.3
+ ],
+ "crf": 24,
+ "protect_feather": 8,
+ "zones": [
+  {
+   "type": "shaft",
+   "poly": [
+    [
+     110,
+     40
+    ],
+    [
+     270,
+     40
+    ],
+    [
+     540,
+     380
+    ],
+    [
+     600,
+     720
+    ],
+    [
+     320,
+     760
+    ],
+    [
+     110,
+     360
+    ]
+   ],
+   "feather": 60,
+   "lum_lo": 35,
+   "lum_hi": 130,
+   "lum_blur": 10,
+   "lum_gamma": 0.7
+  }
+ ],
+ "protect": [
+  [
+   [
+    95,
+    0
+   ],
+   [
+    258,
+    0
+   ],
+   [
+    258,
+    308
+   ],
+   [
+    95,
+    308
+   ]
+  ],
+  [
+   [
+    820,
+    560
+   ],
+   [
+    960,
+    560
+   ],
+   [
+    960,
+    720
+   ],
+   [
+    820,
+    720
+   ]
+  ]
+ ],
+ "layers": [
+  {
+   "type": "haze",
+   "zone": 0,
+   "amp": 9,
+   "blobs": 6,
+   "blob_sigma": 80,
+   "hz": [
+    0.05,
+    0.14
+   ],
+   "color": [
+    220,
+    230,
+    255
+   ]
+  },
+  {
+   "type": "motes",
+   "zone": 0,
+   "n": 700,
+   "sigma": [
+    0.9,
+    3.4
+   ],
+   "speed": [
+    4,
+    16
+   ],
+   "dir": [
+    0.35,
+    1.0
+   ],
+   "dir_jitter_deg": 45,
+   "turb_px": 7,
+   "turb_hz": [
+    0.07,
+    0.3
+   ],
+   "life_s": [
+    5,
+    12
+   ],
+   "amp": 190,
+   "near_gain": 1.8,
+   "depth_power": 2.0,
+   "pre_roll": 40,
+   "color": [
+    232,
+    238,
+    255
+   ]
+  }
+ ]
+}
