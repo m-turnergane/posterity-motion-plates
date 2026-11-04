@@ -1,0 +1,12 @@
+{
+  "_EXAMPLE": "EXAMPLE DATA ONLY -- illustrative rows for the Edward II long-form template; these plate files do not exist. Copy, then replace every row with the real plate list.",
+  "plates_dir": "../../../standalones/edward-ii/plates-longform-EXAMPLE",
+  "plates": [
+    {"plate_id": "LF01", "scene_id": "SC01", "shot_ids": ["S01"], "prompt": "EXAMPLE: Gloucester Cathedral nave at dusk, funeral bier, candlelight, wide, 16:9",
+     "aspect": "16:9", "target_resolution": "1920x1080", "expected_filename": "lf01_gloucester_nave_wide.png", "refs": ["b01_gloucester_funeral_wide_kent_OWNER.png"], "notes": "EXAMPLE: opening establishing shot"},
+    {"plate_id": "LF02", "scene_id": "SC01", "shot_ids": ["S02", "S03"], "prompt": "EXAMPLE: Edmund of Kent close, bound at dawn, cold light, 16:9",
+     "aspect": "16:9", "target_resolution": "1920x1080", "expected_filename": "lf02_kent_bound_dawn_close.png", "refs": ["b02_kent_bound_dawn_close_OWNER.png"], "notes": "EXAMPLE: S03 re-uses the plate with a tighter crop"},
+    {"plate_id": "LF03", "scene_id": "SC02", "shot_ids": ["S04"], "prompt": "EXAMPLE: Corfe Castle at dusk, single lit window, 16:9",
+     "aspect": "16:9", "target_resolution": "1920x1080", "expected_filename": "lf03_corfe_dusk_single_light.png", "refs": [], "notes": "EXAMPLE: candle smoke via smoke config"}
+  ]
+}

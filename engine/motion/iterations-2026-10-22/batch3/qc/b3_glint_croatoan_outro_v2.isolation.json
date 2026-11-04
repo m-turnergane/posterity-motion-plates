@@ -1,0 +1,8 @@
+{
+ "0:water-glint": {
+  "mask": "batch3/masks/outro_ch1_water.png",
+  "own_mask_coverage_pct": 42.09,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ }
+}

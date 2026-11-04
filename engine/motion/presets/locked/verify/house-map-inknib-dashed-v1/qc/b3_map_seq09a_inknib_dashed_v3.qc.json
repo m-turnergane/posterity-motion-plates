@@ -1,0 +1,46 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.9740864038467407,
+ "disp_where": {
+  "frame": 149,
+  "x": 471,
+  "y": 1330
+ },
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 90.35034753824954,
+ "changed_pct_mean": 85.30808903538433,
+ "mean_abs_diff_mean": 9.113819857438399,
+ "name": "b3_map_seq09a_inknib_dashed_v3",
+ "mp4": "../presets/locked/verify/house-map-inknib-dashed-v1/b3_map_seq09a_inknib_dashed_v3.mp4",
+ "md5": "b8aa9ceb7cae2757a44d9919eb8ddd9f",
+ "frames_sha256": "dc6c079d2ef7b94a5229f46ebbf94308e98cb2ad6fb6b8ae429bba2b4c662dfb",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 100.0,
+ "seconds_to_render": 39.1,
+ "plate": "serials/croatoan/ch2/plates/seq09a_map_roanoke_croatoan_UNLABELED_OWNER.png",
+ "seed": 9093,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "../presets/locked/verify/house-map-inknib-dashed-v1/determinism/b3_map_seq09a_inknib_dashed_v3_rerun.mp4",
+  "rerun_md5": "b8aa9ceb7cae2757a44d9919eb8ddd9f",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

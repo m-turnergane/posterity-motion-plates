@@ -1,0 +1,181 @@
+{
+ "name": "b3_map_seq09a_inknib_dashed_v3",
+ "plate": "serials/croatoan/ch2/plates/seq09a_map_roanoke_croatoan_UNLABELED_OWNER.png",
+ "out_dir": "batch3",
+ "seed": 9093,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch1/masks/seq09a_protect_land_coast.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "v3: bold nib-inked route, wet tip drying; ink stamps at Roanoke and Croatoan cape"
+ },
+ "layers": [
+  {
+   "preset": "water",
+   "mask": "batch1/masks/seq09a_sea.png",
+   "strength": 1.0,
+   "params": {
+    "amp_px": 0.9,
+    "speed": 10.0,
+    "lo": 150,
+    "hi": 5,
+    "stretch": 3.5,
+    "shimmer": 0.05,
+    "glint": 0.0
+   }
+  },
+  {
+   "preset": "map-light",
+   "mask": "batch1/masks/seq09a_full.png",
+   "strength": 1.0,
+   "params": {
+    "parchment": {
+     "strength": 0.09,
+     "angle_deg": 32,
+     "width_frac": 0.4,
+     "x_from": -0.2,
+     "x_to": 0.9
+    },
+    "cloud_shadows": {
+     "strength": 0.32,
+     "lo": 700,
+     "hi": 160,
+     "beta": 3.2,
+     "coverage": 0.45,
+     "softness": 2.3,
+     "velocity": [
+      30.0,
+      10.0
+     ]
+    },
+    "route": {
+     "style": "nib",
+     "points": [
+      [
+       520,
+       322
+      ],
+      [
+       560,
+       352
+      ],
+      [
+       588,
+       458
+      ],
+      [
+       654,
+       621
+      ],
+      [
+       711,
+       817
+      ],
+      [
+       743,
+       1062
+      ],
+      [
+       704,
+       1300
+      ],
+      [
+       690,
+       1365
+      ],
+      [
+       668,
+       1405
+      ]
+     ],
+     "t0": 0.25,
+     "t1": 2.6,
+     "width": 7.2,
+     "supersample": 4,
+     "dash": [
+      24,
+      11
+     ]
+    },
+    "markers": [
+     {
+      "xy": [
+       520,
+       322
+      ],
+      "t_on": 0.0,
+      "style": "ink",
+      "radius": 11,
+      "width": 3.6,
+      "dot": 3.4,
+      "draw_s": 0.22,
+      "bloom": 0.75,
+      "bloom_r": 1.25,
+      "bloom_s": 0.3,
+      "bloom_settle": 0.35
+     },
+     {
+      "xy": [
+       668,
+       1405
+      ],
+      "t_on": 2.6,
+      "style": "ink",
+      "radius": 14,
+      "width": 4.0,
+      "dot": 4.2,
+      "draw_s": 0.16,
+      "bloom": 0.9,
+      "bloom_r": 1.45,
+      "bloom_s": 0.28,
+      "bloom_settle": 0.4
+     }
+    ],
+    "ink": {
+     "wet_color": [
+      62,
+      10,
+      6
+     ],
+     "dry_color": [
+      142,
+      46,
+      26
+     ],
+     "wet_opacity": 0.97,
+     "dry_opacity": 0.88,
+     "dry_time": 0.9,
+     "wick_time": 1.2,
+     "width_var": 0.3,
+     "width_var_len": 60,
+     "feather": 0.5,
+     "feather_px": 1.8,
+     "tip_px": 26,
+     "bead": 0.85,
+     "pigment": 0.55,
+     "bloom": 0.55,
+     "bloom_px": 2.4,
+     "bloom_s": 0.25,
+     "bloom_settle": 0.3,
+     "sheen": 0.4,
+     "sheen_px": 1.0,
+     "wobble_px": 1.2,
+     "wobble_hz": 5.0,
+     "tip_always": true,
+     "speed_var": 0.45
+    }
+   }
+  }
+ ]
+}

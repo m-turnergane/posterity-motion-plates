@@ -1,0 +1,26 @@
+{
+ "0:smoke": {
+  "mask": "batch1/masks/p06_opening.png",
+  "own_mask_coverage_pct": 100.0,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "1:atmos": {
+  "mask": "batch1/masks/p06_opening.png",
+  "own_mask_coverage_pct": 61.19,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "2:light-shift": {
+  "mask": "batch1/masks/p06_full.png",
+  "own_mask_coverage_pct": 100.0,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "3:fire-torchlight": {
+  "mask": "batch1/masks/p06_opening.png",
+  "own_mask_coverage_pct": 62.11,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ }
+}

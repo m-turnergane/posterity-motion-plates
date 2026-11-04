@@ -1,0 +1,42 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.0,
+ "disp_where": null,
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 22.758225749863982,
+ "changed_pct_mean": 9.29352533105539,
+ "mean_abs_diff_mean": 0.9157748921153442,
+ "name": "b2_candle_seq14_lightspill_v1",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch2/b2_candle_seq14_lightspill_v1.mp4",
+ "md5": "2962e4acba43d411d443adfd35728159",
+ "frames_sha256": "de291c3bb4323f945fa6ff7d0c10df582f122e054dd3fb8d61b526d283899bc4",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 90.92784068663592,
+ "seconds_to_render": 29.7,
+ "plate": "serials/croatoan/ch2/plates/seq14_white_ireland_letter_candle_OWNER.png",
+ "seed": 1414,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch2/determinism/b2_candle_seq14_lightspill_v1_rerun.mp4",
+  "rerun_md5": "2962e4acba43d411d443adfd35728159",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

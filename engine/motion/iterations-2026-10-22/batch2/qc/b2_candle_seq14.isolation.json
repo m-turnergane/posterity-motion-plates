@@ -1,0 +1,8 @@
+{
+ "0:fire-torchlight": {
+  "mask": "batch2/masks/seq14_relight.png",
+  "own_mask_coverage_pct": 90.93,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ }
+}

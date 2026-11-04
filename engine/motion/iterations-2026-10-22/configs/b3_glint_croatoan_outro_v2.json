@@ -1,0 +1,70 @@
+{
+ "name": "b3_glint_croatoan_outro_duskpath_v2",
+ "plate": "serials/croatoan/ch1/plates/outro_OWNER.png",
+ "out_dir": "batch3",
+ "seed": 7311,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch3/masks/outro_ch1_protect_all.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "Water-glint: low-sun path breaking on the water, glints twinkle; light only, coast static"
+ },
+ "layers": [
+  {
+   "preset": "water-glint",
+   "mask": "batch3/masks/outro_ch1_water.png",
+   "strength": 1.0,
+   "params": {
+    "light_x": 130,
+    "horizon_y": 745,
+    "path_w0": 30,
+    "path_w1": 170,
+    "path_power": 0.9,
+    "along": [
+     1.0,
+     0.3
+    ],
+    "path_gain": 0.35,
+    "broken": 0.8,
+    "su": 1.0,
+    "sv": 2500.0,
+    "eps": 12.0,
+    "wave_speed": 0.08,
+    "cross_speed": 0.003,
+    "thresh_in": 0.45,
+    "thresh_out": 1.4,
+    "glint_gain": 6.0,
+    "glint_gamma": 0.7,
+    "twinkle": 0.65,
+    "color": [
+     255,
+     236,
+     200
+    ],
+    "bloom": 0.6,
+    "lum_follow": 0.85,
+    "outside": 0.0,
+    "bloom_sigma": 2.2,
+    "glint_lo": [
+     30,
+     22
+    ],
+    "glint_hi": [
+     5,
+     4
+    ]
+   }
+  }
+ ]
+}

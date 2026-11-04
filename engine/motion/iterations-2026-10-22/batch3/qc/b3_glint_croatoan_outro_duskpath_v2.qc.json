@@ -1,0 +1,42 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.0,
+ "disp_where": null,
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 8.7867813432722,
+ "changed_pct_mean": 8.688843945919283,
+ "mean_abs_diff_mean": 1.0284843116998668,
+ "name": "b3_glint_croatoan_outro_duskpath_v2",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch3/b3_glint_croatoan_outro_duskpath_v2.mp4",
+ "md5": "1e202e9f6f17f5771ad89303ad2e87bf",
+ "frames_sha256": "03bf272e0104aee21d941e840e15653944603e4c69a028dc84dd031b40159510",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 42.0882930202523,
+ "seconds_to_render": 38.4,
+ "plate": "serials/croatoan/ch1/plates/outro_OWNER.png",
+ "seed": 7311,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch3/determinism/b3_glint_croatoan_outro_duskpath_v2_rerun.mp4",
+  "rerun_md5": "1e202e9f6f17f5771ad89303ad2e87bf",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "name": "b8_glint_p07_ugarit_sunpath_v4",
+ "plate": "micro-anomaly/ugarit/plates/p07_abandoned_match02_OWNER.png",
+ "out_dir": "batch8",
+ "seed": 7407,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch3/masks/p07_protect_all.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "Glint v4: broken warm streaks with dark gaps, broader sparser path; light only, 0 px"
+ },
+ "layers": [
+  {
+   "preset": "water-glint",
+   "mask": "batch1/masks/p07_sea.png",
+   "strength": 1.0,
+   "params": {
+    "light_x": 640,
+    "horizon_y": 196,
+    "path_w0": 80,
+    "path_w1": 400,
+    "path_power": 0.8,
+    "along": [
+     0.8,
+     0.7
+    ],
+    "path_gain": 0.26,
+    "broken": 0.9,
+    "su": 0.6,
+    "sv": 400.0,
+    "eps": 10.0,
+    "wave_speed": 0.08,
+    "cross_speed": 0.004,
+    "thresh_in": 0.62,
+    "thresh_out": 1.5,
+    "glint_gain": 2.6,
+    "glint_gamma": 0.7,
+    "twinkle": 0.6,
+    "color": [
+     255,
+     216,
+     162
+    ],
+    "bloom": 0.45,
+    "lum_follow": 0.6,
+    "outside": 0.0,
+    "bloom_sigma": 3.0,
+    "glint_lo": [
+     44,
+     34
+    ],
+    "glint_hi": [
+     8,
+     6
+    ],
+    "grow_px": 2,
+    "grow_gain": 0.6,
+    "star": 0.8,
+    "star_len": 21,
+    "halo": 0.12,
+    "halo_sigma": 9.0,
+    "streak": {
+     "duty": 0.42,
+     "fade_px": [
+      1.5,
+      3.5
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "0:water": {
+  "mask": "batch1/masks/seq09a_sea.png",
+  "own_mask_coverage_pct": 76.72,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "1:map-light": {
+  "mask": "batch1/masks/seq09a_full.png",
+  "own_mask_coverage_pct": 100.0,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "2:map-ink": {
+  "mask": "batch1/masks/seq09a_full.png",
+  "own_mask_coverage_pct": 35.04,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ }
+}

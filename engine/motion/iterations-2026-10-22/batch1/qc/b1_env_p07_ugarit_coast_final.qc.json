@@ -1,0 +1,46 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 48.9564323425293,
+ "disp_where": {
+  "frame": 239,
+  "x": 449,
+  "y": 0
+ },
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 52.482979015503204,
+ "changed_pct_mean": 51.96425423766157,
+ "mean_abs_diff_mean": 8.25457775592804,
+ "name": "b1_env_p07_ugarit_coast_final",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch1/b1_env_p07_ugarit_coast_final.mp4",
+ "md5": "755ece930397b65293067b239e3f7efc",
+ "frames_sha256": "78d25074fb8c1fa7ee07dd629914a345e709cb8e13ae9cd209869d893ff204d2",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 100.0,
+ "seconds_to_render": 42.6,
+ "plate": "micro-anomaly/ugarit/plates/p07_abandoned_match02_OWNER.png",
+ "seed": 7071,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch1/determinism/b1_env_p07_ugarit_coast_final_rerun.mp4",
+  "rerun_md5": "755ece930397b65293067b239e3f7efc",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

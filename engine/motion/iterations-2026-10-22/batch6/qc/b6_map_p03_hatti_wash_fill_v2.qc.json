@@ -1,0 +1,46 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.9811583757400513,
+ "disp_where": {
+  "frame": 120,
+  "x": 414,
+  "y": 916
+ },
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 90.95873015065922,
+ "changed_pct_mean": 78.89635631441662,
+ "mean_abs_diff_mean": 12.932299518585205,
+ "name": "b6_map_p03_hatti_wash_fill_v2",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch6/b6_map_p03_hatti_wash_fill_v2.mp4",
+ "md5": "dd351b4c5724a417662efaeabe2a656a",
+ "frames_sha256": "6991f21c586795d58dbe231ee6b2af0ec2292669e8ef0e73e7ed108fe07fc7df",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 100.0,
+ "seconds_to_render": 46.0,
+ "plate": "micro-anomaly/ugarit/plates/p03_map_ugarit_hatti_cyprus_OWNER.png",
+ "seed": 9606,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch6/determinism/b6_map_p03_hatti_wash_fill_v2_rerun.mp4",
+  "rerun_md5": "dd351b4c5724a417662efaeabe2a656a",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

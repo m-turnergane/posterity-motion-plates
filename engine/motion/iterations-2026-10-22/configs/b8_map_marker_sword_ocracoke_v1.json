@@ -1,0 +1,43 @@
+{
+ "name": "b8_map_marker_sword_ocracoke_v1",
+ "plate": "/workspace/posterity/day18/blackbeard/plates/seq04b_map_ocracoke_OWNER.png",
+ "out_dir": "batch8",
+ "seed": 9811,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "R&D b8: engraved sword icon drops in and presses at the Ocracoke Inlet fight"
+ },
+ "layers": [
+  {
+   "preset": "map-ink",
+   "mask": "batch1/masks/seq09a_full.png",
+   "strength": 1.0,
+   "params": {
+    "stamps": [
+     {
+      "style": "icon",
+      "icon": "sword",
+      "xy": [
+       648,
+       1108
+      ],
+      "t_on": 0.6,
+      "rot_deg": -35,
+      "radius": 64,
+      "note": "icon and t_on are the adjustable params; icons: sword, crossed_swords, anchor, crown, skull"
+     }
+    ]
+   }
+  }
+ ]
+}

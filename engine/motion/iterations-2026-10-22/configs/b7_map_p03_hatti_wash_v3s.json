@@ -1,0 +1,228 @@
+{
+ "name": "b7_map_p03_hatti_wash_fill_v3",
+ "plate": "micro-anomaly/ugarit/plates/p03_map_ugarit_hatti_cyprus_OWNER.png",
+ "out_dir": "batch7",
+ "seed": 9707,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch5/masks/p03_protect_land_coast.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "R&D v3: Hatti sphere c.1200 BC (soft, no border; pale = Arzawa vassal lands)"
+ },
+ "layers": [
+  {
+   "preset": "water",
+   "mask": "batch5/masks/p03_sea.png",
+   "strength": 1.0,
+   "params": {
+    "amp_px": 0.9,
+    "speed": 10.0,
+    "lo": 150,
+    "hi": 5,
+    "stretch": 3.5,
+    "shimmer": 0.05,
+    "glint": 0.0
+   }
+  },
+  {
+   "preset": "map-light",
+   "mask": "batch5/masks/p03_full.png",
+   "strength": 1.0,
+   "params": {
+    "parchment": {
+     "strength": 0.09,
+     "angle_deg": 32,
+     "width_frac": 0.4,
+     "x_from": -0.2,
+     "x_to": 0.9
+    },
+    "cloud_shadows": {
+     "strength": 0.32,
+     "lo": 700,
+     "hi": 160,
+     "beta": 3.2,
+     "coverage": 0.45,
+     "softness": 2.3,
+     "velocity": [
+      30.0,
+      10.0
+     ]
+    },
+    "ink": {
+     "wet_color": [
+      62,
+      10,
+      6
+     ],
+     "dry_color": [
+      142,
+      46,
+      26
+     ],
+     "wet_opacity": 0.97,
+     "dry_opacity": 0.88,
+     "dry_time": 0.9,
+     "wick_time": 1.2,
+     "width_var": 0.3,
+     "width_var_len": 60,
+     "feather": 0.5,
+     "feather_px": 1.8,
+     "tip_px": 26,
+     "bead": 0.85,
+     "pigment": 0.55,
+     "bloom": 0.55,
+     "bloom_px": 2.4,
+     "bloom_s": 0.25,
+     "bloom_settle": 0.3,
+     "sheen": 0.4,
+     "sheen_px": 1.0,
+     "wobble_px": 1.2,
+     "wobble_hz": 5.0,
+     "tip_always": true,
+     "speed_var": 0.45
+    }
+   }
+  },
+  {
+   "preset": "map-ink",
+   "mask": "batch5/masks/p03_full.png",
+   "strength": 1.0,
+   "params": {
+    "ink": {
+     "wet_color": [
+      62,
+      10,
+      6
+     ],
+     "dry_color": [
+      142,
+      46,
+      26
+     ],
+     "wet_opacity": 0.97,
+     "dry_opacity": 0.88,
+     "dry_time": 0.9,
+     "wick_time": 1.2,
+     "width_var": 0.3,
+     "width_var_len": 60,
+     "feather": 0.5,
+     "feather_px": 1.8,
+     "tip_px": 26,
+     "bead": 0.85,
+     "pigment": 0.55,
+     "bloom": 0.55,
+     "bloom_px": 2.4,
+     "bloom_s": 0.25,
+     "bloom_settle": 0.3,
+     "sheen": 0.4,
+     "sheen_px": 1.0,
+     "wobble_px": 1.2,
+     "wobble_hz": 5.0,
+     "tip_always": true,
+     "speed_var": 0.45
+    },
+    "washes": [
+     {
+      "mask": "batch7/masks/p03_hatti_extent_sourced_v3.png",
+      "seed": [
+       436,
+       192
+      ],
+      "reach_at": [
+       775,
+       822
+      ],
+      "reach_frac": 4.0,
+      "feather_frac": 0.05,
+      "aniso": [
+       62,
+       2,
+       1.5
+      ],
+      "color": [
+       150,
+       34,
+       112
+      ],
+      "wet_color": [
+       96,
+       14,
+       64
+      ],
+      "opacity": 0.54,
+      "wet_opacity": 0.66,
+      "geo_thresh": 0.02,
+      "front_s": 0.18,
+      "wet_time": 0.45,
+      "edge": 0.7,
+      "edge_px": 3.0,
+      "cov": [
+       [
+        0.2,
+        0.0
+       ],
+       [
+        0.7,
+        0.5
+       ],
+       [
+        1.4,
+        0.72
+       ],
+       [
+        2.3,
+        0.88
+       ],
+       [
+        3.0,
+        0.95
+       ],
+       [
+        3.5,
+        1.0
+       ]
+      ]
+     }
+    ],
+    "stamps": [
+     {
+      "xy": [
+       436,
+       192
+      ],
+      "t_on": 0.3,
+      "radius": 44,
+      "ring_w": 5,
+      "inner": 0.74,
+      "inner_w": 2,
+      "dots": 8,
+      "emblem_r": 0.5,
+      "drop_s": 0.28,
+      "splat": 8,
+      "splat_r": [
+       1.1,
+       1.5
+      ],
+      "ghost": 0.3,
+      "shadow": 0.42,
+      "shadow_off": [
+       14,
+       18
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

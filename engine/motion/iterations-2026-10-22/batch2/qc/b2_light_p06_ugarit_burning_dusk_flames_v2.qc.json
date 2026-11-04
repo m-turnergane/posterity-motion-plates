@@ -1,0 +1,46 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 1.3957796096801758,
+ "disp_where": {
+  "frame": 239,
+  "x": 799,
+  "y": 573
+ },
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 99.91603913173911,
+ "changed_pct_mean": 87.34338321409743,
+ "mean_abs_diff_mean": 29.622519159317008,
+ "name": "b2_light_p06_ugarit_burning_dusk_flames_v2",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch2/b2_light_p06_ugarit_burning_dusk_flames_v2.mp4",
+ "md5": "759ccaa16690f6a51bbf18518c816c04",
+ "frames_sha256": "c12ce8180831b208405270d9cdd6ec6e225bea26884cc14451d3962dc3faff96",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 100.0,
+ "seconds_to_render": 125.1,
+ "plate": "micro-anomaly/ugarit/plates/p06_burnt_city_doorway_OWNER.png",
+ "seed": 6061,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch2/determinism/b2_light_p06_ugarit_burning_dusk_flames_v2_rerun.mp4",
+  "rerun_md5": "759ccaa16690f6a51bbf18518c816c04",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

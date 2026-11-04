@@ -1,0 +1,206 @@
+{
+ "name": "b5_map_seq09a_stamps_landing_v1",
+ "plate": "serials/croatoan/ch2/plates/seq09a_map_roanoke_croatoan_UNLABELED_OWNER.png",
+ "out_dir": "batch5",
+ "seed": 9505,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch1/masks/seq09a_protect_land_coast.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "R&D v1: ink seals drop in and press at Roanoke and Croatoan, splat, dry"
+ },
+ "layers": [
+  {
+   "preset": "water",
+   "mask": "batch1/masks/seq09a_sea.png",
+   "strength": 1.0,
+   "params": {
+    "amp_px": 0.9,
+    "speed": 10.0,
+    "lo": 150,
+    "hi": 5,
+    "stretch": 3.5,
+    "shimmer": 0.05,
+    "glint": 0.0
+   }
+  },
+  {
+   "preset": "map-light",
+   "mask": "batch1/masks/seq09a_full.png",
+   "strength": 1.0,
+   "params": {
+    "parchment": {
+     "strength": 0.09,
+     "angle_deg": 32,
+     "width_frac": 0.4,
+     "x_from": -0.2,
+     "x_to": 0.9
+    },
+    "cloud_shadows": {
+     "strength": 0.32,
+     "lo": 700,
+     "hi": 160,
+     "beta": 3.2,
+     "coverage": 0.45,
+     "softness": 2.3,
+     "velocity": [
+      30.0,
+      10.0
+     ]
+    },
+    "ink": {
+     "wet_color": [
+      62,
+      10,
+      6
+     ],
+     "dry_color": [
+      142,
+      46,
+      26
+     ],
+     "wet_opacity": 0.97,
+     "dry_opacity": 0.88,
+     "dry_time": 0.9,
+     "wick_time": 1.2,
+     "width_var": 0.3,
+     "width_var_len": 60,
+     "feather": 0.5,
+     "feather_px": 1.8,
+     "tip_px": 26,
+     "bead": 0.85,
+     "pigment": 0.55,
+     "bloom": 0.55,
+     "bloom_px": 2.4,
+     "bloom_s": 0.25,
+     "bloom_settle": 0.3,
+     "sheen": 0.4,
+     "sheen_px": 1.0,
+     "wobble_px": 1.2,
+     "wobble_hz": 5.0,
+     "tip_always": true,
+     "speed_var": 0.45
+    }
+   }
+  },
+  {
+   "preset": "map-ink",
+   "mask": "batch1/masks/seq09a_full.png",
+   "strength": 1.0,
+   "params": {
+    "ink": {
+     "wet_color": [
+      62,
+      10,
+      6
+     ],
+     "dry_color": [
+      142,
+      46,
+      26
+     ],
+     "wet_opacity": 0.97,
+     "dry_opacity": 0.88,
+     "dry_time": 0.9,
+     "wick_time": 1.2,
+     "width_var": 0.3,
+     "width_var_len": 60,
+     "feather": 0.5,
+     "feather_px": 1.8,
+     "tip_px": 26,
+     "bead": 0.85,
+     "pigment": 0.55,
+     "bloom": 0.55,
+     "bloom_px": 2.4,
+     "bloom_s": 0.25,
+     "bloom_settle": 0.3,
+     "sheen": 0.4,
+     "sheen_px": 1.0,
+     "wobble_px": 1.2,
+     "wobble_hz": 5.0,
+     "tip_always": true,
+     "speed_var": 0.45
+    },
+    "stamps": [
+     {
+      "xy": [
+       520,
+       322
+      ],
+      "t_on": 0.45,
+      "rot_deg": 8,
+      "radius": 80,
+      "ring_w": 8,
+      "drop_s": 0.34,
+      "inner": 0.78,
+      "inner_w": 3.0,
+      "splat": 18,
+      "splat_spread": 0.75,
+      "splat_r": [
+       1.04,
+       1.4
+      ],
+      "splat_px": [
+       0.7,
+       4.2
+      ],
+      "streaks": 4,
+      "ghost_blur": 14,
+      "shadow_off": [
+       24,
+       30
+      ],
+      "shadow_sigma": [
+       24,
+       4
+      ]
+     },
+     {
+      "xy": [
+       668,
+       1405
+      ],
+      "t_on": 1.55,
+      "rot_deg": -14,
+      "radius": 80,
+      "ring_w": 8,
+      "drop_s": 0.34,
+      "inner": 0.78,
+      "inner_w": 3.0,
+      "splat": 18,
+      "splat_spread": 0.75,
+      "splat_r": [
+       1.04,
+       1.4
+      ],
+      "splat_px": [
+       0.7,
+       4.2
+      ],
+      "streaks": 4,
+      "ghost_blur": 14,
+      "shadow_off": [
+       24,
+       30
+      ],
+      "shadow_sigma": [
+       24,
+       4
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

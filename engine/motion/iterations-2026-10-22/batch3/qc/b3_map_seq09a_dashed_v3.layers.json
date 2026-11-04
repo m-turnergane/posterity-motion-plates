@@ -1,0 +1,12 @@
+{
+ "0:water": {
+  "max_disp_px": 0.974,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": true
+ },
+ "1:map-light": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "0:smoke": {
+  "mask": "batch1/masks/p06_opening.png",
+  "max_diff_outside_declared_mask": 107.903,
+  "where": {
+   "t": 2.0,
+   "x": 855,
+   "y": 1329
+  },
+  "frames_checked": [
+   0.5,
+   1.3,
+   2.0,
+   2.7,
+   3.5
+  ]
+ },
+ "1:atmos": {
+  "mask": "batch1/masks/p06_opening.png",
+  "max_diff_outside_declared_mask": 0.0,
+  "where": null,
+  "frames_checked": [
+   0.5,
+   1.3,
+   2.0,
+   2.7,
+   3.5
+  ]
+ },
+ "2:light-shift": {
+  "mask": "batch1/masks/p06_full.png",
+  "max_diff_outside_declared_mask": 0.0,
+  "where": null,
+  "frames_checked": [
+   0.5,
+   1.3,
+   2.0,
+   2.7,
+   3.5
+  ]
+ },
+ "3:fire-torchlight": {
+  "mask": "batch1/masks/p06_opening.png",
+  "max_diff_outside_declared_mask": 0.0,
+  "where": null,
+  "frames_checked": [
+   0.5,
+   1.3,
+   2.0,
+   2.7,
+   3.5
+  ]
+ }
+}

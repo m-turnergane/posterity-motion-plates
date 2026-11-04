@@ -1,0 +1,8 @@
+{
+ "0:water-glint": {
+  "mask": "batch1/masks/p07_sea.png",
+  "own_mask_coverage_pct": 8.41,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ }
+}

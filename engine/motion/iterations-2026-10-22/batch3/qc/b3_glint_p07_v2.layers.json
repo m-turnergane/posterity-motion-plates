@@ -1,0 +1,7 @@
+{
+ "0:water-glint": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ }
+}

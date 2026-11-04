@@ -1,0 +1,17 @@
+{
+  "_EXAMPLE": "EXAMPLE DATA ONLY -- shape of a timeline for build_template_v1.py. Paths are relative to this file.",
+  "name": "posterity-edward-ii-longform-EXAMPLE",
+  "fps": 30,
+  "shots": [
+    {"id": "S01", "seconds": 6.0, "anchor": [0.5, 0.45], "push": [1.0, 1.06]},
+    {"id": "S02", "seconds": 5.0, "anchor": [0.5, 0.30], "push": [1.0, 1.05]},
+    {"id": "S03", "seconds": 4.0, "anchor": [0.5, 0.30], "push": [1.0, 1.04], "crop": {"center": [0.45, 0.35], "frac": 0.75}},
+    {"id": "S04", "seconds": 6.0, "anchor": [0.62, 0.22], "push": [1.0, 1.06], "smoke": "example_smoke_S04.json"}
+  ],
+  "title": {"text": "THE LETTER TO\nA DEAD KING", "start_f": 8, "exit_f": 150, "font_px": 78},
+  "captions": [
+    {"start": 0.4, "end": 2.9, "text": "EXAMPLE caption one"},
+    {"start": 6.2, "end": 9.0, "text": "EXAMPLE caption that wraps onto two lines when the frame is narrow"}
+  ],
+  "audio": {"vo": "../../../standalones/edward-ii/vo/EXAMPLE_longform_vo.wav", "music": null, "bed_db": -17.5, "lufs": -14.0, "tp_max": -1.5}
+}

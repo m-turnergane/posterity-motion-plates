@@ -1,0 +1,37 @@
+{
+ "face": {
+  "min_pct": -25.98,
+  "max_pct": 14.19,
+  "std_pct": 8.85,
+  "max_step_pct_per_frame": 3.99,
+  "corr_with_flame": 0.964
+ },
+ "near_hand": {
+  "min_pct": -26.33,
+  "max_pct": 26.68,
+  "std_pct": 11.79,
+  "max_step_pct_per_frame": 5.12,
+  "corr_with_flame": 0.972
+ },
+ "paper": {
+  "min_pct": -25.59,
+  "max_pct": 13.93,
+  "std_pct": 8.79,
+  "max_step_pct_per_frame": 3.98,
+  "corr_with_flame": 0.966
+ },
+ "far_hand": {
+  "min_pct": -24.9,
+  "max_pct": 11.16,
+  "std_pct": 7.92,
+  "max_step_pct_per_frame": 3.56,
+  "corr_with_flame": 0.963
+ },
+ "flame": {
+  "min_pct": -24.89,
+  "max_pct": 32.46,
+  "std_pct": 12.18,
+  "max_step_pct_per_frame": 8.35,
+  "corr_with_flame": 1.0
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "face": {
+  "min_pct": -5.21,
+  "max_pct": 3.79,
+  "std_pct": 2.03,
+  "max_step_pct_per_frame": 2.75,
+  "corr_with_flame": 0.965
+ },
+ "hand_left": {
+  "min_pct": -12.56,
+  "max_pct": 8.44,
+  "std_pct": 4.74,
+  "max_step_pct_per_frame": 6.63,
+  "corr_with_flame": 0.968
+ },
+ "hand_right": {
+  "min_pct": -4.95,
+  "max_pct": 3.61,
+  "std_pct": 1.92,
+  "max_step_pct_per_frame": 2.61,
+  "corr_with_flame": 0.965
+ },
+ "paper": {
+  "min_pct": -6.71,
+  "max_pct": 4.76,
+  "std_pct": 2.59,
+  "max_step_pct_per_frame": 3.54,
+  "corr_with_flame": 0.966
+ },
+ "wall_far": {
+  "min_pct": -1.83,
+  "max_pct": 1.34,
+  "std_pct": 0.71,
+  "max_step_pct_per_frame": 0.97,
+  "corr_with_flame": 0.965
+ },
+ "window": {
+  "min_pct": -0.01,
+  "max_pct": 0.01,
+  "std_pct": 0.0,
+  "max_step_pct_per_frame": 0.0,
+  "corr_with_flame": 0.965
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.0,
+ "disp_where": null,
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 2.425839862916881,
+ "changed_pct_mean": 1.1798175699610345,
+ "mean_abs_diff_mean": 0.23325463030487298,
+ "name": "b8_map_marker_sword_ocracoke_v1",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch8/b8_map_marker_sword_ocracoke_v1.mp4",
+ "md5": "71acf1bc6162a21efea68a6f2283e257",
+ "frames_sha256": "f5b7d4aaf1418dcecb7c4ff6caa4b302e7be2be5c07279d434b1e0f6a6768fc0",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 15.07412200194235,
+ "seconds_to_render": 25.6,
+ "plate": "/workspace/posterity/day18/blackbeard/plates/seq04b_map_ocracoke_OWNER.png",
+ "seed": 9811,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true
+}

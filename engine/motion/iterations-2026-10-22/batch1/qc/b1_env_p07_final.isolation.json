@@ -1,0 +1,26 @@
+{
+ "0:sky": {
+  "mask": "batch1/masks/p07_sky.png",
+  "own_mask_coverage_pct": 12.5,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "1:water": {
+  "mask": "batch1/masks/p07_sea.png",
+  "own_mask_coverage_pct": 9.1,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "2:foliage": {
+  "mask": "batch1/masks/p07_foliage.png",
+  "own_mask_coverage_pct": 36.65,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ },
+ "3:map-light": {
+  "mask": "batch1/masks/p07_land.png",
+  "own_mask_coverage_pct": 79.09,
+  "max_diff_outside_own_mask": 0.0,
+  "where": null
+ }
+}

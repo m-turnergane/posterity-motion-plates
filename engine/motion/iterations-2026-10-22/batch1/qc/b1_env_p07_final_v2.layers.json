@@ -1,0 +1,22 @@
+{
+ "0:sky": {
+  "max_disp_px": 48.172,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": true
+ },
+ "1:water": {
+  "max_disp_px": 1.516,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": true
+ },
+ "2:foliage": {
+  "max_disp_px": 1.49,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": true
+ },
+ "3:map-light": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ }
+}

@@ -1,0 +1,667 @@
+{
+ "name": "b3_light_p06_ugarit_burning_dusk_flames_v3b",
+ "plate": "micro-anomaly/ugarit/plates/p06_burnt_city_doorway_OWNER.png",
+ "out_dir": "batch3",
+ "seed": 6063,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch2/masks/p06_protect_nonsky_v2.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "v3: big full-bodied fires with soot-dark tips into the smoke; wide sky heat shimmer"
+ },
+ "layers": [
+  {
+   "preset": "smoke",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "plumes": [
+     {
+      "src": [
+       490,
+       585
+      ],
+      "top": [
+       640,
+       230
+      ],
+      "w0": 9,
+      "w1": 120,
+      "opacity": 0.7425000000000002,
+      "rise": 26,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       736,
+       565
+      ],
+      "top": [
+       790,
+       280
+      ],
+      "w0": 7,
+      "w1": 95,
+      "opacity": 0.675,
+      "rise": 22,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       378,
+       575
+      ],
+      "top": [
+       330,
+       380
+      ],
+      "w0": 6,
+      "w1": 70,
+      "opacity": 0.5670000000000001,
+      "rise": 18,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       612,
+       590
+      ],
+      "top": [
+       700,
+       420
+      ],
+      "w0": 5,
+      "w1": 60,
+      "opacity": 0.4725,
+      "rise": 20,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       600,
+       1092
+      ],
+      "top": [
+       640,
+       880
+      ],
+      "w0": 14,
+      "w1": 70,
+      "opacity": 0.26,
+      "rise": 30
+     },
+     {
+      "src": [
+       300,
+       1334
+      ],
+      "top": [
+       330,
+       1120
+      ],
+      "w0": 16,
+      "w1": 80,
+      "opacity": 0.24,
+      "rise": 34
+     },
+     {
+      "src": [
+       560,
+       1284
+      ],
+      "top": [
+       600,
+       1080
+      ],
+      "w0": 14,
+      "w1": 70,
+      "opacity": 0.24,
+      "rise": 32
+     },
+     {
+      "src": [
+       360,
+       905
+      ],
+      "top": [
+       390,
+       720
+      ],
+      "w0": 12,
+      "w1": 60,
+      "opacity": 0.22,
+      "rise": 28
+     }
+    ],
+    "ash": {
+     "count": 170,
+     "fall": [
+      10,
+      30
+     ],
+     "wind": [
+      14,
+      2
+     ],
+     "opacity": 0.6,
+     "color": [
+      205,
+      198,
+      190
+     ]
+    }
+   }
+  },
+  {
+   "preset": "atmos",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "haze": {
+     "color": [
+      196,
+      182,
+      176
+     ],
+     "opacity": 0.2,
+     "lo": 260,
+     "hi": 30,
+     "velocity": [
+      16.0,
+      -2.0
+     ],
+     "band": [
+      600,
+      860
+     ],
+     "band_soft": 120
+    },
+    "rays": {
+     "origin": [
+      900,
+      110
+     ],
+     "strength": 0.16,
+     "color": [
+      255,
+      206,
+      160
+     ],
+     "n_scale": 55,
+     "speed": 0.002,
+     "falloff": 900,
+     "luma_gate": 0.3,
+     "near_fade": [
+      80,
+      420
+     ]
+    }
+   }
+  },
+  {
+   "preset": "light-shift",
+   "mask": "batch1/masks/p06_full.png",
+   "strength": 1.0,
+   "params": {
+    "t0": 0.3,
+    "t1": 3.6,
+    "gain": [
+     1.04,
+     0.84,
+     0.7
+    ],
+    "ev": -0.5,
+    "sky_mask": "batch1/masks/p06_sky.png",
+    "sky_gain": [
+     1.1,
+     0.86,
+     0.74
+    ],
+    "sun": [
+     720,
+     560
+    ],
+    "sun_radius": 300,
+    "sun_strength": 0.3
+   }
+  },
+  {
+   "preset": "fire-torchlight",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "sources": [],
+    "hotspots": {
+     "mask": "batch1/masks/p06_char.png",
+     "coverage": 0.05,
+     "gain": 0.35,
+     "light": 0.35,
+     "light_radius": 30,
+     "bloom": 5,
+     "lo": 110
+    },
+    "embers": {
+     "count": 80,
+     "spawn": [
+      [
+       500,
+       1110,
+       140,
+       50
+      ],
+      [
+       330,
+       910,
+       90,
+       40
+      ],
+      [
+       600,
+       960,
+       110,
+       40
+      ],
+      [
+       700,
+       1250,
+       90,
+       40
+      ]
+     ],
+     "rise": [
+      30,
+      80
+     ],
+     "life": [
+      1.2,
+      2.8
+     ],
+     "drift": [
+      10,
+      0
+     ],
+     "sway": 10,
+     "gain": 1.1,
+     "mask": "batch1/masks/p06_opening.png"
+    },
+    "flame_tongues": {
+     "rise": 95.0,
+     "sway_px": 5.0,
+     "cover": 0.7,
+     "bloom": 0.35,
+     "light_radius": 110.0,
+     "light": 0.5,
+     "beds": [
+      {
+       "points": [
+        [
+         433,
+         600
+        ],
+        [
+         472,
+         597
+        ],
+        [
+         512,
+         599
+        ],
+        [
+         542,
+         601
+        ]
+       ],
+       "height": 52,
+       "thickness": 6,
+       "intensity": 0.9974999999999999,
+       "light_scale": 0.6,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         674,
+         598
+        ],
+        [
+         727,
+         596
+        ],
+        [
+         779,
+         598
+        ],
+        [
+         824,
+         600
+        ]
+       ],
+       "height": 46,
+       "thickness": 6,
+       "intensity": 0.9450000000000001,
+       "light_scale": 0.6,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         339,
+         601
+        ],
+        [
+         372,
+         599
+        ],
+        [
+         402,
+         601
+        ]
+       ],
+       "height": 32,
+       "thickness": 5,
+       "intensity": 0.8925,
+       "light_scale": 0.5,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         548,
+         603
+        ],
+        [
+         592,
+         602
+        ],
+        [
+         615,
+         603
+        ]
+       ],
+       "height": 24,
+       "thickness": 5,
+       "intensity": 0.8400000000000001,
+       "light_scale": 0.5,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         187,
+         832
+        ],
+        [
+         274,
+         862
+        ],
+        [
+         361,
+         900
+        ],
+        [
+         448,
+         940
+        ],
+        [
+         520,
+         972
+        ]
+       ],
+       "height": 99,
+       "thickness": 12,
+       "intensity": 0.9450000000000001,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         470,
+         1040
+        ],
+        [
+         528,
+         1028
+        ],
+        [
+         593,
+         1032
+        ],
+        [
+         673,
+         1036
+        ]
+       ],
+       "height": 108,
+       "thickness": 12,
+       "intensity": 0.8400000000000001,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         340,
+         1128
+        ],
+        [
+         456,
+         1116
+        ],
+        [
+         601,
+         1101
+        ],
+        [
+         746,
+         1087
+        ],
+        [
+         847,
+         1076
+        ]
+       ],
+       "height": 126,
+       "thickness": 13,
+       "intensity": 1.0,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         92,
+         1295
+        ],
+        [
+         200,
+         1318
+        ],
+        [
+         302,
+         1342
+        ],
+        [
+         403,
+         1366
+        ],
+        [
+         483,
+         1384
+        ]
+       ],
+       "height": 153,
+       "thickness": 13,
+       "intensity": 0.8925,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         395,
+         1258
+        ],
+        [
+         504,
+         1276
+        ],
+        [
+         620,
+         1298
+        ],
+        [
+         707,
+         1316
+        ]
+       ],
+       "height": 135,
+       "thickness": 13,
+       "intensity": 0.9450000000000001,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         612,
+         602
+        ],
+        [
+         650,
+         600
+        ],
+        [
+         690,
+         601
+        ]
+       ],
+       "height": 34,
+       "thickness": 5,
+       "intensity": 0.85,
+       "light_scale": 0.5,
+       "clump": 0.9
+      },
+      {
+       "points": [
+        [
+         250,
+         604
+        ],
+        [
+         285,
+         602
+        ],
+        [
+         318,
+         604
+        ]
+       ],
+       "height": 30,
+       "thickness": 5,
+       "intensity": 0.8,
+       "light_scale": 0.5,
+       "clump": 0.9
+      }
+     ],
+     "tongue_lo": 24,
+     "tongue_sharp": 1.35,
+     "body": 0.6,
+     "clump_gain": 0.9,
+     "tongue_hi": 6,
+     "body_mix": 0.6,
+     "body_scale": 0.35,
+     "despeckle": 0.07,
+     "pad_mult": 3.6,
+     "soot": {
+      "gain": 0.6,
+      "lo": 0.9,
+      "hi": 2.8,
+      "ramp": 0.5,
+      "smooth": 0.35,
+      "fade": [
+       0.4,
+       0.95
+      ],
+      "color": [
+       26,
+       21,
+       20
+      ]
+     },
+     "clip_to_mask": true
+    },
+    "shimmer": {
+     "amp_px": 1.8,
+     "lo": 10,
+     "rise": 70.0,
+     "band": [
+      0.35,
+      4.0
+     ],
+     "sky_mask": "batch2/masks/p06_sky_strict_v2.png",
+     "sky_erode_px": 3,
+     "spread_px": 40
+    },
+    "sparks": {
+     "count": 320,
+     "rise": [
+      90,
+      230
+     ],
+     "life": [
+      0.35,
+      1.0
+     ],
+     "spread": 35,
+     "gravity": 60.0,
+     "turb": 25.0,
+     "gain": 1.2,
+     "mask": "batch1/masks/p06_opening.png"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "name": "b1_light_p06_ugarit_burning_dusk",
+ "plate": "micro-anomaly/ugarit/plates/p06_burnt_city_doorway_OWNER.png",
+ "out_dir": "batch1",
+ "seed": 6061,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch1/masks/p06_protect_frame.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "Day-to-dusk shift, smoke columns + light rays, smoulder glow, embers and ash"
+ },
+ "layers": [
+  {
+   "preset": "smoke",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "plumes": [
+     {
+      "src": [
+       490,
+       585
+      ],
+      "top": [
+       640,
+       230
+      ],
+      "w0": 9,
+      "w1": 120,
+      "opacity": 0.7425000000000002,
+      "rise": 26,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       736,
+       565
+      ],
+      "top": [
+       790,
+       280
+      ],
+      "w0": 7,
+      "w1": 95,
+      "opacity": 0.675,
+      "rise": 22,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       378,
+       575
+      ],
+      "top": [
+       330,
+       380
+      ],
+      "w0": 6,
+      "w1": 70,
+      "opacity": 0.5670000000000001,
+      "rise": 18,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       612,
+       590
+      ],
+      "top": [
+       700,
+       420
+      ],
+      "w0": 5,
+      "w1": 60,
+      "opacity": 0.4725,
+      "rise": 20,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     }
+    ],
+    "ash": {
+     "count": 170,
+     "fall": [
+      10,
+      30
+     ],
+     "wind": [
+      14,
+      2
+     ],
+     "opacity": 0.6,
+     "color": [
+      205,
+      198,
+      190
+     ]
+    }
+   }
+  },
+  {
+   "preset": "atmos",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "haze": {
+     "color": [
+      196,
+      182,
+      176
+     ],
+     "opacity": 0.2,
+     "lo": 260,
+     "hi": 30,
+     "velocity": [
+      16.0,
+      -2.0
+     ],
+     "band": [
+      600,
+      860
+     ],
+     "band_soft": 120
+    },
+    "rays": {
+     "origin": [
+      900,
+      110
+     ],
+     "strength": 0.16,
+     "color": [
+      255,
+      206,
+      160
+     ],
+     "n_scale": 55,
+     "speed": 0.002,
+     "falloff": 900,
+     "luma_gate": 0.3,
+     "near_fade": [
+      80,
+      420
+     ]
+    }
+   }
+  },
+  {
+   "preset": "light-shift",
+   "mask": "batch1/masks/p06_full.png",
+   "strength": 1.0,
+   "params": {
+    "t0": 0.3,
+    "t1": 3.6,
+    "gain": [
+     1.04,
+     0.84,
+     0.7
+    ],
+    "ev": -0.5,
+    "sky_mask": "batch1/masks/p06_sky.png",
+    "sky_gain": [
+     1.1,
+     0.86,
+     0.74
+    ],
+    "sun": [
+     720,
+     560
+    ],
+    "sun_radius": 300,
+    "sun_strength": 0.3
+   }
+  },
+  {
+   "preset": "fire-torchlight",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "sources": [
+     {
+      "xy": [
+       490,
+       585
+      ],
+      "flame": [
+       4,
+       10
+      ],
+      "light_radius": 70,
+      "intensity": 0.9
+     },
+     {
+      "xy": [
+       736,
+       566
+      ],
+      "flame": [
+       3,
+       8
+      ],
+      "light_radius": 60,
+      "intensity": 0.8
+     },
+     {
+      "xy": [
+       378,
+       577
+      ],
+      "flame": [
+       3,
+       6
+      ],
+      "light_radius": 45,
+      "intensity": 0.6
+     }
+    ],
+    "hotspots": {
+     "mask": "batch1/masks/p06_char.png",
+     "coverage": 0.08,
+     "gain": 0.5,
+     "light": 0.35,
+     "light_radius": 30,
+     "bloom": 5,
+     "lo": 110
+    },
+    "embers": {
+     "count": 80,
+     "spawn": [
+      [
+       500,
+       1110,
+       140,
+       50
+      ],
+      [
+       330,
+       910,
+       90,
+       40
+      ],
+      [
+       600,
+       960,
+       110,
+       40
+      ],
+      [
+       700,
+       1250,
+       90,
+       40
+      ]
+     ],
+     "rise": [
+      30,
+      80
+     ],
+     "life": [
+      1.2,
+      2.8
+     ],
+     "drift": [
+      10,
+      0
+     ],
+     "sway": 10,
+     "gain": 1.1
+    }
+   }
+  }
+ ]
+}

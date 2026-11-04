@@ -1,0 +1,76 @@
+{
+ "name": "b4_glint_croatoan_outro_duskpath_v3",
+ "plate": "serials/croatoan/ch1/plates/outro_OWNER.png",
+ "out_dir": "batch4",
+ "seed": 1408,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch3/masks/outro_ch1_protect_all.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "Glint v3: bigger sparkle clusters on a broader sun path, soft bloom; light only, 0 px"
+ },
+ "layers": [
+  {
+   "preset": "water-glint",
+   "mask": "batch3/masks/outro_ch1_water.png",
+   "strength": 1.0,
+   "params": {
+    "light_x": 130,
+    "horizon_y": 745,
+    "path_w0": 45,
+    "path_w1": 260,
+    "path_power": 0.9,
+    "along": [
+     1.0,
+     0.3
+    ],
+    "path_gain": 0.3,
+    "broken": 0.85,
+    "su": 1.0,
+    "sv": 2500.0,
+    "eps": 12.0,
+    "wave_speed": 0.08,
+    "cross_speed": 0.003,
+    "thresh_in": 0.55,
+    "thresh_out": 1.4,
+    "glint_gain": 2.6,
+    "glint_gamma": 0.7,
+    "twinkle": 0.65,
+    "color": [
+     255,
+     220,
+     170
+    ],
+    "bloom": 0.6,
+    "lum_follow": 0.75,
+    "outside": 0.0,
+    "bloom_sigma": 3.0,
+    "glint_lo": [
+     44,
+     34
+    ],
+    "glint_hi": [
+     8,
+     6
+    ],
+    "grow_px": 2,
+    "grow_gain": 0.75,
+    "star": 0.5,
+    "star_len": 17,
+    "halo": 0.25,
+    "halo_sigma": 9.0
+   }
+  }
+ ]
+}

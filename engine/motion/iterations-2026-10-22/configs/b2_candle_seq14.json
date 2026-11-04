@@ -1,0 +1,101 @@
+{
+ "name": "b2_candle_seq14_lightspill_v1",
+ "plate": "serials/croatoan/ch2/plates/seq14_white_ireland_letter_candle_OWNER.png",
+ "out_dir": "batch2",
+ "seed": 1414,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch2/masks/seq14_full.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "Light-spill: candle flicker relights face, hands, paper and room in sync with the flame"
+ },
+ "layers": [
+  {
+   "preset": "fire-torchlight",
+   "mask": "batch2/masks/seq14_relight.png",
+   "strength": 1.0,
+   "params": {
+    "sources": [
+     {
+      "xy": [
+       59,
+       1001
+      ],
+      "flame": [
+       4,
+       26
+      ],
+      "flame_gain": 0.22,
+      "cast_light": false,
+      "color": [
+       255,
+       170,
+       90
+      ],
+      "halo": {
+       "sigma": 20,
+       "gain": 0.07
+      },
+      "flicker": {
+       "amps": [
+        0.09,
+        0.05,
+        0.025,
+        0.01
+       ],
+       "freqs": [
+        0.8,
+        1.9,
+        3.7,
+        7.9
+       ],
+       "noise": 0.06,
+       "noise_hz": 7.0,
+       "floor": 0.6,
+       "smooth": true
+      }
+     }
+    ],
+    "plate_flame": {
+     "source": 0,
+     "mask": "batch2/masks/seq14_flame.png",
+     "gain": 0.6,
+     "tongue": 0.25,
+     "rise": 70.0
+    },
+    "light_spill": [
+     {
+      "source": 0,
+      "mask": "batch2/masks/seq14_relight.png",
+      "radius": 450,
+      "power": 2.0,
+      "amp": 1.0,
+      "tint": [
+       1.0,
+       0.84,
+       0.58
+      ],
+      "offset": [
+       0,
+       -14
+      ],
+      "facing_floor": 0.3,
+      "warm_weight": 0.65,
+      "grad_weight": 0.35
+     }
+    ]
+   }
+  }
+ ]
+}

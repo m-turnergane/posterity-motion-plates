@@ -1,0 +1,46 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.9809933304786682,
+ "disp_where": {
+  "frame": 129,
+  "x": 852,
+  "y": 1658
+ },
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 90.49475260463011,
+ "changed_pct_mean": 85.9185425977997,
+ "mean_abs_diff_mean": 11.609975024064386,
+ "name": "b6_map_seq09a_stamps_landing_v2",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch6/b6_map_seq09a_stamps_landing_v2.mp4",
+ "md5": "ca7712e6404a9e3245f9702f005a835a",
+ "frames_sha256": "580f0795ff0490bb78713d36ded28544c2587050cc2b3f440786e6116c2cb7b7",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 100.0,
+ "seconds_to_render": 45.8,
+ "plate": "serials/croatoan/ch2/plates/seq09a_map_roanoke_croatoan_UNLABELED_OWNER.png",
+ "seed": 9605,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch6/determinism/b6_map_seq09a_stamps_landing_v2_rerun.mp4",
+  "rerun_md5": "ca7712e6404a9e3245f9702f005a835a",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

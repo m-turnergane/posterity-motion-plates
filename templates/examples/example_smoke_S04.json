@@ -1,0 +1,6 @@
+{
+  "note": "EXAMPLE DATA ONLY -- minimal smoke_v2 config (candle plume off one source, plate pixels). Tune on the real plate.",
+  "seed": 4,
+  "protect": [],
+  "emitters": [{"type": "candle", "src": [1180, 300], "height": 120}]
+}

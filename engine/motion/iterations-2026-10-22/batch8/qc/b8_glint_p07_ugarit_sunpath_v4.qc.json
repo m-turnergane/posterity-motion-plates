@@ -1,0 +1,42 @@
+{
+ "plate_outside_max": 0.0,
+ "plate_outside_where": null,
+ "plate_outside_u8_max": 0,
+ "out_outside_max": 0,
+ "out_outside_where": null,
+ "disp_max": 0.0,
+ "disp_where": null,
+ "disp_outside_mask_max": 0.0,
+ "disp_protect_max": 0.0,
+ "disp_protect_where": null,
+ "changed_pct_max": 4.029358973707091,
+ "changed_pct_mean": 3.8712782221227893,
+ "mean_abs_diff_mean": 1.8053335815668106,
+ "name": "b8_glint_p07_ugarit_sunpath_v4",
+ "mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch8/b8_glint_p07_ugarit_sunpath_v4.mp4",
+ "md5": "c87d8bb015af614f27533fdcd6151be0",
+ "frames_sha256": "e31b1ce30da4da078e63f496a885c962ca153a3e4675fefa997c3fa32d931d82",
+ "frames": 240,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "duration_s": 8.0,
+ "mask_coverage_pct": 8.405239259873188,
+ "seconds_to_render": 27.3,
+ "plate": "micro-anomaly/ugarit/plates/p07_abandoned_match02_OWNER.png",
+ "seed": 7407,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04,
+  "per_half": true
+ },
+ "stability_pass_outside_mask": true,
+ "determinism": {
+  "rerun_mp4": "/workspace/posterity/motion/iterations-2026-10-22/batch8/determinism/b8_glint_p07_ugarit_sunpath_v4_rerun.mp4",
+  "rerun_md5": "c87d8bb015af614f27533fdcd6151be0",
+  "md5_identical": true,
+  "frames_sha256_identical": true
+ }
+}

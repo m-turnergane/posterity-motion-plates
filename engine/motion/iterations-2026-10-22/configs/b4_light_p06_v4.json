@@ -1,0 +1,1164 @@
+{
+ "name": "b4_light_p06_ugarit_burning_dusk_fires_v4",
+ "plate": "micro-anomaly/ugarit/plates/p06_burnt_city_doorway_OWNER.png",
+ "out_dir": "batch4",
+ "seed": 6064,
+ "fps": 30,
+ "size": [
+  720,
+  1280
+ ],
+ "half_seconds": 4.0,
+ "camera": {
+  "z0": 1.0,
+  "z1": 1.04
+ },
+ "protect": [
+  "batch2/masks/p06_protect_nonsky_v2.png"
+ ],
+ "labels": {
+  "before_note": "Plate + standard 100-104% centre zoom only",
+  "after_note": "v4: uneven fire clumps, each throwing its own flickering light on walls and ground"
+ },
+ "layers": [
+  {
+   "preset": "smoke",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "plumes": [
+     {
+      "src": [
+       490,
+       585
+      ],
+      "top": [
+       640,
+       230
+      ],
+      "w0": 9,
+      "w1": 120,
+      "opacity": 0.7425000000000002,
+      "rise": 26,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       736,
+       565
+      ],
+      "top": [
+       790,
+       280
+      ],
+      "w0": 7,
+      "w1": 95,
+      "opacity": 0.675,
+      "rise": 22,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       378,
+       575
+      ],
+      "top": [
+       330,
+       380
+      ],
+      "w0": 6,
+      "w1": 70,
+      "opacity": 0.5670000000000001,
+      "rise": 18,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       612,
+       590
+      ],
+      "top": [
+       700,
+       420
+      ],
+      "w0": 5,
+      "w1": 60,
+      "opacity": 0.4725,
+      "rise": 20,
+      "color_dark": [
+       44,
+       38,
+       40
+      ],
+      "color_light": [
+       120,
+       110,
+       112
+      ]
+     },
+     {
+      "src": [
+       600,
+       1092
+      ],
+      "top": [
+       640,
+       880
+      ],
+      "w0": 14,
+      "w1": 70,
+      "opacity": 0.26,
+      "rise": 30
+     },
+     {
+      "src": [
+       300,
+       1334
+      ],
+      "top": [
+       330,
+       1120
+      ],
+      "w0": 16,
+      "w1": 80,
+      "opacity": 0.24,
+      "rise": 34
+     },
+     {
+      "src": [
+       560,
+       1284
+      ],
+      "top": [
+       600,
+       1080
+      ],
+      "w0": 14,
+      "w1": 70,
+      "opacity": 0.24,
+      "rise": 32
+     },
+     {
+      "src": [
+       360,
+       905
+      ],
+      "top": [
+       390,
+       720
+      ],
+      "w0": 12,
+      "w1": 60,
+      "opacity": 0.22,
+      "rise": 28
+     }
+    ],
+    "ash": {
+     "count": 170,
+     "fall": [
+      10,
+      30
+     ],
+     "wind": [
+      14,
+      2
+     ],
+     "opacity": 0.6,
+     "color": [
+      205,
+      198,
+      190
+     ]
+    }
+   }
+  },
+  {
+   "preset": "atmos",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "haze": {
+     "color": [
+      196,
+      182,
+      176
+     ],
+     "opacity": 0.2,
+     "lo": 260,
+     "hi": 30,
+     "velocity": [
+      16.0,
+      -2.0
+     ],
+     "band": [
+      600,
+      860
+     ],
+     "band_soft": 120
+    },
+    "rays": {
+     "origin": [
+      900,
+      110
+     ],
+     "strength": 0.16,
+     "color": [
+      255,
+      206,
+      160
+     ],
+     "n_scale": 55,
+     "speed": 0.002,
+     "falloff": 900,
+     "luma_gate": 0.3,
+     "near_fade": [
+      80,
+      420
+     ]
+    }
+   }
+  },
+  {
+   "preset": "light-shift",
+   "mask": "batch1/masks/p06_full.png",
+   "strength": 1.0,
+   "params": {
+    "t0": 0.3,
+    "t1": 3.6,
+    "gain": [
+     1.04,
+     0.84,
+     0.7
+    ],
+    "ev": -0.5,
+    "sky_mask": "batch1/masks/p06_sky.png",
+    "sky_gain": [
+     1.1,
+     0.86,
+     0.74
+    ],
+    "sun": [
+     720,
+     560
+    ],
+    "sun_radius": 300,
+    "sun_strength": 0.3
+   }
+  },
+  {
+   "preset": "fire-torchlight",
+   "mask": "batch1/masks/p06_opening.png",
+   "strength": 1.0,
+   "params": {
+    "sources": [],
+    "hotspots": {
+     "mask": "batch1/masks/p06_char.png",
+     "coverage": 0.05,
+     "gain": 0.35,
+     "light": 0.35,
+     "light_radius": 30,
+     "bloom": 5,
+     "lo": 110
+    },
+    "embers": {
+     "count": 80,
+     "spawn": [
+      [
+       500,
+       1110,
+       140,
+       50
+      ],
+      [
+       330,
+       910,
+       90,
+       40
+      ],
+      [
+       600,
+       960,
+       110,
+       40
+      ],
+      [
+       700,
+       1250,
+       90,
+       40
+      ]
+     ],
+     "rise": [
+      30,
+      80
+     ],
+     "life": [
+      1.2,
+      2.8
+     ],
+     "drift": [
+      10,
+      0
+     ],
+     "sway": 10,
+     "gain": 1.1,
+     "mask": "batch1/masks/p06_opening.png"
+    },
+    "flame_tongues": {
+     "rise": 95.0,
+     "sway_px": 5.0,
+     "cover": 0.7,
+     "bloom": 0.35,
+     "light_radius": 110.0,
+     "light": 0.12,
+     "beds": [
+      {
+       "points": [
+        [
+         195.0,
+         834.8
+        ],
+        [
+         217.3,
+         842.5
+        ],
+        [
+         239.7,
+         850.2
+        ],
+        [
+         262.0,
+         857.9
+        ]
+       ],
+       "height": 150,
+       "thickness": 12,
+       "intensity": 0.992,
+       "clump": 0.35,
+       "rate": 1.15,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.882
+      },
+      {
+       "points": [
+        [
+         300.0,
+         873.4
+        ],
+        [
+         312.7,
+         878.9
+        ],
+        [
+         325.3,
+         884.4
+        ],
+        [
+         338.0,
+         890.0
+        ]
+       ],
+       "height": 78,
+       "thickness": 10,
+       "intensity": 0.929,
+       "clump": 0.35,
+       "rate": 0.8,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.5
+      },
+      {
+       "points": [
+        [
+         372.0,
+         905.1
+        ],
+        [
+         404.0,
+         919.8
+        ],
+        [
+         436.0,
+         934.5
+        ],
+        [
+         468.0,
+         948.9
+        ]
+       ],
+       "height": 178,
+       "thickness": 13,
+       "intensity": 0.86,
+       "clump": 0.35,
+       "rate": 1.0,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 1.047
+      },
+      {
+       "points": [
+        [
+         490.0,
+         958.7
+        ],
+        [
+         499.3,
+         962.8
+        ],
+        [
+         508.7,
+         967.0
+        ],
+        [
+         518.0,
+         971.1
+        ]
+       ],
+       "height": 60,
+       "thickness": 9,
+       "intensity": 0.898,
+       "clump": 0.35,
+       "rate": 1.35,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.5
+      },
+      {
+       "points": [
+        [
+         480.0,
+         1037.9
+        ],
+        [
+         498.3,
+         1034.1
+        ],
+        [
+         516.7,
+         1030.3
+        ],
+        [
+         535.0,
+         1028.4
+        ]
+       ],
+       "height": 118,
+       "thickness": 11,
+       "intensity": 0.979,
+       "clump": 0.35,
+       "rate": 0.9,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.694
+      },
+      {
+       "points": [
+        [
+         568.0,
+         1030.5
+        ],
+        [
+         599.3,
+         1032.3
+        ],
+        [
+         630.7,
+         1033.9
+        ],
+        [
+         662.0,
+         1035.5
+        ]
+       ],
+       "height": 192,
+       "thickness": 13,
+       "intensity": 0.863,
+       "clump": 0.35,
+       "rate": 1.1,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 1.129
+      },
+      {
+       "points": [
+        [
+         352.0,
+         1126.8
+        ],
+        [
+         374.0,
+         1124.5
+        ],
+        [
+         396.0,
+         1122.2
+        ],
+        [
+         418.0,
+         1119.9
+        ]
+       ],
+       "height": 108,
+       "thickness": 11,
+       "intensity": 0.998,
+       "clump": 0.35,
+       "rate": 1.25,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.635
+      },
+      {
+       "points": [
+        [
+         450.0,
+         1116.6
+        ],
+        [
+         487.3,
+         1112.8
+        ],
+        [
+         524.7,
+         1108.9
+        ],
+        [
+         562.0,
+         1105.0
+        ]
+       ],
+       "height": 212,
+       "thickness": 14,
+       "intensity": 0.944,
+       "clump": 0.35,
+       "rate": 0.95,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 1.247
+      },
+      {
+       "points": [
+        [
+         598.0,
+         1101.3
+        ],
+        [
+         610.7,
+         1100.1
+        ],
+        [
+         623.3,
+         1098.8
+        ],
+        [
+         636.0,
+         1097.6
+        ]
+       ],
+       "height": 66,
+       "thickness": 9,
+       "intensity": 0.873,
+       "clump": 0.35,
+       "rate": 1.4,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.5
+      },
+      {
+       "points": [
+        [
+         676.0,
+         1093.8
+        ],
+        [
+         716.7,
+         1089.8
+        ],
+        [
+         757.3,
+         1085.8
+        ],
+        [
+         798.0,
+         1081.3
+        ]
+       ],
+       "height": 172,
+       "thickness": 13,
+       "intensity": 0.855,
+       "clump": 0.35,
+       "rate": 0.85,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 1.012
+      },
+      {
+       "points": [
+        [
+         815.0,
+         1079.5
+        ],
+        [
+         825.0,
+         1078.4
+        ],
+        [
+         835.0,
+         1077.3
+        ],
+        [
+         845.0,
+         1076.2
+        ]
+       ],
+       "height": 80,
+       "thickness": 10,
+       "intensity": 0.913,
+       "clump": 0.35,
+       "rate": 1.2,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.5
+      },
+      {
+       "points": [
+        [
+         162.0,
+         1309.9
+        ],
+        [
+         184.0,
+         1314.6
+        ],
+        [
+         206.0,
+         1319.4
+        ],
+        [
+         228.0,
+         1324.6
+        ]
+       ],
+       "height": 140,
+       "thickness": 12,
+       "intensity": 0.933,
+       "clump": 0.35,
+       "rate": 1.05,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.824
+      },
+      {
+       "points": [
+        [
+         262.0,
+         1332.6
+        ],
+        [
+         302.0,
+         1342.0
+        ],
+        [
+         342.0,
+         1351.5
+        ],
+        [
+         382.0,
+         1361.0
+        ]
+       ],
+       "height": 232,
+       "thickness": 15,
+       "intensity": 0.954,
+       "clump": 0.35,
+       "rate": 0.9,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 1.25
+      },
+      {
+       "points": [
+        [
+         420.0,
+         1369.8
+        ],
+        [
+         438.7,
+         1374.0
+        ],
+        [
+         457.3,
+         1378.2
+        ],
+        [
+         476.0,
+         1382.4
+        ]
+       ],
+       "height": 118,
+       "thickness": 11,
+       "intensity": 0.857,
+       "clump": 0.35,
+       "rate": 1.3,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.694
+      },
+      {
+       "points": [
+        [
+         410.0,
+         1260.5
+        ],
+        [
+         429.3,
+         1263.7
+        ],
+        [
+         448.7,
+         1266.9
+        ],
+        [
+         468.0,
+         1270.1
+        ]
+       ],
+       "height": 98,
+       "thickness": 11,
+       "intensity": 0.994,
+       "clump": 0.35,
+       "rate": 1.2,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.576
+      },
+      {
+       "points": [
+        [
+         520.0,
+         1279.0
+        ],
+        [
+         560.7,
+         1286.7
+        ],
+        [
+         601.3,
+         1294.5
+        ],
+        [
+         642.0,
+         1302.6
+        ]
+       ],
+       "height": 200,
+       "thickness": 14,
+       "intensity": 0.934,
+       "clump": 0.35,
+       "rate": 1.0,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 1.176
+      },
+      {
+       "points": [
+        [
+         664.0,
+         1307.1
+        ],
+        [
+         677.3,
+         1309.9
+        ],
+        [
+         690.7,
+         1312.6
+        ],
+        [
+         704.0,
+         1315.4
+        ]
+       ],
+       "height": 88,
+       "thickness": 10,
+       "intensity": 0.926,
+       "clump": 0.35,
+       "rate": 0.8,
+       "taper": {
+        "floor": 0.3,
+        "power": 0.8
+       },
+       "spill_gain": 0.518
+      },
+      {
+       "points": [
+        [
+         433.0,
+         600.0
+        ],
+        [
+         455.5,
+         598.3
+        ],
+        [
+         478.0,
+         597.3
+        ]
+       ],
+       "height": 62,
+       "thickness": 5,
+       "intensity": 0.938,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 1.1,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         500.0,
+         598.4
+        ],
+        [
+         520.0,
+         599.5
+        ],
+        [
+         540.0,
+         600.9
+        ]
+       ],
+       "height": 34,
+       "thickness": 5,
+       "intensity": 0.923,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 0.85,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         674.0,
+         598.0
+        ],
+        [
+         701.0,
+         597.0
+        ],
+        [
+         728.0,
+         596.0
+        ]
+       ],
+       "height": 40,
+       "thickness": 5,
+       "intensity": 0.905,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 1.3,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         758.0,
+         597.2
+        ],
+        [
+         791.0,
+         598.5
+        ],
+        [
+         824.0,
+         600.0
+        ]
+       ],
+       "height": 66,
+       "thickness": 5,
+       "intensity": 0.905,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 0.95,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         339.0,
+         601.0
+        ],
+        [
+         370.5,
+         599.1
+        ],
+        [
+         402.0,
+         601.0
+        ]
+       ],
+       "height": 32,
+       "thickness": 5,
+       "intensity": 0.938,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 1.2,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         552.0,
+         602.9
+        ],
+        [
+         582.0,
+         602.2
+        ],
+        [
+         612.0,
+         602.9
+        ]
+       ],
+       "height": 26,
+       "thickness": 5,
+       "intensity": 0.944,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 0.9,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         615.0,
+         601.8
+        ],
+        [
+         651.5,
+         600.0
+        ],
+        [
+         688.0,
+         601.0
+        ]
+       ],
+       "height": 40,
+       "thickness": 5,
+       "intensity": 0.824,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 1.05,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      },
+      {
+       "points": [
+        [
+         252.0,
+         603.9
+        ],
+        [
+         284.0,
+         602.1
+        ],
+        [
+         316.0,
+         603.9
+        ]
+       ],
+       "height": 28,
+       "thickness": 5,
+       "intensity": 0.954,
+       "light_scale": 0.5,
+       "clump": 0.4,
+       "rate": 1.25,
+       "taper": {
+        "floor": 0.35,
+        "power": 0.8
+       },
+       "spill_gain": 0.35
+      }
+     ],
+     "tongue_lo": 24,
+     "tongue_sharp": 1.35,
+     "body": 0.6,
+     "clump_gain": 0.9,
+     "tongue_hi": 6,
+     "body_mix": 0.6,
+     "body_scale": 0.35,
+     "despeckle": 0.07,
+     "pad_mult": 3.6,
+     "soot": {
+      "gain": 0.6,
+      "lo": 0.9,
+      "hi": 2.8,
+      "ramp": 0.5,
+      "smooth": 0.35,
+      "fade": [
+       0.4,
+       0.95
+      ],
+      "color": [
+       26,
+       21,
+       20
+      ]
+     },
+     "clip_to_mask": true,
+     "flicker": {
+      "amps": [
+       0.2,
+       0.11,
+       0.05,
+       0.025
+      ],
+      "freqs": [
+       0.7,
+       1.6,
+       3.1,
+       5.2
+      ],
+      "noise": 0.06,
+      "noise_hz": 5.0,
+      "floor": 0.45,
+      "smooth": true
+     },
+     "bed_spill": {
+      "radius_mult": 1.1,
+      "radius_add": 30.0,
+      "power": 2.0,
+      "base": 0.35,
+      "amp": 1.1,
+      "tint": [
+       1.0,
+       0.6,
+       0.3
+      ],
+      "lift": 0.35,
+      "facing_floor": 0.3,
+      "exclude": [
+       "batch2/masks/p06_sky_strict_v2.png"
+      ],
+      "dark": 0.18,
+      "dark_radius_mult": 1.6
+     }
+    },
+    "shimmer": {
+     "amp_px": 1.8,
+     "lo": 10,
+     "rise": 70.0,
+     "band": [
+      0.35,
+      4.0
+     ],
+     "sky_mask": "batch2/masks/p06_sky_strict_v2.png",
+     "sky_erode_px": 3,
+     "spread_px": 40
+    },
+    "sparks": {
+     "count": 320,
+     "rise": [
+      90,
+      230
+     ],
+     "life": [
+      0.35,
+      1.0
+     ],
+     "spread": 35,
+     "gravity": 60.0,
+     "turb": 25.0,
+     "gain": 1.2,
+     "mask": "batch1/masks/p06_opening.png"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "0:smoke": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ },
+ "1:atmos": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ },
+ "2:light-shift": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ },
+ "3:fire-torchlight": {
+  "max_disp_px": 0.0,
+  "max_disp_in_protect_px": 0.0,
+  "uses_displacement": false
+ }
+}

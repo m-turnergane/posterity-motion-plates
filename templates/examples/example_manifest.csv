@@ -1,0 +1,4 @@
+plate_id,scene_id,shot_ids,prompt,aspect,target_resolution,expected_filename,refs,notes
+LF01,SC01,S01,"EXAMPLE: Gloucester Cathedral nave at dusk, funeral bier, candlelight, wide, 16:9",16:9,1920x1080,lf01_gloucester_nave_wide.png,b01_gloucester_funeral_wide_kent_OWNER.png,"EXAMPLE DATA ONLY: opening establishing shot (file does not exist)"
+LF02,SC01,S02;S03,"EXAMPLE: Edmund of Kent close, bound at dawn, cold light, 16:9",16:9,1920x1080,lf02_kent_bound_dawn_close.png,b02_kent_bound_dawn_close_OWNER.png,"EXAMPLE DATA ONLY: S03 re-uses the plate with a tighter crop"
+LF03,SC02,S04,"EXAMPLE: Corfe Castle at dusk, single lit window, 16:9",16:9,1920x1080,lf03_corfe_dusk_single_light.png,,"EXAMPLE DATA ONLY: candle smoke via smoke config"
