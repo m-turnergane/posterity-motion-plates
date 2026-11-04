@@ -1,0 +1,28 @@
+# Narration. Settings from ATELIER-ENGINE-NOTES.md §9.
+# Speed is unknown and must stay unset.
+
+status: approved
+speed_status: unknown
+source: intake/atelier-jr-2026-11-04/06-technical-and-asset-manifest/ATELIER-ENGINE-NOTES.md
+
+voice_name: "Oliver Silk — Deep Gravel Narrative 2"
+voice_id: jfIS2w2yJi0grJZPyEsk
+model_id: eleven_multilingual_v2
+seed: 1611
+output_format: mp3_44100_128
+endpoint: text-to-speech-with-timestamps
+secret_env: ELEVENLABS_API_KEY
+
+voice_settings:
+  stability: 0.5
+  similarity_boost: 0.75
+  style: 0.0
+  use_speaker_boost: true
+
+# Do not send a speed field until the desk records one.
+speed: null
+
+superseded_voices: [Katherine, George]
+spoken_text: raw script-vo file, numbers and names written out
+display_text: separate from spoken text
+pronunciation_dictionary: null

@@ -1,0 +1,28 @@
+# Budget. A missing cap means do not spend.
+
+elevenlabs:
+  status: approved
+  source: intake/atelier-jr-2026-11-04/00-index-and-current-status.md
+  plan_seen_on_screenshot: Creator
+  credits_remaining_on_screenshot: 166104
+  screenshot_date: 2026-11-04
+  ask_before_credits: 30000
+  scope: this Edward draft
+  spent_credits: 0
+  note: Screenshot totals are a record, not a live balance. Re-read the account when the key exists.
+
+higgsfield:
+  status: blocked
+  reason: no owner spending cap in the desk package
+  plan_observed: plus
+  credits_observed: 110
+  observed_at: 2026-11-04T16:20:00Z
+  image_model: null
+  image_model_status: unknown
+  candidate_not_approved: nano-banana-pro
+  spent_credits: 0
+  queued_credits: 0
+
+rendering:
+  status: local
+  new_subscriptions: false
