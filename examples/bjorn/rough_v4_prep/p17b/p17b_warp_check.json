@@ -1,0 +1,208 @@
+{
+ "name": "P17B_proof",
+ "plate": "/workspace/posterity/standalones/bjorn/plates/P17B_dudo_open_bier.png",
+ "plate_md5": "891449efff6d3ca87dfca2bec6a0fe6d",
+ "info": {
+  "mode": "hybrid",
+  "depth": {
+   "cached": true
+  },
+  "reveal_px": 8,
+  "layers": [
+   {
+    "name": "far",
+    "own_frac": 1.0
+   },
+   {
+    "name": "near",
+    "own_frac": 0.6539
+   }
+  ]
+ },
+ "formats": {
+  "1080x1920": {
+   "size": [
+    1080,
+    1920
+   ],
+   "overscan": 1.0,
+   "guardrail": [
+    {
+     "check": "crop_zoom",
+     "zoom": 1.06,
+     "max_zoom": 1.5,
+     "output_px_per_plate_px": 1.06,
+     "ok": true,
+     "msg": "ok",
+     "pixel_density": {
+      "check": "pixel_density",
+      "plate": null,
+      "plate_wh": [
+       1080,
+       1920
+      ],
+      "out_wh": [
+       1080,
+       1920
+      ],
+      "push_max": 1.06,
+      "crop_zoom": 1.0,
+      "cover_scale": 1.0,
+      "visible_src_wh": [
+       1018.9,
+       1811.3
+      ],
+      "ratio": 1.06,
+      "ratio_x": 1.06,
+      "ratio_y": 1.06,
+      "max_ratio": 1.5,
+      "pass": true,
+      "ok": true,
+      "msg": "ok"
+     }
+    }
+   ],
+   "single_transform": {
+    "warps_logged": 6,
+    "expected": 6,
+    "max_warps_per_layer_frame": 1,
+    "pass_": true,
+    "dot_test": {
+     "dots": [
+      {
+       "layer": "far",
+       "plate_xy": [
+        330,
+        576
+       ],
+       "expected": [
+        323.986,
+        576.0
+       ],
+       "measured": [
+        323.985,
+        576.0
+       ],
+       "err_px": 0.001,
+       "err_if_double_push_px": 26.43
+      },
+      {
+       "layer": "near",
+       "plate_xy": [
+        330,
+        576
+       ],
+       "expected": [
+        323.88,
+        576.0
+       ],
+       "measured": [
+        323.882,
+        575.998
+       ],
+       "err_px": 0.0028,
+       "err_if_double_push_px": 26.44
+      }
+     ],
+     "pass_": true
+    },
+    "uniform_scale_no_shear_no_rot": true
+   },
+   "disocclusion": [
+    {
+     "e": 0.0,
+     "revealed_px": 1423,
+     "revealed_frac": 0.00069,
+     "revealed_strip_mean_width_px": 1.33,
+     "holes_px": 0,
+     "hf_revealed": 9.304,
+     "hf_ring": 4.773,
+     "hf_ratio": 1.949
+    },
+    {
+     "e": 1.0,
+     "revealed_px": 773,
+     "revealed_frac": 0.00037,
+     "revealed_strip_mean_width_px": 1.41,
+     "holes_px": 0,
+     "hf_revealed": 7.014,
+     "hf_ring": 4.925,
+     "hf_ratio": 1.424
+    }
+   ],
+   "rigidity": [
+    {
+     "layer": "near",
+     "name": "hastein_face",
+     "area_px": 42411,
+     "in_layer_frac": 0.9999,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 37611
+      },
+      {
+       "frame": 113,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 39576
+      },
+      {
+       "frame": 225,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 41790
+      }
+     ],
+     "pass_": true
+    },
+    {
+     "layer": "near",
+     "name": "sword",
+     "area_px": 36716,
+     "in_layer_frac": 1.0,
+     "alpha_min_native": 1.0,
+     "occluded_frac": 0.0,
+     "frames": [
+      {
+       "frame": 0,
+       "mae": 0.0,
+       "max": 0.0,
+       "ncc": 1.0,
+       "px": 29554
+      },
+      {
+       "frame": 113,
+       "mae": 0.0,
+       "max": 0.018,
+       "ncc": 1.0,
+       "px": 30686
+      },
+      {
+       "frame": 225,
+       "mae": 0.0,
+       "max": 0.02,
+       "ncc": 1.0,
+       "px": 32574
+      }
+     ],
+     "pass_": true
+    }
+   ]
+  }
+ },
+ "recon_native": {
+  "psnr_db": 50.43,
+  "max_abs": 74.54,
+  "px_ge4": 11456,
+  "px_ge4_frac": 0.005525
+ },
+ "pass": true
+}

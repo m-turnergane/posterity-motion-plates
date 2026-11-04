@@ -1,0 +1,186 @@
+{
+ "src": "/workspace/posterity/standalones/bjorn/rough_v4/vo/vo_oliver_bjorn_v4.mp3",
+ "src_md5": "90cf668fd6f8f8639629300c971a018e",
+ "raw_s": 103.329,
+ "out_s": 101.933,
+ "vo_end": 101.448,
+ "end_f": 3058,
+ "designated": {
+  "Mediterranean,|then": [
+   0.116,
+   0.47,
+   "ALT-A2 +0.354"
+  ],
+  "Viking.|History": [
+   0.859,
+   0.859,
+   "tagline break kept"
+  ],
+  "victors.|We": [
+   0.511,
+   0.511,
+   "tagline beat kept"
+  ],
+  "Rome.|It": [
+   0.511,
+   1.2,
+   "P16 hold 1.2 s"
+  ],
+  "Italy.|At": [
+   0.441,
+   1.134,
+   "P05 slot 10.5 s (+0.693)"
+  ]
+ },
+ "ops": [
+  {
+   "after": "sword.",
+   "op": "cut",
+   "s": 0.06
+  },
+  {
+   "after": "Spain,",
+   "op": "cut",
+   "s": 0.024
+  },
+  {
+   "after": "Mediterranean,",
+   "op": "open",
+   "s": 0.354
+  },
+  {
+   "after": "Italy.",
+   "op": "open",
+   "s": 0.693
+  },
+  {
+   "after": "dying,",
+   "op": "cut",
+   "s": 0.024
+  },
+  {
+   "after": "Christian.",
+   "op": "cut",
+   "s": 0.154
+  },
+  {
+   "after": "shut.",
+   "op": "cut",
+   "s": 0.203
+  },
+  {
+   "after": "mercy,",
+   "op": "cut",
+   "s": 0.059
+  },
+  {
+   "after": "baptised.",
+   "op": "cut",
+   "s": 0.246
+  },
+  {
+   "after": "orders,",
+   "op": "cut",
+   "s": 0.105
+  },
+  {
+   "after": "grief.",
+   "op": "cut",
+   "s": 0.296
+  },
+  {
+   "after": "dead,",
+   "op": "cut",
+   "s": 0.163
+  },
+  {
+   "after": "city.",
+   "op": "cut",
+   "s": 0.061
+  },
+  {
+   "after": "in.",
+   "op": "cut",
+   "s": 0.204
+  },
+  {
+   "after": "tunics.",
+   "op": "cut",
+   "s": 0.362
+  },
+  {
+   "after": "down.",
+   "op": "cut",
+   "s": 0.061
+  },
+  {
+   "after": "truth.",
+   "op": "cut",
+   "s": 0.111
+  },
+  {
+   "after": "Rome.",
+   "op": "open",
+   "s": 0.689
+  },
+  {
+   "after": "Luna,",
+   "op": "cut",
+   "s": 0.221
+  },
+  {
+   "after": "town.",
+   "op": "cut",
+   "s": 0.061
+  },
+  {
+   "after": "name.",
+   "op": "cut",
+   "s": 0.061
+  },
+  {
+   "after": "real,",
+   "op": "cut",
+   "s": 0.221
+  },
+  {
+   "after": "captain.",
+   "op": "cut",
+   "s": 0.247
+  },
+  {
+   "after": "sword,",
+   "op": "cut",
+   "s": 0.105
+  },
+  {
+   "after": "Bj\u00f6rn.",
+   "op": "cut",
+   "s": 0.362
+  },
+  {
+   "after": "aboard.",
+   "op": "cut",
+   "s": 0.154
+  },
+  {
+   "after": "Rome.",
+   "op": "cut",
+   "s": 0.203
+  }
+ ],
+ "word_position_check_s": [
+  [
+   "A",
+   0.0
+  ],
+  [
+   "leapt",
+   0.0
+  ],
+  [
+   "rest.",
+   0.0
+  ]
+ ]
+}

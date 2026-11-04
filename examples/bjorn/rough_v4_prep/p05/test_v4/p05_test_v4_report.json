@@ -1,0 +1,402 @@
+{
+ "script": "/workspace/posterity/standalones/bjorn/raw/script-vo-v4-LOCKED.txt",
+ "script_md5": "ff97caaa20d2238fddc30c7bdb4a0c8a",
+ "vo_temp": "/workspace/posterity/standalones/bjorn/rough_v4_prep/p05/vo_temp/TEMP_vo_oliver_L04_ALTA2.mp3",
+ "vo_md5": "d96c16e10a431187c9d62fc6695ab627",
+ "onsets_p05": {
+  "Spain": 3.4,
+  "Mediterranean": 4.399,
+  "France": 6.97,
+  "Italy": 8.839
+ },
+ "pause_cut_raw_s": 4.97,
+ "pause_s": 0.354,
+ "line_offset_s": 0.37,
+ "beats": {
+  "strait": 3.4,
+  "camargue": 6.97,
+  "depart": 7.47,
+  "pisa": 8.839,
+  "pisa_hold_end": 9.339,
+  "tail": [
+   9.339,
+   10.139000000000001
+  ],
+  "med_label": 4.399,
+  "line_end": 9.548,
+  "slot": 10.5
+ },
+ "guardrails": [
+  {
+   "check": "pixel_density",
+   "plate": "/workspace/posterity/standalones/bjorn/plates/P05_KEEP.png",
+   "plate_wh": [
+    941,
+    1672
+   ],
+   "out_wh": [
+    1080,
+    1920
+   ],
+   "push_max": 1.06,
+   "crop_zoom": 1.0,
+   "cover_scale": 1.1483,
+   "visible_src_wh": [
+    887.3,
+    1577.4
+   ],
+   "ratio": 1.217,
+   "ratio_x": 1.217,
+   "ratio_y": 1.217,
+   "max_ratio": 1.5,
+   "pass": true,
+   "ok": true,
+   "msg": "ok"
+  },
+  {
+   "check": "crop_zoom",
+   "zoom": 1.06,
+   "max_zoom": 1.5,
+   "output_px_per_plate_px": 1.217,
+   "ok": true,
+   "msg": "ok",
+   "pixel_density": {
+    "check": "pixel_density",
+    "plate": null,
+    "plate_wh": [
+     941,
+     1672
+    ],
+    "out_wh": [
+     1080,
+     1920
+    ],
+    "push_max": 1.06,
+    "crop_zoom": 1.0,
+    "cover_scale": 1.1483,
+    "visible_src_wh": [
+     887.3,
+     1577.4
+    ],
+    "ratio": 1.217,
+    "ratio_x": 1.217,
+    "ratio_y": 1.217,
+    "max_ratio": 1.5,
+    "pass": true,
+    "ok": true,
+    "msg": "ok"
+   }
+  }
+ ],
+ "pigments": {
+  "ink": [
+   26.0,
+   26.0,
+   25.0
+  ],
+  "bone": [
+   247.0,
+   216.0,
+   162.0
+  ],
+  "ox": [
+   112.0,
+   26.0,
+   20.0
+  ]
+ },
+ "solver": {
+  "seg0_power": 3.083,
+  "vmax_ref_px_s_seg01": 206.5,
+  "vmax_ref_px_s_seg2": 248.1,
+  "L0": 218.2,
+  "L1": 844.8,
+  "L2": 237.8
+ },
+ "labels": [
+  {
+   "name": "WEST FRANCIA",
+   "lines": [
+    "WEST",
+    "FRANCIA"
+   ],
+   "font": "UncialAntiqua-Regular.ttf",
+   "px": 24,
+   "rot": 0,
+   "tin": [
+    0.1,
+    0.75
+   ],
+   "bbox_ref": [
+    381.0,
+    669.5,
+    524.0,
+    717.5
+   ],
+   "ground_lum": 79.2,
+   "light": true,
+   "status": "CONFIRMED",
+   "src": "ARCHIVIST-v4-CHECK.md l.141; map-reference-data.md (Loire to Aquitaine; NOT over the Rhône)"
+  },
+  {
+   "name": "PROVENCE",
+   "lines": [
+    "PROVENCE"
+   ],
+   "font": "UncialAntiqua-Regular.ttf",
+   "px": 16,
+   "rot": 0,
+   "tin": [
+    0.25,
+    0.85
+   ],
+   "bbox_ref": [
+    626.5,
+    784.0,
+    741.0,
+    800.0
+   ],
+   "ground_lum": 137.6,
+   "light": false,
+   "status": "CONFIRMED (boundary = interpretation)",
+   "src": "ARCHIVIST-v4-CHECK.md l.142, l.150 FLAG"
+  },
+  {
+   "name": "EMIRATE OF CÓRDOBA",
+   "lines": [
+    "EMIRATE OF",
+    "CÓRDOBA"
+   ],
+   "font": "UncialAntiqua-Regular.ttf",
+   "px": 24,
+   "rot": 0,
+   "tin": [
+    0.15,
+    0.8
+   ],
+   "bbox_ref": [
+    159.0,
+    1003.5,
+    365.0,
+    1046.5
+   ],
+   "ground_lum": 80.6,
+   "light": true,
+   "status": "CONFIRMED",
+   "src": "ARCHIVIST-v4-CHECK.md l.143"
+  },
+  {
+   "name": "KINGDOM OF ITALY",
+   "lines": [
+    "KINGDOM",
+    "OF ITALY"
+   ],
+   "font": "UncialAntiqua-Regular.ttf",
+   "px": 19,
+   "rot": 0,
+   "tin": [
+    0.35,
+    0.95
+   ],
+   "bbox_ref": [
+    736.5,
+    692.5,
+    862.5,
+    735.5
+   ],
+   "ground_lum": 148.6,
+   "light": false,
+   "status": "CONFIRMED",
+   "src": "ARCHIVIST-v4-CHECK.md l.144"
+  },
+  {
+   "name": "Strait of Gibraltar",
+   "lines": [
+    "Strait of",
+    "Gibraltar"
+   ],
+   "font": "IMFePIit28P.ttf",
+   "px": 19,
+   "rot": 0,
+   "tin": [
+    2.3,
+    2.95
+   ],
+   "bbox_ref": [
+    72.0,
+    1202.0,
+    150.0,
+    1234.0
+   ],
+   "ground_lum": 71.6,
+   "light": true,
+   "status": "CONFIRMED (modern English per Archivist)",
+   "src": "ARCHIVIST-v4-CHECK.md l.145"
+  },
+  {
+   "name": "Mediterranean Sea",
+   "lines": [
+    "Mediterranean  Sea"
+   ],
+   "font": "IMFePIit28P.ttf",
+   "px": 24,
+   "rot": 0,
+   "tin": [
+    4.399,
+    5.149
+   ],
+   "bbox_ref": [
+    587.5,
+    1104.5,
+    820.0,
+    1121.5
+   ],
+   "ground_lum": 68.7,
+   "light": true,
+   "status": "CONFIRMED (modern name)",
+   "src": "ARCHIVIST-v4-CHECK.md l.148"
+  },
+  {
+   "name": "Rhône",
+   "lines": [
+    "Rhône"
+   ],
+   "font": "IMFePIit28P.ttf",
+   "px": 18,
+   "rot": 82,
+   "tin": [
+    5.8,
+    6.3
+   ],
+   "bbox_ref": [
+    568.5,
+    743.5,
+    585.5,
+    793.5
+   ],
+   "ground_lum": 107.3,
+   "light": true,
+   "status": "CONFIRMED",
+   "src": "ARCHIVIST-v4-CHECK.md l.146"
+  },
+  {
+   "name": "Pisa",
+   "lines": [
+    "Pisa"
+   ],
+   "font": "IMFePIrm28P.ttf",
+   "px": 16,
+   "rot": 0,
+   "tin": [
+    8.839,
+    9.189
+   ],
+   "bbox_ref": [
+    844.0,
+    802.0,
+    872.0,
+    812.0
+   ],
+   "ground_lum": 160.1,
+   "light": false,
+   "status": "CONFIRMED",
+   "src": "ARCHIVIST-v4-CHECK.md l.147; AB 860 ll.3455-3456"
+  }
+ ],
+ "label_qa": {
+  "WEST FRANCIA": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 288.5
+  },
+  "PROVENCE": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 68.0
+  },
+  "EMIRATE OF CÓRDOBA": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 500.2
+  },
+  "KINGDOM OF ITALY": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 34.9
+  },
+  "Strait of Gibraltar": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 786.6
+  },
+  "Mediterranean Sea": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 334.1
+  },
+  "Rhône": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 222.1
+  },
+  "Pisa": {
+   "route_pts_inside_bbox_pad4": 0,
+   "dist_to_luna_px": 48.2
+  }
+ },
+ "context_legs": {
+  "S1": [
+   0.0,
+   0.0,
+   0.55
+  ],
+  "S2": [
+   0.0,
+   0.0,
+   0.7
+  ],
+  "S2a": [
+   2.0,
+   2.6,
+   0.6
+  ],
+  "S6": [
+   4.87556883972916,
+   5.47556883972916,
+   0.6
+  ],
+  "S12": [
+   9.389000000000001,
+   10.139000000000001,
+   0.5
+  ],
+  "S13": [
+   9.539,
+   10.239,
+   0.5
+  ]
+ },
+ "variant_b": {
+  "silent": "/workspace/posterity/standalones/bjorn/rough_v4_prep/p05/test_v4/p05_test_v4b_silent.mp4",
+  "overlay_extent_frame_px": [
+   67,
+   523,
+   1010,
+   1318
+  ],
+  "safe_ok": false,
+  "ship_peak_frame_px_s": 260.0,
+  "ship_peak_frame": 252,
+  "ship_peak_screen_frac_per_s": 0.241,
+  "ship_speed_p95": 255.8,
+  "frames": 315
+ },
+ "variant_a": {
+  "silent": "/workspace/posterity/standalones/bjorn/rough_v4_prep/p05/test_v4/p05_test_v4a_silent.mp4",
+  "overlay_extent_frame_px": [
+   67,
+   523,
+   1010,
+   1318
+  ],
+  "safe_ok": false,
+  "ship_peak_frame_px_s": 260.0,
+  "ship_peak_frame": 252,
+  "ship_peak_screen_frac_per_s": 0.241,
+  "ship_speed_p95": 255.8,
+  "frames": 315
+ }
+}

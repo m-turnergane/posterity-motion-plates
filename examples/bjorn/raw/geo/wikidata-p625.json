@@ -1,0 +1,484 @@
+{
+ "Q3059070": {
+  "label": "Loire estuary",
+  "desc": "protected area in France",
+  "P625": [
+   [
+    47.2897,
+    -2.12448
+   ]
+  ]
+ },
+ "Q292346": {
+  "label": "Isle of Noirmoutier",
+  "desc": "island off the coast of Pays de la Loire, France",
+  "P625": [
+   [
+    46.99226,
+    -2.25828
+   ]
+  ]
+ },
+ "Q1469": {
+  "label": "Loire",
+  "desc": "longest river in France",
+  "P625": [
+   [
+    44.841666666667,
+    4.2186111111111
+   ],
+   [
+    47.27,
+    -2.1844444444444
+   ]
+  ],
+  "quals": [
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 7376362,
+      "id": "Q7376362"
+     }
+    ]
+   },
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 1233637,
+      "id": "Q1233637"
+     }
+    ]
+   }
+  ]
+ },
+ "Q3908": {
+  "label": "Galicia",
+  "desc": "autonomous community of Spain",
+  "P625": [
+   [
+    42.8,
+    -7.9
+   ]
+  ]
+ },
+ "Q3934": {
+  "label": "Asturias",
+  "desc": "autonomous community of Spain, situated in the northwest part of the country",
+  "P625": [
+   [
+    43.36138888888889,
+    -5.847777777777778
+   ]
+  ]
+ },
+ "Q321455": {
+  "label": "Beja",
+  "desc": "district in southern Portugal",
+  "P625": [
+   [
+    38.016666666667,
+    -7.8666666666667
+   ]
+  ]
+ },
+ "Q3344424": {
+  "label": "Beja",
+  "desc": "city seat of Beja municipality",
+  "P625": [
+   [
+    38.015,
+    -7.8633333333333
+   ]
+  ]
+ },
+ "Q14309": {
+  "label": "Guadalquivir",
+  "desc": "river in Spain",
+  "P625": [
+   [
+    37.8392,
+    -2.9736
+   ],
+   [
+    36.7913,
+    -6.3567
+   ]
+  ],
+  "quals": [
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 7376362,
+      "id": "Q7376362"
+     }
+    ]
+   },
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 1233637,
+      "id": "Q1233637"
+     }
+    ]
+   }
+  ]
+ },
+ "Q210887": {
+  "label": "Sanlúcar de Barrameda",
+  "desc": "municipality of Spain",
+  "P625": [
+   [
+    36.778888888889,
+    -6.3538888888889
+   ]
+  ]
+ },
+ "Q8717": {
+  "label": "Seville",
+  "desc": "municipality of Andalusia, Spain",
+  "P625": [
+   [
+    37.38861111111111,
+    -5.995
+   ]
+  ]
+ },
+ "Q484552": {
+  "label": "Algeciras",
+  "desc": "municipality and city in the province of Cádiz, Spain",
+  "P625": [
+   [
+    36.1275,
+    -5.4538888888889
+   ]
+  ]
+ },
+ "Q36124": {
+  "label": "Strait of Gibraltar",
+  "desc": "strait that connects the Atlantic Ocean to the Mediterranean Sea",
+  "P625": [
+   [
+    35.97388888888889,
+    -5.516111111111111
+   ]
+  ]
+ },
+ "Q3537816": {
+  "label": "Nekor",
+  "desc": "human settlement in Morocco",
+  "P625": [
+   [
+    35.0898,
+    -3.8075
+   ]
+  ]
+ },
+ "Q1709337": {
+  "label": "Emirate of Nekor",
+  "desc": "emirate centered in the Rif area of present-day Morocco (710-1019)",
+  "P625": [
+   [
+    35.122294,
+    -3.637333
+   ]
+  ]
+ },
+ "Q1225154": {
+  "label": null,
+  "desc": "former country",
+  "P625": []
+ },
+ "Q487786": {
+  "label": "Orihuela",
+  "desc": "municipality of Spain",
+  "P625": [
+   [
+    38.08555555555556,
+    -0.9469444444444445
+   ]
+  ]
+ },
+ "Q24008496": {
+  "label": "Orihuela",
+  "desc": "capital of Orihuela Municipality, Spain",
+  "P625": [
+   [
+    38.08483,
+    -0.94401
+   ],
+   [
+    38.08522582,
+    -0.949954565
+   ]
+  ]
+ },
+ "Q8828": {
+  "label": "Mallorca",
+  "desc": "island in the Mediterranean Sea",
+  "P625": [
+   [
+    39.616666666667,
+    2.9833333333333
+   ]
+  ]
+ },
+ "Q52636": {
+  "label": "Menorca",
+  "desc": "island in Spain",
+  "P625": [
+   [
+    39.966666666667,
+    4.0833333333333
+   ]
+  ]
+ },
+ "Q31916364": {
+  "label": "Formentera",
+  "desc": "island of Spain",
+  "P625": [
+   [
+    38.7,
+    1.45
+   ]
+  ]
+ },
+ "Q218151": {
+  "label": "Camargue",
+  "desc": "Rhône river delta",
+  "P625": [
+   [
+    43.533333333333,
+    4.5
+   ]
+  ]
+ },
+ "Q602": {
+  "label": "Rhône",
+  "desc": "river in Switzerland and France",
+  "P625": [
+   [
+    46.5742,
+    8.3804
+   ],
+   [
+    43.3342,
+    4.8442
+   ]
+  ],
+  "quals": [
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 7376362,
+      "id": "Q7376362"
+     }
+    ]
+   },
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 1233637,
+      "id": "Q1233637"
+     }
+    ]
+   }
+  ]
+ },
+ "Q1548342": {
+  "label": "Grand-Rhône",
+  "desc": "river in France",
+  "P625": []
+ },
+ "Q8848": {
+  "label": "Valence",
+  "desc": "French commune in Drôme",
+  "P625": [
+   [
+    44.9325,
+    4.8908333333333
+   ]
+  ]
+ },
+ "Q13375": {
+  "label": "Pisa",
+  "desc": "city in Tuscany, Central Italy",
+  "P625": [
+   [
+    43.716666666667,
+    10.4
+   ]
+  ]
+ },
+ "Q579763": {
+  "label": "Luna",
+  "desc": "Ancient Roma city and village in Luni, Italy",
+  "P625": [
+   [
+    44.064,
+    10.017
+   ]
+  ]
+ },
+ "Q3867715": {
+  "label": "Luni National Archaeological Museum",
+  "desc": "museum in Italy",
+  "P625": [
+   [
+    44.0644,
+    10.0171
+   ],
+   [
+    44.06964,
+    10.022008
+   ],
+   [
+    44.06964,
+    10.022008
+   ],
+   [
+    44.06376,
+    10.017087
+   ]
+  ],
+  "quals": [
+   {
+    "P2241": [
+     {
+      "entity-type": "item",
+      "numeric-id": 41755623,
+      "id": "Q41755623"
+     }
+    ]
+   },
+   {
+    "P2241": [
+     {
+      "entity-type": "item",
+      "numeric-id": 41755623,
+      "id": "Q41755623"
+     }
+    ]
+   },
+   {
+    "P2241": [
+     {
+      "entity-type": "item",
+      "numeric-id": 41755623,
+      "id": "Q41755623"
+     }
+    ]
+   }
+  ]
+ },
+ "Q692549": {
+  "label": "Magra",
+  "desc": "river in Italy",
+  "P625": [
+   [
+    44.0455,
+    9.9891
+   ]
+  ],
+  "quals": [
+   {
+    "P518": [
+     {
+      "entity-type": "item",
+      "numeric-id": 1233637,
+      "id": "Q1233637"
+     }
+    ]
+   }
+  ]
+ },
+ "Q220": {
+  "label": "Rome",
+  "desc": "capital and largest city of Italy",
+  "P625": [
+   [
+    41.893055555556,
+    12.482777777778
+   ]
+  ]
+ },
+ "Q10282": {
+  "label": "Pamplona",
+  "desc": "municipality in Spain, capital of Navarre and main municipality of the historical Kingdom of Navarre",
+  "P625": [
+   [
+    42.816666666667,
+    -1.65
+   ]
+  ]
+ },
+ "Q642200": {
+  "label": "Medina Sidonia",
+  "desc": "municipality of Spain",
+  "P625": [
+   [
+    36.4576714,
+    -5.9272725
+   ]
+  ]
+ },
+ "Q24011938": {
+  "label": "Medina Sidonia",
+  "desc": "innhabited place in Medina Sidonia, Spain",
+  "P625": [
+   [
+    36.35667,
+    -5.8037
+   ],
+   [
+    36.45604099,
+    -5.92469144
+   ]
+  ]
+ },
+ "Q42807": {
+  "label": "Nîmes",
+  "desc": "city and prefecture of the Gard department in the Occitanie region of Southern France",
+  "P625": [
+   [
+    43.83833333333333,
+    4.3597222222222225
+   ]
+  ]
+ },
+ "Q48292": {
+  "label": "Arles",
+  "desc": "commune in Bouches-du-Rhône, France",
+  "P625": [
+   [
+    43.676944444444,
+    4.6286111111111
+   ]
+  ]
+ },
+ "Q6555": {
+  "label": "Narbonne",
+  "desc": "commune in Aude, France",
+  "P625": [
+   [
+    43.184722222222,
+    3.0036111111111
+   ]
+  ]
+ },
+ "Q245151": {
+  "label": "Tower of Hercules",
+  "desc": "Ancient lighthouse in Spain",
+  "P625": [
+   [
+    43.385833333333,
+    -8.4063888888889
+   ]
+  ]
+ }
+}

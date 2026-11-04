@@ -1,0 +1,105 @@
+{
+ "plate": "/workspace/posterity/standalones/bjorn/plates/P17A_unnamed_captain.png",
+ "plate_md5_before": "fa2863906d7648c30406adc27d738670",
+ "seconds": 7.5,
+ "frames": 225,
+ "water_info": {
+  "plate": "/workspace/posterity/standalones/bjorn/plates/P17A_unnamed_captain.png",
+  "water_px": 449719,
+  "allow_px": 449719,
+  "protect_px": 1123633,
+  "glint_sites": [
+   60
+  ]
+ },
+ "new_motion": "AWAITING APPROVAL (proof only)",
+ "params": {
+  "sail_amp_px": 0.6,
+  "fleet_drift_px": 1.6,
+  "bob_px": 1.0,
+  "roll_deg": 0.05,
+  "push": [
+   1.0,
+   1.04
+  ]
+ },
+ "checks": {
+  "guard_displacement_max_px": 0.0,
+  "sail_disp_peak_px": 0.635,
+  "fleet_disp_peak_px": 1.58,
+  "glint_changed_px_outside_water": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "glint_changed_px_in_guards": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "pass_": true
+ },
+ "guard_density": {
+  "check": "pixel_density",
+  "plate": null,
+  "plate_wh": [
+   941,
+   1672
+  ],
+  "out_wh": [
+   1080,
+   1920
+  ],
+  "push_max": 1.0,
+  "crop_zoom": 1.04,
+  "cover_scale": 1.1483,
+  "visible_src_wh": [
+   904.3,
+   1607.7
+  ],
+  "ratio": 1.194,
+  "ratio_x": 1.194,
+  "ratio_y": 1.194,
+  "max_ratio": 1.5,
+  "pass": true,
+  "ok": true,
+  "msg": "ok"
+ },
+ "peak_glint_frame": 130,
+ "peak_glint_px": 1718,
+ "outputs": {
+  "proof": {
+   "path": "/workspace/posterity/standalones/bjorn/rough_v4_prep/p17a/p17a_proof.mp4",
+   "md5": "cb67cc82a5c0aeefd45a0d9a74895730"
+  },
+  "glints": {
+   "path": "/workspace/posterity/standalones/bjorn/rough_v4_prep/p17a/p17a_glints_only.mp4",
+   "md5": "55a2a39a2d85d83dd249d9a9a150d0ae"
+  }
+ },
+ "plate_md5_after": "fa2863906d7648c30406adc27d738670"
+}

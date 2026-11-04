@@ -1,0 +1,30 @@
+{
+ "P13": {
+  "faces": 10,
+  "plate_face_changed_px": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "output_face_changed_px": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "fx_changed_px_outside_faces": [
+   1511618,
+   1510556,
+   1345239,
+   1508400
+  ],
+  "output_face_changed_px_erode4": [
+   0,
+   0,
+   17,
+   18
+  ],
+  "density_max": 1.4995
+ }
+}

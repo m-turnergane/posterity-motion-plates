@@ -1,0 +1,305 @@
+{
+ "score": "'Uprising' by Scott Buckley (CC BY 4.0)",
+ "source_md5": "3218446ad0b0ebf17deb82e2ae88bb57",
+ "segments": [
+  {
+   "cut": [
+    0.0,
+    45.533
+   ],
+   "track": [
+    60.0,
+    105.533
+   ],
+   "fade_in": 1.5,
+   "fade_out": 1.2,
+   "db": 0
+  },
+  {
+   "cut": [
+    44.333,
+    56.234
+   ],
+   "track": [
+    5.0,
+    16.901
+   ],
+   "fade_in": 1.2,
+   "fade_out": 1.0,
+   "db": -5
+  },
+  {
+   "cut": [
+    55.267,
+    102.433
+   ],
+   "track": [
+    121.5,
+    168.666
+   ],
+   "fade_in": 1.0,
+   "fade_out": 0.0,
+   "db": 0
+  }
+ ],
+ "hit_track": 127.0,
+ "hit_cut_s": 60.767,
+ "leapt_onset_s": 60.794,
+ "hit_track_at_cut": 127.0,
+ "hit_ease": {
+  "up": [
+   60.707,
+   60.767
+  ],
+  "hold_to": 60.967000000000006,
+  "down_to": 61.222
+ },
+ "duck_pick": "xd6",
+ "victors_dip": {
+  "db": -8.0,
+  "span": [
+   98.992,
+   102.098
+  ],
+  "ramp": 0.12
+ },
+ "automation": {
+  "db": -6.0,
+  "down": [
+   67.3,
+   68.8
+  ],
+  "up": [
+   92.267,
+   93.467
+  ],
+  "tail_db": -3.0
+ },
+ "end_fade": [
+  101.43333333333334,
+  102.43333333333334
+ ],
+ "dur": 102.43333333333334,
+ "target_I_wav": -13.9,
+ "iters": [
+  {
+   "bed_db": -2.0,
+   "bed_I": -18.0,
+   "vo_over_bed_LU": -5.1
+  },
+  {
+   "bed_db": -19.1,
+   "bed_I": -35.1,
+   "vo_over_bed_LU": 12.0
+  }
+ ],
+ "master": [
+  {
+   "master_db": 0.0,
+   "I": -23.5,
+   "TP": -7.9
+  },
+  {
+   "master_db": 9.6,
+   "I": -14.3,
+   "TP": -4.4
+  },
+  {
+   "master_db": 10.0,
+   "I": -14.0,
+   "TP": -4.4
+  },
+  {
+   "master_db": 10.1,
+   "I": -14.0,
+   "TP": -4.4
+  },
+  {
+   "master_db": 10.2,
+   "I": -13.9,
+   "TP": -4.4
+  }
+ ],
+ "vo_I": -23.1,
+ "bed_db": -19.1,
+ "master_db": 10.2,
+ "I": -13.9,
+ "TP": -4.4,
+ "final_wav": "/workspace/posterity/standalones/bjorn/rough_v4/scratch/audio/mix_bjorn_v4b.wav",
+ "measure": {
+  "hit_window": [
+   60.767,
+   61.067
+  ],
+  "bed_rms_hit_db": -20.12,
+  "bed_rms_hit_db_no_ease": -28.54,
+  "bed_peak_hit_db": -9.12,
+  "vo_rms_leapt_db": -14.17,
+  "vo_rms_leapt_to_struck_db": -14.62,
+  "bed_rms_leapt_to_struck_db": -26.33,
+  "hit_under_vo_db": 5.95,
+  "vo_over_bed_leapt_struck_db": 11.71,
+  "victors_span": [
+   98.992,
+   100.008
+  ],
+  "victors_bed_rms_db": -36.84,
+  "victors_bed_rms_db_no_dip": -28.84,
+  "victors_dip_measured_db": -8.0,
+  "restart_audit": {
+   "joins": [
+    {
+     "xfade": [
+      44.333,
+      45.533
+     ],
+     "rms_pre_db": -20.69,
+     "rms_mid_db": -24.27,
+     "rms_post_db": -33.64
+    },
+    {
+     "xfade": [
+      55.267,
+      56.234
+     ],
+     "rms_pre_db": -31.31,
+     "rms_mid_db": -28.3,
+     "rms_post_db": -34.25
+    }
+   ],
+   "joins_after_hit": [],
+   "continuous_run_track": [
+    121.5,
+    168.666
+   ],
+   "raw_bed_rms_per_shot_db": {
+    "P01": -23.61,
+    "P02": -23.26,
+    "P03": -23.01,
+    "P04": -21.25,
+    "P05": -20.45,
+    "P06": -21.12,
+    "P07": -20.58,
+    "P08": -19.51,
+    "P09": -19.6,
+    "P10": -20.1,
+    "P11": -28.32,
+    "P12": -30.63,
+    "P13": -28.99,
+    "P14": -16.67,
+    "P15": -15.73,
+    "P16": -15.98,
+    "P17A": -16.37,
+    "P17B": -15.13,
+    "P18": -15.09,
+    "P20": -14.97,
+    "OUTRO": -16.25
+   },
+   "mixed_bed_rms_per_shot_db": {
+    "P01": -37.43,
+    "P02": -36.13,
+    "P03": -36.44,
+    "P04": -34.43,
+    "P05": -31.45,
+    "P06": -33.47,
+    "P07": -31.13,
+    "P08": -31.35,
+    "P09": -31.25,
+    "P10": -31.63,
+    "P11": -39.63,
+    "P12": -41.39,
+    "P13": -39.74,
+    "P14": -26.69,
+    "P15": -27.9,
+    "P16": -31.54,
+    "P17A": -33.81,
+    "P17B": -33.3,
+    "P18": -32.79,
+    "P20": -29.1,
+    "OUTRO": -35.07
+   }
+  }
+ },
+ "margins_worst_k1_4": [
+  [
+   "the@61.247",
+   {
+    "house": 17.2,
+    "k1_4": 6.8,
+    "phone": 10.3
+   }
+  ],
+  [
+   "Rome.@93.931",
+   {
+    "house": 13.6,
+    "k1_4": 6.9,
+    "phone": 13.6
+   }
+  ],
+  [
+   "leapt@60.794",
+   {
+    "house": 6.7,
+    "k1_4": 7.1,
+    "phone": 7.4
+   }
+  ],
+  [
+   "walled@26.319",
+   {
+    "house": 24.8,
+    "k1_4": 7.8,
+    "phone": 23.0
+   }
+  ],
+  [
+   "a@26.214",
+   {
+    "house": 20.1,
+    "k1_4": 7.9,
+    "phone": 21.1
+   }
+  ],
+  [
+   "a@36.513",
+   {
+    "house": 12.3,
+    "k1_4": 8.3,
+    "phone": 10.0
+   }
+  ],
+  [
+   "and@61.851",
+   {
+    "house": 10.4,
+    "k1_4": 8.3,
+    "phone": 7.9
+   }
+  ],
+  [
+   "from@61.073",
+   {
+    "house": 13.6,
+    "k1_4": 8.6,
+    "phone": 9.7
+   }
+  ],
+  [
+   "aboard.@91.763",
+   {
+    "house": 18.0,
+    "k1_4": 9.2,
+    "phone": 17.2
+   }
+  ],
+  [
+   "the@62.489",
+   {
+    "house": 19.0,
+    "k1_4": 9.7,
+    "phone": 17.8
+   }
+  ]
+ ]
+}

@@ -1,0 +1,1468 @@
+{
+"words": [
+{
+"word": "A",
+"start": 0.15,
+"end": 0.243,
+"line": 1
+},
+{
+"word": "coffin",
+"start": 0.336,
+"end": 0.73,
+"line": 1
+},
+{
+"word": "is",
+"start": 0.812,
+"end": 0.916,
+"line": 1
+},
+{
+"word": "carried",
+"start": 0.986,
+"end": 1.357,
+"line": 1
+},
+{
+"word": "into",
+"start": 1.392,
+"end": 1.543,
+"line": 1
+},
+{
+"word": "a",
+"start": 1.601,
+"end": 1.624,
+"line": 1
+},
+{
+"word": "Christian",
+"start": 1.683,
+"end": 2.089,
+"line": 1
+},
+{
+"word": "church.",
+"start": 2.147,
+"end": 2.588,
+"line": 1
+},
+{
+"word": "Inside,",
+"start": 2.762,
+"end": 3.308,
+"line": 1
+},
+{
+"word": "the",
+"start": 3.331,
+"end": 3.401,
+"line": 1
+},
+{
+"word": "dead",
+"start": 3.47,
+"end": 3.679,
+"line": 1
+},
+{
+"word": "man",
+"start": 3.749,
+"end": 3.97,
+"line": 1
+},
+{
+"word": "is",
+"start": 4.028,
+"end": 4.109,
+"line": 1
+},
+{
+"word": "holding",
+"start": 4.179,
+"end": 4.457,
+"line": 1
+},
+{
+"word": "a",
+"start": 4.504,
+"end": 4.527,
+"line": 1
+},
+{
+"word": "sword.",
+"start": 4.608,
+"end": 5.073,
+"line": 1
+},
+{
+"word": "Legend",
+"start": 5.523,
+"end": 5.907,
+"line": 2
+},
+{
+"word": "says",
+"start": 5.988,
+"end": 6.208,
+"line": 2
+},
+{
+"word": "Bj\u00f6rn",
+"start": 6.29,
+"end": 6.557,
+"line": 2
+},
+{
+"word": "Ironside,",
+"start": 6.638,
+"end": 7.242,
+"line": 2
+},
+{
+"word": "son",
+"start": 7.451,
+"end": 7.695,
+"line": 2
+},
+{
+"word": "of",
+"start": 7.764,
+"end": 7.822,
+"line": 2
+},
+{
+"word": "Ragnar",
+"start": 7.904,
+"end": 8.263,
+"line": 2
+},
+{
+"word": "Lothbrok,",
+"start": 8.321,
+"end": 8.856,
+"line": 2
+},
+{
+"word": "led",
+"start": 9.03,
+"end": 9.192,
+"line": 2
+},
+{
+"word": "a",
+"start": 9.227,
+"end": 9.25,
+"line": 2
+},
+{
+"word": "fleet",
+"start": 9.332,
+"end": 9.633,
+"line": 2
+},
+{
+"word": "intent",
+"start": 9.715,
+"end": 10.191,
+"line": 2
+},
+{
+"word": "on",
+"start": 10.249,
+"end": 10.342,
+"line": 2
+},
+{
+"word": "conquering",
+"start": 10.434,
+"end": 10.864,
+"line": 2
+},
+{
+"word": "Rome.",
+"start": 10.934,
+"end": 11.352,
+"line": 2
+},
+{
+"word": "His",
+"start": 11.677,
+"end": 11.851,
+"line": 3
+},
+{
+"word": "tutor,",
+"start": 11.897,
+"end": 12.385,
+"line": 3
+},
+{
+"word": "the",
+"start": 12.478,
+"end": 12.582,
+"line": 3
+},
+{
+"word": "raider",
+"start": 12.664,
+"end": 12.965,
+"line": 3
+},
+{
+"word": "Hastein,",
+"start": 13.024,
+"end": 13.581,
+"line": 3
+},
+{
+"word": "planned",
+"start": 13.732,
+"end": 13.999,
+"line": 3
+},
+{
+"word": "to",
+"start": 14.022,
+"end": 14.068,
+"line": 3
+},
+{
+"word": "crown",
+"start": 14.138,
+"end": 14.44,
+"line": 3
+},
+{
+"word": "him",
+"start": 14.498,
+"end": 14.614,
+"line": 3
+},
+{
+"word": "emperor",
+"start": 14.731,
+"end": 15.09,
+"line": 3
+},
+{
+"word": "there.",
+"start": 15.137,
+"end": 15.485,
+"line": 3
+},
+{
+"word": "A",
+"start": 15.81,
+"end": 15.892,
+"line": 4
+},
+{
+"word": "Viking",
+"start": 15.984,
+"end": 16.344,
+"line": 4
+},
+{
+"word": "fleet",
+"start": 16.414,
+"end": 16.669,
+"line": 4
+},
+{
+"word": "really",
+"start": 16.797,
+"end": 17.087,
+"line": 4
+},
+{
+"word": "did",
+"start": 17.145,
+"end": 17.308,
+"line": 4
+},
+{
+"word": "sail,",
+"start": 17.378,
+"end": 17.842,
+"line": 4
+},
+{
+"word": "past",
+"start": 18.016,
+"end": 18.399,
+"line": 4
+},
+{
+"word": "Spain,",
+"start": 18.457,
+"end": 19.119,
+"line": 4
+},
+{
+"word": "into",
+"start": 19.339,
+"end": 19.536,
+"line": 4
+},
+{
+"word": "the",
+"start": 19.606,
+"end": 19.676,
+"line": 4
+},
+{
+"word": "Mediterranean,",
+"start": 19.757,
+"end": 20.628,
+"line": 4
+},
+{
+"word": "then",
+"start": 21.098,
+"end": 21.26,
+"line": 4
+},
+{
+"word": "struck",
+"start": 21.353,
+"end": 21.69,
+"line": 4
+},
+{
+"word": "southern",
+"start": 21.783,
+"end": 22.119,
+"line": 4
+},
+{
+"word": "France,",
+"start": 22.212,
+"end": 22.77,
+"line": 4
+},
+{
+"word": "and",
+"start": 22.944,
+"end": 23.083,
+"line": 4
+},
+{
+"word": "finally",
+"start": 23.199,
+"end": 23.71,
+"line": 4
+},
+{
+"word": "raided",
+"start": 23.861,
+"end": 24.256,
+"line": 4
+},
+{
+"word": "Italy.",
+"start": 24.325,
+"end": 24.906,
+"line": 4
+},
+{
+"word": "At",
+"start": 26.04,
+"end": 26.179,
+"line": 5
+},
+{
+"word": "a",
+"start": 26.214,
+"end": 26.237,
+"line": 5
+},
+{
+"word": "walled",
+"start": 26.319,
+"end": 26.69,
+"line": 5
+},
+{
+"word": "city",
+"start": 26.748,
+"end": 27.062,
+"line": 5
+},
+{
+"word": "by",
+"start": 27.131,
+"end": 27.259,
+"line": 5
+},
+{
+"word": "the",
+"start": 27.317,
+"end": 27.387,
+"line": 5
+},
+{
+"word": "sea,",
+"start": 27.456,
+"end": 27.84,
+"line": 5
+},
+{
+"word": "Hastein",
+"start": 27.967,
+"end": 28.49,
+"line": 5
+},
+{
+"word": "believed",
+"start": 28.559,
+"end": 28.977,
+"line": 5
+},
+{
+"word": "he",
+"start": 29.012,
+"end": 29.059,
+"line": 5
+},
+{
+"word": "had",
+"start": 29.117,
+"end": 29.221,
+"line": 5
+},
+{
+"word": "found",
+"start": 29.302,
+"end": 29.581,
+"line": 5
+},
+{
+"word": "Rome.",
+"start": 29.662,
+"end": 30.127,
+"line": 5
+},
+{
+"word": "But",
+"start": 30.452,
+"end": 30.591,
+"line": 5
+},
+{
+"word": "the",
+"start": 30.614,
+"end": 30.684,
+"line": 5
+},
+{
+"word": "gates",
+"start": 30.754,
+"end": 31.09,
+"line": 5
+},
+{
+"word": "were",
+"start": 31.206,
+"end": 31.381,
+"line": 5
+},
+{
+"word": "barred.",
+"start": 31.439,
+"end": 31.927,
+"line": 5
+},
+{
+"word": "So",
+"start": 32.31,
+"end": 32.449,
+"line": 6
+},
+{
+"word": "Hastein",
+"start": 32.519,
+"end": 33.03,
+"line": 6
+},
+{
+"word": "sent",
+"start": 33.146,
+"end": 33.378,
+"line": 6
+},
+{
+"word": "word",
+"start": 33.448,
+"end": 33.819,
+"line": 6
+},
+{
+"word": "that",
+"start": 33.877,
+"end": 34.005,
+"line": 6
+},
+{
+"word": "he",
+"start": 34.04,
+"end": 34.086,
+"line": 6
+},
+{
+"word": "was",
+"start": 34.144,
+"end": 34.26,
+"line": 6
+},
+{
+"word": "dying,",
+"start": 34.33,
+"end": 34.794,
+"line": 6
+},
+{
+"word": "and",
+"start": 35.014,
+"end": 35.165,
+"line": 6
+},
+{
+"word": "wished",
+"start": 35.235,
+"end": 35.467,
+"line": 6
+},
+{
+"word": "to",
+"start": 35.49,
+"end": 35.548,
+"line": 6
+},
+{
+"word": "become",
+"start": 35.595,
+"end": 35.978,
+"line": 6
+},
+{
+"word": "a",
+"start": 36.013,
+"end": 36.047,
+"line": 6
+},
+{
+"word": "Christian.",
+"start": 36.129,
+"end": 36.721,
+"line": 6
+},
+{
+"word": "The",
+"start": 37.171,
+"end": 37.275,
+"line": 7
+},
+{
+"word": "bishop",
+"start": 37.356,
+"end": 37.774,
+"line": 7
+},
+{
+"word": "and",
+"start": 37.856,
+"end": 37.96,
+"line": 7
+},
+{
+"word": "count",
+"start": 38.076,
+"end": 38.39,
+"line": 7
+},
+{
+"word": "could",
+"start": 38.448,
+"end": 38.575,
+"line": 7
+},
+{
+"word": "have",
+"start": 38.599,
+"end": 38.703,
+"line": 7
+},
+{
+"word": "kept",
+"start": 38.738,
+"end": 38.959,
+"line": 7
+},
+{
+"word": "the",
+"start": 38.993,
+"end": 39.063,
+"line": 7
+},
+{
+"word": "gates",
+"start": 39.133,
+"end": 39.423,
+"line": 7
+},
+{
+"word": "shut.",
+"start": 39.458,
+"end": 39.911,
+"line": 7
+},
+{
+"word": "They",
+"start": 40.311,
+"end": 40.485,
+"line": 7
+},
+{
+"word": "chose",
+"start": 40.543,
+"end": 40.892,
+"line": 7
+},
+{
+"word": "mercy,",
+"start": 40.985,
+"end": 41.623,
+"line": 7
+},
+{
+"word": "and",
+"start": 41.843,
+"end": 41.982,
+"line": 7
+},
+{
+"word": "Hastein",
+"start": 42.052,
+"end": 42.574,
+"line": 7
+},
+{
+"word": "was",
+"start": 42.644,
+"end": 42.783,
+"line": 7
+},
+{
+"word": "baptised.",
+"start": 42.841,
+"end": 43.573,
+"line": 7
+},
+{
+"word": "Then,",
+"start": 44.023,
+"end": 44.348,
+"line": 8
+},
+{
+"word": "on",
+"start": 44.395,
+"end": 44.523,
+"line": 8
+},
+{
+"word": "Hastein's",
+"start": 44.581,
+"end": 45.091,
+"line": 8
+},
+{
+"word": "orders,",
+"start": 45.138,
+"end": 45.591,
+"line": 8
+},
+{
+"word": "his",
+"start": 45.811,
+"end": 45.927,
+"line": 8
+},
+{
+"word": "companions",
+"start": 45.985,
+"end": 46.635,
+"line": 8
+},
+{
+"word": "staged",
+"start": 46.693,
+"end": 47.123,
+"line": 8
+},
+{
+"word": "their",
+"start": 47.158,
+"end": 47.332,
+"line": 8
+},
+{
+"word": "grief.",
+"start": 47.378,
+"end": 47.82,
+"line": 8
+},
+{
+"word": "They",
+"start": 48.22,
+"end": 48.383,
+"line": 8
+},
+{
+"word": "said",
+"start": 48.464,
+"end": 48.708,
+"line": 8
+},
+{
+"word": "he",
+"start": 48.778,
+"end": 48.836,
+"line": 8
+},
+{
+"word": "was",
+"start": 48.905,
+"end": 49.021,
+"line": 8
+},
+{
+"word": "dead,",
+"start": 49.103,
+"end": 49.509,
+"line": 8
+},
+{
+"word": "and",
+"start": 49.729,
+"end": 49.868,
+"line": 8
+},
+{
+"word": "wished",
+"start": 49.95,
+"end": 50.217,
+"line": 8
+},
+{
+"word": "to",
+"start": 50.252,
+"end": 50.31,
+"line": 8
+},
+{
+"word": "be",
+"start": 50.368,
+"end": 50.449,
+"line": 8
+},
+{
+"word": "buried",
+"start": 50.53,
+"end": 50.925,
+"line": 8
+},
+{
+"word": "in",
+"start": 50.96,
+"end": 51.018,
+"line": 8
+},
+{
+"word": "the",
+"start": 51.053,
+"end": 51.122,
+"line": 8
+},
+{
+"word": "city.",
+"start": 51.18,
+"end": 51.691,
+"line": 8
+},
+{
+"word": "The",
+"start": 52.141,
+"end": 52.269,
+"line": 9
+},
+{
+"word": "bishop",
+"start": 52.35,
+"end": 52.745,
+"line": 9
+},
+{
+"word": "let",
+"start": 52.814,
+"end": 52.977,
+"line": 9
+},
+{
+"word": "the",
+"start": 53.012,
+"end": 53.081,
+"line": 9
+},
+{
+"word": "funeral",
+"start": 53.163,
+"end": 53.557,
+"line": 9
+},
+{
+"word": "in.",
+"start": 53.65,
+"end": 54.022,
+"line": 9
+},
+{
+"word": "Behind",
+"start": 54.422,
+"end": 54.84,
+"line": 9
+},
+{
+"word": "the",
+"start": 54.886,
+"end": 54.956,
+"line": 9
+},
+{
+"word": "coffin,",
+"start": 55.025,
+"end": 55.641,
+"line": 9
+},
+{
+"word": "the",
+"start": 55.815,
+"end": 55.908,
+"line": 9
+},
+{
+"word": "mourners",
+"start": 55.989,
+"end": 56.384,
+"line": 9
+},
+{
+"word": "wore",
+"start": 56.442,
+"end": 56.627,
+"line": 9
+},
+{
+"word": "armour",
+"start": 56.674,
+"end": 57.034,
+"line": 9
+},
+{
+"word": "under",
+"start": 57.127,
+"end": 57.324,
+"line": 9
+},
+{
+"word": "their",
+"start": 57.37,
+"end": 57.533,
+"line": 9
+},
+{
+"word": "tunics.",
+"start": 57.579,
+"end": 58.172,
+"line": 9
+},
+{
+"word": "Mid-funeral,",
+"start": 58.622,
+"end": 59.516,
+"line": 10
+},
+{
+"word": "Hastein",
+"start": 59.667,
+"end": 60.213,
+"line": 10
+},
+{
+"word": "leapt",
+"start": 60.294,
+"end": 60.538,
+"line": 10
+},
+{
+"word": "from",
+"start": 60.573,
+"end": 60.712,
+"line": 10
+},
+{
+"word": "the",
+"start": 60.747,
+"end": 60.817,
+"line": 10
+},
+{
+"word": "coffin",
+"start": 60.875,
+"end": 61.234,
+"line": 10
+},
+{
+"word": "and",
+"start": 61.351,
+"end": 61.513,
+"line": 10
+},
+{
+"word": "struck",
+"start": 61.606,
+"end": 61.931,
+"line": 10
+},
+{
+"word": "the",
+"start": 61.989,
+"end": 62.058,
+"line": 10
+},
+{
+"word": "bishop",
+"start": 62.14,
+"end": 62.453,
+"line": 10
+},
+{
+"word": "down.",
+"start": 62.523,
+"end": 63.022,
+"line": 10
+},
+{
+"word": "Only",
+"start": 63.472,
+"end": 63.843,
+"line": 11
+},
+{
+"word": "after",
+"start": 63.925,
+"end": 64.215,
+"line": 11
+},
+{
+"word": "the",
+"start": 64.261,
+"end": 64.343,
+"line": 11
+},
+{
+"word": "city",
+"start": 64.401,
+"end": 64.679,
+"line": 11
+},
+{
+"word": "fell",
+"start": 64.761,
+"end": 65.074,
+"line": 11
+},
+{
+"word": "did",
+"start": 65.283,
+"end": 65.446,
+"line": 11
+},
+{
+"word": "the",
+"start": 65.48,
+"end": 65.55,
+"line": 11
+},
+{
+"word": "raiders",
+"start": 65.631,
+"end": 66.014,
+"line": 11
+},
+{
+"word": "learn",
+"start": 66.084,
+"end": 66.293,
+"line": 11
+},
+{
+"word": "the",
+"start": 66.328,
+"end": 66.398,
+"line": 11
+},
+{
+"word": "truth.",
+"start": 66.432,
+"end": 66.943,
+"line": 11
+},
+{
+"word": "This",
+"start": 67.343,
+"end": 67.668,
+"line": 11
+},
+{
+"word": "wasn't",
+"start": 67.819,
+"end": 68.144,
+"line": 11
+},
+{
+"word": "Rome.",
+"start": 68.202,
+"end": 68.713,
+"line": 11
+},
+{
+"word": "It",
+"start": 69.913,
+"end": 70.029,
+"line": 11
+},
+{
+"word": "was",
+"start": 70.064,
+"end": 70.168,
+"line": 11
+},
+{
+"word": "Luna,",
+"start": 70.25,
+"end": 70.842,
+"line": 11
+},
+{
+"word": "an",
+"start": 71.062,
+"end": 71.178,
+"line": 11
+},
+{
+"word": "old",
+"start": 71.248,
+"end": 71.48,
+"line": 11
+},
+{
+"word": "Roman",
+"start": 71.596,
+"end": 72.002,
+"line": 11
+},
+{
+"word": "town.",
+"start": 72.06,
+"end": 72.583,
+"line": 11
+},
+{
+"word": "But",
+"start": 73.033,
+"end": 73.184,
+"line": 12
+},
+{
+"word": "the",
+"start": 73.218,
+"end": 73.288,
+"line": 12
+},
+{
+"word": "strangest",
+"start": 73.358,
+"end": 73.903,
+"line": 12
+},
+{
+"word": "mistake",
+"start": 73.95,
+"end": 74.449,
+"line": 12
+},
+{
+"word": "may",
+"start": 74.496,
+"end": 74.67,
+"line": 12
+},
+{
+"word": "be",
+"start": 74.739,
+"end": 74.821,
+"line": 12
+},
+{
+"word": "the",
+"start": 74.855,
+"end": 74.925,
+"line": 12
+},
+{
+"word": "name.",
+"start": 74.995,
+"end": 75.517,
+"line": 12
+},
+{
+"word": "The",
+"start": 75.967,
+"end": 76.072,
+"line": 13
+},
+{
+"word": "fleet",
+"start": 76.153,
+"end": 76.489,
+"line": 13
+},
+{
+"word": "was",
+"start": 76.582,
+"end": 76.733,
+"line": 13
+},
+{
+"word": "real,",
+"start": 76.849,
+"end": 77.395,
+"line": 13
+},
+{
+"word": "but",
+"start": 77.615,
+"end": 77.766,
+"line": 13
+},
+{
+"word": "the",
+"start": 77.789,
+"end": 77.859,
+"line": 13
+},
+{
+"word": "Frankish",
+"start": 77.94,
+"end": 78.416,
+"line": 13
+},
+{
+"word": "annals",
+"start": 78.486,
+"end": 78.834,
+"line": 13
+},
+{
+"word": "named",
+"start": 78.904,
+"end": 79.183,
+"line": 13
+},
+{
+"word": "no",
+"start": 79.241,
+"end": 79.392,
+"line": 13
+},
+{
+"word": "captain.",
+"start": 79.484,
+"end": 80.1,
+"line": 13
+},
+{
+"word": "The",
+"start": 80.55,
+"end": 80.677,
+"line": 14
+},
+{
+"word": "oldest",
+"start": 80.747,
+"end": 81.119,
+"line": 14
+},
+{
+"word": "surviving",
+"start": 81.165,
+"end": 81.699,
+"line": 14
+},
+{
+"word": "funeral",
+"start": 81.815,
+"end": 82.198,
+"line": 14
+},
+{
+"word": "story,",
+"start": 82.268,
+"end": 82.779,
+"line": 14
+},
+{
+"word": "by",
+"start": 82.953,
+"end": 83.092,
+"line": 14
+},
+{
+"word": "the",
+"start": 83.15,
+"end": 83.22,
+"line": 14
+},
+{
+"word": "churchman",
+"start": 83.278,
+"end": 83.754,
+"line": 14
+},
+{
+"word": "Dudo,",
+"start": 83.824,
+"end": 84.335,
+"line": 14
+},
+{
+"word": "gave",
+"start": 84.486,
+"end": 84.706,
+"line": 14
+},
+{
+"word": "Hastein",
+"start": 84.753,
+"end": 85.171,
+"line": 14
+},
+{
+"word": "the",
+"start": 85.217,
+"end": 85.287,
+"line": 14
+},
+{
+"word": "sword,",
+"start": 85.333,
+"end": 85.832,
+"line": 14
+},
+{
+"word": "and",
+"start": 86.052,
+"end": 86.203,
+"line": 14
+},
+{
+"word": "never",
+"start": 86.296,
+"end": 86.563,
+"line": 14
+},
+{
+"word": "mentioned",
+"start": 86.633,
+"end": 87.051,
+"line": 14
+},
+{
+"word": "Bj\u00f6rn.",
+"start": 87.097,
+"end": 87.62,
+"line": 14
+},
+{
+"word": "Decades",
+"start": 88.07,
+"end": 88.593,
+"line": 15
+},
+{
+"word": "later,",
+"start": 88.651,
+"end": 89.139,
+"line": 15
+},
+{
+"word": "a",
+"start": 89.348,
+"end": 89.429,
+"line": 15
+},
+{
+"word": "monk",
+"start": 89.545,
+"end": 89.777,
+"line": 15
+},
+{
+"word": "named",
+"start": 89.858,
+"end": 90.102,
+"line": 15
+},
+{
+"word": "William",
+"start": 90.16,
+"end": 90.497,
+"line": 15
+},
+{
+"word": "placed",
+"start": 90.59,
+"end": 90.903,
+"line": 15
+},
+{
+"word": "Bj\u00f6rn",
+"start": 90.938,
+"end": 91.217,
+"line": 15
+},
+{
+"word": "aboard.",
+"start": 91.263,
+"end": 91.82,
+"line": 15
+},
+{
+"word": "They",
+"start": 92.27,
+"end": 92.444,
+"line": 16
+},
+{
+"word": "conquered",
+"start": 92.514,
+"end": 92.955,
+"line": 16
+},
+{
+"word": "the",
+"start": 92.99,
+"end": 93.071,
+"line": 16
+},
+{
+"word": "wrong",
+"start": 93.118,
+"end": 93.35,
+"line": 16
+},
+{
+"word": "Rome.",
+"start": 93.431,
+"end": 93.896,
+"line": 16
+},
+{
+"word": "Perhaps",
+"start": 94.296,
+"end": 94.749,
+"line": 16
+},
+{
+"word": "history",
+"start": 94.842,
+"end": 95.237,
+"line": 16
+},
+{
+"word": "crowned",
+"start": 95.306,
+"end": 95.678,
+"line": 16
+},
+{
+"word": "the",
+"start": 95.713,
+"end": 95.782,
+"line": 16
+},
+{
+"word": "wrong",
+"start": 95.829,
+"end": 96.061,
+"line": 16
+},
+{
+"word": "Viking.",
+"start": 96.131,
+"end": 96.688,
+"line": 16
+},
+{
+"word": "History",
+"start": 97.547,
+"end": 97.942,
+"line": 17
+},
+{
+"word": "remembers",
+"start": 98.023,
+"end": 98.534,
+"line": 17
+},
+{
+"word": "the",
+"start": 98.592,
+"end": 98.662,
+"line": 17
+},
+{
+"word": "victors.",
+"start": 98.731,
+"end": 99.358,
+"line": 17
+},
+{
+"word": "We",
+"start": 99.869,
+"end": 100.078,
+"line": 17
+},
+{
+"word": "remember",
+"start": 100.171,
+"end": 100.624,
+"line": 17
+},
+{
+"word": "the",
+"start": 100.67,
+"end": 100.74,
+"line": 17
+},
+{
+"word": "rest.",
+"start": 100.821,
+"end": 101.448,
+"line": 17
+}
+]
+}

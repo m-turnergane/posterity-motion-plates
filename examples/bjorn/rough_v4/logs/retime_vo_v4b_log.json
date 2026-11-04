@@ -1,0 +1,29 @@
+{
+ "src": "/workspace/posterity/standalones/bjorn/rough_v4/scratch/vo_bjorn_v4.wav",
+ "src_md5": "1195b04c1092455cbfb52c4fb5bdb487",
+ "insert_after": "barred.",
+ "gap_v4": [
+  31.927,
+  32.31
+ ],
+ "insert_at_s": 32.0796,
+ "insert_s": 0.5,
+ "insert_frames": 15,
+ "noise_floor_rms": 1.0000000116860974e-07,
+ "out_s": 102.433,
+ "end_f": 3073,
+ "xcorr_shift_s": [
+  [
+   "So",
+   0.5
+  ],
+  [
+   "leapt",
+   0.5
+  ],
+  [
+   "rest.",
+   0.5
+  ]
+ ]
+}

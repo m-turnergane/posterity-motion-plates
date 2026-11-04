@@ -1,0 +1,58 @@
+{
+ "P11": {
+  "faces": 8,
+  "plate_face_changed_px": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "output_face_changed_px": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "fx_changed_px_outside_faces": [
+   1450196,
+   839753,
+   1450598,
+   1311997
+  ],
+  "output_face_changed_px_erode4": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "density_max": 1.2187
+ },
+ "P13": {
+  "faces": 10,
+  "plate_face_changed_px": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "output_face_changed_px": [
+   0,
+   0,
+   0,
+   12
+  ],
+  "fx_changed_px_outside_faces": [
+   1511618,
+   1510556,
+   1345239,
+   1508400
+  ],
+  "output_face_changed_px_erode4": [
+   0,
+   0,
+   9,
+   35
+  ],
+  "density_max": 1.5052
+ }
+}

@@ -1,0 +1,67 @@
+[
+ {
+  "word": "A",
+  "start": 0.0,
+  "end": 0.093
+ },
+ {
+  "word": "Viking",
+  "start": 0.186,
+  "end": 0.58
+ },
+ {
+  "word": "fleet",
+  "start": 0.65,
+  "end": 0.94
+ },
+ {
+  "word": "really",
+  "start": 1.091,
+  "end": 1.416
+ },
+ {
+  "word": "sailed",
+  "start": 1.498,
+  "end": 1.869
+ },
+ {
+  "word": "past",
+  "start": 1.916,
+  "end": 2.31
+ },
+ {
+  "word": "Spain,",
+  "start": 2.368,
+  "end": 2.879
+ },
+ {
+  "word": "struck",
+  "start": 3.204,
+  "end": 3.506
+ },
+ {
+  "word": "southern",
+  "start": 3.587,
+  "end": 3.913
+ },
+ {
+  "word": "France,",
+  "start": 3.994,
+  "end": 4.435
+ },
+ {
+  "word": "and",
+  "start": 4.458,
+  "end": 4.563
+ },
+ {
+  "word": "raided",
+  "start": 4.644,
+  "end": 5.004
+ },
+ {
+  "word": "Italy.",
+  "start": 5.074,
+  "end": 5.759
+ }
+]

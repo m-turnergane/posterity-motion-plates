@@ -1,0 +1,62 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,54,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,4,2,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:01.39,Default,,0,0,0,,A coffin is carried
+Dialogue: 0,0:00:01.39,0:00:02.76,Default,,0,0,0,,into a Christian church.
+Dialogue: 0,0:00:02.76,0:00:04.03,Default,,0,0,0,,Inside, the dead man
+Dialogue: 0,0:00:04.03,0:00:05.32,Default,,0,0,0,,is holding a sword.
+Dialogue: 0,0:00:05.52,0:00:07.45,Default,,0,0,0,,Legend says\NBjörn Ironside,
+Dialogue: 0,0:00:07.45,0:00:09.03,Default,,0,0,0,,son of Ragnar Lothbrok,
+Dialogue: 0,0:00:09.03,0:00:11.60,Default,,0,0,0,,led a fleet intent\Non conquering Rome.
+Dialogue: 0,0:00:11.68,0:00:13.73,Default,,0,0,0,,His tutor, the\Nraider Hastein,
+Dialogue: 0,0:00:13.73,0:00:15.74,Default,,0,0,0,,planned to crown\Nhim emperor there.
+Dialogue: 0,0:00:15.81,0:00:18.02,Default,,0,0,0,,A Viking fleet\Nreally did sail,
+Dialogue: 0,0:00:18.02,0:00:20.88,Default,,0,0,0,,past Spain, into\Nthe Mediterranean,
+Dialogue: 0,0:00:21.10,0:00:22.94,Default,,0,0,0,,then struck\Nsouthern France,
+Dialogue: 0,0:00:22.94,0:00:25.16,Default,,0,0,0,,and finally\Nraided Italy.
+Dialogue: 0,0:00:26.04,0:00:27.97,Default,,0,0,0,,At a walled\Ncity by the sea,
+Dialogue: 0,0:00:27.97,0:00:30.38,Default,,0,0,0,,Hastein believed\Nhe had found Rome.
+Dialogue: 0,0:00:30.45,0:00:32.18,Default,,0,0,615,,But the gates\Nwere barred.
+Dialogue: 0,0:00:32.81,0:00:34.38,Default,,0,0,0,,So Hastein sent word
+Dialogue: 0,0:00:34.38,0:00:35.51,Default,,0,0,0,,that he was dying,
+Dialogue: 0,0:00:35.51,0:00:37.47,Default,,0,0,0,,and wished to\Nbecome a Christian.
+Dialogue: 0,0:00:37.67,0:00:39.10,Default,,0,0,0,,The bishop and\Ncount could
+Dialogue: 0,0:00:39.10,0:00:40.66,Default,,0,0,0,,have kept the\Ngates shut.
+Dialogue: 0,0:00:40.81,0:00:44.32,Default,,0,0,0,,They chose mercy, and\NHastein was baptised.
+Dialogue: 0,0:00:44.52,0:00:46.31,Default,,0,0,0,,Then, on\NHastein's orders,
+Dialogue: 0,0:00:46.31,0:00:48.57,Default,,0,0,0,,his companions\Nstaged their grief.
+Dialogue: 0,0:00:48.72,0:00:50.23,Default,,0,0,0,,They said he was dead,
+Dialogue: 0,0:00:50.23,0:00:51.03,Default,,0,0,0,,and wished to be
+Dialogue: 0,0:00:51.03,0:00:52.44,Default,,0,0,0,,buried in the city.
+Dialogue: 0,0:00:52.64,0:00:54.77,Default,,0,0,860,,The bishop let\Nthe funeral in.
+Dialogue: 0,0:00:54.92,0:00:56.94,Default,,0,0,860,,Behind the coffin,\Nthe mourners
+Dialogue: 0,0:00:56.94,0:00:58.92,Default,,0,0,860,,wore armour under\Ntheir tunics.
+Dialogue: 0,0:00:59.12,0:01:00.77,Default,,0,0,860,,Mid-funeral, Hastein
+Dialogue: 0,0:01:00.79,0:01:02.11,Default,,0,0,0,,leapt from\Nthe coffin and
+Dialogue: 0,0:01:02.11,0:01:03.77,Default,,0,0,0,,struck the bishop down.
+Dialogue: 0,0:01:03.97,0:01:05.98,Default,,0,0,0,,Only after the\Ncity fell did
+Dialogue: 0,0:01:05.98,0:01:07.69,Default,,0,0,0,,the raiders\Nlearn the truth.
+Dialogue: 0,0:01:07.84,0:01:09.46,Default,,0,0,0,,This wasn't Rome.
+Dialogue: 0,0:01:10.41,0:01:13.33,Default,,0,0,0,,It was Luna, an\Nold Roman town.
+Dialogue: 0,0:01:13.53,0:01:14.45,Default,,0,0,0,,But the strangest
+Dialogue: 0,0:01:14.45,0:01:16.27,Default,,0,0,0,,mistake may be the name.
+Dialogue: 0,0:01:16.47,0:01:18.44,Default,,0,0,0,,The fleet was\Nreal, but the
+Dialogue: 0,0:01:18.44,0:01:20.85,Default,,0,0,0,,Frankish annals\Nnamed no captain.
+Dialogue: 0,0:01:21.05,0:01:22.77,Default,,0,0,0,,The oldest\Nsurviving funeral
+Dialogue: 0,0:01:22.77,0:01:24.99,Default,,0,0,0,,story, by the\Nchurchman Dudo,
+Dialogue: 0,0:01:24.99,0:01:26.55,Default,,0,0,0,,gave Hastein the sword,
+Dialogue: 0,0:01:26.55,0:01:28.37,Default,,0,0,0,,and never\Nmentioned Björn.
+Dialogue: 0,0:01:28.57,0:01:30.66,Default,,0,0,0,,Decades later,\Na monk named
+Dialogue: 0,0:01:30.66,0:01:32.57,Default,,0,0,0,,William placed\NBjörn aboard.
+Dialogue: 0,0:01:32.77,0:01:34.65,Default,,0,0,0,,They conquered\Nthe wrong Rome.
+Dialogue: 0,0:01:34.80,0:01:37.44,Default,,0,0,0,,Perhaps history crowned\Nthe wrong Viking.

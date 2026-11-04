@@ -1,0 +1,99 @@
+{
+ "plate": "/workspace/posterity/standalones/bjorn/plates/P17B_dudo_open_bier.png",
+ "plate_md5_before": "891449efff6d3ca87dfca2bec6a0fe6d",
+ "plate_md5_after": "891449efff6d3ca87dfca2bec6a0fe6d",
+ "frames": 226,
+ "seconds": 7.533,
+ "push": [
+  1.0,
+  1.06
+ ],
+ "anchor": [
+  0.4,
+  0.3
+ ],
+ "far_push_gain": 0.9827,
+ "overscan": 1.0,
+ "rel_parallax_max_px": 1.456,
+ "limit_px": 1.5,
+ "protect_in_near_card": {
+  "face": 0.9999,
+  "sword": 1.0
+ },
+ "layers": [
+  {
+   "name": "far",
+   "own_frac": 1.0
+  },
+  {
+   "name": "near",
+   "own_frac": 0.6539
+  }
+ ],
+ "warp_check": {
+  "pass_": true,
+  "recon_psnr_db": 50.43,
+  "single_transform": true,
+  "dot_test": true,
+  "uniform_scale": true,
+  "holes": [
+   0,
+   0
+  ],
+  "rigidity": [
+   {
+    "name": "hastein_face",
+    "layer": "near",
+    "in_layer": 0.9999,
+    "pass_": true
+   },
+   {
+    "name": "sword",
+    "layer": "near",
+    "in_layer": 1.0,
+    "pass_": true
+   }
+  ],
+  "guardrail": [
+   {
+    "check": "crop_zoom",
+    "zoom": 1.06,
+    "max_zoom": 1.5,
+    "output_px_per_plate_px": 1.06,
+    "ok": true,
+    "msg": "ok",
+    "pixel_density": {
+     "check": "pixel_density",
+     "plate": null,
+     "plate_wh": [
+      1080,
+      1920
+     ],
+     "out_wh": [
+      1080,
+      1920
+     ],
+     "push_max": 1.06,
+     "crop_zoom": 1.0,
+     "cover_scale": 1.0,
+     "visible_src_wh": [
+      1018.9,
+      1811.3
+     ],
+     "ratio": 1.06,
+     "ratio_x": 1.06,
+     "ratio_y": 1.06,
+     "max_ratio": 1.5,
+     "pass": true,
+     "ok": true,
+     "msg": "ok"
+    }
+   }
+  ]
+ },
+ "sky_drift": "not done (optional; static sky)",
+ "output": {
+  "path": "/workspace/posterity/standalones/bjorn/rough_v4_prep/p17b/p17b_proof.mp4",
+  "md5": "2b1bd204801b907d41b55b4527f85c60"
+ }
+}
