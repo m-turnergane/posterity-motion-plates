@@ -31,7 +31,7 @@ The production path for a 16:9 feature is being verified on this branch. The epi
 | Voice config | `config/narration.yaml` approved, speed unknown |
 | Higgsfield | Blocked, no cap |
 | Engine branch | PR #5, not merged |
-| Technical test film | `pipeline-test/README.md`. Picture verified. Narration still blocked at 12:07 PM America/Toronto: the stored secret is a 64-character key ID, not an `sk_` key. |
+| Technical test film | `pipeline-test/README.md`. Picture and one Oliver line verified at about 12:16 PM America/Toronto. −14.1 LUFS, true peak −3.6 dBFS. |
 
 ## Next action
 

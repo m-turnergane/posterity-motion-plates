@@ -82,6 +82,14 @@ def guardrail_report(plate_wh: tuple[int, int]) -> dict:
 
 
 def synthesize_voice(dest_mp3: Path, alignment_path: Path) -> dict:
+    if os.environ.get("PIPELINE_REUSE_VOICE") == "1" and dest_mp3.exists() and alignment_path.exists():
+        return {
+            "status": "OK",
+            "characters": len(LINE),
+            "bytes": dest_mp3.stat().st_size,
+            "reused": True,
+            "has_alignment": True,
+        }
     cfg = yaml.safe_load((ROOT / "config/narration.yaml").read_text())
     key = os.environ.get(cfg["secret_env"], "")
     if not key:
@@ -178,12 +186,73 @@ def write_captions(words: list[tuple[float, float, str]], srt: Path, vtt: Path) 
     return len(cues)
 
 
-def loudnorm(src: Path, wav: Path) -> None:
+def ebur_summary(path: Path) -> tuple[float, float]:
+    proc = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", str(path), "-filter_complex", "ebur128=peak=true",
+         "-f", "null", "-"],
+        capture_output=True, text=True,
+    )
+    integrated = peak = None
+    summary = False
+    for ln in proc.stderr.splitlines():
+        if "Summary" in ln:
+            summary = True
+        if not summary:
+            continue
+        if "I:" in ln and "LUFS" in ln:
+            integrated = float(ln.split("I:")[1].split("LUFS")[0])
+        if ln.strip().startswith("Peak:"):
+            peak = float(ln.split("Peak:")[1].split("dB")[0])
+    if integrated is None or peak is None:
+        raise SystemExit("ebur128 summary missing")
+    return integrated, peak
+
+
+def loudnorm(src: Path, wav: Path) -> dict:
+    """Two-pass EBU loudnorm, then a residual gain if the short line misses -14.
+
+    Peak stays at or under -1.5 dBFS. A single pass on this line landed at -15 LUFS.
+    """
+    measure = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", str(src),
+         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+         "-f", "null", "-"],
+        capture_output=True, text=True,
+    )
+    text = measure.stderr
+    stats = json.loads(text[text.rfind("{"):text.rfind("}") + 1])
+    af = (
+        "loudnorm=I=-14:TP=-1.5:LRA=11:"
+        f"measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:"
+        f"measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:"
+        f"offset={stats['target_offset']}:linear=true"
+    )
     subprocess.run(
-        ["ffmpeg", "-y", "-i", str(src), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
-         "-ar", "48000", "-ac", "2", str(wav)],
+        ["ffmpeg", "-y", "-i", str(src), "-af", af, "-ar", "48000", "-ac", "2", str(wav)],
         check=True, capture_output=True,
     )
+    integrated, peak = ebur_summary(wav)
+    residual = round(-14.0 - integrated, 2)
+    if abs(residual) >= 0.2 and peak + residual <= -1.5:
+        trimmed = wav.with_suffix(".trim.wav")
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", str(wav), "-af", f"volume={residual:.2f}dB",
+             "-ar", "48000", "-ac", "2", str(trimmed)],
+            check=True, capture_output=True,
+        )
+        trimmed.replace(wav)
+        integrated, peak = ebur_summary(wav)
+    else:
+        residual = 0.0
+    return {
+        "input_i": stats["input_i"],
+        "input_tp": stats["input_tp"],
+        "target_i": -14,
+        "target_tp": -1.5,
+        "wav_i": integrated,
+        "wav_tp": peak,
+        "residual_db": residual,
+    }
 
 
 def encode(frames_iter, n: int, audio: Path | None, dest: Path) -> None:
@@ -195,15 +264,25 @@ def encode(frames_iter, n: int, audio: Path | None, dest: Path) -> None:
         cmd += ["-i", str(audio)]
     cmd += ["-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18", "-r", str(FPS)]
     if audio:
-        cmd += ["-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-ac", "2", "-shortest"]
+        # The spoken line is shorter than the picture. Pad silence to the
+        # picture length. -shortest closed the rawvideo pipe at the end of
+        # the line and dropped the last frames.
+        cmd += ["-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-ac", "2",
+                "-af", f"apad=whole_dur={SECONDS}"]
     else:
         cmd += ["-an"]
     cmd += ["-movflags", "+faststart", str(dest)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
     assert proc.stdin
-    for frame in frames_iter:
-        proc.stdin.write(frame.tobytes())
-    proc.stdin.close()
+    try:
+        for frame in frames_iter:
+            proc.stdin.write(frame.tobytes())
+        proc.stdin.close()
+    except BrokenPipeError:
+        proc.stdin.close()
+        err = proc.stderr.read().decode("utf-8", "replace") if proc.stderr else ""
+        proc.wait()
+        raise SystemExit(err[-2000:])
     err = proc.stderr.read().decode("utf-8", "replace") if proc.stderr else ""
     code = proc.wait()
     if code != 0:
@@ -238,8 +317,9 @@ def main() -> None:
         raise SystemExit(json.dumps(guards))
     voice = synthesize_voice(OUT / "voice.mp3", OUT / "alignment.json")
     audio = None
+    loudness = None
     if voice.get("status") == "OK":
-        loudnorm(OUT / "voice.mp3", OUT / "voice.wav")
+        loudness = loudnorm(OUT / "voice.mp3", OUT / "voice.wav")
         audio = OUT / "voice.wav"
     words = words_from_alignment(OUT / "alignment.json")
     cues = write_captions(words, OUT / "captions.srt", OUT / "captions.vtt")
@@ -263,6 +343,7 @@ def main() -> None:
         "mp4": str(dest),
         "md5": subprocess.check_output(["md5sum", str(dest)], text=True).split()[0],
         "guardrails": guards,
+        "loudnorm": loudness,
         "voice": {k: v for k, v in voice.items() if k != "detail"} if voice.get("status") != "HTTP_ERROR" else voice,
         "caption_cues": cues,
         "title": "PIL stand-in. ChronicleHookV3-2b is 1080x1920 and its default plate is not in the bundle.",
@@ -271,7 +352,7 @@ def main() -> None:
         "higgsfield_calls": 0,
     }
     (OUT / "report.json").write_text(json.dumps(report, indent=2))
-    print(json.dumps({k: report[k] for k in ("md5", "voice", "caption_cues", "ebur128_tail")}, indent=2))
+    print(json.dumps({k: report[k] for k in ("md5", "voice", "loudnorm", "caption_cues", "ebur128_tail")}, indent=2))
 
 
 if __name__ == "__main__":

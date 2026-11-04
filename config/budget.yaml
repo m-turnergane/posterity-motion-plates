@@ -9,7 +9,9 @@ elevenlabs:
   ask_before_credits: 30000
   scope: this Edward draft
   spent_credits: 0
-  note: Screenshot totals are a record, not a live balance. Re-read the account when the key exists.
+  characters_sent: 70
+  character_cost_header: null
+  note: Screenshot totals are a record, not a live balance. One technical line was synthesized once. The subscription endpoint returned 401, so credits were not re-read and spent_credits stays 0.
 
 higgsfield:
   status: blocked

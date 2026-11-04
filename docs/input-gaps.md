@@ -6,7 +6,7 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 
 | Gap | Blocks |
 | --- | --- |
-| `ELEVENLABS_API_KEY` must be the `sk_` secret, not the 64-character key ID. Both submissions so far were rejected as a key ID | The Oliver line and any narration. The picture test did not wait |
+| Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the test line. Feature narration still waits for the spoken script and the 30,000-credit ask |
 | Higgsfield credit cap, and the image model to use | Any Higgsfield generation, including the style sample |
 | Edward feature prep pack: script, spoken script, claim ledger, eight movements, shot list | The feature film. Not this setup pass |
 | Packet (i): treatment and whether 03:05–04:55 is still the sample; approval of the 33–34 master budget; Gregorian Chant as a feature section | Feature spend and score |
