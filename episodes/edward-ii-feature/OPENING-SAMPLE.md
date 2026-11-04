@@ -1,6 +1,6 @@
 # Opening sample
 
-Cut 4 Nov 2026, about 2:10 PM America/Toronto. Owner picks from 1:44 PM are in force. The film is `var/edward-ii-feature/opening-sample/opening-sample.mp4` and is not in git.
+Cut 4 Nov 2026, about 2:10 PM America/Toronto. Owner picks from 1:44 PM are in force. The film is `var/edward-ii-feature/opening-sample/opening-sample.mp4` and is not in git. The recoverable copy and the hashes are in [`CHECKPOINT.md`](CHECKPOINT.md). This file is the first cut. A later pass belongs in a separate `opening-sample-test-two.mp4`.
 
 ## What was locked
 

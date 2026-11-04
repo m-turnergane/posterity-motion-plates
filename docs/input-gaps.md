@@ -9,6 +9,8 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 | Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the opening lines. The nine lines were 1,013 characters. The 30,000-credit ask still applies before a full-film pass |
 | Explorer's Chart as the Edward map class. depth_v1 stays off unless the owner says otherwise | The map class only |
 | Two coordinate files still only inside the oversized media zips: `waypoint_coords_wikidata_2026-10-30.json` and `wikipedia_coords_2026-10-30.json` | Map registration. Not needed for the opening sample |
+| Numeric cap for opening test two. Balance reread 4 Nov 2026 at 3:04 PM America/Toronto was still 48 on Plus. A 1,000-credit plan is not in effect | Any paid test-two submission. Ask once with one aggregate plan. The brief is `episodes/edward-ii-feature/OPENING-TEST-TWO.md` |
+| Ink-on-paper inspiration images named in the test-two brief | Nothing yet. They were not attached and were not found. The candlelight and rain-swept paintings were found. See `CHECKPOINT.md` |
 
 ## Desk / next pack
 
@@ -29,4 +31,4 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 | Remotion default plate missing; composition is 1080×1920 | Using Chronicle Reveal as the 16:9 title. Test uses a labeled stand-in |
 | `templates/build_template_v1.py` still looks for `guardrails.py` at the repo root | `--check` on that template until a separate approved path fix |
 | Engine merge conflict in `tests/test_motionplates.py` | Merging PR #5. Not day-to-day feature assembly |
-| No durable object store beyond this VM disk and Drive | A later clean VM cannot see `var/pipeline-test/` unless the checksum note's file is copied to Drive |
+| Opening media larger than the Drive connector can carry in one call | Use the recovery zip in `CHECKPOINT.md`. Mix wavs and the pre-caption `picture.mp4` are rebuildable and were left on this VM. Tomb photos and the four unused scores are on this VM. Anabasis I is in the zip and on the publisher URL |

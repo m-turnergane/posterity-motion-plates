@@ -4,6 +4,8 @@ status: OPENING_SAMPLE_CUT
 updated: 2026-11-04
 timezone: America/Toronto
 
+Current handoff: [`CHECKPOINT.md`](CHECKPOINT.md). Pending second pass, not started: [`OPENING-TEST-TWO.md`](OPENING-TEST-TWO.md). The first cut in [`OPENING-SAMPLE.md`](OPENING-SAMPLE.md) stays the comparison copy.
+
 ## What this slot is
 
 The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The retrieval note is `PACK-RECEIPT.md`. Do not treat Edward Short #31 as this film.
@@ -36,4 +38,4 @@ The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The re
 
 ## Next action
 
-The owner reviews the opening sample. The full film, the outro (wordmark plus the tagline written and narrated), and any plan upgrade wait for that go-ahead. Explorer's Chart is still a proposal.
+The first opening sample is cut and checkpointed. Test two is pending in `OPENING-TEST-TWO.md` and is not authorized. There is no numeric spending cap for that pass. Ask once, with one aggregate plan, before any paid submission. The full film, the outro, and any plan upgrade wait. Explorer's Chart is still a proposal. PR #5 stays unmerged.
