@@ -18,10 +18,12 @@ higgsfield:
   reason: no owner spending cap in the desk package
   plan_observed: plus
   credits_observed: 110
-  observed_at: 2026-11-04T16:20:00Z
-  image_model: null
-  image_model_status: unknown
-  candidate_not_approved: nano-banana-pro
+  observed_at: 2026-11-04T17:30:00Z
+  image_model: nano_banana_pro
+  image_model_status: owner-named
+  mcp_general_default: gpt_image_2_5
+  unlim_available: false
+  image_model_note: Owner named this at 12:30 PM America/Toronto on 4 Nov 2026 as the 3-day-trial default. The same-hour account read is Plus, 110 credits, and free-trial unlimited is not spendable. The MCP general default is gpt_image_2_5. nano_banana_pro accepts 16:9, defaults to 2k, and is marked supports_unlim. Generation stays blocked until the cap arrives.
   spent_credits: 0
   queued_credits: 0
 

@@ -25,6 +25,6 @@ Dates are America/Toronto. Status is one of: approved, episode, provisional, sup
 | 2026-11-04 | Engine branch `engine/consolidate-2026-11-04` is pushed from the bundle and not merged. Conflicts in `tests/test_motionplates.py` stay unresolved | Repo | approved route; merge not approved | engine notes FIRST TASK; PR #5 |
 | earlier | Katherine as narrator | Channel | superseded by Oliver | engine notes §9 |
 | earlier | YouTube `@PosterityArchive` | Channel | desk says terminated 5 Oct 2026. This session did not re-verify termination | index § corrections |
-| 2026-11-04 | Nano Banana Pro as the image model | Generation | provisional candidate only. Desk model is unknown | GPT handoff, corrected by the index |
+| 2026-11-04 12:30 PM | Nano Banana Pro (`nano_banana_pro`) is the image model the owner expects from the 3-day trial | Generation | owner-named. Live check the same hour: Plus, 110 credits, unlimited trial not spendable, MCP general default `gpt_image_2_5`. Spend still blocked | owner message; Higgsfield account read |
 | 2026-11-04 | Gregorian Chant (Kevin MacLeod, CC BY 4.0) as a feature section | Edward feature | not approved. It is credited on the Short only | `rights/edward-ii__MUSIC-CREDIT.md`; packet (i) |
 | 2026-11-04 | Higgsfield spending cap | This experiment | unknown. Spend stays blocked | no source in the package |

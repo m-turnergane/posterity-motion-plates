@@ -29,7 +29,7 @@ The production path for a 16:9 feature is being verified on this branch. The epi
 | --- | --- |
 | Delivery config | `config/delivery.yaml` approved |
 | Voice config | `config/narration.yaml` approved, speed unknown |
-| Higgsfield | Blocked, no cap |
+| Higgsfield | Blocked until the credit cap arrives. Owner named `nano_banana_pro` at 12:30 PM America/Toronto. The account read does not show a spendable unlimited trial. |
 | Engine branch | PR #5, not merged |
 | Technical test film | `pipeline-test/README.md`. Picture and one Oliver line verified at about 12:16 PM America/Toronto. −14.1 LUFS, true peak −3.6 dBFS. |
 

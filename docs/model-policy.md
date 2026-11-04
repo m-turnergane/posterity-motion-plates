@@ -6,7 +6,7 @@ Discover ids and prices at call time. Do not hardcode a credit price from the No
 
 | Job | Route | Status |
 | --- | --- | --- |
-| Plate stills for this long-form experiment | Higgsfield MCP, plan credits, after a cap and a named model | Blocked. Nano Banana Pro is a candidate, not a lock |
+| Plate stills for this long-form experiment | Higgsfield MCP, model `nano_banana_pro`, after a cap | Blocked until the cap arrives. Owner named Nano Banana Pro at 12:30 PM America/Toronto on 4 Nov 2026. The live account is Plus with 110 credits, and free-trial unlimited is not spendable. The MCP general default is `gpt_image_2_5`, so a call must name `nano_banana_pro` rather than omit the model |
 | Generative motion (cloth, water that must move, gesture, weather) | Higgsfield video models, shot by shot, after the still is accepted | Blocked with the same cap |
 | Held paintings, push, titles, maps, document reveals | Deterministic engine. Locked presets only. depth_v1 off | Allowed without Higgsfield |
 | Narration | ElevenLabs `eleven_multilingual_v2`, Oliver Silk | Allowed inside the 30,000 credit ask-first cap once the secret is set |
