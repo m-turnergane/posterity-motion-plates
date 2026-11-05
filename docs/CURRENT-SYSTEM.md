@@ -42,11 +42,11 @@ motionplates/
 
 ## Locked Presets
 
-Two presets are **APPROVED-DEFAULT** for production use:
+Three presets are **APPROVED-DEFAULT** for production use:
 
 ### `house-candle-lightspill-v1`
 
-Single-source candle/torch light with:
+Single-source candle/small-fire light with:
 - Flame warp (inside flame mask only, 0 px elsewhere)
 - Light spill with falloff × facing heuristic
 - Light pool (radial darkening that breathes with the flame)
@@ -65,6 +65,21 @@ Animated map with:
 
 **Config:** `recipes/presets/locked/house-map-inknib-dashed-v1.json`
 **Reference md5:** `b8aa9ceb7cae2757a44d9919eb8ddd9f`
+
+### `torch_v1c` (LOCKED 2026-10-30)
+
+House torch standard for torches, cressets, braziers, and larger fires:
+- Painted flame shape holds (no tongue, no warp, no displacement)
+- Soft local glow and spill pulse at v1c strength
+- Glow zones fixed: the whole room brightens and dims together
+- No moving light gradients on walls or faces
+
+**Module:** `src/motionplates/standalone/fx_torch.py`
+**Reference master:** `renders/posterity-edward-ii-v3b-ROUGH-v1c.mp4` (md5 `b4f0aa7a68619ed5928738698f6e2eaf`)
+**Documentation:** `docs/TORCH-V1C.md`
+
+**Scope:** Torches, cressets, braziers, and all larger fires (burning buildings, town fires).
+Candles keep their own treatment (`house-candle-lightspill-v1` plus smoke_v2 wisps).
 
 ### Applying Locked Presets
 
@@ -150,13 +165,16 @@ python -m motionplates.effects.smoke_v2 \
 
 ### Natural Fire (`src/motionplates/rnd/natural_fire.py`)
 
+> **SUPERSEDED FOR PRODUCTION (2026-10-30):** Use `torch_v1c` instead.
+> See `docs/TORCH-V1C.md` and `docs/AUDIT-V1C-VS-V3.md`.
+
 Procedural flame tongues with:
 - Stroke-textured, jagged-edge sprites
 - OVER composite in linear light
 - Burst dynamics tied to glow peaks
 - Height-capped pillar flames
 
-Status: R&D. Not approved for production. See `docs/NATURAL-FIRE-RND.md`.
+Status: R&D only. Superseded by torch_v1c for production. See `docs/NATURAL-FIRE-RND.md`.
 
 ### Archive (`archive/engine-snapshots/`)
 
@@ -215,12 +233,14 @@ See `examples/edward-ii/` for a complete production build:
 | 2026-10-18 | v0.3 | Last commit before Oct production work |
 | 2026-10-22 | batch 1-4 | Engine iterations, locked presets approved |
 | 2026-10-23 | naturalfire | Natural-fire R&D (P05 forge) |
-| 2026-10-30 | current | Smoke v2, full system integration |
+| 2026-10-30 | current | Smoke v2, torch_v1c LOCKED, full system integration |
 
 ## See Also
 
 - `AGENTS.md` - Repository conventions and hard rules
 - `docs/ARCHITECTURE.md` - Detailed architecture
 - `docs/SMOKE-V2.md` - Smoke v2 documentation
-- `docs/NATURAL-FIRE-RND.md` - Natural fire R&D notes
+- `docs/TORCH-V1C.md` - torch_v1c preset documentation (LOCKED 2026-10-30)
+- `docs/AUDIT-V1C-VS-V3.md` - Measured comparison of v1c vs v3
+- `docs/NATURAL-FIRE-RND.md` - Natural fire R&D notes (superseded by torch_v1c)
 - `recipes/PRESETS.md` - Full preset documentation (from production)
