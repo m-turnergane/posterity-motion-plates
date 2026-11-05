@@ -2,7 +2,9 @@
 
 Review film for 4 Nov 2026. Branch `cursor/atelier-jr-intake-596c`. The renderer landed in `ecaf054`, on top of checkpoint `875fc74`. Reviewed commit `0b2f0ef` is that checkpoint's parent. The owner authorized 23.50 Higgsfield credits and 8 submissions at 5:39 PM America/Toronto (`2026-11-04T22:39:00Z`). The first encode spent 16.50 across 6 submissions. At 6:20 PM the owner asked for a spoken title, Penumbra instead of Anabasis I, a stone effigy, and motivated light on the king's face. Those two stills used the last two submissions, 5.50 credits. The cap is now 22.00 credits and 8 submissions. It did not merge, publish, or start the full feature.
 
-The brief is [`OPENING-TEST-TWO.md`](OPENING-TEST-TWO.md). The first cut stays [`OPENING-SAMPLE.md`](OPENING-SAMPLE.md).
+The brief is [`OPENING-TEST-TWO.md`](OPENING-TEST-TWO.md). The current plan is [`ACT-I-PLAN.md`](ACT-I-PLAN.md). The first cut stays [`OPENING-SAMPLE.md`](OPENING-SAMPLE.md).
+
+After 8:25 PM America/Toronto the same evening, the cut was revised without a new Higgsfield charge. Kent is on screen for his introduction, Edward is on screen when he is named, L04 and the spoken title were re-read, and the locked camera became a small scale push with the flame painted on the plate first. The raised-axe plate is still the picture for S004. The resting-axe replacement is quoted in the plan and has not been submitted.
 
 ## The review file
 
@@ -10,47 +12,48 @@ The brief is [`OPENING-TEST-TWO.md`](OPENING-TEST-TWO.md). The first cut stays [
 
 | Check | Value |
 | --- | --- |
-| sha256 | `4969f6852fe363d0bad220bcf0dfd35e8e4abaca8e09fe742b4bd74661d0e063` |
-| bytes | 28,714,925 |
-| Duration | 69.733 s (2,092 frames at 30 fps). Timeline end 69.740 s |
+| sha256 | `9b4f84e9a30c290b3717e33db94cabaf42862082ad6a0c159089870d8d15256b` |
+| bytes | 172,313,796 |
+| Duration | 70.733 s (2,122 frames at 30 fps). Timeline end 70.727 s |
 | Picture | H.264, 1920×1080, 30 fps, progressive, yuv420p |
 | Audio | AAC LC, 48 kHz, stereo |
 | Captions | `mov_text`, language `eng`, plus `captions.srt` and `captions.vtt`. 23 cues |
 | Loudness | −14.0 LUFS integrated, true peak −1.3 dBTP |
-| Mix | Voice −19.2, bed −31.2, duck 4.4 |
+| Mix | Voice −19.4, bed −31.4, duck 4.9 |
 
 The first sample is unchanged: `var/edward-ii-feature/opening-sample/opening-sample.mp4`, sha256 `f4f77a9f0f74122d84a19a5901f1d49ae3ce208fd4d837fcf54748bc786a44f8`, 65,284,020 bytes. `tools/assemble_opening_sample.py` still refuses unless `--rebuild-first-cut` is passed.
 
-Narration is the nine Oliver takes, plus one new line spoken only in the intro gap: "Posterity. The Letter for a Buried King." It runs 24.899–28.382 s, inside the 7.5 s gap, and the nine locked lines do not move. The hyphen in the request is a pause, so the take is two sentences. Oliver, the same seed and settings, 18 characters, character-cost header 18. The score is Penumbra from 0:30 of the file. md5 `2acea4098213d02c944d57a2faa19a51`. The first 30 s of that track is nearly silent, which is why SCORE-PLAN starts it at or after 0:30. Credit: 'Penumbra' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au. The first cut still uses Anabasis I.
+Narration is the nine Oliver takes, with L04 and the spoken title replaced in this cut's voice directory only. The files in `opening-sample/vo` are unchanged. L04 keeps the house stability of 0.5, with the funeral line before it and the question after it. The title uses stability 0.72, with the question before it and L07 after it. Wording is unchanged. The comparison against the accepted lines is in [`ACT-I-PLAN.md`](ACT-I-PLAN.md). The title runs 25.313–30.886 s. The act card follows it, at local 6.223 s of the intro, absolute 31.136 s. The score is Penumbra from 0:30 of the file. md5 `2acea4098213d02c944d57a2faa19a51`. The first 30 s of that track is nearly silent, which is why SCORE-PLAN starts it at or after 0:30. Credit: 'Penumbra' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au. The first cut still uses Anabasis I.
 
 ## What changed from the first cut
 
-- The camera is fixed. One float cover-fit, `INTER_CUBIC`. S002 is a static 1:1 insert of the sealing still (`z=1.4222`, window 1920×1080). No N01 push.
+- The camera eases a scale-only push, `1.00 → 1.04` on a full-frame still, `smoothstep`, float `INTER_CUBIC`. S002 is Kent's face and signet hand at `z` 1.25→1.28. S002b is the accepted Edward medium at `z` 1.00→1.025. No window upscales. Depth is not added on top. Flame is painted on the plate, then resampled.
 - S001 stays the accepted H06 clip, decoded in order. The softness is that 720p file scaled into the 1080 frame.
-- House flame, smoke, and spill run on the sampled frame. S002, S003, S005, S007, S007a, S008, and S009. S004 and S008a are still.
+- House flame, smoke, and spill are painted on the plate, then the camera resamples that plate. S002, S002b, S003, S005, S007, S007a, S008, and S009. S004 and S008a have the push and no flame.
 - The intro is black ink on the CB1 parchment interior, then a hard cut to a black card with cream centred `ACT I`. The certificate border and the left-to-right wipe are gone.
 - S003 is Gloucester. The figure on the tomb is a limestone recumbent effigy, one carving, hands together. The jointed wooden take is not in the film. Kent is bareheaded.
-- S004 is a new pre-strike tableau. Kent is at the block, the axe is raised, and there is no impact. The empty platform is gone.
+- S004 is still the raised-axe tableau from the earlier encode. The resting-axe replacement is quoted and not generated. There is no swing and no impact. The empty platform is gone.
 - S007 is Kent alone in the hall. S007a is Edward alone on the throne. S008 is the one remaining wide of the recovered N01 plate. S009 is a new court picture, not a cooled crop of N01.
 - H01 and the empty-platform N14 leave this cut.
 
 ## Shot clock
 
-Same Oliver timing as the first cut. Gap 0.40 s, intro gap 7.5 s, tail 0.60 s. L08 still splits at word 27, "even".
+L04 and the title are longer than the first takes, so the clock moved. Gap 0.40 s, tail 0.60 s. The intro holds long enough for the title and then 1.80 s of the card. L08 still splits at word 27, "even".
 
 | Shot | Start | Stop | Picture | Motion on the export |
 | --- | --- | --- | --- | --- |
-| S001 | 0.000 | 4.951 | H06 clip | Subject and flame move. Frame shift 0.01 px between 1.0 s and 1.5 s |
-| S002 | 4.951 | 11.435 | H06 v2 still, 1:1 | Candle and wisp. Shift 0.00 px between 6.0 s and 6.8 s |
-| S003 | 11.435 | 14.482 | `S003.png`, stone effigy | Candles. Kent's head is protected |
-| S004 | 14.482 | 19.619 | `S004.png` | Locked. Mean difference 0.00 between 16.0 s and 18.5 s. Rain is painted |
-| S005 | 19.619 | 24.449 | DK1 | Spill on the letter. Shift 0.00 px between 21.0 s and 23.0 s |
-| SC01 | 24.449 | 31.949 | CB1 interior, then black | Ink, then the card. Card cut at local 5.20 s, absolute 29.649 s |
-| S007 | 31.949 | 41.962 | `S007.png` | One torch. Shift 0.00 px |
-| S007a | 41.962 | 47.285 | `S007a.png` | One torch at the right edge. Shift 0.00 px |
-| S008 | 47.285 | 54.901 | N01 | Two torches. Shift 0.00 px |
-| S008a | 54.901 | 59.481 | N21 | Locked daylight. No flame |
-| S009 | 59.481 | 69.740 | `S009.png`, relit | Two cressets. The king's face takes the torch and the window, not a flat fill |
+| S001 | 0.000 | 4.951 | H06 clip | The clip's own motion. No second push |
+| S002 | 4.951 | 7.470 | H06 still, Kent's face and signet hand | Candle on the plate, then `z` 1.25→1.28 |
+| S002b | 7.470 | 11.435 | `S007a.png`, Edward on the throne | That plate's torch, face protected, then `z` 1.00→1.025 |
+| S003 | 11.435 | 14.482 | `S003.png`, stone effigy | Candles on the plate, then the push. Kent's head is protected |
+| S004 | 14.482 | 20.083 | `S004.png`, axe still raised | Push only. Rain is painted. Mean change over 0.50 s is the push, not a swing |
+| S005 | 20.083 | 24.913 | DK1 | Spill on the plate, then the push. The paper is not warped |
+| SC01 | 24.913 | 32.936 | CB1 interior, then black | Ink, then the card at local 6.223 s |
+| S007 | 32.936 | 42.949 | `S007.png` | One torch on the plate, then the push |
+| S007a | 42.949 | 48.272 | `S007a.png` | One torch, the king protected, then the push |
+| S008 | 48.272 | 55.888 | N01 | Two torches on the plate, then the push |
+| S008a | 55.888 | 60.468 | N21 | Push only. One frame step at 58.0 s changes 2.5% of pixels by more than 8 levels |
+| S009 | 60.468 | 70.727 | `S009.png`, relit | Two cressets on the plate, faces protected, then the push |
 
 Intro, local to the 7.5 s gap: wordmark about 0.35–2.80 s, title about 1.85–3.55 s, both then hold. Type sits at y=250 so the leaf's centre fold stays below the letters. Ink RGB `(16, 12, 10)`, multiply. Title is IM Fell DW Pica roman, 52 px. The card is cream `(236, 226, 208)`, 92 px, tracking 10, fade about 0.35 s.
 
@@ -61,13 +64,14 @@ Pulled from the finished mp4, not from the renderer. Times are absolute.
 | Time | Frame | What is in it |
 | --- | --- | --- |
 | 2.50 | `review/s001-b.jpg` | The sealing clip. One candle, one wisp, blank letter |
-| 7.00 | `review/s002.jpg` | The 1:1 insert. Hands, wax, knife, one flame |
+| 6.20 | `review/s002-kent.jpg` | Kent's face and the signet hand. The seal is in frame. He is not cropped to the hands |
+| 9.20 | `review/s002-edward.jpg` | Edward alone on the throne, the accepted S007a plate, while the line names him |
 | 12.80 | `review/s003-stone.jpg` | Limestone tomb effigy, praying hands, crown part of the carving, Kent bareheaded |
-| 17.00 | `review/s004.jpg` | Kent at the block, axe raised and clear of him, rain, scaffold, crowd, castle. No impact |
+| 17.50 | `review/s004-raised.jpg` | The current plate: Kent at the block, axe raised and clear of him. No impact. The resting-axe still is not in this file |
 | 23.00 | `review/s005-23.jpg` | The letter, warm on the candle side. String, seal, and folds stay put |
 | 26.20 | `review/intro-early.jpg` | Wordmark mid-ink. Title has not started |
 | 28.60 | `review/intro-hold.jpg` | `POSTERITY` and `The Letter for a Buried King`, both settled. The fold is below the type |
-| 30.20 | `review/act.jpg` | Black field, cream centred `ACT I` |
+| 31.50 | `review/act.jpg` | Black field, cream centred `ACT I`, after the spoken title has finished |
 | 36.00 | `review/s007.jpg` | Kent alone, medium, window and one torch. No crown |
 | 44.50 | `review/s007a.jpg` | Edward alone, simple gold crown, blue-and-gold robe, hands on the chair |
 | 51.00 | `review/s008.jpg` | The one N01 wide. Both men. Extra fleurs stay on this plate |
@@ -85,7 +89,8 @@ New plates are 2688×1520. Their effect rectangles are pixels of that file (`nat
 | Shot | Source | Identity | Effects |
 | --- | --- | --- | --- |
 | S001 | `opening-sample/plates/H06-i2v.mp4` | sha256 `f5b0f5c4e295eaf4cb3a8433c763d209e0326f4c61d93490c3d73a8d65939f3f`, md5 `d4f222dc6394f285e5adaa6be23af37b`, 1280×720, 145 frames, 24 fps | None beyond the clip |
-| S002 | `H06-v2.png` | sha256 `858cfd6360003e33f66ec8d11d0a4b6e61f261e2735618715157a6595e31fcab` | Candle rect and a thin wisp. Hands protected |
+| S002 | `H06-v2.png` | sha256 `858cfd6360003e33f66ec8d11d0a4b6e61f261e2735618715157a6595e31fcab` | Candle rect and a thin wisp, painted on the plate |
+| S002b | `plates/S007a.png` | same file as S007a | That plate's torch. The king's face is protected |
 | S003 | `plates/S003.png` | md5 `3fad8ac5e9052795ed3ec1606f23d8df`, sha256 `275da1328ac5ea4a5f86280d3a14629b15a521dc06f7f17f90c64bb758495d77`, 7,554,546 bytes. Job `a829656f-fdd5-4fda-9f71-72083ec022fd` | Eight candle cores, two wisps, Kent's head protected |
 | S004 | `plates/S004.png` | md5 `283e2a44b9b3d7d5127539be835e9994`, sha256 `d962f1d96f9b574954126cffda40d31589c298e6938c29712571d0b179582064`, 7,519,067 bytes. Job `c6e3cff2-97b7-481b-a4af-b9a460dee7ac` | None. Rain stays in the paint |
 | S005 | `DK1.png` | sha256 `64eb734d7a75c973aa64786b12a8fc9ee302622dcb8583067147ad3fd67dcb41` | Offscreen candle, spill only. Paper is not warped |
@@ -102,7 +107,7 @@ Rejected and kept beside the delivery plate: S003 attempt 1, job `37ae68ed-e632-
 
 ## Spend
 
-Balance before this authorization, read at 3:49 PM America/Toronto: 48 credits, Plus, `unlim.available` false. Balance after the eight charges, read about 6:30 PM America/Toronto (`2026-11-04T23:30:00Z`): **26**.
+Balance before this authorization, read at 3:49 PM America/Toronto: 48 credits, Plus, `unlim.available` false. Balance after the eight charges, read about 6:30 PM America/Toronto (`2026-11-04T23:30:00Z`): **26**. Re-read at about 8:30 PM America/Toronto (`2026-11-05T01:30:00Z`), before the Act I quote: **26**. No job was submitted for that quote.
 
 | When (America/Toronto) | Charge | Credits |
 | --- | --- | --- |
@@ -114,17 +119,17 @@ Balance before this authorization, read at 3:49 PM America/Toronto: 48 credits, 
 
 The ledger matches 48 − 22.00 = 26. The 4k S004 slot was not used. One and a half credits remain, and no submission slot remains. That remainder is not a new budget. `config/budget.yaml` holds the pass at `owner-review`.
 
-Account total spent is now 84: the opening 62, plus this 22.00. ElevenLabs `spent_credits` stays 0 because the subscription endpoint is still unread. Characters sent are 1,101.
+Account total spent is now 84: the opening 62, plus this 22.00. ElevenLabs `spent_credits` stays 0 because the subscription endpoint is still unread. Characters sent are 1,467. The character-cost header is 626, of which 162 is the six L04 and title calls. The live quotes, not spent, are a high 2k still at 2.75, a high 4k still at 4.25, a 1080p 6 s clip at 96, and a 720p 6 s clip at 42. The 720p price is rejected. See [`ACT-I-PLAN.md`](ACT-I-PLAN.md).
 
 `nano_banana_pro` at 2 credits was a price reference only. No Seedance job was submitted. No plan was bought.
 
 ## Picture path
 
-`src/motionplates/opening/` and `tools/assemble_opening_test_two.py`. Camera default `z=1`, centre 0.5, 0.5. A window that overruns the plate by more than a pixel raises. Replacement plates override recovered stills when the file exists under `var/edward-ii-feature/opening-sample-test-two/plates/`. `--full` refuses while any of the five required names is missing.
+`src/motionplates/opening/` and `tools/assemble_opening_test_two.py`. A still eases `z` and resamples in floating point. A window that upscales, or that leaves the plate, raises. Effects are built on the plate, then warped with that window. Replacement plates override recovered stills when the file exists under `var/edward-ii-feature/opening-sample-test-two/plates/`. `--full` refuses while any of the five required names is missing.
 
 The font files match `checkpoint/SHA256SUMS` and live at `assets/fonts/ofl/imfelldwpica/`. The first-cut assembler still opens `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`.
 
-`pytest -q` after the effect table and this record: 57 passed, 1 skipped. The tests do not render the film.
+`pytest -q` after this pass: 58 passed, 1 skipped. The tests do not render the film.
 
 ## Commands
 
@@ -141,9 +146,10 @@ python tools/assemble_opening_test_two.py --full
 
 ## Known limits
 
-- Motion from a generated clip exists only on S001. That H06 file is 6.04 s and 720p, and S001 uses the first 4.95 s. S002 is a still crop of the same painting. A second clip was quoted at 42 credits for 720p and 96 for 1080p, which is outside this cap. Everywhere else, the moving pixels are candle, torch, smoke, or the letter's spill.
-- S002's 1:1 crop shows the hands and the seal, and it cuts Kent's face off. L02, including "Edward the Second," plays on that crop. The shot list had asked for his face and the signet hand together. The crop was chosen so the seal stayed at one source pixel per output pixel. It is the wrong frame for the sentence that names Edward.
-- The H06 clip stays 720p. A reshoot does not fit the remaining 1.50 credits.
+- Motion from a generated clip exists only on S001. That H06 file is 6.04 s and 720p, and S001 uses the first 4.95 s. It is not extended. Everywhere else, the moving pixels are the scale push plus candle, torch, smoke, or the letter's spill.
+- S002 shows Kent. S002b shows Edward on the accepted throne plate. The sealing action is not repeated.
+- The H06 clip stays 720p. A 1080p replacement was quoted at 96 credits, which the 26-credit balance cannot pay. The 42-credit 720p quote is rejected.
+- S004 is still the raised-axe plate. The resting-axe still is quoted at 2.75 and has not been generated.
 - S004's rain does not move. Warping the plate to fake rain was rejected.
 - S003, S004, and S009 are more photographic than the kept Nano Banana plates. S007 and S007a sit closer to N01. The cut between those finishes is visible.
 - N01's extra fleurs and the hand-on-chin pose remain on the one wide, S008.

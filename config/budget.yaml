@@ -9,9 +9,9 @@ elevenlabs:
   ask_before_credits: 30000
   scope: this Edward draft
   spent_credits: 0
-  characters_sent: 1101
-  character_cost_header: 464
-  note: Screenshot totals are a record, not a live balance. characters_sent is the 70-character test line, 1,013 characters of opening VO, and the 18-character title line. The character-cost header sums to 464. The subscription endpoint returned 401, so spent_credits stays 0.
+  characters_sent: 1467
+  character_cost_header: 626
+  note: Screenshot totals are a record, not a live balance. characters_sent is the 70-character test line, 1,013 characters of opening VO, the first title line as originally logged, and six spoken re-reads (L04 is 82 characters, the title is 40, three calls each). Neighbour context was sent and is not in that character total. The character-cost header sums to 626, of which 162 is those six calls. The subscription endpoint returned 401, so spent_credits stays 0.
 
 higgsfield:
   status: sample-authorized
@@ -19,7 +19,7 @@ higgsfield:
   reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. The 6:20 PM review notes used the last two submissions, 5.50 credits. Spent 22.00 across 8 submissions. 1.50 credits are left and there are no submissions left. That remainder is not a new budget. No plan purchase. Full-film budget still waits.
   plan_observed: plus
   credits_observed: 26
-  observed_at: 2026-11-04T23:30:00Z
+  observed_at: 2026-11-05T01:30:00Z
   image_model: nano_banana_pro
   image_model_status: pack-confirmed
   mcp_general_default: gpt_image_2_5

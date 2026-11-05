@@ -1,8 +1,9 @@
 """One geometric resample from a plate to the delivery frame.
 
-Crop edges stay in floating point. A slow move no longer snaps to whole
-source pixels before the resize. Test two keeps the camera still: ``z``,
-``cx`` and ``cy`` do not change across a shot.
+Crop edges stay in floating point. A slow move does not snap to whole
+source pixels before the resize. A shot may ease ``z`` by a few percent.
+The window stays on the plate, so the resample does not reveal an edge
+by reflecting it.
 """
 
 from __future__ import annotations
@@ -52,6 +53,12 @@ class Cover:
             [sx, 0.0, self.x0 + 0.5 * sx - 0.5],
             [0.0, sy, self.y0 + 0.5 * sy - 0.5],
         ])
+
+
+def smoothstep(u: float) -> float:
+    """Ease used by a scale-only push. Flat at both ends, so it does not tick."""
+    u = min(1.0, max(0.0, float(u)))
+    return u * u * (3.0 - 2.0 * u)
 
 
 def cover_window(

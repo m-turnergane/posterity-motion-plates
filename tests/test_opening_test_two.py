@@ -29,6 +29,27 @@ def test_float_sample_moves_when_integer_crop_does_not():
     assert not np.array_equal(c, d)
 
 
+def test_eased_push_moves_and_stays_on_the_plate():
+    from motionplates.opening.camera import smoothstep
+
+    assert smoothstep(0.0) == 0.0
+    assert smoothstep(1.0) == 1.0
+    assert 0.0 < smoothstep(0.5) < 1.0
+    rest = cover_window(2752, 1536, 1.0, 0.5, 0.5)
+    pushed = cover_window(2752, 1536, 1.04, 0.5, 0.5)
+    kent = cover_window(2752, 1536, 1.28, 0.38, 0.48)
+    assert not rest.upscales
+    assert not pushed.upscales
+    assert not kent.upscales
+    assert pushed.cw < rest.cw
+    plate = np.zeros((1536, 2752, 3), np.uint8)
+    plate[:, :, 0] = np.linspace(0, 255, 2752, dtype=np.uint8)[None, :]
+    a = cover_sample(plate, 1.0, 0.5, 0.5)
+    b = cover_sample(plate, 1.04, 0.5, 0.5)
+    assert a.shape == b.shape == (1080, 1920, 3)
+    assert not np.array_equal(a, b)
+
+
 def test_cover_at_rest_does_not_upscale_a_large_plate():
     cam = cover_window(2752, 1536, 1.0, 0.5, 0.5)
     assert cam.cw >= 1920 - 1e-6

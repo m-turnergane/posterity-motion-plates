@@ -189,7 +189,8 @@ def act_card(local: float, fade: float = 0.35) -> np.ndarray:
 
 
 class Intro:
-    def __init__(self, leaf: np.ndarray, wordmark: np.ndarray):
+    def __init__(self, leaf: np.ndarray, wordmark: np.ndarray, act_at: float = ACT_AT):
+        self.act_at = act_at
         self.paper = parchment_from_leaf(leaf)
         wm = wordmark[:, :, 3] if wordmark.ndim == 3 else wordmark
         target = 1080
@@ -202,8 +203,8 @@ class Intro:
         self.title_at = _place(self.title.alpha, 250 + word.shape[0] + 36)
 
     def frame(self, local: float) -> np.ndarray:
-        if local >= ACT_AT:
-            return act_card(local - ACT_AT)
+        if local >= self.act_at:
+            return act_card(local - self.act_at)
         frame = self.paper.copy()
         word_u = _ease(min(1.0, max(0.0, (local - 0.35) / 2.45)))
         if word_u > 0:

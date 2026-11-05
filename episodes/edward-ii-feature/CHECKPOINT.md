@@ -266,7 +266,7 @@ These are in `tools/assemble_opening_sample.py` as committed. Test two is the pl
 
 ### Later, the same day
 
-At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions. Later the same evening the second cut switched its bed to Penumbra, added the spoken title, and replaced two plates. Spend, sources, and the export check are in [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). This checkpoint's first-cut file was not rebuilt. A fresh session should read that record before treating the paragraphs above as the current spend state. The balance in the table in this section is the 3:04 PM read.
+At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions. Later the same evening the second cut switched its bed to Penumbra, added the spoken title, and replaced two plates. After 8:25 PM the current plan is [`ACT-I-PLAN.md`](ACT-I-PLAN.md), and the spend record is [`TEST-TWO-RECORD.md`](TEST-TWO-RECORD.md). This checkpoint's first-cut file was not rebuilt. A fresh session should read the plan before treating the paragraphs above as the current picture or the current spend. The balance in the table in this section is the 3:04 PM read.
 
 ### Secrets for a new session
 
@@ -278,7 +278,7 @@ At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions.
 2. The test-two intro reads `assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`. The first-cut assembler still points at `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`.
 3. The ElevenLabs secret, only if a new line is actually authorized. The nine takes are in the zip. Do not re-render them.
 4. The Drive connection, for image parts and the two reference paintings.
-5. The test-two cap is closed. Spent 16.50 of 23.50. Further generation waits on the owner's review of `opening-sample-test-two.mp4`. Do not treat the leftover 7.00 credits as a new authorization.
+5. The test-two cap is closed at 22.00 of 23.50. The leftover 1.50 is not a new authorization. The current picture plan, the voice corrections, and the unsent quote are in `ACT-I-PLAN.md`.
 6. The ink-inspiration images, if the owner still wants them. They were not found.
 7. The two coordinate JSON files, only when map registration starts. They sit in Drive zips this connector cannot download.
 8. Leave PR #5 unmerged. Leave the first `opening-sample.mp4` untouched.

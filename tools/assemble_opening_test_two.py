@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Second pass of the Edward II opening.
 
-Same Oliver takes and the same line timing as the first cut.
-The Act I bed is Penumbra from 0:30, and the intro gap carries one new line.
-The picture path is different: a locked camera, one float resample, the
-house flame and smoke on the shots that have a flame, a black-ink
-wordmark, and a black ACT I card.
+The nine accepted Oliver takes stay. The beheading line and the spoken
+title may be replaced in this cut's voice directory when a calmer take
+wins the comparison. The Act I bed is Penumbra from 0:30. The picture
+path is a float resample, a scale-only push of a few percent, house flame
+and smoke painted on the plate before that resample, a black-ink wordmark,
+and a black ACT I card. Depth is not used on these shots, so the push is
+the only camera move.
 
 Replacement plates, when they exist, live in
 ``var/edward-ii-feature/opening-sample-test-two/plates`` and override the
@@ -20,6 +22,7 @@ Higgsfield or ElevenLabs.
 
 from __future__ import annotations
 
+import copy
 import importlib.util
 import json
 import subprocess
@@ -33,7 +36,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from motionplates.opening.camera import OUT_H, OUT_W, cover_sample, cover_window  # noqa: E402
+from motionplates.opening.camera import OUT_H, OUT_W, cover_window, smoothstep, warp  # noqa: E402
 from motionplates.opening.clip import load_clip  # noqa: E402
 from motionplates.opening.effects import HouseLight  # noqa: E402
 from motionplates.opening.intro import Intro  # noqa: E402
@@ -193,15 +196,54 @@ def plate_path(name: str) -> Path:
     return PLATES / name
 
 
-def camera_for(shot: str, plate: np.ndarray):
+# Scale-only. z is (start, end). Absent shots ease 1.00 to 1.04 around the centre.
+# S002 holds Kent's face and signet hand. S002b is the accepted Edward medium,
+# shown when the second sentence of L02 names him. Neither window upscales.
+FRAMING = {
+    "S002": {"z": (1.25, 1.28), "cx": 0.38, "cy": 0.48},
+    "S002b": {"z": (1.00, 1.025), "cx": 0.50, "cy": 0.50},
+}
+DEFAULT_Z = (1.00, 1.04)
+
+
+def framing_at(plate: np.ndarray, shot: str, local: float, duration: float):
+    spec = FRAMING.get(shot, {})
+    z0, z1 = spec.get("z", DEFAULT_Z)
+    cx = float(spec.get("cx", 0.5))
+    cy = float(spec.get("cy", 0.5))
+    span = duration if duration > 1e-6 else 1.0
+    z = z0 + (z1 - z0) * smoothstep(local / span)
     h, w = plate.shape[:2]
-    if shot == "S002":
-        # Left-hand 1920x1080 of the sealing still: candle, hands, blank letter.
-        # One source pixel per output pixel on a 2752x1536 plate.
-        z_cap = 1.0 / max(OUT_W / w, OUT_H / h)
-        cx, cy = 960 / REF_W, 996 / REF_H
-        return cover_window(w, h, z_cap, cx, cy)
-    return cover_window(w, h, 1.0, 0.5, 0.5)
+    cam = cover_window(w, h, z, cx, cy)
+    if cam.upscales:
+        raise ValueError(f"{shot} zoom {z:.3f} upscales a {w}x{h} plate")
+    return cam
+
+
+def plate_cover(plate: np.ndarray):
+    """Identity window: one plate pixel in, one plate pixel out."""
+    h, w = plate.shape[:2]
+    return cover_window(w, h, 1.0, 0.5, 0.5, out_w=w, out_h=h)
+
+
+def _scale_delivery_sizes(spec: dict, k: float) -> dict:
+    """Sizes authored against the 1080 frame, expressed in plate pixels.
+
+    Positions are already plate pixels. Scaling the sizes by the rest
+    window's plate-pixels-per-frame keeps the accepted flame size at the
+    start of the shot, and the later warp carries them with the painting.
+    """
+    spec = copy.deepcopy(spec)
+    for src in spec.get("offscreen", []):
+        src["h"] = float(src.get("h", 70)) * k
+        src["radius"] = float(src.get("radius", 900)) * k
+    for src in spec.get("smoke", []):
+        for key in ("height", "w0", "w1", "rise"):
+            if key in src:
+                src[key] = float(src[key]) * k
+    if "protect_feather" in spec:
+        spec["protect_feather"] = float(spec["protect_feather"]) * k
+    return spec
 
 
 def load_plates(names: set[str]) -> dict[str, np.ndarray]:
@@ -227,28 +269,46 @@ def shot_views(pictures, plates):
             img = plates[plate_name]
         else:
             img = plates[shot["plate"]]
-        cam = camera_for(name, img)
-        views[name] = {"plate": img, "cam": cam, "name": plate_name if name in REQUIRED else shot["plate"]}
+        views[name] = {
+            "plate": img,
+            "shot": name,
+            "name": plate_name if name in REQUIRED else shot["plate"],
+            "duration": shot["stop"] - shot["start"],
+        }
     return views
 
 
 def render_still(view, fx, t: float) -> np.ndarray:
-    if fx is not None and fx.active:
-        return fx.render(t)
-    return cover_sample(view["plate"], view["cam"].z, view["cam"].cx, view["cam"].cy)
+    return moving_frame(view, fx, t, view["duration"])
+
+
+def fx_source(name: str) -> dict | None:
+    if name == "S002b":
+        return FX["S007a"]
+    return FX.get(name)
 
 
 def build_lights(views) -> dict:
+    """Flame and smoke on the plate, then the camera resamples that plate."""
     lights = {}
     work = OUT / "build" / "fx"
     for name, view in views.items():
-        if name not in FX:
+        source = fx_source(name)
+        if source is None:
             continue
-        spec = scale_fx(FX[name], *view["plate"].shape[1::-1])
-        base = cover_sample(view["plate"], view["cam"].z, view["cam"].cx, view["cam"].cy)
-        spec["cam"] = view["cam"]
-        lights[name] = HouseLight(base, spec, seed=1611, work=work, key=name.lower())
+        rest = framing_at(view["plate"], name, 0.0, view["duration"])
+        spec = _scale_delivery_sizes(scale_fx(source, *view["plate"].shape[1::-1]), rest.cw / rest.out_w)
+        spec["cam"] = plate_cover(view["plate"])
+        lights[name] = HouseLight(view["plate"], spec, seed=1611, work=work, key=name.lower())
     return lights
+
+
+def moving_frame(view, light, local: float, duration: float) -> np.ndarray:
+    local = max(0.0, local)
+    cam = framing_at(view["plate"], view["shot"], local, duration)
+    if light is not None and light.active:
+        return warp(light.render(local), cam)
+    return warp(view["plate"], cam)
 
 
 def save(frame: np.ndarray, path: Path) -> None:
@@ -281,6 +341,7 @@ def write_contact(frames: list[tuple[str, np.ndarray]], path: Path, cols: int = 
 
 def proofs(audio_mod) -> dict:
     audio, pictures, duration = audio_mod.build_timeline()
+    pictures = revise_pictures(audio_mod, audio, pictures)
     names = {p["plate"] for p in pictures if not p.get("intro")}
     names.add("CB1.png")
     plates = load_plates(names)
@@ -315,18 +376,19 @@ def proofs(audio_mod) -> dict:
     for name, local_times in (("S002", (0.0, 0.6, 1.4)), ("S005", (0.0, 0.7, 1.6)), ("S008", (0.0, 0.8, 1.8))):
         view = views[name]
         light = lights.get(name)
-        base = cover_sample(view["plate"], view["cam"].z, view["cam"].cx, view["cam"].cy)
+        rest = framing_at(view["plate"], name, 0.0, view["duration"])
+        base = moving_frame(view, None, 0.0, view["duration"])
         for t in local_times:
-            frame = light.render(t) if light is not None else base
+            frame = moving_frame(view, light, t, view["duration"])
             save(frame, dest / f"{name}-{t:.1f}.jpg")
             effect_frames.append((f"{name} {t:.1f}s", frame))
-        moved = light.render(1.25) if light is not None else base
+        moved = moving_frame(view, light, 1.25, view["duration"])
         diff = np.abs(moved.astype(np.int16) - base.astype(np.int16)).max(axis=2)
         thirds = diff.shape[1] // 3
         report[name] = {
-            "source_wh": [round(view["cam"].cw, 2), round(view["cam"].ch, 2)],
-            "upscales": view["cam"].upscales,
-            "z": round(view["cam"].z, 4),
+            "source_wh": [round(rest.cw, 2), round(rest.ch, 2)],
+            "upscales": rest.upscales,
+            "z": round(rest.z, 4),
             "mean_abs_diff_at_1.25s": round(float(diff.mean()), 3),
             "max_abs_diff_at_1.25s": int(diff.max()),
             "mean_abs_diff_thirds": [
@@ -354,6 +416,7 @@ def proofs(audio_mod) -> dict:
         "duration": round(clip.duration, 3),
         "size": list(clip.frames[0].shape[1::-1]),
         "camera": "source clip, no second move",
+        "push": "none on the clip",
     }
     manifest = {
         "duration": round(duration, 3),
@@ -374,6 +437,42 @@ def missing_plates() -> list[str]:
     return [name for name in REQUIRED if not (OUT / "plates" / f"{name}.png").exists()]
 
 
+def revise_pictures(mod, audio, pictures):
+    """Kent's face while he is named, then Edward when the line names Edward.
+
+    The sealing clip is not extended. The second picture is the accepted
+    throne medium already used later in the cut.
+    """
+    words = mod.words_of("L02")
+    line = next(item for item in audio if item["id"] == "L02")
+    split_rel = None
+    seen_kent = False
+    for start, _end, word in words:
+        if word.startswith("Kent"):
+            seen_kent = True
+        elif seen_kent and word == "The":
+            split_rel = start
+            break
+    if split_rel is None:
+        raise SystemExit("L02 has no second sentence to cut on")
+    split = line["speech_start"] + (split_rel - words[0][0])
+    revised = []
+    for shot in pictures:
+        if shot["shot"] != "S002":
+            revised.append(shot)
+            continue
+        if not (shot["start"] < split < shot["stop"]):
+            raise SystemExit(f"L02 split {split:.3f} falls outside S002")
+        kent = dict(shot)
+        edward = dict(shot)
+        kent["stop"] = split
+        edward["start"] = split
+        edward["shot"] = "S002b"
+        edward["plate"] = "S007a.png"
+        revised.extend((kent, edward))
+    return revised
+
+
 def picture_at(t, pictures, views, lights, intro, clip):
     shot = pictures[-1]
     for item in pictures:
@@ -387,10 +486,7 @@ def picture_at(t, pictures, views, lights, intro, clip):
     if name == "S001":
         return clip.rgb_at(max(0.0, local))
     view = views[name]
-    light = lights.get(name)
-    if light is not None and light.active:
-        return light.render(max(0.0, local))
-    return cover_sample(view["plate"], view["cam"].z, view["cam"].cx, view["cam"].cy)
+    return moving_frame(view, lights.get(name), local, shot["stop"] - shot["start"])
 
 
 def prepare_vo() -> Path:
@@ -405,11 +501,12 @@ def prepare_vo() -> Path:
     return dest
 
 
-def attach_title_line(mod, audio: list, pictures: list) -> list:
-    """Speak the brand and the title inside the existing intro gap.
+def attach_title_line(mod, audio: list, pictures: list, duration: float) -> tuple[list, float, float]:
+    """Speak the brand and the title, then cut to the act card after the line.
 
-    The nine locked lines stay where they are. The new line starts with the
-    ink and ends before the act card. A hyphen in the owner's wording is a
+    The nine accepted lines stay where they are. A longer title holds the
+    parchment and pushes the card, and the shots after the card, so the
+    line does not run under ACT I. The hyphen in the owner's wording is a
     pause, so the spoken text is two sentences.
     """
     title = OUT / "vo" / "TITLE.mp3"
@@ -419,9 +516,28 @@ def attach_title_line(mod, audio: list, pictures: list) -> list:
     words = mod.words_of("TITLE")
     first = words[0][0]
     spoken = words[-1][1] - first
-    start = intro["start"] + 0.45
+    lead = 0.40
+    start = intro["start"] + lead
     end = start + spoken
-    if end > intro["start"] + 5.05:
+    card_local = (end - intro["start"]) + 0.25
+    need = card_local + 1.80
+    have = intro["stop"] - intro["start"]
+    extra = max(0.0, need - have)
+    if extra:
+        boundary = intro["stop"]
+        for item in audio:
+            if item["speech_start"] >= boundary - 1e-3:
+                item["speech_start"] += extra
+                item["speech_end"] += extra
+                item["file_at"] += extra
+        for shot in pictures:
+            if shot.get("intro"):
+                shot["stop"] += extra
+            elif shot["start"] >= boundary - 1e-3:
+                shot["start"] += extra
+                shot["stop"] += extra
+        duration += extra
+    if end > intro["start"] + card_local - 0.15:
         raise SystemExit(f"title line runs to {end:.2f}s, into the act card")
     audio.append({
         "id": "TITLE",
@@ -430,7 +546,7 @@ def attach_title_line(mod, audio: list, pictures: list) -> list:
         "speech_start": start,
         "speech_end": end,
     })
-    return audio
+    return audio, duration, card_local
 
 
 def encode_full(mod) -> None:
@@ -447,7 +563,8 @@ def encode_full(mod) -> None:
     mod.SCORE = VAR / "retrieved/score/Penumbra.mp3"
     mod.SCORE_START = 30.0
     audio, pictures, duration = mod.build_timeline()
-    audio = attach_title_line(mod, audio, pictures)
+    pictures = revise_pictures(mod, audio, pictures)
+    audio, duration, card_at = attach_title_line(mod, audio, pictures, duration)
     names = set()
     for shot in pictures:
         if shot.get("intro") or shot["shot"] == "S001":
@@ -462,9 +579,14 @@ def encode_full(mod) -> None:
             continue
         plate_name = f"{name}.png" if name in REQUIRED else shot["plate"]
         img = plates[plate_name]
-        views[name] = {"plate": img, "cam": camera_for(name, img), "name": plate_name}
+        views[name] = {
+            "plate": img,
+            "shot": name,
+            "name": plate_name,
+            "duration": shot["stop"] - shot["start"],
+        }
     lights = build_lights(views)
-    intro = Intro(plates["CB1.png"], np.asarray(Image.open(WORDMARK).convert("RGBA")))
+    intro = Intro(plates["CB1.png"], np.asarray(Image.open(WORDMARK).convert("RGBA")), act_at=card_at)
     clip = load_clip(str(CLIP))
     (OUT / "build").mkdir(parents=True, exist_ok=True)
     voice = OUT / "build/voice.wav"
@@ -509,9 +631,15 @@ def encode_full(mod) -> None:
 def main() -> None:
     mod = cut_one()
     if "--timeline" in sys.argv:
-        _audio, pictures, duration = mod.build_timeline()
+        mod.VO = prepare_vo()
+        audio, pictures, duration = mod.build_timeline()
+        pictures = revise_pictures(mod, audio, pictures)
+        audio, duration, card_at = attach_title_line(mod, audio, pictures, duration)
+        title = next(item for item in audio if item["id"] == "TITLE")
         print(json.dumps({
             "duration": round(duration, 3),
+            "act_card_at": round(card_at, 3),
+            "title": {"start": round(title["speech_start"], 3), "end": round(title["speech_end"], 3)},
             "shots": [
                 {"shot": p["shot"], "start": round(p["start"], 3), "stop": round(p["stop"], 3)}
                 for p in pictures

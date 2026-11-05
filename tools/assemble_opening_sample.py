@@ -493,7 +493,7 @@ def write_captions(audio: list[dict], srt: Path, vtt: Path) -> int:
             merged[-1].extend(cue)
         else:
             merged.append(cue)
-    cues = merged
+    cues = sorted(merged, key=lambda cue: cue[0][0])
 
     def ts(t: float, comma: str) -> str:
         t = max(0.0, t)

@@ -1,6 +1,6 @@
 # Opening sample, test two — pending
 
-Status: pending. This is the owner's brief for a future second pass of the same opening. It does not authorize generation, spend, a merge, or the full film.
+Status: the second pass was encoded. This file is the 3:00 PM brief. Where it freezes the camera, crops S002 to the hands, or keeps the axe raised, `ACT-I-PLAN.md` supersedes it. It still does not authorize a new generation, a merge, or the full film.
 
 The first cut stays intact. Its file is `opening-sample.mp4`, 69.733 seconds, recorded in `OPENING-SAMPLE.md` and `CHECKPOINT.md`. The future export, when a pass is authorized, is a separate file named `opening-sample-test-two.mp4`.
 
