@@ -1,0 +1,11 @@
+{
+  "_note": "Locked water_v1 reel: three cases, static framing, hard cuts. Shot 2 (K11) is a KNOWN BAD EXAMPLE.",
+  "note": "water_v1 reel: three painted-light-on-still-water cases, static framing, hard cuts. Best-reading plate first. (1) moonlight path (Nan Madol seq4a), (2) torch/fire reflections pulsing on the torch_v1c curve with torch_v1c on the source fire (Jianwen K11 - BAD EXAMPLE), (3) sun glitter (Ugarit P05 v2). Sea never moves: changes only inside the water/reflection mattes (+ painted flame pixels for K11).",
+  "size": "1080x1920",
+  "crf": 26,
+  "shots": [
+    {"config": "nm4a_moon_path_v1b.json", "seconds": 6.0},
+    {"config": "k11_fire_reflection_v1b.json", "seconds": 6.0, "_note": "KNOWN BAD EXAMPLE - refused by guardrails"},
+    {"config": "p05v2_sun_glitter_v1d.json", "seconds": 6.0}
+  ]
+}
