@@ -38,4 +38,4 @@ The long-form pilot. Desk files are in `inbox/VIDEO-PACK-v2/`, unchanged. The re
 
 ## Next action
 
-The opening cut matches `ACT-I-PLAN.md` except S004, which is still the raised-axe plate. The resting-axe still is quoted at 2.75 credits, with one retry, and has not been submitted. A 1080p landing clip is quoted at 96 and does not fit the 26-credit balance. Do not submit either, merge, publish, or start the full film until that spend is authorized. Explorer's Chart is still a proposal. PR #5 stays unmerged.
+`ACT-I-PLAN.md` was amended on the morning of 5 Nov 2026, America/Toronto. The opening cut matches the rows already in the film. S004 is still the raised-axe plate. The Act I base is 33.25 credits and the maximum proposal is 138.50. The balance, re-read that morning, is 26, which does not pay the base. Do not submit a still or a clip, merge, publish, or start the full film until that spend is authorized. The smaller review file and the recovery manifest are in `TEST-TWO-RECORD.md` and `checkpoint/RECOVERY-2026-11-05.md`. Explorer's Chart is still a proposal. PR #5 stays unmerged.

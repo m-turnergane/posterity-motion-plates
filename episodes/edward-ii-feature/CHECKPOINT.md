@@ -6,6 +6,8 @@ A later session the same day, still on this branch, recovered the zip below, bui
 
 The first cut stays the comparison copy. Its production note is `OPENING-SAMPLE.md`. The pending second-pass brief is `OPENING-TEST-TWO.md`. Per-file sums for the recovery zip are `checkpoint/SHA256SUMS`. The shot clock is `checkpoint/timeline.json`.
 
+The zip in section 3 is the first cut. It does not contain Penumbra, the re-read L04 and title, the test-two plates, or the effects and clock of the revised opening. Those are `checkpoint/RECOVERY-2026-11-05.md`.
+
 ## 1. What is accepted
 
 Desk pack: VIDEO-PACK v2.1, in `inbox/VIDEO-PACK-v2/`, unchanged. Retrieval note: `PACK-RECEIPT.md`. Owner messages outrank the pack. The pilot override outranks the README. The README outranks the shot list and plate prompts. Shot intent governs a prompt. Map pack, registration, the intro brief, the score plan, and the style sample sit under those. Sources sit under those.

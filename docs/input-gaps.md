@@ -9,7 +9,7 @@ Grouped by who can close them. A gap blocks paid or editorial work only when the
 | Live ElevenLabs balance. The `sk_` secret works, and the subscription endpoint returned 401 | Nothing for the opening lines. The nine lines were 1,013 characters. The 30,000-credit ask still applies before a full-film pass |
 | Explorer's Chart as the Edward map class. depth_v1 stays off unless the owner says otherwise | The map class only |
 | Two coordinate files still only inside the oversized media zips: `waypoint_coords_wikidata_2026-10-30.json` and `wikipedia_coords_2026-10-30.json` | Map registration. Not needed for the opening sample |
-| Full-film Higgsfield cap. Test two is closed at 22.00 of 23.50. Balance re-read at about 8:30 PM America/Toronto on 4 Nov 2026 was 26. `ACT-I-PLAN.md` quotes the next still at 2.75, with one retry, and a 1080p clip at 96 that the balance cannot pay. None of that is submitted | The full film, and any paid Act I expansion |
+| Full-film Higgsfield cap. Test two is closed at 22.00 of 23.50. Balance re-read on the morning of 5 Nov 2026, America/Toronto, was still 26. `ACT-I-PLAN.md` quotes the Act I base at 33.25 and a maximum of 138.50. The balance cannot pay the base. None of that is submitted | The full film, and any paid Act I expansion |
 | Ink-on-paper inspiration images named in the test-two brief | Nothing yet. They were not attached and were not found. The candlelight and rain-swept paintings were found. See `CHECKPOINT.md` |
 
 ## Desk / next pack

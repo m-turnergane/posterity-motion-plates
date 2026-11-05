@@ -628,6 +628,32 @@ def encode_full(mod) -> None:
     print(json.dumps({"file": str(final), "cues": cues, "lufs": integrated, "peak": peak}))
 
 
+def write_review() -> None:
+    """Smaller review file. The crf-16 master is left where it is.
+
+    Uncapped crf 18 of this cut is about 122 MB and does not fit the review
+    volume. The rate cap keeps a high-quality 1080p file under that limit.
+    """
+    master = OUT / "opening-sample-test-two.mp4"
+    dest = OUT / "opening-sample-test-two-review.mp4"
+    if not master.exists():
+        raise SystemExit(f"missing master {master}")
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-i", str(master),
+            "-c:v", "libx264", "-preset", "slow", "-crf", "18",
+            "-maxrate", "8000k", "-bufsize", "16000k", "-pix_fmt", "yuv420p",
+            "-c:a", "aac", "-b:a", "192k",
+            "-c:s", "copy",
+            "-movflags", "+faststart",
+            str(dest),
+        ],
+        check=True,
+    )
+    print(dest)
+
+
 def main() -> None:
     mod = cut_one()
     if "--timeline" in sys.argv:
@@ -648,6 +674,9 @@ def main() -> None:
         return
     if "--full" in sys.argv:
         encode_full(mod)
+        return
+    if "--review" in sys.argv:
+        write_review()
         return
     proofs(mod)
 

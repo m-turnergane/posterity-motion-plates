@@ -21,6 +21,22 @@ After 8:25 PM America/Toronto the same evening, the cut was revised without a ne
 | Loudness | −14.0 LUFS integrated, true peak −1.3 dBTP |
 | Mix | Voice −19.4, bed −31.4, duck 4.9 |
 
+## Smaller review encode
+
+Made the morning of 5 Nov 2026, America/Toronto. This is a transcode of the master above. The master was not re-rendered and its hash is unchanged.
+
+`var/edward-ii-feature/opening-sample-test-two/opening-sample-test-two-review.mp4`
+
+| Check | Value |
+| --- | --- |
+| sha256 | `23ea109edcff7a01c42ffcc2f368c505da127abce105d2aa7354f49852e3cc4b` |
+| bytes | 63,693,053 |
+| Picture | H.264, 1920×1080, 30 fps, 2,122 frames, the same count as the master |
+| Encode | libx264, crf 18, maxrate 8000k, bufsize 16000k, AAC 192 kb/s, captions copied |
+| Audio and captions | Same programme as the master |
+
+An uncapped crf 18 of this cut was about 122 MB and would not copy onto the review volume. The cap is why this file is smaller. Frame steps inside each shot stay steady. The ink and the act card sit still. Between 5.3 s and 7.1 s the candle flame stays on the wick while the framing eases.
+
 The first sample is unchanged: `var/edward-ii-feature/opening-sample/opening-sample.mp4`, sha256 `f4f77a9f0f74122d84a19a5901f1d49ae3ce208fd4d837fcf54748bc786a44f8`, 65,284,020 bytes. `tools/assemble_opening_sample.py` still refuses unless `--rebuild-first-cut` is passed.
 
 Narration is the nine Oliver takes, with L04 and the spoken title replaced in this cut's voice directory only. The files in `opening-sample/vo` are unchanged. L04 keeps the house stability of 0.5, with the funeral line before it and the question after it. The title uses stability 0.72, with the question before it and L07 after it. Wording is unchanged. The comparison against the accepted lines is in [`ACT-I-PLAN.md`](ACT-I-PLAN.md). The title runs 25.313–30.886 s. The act card follows it, at local 6.223 s of the intro, absolute 31.136 s. The score is Penumbra from 0:30 of the file. md5 `2acea4098213d02c944d57a2faa19a51`. The first 30 s of that track is nearly silent, which is why SCORE-PLAN starts it at or after 0:30. Credit: 'Penumbra' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au. The first cut still uses Anabasis I.
@@ -119,7 +135,7 @@ Balance before this authorization, read at 3:49 PM America/Toronto: 48 credits, 
 
 The ledger matches 48 − 22.00 = 26. The 4k S004 slot was not used. One and a half credits remain, and no submission slot remains. That remainder is not a new budget. `config/budget.yaml` holds the pass at `owner-review`.
 
-Account total spent is now 84: the opening 62, plus this 22.00. ElevenLabs `spent_credits` stays 0 because the subscription endpoint is still unread. Characters sent are 1,467. The character-cost header is 626, of which 162 is the six L04 and title calls. The live quotes, not spent, are a high 2k still at 2.75, a high 4k still at 4.25, a 1080p 6 s clip at 96, and a 720p 6 s clip at 42. The 720p price is rejected. See [`ACT-I-PLAN.md`](ACT-I-PLAN.md).
+Account total spent is now 84: the opening 62, plus this 22.00. ElevenLabs `spent_credits` stays 0 because the subscription endpoint is still unread. Characters sent are 1,467. The character-cost header is 626, of which 162 is the six L04 and title calls. The live quotes, not spent, were reconfirmed on the morning of 5 Nov 2026. A high 2k still is 2.75 and a high 4k still is 4.25. The Act I clip comparison, including Seedance 1080p at 96, is in [`ACT-I-PLAN.md`](ACT-I-PLAN.md). The 720p price is rejected. Nothing in that inventory was submitted. The balance that morning was still 26.
 
 `nano_banana_pro` at 2 credits was a price reference only. No Seedance job was submitted. No plan was bought.
 

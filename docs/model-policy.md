@@ -17,7 +17,7 @@ Discover ids and prices at call time. Do not hardcode a credit price from the No
 
 ## Spend rules
 
-- Higgsfield balance is not a cap. The opening pass left 48 credits. Test two then had its own cap, 23.50 credits and 8 submissions, and spent 22.00. Re-read at about 8:30 PM America/Toronto on 4 Nov 2026, the balance was still 26. The leftover 1.50 is not a new authorization. The next quoted still is in `episodes/edward-ii-feature/ACT-I-PLAN.md` and has not been submitted. Ask before that still, a plan upgrade, the full film, or any spend that would exhaust the account. A model's `supports_unlim` flag and a website Unlimited label do not make an MCP call free when `unlim.available` is false.
+- Higgsfield balance is not a cap. The opening pass left 48 credits. Test two then had its own cap, 23.50 credits and 8 submissions, and spent 22.00. Re-read on the morning of 5 Nov 2026, America/Toronto, the balance was still 26. The leftover 1.50 is not a new authorization. The Act I inventory is in `episodes/edward-ii-feature/ACT-I-PLAN.md` and has not been submitted. Ask before that still, a plan upgrade, the full film, or any spend that would exhaust the account. A model's `supports_unlim` flag and a website Unlimited label do not make an MCP call free when `unlim.available` is false.
 - ElevenLabs: record characters per call. Stop and ask before the running draft total would pass about 30,000 credits. One short setup line does not need a fresh ask.
 - Do not buy a plan, add credits, or turn on auto top-up.
 - Cache by input hash. A timeout resumes the saved job id. It does not submit a second job.

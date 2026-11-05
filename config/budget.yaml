@@ -16,10 +16,10 @@ elevenlabs:
 higgsfield:
   status: sample-authorized
   hold: owner-review
-  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. The 6:20 PM review notes used the last two submissions, 5.50 credits. Spent 22.00 across 8 submissions. 1.50 credits are left and there are no submissions left. That remainder is not a new budget. No plan purchase. Full-film budget still waits.
+  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. The 6:20 PM review notes used the last two submissions, 5.50 credits. Spent 22.00 across 8 submissions. 1.50 credits are left and there are no submissions left. That remainder is not a new budget. No plan purchase. Full-film budget still waits. Re-read about 10:45 AM America/Toronto on 5 Nov 2026 was still 26. The Act I quote was not submitted. A recovery-archive upload is a file store, not a generation.
   plan_observed: plus
   credits_observed: 26
-  observed_at: 2026-11-05T01:30:00Z
+  observed_at: 2026-11-05T15:45:00Z
   image_model: nano_banana_pro
   image_model_status: pack-confirmed
   mcp_general_default: gpt_image_2_5

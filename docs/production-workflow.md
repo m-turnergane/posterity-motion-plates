@@ -51,9 +51,10 @@ pytest -q
 python tools/assemble_opening_test_two.py --timeline
 python tools/assemble_opening_test_two.py
 python tools/assemble_opening_test_two.py --full
+python tools/assemble_opening_test_two.py --review
 ```
 
-The first command prints the current clock, including the Kent/Edward split and the title. It is no longer the locked 69.740 s clock. The second writes intro and effect proofs under `var/edward-ii-feature/opening-sample-test-two/proofs/` and does not call Higgsfield or ElevenLabs. The third writes `opening-sample-test-two.mp4` once `S003.png`, `S004.png`, `S007.png`, `S007a.png`, and `S009.png` are in `var/edward-ii-feature/opening-sample-test-two/plates/`, and refuses while any of them is missing. Rebuilding the comparison cut takes `python tools/assemble_opening_sample.py --rebuild-first-cut` and overwrites `opening-sample.mp4`. The forward plan is `episodes/edward-ii-feature/ACT-I-PLAN.md`.
+The first command prints the current clock, including the Kent/Edward split and the title. It is no longer the locked 69.740 s clock. The second writes intro and effect proofs under `var/edward-ii-feature/opening-sample-test-two/proofs/` and does not call Higgsfield or ElevenLabs. The third writes `opening-sample-test-two.mp4` once `S003.png`, `S004.png`, `S007.png`, `S007a.png`, and `S009.png` are in `var/edward-ii-feature/opening-sample-test-two/plates/`, and refuses while any of them is missing. `--review` transcodes that master to `opening-sample-test-two-review.mp4` and does not re-render the pictures. Rebuilding the comparison cut takes `python tools/assemble_opening_sample.py --rebuild-first-cut` and overwrites `opening-sample.mp4`. The forward plan is `episodes/edward-ii-feature/ACT-I-PLAN.md`.
 
 ## House build template (desk, not verified as a feature render)
 
@@ -77,7 +78,7 @@ Environment name: `ELEVENLABS_API_KEY`. Do not print it. The locked spoken scrip
 
 ## Higgsfield
 
-MCP is connected. The test-two cap has used all 8 submissions and the hold is `owner-review`. Name `nano_banana_pro` for stills, except the opening replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. The Act I quote, including the resting-axe still, is in `episodes/edward-ii-feature/ACT-I-PLAN.md` and is not submitted. Ask before that spend, a plan upgrade, the full film, or any spend that would exhaust the account. Balance re-read at about 8:30 PM America/Toronto on 4 Nov 2026 was 26.
+MCP is connected. The test-two cap has used all 8 submissions and the hold is `owner-review`. Name `nano_banana_pro` for stills, except the opening replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. The Act I inventory is in `episodes/edward-ii-feature/ACT-I-PLAN.md` and is not submitted. Ask before that spend, a plan upgrade, the full film, or any spend that would exhaust the account. Balance re-read on the morning of 5 Nov 2026, America/Toronto, was 26.
 
 ## Assembly checks
 
