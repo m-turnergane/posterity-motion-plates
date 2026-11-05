@@ -78,7 +78,7 @@ Environment name: `ELEVENLABS_API_KEY`. Do not print it. The locked spoken scrip
 
 ## Higgsfield
 
-MCP is connected. The test-two cap has used all 8 submissions and the hold is `owner-review`. Name `nano_banana_pro` for stills, except the opening replacements named in [`model-policy.md`](model-policy.md). Do not switch to the developer API. The Act I inventory is in `episodes/edward-ii-feature/ACT-I-PLAN.md` and is not submitted. Ask before that spend, a plan upgrade, the full film, or any spend that would exhaust the account. Balance re-read on the morning of 5 Nov 2026, America/Toronto, was 26.
+MCP is connected. The test-two cap has used all 8 submissions and the hold is `no-further-spend`. Do not call Higgsfield for a new still or a new clip. The pictures already made stay. New pictures are the ChatGPT list in `episodes/edward-ii-feature/ACT-I-PLAN.md`. At 12:33 PM America/Toronto on 5 Nov 2026, no further Higgsfield spending was authorized.
 
 ## Assembly checks
 

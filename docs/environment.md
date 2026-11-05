@@ -29,7 +29,7 @@ Names only.
 
 | Provider | Use | Auth |
 | --- | --- | --- |
-| Higgsfield MCP `https://mcp.higgsfield.ai/mcp` | Images and generative video, plan credits only | Signed in. Test two used its cap. The Act I inventory is quoted in `ACT-I-PLAN.md` and has not been submitted |
+| Higgsfield MCP `https://mcp.higgsfield.ai/mcp` | Images and generative video, plan credits only | Signed in. Test two used its cap. At 12:33 PM America/Toronto on 5 Nov 2026, no further spending was authorized. New pictures are ordinary ChatGPT chats |
 | ElevenLabs | Narration with timestamps | Secret name above |
 | Remotion 4.0.529 | Chronicle Reveal on the engine branch | Not installed this session. Composition is 1080×1920 and its default plate file is absent |
 | Google Drive | Plate archive `1oSSP805SIUXEVhGBA7ytg3vkcpegHR9w`, video dump `11_Rx49M2UUJByXAsZOwUFUjIpD45ncy_`, handoff zips in folder `109Cx5eBBjNwk2uokRHu5_H00ZqyKSC07` | Connected. `download_file` caps at 10 MB, so MEDIA-01 through MEDIA-07 were not retrieved |

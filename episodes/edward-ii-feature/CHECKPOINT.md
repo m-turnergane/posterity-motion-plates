@@ -220,7 +220,7 @@ From the repo, with `.venv` and `ffmpeg` on `PATH`:
 .venv/bin/python -u tools/assemble_opening_sample.py
 ```
 
-That command does not call ElevenLabs or Higgsfield. It reads plates, voice, score, and the wordmark from `var/edward-ii-feature/`, and it opens the font at the absolute path `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`. Replace that path on a new machine. The same font, the italic sibling, and `OFL.txt` are in the recovery zip and on `engine/consolidate-2026-11-04` at commit `1cf564e50e4a82460682534ef7ea59514f26c116`, path `fonts/ofl/imfelldwpica/`. Source Serif Pro is not on this machine.
+That command does not call ElevenLabs or Higgsfield. It reads plates, voice, score, and the wordmark from `var/edward-ii-feature/`. The title font is `assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf` in this repo. The italic sibling and `OFL.txt` are beside it. The same files are in the recovery zip and on `engine/consolidate-2026-11-04` at commit `1cf564e50e4a82460682534ef7ea59514f26c116`, path `fonts/ofl/imfelldwpica/`. Source Serif Pro is not on this machine.
 
 What actually ran:
 
@@ -277,10 +277,10 @@ At 5:39 PM America/Toronto the owner authorized 23.50 credits and 8 submissions.
 ### What a fresh session still needs
 
 1. This branch, and the recovery zip (media id or the CDN URL above). Confirm the zip sha256 before using it.
-2. The test-two intro reads `assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`. The first-cut assembler still points at `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`.
+2. The title font is `assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`. Both assemblers read that file.
 3. The ElevenLabs secret, only if a new line is actually authorized. The nine takes are in the zip. Do not re-render them.
 4. The Drive connection, for image parts and the two reference paintings.
-5. The test-two cap is closed at 22.00 of 23.50. The leftover 1.50 is not a new authorization. The current picture plan, the voice corrections, and the unsent quote are in `ACT-I-PLAN.md`.
+5. At 12:33 PM America/Toronto on 5 Nov 2026, no further Higgsfield spending was authorized. The picture plan is `ACT-I-PLAN.md`. The restore steps are in `STATUS.md`.
 6. The ink-inspiration images, if the owner still wants them. They were not found.
 7. The two coordinate JSON files, only when map registration starts. They sit in Drive zips this connector cannot download.
 8. Leave PR #5 unmerged. Leave the first `opening-sample.mp4` untouched.

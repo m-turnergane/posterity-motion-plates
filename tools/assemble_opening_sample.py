@@ -26,7 +26,7 @@ WORDMARK = ROOT / "var/edward-ii-feature/wordmark/posterity-master.png"
 SCORE = ROOT / "var/edward-ii-feature/retrieved/score/Anabasis_I.mp3"
 SCORE_START = 0.0
 I2V = VAR / "plates/H06-i2v.mp4"
-FONT = Path("/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf")
+FONT = ROOT / "assets/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf"
 
 W, H, FPS = 1920, 1080, 30
 GAP = 0.40

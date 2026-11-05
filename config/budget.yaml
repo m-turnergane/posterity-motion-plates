@@ -15,8 +15,8 @@ elevenlabs:
 
 higgsfield:
   status: sample-authorized
-  hold: owner-review
-  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. The 6:20 PM review notes used the last two submissions, 5.50 credits. Spent 22.00 across 8 submissions. 1.50 credits are left and there are no submissions left. That remainder is not a new budget. No plan purchase. Full-film budget still waits. Re-read about 10:45 AM America/Toronto on 5 Nov 2026 was still 26. The Act I quote was not submitted. A recovery-archive upload is a file store, not a generation.
+  hold: no-further-spend
+  reason: VIDEO-PACK v2.1, owner 12:35 PM America/Toronto. Opening test two was authorized at 23.50 credits and 8 submissions, owner 5:39 PM America/Toronto on 4 Nov 2026. The 6:20 PM review notes used the last two submissions, 5.50 credits. Spent 22.00 across 8 submissions. 1.50 credits are left and there are no submissions left. That remainder is not a new budget. No plan purchase. Re-read about 10:45 AM America/Toronto on 5 Nov 2026 was still 26. At 12:33 PM America/Toronto the same day the owner moved image generation back to ordinary ChatGPT chats and Atelier assembly. No further Higgsfield spending is authorized. Purchased assets stay. Do not submit a job.
   plan_observed: plus
   credits_observed: 26
   observed_at: 2026-11-05T15:45:00Z

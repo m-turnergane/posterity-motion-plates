@@ -135,7 +135,7 @@ Balance before this authorization, read at 3:49 PM America/Toronto: 48 credits, 
 | 6:25 PM | S003 stone effigy and S009 relit face, same settings | −5.50 |
 | **This authorization** | **8 of 8 submissions** | **−22.00** |
 
-The ledger matches 48 − 22.00 = 26. The 4k S004 slot was not used. One and a half credits remain, and no submission slot remains. That remainder is not a new budget. `config/budget.yaml` holds the pass at `owner-review`.
+The ledger matches 48 − 22.00 = 26. The 4k S004 slot was not used. One and a half credits remain, and no submission slot remains. That remainder is not a new budget. `config/budget.yaml` now holds the pass at `no-further-spend`.
 
 Account total spent is now 84: the opening 62, plus this 22.00. ElevenLabs `spent_credits` stays 0 because the subscription endpoint is still unread. Characters sent are 1,467. The character-cost header is 626, of which 162 is the six L04 and title calls. The live quotes, not spent, were reconfirmed on the morning of 5 Nov 2026. A high 2k still is 2.75 and a high 4k still is 4.25. The Act I clip comparison, including Seedance 1080p at 96, is in [`ACT-I-PLAN.md`](ACT-I-PLAN.md). The 720p price is rejected. Nothing in that inventory was submitted. The balance that morning was still 26.
 
@@ -145,7 +145,7 @@ Account total spent is now 84: the opening 62, plus this 22.00. ElevenLabs `spen
 
 `src/motionplates/opening/` and `tools/assemble_opening_test_two.py`. A still eases `z` and resamples in floating point. A window that upscales, or that leaves the plate, raises. Effects are built on the plate, then warped with that window. Replacement plates override recovered stills when the file exists under `var/edward-ii-feature/opening-sample-test-two/plates/`. `--full` refuses while any of the five required names is missing.
 
-The font files match `checkpoint/SHA256SUMS` and live at `assets/fonts/ofl/imfelldwpica/`. The first-cut assembler still opens `/tmp/engine-wt/fonts/ofl/imfelldwpica/IMFePIrm28P.ttf`.
+The font files match `checkpoint/SHA256SUMS` and live at `assets/fonts/ofl/imfelldwpica/`. Both assemblers open `IMFePIrm28P.ttf` there.
 
 `pytest -q` after this pass: 58 passed, 1 skipped. The tests do not render the film.
 

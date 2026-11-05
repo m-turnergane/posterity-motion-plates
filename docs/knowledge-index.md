@@ -5,7 +5,7 @@ Read this before a production task. Load only the row you need. Desk originals l
 | Topic | Read | Depth |
 | --- | --- | --- |
 | What to do this session | [`episodes/edward-ii-feature/STATUS.md`](../episodes/edward-ii-feature/STATUS.md) | Always |
-| Opening checkpoint, the second pass, and the current Act I plan | [`episodes/edward-ii-feature/ACT-I-PLAN.md`](../episodes/edward-ii-feature/ACT-I-PLAN.md), then [`TEST-TWO-RECORD.md`](../episodes/edward-ii-feature/TEST-TWO-RECORD.md). [`CHECKPOINT.md`](../episodes/edward-ii-feature/CHECKPOINT.md) and [`OPENING-TEST-TWO.md`](../episodes/edward-ii-feature/OPENING-TEST-TWO.md) are the earlier briefs | Before a new session. `ACT-I-PLAN.md` wins where the shot list or the test-two brief disagrees |
+| Opening checkpoint, the second pass, and the current Act I plan | [`episodes/edward-ii-feature/STATUS.md`](../episodes/edward-ii-feature/STATUS.md), then [`ACT-I-PLAN.md`](../episodes/edward-ii-feature/ACT-I-PLAN.md). The 5 Nov recovery is [`checkpoint/RECOVERY-2026-11-05.md`](../episodes/edward-ii-feature/checkpoint/RECOVERY-2026-11-05.md). The original recovery is [`CHECKPOINT.md`](../episodes/edward-ii-feature/CHECKPOINT.md) | Before a new session. `ACT-I-PLAN.md` wins where the shot list or an earlier brief disagrees |
 | Standing decisions and their status | [`decisions.md`](decisions.md) | Always for a choice that might already be settled |
 | Channel, story, evidence, art, maps, voice | [`posterity-playbook.md`](posterity-playbook.md) | The section the task touches |
 | Commands that have been run here | [`production-workflow.md`](production-workflow.md) | Before rendering or pushing |
