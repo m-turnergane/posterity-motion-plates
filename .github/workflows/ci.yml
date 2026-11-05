@@ -23,4 +23,7 @@ jobs:
       - name: repo hygiene (no plates / large binaries)
         run: |
           ! git ls-files | grep -Ei '\.(mp4|mov|wav)$'
-          test "$(git ls-files -z | xargs -0 du -c | tail -1 | cut -f1)" -lt 6000
+          # 6000 KB fit the engine repo alone. The Edward pack, the intake,
+          # and the OFL fonts are documents and type, and the tree is near
+          # 9700 KB. A production plate still exceeds the room under 12000.
+          test "$(git ls-files -z | xargs -0 du -c | tail -1 | cut -f1)" -lt 12000

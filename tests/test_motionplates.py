@@ -71,7 +71,8 @@ def test_presets_resolve():
 def test_plate_never_in_repo():
     root = os.path.abspath(os.path.join(HERE, ".."))
     tracked = subprocess.run(["git", "ls-files"], cwd=root, capture_output=True, text=True).stdout.split()
-    assert not [t for t in tracked if t.lower().endswith((".mp4", ".mov")) or "OWNER" in t]
+    # Desk text under intake/ may keep OWNER in a filename. Media and any other OWNER path still fail.
+    assert not [t for t in tracked if t.lower().endswith((".mp4", ".mov", ".avi")) or ("OWNER" in t and not t.startswith("intake/"))]
     assert not [t for t in tracked if t.lower().endswith((".png", ".jpg")) and not t.startswith(("tests/data/", "previews/thumbs/", "docs/img/"))]
 
 

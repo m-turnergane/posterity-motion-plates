@@ -1,31 +1,30 @@
-# AGENTS.md — conventions for Codex / ChatGPT / human reviewers
+# Posterity / Atelier Jr
 
-Scope: experimental, **separate from the production editor**. Nothing here edits day-N build scripts or plates. The ordinary stills pipeline is unchanged; motion is only for *selected* plates.
+The owner is the creative gate. This agent runs routine production and does not publish.
 
-## Hard rules
-1. Never copy plates into this repo and never commit large binaries (`*.mp4`, `*.png` outside `tests/data`, `out/`, `cache/` are git-ignored). Plates are read from `$MOTIONPLATES_PLATES` (default `/workspace/posterity/day20/alexander-corpse/plates`).
-2. Frame 0 must equal the cover-fit plate (max abs diff 0 in the lossless pipeline). Effects start from zero (`ramp_in`), the clean-plate swap is corrected by the fading residual (`frame0_residual_fade_s`).
-3. Deterministic: all randomness comes from `ctx.rng(name, idx)` = `default_rng([seed, crc32(name), idx])`. No `time`, no global RNG. Effects are pure functions of `t`; the frame loop is stateless, so any frame can be rendered alone (`--at`).
-4. Restrained motion: camera push is a few percent and eased; no generic Ken Burns; no uniform pulsing (flicker = multi-band smooth noise). Motion cap tests live in `tests/`.
-5. Original plate is always the fallback; the editor integration is "if the motion mp4 is missing or fails QC use the PNG".
-6. No network, no publishing, no secrets in the repo.
+## Start
 
-## Layout
-- `src/motionplates/core/` plate loading (bar detect + cover-fit identical to build scripts), layers (polygon/GrabCut masks, inpaint, clean plate), engine (frame loop, residual, metrics, manifest), encode (lossless intermediate -> delivery encode), compare (side-by-side + labelled stills).
-- `src/motionplates/effects/` one file per primitive, registered by `@register("type")`: `petal_fall flame_flicker banner_sway dust_motes parallax_push fabric_ripple torch_light`.
-- `recipes/<plate>.yaml` authored per plate (layer polygons, petal cuts, positions); `recipes/presets/*.yaml` reusable presets (`preset:` key, override per recipe).
-- `tests/` pytest on a generated synthetic plate (frame-0 equality, determinism, motion cap, safe zones, edge/white-bar scan, no plates in git).
-- `docs/` architecture, authoring effort, experiment C (skipped).
+1. Read `docs/knowledge-index.md` and `docs/decisions.md`, then the active `episodes/<id>/STATUS.md`.
+2. Open only the playbook or workflow section the task needs. Desk originals are in `intake/atelier-jr-2026-11-04/`. The desk index wins over the ChatGPT handoff.
+3. Resume saved jobs and configs before any new paid call.
 
-## Adding an effect
-Subclass `Effect`, implement any of `authoring_holes / setup / layer_stage / post`, decorate with `@register`. `layer_stage` edits per-frame layer pixels via `st.rgb(name)` / `st.alpha(name)` (copy-on-write); `post` draws screen-space sprites and must map positions through `ctx.camera_fn(depth, t)`. Add a preset and a test.
+## Standing rules
 
-## Review checklist
-Seeds fixed? Frame 0 identical? Layer masks generous (never inside the subject), disocclusions inpainted? Motion numbers in manifest within caps? No plate/binary committed?
+- Keep approved narration, claim status, and references. Separate standing rules, episode choices, and proposals. Do not invent research, settings, URLs, or metrics.
+- Long-form is native 16:9. Shorts are native 9:16. Do not crop a Short plate into 16:9.
+- Higgsfield for this long-form experiment only, after one style sample and then a full review cut, and only inside `config/budget.yaml`. Shorts plates stay owner-generated. ElevenLabs stops for a fresh ask before about 30,000 draft credits.
+- Secrets stay out of the repo, logs, and prompts. Large media stays out of git. Checksums may be committed.
+- The lead owns story, pictures, and the shared spend ledger.
 
+## Motion plates in this repo
 
-## v0.2.1/v0.3 rules
-- Never hardcode a plates path; use --plates / $MOTIONPLATES_PLATES.
-- Never commit plates, MP4s or the PoC C base map (md5 in assets/basemaps/README.md).
-- Motion plates are at best REVIEW_REQUIRED until an editor sets qc.playback_approved for that exact frames_sha1. Original static plates stay the fallback.
-- No merge to master / production activation without owner approval.
+`src/motionplates` stays the deterministic plate engine. These rules still bind that package:
+
+1. Plates are read from `--plates` or `$MOTIONPLATES_PLATES`. Do not copy plates into git. Do not commit `*.mp4` or `*.png` outside `tests/data` and the ignored preview exceptions.
+2. Frame 0 matches the cover-fit plate. Effects start from zero. The fading residual corrects the clean-plate swap.
+3. Randomness comes only from `ctx.rng(name, idx)`. No clock and no global RNG. Any frame can render alone with `--at`.
+4. Camera push stays a few percent and eased. No generic Ken Burns. Flicker is multi-band smooth noise, not a uniform pulse.
+5. If a motion MP4 is missing or fails QC, the original plate is the fallback. Playback approval is per `frames_sha1`.
+6. No network publishing and no secrets in the tree. Do not merge to master or turn this on in production without the owner's approval.
+
+The consolidated house engine is branch `engine/consolidate-2026-11-04` (PR #5). Do not resolve its `tests/test_motionplates.py` conflict from this branch.
